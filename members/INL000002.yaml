@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: /senatorcontact/#wpcf7-f1245-p1246-o1
   steps:
-    - visit: "http://indianasenatedemocrats.org/senatorcontact/"
+    - visit: http://indianasenatedemocrats.org/senatorcontact/
     - fill_in:
         - name: firstname
           selector: "input[name='Firstname']"
