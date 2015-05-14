@@ -1,0 +1,84 @@
+bioguide: state_az_gov_doug_ducey
+contact_form:
+  method: post
+  action: "/governor/form/contact-governor-ducey"
+  steps:
+    - visit: "http://www.azgovernor.gov/governor/form/contact-governor-ducey"
+    - fill_in:
+        - name: firstName
+          selector: "#edit-submitted-first-name"
+          value: $NAME_FIRST
+          required: true
+        - name: lastName
+          selector: "#edit-submitted-last-name"
+          value: $NAME_LAST
+          required: true
+        - name: email
+          selector: "#edit-submitted-email-address"
+          value: $EMAIL
+          required: true
+        - name: phone
+          selector: "#edit-submitted-phone-number"
+          value: $PHONE
+        - name: street
+          selector: "#edit-submitted-street-address"
+          value: $ADDRESS_STREET
+        - name: city
+          selector: "#edit-submitted-city"
+          value: $ADDRESS_CITY
+        - name: zip5
+          selector: "#edit-submitted-zip-code"
+          value: $ADDRESS_ZIP5
+        - name: subject
+          selector: "#edit-submitted-topic"
+          value: $SUBJECT
+        - name: message
+          selector: "#edit-submitted-comments"
+          value: $MESSAGE
+          required: true
+        - name: captcha
+          selector: "#recaptcha_response_field"
+          captcha_selector: "#recaptcha_challenge_image"
+          value: $CAPTCHA_SOLUTION
+          required: true
+    - select:
+        - name: prefix
+          selector: "#edit-submitted-salutation"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            - "Mr.": "Mr."
+            - "Ms.": "Ms."
+            - "Mrs.": "Mrs."
+            - "Dr.": "Dr."
+        - name: topic
+          selector: "#edit-submitted-subject"
+          value: $TOPIC
+          required: true
+          options:
+            - "Budget": "Budget"
+            - "Inmate &amp; Corrections Dept": "Inmate & Corrections Dept"
+            - "DCS Dept of Child Safety (Formerly CPS)": "DCS Dept of Child Safety (Formerly CPS)"
+            - "DES Dept of Economic Security": "DES Dept of Economic Security"
+            - "Education": "Education"
+            - "Health &amp; Healthcare": "Health & Healthcare "
+            - "Immigration &amp; Border": "Immigration & Border"
+            - "Legislation (Bills)": "Legislation (Bills)"
+            - "Motor Vehicle": "Motor Vehicle"
+            - "Recognition, Photo &amp; Other Request": "Recognition, Photo & Other Request"
+            - "Senior Issues": "Senior Issues"
+            - "Taxes": "Taxes"
+            - "Veterans &amp; Military": "Veterans & Military"
+            - "Other": "Other"
+    - check:
+        - name: comment
+          selector: "#edit-submitted-reason-2"
+          value: "Comment"
+    - click_on:
+        - value: Send Email
+          selector: ".webform-submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Your email has been sent"

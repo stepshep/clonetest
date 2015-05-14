@@ -1,0 +1,77 @@
+bioguide: state_il_gov_bruce_rauner
+contact_form:
+  method: post
+  action: /gov/Pages/ContacttheGovernor.aspx
+  steps:
+    - visit: "http://www2.illinois.gov/gov/Pages/ContacttheGovernor.aspx"
+    - fill_in:
+        - name: firstName
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_FirstName"
+          value: $NAME_FIRST
+          required: true
+        - name: lastName
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_LastName"
+          value: $NAME_LAST
+          required: true
+        - name: phone
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_Phone"
+          value: $PHONE
+          required: true
+        - name: street1
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_Address"
+          value: $ADDRESS_STREET
+          required: true
+        - name: city
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_City"
+          value: $ADDRESS_CITY
+          required: true
+        - name: stateAbbrev
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_State"
+          value: $ADDRESS_STATE_POSTAL_ABBREV
+        - name: zip5
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_Zip"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: email
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_Email"
+          value: $EMAIL
+          required: true
+        - name: organization
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_CitizenRequest"
+          value: $ORG_NAME
+        - name: message
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_CitizenQuestion"
+          value: $MESSAGE
+          required: true
+    - select:
+        - name: prefix
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_PrefixName"
+          value: $NAME_PREFIX
+          options:
+            - "Mr.": "Mr."
+            - "Mrs.": "Mrs."
+            - "Ms.": "Ms."
+        - name: topic
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_Subject"
+          value: $TOPIC
+          required: true
+          options:
+            - "2": "Administrative"
+            - "3": "Arts"
+            - "4": "Budget/Vendor Payments"
+            - "5": "Education"
+            - "6": "Environment / Energy"
+            - "7": "Finance"
+            - "8": "Healthcare / Insurance"
+            - "9": "Labor"
+            - "10": "Military Affairs"
+            - "11": "Other"
+            - "12": "Public Safety"
+    - click_on:
+        - value: Submit
+          selector: "#ctl00_SPWebPartManager1_g_54549226_8ec6_4af8_9a82_a19ee028d074_SOIFeedbackSubmit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: Your message has been sent

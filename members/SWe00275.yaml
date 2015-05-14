@@ -1,0 +1,39 @@
+bioguide: SWe00275
+contact_form:
+  method: post
+  action: http://gva1.utah.gov/programs/govmsg.asp
+  steps:
+    - visit: "http://governor.utah.gov/goca/form_comment.html"
+    - fill_in:
+        - name: first
+          selector: "#first"
+          value: $NAME_FIRST
+          required: true
+        - name: last
+          selector: "#last"
+          value: $NAME_LAST
+          required: true
+        - name: city
+          selector: "#city"
+          value: $ADDRESS_CITY
+          required: true
+        - name: zipcode
+          selector: "#zipcode"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: email
+          selector: "input[name='email']"
+          value: $EMAIL
+          required: true
+        - name: subject
+          selector: "textarea[name='subject']"
+          value: $MESSAGE
+          required: true
+    - click_on:
+        - value: Submit Feedback
+          selector: "input[name='send']"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Thank you for your feedback!"

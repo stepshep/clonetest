@@ -1,0 +1,70 @@
+bioguide: N000032
+contact_form:
+  method: post
+  action: /form_process/email-bill-thank-you
+  steps:
+    - visit: "http://www.billnelson.senate.gov/contact-bill"
+    - fill_in:
+        - name: First
+          selector: "#first"
+          value: $NAME_FIRST
+          required: true
+        - name: Last
+          selector: "#Last"
+          value: $NAME_LAST
+          required: true
+        - name: Addr1
+          selector: "#address"
+          value: $ADDRESS_STREET
+          required: true
+        - name: Addr2
+          selector: "#address2"
+          value: $ADDRESS_STREET_2
+          required: false
+        - name: City
+          selector: "#city"
+          value: $ADDRESS_CITY
+          required: true
+        - name: Zip
+          selector: "#required-zip5"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: Phone
+          selector: "#phone"
+          value: $PHONE
+          required: false
+        - name: Email
+          selector: "#Email"
+          value: $EMAIL
+          required: true
+        - name: sendSubject
+          selector: "#subject"
+          value: $SUBJECT
+          required: true
+        - name: Message
+          selector: "#Message"
+          value: $MESSAGE
+          required: true
+    - select:
+        - name: Prefix
+          selector: "#prefix"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            - Mr.
+            - Mr. and Mrs.
+            - Mrs.
+            - Ms.
+            - Dr.
+    - check:
+        - name: Issue
+          selector: "input[type='radio'][name='Issue'][value='Other']"
+          value: Other
+    - click_on:
+        - value: Submit
+          selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: Thank you for contacting our office

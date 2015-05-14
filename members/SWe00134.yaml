@@ -1,0 +1,150 @@
+bioguide: SWe00134
+contact_form:
+  method: post
+  action: "http://mn.gov/gov-stat/cgi-bin/TFMail.cgi"
+  steps:
+    - visit: "http://mn.gov/governor/contact-us/form/"
+    - fill_in:
+        - name: prefix
+          selector: "#prefix"
+          value: $NAME_PREFIX
+          required: true
+        - name: firstName
+          selector: "#first"
+          value: $NAME_FIRST
+          required: true
+        - name: lastName
+          selector: "#last"
+          value: $NAME_LAST
+          required: true
+        - name: street
+          selector: "#address1"
+          value: $ADDRESS_STREET
+          required: true
+        - name: street2
+          selector: "#address2"
+          value: $ADDRESS_STREET_2
+        - name: city
+          selector: "#city"
+          value: $ADDRESS_CITY
+          required: true
+        - name: zip5
+          selector: "#zip"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: phoneHyphens
+          selector: "#phone"
+          value: $PHONE_HYPHENS
+        - name: email
+          selector: "#email"
+          value: $EMAIL
+          required: true
+        - name: subject
+          selector: "#subject"
+          value: $SUBJECT
+        - name: message
+          selector: "#message"
+          value: $MESSAGE
+    - select:
+        - name: STATE
+          selector: "#STATE"
+          value: $ADDRESS_STATE_POSTAL_ABBREV
+          required: true
+          options:
+            - "MN": "Minnesota"
+            - "AL": "Alabama"
+            - "AK": "Alaska"
+            - "AZ": "Arizona"
+            - "AR": "Arkansas"
+            - "CA": "California"
+            - "CO": "Colorado"
+            - "CT": "Connecticut"
+            - "DE": "Deleware"
+            - "FL": "Florida"
+            - "GA": "Georgia"
+            - "HI": "Hawaii"
+            - "ID": "Idaho"
+            - "IL": "Illinois"
+            - "IN": "Indiana"
+            - "IA": "Iowa"
+            - "KS": "Kansas"
+            - "KY": "Kentucky"
+            - "LA": "Louisiana"
+            - "ME": "Maine"
+            - "MD": "Maryland"
+            - "MA": "Massachusetts"
+            - "MI": "Michigan"
+            - "MS": "Mississippi"
+            - "MO": "Missouri"
+            - "MT": "Montana"
+            - "NE": "Nebraska"
+            - "NV": "Nevada"
+            - "NH": "New Hampshire"
+            - "NJ": "New Jersey"
+            - "NM": "New Mexico"
+            - "NY": "New York"
+            - "NC": "North Carolina"
+            - "ND": "North Dakota"
+            - "OH": "Ohio"
+            - "OK": "Oklahoma"
+            - "OR": "Oregon"
+            - "PA": "Pennsylvania"
+            - "RI": "Rhode Island"
+            - "SC": "South Carolina"
+            - "SD": "South Dakota"
+            - "TN": "Tennesee"
+            - "TX": "Texas"
+            - "UT": "Utah"
+            - "VT": "Vermont"
+            - "VA": "Virginia"
+            - "WA": "Washington"
+            - "WV": "West"
+            - "WI": "Wisconsin"
+            - "WY": "Wyoming"
+        - name: ISSUE1
+          selector: "#required-issue1"
+          value: $TOPIC
+          required: true
+          options:
+            - "AG": "Agriculture"
+            - "BUD": "Budget"
+            - "BSP": "Boy Scout Project"
+            - "COMM": "Commerce and Banking"
+            - "EDHI": "Education Higher"
+            - "EDK12": "Education K-12"
+            - "ELE": "Elections"
+            - "ENGY": "Energy"
+            - "ENV": "Environment"
+            - "FED": "Federal Relations"
+            - "GAM": "Gambling"
+            - "HHS": "Health and Human Services"
+            - "HINS": "Health Insurance"
+            - "HO": "Housing"
+            - "HR": "Human Rights"
+            - "JOBS": "Jobs and Training"
+            - "LAI": "Labor and Industry"
+            - "MA": "Military Affairs"
+            - "PS": "Public Safety, Crimes"
+            - "SEN": "Senior Issues"
+            - "STP": "Student Project"
+            - "TAX": "Taxes"
+            - "TEL": "Telecommunications"
+            - "TRAN": "Transportation and Infrastructure"
+            - "VA": "Veterans Affairs"
+            - "OTHR": "Others"
+        - name: RSP
+          selector: "#required-response"
+          value: "YES"
+          options:
+            "NO": "NO"
+            "YES": "YES"
+    - click_on:
+        - value: Submit Information
+          selector: "#contactbutton"
+    - wait:
+        - value: 2
+  success:
+    headers:
+      status: 200
+    body:
+      contains: Thank you for contacting the Office

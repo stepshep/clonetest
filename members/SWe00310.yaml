@@ -1,0 +1,55 @@
+bioguide: SWe00310
+contact_form:
+  method: post
+  action: /contact-us/#wpcf7-f11382-p221-o1
+  steps:
+    - visit: "http://governor.wyo.gov/contact-us/"
+    - fill_in:
+        - name: FirstName
+          selector: ".FirstName input"
+          value: $NAME_FIRST
+          required: true
+        - name: LastName
+          selector: ".LastName input"
+          value: $NAME_LAST
+          required: true
+        - name: Address
+          selector: ".Address input"
+          value: $ADDRESS_STREET
+          required: true
+        - name: City
+          selector: ".City input"
+          value: $ADDRESS_CITY
+          required: true
+        - name: State
+          selector: ".State input"
+          value: $ADDRESS_STATE_POSTAL_ABBREV
+          required: true
+        - name: Zip
+          selector: ".Zip input"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: Email
+          selector: ".Email input"
+          value: $EMAIL
+          required: true
+        - name: Phone
+          selector: ".Phone input"
+          value: $PHONE
+          required: true
+        - name: Subject
+          selector: ".Subject input"
+          value: $SUBJECT
+          required: true
+        - name: Message
+          selector: ".Message textarea"
+          value: $MESSAGE
+          required: true
+    - click_on:
+        - value: Submit
+          selector: ".btn-send"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: Your message was sent successfully. Thanks.

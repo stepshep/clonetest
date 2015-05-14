@@ -1,0 +1,34 @@
+bioguide: SWe00159
+contact_form:
+  method: post
+  action: /contact/email-pat
+  steps:
+    - visit: "http://www.governor.nc.gov/contact/email-pat"
+    - fill_in:
+        - name: firstName
+          selector: "#edit-submitted-first-name"
+          value: $NAME_FIRST
+          required: true
+        - name: lastName
+          selector: "#edit-submitted-last-name"
+          value: $NAME_LAST
+          required: true
+        - name: email
+          selector: "#edit-submitted-email"
+          value: $EMAIL
+          required: true
+        - name: phone
+          selector: "#edit-submitted-phone"
+          value: $PHONE
+        - name: message
+          selector: "#edit-submitted-message"
+          value: $MESSAGE
+          required: true
+    - click_on:
+        - value: Submit
+          selector: ".webform-submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "your submission has been received"
