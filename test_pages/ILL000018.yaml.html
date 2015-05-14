@@ -1,4 +1,210 @@
-There was an error opening http://www.donharmon.org/contact-senator-harmon
-System.Net.WebException: The server committed a protocol violation. Section=ResponseHeader Detail=CR must be followed by LF
-   at System.Net.HttpWebRequest.GetResponse()
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 172
+					<form method="post"  id="userForm" action="http://www.donharmon.org/contact-senator-harmon"><div class="componentheading">Contact Us</div>
+
+<table class="formTableLayout" border="0">
+	<tr class="rsform-block rsform-block-prefix">
+		<td>Prefix</td>
+		<td><input type="text" value="" size="10"  name="form[prefix]" id="prefix"  class="rsform-input-box"/><div class="formClr"></div><span id="component23" class="formNoError">Please let us know your name.</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-firstname">
+		<td>First Name (*)</td>
+		<td><input type="text" value="" size="40" maxlength="60" name="form[firstName]" id="firstName"  class="rsform-input-box"/><div class="formClr"></div><span id="component28" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-lastname">
+		<td>Last Name (*)</td>
+		<td><input type="text" value="" size="40" maxlength="60" name="form[lastName]" id="lastName"  class="rsform-input-box"/><div class="formClr"></div><span id="component29" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-address">
+		<td>Street Address (*)</td>
+		<td><input type="text" value="" size="50"  name="form[address]" id="address"  class="rsform-input-box"/><div class="formClr"></div><span id="component30" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-city">
+		<td>City (*)</td>
+		<td><input type="text" value="" size="60"  name="form[city]" id="city"  class="rsform-input-box"/><div class="formClr"></div><span id="component31" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-state">
+		<td>State (*)</td>
+		<td><input type="text" value="IL" size="2"  name="form[state]" id="state"  class="rsform-input-box"/><div class="formClr"></div><span id="component32" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-zipcode">
+		<td>Zip (*)</td>
+		<td><input type="text" value="" size="11"  name="form[zipCode]" id="zipCode"  class="rsform-input-box"/><div class="formClr"></div><span id="component33" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-phone">
+		<td>Phone</td>
+		<td><input type="text" value="" size="20"  name="form[phone]" id="phone"  class="rsform-input-box"/><div class="formClr"></div><span id="component34" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-email">
+		<td>Your Email (*)</td>
+		<td><input type="text" value="" size="20"  name="form[email]" id="email"  class="rsform-input-box"/><div class="formClr"></div><span id="component24" class="formNoError">Please let us know your email address.</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-issue">
+		<td>Subject (*)</td>
+		<td><select  name="form[issue][]"  id="issue"  class="rsform-select-box" ><option  value="--Choose a topic--">--Choose a topic--</option><option  value="2nd Amendment Issues">2nd Amendment Issues</option><option  value="Agriculture">Agriculture</option><option  value="Budget">Budget</option><option  value="Consumer Issues">Consumer Issues</option><option  value="Economic Development">Economic Development</option><option  value="Education">Education</option><option  value="Employment">Employment</option><option  value="Energy">Energy</option><option  value="Environment">Environment</option><option  value="Federal Issues">Federal Issues</option><option  value="Healthcare">Healthcare</option><option  value="Housing">Housing</option><option  value="Human Rights">Human Rights</option><option  value="Licensing">Licensing</option><option  value="Local Government">Local Government</option><option  value="Natural Resources">Natural Resources</option><option  value="Other">Other</option><option  value="Pensions">Pensions</option><option  value="Public Safety">Public Safety</option><option  value="Public Utilities">Public Utilities</option><option  value="Seniors">Seniors</option><option  value="Taxes">Taxes</option><option  value="Transportation">Transportation</option><option  value="Veterans">Veterans</option></select><div class="formClr"></div><span id="component35" class="formNoError">Invalid Input</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-essay1">
+		<td>Message (*)</td>
+		<td><textarea cols="50" rows="20" name="form[essay1]" id="essay1"  class="rsform-text-box"></textarea><div class="formClr"></div><span id="component26" class="formNoError">Please let us know your message.</span></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-note">
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="rsform-block rsform-block-send">
+		<td></td>
+		<td><input type="submit" value="Send" name="form[Send]" id="Send"  class="rsform-submit-button" /><div class="formClr"></div></td>
+		<td></td>
+	</tr>
+</table>
+<input type="hidden" name="form[formId]" value="3"/></form><script type="text/javascript">ajaxExtraValidationScript[3] = function(task, formId, data) {var formComponents = {};formComponents[23]='prefix';formComponents[28]='firstName';formComponents[29]='lastName';formComponents[30]='address';formComponents[31]='city';formComponents[32]='state';formComponents[33]='zipCode';formComponents[34]='phone';formComponents[24]='email';formComponents[35]='issue';formComponents[26]='essay1';if (task == 'afterSend') {
+					for (var j=0; j<formComponent.length; j++) {
+						if (formComponent[j]) {
+							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '');
+						}
+					}
+				}
+			}
+		}
+		var ids = data.response[1].split(',');
+		for (var i=0; i<ids.length; i++) {
+			var id = parseInt(ids[i]);
+			if (!isNaN(id) && typeof formComponents[id] != 'undefined') {
+				var formComponent = rsfp_getFieldsByName(formId, formComponents[id]);
+				if (formComponent && formComponent.length > 0) {
+					for (var j=0; j<formComponent.length; j++) {
+						if (formComponent[j]) {
+							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '') + ' rsform-error';
+						}
+					}
+				}
+			}
+		}
+		}
+}</script>
+				</div>
+				<div class="clear"></div>
+			</div>
+								</div>
+		        
+        <div class="rt-grid-3 sidebar-right">
+            <div id="rt-sidebar-a">
+                                    <div class="rt-block">
+            	<div class="module-surround">
+            														<div class="module-title">
+							<h2 class="title">Contact Me</h2>
+						</div>
+		                		            					<div class="module-content">
+	                	
+
+<div class="custom"  >
+	<p><strong>Springfield Office:</strong> <br />329 Capitol Building<br />Springfield, IL 62706<br />(p) 217.782.8176<br />(f)&nbsp; 217.558.6013</p>
+<p><strong>Oak Park Office:</strong> <br />6933 W. North Ave.<br />Oak Park, IL 60302<br />(p) 708.848.2002<br />(f)&nbsp; 708.848.2022</p></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+            </div>
+        	                    <div class="rt-block">
+            	<div class="module-surround">
+            														<div class="module-title">
+							<h2 class="title">eNewsletter Signup</h2>
+						</div>
+		                		            					<div class="module-content">
+	                	
+
+<div class="custom"  >
+	<p style="text-align: center;"><span class="listing-desc"><form method="post"  id="userForm" action="http://www.donharmon.org/contact-senator-harmon"><fieldset class="formFieldset">
+<legend>eNewsletter Signup</legend>
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<ol class="formContainer" id="rsform_4_page_0">
+	<li class="rsform-block rsform-block-firstname">
+		<div class="formCaption2">First Name<strong class="formRequired">(*)</strong></div>
+		<div class="formBody"><input type="text" value="" size="20" maxlength="60" name="form[firstName]" id="firstName"  class="rsform-input-box"/><span class="formClr"><span id="component37" class="formNoError">Invalid Input</span></span></div>
+		<div class="formDescription"></div>
+	</li>
+	<li class="rsform-block rsform-block-lastname">
+		<div class="formCaption2">Last Name<strong class="formRequired">(*)</strong></div>
+		<div class="formBody"><input type="text" value="" size="20" maxlength="60" name="form[lastName]" id="lastName"  class="rsform-input-box"/><span class="formClr"><span id="component38" class="formNoError">Invalid Input</span></span></div>
+		<div class="formDescription"></div>
+	</li>
+	<li class="rsform-block rsform-block-email">
+		<div class="formCaption2">Your Email<strong class="formRequired">(*)</strong></div>
+		<div class="formBody"><input type="text" value="" size="20"  name="form[email]" id="email"  class="rsform-input-box"/><span class="formClr"><span id="component40" class="formNoError">Please let us know your email address.</span></span></div>
+		<div class="formDescription"></div>
+	</li>
+	<li class="rsform-block rsform-block-send">
+		<div class="formCaption2"></div>
+		<div class="formBody"><input type="submit" value="Send" name="form[Send]" id="Send"  class="rsform-submit-button" /><span class="formClr"></span></div>
+		<div class="formDescription"></div>
+	</li>
+	<li class="rsform-block rsform-block-note">
+		<div class="formCaption2"></div>
+		<div class="formDescription"></div>
+	</li>
+</ol>
+</fieldset>
+<input type="hidden" name="form[formId]" value="4"/></form><script type="text/javascript">ajaxExtraValidationScript[4] = function(task, formId, data) {var formComponents = {};formComponents[37]='firstName';formComponents[38]='lastName';formComponents[40]='email';if (task == 'afterSend') {
+					for (var j=0; j<formComponent.length; j++) {
+						if (formComponent[j]) {
+							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '');
+						}
+					}
+				}
+			}
+		}
+		var ids = data.response[1].split(',');
+		for (var i=0; i<ids.length; i++) {
+			var id = parseInt(ids[i]);
+			if (!isNaN(id) && typeof formComponents[id] != 'undefined') {
+				var formComponent = rsfp_getFieldsByName(formId, formComponents[id]);
+				if (formComponent && formComponent.length > 0) {
+					for (var j=0; j<formComponent.length; j++) {
+						if (formComponent[j]) {
+							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '') + ' rsform-error';
+						}
+					}
+				}
+			}
+		}
+		}
+}</script><br /></span></p></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+            </div>
+        	
+            </div>
+        </div>
+
+    		<div class="clear"></div>
+	</div>
+</div>
+																							</div>
+									</div>
+			</div>
+			<div class="rt-footer-surround">
+				<div class="rt-container">
+					<div class="rt-footer-inner">
+																		<div id="rt-copyright">
+							<div class="rt-grid-12 rt-alpha rt-omega">
+    		<a href="#" class="rt-totop"></a>
+		
+</div>
+							<div class="clear"></div>
+						</div>
+											</div>
+				</div>
+			</div>
+					</div>
+									</body>
+</html>
