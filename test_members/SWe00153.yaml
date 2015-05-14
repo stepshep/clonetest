@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: /Home/Contact/shareopinion.aspx
   steps:
-    - visit: "http://governor.mt.gov/Home/Contact/shareopinion.aspx"
+    - visit: "http://governor.mt.gov/Home/Contact/shareopinion"
     - fill_in:
         - name: "dnn7787FirstName"
           required: true
