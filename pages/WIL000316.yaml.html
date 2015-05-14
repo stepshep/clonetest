@@ -119,7 +119,6 @@ Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$panelZone
 										<tr>
 											<td class="s4-titlelogo">
 												<a id="ctl00_onetidProjectPropertyTitleGraphic" href="http://legis.wisconsin.gov/senhome.htm">
-													<img id="ctl00_onetidHeadbnnr2" name="onetidHeadbnnr0" src="/senate/carpenter/sitecollectionimages/favicon.ico" alt="Home" style="border-width:0px;" />
 												</a>
 											</td>
 											<td class="s4-titletext">
@@ -165,7 +164,6 @@ Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$panelZone
 						
 					<div id="mainContent" >
 					<div id="leftpanel" class="s4-notdlg">
-						<img  src="/senate/carpenter/SiteCollectionImages/Headshot.jpg" width="100%"/>
 						<div id="leftpanel-content" class="nav-container">
 								
 								
@@ -235,7 +233,6 @@ Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$panelZone
 	<tr>
 		<td valign="top"><div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" class="noindex" OnlyForMePart="true" allowDelete="false" style="" ><div id="SRSB"> <div>
 				<tr class="ms-sbrow">
-					<td class="ms-sbcell"><input name="ctl00$PlaceHolderSearchArea$ctl01$S3031AEBB_InputKeywords" type="text" value="Search this site..." maxlength="200" id="ctl00_PlaceHolderSearchArea_ctl01_S3031AEBB_InputKeywords" accesskey="S" title="Search..." class="ms-sbplain" alt="Search..." onkeypress="javascript: return S3031AEBB_OSBEK(event);" onfocus="if (document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value =='0') {this.value=''; if (this.className == 's4-searchbox-QueryPrompt') this.className = ''; else this.className = this.className.replace(' s4-searchbox-QueryPrompt',''); document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value=1;}" onblur="if (this.value =='') {this.value='Search this site...'; if (this.className.indexOf('s4-searchbox-QueryPrompt') == -1) this.className += this.className?' s4-searchbox-QueryPrompt':'s4-searchbox-QueryPrompt'; document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value = '0'} else {document.getElementById('ctl00_PlaceHolderSearchArea_ctl01_ctl04').value='1';}" style="width:170px;" /></td><td class="ms-sbgo ms-sbcell"><a id="ctl00_PlaceHolderSearchArea_ctl01_S3031AEBB_go" title="Search" href="javascript:S3031AEBB_Submit()"><img title="Search" onmouseover="this.src='\u002f_layouts\u002fimages\u002fgosearchhover15.png'" onmouseout="this.src='\u002f_layouts\u002fimages\u002fgosearch15.png'" class="srch-gosearchimg" alt="Search" src="/_layouts/images/gosearch15.png" style="border-width:0px;" /></a></td><td class="ms-sbLastcell"></td>
 				</tr>
 		</div></div></div></td>
 	</tr>
@@ -436,8 +433,7 @@ else
 }
 
 function S3031AEBB_OSBEK(event1) { 
-var kCode = String.fromCharCode(event1.keyCode);
-if(kCode == "\n" || kCode == "\r")
+if((event1.which == 10) || (event1.which == 13))
 {   
 S3031AEBB_Submit();return false;
 }

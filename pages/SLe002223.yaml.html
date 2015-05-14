@@ -1,5 +1,35 @@
-There was an error opening http://www.reggie4ky.com/contact
-System.Net.WebException: The server committed a protocol violation. Section=ResponseHeader Detail=CR must be followed by LF
-   at System.Net.WebClient.OpenRead(Uri address)
-   at System.Net.WebClient.OpenRead(String address)
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 156
+          <h2 class="page-title">Contact</h2><form action="/contact"  accept-charset="UTF-8" method="post" id="contact-mail-page">
+<div>You can leave a message using the contact form below.<div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Your name: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="255" name="name" id="edit-name" size="60" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-mail-wrapper">
+ <label for="edit-mail">Your e-mail address: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="255" name="mail" id="edit-mail" size="60" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-subject-wrapper">
+ <label for="edit-subject">Subject: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="255" name="subject" id="edit-subject" size="60" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-message-wrapper">
+ <label for="edit-message">Message: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="5" name="message" id="edit-message"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Send e-mail"  class="form-submit" />
+ <label for="edit-captcha-response">What code is in the image?: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="128" name="captcha_response" id="edit-captcha-response" size="15" value="" class="form-text required" />
+ <div class="description">Enter the characters shown in the image.</div>
+</div>
+</fieldset>
+
+</div></form>
+  <div class="content clearfix"><form action="/contact"  accept-charset="UTF-8" method="post" id="crmngp-ui-form-subscribe">
+<div class="form-item" id="edit-subscribe-email-wrapper">
+ <input onclick="if(this.value==&#039;Email Address&#039;){this.value=&#039;&#039;;}" type="email" id="edit-subscribe-email" name="subscribe_email" value="Email Address" size="20" maxlength="256" class="form-text form-email" />
+</div>
+<div class="form-item" id="edit-subscribe-zip-wrapper">
+ <input onclick="if(this.value==&#039;Zip Code&#039;){this.value=&#039;&#039;;}" type="tel" id="edit-subscribe-zip" name="subscribe_zip" value="Zip Code" size="7" maxlength="10" class="form-text form-tel" />
+</div>
+<input type="submit" name="op" id="edit-subscribe-submit" value="Subscribe"  class="form-submit" />
+
+</div></form>

@@ -6,43 +6,8 @@
           </div>
         </fieldset>
       </form>
-<form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
-<div class="aspNetHidden">
-</div>
+<form method="post" action="" id="aspnetForm">
 
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['aspnetForm'];
-if (!theForm) {
-    theForm = document.aspnetForm;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-<script src="/WebResource.axd?d=DSgd55fA7ZxYn1JUE1VSzbaSdv7NTSOSYx2152ISFLjgfn1SSNnI267pNqczXQTdp5HSeJEtRQPudVcU6uY0tfxHM5QcBKSEOiBMMpslNT01&amp;t=635647470483748403" type="text/javascript"></script>
-
-
-<script src="/WebResource.axd?d=MGL5gjCPrRzC7nmN65UBYEdb9nSoyJIWnX2QN8bDc2fDlcT65OTaMl_kRHPSLYNcP7J0hw7f6Tgmy7FDuk-wQsWWxrqKe1m3fttc-if1QEU1&amp;t=635647470483748403" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-function WebForm_OnSubmit() {
-if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
-return true;
-}
-//]]>
-</script>
-
-<div class="aspNetHidden">
-
-</div>
 
 
   <script type="text/javascript">
@@ -157,7 +122,6 @@ return true;
       padding:4px 16px 4px 4px;
       position:relative;
     }
-    #facebook-form-login img
     {
       border: 1px solid #D8DFEA;
       float:left;
@@ -188,7 +152,6 @@ return true;
       </div>
       <div id="auth-loggedin" style="display: none;">
         <a href="javascript:void(0);" id="auth-logoutlink" title="Log out of Facebook">x</a>
-        <img id="auth-profilepic" alt="" />
         <div class="auth-logged-in-display">
           <div class="auth-logged-in-text">You are logged in as</div>
           <span id="auth-displayname"></span>
@@ -204,9 +167,7 @@ return true;
     <div>
       <span class="pageHeader">Write Your Representative</span></div>
     <span style="">
-      <div id="ctl00_ctl02_ValidationSummary" style="display:none;">
-
-</div>
+      
     </span>
     <fieldset>
       <legend>Your Information</legend>
@@ -217,7 +178,7 @@ return true;
               <span class="header">Prefix *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_PrefixV" class="validator" style="display:none;">Prefix is required!<br /></span>
+            
             <select name="ctl00$ctl02$PrefixList" id="ctl00_ctl02_PrefixList">
 	<option value="Mr.">Mr.</option>
 	<option value="Mrs.">Mrs.</option>
@@ -288,7 +249,7 @@ return true;
               <span class="header">First Name *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator1" class="validator" style="display:none;">First Name is required!<br /></span>
+            
             <input name="ctl00$ctl02$FirstName" type="text" id="ctl00_ctl02_FirstName" class="textBox" />
           </td>
         </tr>
@@ -298,7 +259,7 @@ return true;
               <span class="header">Last Name *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator2" class="validator" style="display:none;">Last Name is required!<br /></span>
+            
             <input name="ctl00$ctl02$LastName" type="text" id="ctl00_ctl02_LastName" class="textBox" />
           </td>
         </tr>
@@ -308,7 +269,7 @@ return true;
               <span class="header">Street *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator3" class="validator" style="display:none;">Street is required!<br /></span>
+            
             <input name="ctl00$ctl02$Street" type="text" id="ctl00_ctl02_Street" class="textBox" />
           </td>
         </tr>
@@ -318,7 +279,7 @@ return true;
               <span class="header">City *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator4" class="validator" style="display:none;">City is required!<br /></span>
+            
             <input name="ctl00$ctl02$City" type="text" id="ctl00_ctl02_City" class="textBox" />
           </td>
         </tr>
@@ -328,7 +289,7 @@ return true;
               <span class="header">State *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator5" class="validator" style="display:none;">State is required!<br /></span>
+            
             <select name="ctl00$ctl02$State" id="ctl00_ctl02_State">
 	<option value="AL">AL</option>
 	<option value="AK">AK</option>
@@ -400,10 +361,10 @@ return true;
               <span class="header">Zip *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator6" class="validator" style="display:none;">Zip is required!<br /></span>
-            <span id="ctl00_ctl02_RegularExpressionValidator1" class="validator" style="display:none;">Zip must be a 5 digit number.<br /></span>
+            
+            
             <input name="ctl00$ctl02$Zip" type="text" id="ctl00_ctl02_Zip" class="textBox" /><br />
-            <span id="ctl00_ctl02_AddressError" class="validator" style="display:none;"></span>
+            
           </td>
         </tr>
         <tr class="wyr-phone">
@@ -412,7 +373,7 @@ return true;
               <span class="header">Phone</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RegularExpressionValidator2" class="validator" style="display:none;">Phone number must be 10 digits<br /></span>
+            
             
             <input name="ctl00$ctl02$Phone" type="text" id="ctl00_ctl02_Phone" class="textBox" />
           </td>
@@ -428,8 +389,8 @@ return true;
               <span class="header">Email *</span></label>
           </td>
           <td>
-            <span id="ctl00_ctl02_RequiredFieldValidator8" class="validator" style="display:none;">Email is required!<br /></span>
-            <span id="ctl00_ctl02_R9" class="validator" style="display:none;">Invalid email address!<br /></span>
+            
+            
             <input name="ctl00$ctl02$Email" type="text" id="ctl00_ctl02_Email" class="textBox" />
           </td>
         </tr>
@@ -439,7 +400,7 @@ return true;
               <span class="header">Twitter</span></label>
           </td>
 	<td>
-            <span id="ctl00_ctl02_ctl02" class="validator" style="display:none;">Invalid Twitter handle!<br/></span>
+            
             <input name="ctl00$ctl02$Twitter" type="text" value="@" id="ctl00_ctl02_Twitter" placeholder="@" />
           </td>
 </tr>
@@ -474,166 +435,27 @@ return true;
     <fieldset>
       <legend>Your Message</legend>
       <div class="fieldContainer">
-        <span id="ctl00_ctl02_ReplyChoiceRequiredValidator" class="validator" style="display:none;">Required<br/></span> 
-        <table id="ctl00_ctl02_ReplyChoice">
-	<tr>
-		<td><input id="ctl00_ctl02_ReplyChoice_0" type="radio" name="ctl00$ctl02$ReplyChoice" value="Respond" /><label for="ctl00_ctl02_ReplyChoice_0">Yes, I would like a response.</label></td>
-	</tr><tr>
-		<td><input id="ctl00_ctl02_ReplyChoice_1" type="radio" name="ctl00$ctl02$ReplyChoice" value="Comment" /><label for="ctl00_ctl02_ReplyChoice_1">No, I just want you to know my thoughts.</label></td>
-	</tr>
-</table>
+         
+        <span id="ctl00_ctl02_ReplyChoice"><input id="ctl00_ctl02_ReplyChoice_0" type="radio" name="ctl00$ctl02$ReplyChoice" value="Respond" /><label for="ctl00_ctl02_ReplyChoice_0">Yes, I would like a response.</label><br /><input id="ctl00_ctl02_ReplyChoice_1" type="radio" name="ctl00$ctl02$ReplyChoice" value="Comment" /><label for="ctl00_ctl02_ReplyChoice_1">No, I just want you to know my thoughts.</label></span>
       </div>
       <div class="fieldContainer">
         <label for="ctl00_ctl02_Subject">
           <span class="header">Subject</span></label><br />
-        <span id="ctl00_ctl02_R10" class="validator" style="display:none;">Subject is required!<br /></span>
-        <span id="ctl00_ctl02_R10_1" class="validator" style="display:none;">Subject is too long!<br /></span>
-        <input name="ctl00$ctl02$Subject" type="text" id="ctl00_ctl02_Subject" style="width:30em;" />
+        
+        
+        <input name="ctl00$ctl02$Subject" type="text" id="ctl00_ctl02_Subject" />
       </div>
       <div class="fieldContainer">
         <label for="ctl00_ctl02_Body">
           <span class="header">Comment</span></label><br />
-        <span id="ctl00_ctl02_R11" class="validator" style="display:none;">Body is required!<br /></span>
-        <textarea name="ctl00$ctl02$Body" rows="15" cols="20" id="ctl00_ctl02_Body" style="width:30em;">
+        
+        <textarea name="ctl00$ctl02$Body" rows="15" cols="20" id="ctl00_ctl02_Body">
 </textarea>
       </div>
     </fieldset>
     <input type="submit" name="ctl00$ctl02$SubmitButton" value="Submit" onclick="if(blockClicks) {return false;}; submitWasClicked=true; ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl02$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl02_SubmitButton" class="ContactForm_Submit" />
   </div>
 </div>
-
-<script type="text/javascript">
-//<![CDATA[
-var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_ctl02_ValidationSummary"));
-var Page_Validators =  new Array(document.getElementById("ctl00_ctl02_PrefixV"), document.getElementById("ctl00_ctl02_RequiredFieldValidator1"), document.getElementById("ctl00_ctl02_RequiredFieldValidator2"), document.getElementById("ctl00_ctl02_RequiredFieldValidator3"), document.getElementById("ctl00_ctl02_RequiredFieldValidator4"), document.getElementById("ctl00_ctl02_RequiredFieldValidator5"), document.getElementById("ctl00_ctl02_RequiredFieldValidator6"), document.getElementById("ctl00_ctl02_RegularExpressionValidator1"), document.getElementById("ctl00_ctl02_AddressError"), document.getElementById("ctl00_ctl02_RegularExpressionValidator2"), document.getElementById("ctl00_ctl02_RequiredFieldValidator8"), document.getElementById("ctl00_ctl02_R9"), document.getElementById("ctl00_ctl02_ctl02"), document.getElementById("ctl00_ctl02_ReplyChoiceRequiredValidator"), document.getElementById("ctl00_ctl02_R10"), document.getElementById("ctl00_ctl02_R10_1"), document.getElementById("ctl00_ctl02_R11"));
-//]]>
-</script>
-
-<script type="text/javascript">
-//<![CDATA[
-var ctl00_ctl02_ValidationSummary = document.all ? document.all["ctl00_ctl02_ValidationSummary"] : document.getElementById("ctl00_ctl02_ValidationSummary");
-ctl00_ctl02_ValidationSummary.headertext = "<br />The following validation errors have occurred:";
-var ctl00_ctl02_PrefixV = document.all ? document.all["ctl00_ctl02_PrefixV"] : document.getElementById("ctl00_ctl02_PrefixV");
-ctl00_ctl02_PrefixV.controltovalidate = "ctl00_ctl02_PrefixList";
-ctl00_ctl02_PrefixV.errormessage = "Prefix is required!<br />";
-ctl00_ctl02_PrefixV.display = "Dynamic";
-ctl00_ctl02_PrefixV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_PrefixV.initialvalue = "";
-var ctl00_ctl02_RequiredFieldValidator1 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator1"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator1");
-ctl00_ctl02_RequiredFieldValidator1.controltovalidate = "ctl00_ctl02_FirstName";
-ctl00_ctl02_RequiredFieldValidator1.errormessage = "First Name is required!<br />";
-ctl00_ctl02_RequiredFieldValidator1.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator1.initialvalue = "";
-var ctl00_ctl02_RequiredFieldValidator2 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator2"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator2");
-ctl00_ctl02_RequiredFieldValidator2.controltovalidate = "ctl00_ctl02_LastName";
-ctl00_ctl02_RequiredFieldValidator2.errormessage = "Last Name is required!<br />";
-ctl00_ctl02_RequiredFieldValidator2.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator2.initialvalue = "";
-var ctl00_ctl02_RequiredFieldValidator3 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator3"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator3");
-ctl00_ctl02_RequiredFieldValidator3.controltovalidate = "ctl00_ctl02_Street";
-ctl00_ctl02_RequiredFieldValidator3.errormessage = "Street is required!<br />";
-ctl00_ctl02_RequiredFieldValidator3.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator3.initialvalue = "";
-var ctl00_ctl02_RequiredFieldValidator4 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator4"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator4");
-ctl00_ctl02_RequiredFieldValidator4.controltovalidate = "ctl00_ctl02_City";
-ctl00_ctl02_RequiredFieldValidator4.errormessage = "City is required!<br />";
-ctl00_ctl02_RequiredFieldValidator4.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator4.initialvalue = "";
-var ctl00_ctl02_RequiredFieldValidator5 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator5"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator5");
-ctl00_ctl02_RequiredFieldValidator5.controltovalidate = "ctl00_ctl02_State";
-ctl00_ctl02_RequiredFieldValidator5.errormessage = "State is required!<br />";
-ctl00_ctl02_RequiredFieldValidator5.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator5.initialvalue = "";
-var ctl00_ctl02_RequiredFieldValidator6 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator6"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator6");
-ctl00_ctl02_RequiredFieldValidator6.controltovalidate = "ctl00_ctl02_Zip";
-ctl00_ctl02_RequiredFieldValidator6.errormessage = "Zip is required!<br />";
-ctl00_ctl02_RequiredFieldValidator6.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator6.initialvalue = "";
-var ctl00_ctl02_RegularExpressionValidator1 = document.all ? document.all["ctl00_ctl02_RegularExpressionValidator1"] : document.getElementById("ctl00_ctl02_RegularExpressionValidator1");
-ctl00_ctl02_RegularExpressionValidator1.controltovalidate = "ctl00_ctl02_Zip";
-ctl00_ctl02_RegularExpressionValidator1.errormessage = "Zip must be a 5 digit number.<br />";
-ctl00_ctl02_RegularExpressionValidator1.display = "Dynamic";
-ctl00_ctl02_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_ctl02_RegularExpressionValidator1.validationexpression = "\\d{5}";
-var ctl00_ctl02_AddressError = document.all ? document.all["ctl00_ctl02_AddressError"] : document.getElementById("ctl00_ctl02_AddressError");
-ctl00_ctl02_AddressError.display = "Dynamic";
-ctl00_ctl02_AddressError.evaluationfunction = "CustomValidatorEvaluateIsValid";
-var ctl00_ctl02_RegularExpressionValidator2 = document.all ? document.all["ctl00_ctl02_RegularExpressionValidator2"] : document.getElementById("ctl00_ctl02_RegularExpressionValidator2");
-ctl00_ctl02_RegularExpressionValidator2.controltovalidate = "ctl00_ctl02_Phone";
-ctl00_ctl02_RegularExpressionValidator2.errormessage = "Phone number must be 10 digits<br />";
-ctl00_ctl02_RegularExpressionValidator2.display = "Dynamic";
-ctl00_ctl02_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_ctl02_RegularExpressionValidator2.validationexpression = "([^\\d]*\\d){10}[^\\d]*";
-var ctl00_ctl02_RequiredFieldValidator8 = document.all ? document.all["ctl00_ctl02_RequiredFieldValidator8"] : document.getElementById("ctl00_ctl02_RequiredFieldValidator8");
-ctl00_ctl02_RequiredFieldValidator8.controltovalidate = "ctl00_ctl02_Email";
-ctl00_ctl02_RequiredFieldValidator8.errormessage = "Email is required!<br />";
-ctl00_ctl02_RequiredFieldValidator8.display = "Dynamic";
-ctl00_ctl02_RequiredFieldValidator8.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_RequiredFieldValidator8.initialvalue = "";
-var ctl00_ctl02_R9 = document.all ? document.all["ctl00_ctl02_R9"] : document.getElementById("ctl00_ctl02_R9");
-ctl00_ctl02_R9.controltovalidate = "ctl00_ctl02_Email";
-ctl00_ctl02_R9.errormessage = "Invalid email address!<br />";
-ctl00_ctl02_R9.display = "Dynamic";
-ctl00_ctl02_R9.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_ctl02_R9.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-var ctl00_ctl02_ctl02 = document.all ? document.all["ctl00_ctl02_ctl02"] : document.getElementById("ctl00_ctl02_ctl02");
-ctl00_ctl02_ctl02.controltovalidate = "ctl00_ctl02_Twitter";
-ctl00_ctl02_ctl02.errormessage = "Invalid Twitter handle!<br/>";
-ctl00_ctl02_ctl02.display = "Dynamic";
-ctl00_ctl02_ctl02.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_ctl02_ctl02.validationexpression = "^@?([a-zA-Z0-9_]{1,15})?\\s*$";
-var ctl00_ctl02_ReplyChoiceRequiredValidator = document.all ? document.all["ctl00_ctl02_ReplyChoiceRequiredValidator"] : document.getElementById("ctl00_ctl02_ReplyChoiceRequiredValidator");
-ctl00_ctl02_ReplyChoiceRequiredValidator.controltovalidate = "ctl00_ctl02_ReplyChoice";
-ctl00_ctl02_ReplyChoiceRequiredValidator.errormessage = "Required<br/>";
-ctl00_ctl02_ReplyChoiceRequiredValidator.display = "Dynamic";
-ctl00_ctl02_ReplyChoiceRequiredValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_ReplyChoiceRequiredValidator.initialvalue = "";
-var ctl00_ctl02_R10 = document.all ? document.all["ctl00_ctl02_R10"] : document.getElementById("ctl00_ctl02_R10");
-ctl00_ctl02_R10.controltovalidate = "ctl00_ctl02_Subject";
-ctl00_ctl02_R10.errormessage = "Subject is required!<br />";
-ctl00_ctl02_R10.display = "Dynamic";
-ctl00_ctl02_R10.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_R10.initialvalue = "";
-var ctl00_ctl02_R10_1 = document.all ? document.all["ctl00_ctl02_R10_1"] : document.getElementById("ctl00_ctl02_R10_1");
-ctl00_ctl02_R10_1.controltovalidate = "ctl00_ctl02_Subject";
-ctl00_ctl02_R10_1.errormessage = "Subject is too long!<br />";
-ctl00_ctl02_R10_1.display = "Dynamic";
-ctl00_ctl02_R10_1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_ctl02_R10_1.validationexpression = ".{1,1000}";
-var ctl00_ctl02_R11 = document.all ? document.all["ctl00_ctl02_R11"] : document.getElementById("ctl00_ctl02_R11");
-ctl00_ctl02_R11.controltovalidate = "ctl00_ctl02_Body";
-ctl00_ctl02_R11.errormessage = "Body is required!<br />";
-ctl00_ctl02_R11.display = "Dynamic";
-ctl00_ctl02_R11.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_ctl02_R11.initialvalue = "";
-//]]>
-</script>
-
-
-<script type="text/javascript">
-//<![CDATA[
-
-var Page_ValidationActive = false;
-if (typeof(ValidatorOnLoad) == "function") {
-    ValidatorOnLoad();
-}
-
-function ValidatorOnSubmit() {
-    if (Page_ValidationActive) {
-        return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
-}
-        //]]>
-</script>
 </form>
           <form action="/forms/emailsignup/" class="email-form">
             <fieldset>

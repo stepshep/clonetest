@@ -139,7 +139,6 @@ Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$panelZone
 										<tr>
 											<td class="s4-titlelogo">
 												<a id="ctl00_onetidProjectPropertyTitleGraphic" href="http://legis.wisconsin.gov/senhome.htm">
-													<img id="ctl00_onetidHeadbnnr2" name="onetidHeadbnnr0" src="/senate/cowles/sitecollectionimages/favIcon.ico" alt="Sen. Cowles" style="border-width:0px;" />
 												</a>
 											</td>
 											<td class="s4-titletext">
@@ -233,7 +232,6 @@ Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$panelZone
 	<tr>
 		<td valign="top"><div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" class="noindex" OnlyForMePart="true" allowMinimize="false" allowRemove="false" allowDelete="false" style="width:200px;" ><div id="SRSB"> <div id="ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2" style="width:200px;">
 				<tr class="ms-sbrow">
-					<td class="ms-sbcell"><input name="ctl00$PlaceHolderLeftNavBar$PlaceHolderQuickLaunchBottom$PlaceHolderSearchArea$g_55c323f9_3b73_423d_9202_2dd5bd824ad2$SA6BE6EBE_InputKeywords" type="text" value="Search this site..." maxlength="200" id="ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2_SA6BE6EBE_InputKeywords" accesskey="S" title="Search..." class="ms-sbplain" alt="Search..." onkeypress="javascript: return SA6BE6EBE_OSBEK(event);" onfocus="if (document.getElementById('ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2_ctl04').value =='0') {this.value=''; if (this.className == 's4-searchbox-QueryPrompt') this.className = ''; else this.className = this.className.replace(' s4-searchbox-QueryPrompt',''); document.getElementById('ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2_ctl04').value=1;}" onblur="if (this.value =='') {this.value='Search this site...'; if (this.className.indexOf('s4-searchbox-QueryPrompt') == -1) this.className += this.className?' s4-searchbox-QueryPrompt':'s4-searchbox-QueryPrompt'; document.getElementById('ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2_ctl04').value = '0'} else {document.getElementById('ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2_ctl04').value='1';}" style="width:368px;" /></td><td class="ms-sbgo ms-sbcell"><a id="ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_PlaceHolderSearchArea_g_55c323f9_3b73_423d_9202_2dd5bd824ad2_SA6BE6EBE_go" title="Search" href="javascript:SA6BE6EBE_Submit()"><img title="Search" onmouseover="this.src='\u002f_layouts\u002fimages\u002fgosearchhover30.png'" onmouseout="this.src='\u002f_layouts\u002fimages\u002fgosearch30.png'" class="srch-gosearchimg" alt="Search" src="/_layouts/images/gosearch30.png" style="border-width:0px;" /></a></td><td class="ms-sbLastcell"></td>
 				</tr>
 		</div></div></div></td>
 	</tr>
@@ -455,8 +453,7 @@ else
 }
 
 function SA6BE6EBE_OSBEK(event1) { 
-var kCode = String.fromCharCode(event1.keyCode);
-if(kCode == "\n" || kCode == "\r")
+if((event1.which == 10) || (event1.which == 13))
 {   
 SA6BE6EBE_Submit();return false;
 }

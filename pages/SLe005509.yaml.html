@@ -55,7 +55,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$SM1', 'aspnetForm', ['tctl00$
         <div id="SiteWrapper">
             <div id="Header">
                 <div id="HeaderImageWrapper">
-                    <a id="ctl00_hypHomePage" href="/"><img id="ctl00_imgHeader" src="/Display/SiteFiles/172/Miller_WebHeader.jpg" style="border-width:0px;vertical-align:bottom; " /></a>
                 </div>
                 <div id="HeaderUnder">
                 </div>
@@ -86,7 +85,9 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$SM1', 'aspnetForm', ['tctl00$
         
         <li><a href="/audio.aspx">Audio</a></li>
         
-        <li class="lastLi"><a href="/pressphotos.aspx">Press Photos</a></li>
+        <li><a href="/pressphotos.aspx">Press Photos</a></li>
+        
+        <li class="lastLi"><a href="http://www.pahousegop.info/docs/MillerB/spring2015nl/index.html" target="_blank">Newsletter</a></li>
         
         
     </ul>
@@ -136,7 +137,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$SM1', 'aspnetForm', ['tctl00$
     
     
     <div class="ImageLinkImage">
-        <a id="ctl00_cphLeft_ctl00_img" title="districtoutline.aspx" href="/districtoutline.aspx"><img title="districtoutline.aspx" src="/SiteFiles/172/CaucusFiles/Strips%20and%20Blocks/DistMap-200.jpg" alt="" style="border-width:0px;" /></a>
     </div>
     <div class="ImageLinkCaption">
         
@@ -158,7 +158,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$SM1', 'aspnetForm', ['tctl00$
     
     
     <div class="ImageLinkImage">
-        <a id="ctl00_cphLeft_ctl01_img" title="cap.aspx" href="/cap.aspx"><img title="cap.aspx" src="/SiteFiles/172/CaucusFiles/Strips%20and%20Blocks/CAP_BLOCK2.jpg" alt="" style="border-width:0px;" /></a>
     </div>
     <div class="ImageLinkCaption">
         
@@ -420,7 +419,6 @@ FAX: 717-705-1946&nbsp;</p>
                                     <div class="FormValue">
                                         <div id="ctl00_cphContent_RadCaptcha1" class="RadCaptcha RadCaptcha_Default">
 		<div id="ctl00_cphContent_RadCaptcha1_ctl01">
-			<img id="ctl00_cphContent_RadCaptcha1_CaptchaImageUP" alt="" src="../../../Telerik.Web.UI.WebResource.axd?type=rca&amp;isc=true&amp;guid=a53ca114-99ee-46ae-9e57-cafd16161c7b" style="height:50px;width:180px;border-width:0px;display:block;" /><a id="ctl00_cphContent_RadCaptcha1_CaptchaLinkButton" class="rcRefreshImage" title="Generate New Image" href="javascript:__doPostBack(&#39;ctl00$cphContent$RadCaptcha1$CaptchaLinkButton&#39;,&#39;&#39;)" style="display:block;">Generate New Image</a>
 		</div><p><input name="ctl00$cphContent$RadCaptcha1$CaptchaTextBox" type="text" maxlength="5" id="ctl00_cphContent_RadCaptcha1_CaptchaTextBox" /><label for="ctl00_cphContent_RadCaptcha1_CaptchaTextBox" id="ctl00_cphContent_RadCaptcha1_CaptchaTextBoxLabel"></label></p>
 </div>
                                         <div style="float: left; clear: left; padding-bottom: 10px;">
@@ -460,28 +458,23 @@ FAX: 717-705-1946&nbsp;</p>
 <div id="ToolBar">
     <div id="ctl00_ctl03_pnlYouTube" class="ToolbarLeft">
 	
-        <a id="ctl00_ctl03_lnkYouTube" href="https://www.youtube.com/user/RepBrettMiller" target="_blank"><img src="/Display/Images/Toolbar/YouTube.png" alt="" style="border-width:0px;" /></a>
     
 </div>
     <div id="ctl00_ctl03_pnlRSS" class="ToolbarLeft">
 	
-        <a id="ctl00_ctl03_lnkRSS" href="http://www.repmiller.com/latestnews.aspx"><img src="/Display/Images/Toolbar/RSS.png" alt="" style="border-width:0px;" /></a>
     
 </div>
     <div id="ctl00_ctl03_pnlFacebook" class="ToolbarLeft">
 	
-        <a id="ctl00_ctl03_lnkFacebook" href="https://www.facebook.com/RepMiller" target="_blank"><img src="/Display/Images/Toolbar/Facebook.png" alt="" style="border-width:0px;" /></a>&nbsp;
     
 </div>
     
     <div id="ctl00_ctl03_pnlVideo" class="ToolbarLeft">
 	
-        <a id="ctl00_ctl03_lnkVideo" href="http://www.repmiller.com/youtubevideo.aspx" target="_blank" style=" color:Black;"><img src="/Display/Images/Toolbar/Video.png" alt="" style="border-width:0px;" /></a> 
     
 </div>
     <div id="ctl00_ctl03_pnlAudio" class="ToolbarLeft">
 	
-        <a id="ctl00_ctl03_lnkAudio" href="http://www.repmiller.com/audio.aspx" target="_blank" style=" color:Black;"><img src="/Display/Images/Toolbar/Audio.png" alt="" style="border-width:0px;" /></a>
     
 </div>
     <div class="ToolbarLeft" style="margin: 5px 0 0 10px;">
@@ -494,7 +487,6 @@ FAX: 717-705-1946&nbsp;</p>
 </div>
     <div id="ctl00_ctl03_pnlContact" class="ToolbarRight">
 	
-        <a id="ctl00_ctl03_lnkContact" href="http://www.repmiller.com/contact.aspx"><img src="/Display/Images/Toolbar/Contact.png" alt="" style="border-width:0px;" /></a>
     
 </div>
 </div>
@@ -538,7 +530,7 @@ document.getElementById('ctl00_cphContent_RadCaptcha1_ctl00').dispose = function
     Array.remove(Page_Validators, document.getElementById('ctl00_cphContent_RadCaptcha1_ctl00'));
 }
 Sys.Application.add_init(function() {
-    $create(Telerik.Web.UI.RadCaptcha, {"_audioUrl":"/Telerik.Web.UI.WebResource.axd?type=cah\u0026isc=true\u0026guid=a53ca114-99ee-46ae-9e57-cafd16161c7b","_enableAudio":false,"_persistCode":false,"clientStateFieldID":"ctl00_cphContent_RadCaptcha1_ClientState"}, null, null, $get("ctl00_cphContent_RadCaptcha1"));
+    $create(Telerik.Web.UI.RadCaptcha, {"_audioUrl":"/Telerik.Web.UI.WebResource.axd?type=cah\u0026isc=true\u0026guid=6dabbc44-413f-4c81-b6c4-b374097ff34d","_enableAudio":false,"_persistCode":false,"clientStateFieldID":"ctl00_cphContent_RadCaptcha1_ClientState"}, null, null, $get("ctl00_cphContent_RadCaptcha1"));
 });
 //]]>
 </script>

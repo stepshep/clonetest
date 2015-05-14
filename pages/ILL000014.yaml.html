@@ -72,7 +72,6 @@
 	</tr>
 	<tr class="rsform-block rsform-block-forby">
 		<td> (*)</td>
-		<td><img src="/contact-us?task=captcha&amp;componentId=36&amp;tmpl=component&amp;sid=1168489696" id="captcha36" alt=" "/><br /><input type="text" name="form[forby]" value="" id="captchaTxt36" style="text-align:center;width:75px;" class="rsform-captcha-box" /><div class="formClr"></div><span id="component36" class="formNoError">Invalid Input</span></td>
 		<td></td>
 	</tr>
 	<tr class="rsform-block rsform-block-send">
@@ -82,63 +81,6 @@
 	</tr>
 </table>
 <input type="hidden" name="form[formId]" value="3"/></form><script type="text/javascript">ajaxExtraValidationScript[3] = function(task, formId, data) {var formComponents = {};formComponents[23]='prefix';formComponents[28]='firstName';formComponents[29]='lastName';formComponents[30]='address';formComponents[31]='city';formComponents[32]='state';formComponents[33]='zipCode';formComponents[34]='phone';formComponents[24]='email';formComponents[35]='issue';formComponents[26]='essay1';formComponents[36]='forby';if (task == 'afterSend') {
-					for (var j=0; j<formComponent.length; j++) {
-						if (formComponent[j]) {
-							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '');
-						}
-					}
-				}
-			}
-		}
-		var ids = data.response[1].split(',');
-		for (var i=0; i<ids.length; i++) {
-			var id = parseInt(ids[i]);
-			if (!isNaN(id) && typeof formComponents[id] != 'undefined') {
-				var formComponent = rsfp_getFieldsByName(formId, formComponents[id]);
-				if (formComponent && formComponent.length > 0) {
-					for (var j=0; j<formComponent.length; j++) {
-						if (formComponent[j]) {
-							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '') + ' rsform-error';
-						}
-					}
-				}
-			}
-		}
-		}
-}</script>
-                                </div>
-                            </div>
-                        </div>
-                                                                    </div>
-                                <div class="rt-grid-3 ">
-                <div id="rt-sidebar-a">
-                                        <div class="rt-block">
-				<div class="module-content">
-					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
-					<div class="module-l"><div class="module-r">
-	                							<div class="module-title"><div class="module-title2"><h2 class="title">Contact Us</h2></div></div>
-		                						<div class="module-inner">
-														<div class="module-inner2">
-									                		
-
-<div class="custom"  >
-	<p><strong>Capitol Office:</strong><br />417 Capitol Building <br />Springfield, IL 62706  <br />(217) 782-5509</p>
-<p><strong>District Office:</strong><br />903 West Washington, Suite 5<br />Benton, IL 62812  <br />(618) 439-2504</p></div>
-							</div>
-						</div>
-					</div></div>
-					<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
-				</div>
-            </div>
-        	                    <div class="rt-block">
-				<div class="module-content">
-					<div class="module-tm"><div class="module-tl"><div class="module-tr"></div></div></div>
-					<div class="module-l"><div class="module-r">
-	                							<div class="module-title"><div class="module-title2"><h2 class="title">eNewsletter</h2></div></div>
-		                						<div class="module-inner">
-														<div class="module-inner2">
-									                		
-<div class="rsform">
 	<form method="post"  id="userForm" enctype="multipart/form-data" action="http://www.senatorforby.com/index.php/contact-us"><fieldset class="formFieldset">
 <legend>eNewsletter Signup</legend>
 
@@ -171,59 +113,3 @@
 </ol>
 </fieldset>
 <input type="hidden" name="form[formId]" value="4"/></form><script type="text/javascript">ajaxExtraValidationScript[4] = function(task, formId, data) {var formComponents = {};formComponents[38]='firstName';formComponents[39]='lastName';formComponents[41]='email';if (task == 'afterSend') {
-					for (var j=0; j<formComponent.length; j++) {
-						if (formComponent[j]) {
-							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '');
-						}
-					}
-				}
-			}
-		}
-		var ids = data.response[1].split(',');
-		for (var i=0; i<ids.length; i++) {
-			var id = parseInt(ids[i]);
-			if (!isNaN(id) && typeof formComponents[id] != 'undefined') {
-				var formComponent = rsfp_getFieldsByName(formId, formComponents[id]);
-				if (formComponent && formComponent.length > 0) {
-					for (var j=0; j<formComponent.length; j++) {
-						if (formComponent[j]) {
-							formComponent[j].className = formComponent[j].className.replace(' rsform-error', '') + ' rsform-error';
-						}
-					}
-				}
-			}
-		}
-		}
-}</script></div>							</div>
-						</div>
-					</div></div>
-					<div class="module-bm"><div class="module-bl"><div class="module-br"></div></div></div>
-				</div>
-            </div>
-        	
-                </div>
-            </div>
-
-                    <div class="clear"></div>
-                </div>
-            </div>
-																							</div></div>
-						</div>
-					</div></div>
-				</div></div>
-			</div>
-		</div></div></div>
-						<div id="rt-main-footer" class="bottom-shadows-dark"><div id="rt-footer-overlay" class="bottom-overlay-none"><div id="rt-main-footer2">
-									<div id="rt-copyright">
-				<div class="rt-container">
-					<div class="rt-grid-12 rt-alpha rt-omega">
-    		<div class="clear"></div>
-		<span class="copytext">Copyright - Illinois Senate Democratic Caucus - 2015</span>
-		
-</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-									        	        			</div></div></div>
-							</body>
-</html>
