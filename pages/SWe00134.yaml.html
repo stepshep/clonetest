@@ -1,0 +1,303 @@
+<form id="contact" name="contact" action="http://mn.gov/gov-stat/cgi-bin/TFMail.cgi" accept-charset="utf-8" method="post">
+
+
+
+  <p>Fields marked with an <strong>*</strong> are required.
+
+  </p>
+
+
+<table>
+
+<tbody>
+
+<tr>
+
+  <td width="120" class="tabletext">
+    <label for="prefix">Prefix: </label> 
+    (Ex: Mr. and Mrs.)</td>
+
+  <td class="tabletext"><strong>*</strong>
+      <input id="prefix" maxlength="20" size="7" name="PREFIX">
+  </td>
+
+</tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="first">First name :</label>
+</td>
+
+<td class="tabletext"><strong>*</strong>
+
+    <input id="first" maxlength="30" name="FIRST">
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="last">Last name :</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+
+    <input id="last" maxlength="30" name="LAST">
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="address1">Street Address :</label>
+</td>
+
+<td class="tabletext"><strong>*</strong>    <input id="address1" maxlength="50" name="ADDR1">
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="address2"></label>
+</td>
+
+<td class="tabletext">&nbsp;
+    <input id="address2" maxlength="50" name="ADDR2">
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="city">City :</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+
+    <input id="city" maxlength="30" name="CITY">
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="STATE">State:</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+
+    <select name="STATE" size="1" id="STATE">
+  
+    <option value=""></option>
+  
+    <option value="MN">Minnesota</option>  
+    <option value="AL">Alabama</option>  
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Deleware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennesee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+    
+  </select>
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="zip">Zip Code :</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+
+    <input type="text" id="zip" maxlength="5" name="ZIP">
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="phone">Phone :</label>
+</td>
+
+<td class="tabletext">&nbsp;&nbsp;
+    <input id="phone" maxlength="40" name="PHONE" onBlur="validatePhone(this)">
+&nbsp;&nbsp;(format nnn-nnn-nnnn)</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="email">E-mail :</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+
+    <input id="email" maxlength="40" name="EMAIL" value="" />
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="contactGov">Contact :</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+    <input type="radio" name="CONTACT" id="contactGov" value="Governor" checked="checked">Governor
+    <input type="radio" name="CONTACT" id="contactLtGov" value="Lt. Governor"> Lt. Governor
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="required-issue1">Issue Topic :</label>
+</td>
+
+<td class="tabletext"><strong>* </strong>
+
+    <select name="ISSUE1" size="1" id="required-issue1">
+    <option value=""></option>
+    <option value="AG">Agriculture</option>
+    <option value="BUD">Budget</option>
+    <option value="BSP">Boy Scout Project</option>
+    <option value="COMM">Commerce and Banking</option>
+    <option value="EDHI">Education Higher</option>
+    <option value="EDK12">Education K-12</option>
+    <option value="ELE">Elections</option>
+    <option value="ENGY">Energy</option>
+    <option value="ENV">Environment</option>
+    <option value="FED">Federal Relations</option>
+    <option value="GAM">Gambling</option>
+    <option value="HHS">Health and Human Services</option>
+    <option value="HINS">Health Insurance</option>
+    <option value="HO">Housing</option>
+    <option value="HR">Human Rights</option>
+    <option value="JOBS">Jobs and Training</option>
+    <option value="LAI">Labor and Industry</option>
+    <option value="MA">Military Affairs</option>
+    <option value="PS">Public Safety, Crimes</option>
+    <option value="SEN">Senior Issues</option>
+    <option value="STP">Student Project</option>
+    <option value="TAX">Taxes</option>
+    <option value="TEL">Telecommunications</option>
+    <option value="TRAN">Transportation and Infrastructure</option>
+    <option value="VA">Veterans Affairs</option>
+    <option value="OTHR">Others</option>    
+  </select>
+</td></tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="subject">Subject :</label>
+</td>
+
+<td class="tabletext">&nbsp;&nbsp;
+    <input id="subject" maxlength="40" name="SUBJECT">
+</td></tr>
+
+<tr>
+
+
+</tr>
+
+<tr>
+
+<td class="tabletext">
+  <label for="message">Message: <br><br>
+  	<em>must be fewer than<br>10,000 characters</em></label>
+
+</td>
+
+<td><span class="tabletext">
+
+  <textarea id="message" name="MSG" rows="15" wrap="VIRTUAL" cols="35"></textarea>
+
+</span></td>
+
+</tr>
+
+<tr>
+
+<td class="tabletext">&nbsp;</td>
+
+</tr><tr>
+
+<td class="tabletext">
+  <label for="required-response">Written Response Needed:</label>
+</td>
+
+
+<td class="tabletext"><strong>* </strong>
+
+    <select name="RSP" size="1" id="required-response">
+  
+    <option value=""></option>
+  
+    <option value="NO">NO</option>
+  
+    <option value="YES">YES</option>
+      
+  </select>
+</td></tr>
+
+
+<tr><td class="tabletext" colspan="2"><br />
+
+<input type="checkbox" id="subscribe" />
+
+	<label for="subscribe" class="labelformat">Subscribe me to the Governor's newsletter</label> <span id="response"></span> <br />
+    
+    <br />
+</td>
+
+</tr>
+
+
+<tr>
+
+<td colspan="2">
+  <input type="button" id="contactbutton" value="Submit Information" name="contactbutton">  &nbsp; &nbsp; 
+  <input type="reset" value="Clear Form" name="reset">
+</td>
+
+</tr></tbody></table>
+
+</form>

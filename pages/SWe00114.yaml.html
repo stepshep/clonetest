@@ -1,0 +1,59 @@
+                <form class="translate" id="ms-translate" method="get" action="/portal/translatedisclaimer.html" onSubmit="return checkForm(this);">              
+                   <label for="to-language" class="accessibility">Translate this page to: </label>
+                   <select name="to" id="to-language">                  
+                      <option value="en" selected="" disabled="">English</option>
+                      <option value="ar">العربية</option>
+                      <option value="bg">български</option>
+                      <option value="ca">Català</option>
+                      <option value="zh-chs">中文</option>
+                      <option value="zh-cht">繁體中文</option>
+                      <option value="cs">Čeština</option>
+                      <option value="da">Dansk</option>
+                      <option value="nl">Nederlands</option>          
+                      <option value="et">Eesti</option>
+                      <option value="fi">Suomi</option>
+                      <option value="fr">Français</option>
+                      <option value="de">Deutsch</option>
+                      <option value="el">Ελληνικά</option>
+                      <option value="ht">Kreyòl Ayisyen</option>
+                      <option value="he">עברית</option>
+                      <option value="hi">हिन्दी</option>
+                      <option value="mww">Hmong Daw</option>
+                      <option value="hu">Magyar</option>
+                      <option value="id">Indonesia</option>
+                      <option value="it">Italiano</option>
+                      <option value="ja">日本語</option>
+                      <option value="ko">한글</option>
+                      <option value="lv">Latviešu</option>
+                      <option value="lt">Lietuvių</option>
+                      <option value="ms">Melayu</option>
+                      <option value="no">Norsk</option>
+                      <option value="fa">فارسی</option>
+                      <option value="pl">Polski</option>
+                      <option value="pt">Português</option>
+                      <option value="ro">Română</option>
+                      <option value="ru">Русский</option>
+                      <option value="sk">Slovenčina</option>
+                      <option value="sl">Slovenščina</option>
+                      <option value="es">Español</option>
+                      <option value="sv">Svensk</option>
+                      <option value="th">ภาษาไทย</option>
+                      <option value="tr">Türkçe</option>
+                      <option value="uk">Українська</option>
+                      <option value="ur">ہندوستانی</option>
+                      <option value="vi">Tiếng Việt</option>
+                   </select>
+                   
+                   &nbsp;<button type="submit" id="translate-go" form="ms-translate" formaction="/portal/translatedisclaimer.html" formmethod="get" title="Translate this page" >Translate this Page</button>             
+                </form>
+    				<form class="search has-option" method="get" action="/governor/searchresults.html" role="search">
+    				<label class="accessibility" for="searchinput">Input Search Query</label>
+    				<input type="text" title="Search..." id="searchinput" name="q" class="hint" />
+    				  <label for="search_scope" class="accessibility">Select an Area to Search</label>
+    				  <select name="site" id="search_scope">
+                        	<option selected="selected" value="GOVDPx" data-frontend="mg_governor">in Governor&#39;s Office</option>
+                            <option value="default_collection" data-frontend="massgov">in Mass.Gov</option>
+						</select>
+    				    				  <input id="submit" type="image" src="/resources/images/template/search-button.png" alt="Search" />
+    				</form>
+                            			<p>The following form helps us to process your submission in a timely manner while also controlling spam. Unfortunately we are unable to accept e-mail attachments because of the risk of Internet viruses. Fields marked with an asterisk (*) are required. <strong>Please note: If you are inviting Governor Baker to an event, please visit our </strong><a href="/governor/constituent-services/governors-office-scheduling-requests.html" class="titlelink" >scheduling requests page</a><strong> instead.</strong></p><form action="/cgi-bin/massgovmail.cgi" enctype="application/x-www-form-urlencoded" method="post"><fieldset><legend>Submit</legend> <input name="file" type="hidden" value="/governor/forms/contact-us-8-15-07.txt" /><table border="0" width="100%"><tbody><tr><td align="right" colspan="1" rowspan="1"><label for="fname">First Name</label>: *</td><td colspan="1" rowspan="1" width="0"><input id="fname" maxlength="50" name="fname" size="40" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="lname">Last Name</label>: *</td><td colspan="1" rowspan="1"><input id="lname" maxlength="50" name="lname" size="40" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="address">Address Line 1</label>: *</td><td colspan="1" rowspan="1"><input id="address" maxlength="50" name="address" size="50" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="address2">Address Line 2</label>:</td><td colspan="1" rowspan="1"><input alt="address line 2" id="address2" maxlength="50" name="address2" size="50" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="city">City/Town</label>: *</td><td colspan="1" rowspan="1"><input id="city" maxlength="50" name="city" size="40" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="state">State</label>: *</td><td colspan="1" rowspan="1"><input id="state" maxlength="10" name="state" size="10" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="zip">Zip</label>: *</td><td colspan="1" rowspan="1"><input id="zip" maxlength="10" name="zip" size="10" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="phone">Phone</label>: *</td><td colspan="1" rowspan="1"><input id="phone" maxlength="25" name="phone" size="50" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="customeremail.email">Email</label>: *</td><td colspan="1" rowspan="1"><input id="customeremail.email" maxlength="50" name="customeremail.email" size="50" type="text" /><input name="customeremail.dflt" type="hidden" value="none@state.ma.us" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="subject">Subject</label>:</td><td colspan="1" rowspan="1"><input id="subject" maxlength="75" name="subject" size="50" type="text" /></td></tr><tr><td align="right" colspan="1" rowspan="1"><label for="comments">Comments</label>: *</td><td colspan="1" rowspan="1"><textarea cols="40" id="comments" name="comments" rows="10">&#160;</textarea></td></tr></tbody></table><br clear="none" /><input type="submit" value="Submit" /><input name="success" type="hidden" value="http://www.mass.gov/governor/constituent-services/contact-governor-office/submission-successful.html" /></fieldset></form>                            </div><!-- #pagedescription -->

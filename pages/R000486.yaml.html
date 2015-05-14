@@ -1,0 +1,32 @@
+          <form action="/search/">
+            <fieldset>
+              <input class="search" name="q" type="search">
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+<form method="get" action="/forms/writeyourrep/" class="zipform">
+    <span style="font-size: 18px;">
+    ZIP: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
+    +4: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
+    <input type="submit" value="Submit" />
+    </span>
+</form>
+        <form action="http://thomas.loc.gov/cgi-bin/query" method="post" class="search-form">
+          <fieldset>
+            <label for="search">Bill Search</label>
+            <div class="search-box">
+              <input type="text" id="Box" class="search" name="queryc114" />
+              <input type="submit" value="Submit">
+            </div>
+            <ul class="radio-list">
+              <li>
+                <input checked type="radio" id="topic" name="select">
+                <label for="topic">by topic</label>
+              </li>
+              <li>
+                <input type="radio" id="number" name="select">
+                <label for="number">by bill number</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>

@@ -1,0 +1,85 @@
+<form method="get" action="http://www.google.com/search">
+        <input type="text" name="q" size="25" maxlength="255" value="Site Search"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; background-color:#C0C6DD" />
+        <input name="btnG" type="submit" class="gobutton" value="GO" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; background-color:#C0C6DD; height: 1.8em;" />
+
+</form>
+ <form action="feedout.php" method="post" name="Contact" id="Contact">
+    <?php
+$ipi = getenv("REMOTE_ADDR"); 
+$httprefi = getenv ("HTTP_REFERER");
+$httpagenti = getenv ("HTTP_USER_AGENT");
+?>
+<span class="hdoheader">Contact Me</span>
+<p>Name:<br>
+          <label for="nameis"></label>
+        <input name="nameis" type="text" id="nameis" size="40"></p>
+        <p>Email:<br>
+          <label for="visitormail"></label>
+          <input name="visitormail" type="email" required="required" id="visitormail" size="40"></p>
+        <p>Address:<br>
+          <label for="address"></label>
+          <input name="address" type="text" id="address" size="40"></p>
+        <table border="0">
+          <tr>
+            <td><p>City:<br>
+          <label for="city"></label>
+          <input name="city" type="text" id="city" size="25">
+        </p>
+    </td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+            <p>State:<br>
+          <label for="state"></label>
+          <input name="state" id="state" type="text" size="5">
+</p>
+</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+<td>
+    <p>Zip:<br>
+    <label for="zip"></label>
+    <input name="zip" type="text" required="required" id="zip" size="10"></span></p>
+</td>
+</tr>
+</table>
+        
+        
+        
+        <p>Comments:<br>
+          <label for="comments"></label>
+          <textarea name="comments" cols="80" rows="10" id="comments"></textarea>
+        </p>
+        <p>
+          <input name="EmailUpdates" id="EmailUpdates" type="checkbox" value="yes">
+          Please send me email updates</p>
+        <p><strong>
+          <input type="submit" value="Submit">
+          </strong></p>
+    </form>
+</div><form action="emailup.php" method="post" name="EmailUp" id="EmailUp">
+    <?php
+$ipi = getenv("REMOTE_ADDR"); 
+$httprefi = getenv ("HTTP_REFERER");
+$httpagenti = getenv ("HTTP_USER_AGENT");
+?>
+      <fieldset>
+        <legend>Sign Up for Email Updates</legend>
+        <p>First Name:<br>
+          <label for="firstname"></label>
+          <input name="firstname" type="text" id="firstname" size="28"><br>
+Last Name:<br>
+          <label for="lastname"></label>
+          <input name="lastname" type="text" id="lastname" size="28"><br>
+Email:<br>
+          <label for="visitormail"></label>
+          <input name="visitormail" type="email" required="required" id="visitormail" size="28"><br>
+Zip:<br>
+          <label for="zip"></label>
+          <input name="zip" type="text" required="required" id="zip" size="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<strong>
+          <input type="submit" value="Submit" />
+          </strong></p>
+         
+      </fieldset>
+    </form>

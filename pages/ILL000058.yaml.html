@@ -1,0 +1,59 @@
+					<form name="rokajaxsearch" id="rokajaxsearch" class="blue" action="http://www.illinoissenatedemocrats.com/" method="get">
+<div class="rokajaxsearch ">
+	<div class="roksearch-wrapper">
+		<input id="roksearch_search_str" name="searchword" type="text" class="inputbox" value=" Search..." />
+	</div>
+
+	
+	<div id="roksearch_results"></div>
+</div>
+</form>				</div>
+	<form action="/index.php?option=com_contact" method="post" name="emailForm" id="emailForm" class="form-validate">
+		<div class="contact_email">
+			<label for="contact_name">
+				&nbsp;Enter your Name:
+			</label>
+			<br />
+			<input type="text" name="name" id="contact_name" size="30" class="inputbox" value="" />
+			<br />
+			<label id="contact_emailmsg" for="contact_email">
+				&nbsp;E-mail address:
+			</label>
+			<br />
+			<input type="text" id="contact_email" name="email" size="30" value="" class="inputbox required validate-email" maxlength="100" />
+			<br />
+			<label for="contact_subject">
+				&nbsp;Message Subject:
+			</label>
+			<br />
+			<input type="text" name="subject" id="contact_subject" size="30" class="inputbox" value="" />
+			<br /><br />
+			<label id="contact_textmsg" for="contact_text">
+				&nbsp;Enter your Message:
+			</label>
+			<br />
+			<textarea cols="50" rows="10" name="text" id="contact_text" class="inputbox required"></textarea><br /><br />			<div>
+				<div style="float:left;" >
+					Please enter the text in box , you see in below image:				</div>
+				<br />
+				<div style="" >
+					<img id='xiCaptchaImage' src="/index.php?option=com_joomlaxi&task=generateImage&value=1431615454" /> 
+				</div>
+				
+				<div style="" >
+					<input class="inputbox required" type="text" id="jsCaptchaValue" name="jsCaptchaValue" size="20" value="" />
+				</div>
+			</div>
+			<div style="clear:both"></div>
+
+		
+						<br />
+				<input type="checkbox" name="email_copy" id="contact_email_copy" value="1"  />
+				<label for="contact_email_copy">
+					E-mail a copy of this message to your own address.				</label>
+						<br />
+			<br />
+			<div class="readon-wrap1"><div class="readon1-l"></div><a class="readon-main"><span class="readon1-m"><span class="readon1-r"><input class="button validate" type="submit" value="Send" /></span></span></a></div>
+		</div>
+
+	</form></div>

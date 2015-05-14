@@ -1,0 +1,236 @@
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+		<form action="https://labradorforms.house.gov/index.cfm?sectionid=47&sectiontree=8,44,47" method="post">
+			<p style="color: rgb(119, 119, 119); margin-left: 0px;">
+				Enter your Email and click submit to<br />
+				receive email alerts on issues affecting you</p>
+			<table border="0" cellpadding="0" cellspacing="0" style="margin-left: 24px; margin-top: 5px;" width="208">
+				<tbody>
+					<tr>
+						<td align="right" width="148">
+						<td align="left" width="79">
+							<input class="form_submit_button" id="form_submit_button_4" name="submitform" style="margin-left: 0px; border: 1px solid rgb(255, 255, 255);" type="submit" value="Submit" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+						<div class="sectionintro"><form action="index.cfm?sectionid=2" method="get" onsubmit="return checkformsearch(this)" style="margin: 0px;">
+	<table border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" width="208">
+		<tbody>
+			<tr>
+				<td align="right" valign="top" width="155">
+					<p style="display: none;">
+						<label for="searchkey">Keyword:</label></p>
+					<p>
+						<input class="text" id="searchkey" name="searchkey" style="height: 14px; border: 1px solid rgb(255, 255, 255);" type="text" /></p>
+				</td>
+				<td align="left" valign="bottom" width="72">
+<!--
+					<p id="searchEntire" style="display: none;">
+						<input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1" /></p>
+					<p id="searchSection" style="display: none;">
+						<input class="radiobutton" id="this_section" name="location" type="radio" value="1" /></p> 
+-->
+					<p class="submitbutton">
+						<span><input class="form_submit_button" style="margin-left: 0px; margin-top: 2px; border:1px solid #fff;" type="submit" value="Search" /> </span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+			<form action="/email-me/" id="custom_form6" name="custom_form" class="custom_form" method="post">
+				
+				<p>
+
+Use this form to contact Rep. Labrador about pending legislation, current issues, or with requests for assistance.
+</p>
+<p>
+If you need casework-related help, or help with a federal agency, please <a href="/index.cfm?sectionid=122&amp;sectiontree=3,122">click here</a>.
+</p>
+    	<p class="req">* indicates required field.</p>
+    	<h2>Primary Contact</h2>
+		<p>
+        	 <label>Prefix:</label>
+			 <select name="prefix" size="1" id="req_prefix">
+          <option value="Mr. ">Mr.</option>
+
+          <option value="Mrs.">Mrs.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="Miss">Miss</option>
+          <option value="Dr.">Dr.</option>
+          <option value="Hon.">Hon.</option>
+          <option value="Rev.">Rev.</option>
+
+          <option value="Rabbi">Rabbi</option>
+                  </select>
+              </p>
+			     <p>
+        	 <label>Military Rank:</label>
+             <input type="text" name="militaryrank" class="text" maxlength="30" />
+        </p>
+		<p>
+        	<label>First Name:<span>*</span></label>
+            <input type="text" name="firstname" id="req_firstname" maxlength="90" class="text" />
+
+        </p>
+        <p>
+        	<label>Middle Initial:</label>
+             <input type="text" name="middle" class="text" style="width:15px;" maxlength="2" />
+        </p>
+        <p>
+        	<label>Last Name:<span>*</span></label>
+
+            <input type="text" name="lastname" id="req_lastname" class="text" maxlength="90" />
+        </p>
+        <p>
+        	 <label>Suffix:</label>
+             <input type="text" name="suffix" class="text1" maxlength="5" />
+        </p>
+
+        <p>
+
+        	<label>Street Address:<span>*</span></label>
+            <input type="text" name="street" id="req_street" class="text" maxlength="190" />
+        </p>
+        <p>
+        	<label>Address 2:</label>
+            <input type="text" name="street2" class="text" maxlength="190" />
+
+        </p>
+        <p>
+        	<label>City:<span>*</span></label>
+            <input type="text" name="city" id="req_city" class="text" maxlength="100" />
+        </p>
+        <p>
+        	<label>State:<span>*</span></label>
+
+         
+              <select name="state" id="req_state">		
+             <option selected="" value="ID">ID</option>
+	</select>
+            
+        </p>
+        <p>
+        	<label>Zip Code:<span>*</span></label>
+            <input type="text" name="zip" id="req_zip" class="zip" maxlength="5" />
+
+          <!--  <label style="float:none; width:auto;">+4</label> 
+            <input type="text" name="zipfour" id="zip2" class="zip" maxlength="4" />
+            <small>(<a target="_blank" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" href="http://zip4.usps.com/zip4/welcome.jsp" onclick="return (exitMsg())" class="bookmarkImage" id="zip4">Determine your ZIP+4</a>)</small>-->
+        </p>
+        <p>
+
+        	<label>E-mail Address:<span>*</span></label>
+            <input type="text" name="emailaddress" id="req_email" maxlength="150" class="text" />
+        </p>
+        <p>
+        	<label>Telephone Number:</label>
+
+            <input type="text" name="phone" class="text" maxlength="14" />
+        </p>
+     
+        
+        <p>
+        	<label>Topic:<span>*</span></label>
+            <select size="1" name="subject" id="req_subject">
+				<option selected="" value="">(select one)</option>
+				<option value="CASE">Constituent Service</option>
+
+							
+								<option value="GRANT">Grant Requests</option>
+							
+								<option value="AGRI">Agriculture</option>
+							
+								<option value="BUD">Budget</option>
+							
+								<option value="DEF">Defense</option>
+
+							
+								<option value="EDU">Education/Labor</option>
+							
+								<option value="ENR">Energy</option>
+
+							
+								<option value="ENV">Environment</option>
+							
+								<option value="FAFF">International</option>
+							
+								<option value="GOV">Government Reform</option>
+							
+								<option value="HLTH">Health Care</option>
+
+							
+								<option value="HSEC">Homeland Security</option>
+							
+								<option value="IMM">Immigration</option>
+
+							
+								<option value="JUD">Judiciary</option>
+							
+								<option value="SOCIAL">Social Issues</option>
+							
+								<option value="SOC">Social Security</option>
+							
+								<option value="TELE">Telecommunications</option>
+
+							
+								<option value="TAX">Taxes and Trade</option>
+							
+								<option value="TRANS">Transportation</option>
+
+							
+								<option value="VET">Veterans</option>
+							
+								<option value="WEL">Welfare</option>
+							
+								<option value="OTH">Other</option>
+
+			</select>
+        </p>
+        <p>
+
+        	<label>Message:<span>*</span></label>
+            <textarea name="message" id="req_message" class="message"></textarea>
+        </p>
+        
+       
+        <p>
+        	<label>Would you like a Response:<span>*</span></label>
+
+            <select size="1" name="response" id="req_response">
+				<option selected="" value="">(select one)</option>
+				<option value="N">I do not need a response.</option>
+				<option value="Y">I would like a response.</option>
+			</select>
+        </p>
+
+        
+   		<input type="button" value="Submit" id="submitButton" class="form_submit_button" />
+        
+        
+       <script type="text/javascript">
+	  
+	   
+			$("input[name=aff1]").click(function(){
+					$("#req_aff1").attr("value","fill");
+									 });
+	
+	   
+	   </script>
+
+			</form>

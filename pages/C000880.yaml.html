@@ -1,0 +1,325 @@
+            <form id="searchform" class="navbar-form pull-right" action="/search_results.cfm" name="googlesearch">
+			  	<div class="input-append">
+					<input type="text" class="span2" name="q" placeholder="Site Search">
+					<button class="btn" type="submit" name="submit" value="submit"><i class="icon-search"></i> </button>
+				</div>
+            </form>
+<form name="thisForm" id="thisForm" action="webformActionIAV1.cfm" method="post" class="form-horizontal" onsubmit="return _CF_checkthisForm(this)">
+	<fieldset>
+    <legend>Contact Details</legend>
+	
+    
+	
+	<div class="control-group error">
+    <label class="control-label" for="Subject"><strong>Issue *</strong></label>
+    	<div class="controls">
+			<SELECT NAME="Subject" id="Subject" class="required">
+				<OPTION VALUE="CWM1" SELECTED></OPTION>
+					
+					
+						
+							<OPTION VALUE="AG">Agriculture</OPTION>
+						
+							<OPTION VALUE="BN">Banking & Credit</OPTION>
+						
+							<OPTION VALUE="BU">Budget & Taxes</OPTION>
+						
+							<OPTION VALUE="CM">Business, Commerce & Labor</OPTION>
+						
+							<OPTION VALUE="CG">Congress, Federal & Postal Employees</OPTION>
+						
+							<OPTION VALUE="ED">Education, Science & Technology</OPTION>
+						
+							<OPTION VALUE="EN">Energy</OPTION>
+						
+							<OPTION VALUE="EV">Environment, Nat. Resources & Wildlife</OPTION>
+						
+							<OPTION VALUE="FA">Foreign Affairs, Military & Veterans</OPTION>
+						
+							<OPTION VALUE="HC">Health Care</OPTION>
+						
+							<OPTION VALUE="HS">Homeland Security & Immigration</OPTION>
+						
+							<OPTION VALUE="JU">Judiciary & Crime</OPTION>
+						
+							<OPTION VALUE="NA">Native Americans</OPTION>
+						
+							<OPTION VALUE="MD">Social Safety Net</OPTION>
+						
+							<OPTION VALUE="EMAIL">Not Listed/Other</OPTION>
+						
+					
+				</SELECT>
+    	</div>
+  	</div>
+    
+    
+	<div class="control-group error">
+    <label class="control-label" for="Subsubject"><strong>Sub Issue *</strong></label>
+    	<div class="controls">
+   		  
+		  <SELECT NAME="Subsubject" id="Subsubject" class="required">		
+		  </SELECT>
+    	</div>
+  	</div>
+          				
+	
+	<div class="control-group error">
+    <label class="control-label" for="Prefix"><strong>Prefix *</strong></label>
+    	<div class="controls">
+      
+				<SELECT NAME="Prefix" class="required">
+					<OPTION VALUE="" selected>Please select a Prefix</OPTION>
+					<OPTION VALUE="Mr."> Mr. </OPTION>
+					<OPTION VALUE="Mrs."> Mrs. </OPTION>
+					<OPTION VALUE="Ms."> Ms. </OPTION>
+					<OPTION VALUE="Mr. and Mrs."> Mr. and Mrs. </OPTION>
+					
+					<OPTION VALUE="Dr."> Dr. </OPTION>
+					<OPTION VALUE="Reverend"> Reverend </OPTION>
+					<OPTION VALUE="Sister"> Sister </OPTION>
+					<OPTION VALUE="Pastor"> Pastor </OPTION>
+					<OPTION VALUE="The Honorable"> The Honorable </OPTION>
+					<OPTION VALUE="Representative"> Representative </OPTION>
+					<OPTION VALUE="Senator"> Senator </OPTION>
+				</SELECT>	
+    	</div>
+  	</div>
+    
+			
+	<div class="control-group error">
+    <label class="control-label" for="firstName"><strong>First Name *</strong></label>
+    	<div class="controls">
+        
+				<input name="firstName" id="firstName"  type="text" maxlength="30"  size="30"  class="required"  />
+        
+        
+    	</div>
+    </div>	
+	
+	
+    <div class="control-group error">
+    <label class="control-label" for="lastName"><strong>Last Name *</strong></label>
+    	<div class="controls">
+        
+				<input name="lastName" id="lastName"  type="text" maxlength="30"  size="30"  class="required"  />	
+    	</div>
+    </div>
+		
+	
+    <div class="control-group error">
+    <label class="control-label" for="Address1"><strong>Address *</strong></label>
+    	<div class="controls">
+        
+	  		<input name="Address1" id="Address1"  type="text" maxlength="50"  size="30"  class="required"  />
+    	</div>
+    </div>
+	
+	
+    <div class="control-group">
+    <label class="control-label" for="Address2"><strong>Address</strong></label>
+    	<div class="controls">
+        	<input name="Address2" id="Address2"  type="text" maxlength="50"  size="30"  />	
+    	</div>
+    </div>	
+	
+	 
+    <div class="control-group error">
+    <label class="control-label" for="city"><strong>City *</strong></label>
+    	<div class="controls">
+        
+	  		<input name="city" id="city"  type="text" maxlength="40"  size="30"  class="required"  />
+    	</div>
+    </div>
+
+	    
+    <div class="control-group info">
+    <label class="control-label" for="State"><strong>State *</strong></label>
+    	<div class="controls">
+        
+				<SELECT NAME="State" class="required">
+					<OPTION VALUE=" ">----Military---- </OPTION>
+					<OPTION VALUE="AA">AA </OPTION>
+					<OPTION VALUE="AE">AE </OPTION>
+					<OPTION VALUE="AP">AP </OPTION>
+					<OPTION VALUE=" ">----States---- </OPTION>
+					<OPTION VALUE="AL">Alabama </OPTION>
+					<OPTION VALUE="AK">Alaska </OPTION>
+					<OPTION VALUE="AZ">Arizona </OPTION>
+					<OPTION VALUE="AR">Arkansas </OPTION>
+					<OPTION VALUE="CA">California </OPTION>
+					<OPTION VALUE="CO">Colorado </OPTION>
+					<OPTION VALUE="CT">Connecticut </OPTION>
+					<OPTION VALUE="DE">Delaware </OPTION>
+					<OPTION VALUE="DC">District of Columbia </OPTION>
+					<OPTION VALUE="FL">Florida </OPTION>
+					<OPTION VALUE="GA">Georgia </OPTION>
+					<OPTION VALUE="HI">Hawaii </OPTION>
+					<OPTION VALUE="ID" SELECTED>Idaho </OPTION>
+					<OPTION VALUE="IL">Illinois </OPTION>
+					<OPTION VALUE="IN">Indiana </OPTION>
+					<OPTION VALUE="IA">Iowa </OPTION>
+					<OPTION VALUE="KS">Kansas </OPTION>
+					<OPTION VALUE="KY">Kentucky </OPTION>
+					<OPTION VALUE="LA">Louisiana </OPTION>
+					<OPTION VALUE="ME">Maine </OPTION>
+					<OPTION VALUE="MD">Maryland </OPTION>
+					<OPTION VALUE="MA">Massachusetts </OPTION>
+					<OPTION VALUE="MI">Michigan </OPTION>
+					<OPTION VALUE="MN">Minnesota </OPTION>
+					<OPTION VALUE="MS">Mississippi </OPTION>
+					
+					<OPTION VALUE="MO">Missouri </OPTION>
+					<OPTION VALUE="MT">Montana </OPTION>
+					<OPTION VALUE="NE">Nebraska </OPTION>
+					<OPTION VALUE="NV">Nevada </OPTION>
+					<OPTION VALUE="NH">New Hampshire </OPTION>
+					<OPTION VALUE="NJ">New Jersey </OPTION>
+					<OPTION VALUE="NM">New Mexico </OPTION>
+					<OPTION VALUE="NY">New York </OPTION>
+					<OPTION VALUE="NC">North Carolina </OPTION>
+					<OPTION VALUE="ND">North Dakota </OPTION>
+					<OPTION VALUE="OH">Ohio </OPTION>
+					<OPTION VALUE="OK">Oklahoma </OPTION>
+					<OPTION VALUE="OR">Oregon </OPTION>
+					<OPTION VALUE="PA">Pennsylvania </OPTION>
+					<OPTION VALUE="RI">Rhode Island </OPTION>
+					<OPTION VALUE="SC">South Carolina </OPTION>
+					<OPTION VALUE="SD">South Dakota </OPTION>
+					<OPTION VALUE="TN">Tennessee </OPTION>
+					<OPTION VALUE="TX">Texas </OPTION>
+					<OPTION VALUE="UT">Utah </OPTION>
+					<OPTION VALUE="VT">Vermont </OPTION>
+					<OPTION VALUE="VA">Virginia </OPTION>
+					<OPTION VALUE="WA">Washington </OPTION>
+					<OPTION VALUE="WV">West Virginia </OPTION>
+					<OPTION VALUE="WI">Wisconsin </OPTION>
+					<OPTION VALUE="WY">Wyoming </OPTION>
+				</SELECT>		
+    	</div>
+    </div>
+	
+	
+    <div class="control-group error">
+    <label class="control-label" for="zip"><strong>Zip *</strong></label>
+    	<div class="controls">
+        
+				<input name="zip" id="zip"  type="text" maxlength="10"  size="10"  class="required"  />
+    	</div>
+    </div>
+	
+	
+    <div class="control-group">
+    <label class="control-label" for="homePhone"><strong>Home Phone</strong></label>
+    	<div class="controls">
+        
+				<input name="homePhone" id="homePhone"  type="text" maxlength="30"  size="30"  />			
+    	</div>
+    </div>	
+	
+	
+    <div class="control-group">
+    <label class="control-label" for="workPhone"><strong>Work Phone</strong></label>
+    	<div class="controls">
+        <input name="workPhone" id="workPhone"  type="text" maxlength="30"  size="30"  />
+    	</div>
+    </div>
+
+	
+    <div class="control-group error">
+    <label class="control-label" for="email"><strong>Email *</strong></label>
+    	<div class="controls">
+        
+				
+				<input name="email" id="email"  type="text" maxlength="40"  size="30"  class="required"  />
+    	</div>
+    </div>
+	</fieldset>
+    <fieldset>
+    	<legend>Message</legend>
+	
+	
+    	<div class="control-group error">
+        	<label class="control-label" for="messageSubject"><strong>Email Subject: * </strong></label>
+            <div class="controls">
+			
+				<input name="messageSubject" id="messageSubject"  type="text" maxlength="75"  size="30"  class="required"  />	
+         	</div>		
+        </div>        
+	
+		<div class="control-group error">
+				<label class="control-label"><strong>Email Message: *</strong></label>
+                <div class="controls">
+				
+				
+				
+				<TEXTAREA
+					NAME="MessageBody"
+					ROWS="10"
+					WRAP="virtual"
+					CLASS="textarea span5 required"
+					onkeyup="textCounter(this,'remChar',5000)"></TEXTAREA>	
+				<br />
+	  			<small><span id="remChar">5000</span>&nbsp;characters remaining</small>
+                </div>
+	  	</div>
+      
+      </fieldset>	
+	
+	  <fieldset>
+      <legend>Additional Information</legend>
+       	<p>Answering the following questions will assist in helping me to address your concerns quickly.</p>
+        <div class="control-group">
+        <span class="spanpadtop"><strong>Would you like a  response to this inquiry? &nbsp;</strong></span>
+				
+                <label class="radio inline"><INPUT NAME="Response" TYPE="radio" value="CWM1" checked="checked">Yes</label>&nbsp;
+                <label class="radio inline"><INPUT NAME="Response" TYPE="radio" value="CRNR">No</label>
+      	</div>
+    	<div class="control-group">
+        <span class="spanpadtop"><strong>Are you a Resident of the State of Idaho? &nbsp;</strong></span>
+				
+                <label class="radio inline"><INPUT NAME="IDResident" TYPE="radio" value="yes" checked="checked">Yes</label>&nbsp;
+                <label class="radio inline"><INPUT NAME="IDResident" TYPE="radio" value="no">No</label>
+        </div>
+        <div class="control-group">
+        <span><strong>When was the last time you wrote to us? </strong></span>
+			<select name="lastcontact">
+	    		<option value="LCN - Never">Never</option>
+	    		<option value="LC0 - In the last week">In the last week</option>
+	    		<option value="LC1 - In the last month">In the last month</option>
+	    		<option value="LC6 - In the last six months">In the last six months</option>
+	   			<option value="LC12 - In the last year">In the last year</option>
+	    		<option value="LCM - More than one year ago">More than one year ago</option>
+     		</select>
+      	</div>
+		
+    </fieldset>
+    <fieldset>
+    <legend>Validation Code</legend>    
+    <small class="text-center">Please help us fight spam. Enter the validation code below to submit your email.</small>  
+	
+	
+	
+    <div class="control-group offset2">
+    	<img src="cfcontent.cfm" class="img-polaroid" />
+		<a href="http://crapo.senate.gov/contact/captcha_audio/captcha_g8ry2.wav" target="_blank" style="border: 0 px"><br />
+    	<img src="../images/contact/icon_audio-small.jpg" style="border: 0 px"/>Click to hear code phrase</a>
+		
+    </div>
+	<div class="control-group error">
+    <label class="control-label" for="captcha_code"><strong>Validation Code *</strong></label>
+    	<div class="controls">
+	        <input name="captcha_code" id="captcha_code"  type="text" class="span2 required"  /><br />
+            <span><small>(Letters are lower-case. Do not use any spaces) *</small></span>
+    	</div>
+    </div> 
+            
+		
+        	<div class="form-actions">
+				<INPUT TYPE="submit" VALUE="Submit Information" class="btn btn-primary">
+				<INPUT TYPE="reset" VALUE="Reset Form" class="btn">	
+           	</div>
+            <div>
+            <a href="privacy.cfm">Click here</a> to view my office privacy policy. </div>	
+</fieldset>
+</form>

@@ -1,0 +1,184 @@
+		<td class="ContentCell"><span id="ctl00_ctl12_ctl01_Text" class="middlecopy"><form name="contact" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
+    <table cellspacing="2" cellpadding="0" align="center">
+        <tbody>
+            <tr>
+                <td align="right">
+                <strong>Name: </strong>
+                </td>
+                <td>
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><strong>Prefix *</strong> </td>
+                            <td><strong>First Name *</strong> </td>
+                            <td><strong>MI</strong> </td>
+                            <td><strong>Last Name *</strong> </td>
+                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" maxlength="90" size="10" name="required-prefix" /></td>
+                            <td><input type="text" maxlength="90" size="12" name="required-first" /></td>
+                            <td><input type="text" maxlength="90" size="8" name="middle" /></td>
+                            <td><input type="text" maxlength="90" size="15" name="required-last" /></td>
+                            <td><input type="text" maxlength="90" size="10" name="suffix" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">  <strong>* Address: </strong> </td>
+                <td><input type="text" maxlength="190" size="60" name="required-address" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* City: </strong> </td>
+                <td><input type="text" maxlength="45" name="required-city" /> <strong>State:</strong>
+                <select name="required-state">
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option selected="selected" value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+                </select>
+                <strong>Zip:</strong>
+                <input type="text" onkeydown="f(this)" onkeyup="f(this)" maxlength="5" size="5" name="zip5" />
+                <input type="text" maxlength="4" size="4" name="zip4" onkeydown="f(this)" onkeyup="f(this)" /> </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Phone Number: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="phone" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Cell Phone: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="cell" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Email: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="required-email" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Issue: </strong> </td>
+                <td><select size="1" name="required-issue">
+                <option>(select one)</option>
+                <option value="AGR">Agriculture</option>
+                <option value="DEF">Defense</option>
+                <option value="ECON">Economy/Financial Services</option>
+                <option value="EDU">Education</option>
+                <option value="ENE">Energy</option>
+                <option value="FDS">Federal Spending</option>
+                <option value="FAFF">Foreign Affairs</option>
+                <option value="GUNS">Guns</option>
+                <option value="HEALTHCARE">Healthcare</option>
+                <option value="HOMELAND SECURITY">Homeland Security</option>
+                <option value="HOUS">Housing</option>
+                <option value="IMM">Immigration</option>
+                <option value="JUD">Judiciary</option>
+                <option value="LBR">Labor</option>
+                <option value="LIF">Life Issues</option>
+                <option value="MEDI">Medicare/Medicaid</option>
+                <option value="NATRES">Natural Resources</option>
+                <option>Other</option>
+                <option value="SCI">Science and Technology</option>
+                <option value="SMB">Small Business</option>
+                <option value="SOCIALISSUES">Social Issues</option>
+                <option value="SS">Social Security</option>
+                <option value="TAXES">Taxes</option>
+                <option value="TELE">Telecommunications</option>
+                <option value="TRADE">Trade</option>
+                <option value="TRADE">Transportation</option>
+                <option value="VET">Veterans</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"><strong>* Message: </strong> </td>
+                <td><textarea name="required-message" rows="15" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"> </td>
+                <td>
+                <label><input type="radio" value="Y" name="response" checked="checked" /> Yes, I would like a response.</label><br />
+                <label><input type="radio" value="N" name="response" /> No, I just want you to know my thoughts.</label><br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"> </td>
+                <td><label><input type="checkbox" value="subscribe" name="subscribe" /> Check this box to sign up for my E-Newsletter! </label></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <center>
+                <input type="text" name="district-contact" size="60" maxlength="100" value="InD" style="display: none;" id="district-contact" />
+                <input type="submit" value="Send Email" />
+                <input type="reset" value="Reset" />
+                </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form></span>
+                    <form action="/Forms/EmailSignup/">
+                      <fieldset>
+                        <div class="decorated-area">
+                          <input type="text" placeholder="email address" name="email" title="email address" />
+                          <input type="image" class="btn-go" src="/images/btn-go.gif" alt="go" />
+                        </div>
+                      </fieldset>
+                    </form>
+        <form action="/Search/Results.htm">
+        <fieldset>
+          <div class="decorated-field">
+            <input type="text" placeholder="search site" name="q" title="search site" />
+            <input class="btn-go" type="image" src="/images/btn-go.gif" alt="go" />
+          </div>
+        </fieldset>
+        </form>

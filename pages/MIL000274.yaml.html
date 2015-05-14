@@ -1,0 +1,590 @@
+<form name="crm" action="ima_form_post.asp"	method="POST" onSubmit="return f_check_required()">
+<input type="Hidden" name="source" value="">
+<table align=center border=0>
+	
+
+
+		<tr>
+			<td valign=bottom align=right bgcolor=white>
+				<b><font size="-1">Name</font></b>
+			</td>
+			<td>
+				<table border=0 cellspacing=0 cellpadding=0 width=100% bgcolor=white><tr><td>		
+				<table border=0 cellspacing=0 cellpadding=0>
+					<tr bgcolor=white>
+						
+							<td>
+								<b><font size="-1">Prefix</font></b>
+							</td>
+						
+							<td>
+								<b><font size="-1"><i><font face=Arial color=red size=-1>*First</i></font></font></b>
+							</td>
+						
+							<td>
+								<b><font size="-1">Middle</font></b>
+							</td>
+						
+						<td>
+							<b><font size="-1"><i><font color=red>* Last</i></font></font></b>
+						</td>
+						
+							<td>
+								<b><font size="-1">Suffix<font size=-1>(Jr., Sr., etc.)</font></font></b>
+							</td>
+						
+					</tr>
+					<tr bgcolor=#006699>
+						
+							<td>
+								<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="prefix"
+								type="text" SIZE=10 maxlength=90 
+								value="">
+							</td>
+										
+							<td>
+								<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="first_name" type="text"
+								value="" SIZE=12 maxlength=90 >
+							</td>
+										
+							<td>
+								<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="middle_name" type="text"
+								value="" SIZE=8 maxlength=90>
+							</td>
+										
+							<td>
+								<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="last_name" type="text"
+								value="" SIZE=15 maxlength=90>
+							</td>
+										
+							<td>
+								<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="suffix" type="text"
+								value="" SIZE=8 maxlength=90>
+							</td>
+						
+					</tr>
+				</table>
+				</td></tr></table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td align=right bgcolor=white>	
+				&nbsp;&nbsp;<b><font size="-1">Title</font></b>
+			</td>
+			<td bgcolor=#006699>
+				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="title" type="text"
+				value="" SIZE=60 maxlength=190>
+			</td>
+		</tr>
+	
+		<tr>
+			<td align=right bgcolor=white>	
+				&nbsp;&nbsp;<b><font size="-1">Organization</font></b>
+			</td>
+			<td bgcolor=#006699>
+				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="organization" type="text"
+				value="" SIZE=60 maxlength=190>
+			</td>
+		</tr>
+	
+		<tr>
+			<td align=right bgcolor=white>	
+				&nbsp;&nbsp;<b><font size="-1"><i><font color=red>* Address</i></font></font></b>
+			</td>
+			<td bgcolor=#006699>
+				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="street_address" type="text"
+				value="" SIZE=60 maxlength=190>
+			</td>
+		</tr>
+	
+		
+		<tr>
+			<td align=right bgcolor=white>
+				<b><font size="-1"><i><font color=red>* City</i></font></font></b>
+			</td>
+			<td bgcolor=#006699>
+
+				
+					<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="city" type="text"
+					value="" SIZE=22 maxlength=45>
+					
+					<b><font size="-1"><i><font color=red>* State</i></font></font></b>
+					<select onChange="f_sc_dd('state',this.options[this.selectedIndex].value);" NAME="state">
+					
+						<option
+						
+						value="Michigan=MI">
+						Michigan
+						</option>
+					
+						<option
+						
+						value="Alaska=AK">
+						Alaska
+						</option>
+					
+						<option
+						
+						value="Alabama=AL">
+						Alabama
+						</option>
+					
+						<option
+						
+						value="Arkansas=AR">
+						Arkansas
+						</option>
+					
+						<option
+						
+						value="America Samoa=AS">
+						America Samoa
+						</option>
+					
+						<option
+						
+						value="Arizona=AZ">
+						Arizona
+						</option>
+					
+						<option
+						
+						value="California=CA">
+						California
+						</option>
+					
+						<option
+						
+						value="Colorado=CO">
+						Colorado
+						</option>
+					
+						<option
+						
+						value="Connecticut=CT">
+						Connecticut
+						</option>
+					
+						<option
+						
+						value="D.C.=DC">
+						D.C.
+						</option>
+					
+						<option
+						
+						value="Delaware=DE">
+						Delaware
+						</option>
+					
+						<option
+						
+						value="Foreign Correspondence=FC">
+						Foreign Correspondence
+						</option>
+					
+						<option
+						
+						value="Florida=FL">
+						Florida
+						</option>
+					
+						<option
+						
+						value="Georgia=GA">
+						Georgia
+						</option>
+					
+						<option
+						
+						value="Guam=GU">
+						Guam
+						</option>
+					
+						<option
+						
+						value="Hawaii=HI">
+						Hawaii
+						</option>
+					
+						<option
+						
+						value="Iowa=IA">
+						Iowa
+						</option>
+					
+						<option
+						
+						value="Idaho=ID">
+						Idaho
+						</option>
+					
+						<option
+						
+						value="Illinois=IL">
+						Illinois
+						</option>
+					
+						<option
+						
+						value="Indiana=IN">
+						Indiana
+						</option>
+					
+						<option
+						
+						value="Kansas=KS">
+						Kansas
+						</option>
+					
+						<option
+						
+						value="Kentucky=KY">
+						Kentucky
+						</option>
+					
+						<option
+						
+						value="Louisiana=LA">
+						Louisiana
+						</option>
+					
+						<option
+						
+						value="Massachusetts=MA">
+						Massachusetts
+						</option>
+					
+						<option
+						
+						value="Maryland=MD">
+						Maryland
+						</option>
+					
+						<option
+						
+						value="Maine=ME">
+						Maine
+						</option>
+					
+						<option
+						
+						value="Michigan=MI">
+						Michigan
+						</option>
+					
+						<option
+						
+						value="Minnesota=MN">
+						Minnesota
+						</option>
+					
+						<option
+						
+						value="Missouri=MO">
+						Missouri
+						</option>
+					
+						<option
+						
+						value="Mississippi=MS">
+						Mississippi
+						</option>
+					
+						<option
+						
+						value="Montana=MT">
+						Montana
+						</option>
+					
+						<option
+						
+						value="North Carolina=NC">
+						North Carolina
+						</option>
+					
+						<option
+						
+						value="North Dakota=ND">
+						North Dakota
+						</option>
+					
+						<option
+						
+						value="Nebraska=NE">
+						Nebraska
+						</option>
+					
+						<option
+						
+						value="New Hampshire=NH">
+						New Hampshire
+						</option>
+					
+						<option
+						
+						value="New Jersey=NJ">
+						New Jersey
+						</option>
+					
+						<option
+						
+						value="New Mexico=NM">
+						New Mexico
+						</option>
+					
+						<option
+						
+						value="Nevada=NV">
+						Nevada
+						</option>
+					
+						<option
+						
+						value="New York=NY">
+						New York
+						</option>
+					
+						<option
+						
+						value="Ohio=OH">
+						Ohio
+						</option>
+					
+						<option
+						
+						value="Oklahoma=OK">
+						Oklahoma
+						</option>
+					
+						<option
+						
+						value="Oregon=OR">
+						Oregon
+						</option>
+					
+						<option
+						
+						value="Pennsylvania=PA">
+						Pennsylvania
+						</option>
+					
+						<option
+						
+						value="Puerto Rico=PR">
+						Puerto Rico
+						</option>
+					
+						<option
+						
+						value="Rhode Island=RI">
+						Rhode Island
+						</option>
+					
+						<option
+						
+						value="South Carolina=SC">
+						South Carolina
+						</option>
+					
+						<option
+						
+						value="South Dakota=SD">
+						South Dakota
+						</option>
+					
+						<option
+						
+						value="Tennessee=TN">
+						Tennessee
+						</option>
+					
+						<option
+						
+						value="Trust Territory=TT">
+						Trust Territory
+						</option>
+					
+						<option
+						
+						value="Texas=TX">
+						Texas
+						</option>
+					
+						<option
+						
+						value="Utah=UT">
+						Utah
+						</option>
+					
+						<option
+						
+						value="Virginia=VA">
+						Virginia
+						</option>
+					
+						<option
+						
+						value="Virgin Islands=VI">
+						Virgin Islands
+						</option>
+					
+						<option
+						
+						value="Vermont=VT">
+						Vermont
+						</option>
+					
+						<option
+						
+						value="Washington=WA">
+						Washington
+						</option>
+					
+						<option
+						
+						value="Wisconsin=WI">
+						Wisconsin
+						</option>
+					
+						<option
+						
+						value="West Virginia=WV">
+						West Virginia
+						</option>
+					
+						<option
+						
+						value="Wyoming=WY">
+						Wyoming
+						</option>
+					
+						<option
+						
+						value="D.C.=D.C.">
+						D.C.
+						</option>
+					
+					</select>
+				
+					<b><font size="-1"><i><font color=red>* Zip</i></font></font></b>
+					<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="zip_5" type="text"
+					value="" SIZE=5 maxlength=5>
+				
+					<b><font size="-1">-</font></b>
+					<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="zip_4" type="text"
+					value="" SIZE=4 maxlength=4>
+				
+			</td>
+		</tr>
+	
+		<tr>
+			<td bgcolor=white align=right>
+				<b><font size="-1">Phone</font></b>
+			</td>
+			<td bgcolor=#006699>
+				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="phone" type="text"
+				value="" SIZE=60 maxlength=100>
+			</td>
+		</tr>
+		
+		<tr>
+			<td bgcolor=white align=right>	
+				<b><font size="-1"><i><font color=red>* e-mail</i></font></font></b>
+			</td>
+			<td bgcolor=#006699>
+				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="email" type="text"
+				value=""
+				SIZE=60 maxlength=100>
+			</td>
+		</tr>	
+	
+			<input type="Hidden" name="subject" value="Web Form Mail=WEB FORM MAIL">
+		
+		<input type="Hidden" name="subject_style" value="HIDDEN">
+		
+		<tr>
+			<td bgcolor=white align=right valign=top>	
+				<b><font size="-1"><b>Message</b></font></b>
+			</td>
+			<td bgcolor=#006699>
+				<textarea wrap NAME="message"  cols=70 rows=10  rows="1" cols="20" ></textarea>
+			</td>
+		</tr>	
+	
+
+	<tr>
+		<td colspan=3 align=center bgcolor=white >
+			<br>
+				<INPUT TYPE="submit" name="submit" VALUE="Submit Form">
+				
+				<INPUT TYPE="submit" name="submit" VALUE="Cancel" onClick="document.crm.button_action.value='CANCEL'">
+			<br>
+		</td>
+	</tr>
+</table>
+</center>
+<input type="Hidden" name="button_action" value="SUBMIT">
+<input type="Hidden" name="form_name" value="comment28">
+<input type="Hidden" name="workflow_template" value="NONE">
+</FORM>
+<font face="Arial" size=2>End of form
+<script language="JavaScript">
+document.crm.prefix.focus()
+</script>
+
+<script language="JavaScript">
+<!--
+function f_check_required()
+{
+	var error_msg = "The following fields must be filled out:\n"
+	var error_sw = false
+	
+			if ((document.crm.first_name.value == ""|document.crm.first_name.value == "=") & document.crm.button_action.value == "SUBMIT")
+			{
+				error_sw = true;
+				error_msg = error_msg + "\nFIRST NAME must have a value."
+			}
+			
+			if ((document.crm.last_name.value == ""|document.crm.last_name.value == "=") & document.crm.button_action.value == "SUBMIT")
+			{
+				error_sw = true;
+				error_msg = error_msg + "\nLAST NAME must have a value."
+			}
+			
+			if ((document.crm.street_address.value == ""|document.crm.street_address.value == "=") & document.crm.button_action.value == "SUBMIT")
+			{
+				error_sw = true;
+				error_msg = error_msg + "\nSTREET ADDRESS must have a value."
+			}
+			
+			if ((document.crm.city.value == ""|document.crm.city.value == "=") & document.crm.button_action.value == "SUBMIT")
+			{
+				error_sw = true;
+				error_msg = error_msg + "\nCITY must have a value."
+			}
+			
+			if ((document.crm.state.value == ""|document.crm.state.value == "=") & document.crm.button_action.value == "SUBMIT")
+			{
+				error_sw = true;
+				error_msg = error_msg + "\nSTATE must have a value."
+			}
+			
+			if ((document.crm.email.value == ""|document.crm.email.value == "=") & document.crm.button_action.value == "SUBMIT")
+			{
+				error_sw = true;
+				error_msg = error_msg + "\nEMAIL must have a value."
+			}
+			
+	if (error_sw == true)
+	{
+		alert(error_msg)
+		return false
+	} else {
+		return true
+	}
+		
+}
+-->
+</script>

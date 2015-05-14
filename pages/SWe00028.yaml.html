@@ -1,0 +1,40 @@
+		<form id="local_form" action="http://www.google.com/cse"> <!-- the form action will be changed using javascript -->
+			<div class="textfield_container">
+				<input type="text" name="q" id="search_local_textfield" size="40" value="Search" onfocus="if(this.value=='Search')this.value=''" onblur="if(this.value=='')this.value='Search'" />
+
+
+			</div>
+			<div class="submit_container">
+				<!-- Step 08 -->
+				<input type="image" alt="Search" title="Search" name="submit" src="images/jb01/header_search_submitbutton.png" />
+			</div>
+		</form>
+			<form class="content" method="post" action="webmail.php" target="_parent">
+				<p>
+					<strong>Purpose of communication:</strong><br />                            
+					<input type="radio" name="comment" value="opinion" />Have Comment&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="comment" value="help" />Need Help
+					<br />
+					<br />
+					<strong><label for="fname">FIRST NAME:</label></strong><br />
+					<input name="fname" type="text" id="fname" value="" style="width:300px;" size="36" />
+					<br />
+					<br />
+					<strong><label for="lname">LAST NAME:</label></strong><br />
+					<input name="lname" type="text" id="lname" value="" style="width:300px;" size="36" />
+					<br />
+					<br />
+					<strong><label for="email">E-MAIL ADDRESS:</label></strong><br />
+					<input name="email" type="text" id="email" value="" style="width:300px;" size="36" />
+					<br />
+					<br />
+					<strong><label for="subject">PLEASE CHOOSE YOUR SUBJECT:</label></strong><br /> 
+					<select name="subject" id="subject" style="width:300px;">
+<option value="1">--</option><option value="6154">Animal Issues/Concerns</option><option value="5511">Attorney General</option><option value="56702">Budget Proposal - 2015-16</option><option value="5541">Caltrans</option><option value="38184">Child Protective Services</option><option value="56644">Child Support Services</option><option value="22912">Consumer Affairs Issues/Concerns</option><option value="38182">DIR - Workers Compensation</option><option value="6286">DMV Issues/Concerns</option><option value="54536">Drought - Conservation Suggestions</option><option value="6159">Education Issues/Concerns</option><option value="5653">Employment Development Department</option><option value="40848">Energy Issues/Concerns</option><option value="6151">Environment Issues/Concerns</option><option value="5680">Fair Employment and Housing</option><option value="6298">Food &amp; Ag Issues/Concerns</option><option value="6287">Franchise Tax Board Issues/Concerns</option><option value="38193">Gun Control</option><option value="5734">Health &amp; Human Services Agency</option><option value="5743">High Speed Rail</option><option value="5997">Immigration Issues/Concerns</option><option value="29174">Inspector General</option><option value="5773">Insurance Issues/Concerns</option><option value="38192">Labor and Workforce Development Agency</option><option value="6157">Legislation Issues/Concerns</option><option value="5824">Medi-Cal Issues/Concerns</option><option value="1">OTHER</option><option value="44283">Pardon - Request</option><option value="54336">Parole - Governors Review</option><option value="38196">Parole Issues/Concerns</option><option value="34661">Press Office</option><option value="41011">Prison Issues/Concerns</option><option value="38183">Public Records Request</option><option value="38195">Public Utilities Commission</option><option value="38197">Request - Commemorative Message from the Governor</option><option value="5585">Request - Contribution/Donation</option><option value="34805">Request - General</option><option value="32380">Small Business Issues/Concerns</option><option value="49360">State Foreclosure Assistance</option><option value="5784">Student Correspondence</option><option value="6301">Teacher Credentialing Issues/Concerns</option><option value="6096">UC/CSU Issues/Concerns</option><option value="38188">Veteran Issues/Concerns</option><option value="6127">Water Issues/Concerns</option>					</select>
+					<br /><br />
+					<strong><label for="reply">Please check if you want a reply.</label></strong> 
+					<input type="checkbox" id="reply" name="reply" value="1" />
+					<br /><br />
+					<input type="submit" name="Submit" value="Continue" style="width:150px;" />
+				</p>
+			</form>

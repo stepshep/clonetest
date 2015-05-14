@@ -1,0 +1,44 @@
+              <form onsubmit="return checkformsearch(this)" method="get" action="index.cfm?sectionid=2§iontree=">
+                <input type="text" value="Search Site" onfocus="iFocus(this)" onblur="iBlur(this)" name="searchkey" class="searchkey text" style="color: rgb(119, 119, 119);"/>
+                <input type="submit" value="" class="searchButon button"/>
+                 
+              </form>
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+	<form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
+		<input name="sectionid" type="hidden" value="2" /> <input name="sectiontree" type="hidden" value="" /> <input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(119, 119, 119);" type="text" value="Search Site" /> <input class="searchButon button" type="submit" value="SEARCH" />&nbsp;</form>
+			<form action="/contact/" method="post" id="zipauthform">
+				<p id="zipauthpreamble"></p>
+				<h2>Zip Code Authentication Form</h2>
+				<p>
+				<label for="zipcode">Zip Code:</label>
+				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+				<label for="zipfour" id="zipfourlabel">+4:</label>
+				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+				</p>
+				<p>
+				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code and your four-digit zip+4.<br /></span>
+				<input type="submit" value="Go to Form" class="button"/>
+				</p>
+				<hr/>
+				<ul>
+					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
+					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
+					<li class="zipmsg">Both of the form fields are required.</li>
+				</ul>
+			</form>

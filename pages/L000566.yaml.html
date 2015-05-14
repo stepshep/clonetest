@@ -1,0 +1,127 @@
+          <form class="search-form" action="/search/results.htm">
+            <fieldset>
+              <input type="search" placeholder="" name="q">
+            </fieldset>
+          </form>
+<form name="contact" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','phone','Phone Number','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post" class="zipform">
+    <table cellspacing="1" cellpadding="0" align="center">
+        <tbody>
+            <tr>
+                <td valign="bottom" align="right"><strong>Name: </strong> </td>
+                <td>
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><strong>Prefix *</strong></td>
+                            <td><strong>First Name *</strong> </td>
+                            <td><strong>MI</strong> </td>
+                            <td><strong>Last Name *</strong> </td>
+                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" maxlength="90" size="10" name="required-prefix" /></td>
+                            <td><input type="text" maxlength="90" size="12" name="required-first" /></td>
+                            <td><input type="text" maxlength="90" size="2" name="middle" /></td>
+                            <td><input type="text" maxlength="90" size="15" name="required-last" /></td>
+                            <td><input type="text" maxlength="90" size="4" name="suffix" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">  <strong>* Address: </strong> </td>
+                <td><input type="text" maxlength="190" size="60" name="required-address" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* City: </strong> </td>
+                <td>
+                <input type="text" maxlength="45" name="required-city" />
+                <strong>State:</strong>
+                <select name="required-state">
+                <option selected="true">OH</option>
+                </select>
+                <strong>Zip:</strong>
+                <input type="text" maxlength="5" size="5" name="zip5" />
+                <input type="text" maxlength="4" size="4" name="zip4" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Phone Number: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="phone" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Cell Phone: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="cell" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Email: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="required-email" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Issue: </strong> </td>
+                <td><select size="1" name="required-issue">
+                <option>(select one)</option>
+                <option value="AG">Agriculture</option>
+                <option value="AB">Abortion</option>
+                <option value="BUD">Budget</option>
+                <option value="CONETHICS">Congressional Ethics</option>
+                <option value="DEF">Defense</option>
+                <option value="ECON">Economy</option>
+                <option value="ED">Education</option>
+                <option value="EN">Energy</option>
+                <option value="ENV">Environment</option>
+                <option value="GUN">Gun Control</option>
+                <option value="HE">Health</option>
+                <option value="DHS">Homeland Security</option>
+                <option value="HUD">Housing</option>
+                <option value="HUD">Immigration</option>
+                <option value="INTREL">International Relations</option>
+                <option value="IRAQ">Iraq</option>
+                <option value="LABOR">Labor</option>
+                <option value="MED">Medicare</option>
+                <option value="HE_DRUG">Prescription Drugs</option>
+                <option value="SS">Social Security</option>
+                <option value="TAX">Taxes</option>
+                <option value="TRADE">Trade</option>
+                <option value="TEL">Telecommunications</option>
+                <option value="TRAN">Transportation</option>
+                <option value="VET">Veterans</option>
+                <option value="GEN">Others</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"><strong>* Message: </strong> </td>
+                <td><textarea name="required-message" rows="15" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"><strong></strong> </td>
+                <td><input type="checkbox" value="subscribe" name="subscribe" /> Check this box to sign up for Congressman Latta's E-Newsletter! </td>
+            </tr>
+            <tr>
+                <td> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <center>
+                <input type="text" value="InD" name="district-contact" size="60" maxlength="100" style="display: none;" id="district-contact" />
+                <input type="submit" value="Send Email" />
+                <input type="reset" value="Reset" />
+                </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form></span>
+      <form class="contact-form" action="/forms/form/" method="get" onsubmit="EscapeAtSign(this.email);">
+        <fieldset>
+          <strong class="title">Connect with Bob</strong>
+          <div class="row">
+            <input type="email" name="email" placeholder="Email Address">
+          </div>
+          <div class="row">
+            <input type="text" name="zip" placeholder="Zip Code">
+            <input type="submit" value="SUBMIT">
+          </div>
+        </fieldset>
+      </form>

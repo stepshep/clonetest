@@ -1,0 +1,135 @@
+      <form action="/news/documentquery.aspx" method="get">
+        <fieldset class="search">
+          <div>
+            <label class="hide-label" for="labe-1">Search text</label>
+            <input id="labe-1" class="txt" name="SearchPhrase" onclick="this.value='';" type="text" value="SEARCH"/>
+          </div>
+          <div>
+            <label class="hide-label" for="labe-2">Search text</label>
+            <input id="labe-2" class="btn-go" type="image" alt="GO" src="/images/btn-search.gif"/>
+          </div>
+        </fieldset>
+      </form>
+<form name="contact" class="zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
+    <table align="center" cellspacing="2" cellpadding="0">
+        <tbody>
+            <tr>
+                <td align="right">
+                <strong>Name: </strong>
+                </td>
+                <td>
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><strong>Prefix *</strong> </td>
+                            <td><strong>First Name *</strong> </td>
+                            <td><strong>MI</strong> </td>
+                            <td><strong>Last Name *</strong> </td>
+                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
+                        </tr>
+                        <tr>
+                            <td><input name="required-prefix" type="text" size="10" maxlength="90" AUTOCOMPLETE="OFF"></input></td>
+                            <td><input name="required-first" type="text" size="12" maxlength="90" AUTOCOMPLETE="OFF"></input></td>
+                            <td><input name="middle" type="text" size="8" maxlength="90"></input></td>
+                            <td><input name="required-last" type="text" size="15" maxlength="90"></input></td>
+                            <td><input name="suffix" type="text" size="10" maxlength="90"></input></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">  <strong>* Address: </strong> </td>
+                <td><input name="required-address" type="text" size="60" maxlength="190" AUTOCOMPLETE="OFF"></input></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* City: </strong> </td>
+                <td><input name="required-city" type="text" maxlength="45" AUTOCOMPLETE="OFF"></input> <strong>State:</strong>
+                <select name="required-state">
+                <option selected="true">CA</option>
+                </select>
+                <strong>Zip:</strong>
+                <input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" AUTOCOMPLETE="OFF"></input>
+            </tr>
+            <tr>
+                <td align="right"><strong>Phone Number: </strong> </td>
+                <td><input name="phone" type="text" size="60" maxlength="100" AUTOCOMPLETE="OFF"></input></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Cell Phone: </strong> </td>
+                <td><input name="cell" type="text" size="60" maxlength="100" AUTOCOMPLETE="OFF"></input></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Email: </strong> </td>
+                <td><input name="required-email" type="text" size="60" maxlength="100" AUTOCOMPLETE="OFF"></input></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Issue: </strong> </td>
+                <td><select name="required-issue" size="1">
+                <option selected="selected">(select one)</option>
+                <option value="AG">Agriculture</option>
+                <option value="BANK">Banking and Finance</option>
+                <option value="BUD">Budget and Economy</option>
+                <option value="CMRC">Commerce</option>
+                <option value="CONG">Congress and Elections</option>
+                <option value="CRIME">Crime Issues</option>
+                <option value="DEF">Defense and Military</option>
+                <option value="ED">Education</option>
+                <option value="EMP">Employment</option>
+                <option value="EN">Energy</option>
+                <option value="ENV">Environment</option>
+                <option value="FR">Foreign Relations</option>
+                <option value="GOV">Government Affairs</option>
+                <option value="HE">Health</option>
+                <option value="HUD">Housing and Urban Development</option>
+                <option value="IM">Immigration</option>
+                <option value="INT">Interior</option>
+                <option value="JUD">Judiciary</option>
+                <option value="LAB">Labor</option>
+                <option value="MEDICARE">Medicare and related issues</option>
+                <option value="POST">Postal Issues</option>
+                <option value="PW">Public Works</option>
+                <option value="SCI">Science and Technology</option>
+                <option value="SS">Social Security</option>
+                <option value="TAX">Taxes</option>
+                <option value="TRAN">Transportation</option>
+                <option value="TRD">Trade</option>
+                <option value="VET">Veterans</option>
+                <option value="VOTE">Voting</option>
+                <option value="WELF">Welfare</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><strong>* Message: </strong> </td>
+                <td><textarea name="required-message" rows="15" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"> </td>
+                <td><input name="subscribe" type="checkbox" value="subscribe"></input> Check this box to sign up for my E-Newsletter! </td>
+            </tr>
+            <tr>
+                <td> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <center>
+                <input type="submit" value="Send Email"></input>
+                <input type="reset" value="Reset"></input>
+                </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form></span>
+          <form action="/contact/emailsignup.htm" method="get">
+            <fieldset class="enter">
+              <div>
+                <label class="hide-label" for="labe-3">enter email address</label>
+                <input id="labe-3" class="txt" type="text" name="email" onclick="this.value='';" value="enter email address" />
+              </div>
+              <div>
+                <label class="hide-label" for="labe-4">GO</label>
+                <input id="labe-4" class="btn-go" type="image" alt="GO" src="/images/btn-go.png" />
+              </div>
+            </fieldset>
+          </form>

@@ -1,0 +1,116 @@
+		<td class="ContentCell"><span id="ctl00_ctl09_ctl01_Text" class="middlecopy"><form name="contact" class="contactForm zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
+    <table align="center" cellspacing="2" cellpadding="0">
+        <tbody>
+            <tr>
+                <td align="right"><strong>Name: </strong></td>
+                <td>
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><strong>Prefix *</strong> </td>
+                            <td><strong>First Name *</strong> </td>
+                            <td><strong>MI</strong> </td>
+                            <td><strong>Last Name *</strong> </td>
+                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
+                        </tr>
+                        <tr>
+                            <td><select name="required-prefix">
+                            <option selected="selected"></option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Miss.">Miss</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mr. and Mrs.">Mr. and Mrs.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Rev.">Rev.</option>
+                            </select> </td>
+                            <td><input name="required-first" type="text" size="12" maxlength="90" /></td>
+                            <td><input name="middle" type="text" size="1" maxlength="90" /></td>
+                            <td><input name="required-last" type="text" size="15" maxlength="90" /></td>
+                            <td><input name="suffix" type="text" size="4" maxlength="90" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Address: </strong></td>
+                <td><input name="required-address" type="text" size="33" maxlength="190" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* City: </strong></td>
+                <td><input name="required-city" type="text" maxlength="33" /> <strong>State:</strong> <select name="required-state">
+                <option selected="selected">KY</option>
+                </select> <strong>Zip:</strong> <input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Phone Number: </strong></td>
+                <td><input name="phone" type="text" size="33" maxlength="100" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Email: </strong></td>
+                <td><input name="required-email" type="text" size="33" maxlength="100" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Issue: </strong></td>
+                <td><select name="required-issue" size="1">
+                <option selected="selected">(select one)</option>
+                <option value="ECON">Economy/Jobs</option>
+                <option value="ED">Education</option>
+                <option value="HE">Health</option>
+                <option value="CRIME.DRUG">Illegal Drugs</option>
+                <option value="SS">Social Security</option>
+                <option value="TAX">Taxes</option>
+                <option value="TRAN">Transportation</option>
+                <option value="DHS">Border Security</option>
+                <option value="BUD">Budget</option>
+                <option value="OTHER">Other</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><strong>* Message: </strong></td>
+                <td><textarea name="required-message" rows="15" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"></td>
+                <td><input name="subscribe" type="checkbox" value="subscribe" /> Check this box to sign up for my E-Newsletter! </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><input name="district-contact" id="district-contact" style="display: none;" type="text" size="60" maxlength="100" /> <input type="submit" value="Send Email" /> <input type="reset" value="Reset" /> </center></td>
+            </tr>
+        </tbody>
+    </table>
+</form></span>
+              <form action="/subscribe.aspx" class="form-email">
+                <fieldset>
+                  <div class="row">
+                    <input type="text" name="email" value="Enter Email Address" />
+                  </div>
+                  <input class="btn-go" type="submit" value="go" />
+                </fieldset>
+              </form>
+              <form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="BigBox" class="form-search">
+                <fieldset>
+                  <div class="area">
+                    <div class="row">
+                      <input type="text" class="i-text" name="docidc114" placeholder="search" id="SearchBox" />
+                    </div>
+                    <input class="btn-go-search" type="submit" value="go" />
+                  </div>
+                  <input class="radio" name="check" id="number" type="radio" checked="checked" />
+                  <label for="number">By Bill Number</label>
+                  <input class="radio" name="check" id="topic" type="radio" />
+                  <label for="topic">By Topic</label>
+                </fieldset>
+              </form>
+        <form action="/search/results.htm" method="get" class="form-site">
+          <fieldset>
+            <div class="row">
+              <input type="text" name="q" />
+              <input class="bnt-site" type="submit" value="go" />
+            </div>
+          </fieldset>
+        </form>

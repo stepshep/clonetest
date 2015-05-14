@@ -1,0 +1,194 @@
+<form name="ContactForm" method="post" action="ContactPopupSubmit.php"
+	id="ContactForm" OnSubmit="return submitFunction();" method="post"><input
+	value="SD11"></input> 
+
+<table border="0" align="left" width="100%">
+		<tr>
+		<td colspan="2" align="center">
+		<div
+			style="WIDTH: 550px; Padding-bottom: 3px; BORDER-BOTTOM: black thin solid;">
+			<img src="images/SD11/images/SD11_header.jpg"width="550" /><br /></div>
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2">
+		<div id="messageHolder"
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: red;">
+			 * Indicates required fields</div>
+		</td>
+	</tr>
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right; width: 20%;">
+		<span
+			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
+			id="spanFirstName"><span id="labelFirstName">*</span></span>&nbsp; <label
+			for="txtFirstName">First Name:</label></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left; width: 80%;"
+			>&nbsp;&nbsp;<input name="txtFirstName" type="text"
+			maxlength="25" id="txtFirstName" tabindex="1" size="25"
+			style="width: 150px;" /></td>
+	</tr>
+	
+	<TR width="100%">
+		<TD
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;">
+		<span
+			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
+			id="spanLastName"><span id="labelLastName">*</span></span>&nbsp; <label
+			for="txtLastName">Last Name:</label></TD>
+		<TD
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			>&nbsp; <input name="txtLastName" type="text"
+			maxlength="25" id="txtLastName" tabindex="2" size="25"
+			style="width: 200px;" /></TD>
+	</TR>
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normald; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;">
+		<span
+			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
+			id="spanAddress"><span id="labelAddress">*</span></span>&nbsp; <label
+			for="txtAddress">Address:</label></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			>&nbsp; <input name="txtAddress" type="text"
+			maxlength="50" id="txtAddress" tabindex="3" size="50"
+			style="width: 343px;" /></td>
+	</tr>
+	
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;"
+			width="30%"><span
+			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
+			id="spanCity"><span id="labelCity">*</span></span>&nbsp; <label
+			for="txtCity">City:</label></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			width="70%" >&nbsp; <input name="txtCity" type="text"
+			maxlength="30" id="txtCity" tabindex="4" size="40"
+			style="width: 252px;" /> 
+			</td>
+	</tr>
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;">
+		<span
+			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
+			id="spanZip"><span id="labelZip">*</span></span>&nbsp; <label
+			for="txtZip">Zip Code:</label></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			>&nbsp; <input name="txtZip" type="text" maxlength="5"
+			id="txtZip" tabindex="6" style="width: 79px;" />&nbsp;</td>
+	</tr>
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right">
+		<span id="labelPhone" style="color: Red;"></span><span
+			id="spanPhone">*</span> <label for="txtAreaCode">Phone:</label>&nbsp;
+		</td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			>&nbsp; ( <input name="txtAreaCode" type="text"
+			maxlength="3" id="txtAreaCode" tabindex="7" size="3"
+			onKeyUp="moveToNextField( this, 3, txtPhone1 );" style="width: 30px;" />
+		) <input name="txtPhone1" type="text" maxlength="3" id="txtPhone1"
+			tabindex="8" size="3"
+			onKeyUp="moveToNextField( this, 3, txtPhone2 );" style="width: 30px;" />
+		- <input name="txtPhone2" type="text" maxlength="4" id="txtPhone2"
+			tabindex="9" size="4" onKeyUp="moveToNextField( this, 4, txtExt );"
+			style="width: 40px;" /> &nbsp;&nbsp;<label for="txtExt">ext:</label>&nbsp;
+		<input name="txtExt" type="text" maxlength="4" id="txtExt"
+			tabindex="10" size="4" style="width: 40px;" /> &nbsp;&nbsp;<label
+			for="phoneTypeListbox">type:</label>&nbsp; <select
+			name="phoneTypeListbox" size="1" id="phoneTypeListbox" tabindex="11"
+			style="width: 65px;">
+			<option value="home">home</option>
+			<option value="work">work</option>
+			<option value="cell">cell</option>
+		</select></td>
+	</tr>
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right">
+		<span
+			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; VISIBILITY: visible; COLOR: red"
+			id="spanEmail"><span id="labelEmail">*</span></span>&nbsp; <label
+			for="txtEmail">E-mail:</label></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			>&nbsp; <input name="txtEmail" type="text" maxlength="45"
+			id="txtEmail" tabindex="12" size="50" style="width: 343px;" /></td>
+	</tr>
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right">
+		&nbsp; <label for="IssueListBox">Select an Issue:</label></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
+			>&nbsp; <select name="IssueListBox" size="1"
+			id="IssueListBox" tabindex="13" onChange="issueListChange();"
+			style="width: 425px;">
+			<option value=" ">-- select issue --</option><option value="31748">2015 Budget - Adult Ed SUPPORT</option><option value="32728">2015 Budget - CalFresh/Nutritional Incentive Program</option><option value="30208">2015 Budget - Developmental Disabilities</option><option value="32729">2015 Budget - Early Childhood Ed</option><option value="29808">2015 Budget - Higher Ed Funding Increase SUPPORT</option><option value="30628">2015 Budget - K-12 Education Funding Increase SUPPORT</option><option value="30629">2015 Budget - Medi-Cal</option><option value="31188">2015 Budget - SSI/SSP Funding Increase</option><option value="31749">2015 Budget - State Parks</option><option value="32888">AB 1357 2016 Children and Family Health Promotion Program.</option><option value="31708">AB 1369 2016 Special education: dyslexia.</option><option value="32248">AB 1406 2016 Insurance: bail licenses.</option><option value="32368">AB 1461 2016 Voter registration.</option><option value="30608">AB 147 2016 Postsecondary education: animal research.</option><option value="31248">AB 151 2016 Income taxes: credits: apprenticeships.</option><option value="30408">AB 161 2016 Athletic trainers.</option><option value="31249">AB 172 2016 Emergency departments: assaults and batteries.</option><option value="32308">AB 24 2016 Transportation network companies: public safety r</option><option value="31808">AB 357 2016 Employment: work hours: Fair Scheduling Act of 2</option><option value="31053">AB 366 2016 Medi-Cal: reimbursement: provider rates.</option><option value="31848">AB 404 2016 Community colleges: accreditation.</option><option value="31528">AB 486 2016 Centralized hospital packaging pharmacies: medic</option><option value="30168">AB 51 2016 Vehicles: motorcycles: lane splitting.</option><option value="31050">AB 528 2016 San Francisco Bay Area Rapid Transit District: s</option><option value="32068">AB 572 2016 California Diabetes Program.</option><option value="30169">AB 59 2016 Mental health services: assisted outpatient treat</option><option value="31389">AB 61 2016 Shuttle services: loading and unloading of passen</option><option value="30968">AB 67 2016 Double Pay on the Holiday Act of 2015.</option><option value="30289">AB 69 2016 Peace officers: body-worn cameras.</option><option value="32548">AB 700 2016 Political Reform Act of 1974: advertisement disc</option><option value="31250">AB 768 2016 Tobacco Free Baseball Act.</option><option value="32648">AB 789 2016 Contact lens sellers: prohibited practices: fine</option><option value="32328">AB 828 2016 Vehicles: transportation network companies.</option><option value="32088">AB 886 2016 Transportation service network provider: passeng</option><option value="30228">AB 96 2016 Animal parts and products: importation or sale of</option><option value="31768">AB 982 2016 Child care and development: eligibility: priorit</option><option value="32650">ACA 4 2016 Local government transportation projects: special</option><option value="31788">AJR 10 2016 Federal constitutional convention: application.</option><option value="31792">Ban on State Travel to Indiana SUPPORT</option><option value="30189">Ending War on Drugs SUPPORT</option><option value="30171">Environmental Protection Laws SUPPORT</option><option value="23307">Fracking Oppose</option><option value="26891">GGNRA Dog Management Plan OPPOSE</option><option value="22723">General Inquiries/Comments</option><option value="22929">Gun Control - Oppose</option><option value="22930">Gun Control - Support</option><option value="28168">Healthy Food Choices in Restaurants SUPPORT</option><option value="26893">High Speed Rail Funding</option><option value="30488">Mandatory Vaccination Laws OPPOSE</option><option value="30489">Mandatory Vaccination Laws SUPPORT</option><option value="22688">Press Request</option><option value="26331">Prison Expansion Plan OPPOSE</option><option value="30468">SB 122 2016 California Environmental Quality Act: record of</option><option value="31908">SB 124 2016 Juveniles: solitary confinement.</option><option value="30348">SB 128 2016 End of life.</option><option value="32288">SB 137 2016 Health care coverage: provider directories.</option><option value="30428">SB 140 2016 Electronic cigarettes.</option><option value="29868">SB 15 2016 Postsecondary education: financial aid.</option><option value="30528">SB 151 2016 Tobacco products: minimum legal age.</option><option value="30688">SB 178 2016 Privacy: electronic communications: search warra</option><option value="32289">SB 185 2016 Public retirement systems: Public Divestiture of</option><option value="29929">SB 19 2016 Physician Orders for Life Sustaining Treatment fo</option><option value="30848">SB 192 2016 Bicycles: helmets.</option><option value="30429">SB 20 2016 Wells: reports: public availability.</option><option value="30717">SB 215 2016 Public Utilities Commission.</option><option value="32290">SB 224 2016 Elderly Parole Program.</option><option value="32291">SB 243 2016 Medi-Cal: reimbursement: provider rates.</option><option value="30988">SB 252 2016 Pupils: diploma alternatives: fees.</option><option value="32449">SB 267 2016 Registered sex offenders: local ordinances.</option><option value="30908">SB 277 2016 Public health: vaccinations.</option><option value="29853">SB 3 2016 Minimum wage: adjustment.</option><option value="32508">SB 32 2016 California Global Warming Solutions Act of 2006:</option><option value="31668">SB 323 2016 Nurse practitioners.</option><option value="31089">SB 34 2016 Automated license plate recognition systems: use</option><option value="31288">SB 350 2016 Clean Energy and Pollution Reduction Act of 2015</option><option value="31428">SB 358 2016 Conditions of employment: wages and working cond</option><option value="31049">SB 364 2016 Residential real property: withdrawal of accommo</option><option value="32651">SB 4 2016 Health care coverage: immigration status.</option><option value="32268">SB 405 2016 Vehicles: infraction and misdemeanor violations:</option><option value="31789">SB 407 2016 Comprehensive Perinatal Services Program: licens</option><option value="31790">SB 408 2016 Midwife assistants.</option><option value="31070">SB 441 2016 San Francisco redevelopment: housing.</option><option value="30430">SB 47 2016 Environmental health: synthetic turf.</option><option value="31090">SB 502 2016 San Francisco Bay Area Rapid Transit District: p</option><option value="31091">SB 518 2016 Victims of violent crimes: trauma recovery cente</option><option value="31328">SB 538 2016 Naturopathic doctors.</option><option value="31092">SB 546 2016 Health care coverage: rate review.</option><option value="31097">SB 576 2016 Mobile applications: geolocation information: pr</option><option value="32348">SB 593 2016 Residential units for tourist or transient use:</option><option value="32649">SB 594 2016 Child custody.</option><option value="31208">SB 608 2016 Homelessness.</option><option value="30170">SB 61 2016 Driving under the influence: ignition interlock d</option><option value="31109">SB 614 2016 Medi-Cal: mental health services: peer and famil</option><option value="32292">SB 622 2016 Optometry.</option><option value="32448">SB 643 2016 Medical marijuana.</option><option value="31161">SB 682 2016 Courts.</option><option value="31130">SB 694 2016 New evidence: habeas corpus: motion to vacate ju</option><option value="31308">SB 703 2016 Public contracts: prohibitions: discrimination.</option><option value="31988">SB 716 2016 Animal cruelty: elephants.</option><option value="31162">SB 731 2016 Foster children: housing: gender identity.</option><option value="32293">SB 759 2016 Prisoners: Secured Housing Units.</option><option value="31163">SB 763 2016 Juvenile products: flame retardant chemicals.</option><option value="31791">SB 792 2016 Day care facilities: immunizations.</option><option value="29928">SCA 1 2016 University of California: legislative control.</option><option value="32652">SCA 5 2016 Local government: special taxes: voter approval.</option><option value="26892">Sacramento-San Joaquin Delta Tunnel Proposal OPPOSE</option><option value="22687">Scheduling Requests</option><option value="31368">Shareholders United Act SUPPORT</option><option value="30508">Tobacco Tax Increase OPPOSE</option><option value="30509">Tobacco Tax Increase SUPPORT</option><option value="29408">Water Bond - Retention of Watershed Provisions</option><option value="27608">Water Supply Issues</option>		</select></td>
+	</tr>
+	<tr align="center" width="100%">
+		<!--<td style="HEIGHT: 36px" width="25%">-->
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; HEIGHT: 15px; text-align: left;"
+			colspan="2"><!--colspan="2"  width="25%"   width=75%"--> <span
+			id="spanOr"> Please make an Issue Selection OR fill in a Comment </span>
+		<span
+			style="FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: sans-serif; vertical-align: top;"><span
+			id="labelOr"></span></span> 
+		<span id="labelStance" style="color: Red;"></span><span
+			id="spanStance">*</span> <input id="Y" type="radio"
+			name="stanceRadioButtonList" value="Y" tabindex="14" /><label for="Y">Support</label>
+		<input id="N" type="radio" name="stanceRadioButtonList" value="N"
+			tabindex="14" /><label for="N">Oppose</label></td>
+	</tr>
+
+	<tr width="100%">
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right; vertical-align: top;">
+
+		<label for="txtComments">Comments:</label><br>
+		<span
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: red; FONT-FAMILY: sans-serif;"><span
+			id="labelComments"></span></span><span
+			id="spanComments">*Max Length Exceeded</span></td>
+		<td
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left; vertical-align: top;"
+			 nowrap><input size=1 value=2000 name=text_num
+			style="color: #FF0000;"> Characters Left <br>
+		<textarea onKeyDown=check_length(this.form);
+			onKeyUp=check_length(this.form); name=jv_text rows=4 cols=50
+			style="font-family: Arial; height: 75px; width: 418px;"></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center" style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; 
+		TEXT-ALIGN: center; vertical-align: top;">
+		Your privacy is very important to us. By clicking submit, you are agreeing to the practices described
+		 in the Privacy and Conditions of Use. 
+		</td>
+	</tr>
+	<tr align="left" width="100%">
+		<td align=center colspan="2"><br>
+		<input type="submit" name="submitButton" value="Submit"
+			id="submitButton" tabindex="16" />&nbsp;&nbsp;&nbsp;&nbsp; <input
+			type="reset" TabIndex="17" value="Reset" name="resetButton"
+			OnClick="additionalReset();" style="VISIBILITY: visible;">&nbsp;&nbsp;&nbsp;&nbsp;
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" align="center" style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: center; vertical-align: top;">
+			<a href="PrivacyPolicy.html" target="_blank" title="This link will open in a new browser window">Privacy and Conditions of Use</a>
+		</td>
+	</tr>
+	
+	
+</table>
+</form>

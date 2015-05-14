@@ -1,0 +1,27 @@
+          <form action="http://ellmers.house.gov/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+            <p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+            <p><input type="text" name="searchkey" id="searchkey" /></p>
+            <p id="searchEntire" class="c2"><input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked" /> <label for="entire">Entire Site</label></p>
+            <p id="searchSection" class="c2"><input type="radio" class="radiobutton" name="locale" value="2" id="this_section" /> <label for="this_section">This Section</label></p>
+            <p class="submitbutton"><span><input type="submit" value="Search" /></span></p>
+          </form>
+                        <form action="http://thomas.loc.gov/cgi-bin/query" class="bykeyword" method="post" name="loc-word" target="_blank">
+                          <input class="text" id="phrase" maxlength="50" name="queryc111" onblur="iBlur(this)" onfocus="iFocus(this);" value="By Keyword" /> <input class="searchbuttons" id="searchPhrase" name="Submit" type="submit" value="Go" />&nbsp;
+                        </form>
+                        <form action="http://thomas.loc.gov/cgi-bin/query" class="bynumber c7" method="post" name="loc-number" target="_blank">
+                        </form>
+                      <form method="get" action="/subscribe.aspx">
+                        <p class="formQuestion">Enter your email to<br />
+                        subscribe to my e-Newsletter</p>
+                        <input type="text" value="E-mail Address" id="form_4_email" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" maxlength="255" class="text c9" />
+                        <input type="submit" value="GO" class="form_submit_button" id="form_submit_button_4" />
+                      </form>
+<form method="get" action="/forms/writeyourrep/" class="zipform">
+    Zip: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
+    +4: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
+    <input type="submit" value="Submit" />
+</form>
+            <form action="//elmers.house.gov" method="get" onsubmit="return checkformsearch(this)">
+              <input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" value="Search Site" />
+              <input class="searchButon button" type="submit" value="GO" />&nbsp;
+            </form>

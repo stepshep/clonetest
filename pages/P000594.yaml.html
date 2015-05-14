@@ -1,0 +1,137 @@
+            <form onsubmit="return checkformsearch(this)" method="get" action="/index.cfm?sectionid=2§iontree=">
+              <input type="text" name="searchkey" id="searchkey" value="Search Site" onfocus="iFocus(this)" onblur="iBlur(this)" class="text">
+              <input type="radio" value="-1" name="locale" id="entire" class="radiobutton" checked="checked">
+              <label for="entire">Entire Site</label>
+              <input type="radio" value="84" name="locale" id="this_section" class="radiobutton">
+              <label for="this_section">This Section</label>
+              </span>
+              <input type="submit" value="GO" id="searchSubmit" class="searchButon">
+               
+            </form>
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="209" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+			<form action="/contact-me/" id="custom_form55" name="custom_form" class="custom_form" method="post">
+				
+				<p>
+Here you will find all the resources you need to get in contact with Erik.  To see an interactive map of the Third District and Erik's Washington D.C. office, see our "<a href="/index.cfm?sectionid=25">Minnesota's Third District</a>" section of the site.  You can also fill out the form below.<br></br>
+If you are interested in scheduling a business tour or meeting in Congressman Paulsen’s District Office, please <a href="https://paulsenforms.house.gov/schedule-a-meeting-in-the-district" target="_blank">click here</a>.<br></br>
+If you are interested in scheduling a meeting in his Washington, D.C. office, please <a href="https://paulsenforms.house.gov/schedule-a-meeting-in-washington-dc" target="_blank">click here</a>. If you are interested in scheduling a Capitol or White House tour during your trip to Washington, D.C., please <a href="https://paulsenforms.house.gov/visit-washington1" target="_blank">click here</a>.<br></br>
+Regrettably, I am unable to reply to any email from constituents outside of the district.<br></br>
+If you have any questions or are having trouble viewing this form, please call (202) 225-2871.<br></br>
+<span class="req">* indicates required field.</span></p>
+    	<h2>Primary Contact</h2>
+		<p>
+        	<label>First Name:<span>*</span></label>
+            <input type="text" name="firstname" id="req_firstname" maxlength="90" class="text" />
+        </p>
+        <p>
+        	<label>Middle Name:</label>
+             <input type="text" name="middle" class="text" maxlength="90" />
+        </p>
+        <p>
+        	<label>Last Name:<span>*</span></label>
+            <input type="text" name="lastname" id="req_lastname" class="text" maxlength="90" />
+        </p>
+        <p>
+        	 <label>Suffix:</label>
+             <input type="text" name="suffix" class="text1" maxlength="5" />
+        </p>
+        <p>
+        	<label>Street Address:<span>*</span></label>
+            <input type="text" name="street" id="req_street" class="text" maxlength="190" />
+        </p>
+        <p>
+        	<label>Address 2:</label>
+            <input type="text" name="street2" class="text" maxlength="190" />
+        </p>
+        <p>
+        	<label>City:<span>*</span></label>
+            <input type="text" name="city" id="req_city" class="text" maxlength="100" />
+        </p>
+        <p>
+        	<label>State:<span>*</span></label>
+         
+              <select name="state" id="req_state">		
+             <option selected="" value="MN">MN</option>
+	</select>
+            
+        </p>
+        <p>
+        	<label>Zip Code:<span>*</span></label>
+            <input type="text" name="zip" id="req_zip" class="zip" maxlength="5" />
+            <label style="float:none; width:auto;">+4</label> 
+            <input type="text" name="zipfour" id="zip2" class="zipfour text" maxlength="4" />
+            <small>(<a target="_blank" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" href="http://zip4.usps.com/zip4/welcome.jsp" onClick="return (exitMsg())" class="bookmarkImage" id="zip4">Determine your ZIP+4</a>)</small>
+        </p>
+        <p>
+        	<label>E-mail Address:<span>*</span></label>
+            <input type="text" name="emailaddress" id="req_email" maxlength="150" class="text" />
+        </p>
+        <p>
+        	<label>Telephone Number:</label>
+            <input type="text" name="phone" class="text" maxlength="14" />
+        </p>
+        <p>
+        	<label>Message Subject:<span>*</span></label>
+            <select size="1" name="subject" id="req_subject">
+			<option selected="" value="">(select one)</option>
+				<option value="CASEWORK">Help with an Agency</option>
+<option value="AGRI">Agriculture</option>
+<option value="BUD">Budget</option>
+<option value="DEF">Defense</option>
+<option value="ECON">Economy</option>
+<option value="EDU">Education</option>
+<option value="ENR">Energy</option>
+<option value="ENV">Environmental</option>
+<option value="GOV">Government Reform</option>
+<option value="HLTH">Health</option>
+<option value="HOM">Homeland Security</option>
+<option value="IMM">Immigration</option>
+<option value="IR">International Relations</option>
+<option value="JOBS">Jobs</option>
+<option value="JUD">Judicial</option>
+<option value="LAB">Labor</option>
+<option value="SMBUS">Small Business</option>
+<option value="SOC">Social Issues</option>
+<option value="SSEC">Social Security</option>
+<option value="TAX">Taxes</option>
+<option value="TELE">Telecommunications</option>
+<option value="TRD">Trade</option>
+<option value="TOURS">Tours</option>
+<option value="TRANS">Transportation</option>
+<option value="VET">Veterans</option>
+<option value="WEL">Welfare</option>
+<option value="WOM">Women’s Health</option>
+<option value="OTH">Other</option>
+			</select>
+        </p>
+        <p>
+        	<label>Message:<span>*</span></label>
+            <textarea name="message" id="req_message" class="message"></textarea>
+        </p>
+        
+        
+   		<div class="align"><input type="button" value="Submit" id="submitButton" class="form_submit_button" /></div>
+        <p>* By emailing the Congressman, you are opting in to receive the eNewsletter</p>
+        
+       <script type="text/javascript">
+
+	   </script>
+        
+			</form>
+				<div id="webfooter"> <div class="stickyfooter"><div class="in"><div class="socialMedia"><a href="http://twitter.com/#!/RepErikPaulsen" target="_blank"><img src="/images/twitter.png" width="30" /></a><a href="http://www.youtube.com/reperikpaulsen" target="_blank"><img src="/images/youtube.png" width="30" /></a><a href="http://www.facebook.com/pages/Congressman-Erik-Paulsen/128558293848160" target="_blank"><img src="/images/facebook.png" width="30" /></a><a href="/common/rss//?rss=105" target="_blank"><img src="/images/rss.png" width="30" /></a></div><div class="bnav"><a href="/">Home</a> &bull; <a href="/site-map">Site Map</a> &bull; <a href="http://www.house.gov/content/site_tools/privacy_policy.php" target="_blank">Privacy Policy</a></div><div class="contactbx"><a class="closePanel" href="javascript:void(0);">Close</a><a class="districtlink" href="/our-district/">&nbsp;</a><div id="customMaps"><div class="addr1"> Washington, DC&nbsp;<br /> 127 Cannon HOB<br /> Washington, D.C. 20515<br /> Phone: (202) 225-2871<br /> Fax: (202) 225-6351<br /><a href="#?custom=true&amp;width=100%&amp;height=100%" rel="lightbox[map]">View Map</a></div><div class="addr2"> District Office<br /> 250 Prairie Center Drive, Suite 230<br /> Eden Prairie, MN 55344<br /> Phone: (952) 405-8510<br /> Fax: (952) 405-8514<br /><a href="#?custom=true&amp;width=100%&amp;height=100%" rel="lightbox[map]">View Map</a></div></div><div class="contactfm"><form action="/contact-me/" id="zipauthform" method="post"><label class="zipcc" for="zipcode">Zip Code:</label><input id="zipcode" maxlength="5" name="zipcode" type="text" /><input class="button" type="submit" value="Go" />&nbsp;</form></div></div><div class="contactbox"><div class="cparrowdown"> &nbsp;</div></div><div class="enewsbox"><form action="/index.cfm?sectionid=53&amp;sectiontree=27,53" method="post"><input class="text" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Enter your email" /><input name="formid" type="hidden" value="4" /><input class="form_submit_button" id="form_submit_button_4" name="submitform" type="submit" value="GO" />&nbsp;</form></div></div></div><script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script><script type="text/javascript"> try { var pageTracker = _gat._getTracker("UA-7980029-1"); pageTracker._trackPageview(); } catch(err) {}</script> </div>

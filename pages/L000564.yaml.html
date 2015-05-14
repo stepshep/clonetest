@@ -1,0 +1,34 @@
+            <form action="//lamborn.house.gov/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+              <p><label for="searchkey" class="c1">Keyword:</label> <span class="requiredfield" id="searchkeyrequired"></span></p>
+              <table width="340" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="94" align="right" class="c2"><strong>Search Website:</strong></td>
+                  <td width="147" align="center">
+                    <p><input type="text" name="searchkey" id="searchkey" value="Keyword" onfocus="iFocus(this);" onblur="iBlur(this)" /></p>
+                    <p id="searchEntire" class="c3"><input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked" /> <label for="entire">Entire Site</label></p>
+                    <p id="searchSection" class="c3"><input type="radio" class="radiobutton" name="locale" value="1" id="this_section" /> <label for="this_section">This Section</label></p>
+                  </td>
+                  <td width="99">
+                    <p class="submitbutton"><span><input type="submit" value="Search" class="c4" /></span></p>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          <form action="//lamborn.house.gov/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+            <p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+            <p><input type="text" name="searchkey" id="searchkey" /></p>
+            <p id="searchEntire" class="c3">
+              <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked" />
+              <label for="entire">Entire Site</label>
+            </p>
+            <p id="searchSection" class="c3">
+              <input type="radio" class="radiobutton" name="locale" value="2" id="this_section" />
+              <label for="this_section">This Section</label>
+            </p>
+            <p class="submitbutton"><span><input type="submit" value="Search" /></span></p>
+          </form>
+<form method="get" action="/forms/writeyourrep/" class="zipform">
+    Zip: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
+    +4: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
+    <input type="submit" value="Submit" />
+</form>

@@ -1,0 +1,941 @@
+		<form class="pull-right form-inline hide" id="searchform" role="search" method="get" action="/search" >
+	<div class="form-group">
+		    <input type="search" class="form-control" id="search-field" name="q" placeholder="Search" value="Search"  onclick="this.value='';">
+			</div>
+		
+		  <button type="submit" class="btn btn-default">GO</button>
+		</form>
+			<form id="contactForm"  method="post"  action="/contact"  enctype="application/x-www-form-urlencoded" >
+
+
+
+				<fieldset>
+
+					 <div class="form-group">
+
+					<label class="control-label contact" id="contactdropdownlabel"for="actions">How can I help you?<abbr title="Please select an option">*</abbr></label>
+
+					
+		
+		
+					
+					<select id="actions" class="test form-control" name="actions" >
+							<option label="-- Select an option --" value="select" selected="selected" required>--Select an Option--</option>
+							
+								<option label="Request help with a federal agency" value="federal_agency">Request help with a federal agency</option>
+							
+								<option label="Request a meeting with Senator Mikulski or staff" value="meeting">Request a meeting with Senator Mikulski or staff</option>
+							
+								<option label="Request a tour of the Capitol, White House, or other DC landmark" value="tour">Request a tour of the Capitol, White House, or other DC landmark</option>
+							
+								<option label="Request a flag to be flown over the Capitol" value="flag">Request a flag to be flown over the Capitol</option>
+							
+								<option label="Request a greeting or commemorative message" value="message">Request a greeting or commemorative message</option>
+							
+								<option label="Share your opinion or comments on bills or other issues" value="opinion">Share your opinion or comments on bills or other issues</option>
+							
+					</select>
+					
+					</div>
+				</fieldset>
+				<div id="more-help-container" style="display:none"><div  id="more-help"></div></div>
+				<div  id="loading" style="display:none"><img src="/images/ajax-loader.gif"/></div>
+
+				<div  id="continue-form" style="display:none">
+					<fieldset>
+
+					 <div class="form-group">
+						
+		                    <ol>
+		                    <li>
+		                    	
+		                    	<ul>
+		                            <li class="required">
+
+		                            <div class="form-group">
+		                                <label for="salutation">Title<abbr title="required" >*</abbr></label>
+		                                
+		
+		
+		                                 <select id="salutation" name="salutation" class="form-control" aria-required="true" placeholder="Required" required>
+
+		                                    <option label="-- Please select a title or make a selection below --" value="">-- Please select a title or make a selection below --</option>
+
+		                                    
+		                                      
+		                                        <option label="Mr." value="Mr.">Mr.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Mrs." value="Mrs.">Mrs.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Ms." value="Ms.">Ms.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Miss" value="Miss">Miss</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Mr. and Mrs." value="Mr. and Mrs.">Mr. and Mrs.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Professor" value="Professor">Professor</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dean" value="Dean">Dean</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="The Honorable" value="The Honorable">The Honorable</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dr." value="Dr.">Dr.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dr. and Mrs." value="Dr. and Mrs.">Dr. and Mrs.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dr. and Mr." value="Dr. and Mr.">Dr. and Mr.</option>
+		                                      
+		                                    
+
+		                                  </select>
+								     </div>
+
+		                            </li>
+		                      	</ul>
+
+
+
+		                	</li>
+							<li class="required">
+								
+								<p>Are you a member of the military or clergy?</p>
+
+								<label for="military_toggle" class="checkbox">
+									<input type="checkbox" name="military_toggle" id="military_toggle" value="military"> Military
+								</label>
+
+								<label for="ecclesiastical_toggle" class="checkbox">
+									<input type="checkbox" name="ecclesiastical_toggle" id="ecclesiastical_toggle" value="ecclesiastical"> Ecclesiastical
+								</label>
+
+
+							
+		                    <li id="military_section" style="display:none;">
+		                    	<ul>
+		                            <li class="required">
+		                                <label for="military_branch">Military Branch <abbr title="required">*</abbr></label>
+
+		                                
+		
+		
+
+		                                  <select id="military_branch" class="form-control" name="military_branch">
+		                                    <option label="-- Select a Branch of Service --" value="" selected="selected">-- Please select one --</option>
+		                                    
+		                                      
+		                                        <option label="Air Force" value="Air Force">Air Force</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Army" value="Army">Army</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Coast Guard" value="Coast Guard">Coast Guard</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Marines" value="Marines">Marines</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Navy" value="Navy">Navy</option>
+		                                      
+		                                    
+		                                  </select>
+		                            </li>
+
+		                            <li class="required">
+		                                <label for="military_rank">Military Rank <abbr title="required">*</abbr></label>
+		                                
+		
+		
+		                                  <select id="military_rank" class="form-control" name="military_rank">
+		                                    <option label="-- Select a Rank --" value="" selected="selected">-- Please select one --</option>
+		                                    
+		                                      
+		                                        <option label="Admiral" value="Admiral">Admiral</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Airman" value="Airman">Airman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Airman Basic" value="Airman Basic">Airman Basic</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Airman First Class" value="Airman First Class">Airman First Class</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Brigadier General" value="Brigadier General">Brigadier General</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Captain" value="Captain">Captain</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chaplain" value="Chaplain">Chaplain</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Master Sergeant of the Air Force" value="Chief Master Sergeant of the Air Force">Chief Master Sergeant of the Air Force</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Petty Officer" value="Chief Petty Officer">Chief Petty Officer</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Warrant Officer Two" value="Chief Warrant Officer Two">Chief Warrant Officer Two</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Warrant Officer Three" value="Chief Warrant Officer Three">Chief Warrant Officer Three</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Warrant Officer Four" value="Chief Warrant Officer Four">Chief Warrant Officer Four</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Warrant Officer Five" value="Chief Warrant Officer Five">Chief Warrant Officer Five</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Colonel" value="Colonel">Colonel</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Command Chief Master Sergeant" value="Command Chief Master Sergeant">Command Chief Master Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Command Master Chief" value="Command Master Chief">Command Master Chief</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Command Sergeant Major" value="Command Sergeant Major">Command Sergeant Major</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Commander" value="Commander">Commander</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Constructionman" value="Constructionman">Constructionman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Corporal" value="Corporal">Corporal</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dentalman" value="Dentalman">Dentalman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Ensign" value="Ensign">Ensign</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Fireman" value="Fireman">Fireman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="First Lieutenant" value="First Lieutenant">First Lieutenant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="First Sergeant" value="First Sergeant">First Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Fleet Command Master Chief Petty Officer" value="Fleet Command Master Chief Petty Officer">Fleet Command Master Chief Petty Officer</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Force Command Master Chief Petty Officer" value="Force Command Master Chief Petty Officer">Force Command Master Chief Petty Officer</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="General" value="General">General</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Hospitalman" value="Hospitalman">Hospitalman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Gunnery Sergeant" value="Gunnery Sergeant">Gunnery Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Lance Corporal" value="Lance Corporal">Lance Corporal</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Lieutenant" value="Lieutenant">Lieutenant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Lieutenant Colonel" value="Lieutenant Colonel">Lieutenant Colonel</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Lieutenant Commander" value="Lieutenant Commander">Lieutenant Commander</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Lieutenant General" value="Lieutenant General">Lieutenant General</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Lieutenant Junior Grade" value="Lieutenant Junior Grade">Lieutenant Junior Grade</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Major" value="Major">Major</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Major General" value="Major General">Major General</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Chief Petty Officer" value="Master Chief Petty Officer">Master Chief Petty Officer</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Chief Petty Officer of the Coast Guard" value="Master Chief Petty Officer of the Coast Guard">Master Chief Petty Officer of the Coast Guard</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Chief Petty Officer of the Command" value="Master Chief Petty Officer of the Command">Master Chief Petty Officer of the Command</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Chief Petty Officer of the Fleet" value="Master Chief Petty Officer of the Fleet">Master Chief Petty Officer of the Fleet</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Chief Petty Officer of the Navy" value="Master Chief Petty Officer of the Navy">Master Chief Petty Officer of the Navy</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Gunnery Sergeant" value="Master Gunnery Sergeant">Master Gunnery Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Master Sergeant" value="Master Sergeant">Master Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Petty Officer First Class" value="Petty Officer First Class">Petty Officer First Class</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Petty Officer Second Class" value="Petty Officer Second Class">Petty Officer Second Class</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Petty Officer Third Class" value="Petty Officer Third Class">Petty Officer Third Class</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Platoon Sergeant" value="Platoon Sergeant">Platoon Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Private" value="Private">Private</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Private E-2" value="Private E-2">Private E-2</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Private First Class" value="Private First Class">Private First Class</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Rear Admiral (Lower Half)" value="Rear Admiral (Lower Half)">Rear Admiral (Lower Half)</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Rear Admiral (Upper Half)" value="Rear Admiral (Upper Half)">Rear Admiral (Upper Half)</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Seaman" value="Seaman">Seaman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Second Lieutenant" value="Second Lieutenant">Second Lieutenant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Senior Airman" value="Senior Airman">Senior Airman</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Senior Chief Petty Officer" value="Senior Chief Petty Officer">Senior Chief Petty Officer</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Senior Master Sergeant" value="Senior Master Sergeant">Senior Master Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Sergeant" value="Sergeant">Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Sergeant First Class" value="Sergeant First Class">Sergeant First Class</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Sergeant Major" value="Sergeant Major">Sergeant Major</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Sergeant Major of the Army" value="Sergeant Major of the Army">Sergeant Major of the Army</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Sergeant Major of the Marine Corps" value="Sergeant Major of the Marine Corps">Sergeant Major of the Marine Corps</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Specialist" value="Specialist">Specialist</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Staff Sergeant" value="Staff Sergeant">Staff Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Technical Sergeant" value="Technical Sergeant">Technical Sergeant</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Vice Admiral" value="Vice Admiral">Vice Admiral</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chief Warrant Officer Four" value="Chief Warrant Officer Four">Chief Warrant Officer Four</option>
+		                                      
+		                                    
+		                                  </select>
+		                            </li>
+		                            <li class="required">
+		                                <label for="military_retired">Are you retired? <abbr title="required">*</abbr></label>
+										<select id="military_retired" class="form-control" name="military_retired">
+		                                	 <option value="">-- Please select one --</option>
+		                                    <option value="No">No</option>
+		                                    <option value="Yes">Yes</option>
+		                                </select>
+		                            </li>
+		                       	</ul>
+		                   	</li>
+
+
+
+		                    
+		                    <li id="ecclesiastical_section" style="display:none;">
+		                    	<ul>
+		                        	<li class="required">
+		                                <label for="ecclesiastical_title">Title <abbr title="required">*</abbr></label>
+		                                
+		
+		
+		                                  <select id="ecclesiastical_title" class="form-control" name="ecclesiastical_title">
+		                                    <option label="-- Select a Title --" value="" selected="selected">-- Select a Title --</option>
+		                                    
+		                                      
+		                                        <option label="Abbot" value="Abbot">Abbot</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Abbess" value="Abbess">Abbess</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Archbishop" value="Archbishop">Archbishop</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Archdeacon" value="Archdeacon">Archdeacon</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Archpriest" value="Archpriest">Archpriest</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Bishop" value="Bishop">Bishop</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Brother" value="Brother">Brother</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Canon" value="Canon">Canon</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Cantor" value="Cantor">Cantor</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Chaplain" value="Chaplain">Chaplain</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Deacon" value="Deacon">Deacon</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Deaconess" value="Deaconess">Deaconess</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dean" value="Dean">Dean</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Dr." value="Dr.">Dr.</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Elder" value="Elder">Elder</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Father" value="Father">Father</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Metropolitan" value="Metropolitan">Metropolitan</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Monsignor" value="Monsignor">Monsignor</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Rabbi" value="Rabbi">Rabbi</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Reverend" value="Reverend">Reverend</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Reverend Mother" value="Reverend Mother">Reverend Mother</option>
+		                                      
+		                                    
+		                                      
+		                                        <option label="Sister" value="Sister">Sister</option>
+		                                      
+		                                    
+		                                  </select>
+		                            </li>
+		                        </ul>
+		                    </li>
+
+		                </ol>
+
+						
+
+						</div>
+						<div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+
+
+   								<label for="fname">First Name <abbr title="required">*</abbr></label>
+                               <input class="form-control" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
+							    </div>
+                            </div>
+                            <div class="col-md-6">
+                            	 <div class="form-group">
+                                <label for="lname">Last Name <abbr title="required">*</abbr></label>
+                                <input class="form-control" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
+								 </div>
+                            </div>
+
+						</div>
+
+						<legend>Your Contact Information</legend>
+                        <div class="form-group">
+						<label class="" for="mailing_streetAddress1">Street Address <abbr title="Your street address is a required field">*</abbr></label>
+						<input class="form-control" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
+						</div>
+                        <div class="form-group">
+						<label class="" for="mailing_streetAddress2">Street Address (2)</label>
+						<input class="form-control" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
+						</div>
+						<div class="row">
+							<div class="col-md-7">
+								 <div class="form-group">
+								<label for="mailing_city">City <abbr title="Your city is a required field">*</abbr></label>
+								<input class="form-control" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
+								</div>
+							</div>
+							<div class="col-md-2">
+								 <div class="form-group">
+								<label for="state">State *</label>
+								
+
+		
+
+	
+
+	
+
+
+	
+
+
+
+
+
+		
+			
+			
+			
+
+
+	
+	
+	
+	<select name="state" id="state" class="form-control">
+	
+	<option value="null">--</option>
+	<option value="AK">AK</option>
+	<option value="AL">AL</option>
+	<option value="AR">AR</option>
+	<option value="AZ">AZ</option>
+	<option value="CA">CA</option>
+	<option value="CO">CO</option>
+	<option value="CT">CT</option>
+	<option value="DC">DC</option>
+	<option value="DE">DE</option>
+	<option value="FL">FL</option>
+	<option value="GA">GA</option>
+	<option value="HI">HI</option>
+	<option value="IA">IA</option>
+	<option value="ID">ID</option>
+	<option value="IL">IL</option>
+	<option value="IN">IN</option>
+	<option value="KS">KS</option>
+	<option value="KY">KY</option>
+	<option value="LA">LA</option>
+	<option value="MA">MA</option>
+	<option value="MD" selected="selected">MD</option>
+	<option value="ME">ME</option>
+	<option value="MI">MI</option>
+	<option value="MN">MN</option>
+	<option value="MO">MO</option>
+	<option value="MS">MS</option>
+	<option value="MT">MT</option>
+	<option value="NC">NC</option>
+	<option value="ND">ND</option>
+	<option value="NE">NE</option>
+	<option value="NH">NH</option>
+	<option value="NJ">NJ</option>
+	<option value="NM">NM</option>
+	<option value="NV">NV</option>
+	<option value="NY">NY</option>
+	<option value="OH">OH</option>
+	<option value="OK">OK</option>
+	<option value="OR">OR</option>
+	<option value="PA">PA</option>
+	<option value="RI">RI</option>
+	<option value="SC">SC</option>
+	<option value="SD">SD</option>
+	<option value="TN">TN</option>
+	<option value="TX">TX</option>
+	<option value="UT">UT</option>
+	<option value="VA">VA</option>
+	<option value="VT">VT</option>
+	<option value="WA">WA</option>
+	<option value="WI">WI</option>
+	<option value="WV">WV</option>
+	<option value="WY">WY</option>
+	</select>
+	
+	
+								</div>
+							</div>
+							<div class="col-md-3">
+								 <div class="form-group">
+								<label for="mailing_zipCode">Zip Code <abbr title="Your zip code is a required field">*</abbr></label>
+								<input class="form-control" type="text" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+                            <div class="col-md-6">
+								 <div class="form-group">
+                                <label for="home_phone_number">Home Phone</label>
+                                <input type="text" name="home_phone_number" id="home_phone_number" class="form-control">
+								</div>
+                            </div>
+                            <div class="col-md-6">
+								 <div class="form-group">
+                                <label for="work_phone_number">Work Phone</label>
+                                <input type="text" name="work_phone_number" id="work_phone_number" class="form-control">
+								</div>
+                            </div>
+						</div>
+						<div class="row">
+                            <div class="col-md-6">
+								 <div class="form-group">
+                                <label for="email_address">E-mail <abbr title="Your e-mail address is a required field">*</abbr></label>
+                                <input type="text" name="email_address" aria-required="true" id="email" class="form-control" placeholder="Required" required>
+								</div>
+                            </div>
+                            <div class="col-md-6">
+								 <div class="form-group">
+                                <label for="verify_email">Verify E-mail <abbr title="Please confirm your e-mail address">*</abbr></label>
+                                <input type="text" name="verify_email" id="verify_email" aria-required="true" class="form-control" placeholder="Required" required>
+								</div>
+                            </div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Your Message</legend>
+					<div class="form-group">
+					<label class="control-label" for="subject">Message Topic<abbr title="Please enter a message topic for your message">*</abbr></label>
+					
+		
+		
+					<select id="subject" class="form-control" name="subject" required>
+							<option label="-- Select an Issue --" value="" selected="selected">--Select an Issue--</option>
+							
+								
+									<option label="Academy Nominations" value="Academy Nominations">Academy Nominations</option>
+								
+							
+								
+									<option label="Abortion" value="Abortion">Abortion</option>
+								
+							
+								
+									<option label="Afghanistan" value="Afghanistan">Afghanistan</option>
+								
+							
+								
+									<option label="Agriculture" value="Agriculture">Agriculture</option>
+								
+							
+								
+									<option label="Animal Welfare" value="Animal Welfare">Animal Welfare</option>
+								
+							
+								
+									<option label="Appropriations" value="Appropriations">Appropriations</option>
+								
+							
+								
+									<option label="Budget" value="Budget">Budget</option>
+								
+							
+								
+									<option label="Business" value="Business">Business</option>
+								
+							
+								
+									<option label="Campaign Finance Reform" value="Campaign Finance Reform">Campaign Finance Reform</option>
+								
+							
+								
+									<option label="Children" value="Children">Children</option>
+								
+							
+								
+									<option label="Civil Rights" value="Civil Rights">Civil Rights</option>
+								
+							
+								
+									<option label="Crime" value="Crime">Crime</option>
+								
+							
+								
+									<option label="Death Penalty" value="Death Penalty">Death Penalty</option>
+								
+							
+								
+									<option label="Defense" value="Defense">Defense</option>
+								
+							
+								
+									<option label="Education" value="Education">Education</option>
+								
+							
+								
+									<option label="Election Reform" value="Election Reform">Election Reform</option>
+								
+							
+								
+									<option label="Energy" value="Energy">Energy</option>
+								
+							
+								
+									<option label="Environment" value="Environment">Environment</option>
+								
+							
+								
+									<option label="FEMA" value="FEMA">FEMA</option>
+								
+							
+								
+									<option label="Federal Employees" value="Federal Employees">Federal Employees</option>
+								
+							
+								
+									<option label="Foreign Affairs" value="Foreign Affairs">Foreign Affairs</option>
+								
+							
+								
+									<option label="Gas and Oil Prices" value="Gas and Oil Prices">Gas and Oil Prices</option>
+								
+							
+								
+									<option label="Guns" value="Guns">Guns</option>
+								
+							
+								
+									<option label="Hate Crimes" value="Hate Crimes">Hate Crimes</option>
+								
+							
+								
+									<option label="Health" value="Health">Health</option>
+								
+							
+								
+									<option label="Homeland Security" value="Homeland Security">Homeland Security</option>
+								
+							
+								
+									<option label="Housing" value="Housing">Housing</option>
+								
+							
+								
+									<option label="Human Rights" value="Human Rights">Human Rights</option>
+								
+							
+								
+									<option label="Immigration" value="Immigration">Immigration</option>
+								
+							
+								
+									<option label="Internships" value="Internships">Internships</option>
+								
+							
+								
+									<option label="Iraq" value="Iraq">Iraq</option>
+								
+							
+								
+									<option label="Judiciary" value="Judiciary">Judiciary</option>
+								
+							
+								
+									<option label="Medicaid" value="Medicaid">Medicaid</option>
+								
+							
+								
+									<option label="Other" value="Other">Other</option>
+								
+							
+								
+									<option label="Pensions" value="Pensions">Pensions</option>
+								
+							
+								
+									<option label="Seniors" value="Seniors">Seniors</option>
+								
+							
+								
+									<option label="Labor" value="Labor">Labor</option>
+								
+							
+								
+									<option label="Social Security" value="Social Security">Social Security</option>
+								
+							
+								
+									<option label="Space" value="Space">Space</option>
+								
+							
+								
+									<option label="Taxes" value="Taxes">Taxes</option>
+								
+							
+								
+									<option label="Telecommunications" value="Telecommunications">Telecommunications</option>
+								
+							
+								
+									<option label="Trade" value="Trade">Trade</option>
+								
+							
+								
+									<option label="Transportation" value="Transportation">Transportation</option>
+								
+							
+								
+									<option label="Veterans" value="Veterans">Veterans</option>
+								
+							
+					</select>
+					</div>
+						<div class="form-group">
+						<label for="message">Comments<abbr title="Please enter your message">*</abbr></label>
+						<textarea id="message" class="form-control" rows="10" name="message" aria-required="true" Placeholder="Required" required></textarea>
+								</div>
+
+							 <div class="form-group">
+								<label class="checkbox">
+								<input for="newsletter" name="newsletter" id="newsletter_y" value="Y" type="checkbox" >
+								<strong>Subscribe to my email newsletter</strong> </label>
+							 </div>
+
+							<div class="form-group">
+								<label for="respons_y" class="checkbox">
+								<input name="response" id="response_y" value="Y" type="checkbox"  checked="checked">
+								<strong>I would like a response from the Senator</strong> </label>
+							 </div>
+
+					</fieldset>
+					<input class="btn" type="submit" id="side-search-btn" value="Send" />
+				</div>
+			</form>

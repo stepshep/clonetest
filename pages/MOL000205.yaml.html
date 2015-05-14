@@ -1,0 +1,56 @@
+				<form name="Form1" method="post" action="Contact.aspx" id="Form1">
+
+					<table border="0">
+						<tr>
+							<td align="right"><font face="arial" size="2"><font face="arial" color="red" size="2">* </font>
+									Name:</font>
+							<td><font face="Arial"><input name="txtName" type="text" id="txtName" style="background-color:LightSteelBlue;font-size:Small;width:370px;" /></font>
+						<TR>
+							<td align="right"><font face="arial" size="2"><font face="arial" color="red" size="2">* </font>
+									Address:</font>
+							<td><font face="Arial"><input name="txtAddress" type="text" id="txtAddress" style="background-color:LightSteelBlue;font-size:Small;width:370px;" /></font>
+						<TR>
+							<td align="right"><font face="arial" size="2"><font face="arial" color="red" size="2">* </font>
+									City:</font>
+							<td><font face="Arial"><input name="txtCity" type="text" id="txtCity" style="background-color:LightSteelBlue;font-size:Small;width:370px;" /></font>
+						<TR>
+							<td align="right"><font face="arial" size="2"><font face="arial" color="red" size="2">* </font>
+									Full 9-digit Zip:</font>
+							<td><font face="Arial"><input name="txtZip" type="text" maxlength="5" id="txtZip" style="background-color:LightSteelBlue;font-size:Small;width:50px;" /><font face="Arial"> -
+										<input name="txtZip4" type="text" maxlength="4" id="txtZip4" style="background-color:LightSteelBlue;font-size:Small;width:40px;" /></font></font>
+						<tr>
+							<td align="right"><font face="arial" size="2">Phone:</font>
+							<td><font face="Arial"><input name="txtPhone" type="text" id="txtPhone" style="background-color:LightSteelBlue;font-size:Small;width:370px;" /></font>
+						<tr>
+							<td align="right"><font face="arial" size="2"><font face="arial" color="red" size="2">* </font>
+									Email Address:</font>
+							<td><font face="Arial"><input name="txtEmail" type="text" id="txtEmail" style="background-color:LightSteelBlue;font-size:Small;width:370px;" /></font>
+						<tr>
+							<td align="right"><font face="arial" color="red" size="2">* </font><font face="arial" size="2">
+									Issue:</font>
+							<TD valign="middle"><input value="radCon" name="Issue" type="radio" id="radCon" checked="checked" />
+								<font face="arial" size="2">Constituent Issue<br>
+									<input value="radLeg" name="Issue" type="radio" id="radLeg" /> <font face="arial" size="2">
+										Legislative Issue<br>
+										<input value="radBill" name="Issue" type="radio" id="radBill" /> <font face="arial" size="2">
+											Issues Regarding Senate and/or House Bills<br>
+											<input value="radOther" name="Issue" type="radio" id="radOther" /> <font face="arial" size="2">
+												All Other Issues<br>
+											</font></font></font></font>
+						<tr>
+							<td align="right"><font face="arial" size="2"><font face="arial" color="red" size="2">* </font>
+									Subject:</font>
+							<td><font face="Arial"><input name="txtSubject" type="text" id="txtSubject" style="background-color:LightSteelBlue;font-size:Small;width:370px;" /></font></td>
+						</tr>
+					</table>
+					<table border="0">
+						<tr>
+							<td align="center"><font face="arial" size="2">Message:</font></td>
+						<tr>
+							<td align="left"><font face="Arial"><textarea name="txtMessage" id="txtMessage" rows="8" wrap="hard" cols="70"></textarea></font></td>
+						</tr>
+						<tr>
+							<td align="center"><input type="submit" name="btnSend" value="Send Message" id="btnSend" style="height:25px;width:128px;" /><INPUT style="WIDTH: 97px; HEIGHT: 25px" type="reset" value="Clear Form" Height="30" Width="128px"></td>
+						</tr>
+					</table>
+				</form>

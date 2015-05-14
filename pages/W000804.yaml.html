@@ -1,0 +1,24 @@
+          <form onsubmit="return checkformsearch(this)" method="get" action="//wittman.house.gov/index.cfm?sectionid=2%C2%A7iontree=">
+            <input type="text" value="Search Site" onfocus="iFocus(this)" onblur="iBlur(this)" name="searchkey" class="searchkey text c4" />
+            <input type="submit" value=" " class="searchButon" />
+          </form>
+          <form action="//wittman.house.gov/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+            <p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+            <p><input type="text" name="searchkey" id="searchkey" /></p>
+            <p id="searchEntire" class="c6">
+              <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked" />
+              <label for="entire">Entire Site</label>
+            </p>
+            <p id="searchSection" class="c6">
+              <input type="radio" class="radiobutton" name="locale" value="2" id="this_section" />
+              <label for="this_section">This Section</label>
+            </p>
+            <p class="submitbutton"><span><input type="submit" value="Search" /></span></p>
+          </form>
+<form method="get" action="/forms/writeyourrep/" class="zipform">
+    Zip: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
+    +4: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
+    <br />
+    <br />
+    <input type="submit" value="Submit" />
+</form>

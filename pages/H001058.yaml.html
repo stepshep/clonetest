@@ -1,0 +1,27 @@
+        <form action="/subscribe.aspx" class="mail-form sidebar-form">
+          <fieldset><legend>mail-form</legend>
+            <label for="text2">Receive the latest news &amp; updates right to your email</label>
+            <div class="row"><input id="text2" type="text" class="text" placeholder="first name" name="firstname" /></div>
+            <div class="row"><input type="text" class="text" placeholder="last name" title="last name" name="lastname" /></div>
+            <div class="phrow">
+            <input type="text" class="phtext" placeholder="phone" name="areacode" maxlength="3" size="3" />
+            <input type="text" class="phtext" value="" name="exchange" maxlength="3" size="3" />
+            <input type="text" class="phtext" value="" name="extension" maxlength="4" size="4" />
+            </div>
+            <div class="row">
+              <input type="text" class="text" placeholder="email address" title="email address" name="email" />
+              <input type="submit" class="submit" value="go" name="submit" />
+            </div>
+          </fieldset>
+        </form>
+<form method="get" action="/Contact/ContactForm.htm" class="zipform" name="zip" id="zip">
+    Zip: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
+    <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
+    <input type="submit" value="Submit" name="find" />
+</form>
+        <form action="/SiteMap/SearchResults.htm" class="search-form">
+          <fieldset><legend>search-form</legend>
+            <input type="text" placeholder="SEARCH SITE" class="text" tabindex="6" title="search site" name="q" />
+            <input type="submit" class="submit" value="go" tabindex="7" title="submit" />
+          </fieldset>
+        </form>

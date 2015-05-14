@@ -1,0 +1,43 @@
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+			<form action="/email-mick/" method="post" id="zipauthform">
+				<p id="zipauthpreamble"></p>
+				<h2>Zip Code Authentication Form</h2>
+				<p>
+				<label for="zipcode">Zip Code:<span class="req">*</span></label>
+				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+				<label for="zipfour" id="zipfourlabel">+4:</label>
+				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+				</p>
+				<p>
+				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code.<br /></span>
+				<input type="submit" value="Go to Form" class="button"/>
+				</p>
+				<hr/>
+				<ul>
+					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
+					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
+					<li class="zipmsg">Fields marked with * are required.</li>
+				</ul>
+			</form>
+		<form action="http://mulvaney.congressnewsletter.net/mail/util.cfm?mailaction=profile" method="post">
+			<input class="inputbox" name="EMAIL" onblur="if(this.value==&#39;&#39;) this.value=&#39;Enter Email Address&#39;;" onfocus="if(this.value==&#39;Enter Email Address&#39;) this.value=&#39;&#39;;" type="text" value="Enter Email Address" /><button class="button gtenews" name="submitprofile" type="submit">Go</button></form>
+	<form action="/index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
+		<div class="search gtsearch">
+	</form>
+				<div id="webfooter"> <div id="bottom"><div class="bottomwrap"><div class="moduletable gtmap"><h3> District Map</h3><div class="custom gtmap"><a href="/5th-district/"><img alt="District Map" src="/images/district-map.png" /></a></div></div><div class="moduletable gtthomas"><h3> Thomas Search</h3><div class="custom gtthomas"><form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post"><input class="text" id="bill" name="docidc113" onblur="if(this.value=='')this.value='Search by bill number'" onfocus="if(this.value=='Search by bill number')this.value=''" type="text" value="Search by bill number" /><input class="button" name="Enter" type="submit" /><input name="queryc113" type="hidden" /><input class="text" id="word" name="queryc113" onblur="if(this.value=='')this.value='Search by word or phrase'" onfocus="if(this.value=='Search by word or phrase')this.value=''" type="text" value="Search by word or phrase" /><input class="button" name="Enter" type="submit" />&nbsp;</form></div></div><div><h3> Follow me on Facebook</h3><p><span style="text-align:center;"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FMulvaneySC5&amp;width=300&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=false&amp;show_border=false" style="border:none; overflow:hidden; width:300px; height:62px;"></iframe></span></p></div></div></div><!-- /bottom --><div class="moduletable"><div class="custom"><dl class="office"><dt> Washington, DC Office</dt><dd> 2419 Rayburn HOB</dd><dd> Washington, D.C. 20515</dd><dd> T (202) 225-5501 F (202) 225-0464</dd></dl><dl class="office"><dt> Rock Hill Office</dt><dd> 1456 Ebenezer Rd.</dd><dd> Rock Hill, SC 29732</dd><dd> T (803) 327-1114 F (803) 327-4330</dd></dl><dl class="office"><dt> Gaffney Office</dt><dd> 110 Railroad Avenue</dd><dd> Gaffney, SC 29340</dd><dd> T (864) 206-6004 F (864) 206-6005</dd></dl><dl class="office last"><dt> Sumter Office</dt><dd> 531-A Oxford Drive</dd><dd> Sumter, SC 29150</dd><dd> T (803) 774-0186 F (803) 774-0188</dd></dl></div></div><ul class="menu" id="footer-menu"><li class="item-269"><a href="http://house.gov/content/site_tools/privacy_policy.php" target="_blank">Privacy Policy</a></li><li class="item-270"><a href="/site-map1/">Site Map</a></li><li class="item-271"><a href="https://forms.house.gov/mulvaney/webforms/zipauthen_contact.shtml">Contact Us</a></li></ul> </div>

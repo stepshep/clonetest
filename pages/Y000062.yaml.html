@@ -1,0 +1,60 @@
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="124" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+						<div class="sectionintro"><form action="/sign-up-for-e-newsletter" method="post">
+	<p class="formIntro" style="font-size: 12px;">
+		Please enter your information below to<br />
+		sign up for periodic newsletters.</p>
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="253">
+		<tbody>
+			<tr>
+				<td align="center" height="32" width="112">
+					<input class="text" id="form_10_firstname" maxlength="255" name="firstname" onblur="iBlur(this)" onfocus="iFocus(this);" style="width: 100px; height:14px" type="text" value="First Name" /></td>
+				<td align="center" width="141">
+					<input class="text" id="form_10_lastname" maxlength="255" name="lastname" onblur="iBlur(this)" onfocus="iFocus(this);" style="width: 100px; height:14px" type="text" value="Last Name" /></td>
+			</tr>
+			<tr>
+				<td align="left" colspan="2" height="32" style="padding-left: 3px;">
+					<input class="text" id="form_10_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="width: 226px; height:14px" type="text" value="E-mail Address*" /></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+			</tr>
+		</tbody>
+	</table>
+</form>
+			<form action="/contact-john2/" method="post" id="zipauthform">
+				<p id="zipauthpreamble"></p>
+				<h2>Zip Code Authentication Form</h2>
+				<p>
+				<label for="zipcode">Zip Code:<span class="req">*</span></label>
+				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+				<label for="zipfour" id="zipfourlabel">+4:</label>
+				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+				</p>
+				<p>
+				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code.<br /></span>
+				<input type="submit" value="Go to Form" class="button"/>
+				</p>
+				<hr/>
+				<ul>
+					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
+					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
+					<li class="zipmsg">Fields marked with * are required.</li>
+				</ul>
+			</form>
+				<div id="webfooter"> <div class="addthis"><script type="text/javascript"> var addthis_pub = ""; function addthis_proxy ( link ) { return addthis_open(link, "", "[URL]", "[TITLE]"); } </script><a href="http://www.addthis.com/bookmark.php" onclick="return addthis_sendto();" onmouseout="addthis_close();" onmouseover="return addthis_proxy(this);"><img alt="" border="0" height="16" src="http://s7.addthis.com/button1-share.gif" width="125" /></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script></div><div class="search"><form action="/index.cfm?sectionid=2&amp;sectiontree=" method="get" onsubmit="return checkformsearch(this)"><input name="sectionid" type="hidden" value="2" /><input name="sectiontree" type="hidden" value="" /><div align="left"> Search Website:</div><br /><input class="text" id="searchkey" name="searchkey" type="text" /><span style="display: none;"><input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1" /><label for="entire">Entire Site</label><input class="radiobutton" id="this_section" name="location" type="radio" value="1" /><label for="this_section">This Section</label></span><br /><input class="button searchButton" type="submit" value="Search" />&nbsp;</form></div><div class="addresses"><div style="width: 260px;"> Romano Mazzoli Federal Building<br /> 600 Martin Luther King, Jr. Place, Suite 216<br /> Louisville, KY 40202<br /> 502-582-5129 FAX 502-582-5897</div><div> 403 Cannon House Office Building<br /> U.S. House of Representatives<br /> Washington, DC 20515<br /> 202-225-5401 FAX 202-225-5776</div><div> Southwest Government Center<br /> 7219 Dixie Highway<br /> Louisville, KY 40258<br /> 502-933-5863 FAX 502-935-6934</div></div><div align="center" class="bottomlinks"><a href="/?sectionid=144">Site Map</a> | <a href="http://www.house.gov/" target="_blank">U.S. House of Representatives</a> | <a href="http://www.house.gov/house/privacy.shtml" target="_blank">Privacy Policy</a></div><script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script><script type="text/javascript"> try { var pageTracker = _gat._getTracker("UA-8313162-1"); pageTracker._trackPageview(); } catch(err) {}</script> </div>

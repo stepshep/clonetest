@@ -1,0 +1,55 @@
+              <form onsubmit="return checkformsearch(this)" method="get" action="index.cfm?sectionid=2§iontree=">
+                <input type="text" value="Search Site" onfocus="iFocus(this)" onblur="iBlur(this)" name="searchkey" class="searchkey text" style="color: rgb(119, 119, 119);"/>
+                <input type="submit" value="" class="searchButon button"/>
+                 
+              </form>
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+	<form action="/index.cfm?sectionid=47&amp;sectiontree=8,44,47" method="post">
+		<p class="formQuestion" style="text-align: center;">
+			SIGN UP FOR E-NEWSLETTERS</p>
+		<div class="signUpInput">
+			<input class="text" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102,95,76)" value="
+	</form>
+	<form action="http://2013-nc08.congressnewsletter.net/mail/util.cfm?mailaction=profile" method="post">
+		<p class="formQuestion" style="text-align: center;">
+			SIGN UP FOR E-NEWSLETTERS</p>
+		<div class="signUpInput">
+			<input class="text" id="EMAIL" maxlength="255" name="EMAIL" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102,95,76)" value="
+	</form>
+			<form action="/email-me/" method="post" id="zipauthform">
+				<p id="zipauthpreamble"></p>
+				<h2>Zip Code Authentication Form</h2>
+				<p>
+				<label for="zipcode">Zip Code:<span class="req">*</span></label>
+				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+				<label for="zipfour" id="zipfourlabel">+4:</label>
+				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+				</p>
+				<p>
+				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code.<br /></span>
+				<input type="submit" value="Go to Form" class="button"/>
+				</p>
+				<hr/>
+				<ul>
+					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
+					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
+					<li class="zipmsg">Fields marked with * are required.</li>
+				</ul>
+			</form>
+				<div id="webfooter"> <div id="billSearch"><div class="searchform"><form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank"><input class="text" id="phrase" maxlength="50" name="queryc113" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Bill Number" /><input class="searchbuttons button" name="Submit" type="submit" value="" />&nbsp;</form></div><div class="searchform"><!--<form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-number" target="_blank"><input class="text" id="bill" maxlength="50" name="docidc110" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Word or Phrase" /><input class="searchbuttons button" name="Submit" type="submit" value="" /><input name="queryc112" type="hidden" />&nbsp;</form>--><form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post" target="_blank"><input class="text" id="word" name="queryc113" onblur="if(this.value=='')this.value='Word or Phrase'" onfocus="if(this.value=='Word or Phrase')this.value=''" type="text" value="Word or Phrase" /><input class="searchbuttons button" name="Submit" type="submit" value="" />&nbsp;</form></div></div><p><a class="houseseal" href="http://house.gov" target="_blank"><img alt="house.gov" src="/images/houseseal.png" /></a></p><div id="addresses"><div id="citylist"><ul><li><a class="tab2" href="#tabs-2">&nbsp;</a></li><li><a class="tab3" href="#tabs-3">&nbsp;</a></li><li><a class="tab1" href="#tabs-1">&nbsp;</a></li><li><a class="tab4" href="#tabs-4">&nbsp;</a></li><li><a class="tab5" href="#tabs-5">&nbsp;</a></li></ul></div><div id="tabs-1"><div class="districtMap"> &nbsp;</div><a href="#" target="_blank">&nbsp;</a></div><div id="tabs-2"><div class="districtMap"> &nbsp;</div><a href="#" target="_blank">&nbsp;</a></div><div id="tabs-3"><div class="districtMap"> &nbsp;</div><a href="#" target="_blank">&nbsp;</a></div><div id="tabs-4"><div class="districtMap"> &nbsp;</div><a href="#" target="_blank">&nbsp;</a></div><div id="tabs-5"><div class="districtMap"> &nbsp;</div><a href="#" target="_blank">&nbsp;</a></div></div><div class="fnav"><a href="http://house.gov/content/site_tools/privacy_policy.php" target="_blank">Privacy Policy</a> | <a href="/site-map">Site Map</a> | <a class="contactus" href="/contact-form/">Contact Us<span>&nbsp;</span></a></div><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(["_setAccount", "UA-37275938-1"]); _gaq.push(["_trackPageview"]); (function() { var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true; ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s); })(); </script> </div>

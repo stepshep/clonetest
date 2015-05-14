@@ -1,0 +1,226 @@
+        <form action="/subscribe.aspx" class="mail-form sidebar-form">
+          <fieldset><legend>mail-form</legend>
+            <label for="text2">Receive the latest news &amp; updates right to your email</label>
+            <div class="row"><input id="text2" type="text" class="text" value="first name" name="firstname" /></div>
+            <div class="row"><input type="text" class="text" value="last name" title="last name" name="lastname" /></div>
+            <div class="row">
+              <input type="text" class="text" value="email address" title="email address" name="email" />
+              <input type="submit" class="submit" value="go" name="submit" />
+            </div>
+          </fieldset>
+        </form>
+		<td class="ContentCell"><span id="ctl00_ctl13_ctl01_Text" class="middlecopy"><form name="contact" id="contact" action="/submit-contact.aspx" method="post" class="zipform">
+    <table cellspacing="2" cellpadding="0" align="center">
+        <tbody>
+            <tr>
+                <td align="right">
+                <strong>Name: </strong>
+                </td>
+                <td>
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><strong>Prefix *</strong> </td>
+                            <td><strong>First Name *</strong> </td>
+                            <td><strong>MI</strong> </td>
+                            <td><strong>Last Name *</strong> </td>
+                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
+                            <td><strong>Military Designation</strong> </td>
+                        </tr>
+                        <tr>
+                            <td><select required="required" title="Prefix" name="required-prefix">
+                            <option></option>
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                            <option>Ms.</option>
+                            <option>Dr.</option>
+                            <option>Rev.</option>
+                            <option>1LT</option>
+                            <option>1SG</option>
+                            <option>1stSgt</option>
+                            <option>2LT</option>
+                            <option>A1C</option>
+                            <option>AB</option>
+                            <option>ADM</option>
+                            <option>Amn</option>
+                            <option>BG</option>
+                            <option>CAPT</option>
+                            <option>CCM Sgt</option>
+                            <option>CDR</option>
+                            <option>CMC</option>
+                            <option>CMSgt</option>
+                            <option>COL</option>
+                            <option>Cpl</option>
+                            <option>CPO</option>
+                            <option>CPT</option>
+                            <option>CSM</option>
+                            <option>CW01</option>
+                            <option>CW02</option>
+                            <option>CW03</option>
+                            <option>CW04</option>
+                            <option>CW05</option>
+                            <option>CW2</option>
+                            <option>CW3</option>
+                            <option>CW4</option>
+                            <option>CWS</option>
+                            <option>E-7</option>
+                            <option>E-8</option>
+                            <option>E-9</option>
+                            <option>ENS</option>
+                            <option>FLTMC</option>
+                            <option>FORMC</option>
+                            <option>GEN</option>
+                            <option>GySgt</option>
+                            <option>LCDR</option>
+                            <option>LCpl</option>
+                            <option>LT</option>
+                            <option>LTC</option>
+                            <option>LTG</option>
+                            <option>LTJG</option>
+                            <option>MAJ</option>
+                            <option>MCPO</option>
+                            <option>MG</option>
+                            <option>MGySgt</option>
+                            <option>MSG</option>
+                            <option>MSgt</option>
+                            <option>PFC</option>
+                            <option>PO1</option>
+                            <option>PO2</option>
+                            <option>PO3</option>
+                            <option>PV1</option>
+                            <option>PV2</option>
+                            <option>Pvt</option>
+                            <option>RADM</option>
+                            <option>RDML</option>
+                            <option>SA</option>
+                            <option>SCPO</option>
+                            <option>SFC</option>
+                            <option>SGM</option>
+                            <option>SGT</option>
+                            <option>Sgt</option>
+                            <option>SgtMaj</option>
+                            <option>SMSgt</option>
+                            <option>SN</option>
+                            <option>SPC</option>
+                            <option>SrA</option>
+                            <option>SSG</option>
+                            <option>SSgt</option>
+                            <option>TSgt</option>
+                            <option>USCG</option>
+                            <option>VADM</option>
+                            <option>W01</option>
+                            <option>WO</option>
+                            </select></td>
+                            <td><input type="text" maxlength="90" size="12" name="required-first" required="required" title="First Name" /></td>
+                            <td><input type="text" maxlength="90" size="8" name="middle" /></td>
+                            <td><input type="text" maxlength="90" size="15" name="required-last" required="required" title="Last Name" /></td>
+                            <td><input type="text" maxlength="90" size="10" name="suffix" /></td>
+                            <td><select title="Military Designation" name="military">
+                            <option></option>
+                            <option value=" ">, None</option>
+                            <option>, USN</option>
+                            <option>, USN, (Ret.)</option>
+                            <option>, USA</option>
+                            <option>, USA, (Ret.)</option>
+                            <option>, USMC</option>
+                            <option>, USMC, (Ret.)</option>
+                            <option>, USAF</option>
+                            <option>, USAF, (Ret.)</option>
+                            <option>, USCG</option>
+                            <option>, USCG, (Ret.)</option>
+                            </select></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">  <strong>* Address: </strong> </td>
+                <td><input type="text" maxlength="190" size="60" name="required-address" required="required" title="Address" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* City: </strong> </td>
+                <td><input type="text" maxlength="45" name="required-city" required="required" title="State" /> <strong>State:</strong>
+                <select name="required-state" required="required">
+                <option selected="true">VA</option>
+                </select>
+                <strong>Zip:</strong>
+                <input type="text" onkeydown="f(this)" onkeyup="f(this)" maxlength="5" size="5" name="zip5" required="required" title="Zip Code" />
+                <input type="text" maxlength="4" size="4" name="zip4" onkeydown="f(this)" onkeyup="f(this)" /> </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Phone Number: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="phone" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Email: </strong> </td>
+                <td><input type="text" maxlength="100" size="60" name="required-email" required="required" title="Email" /></td>
+            </tr>
+            <tr>
+                <td align="right"><strong>* Issue: </strong> </td>
+                <td><select size="1" name="required-issue" required="required" title="Issue">
+                <option></option>
+                <option value="AGR">Agriculture</option>
+                <option value="AB">Abortion</option>
+                <option value="BUD">Budget</option>
+                <option value="CONETHICS">Congressional Ethics</option>
+                <option value="DEF">Defense</option>
+                <option value="ECON">Economy</option>
+                <option value="EDU">Education</option>
+                <option value="ENE">Energy</option>
+                <option value="ENV">Environment</option>
+                <option value="GUN">Gun Control</option>
+                <option value="HEA">Health</option>
+                <option value="DHS">Homeland Security</option>
+                <option value="HUD">Housing</option>
+                <option value="IMM">Immigration</option>
+                <option value="INT">International Relations</option>
+                <option value="IRAQ">Iraq</option>
+                <option value="JOBS">Jobs</option>
+                <option value="LAB">Labor</option>
+                <option value="MED">Medicare</option>
+                <option value="HE_DRUG">Prescription Drugs</option>
+                <option value="SSEC">Social Security</option>
+                <option value="TAX">Taxes</option>
+                <option value="TRADE">Trade</option>
+                <option value="TEL">Telecommunications</option>
+                <option value="TRA">Transportation</option>
+                <option value="VET">Veterans</option>
+                <option value="GEN">Others</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"><strong>* Message: </strong> </td>
+                <td><textarea name="required-message" rows="15" cols="60" required="required" title="Message"></textarea></td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"> </td>
+                <td><input type="checkbox" value="subscribe" name="subscribe" /> Check this box to sign up for my E-Newsletter! </td>
+            </tr>
+            <tr>
+                <td valign="top" align="right"> </td>
+                <td><input type="checkbox" value="Yes" name="response" /> Please send a response to my inquiry</td>
+            </tr>
+            <tr>
+                <td>
+                <div id="response">&nbsp;</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <center>
+                <input type="text" name="district-contact" size="60" maxlength="100" value="InD" style="display: none;" id="district-contact" />
+                <input type="submit" value="Send Email" />
+                <input type="reset" value="Reset" />
+                </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form></span>
+        <form action="/Search/Results.htm" class="search-form">
+          <fieldset><legend>Search this Site</legend>
+            <input type="text" value="SEARCH SITE" class="text" tabindex="6" title="search site" name="q" />
+            <input type="submit" class="submit" value="go" tabindex="7" title="submit" />
+          </fieldset>
+        </form>

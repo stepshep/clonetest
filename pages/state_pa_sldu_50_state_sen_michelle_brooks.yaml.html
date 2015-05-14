@@ -1,0 +1,419 @@
+        <form method="post" action="contact.aspx?websiteid=50" onsubmit="javascript:return WebForm_OnSubmit();" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'bSubmit')" id="form1">
+<div class="aspNetHidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=MyuEdMkOXwxcfRfgbKp-G4q5KFSPWZoWoFlT-MgCWKFTZkdc046KuQvlm3IoOXtGf5l6nH5OwKe2NRY_94qFuLir2dEQn4GlN5uv7c1H3P41&amp;t=635589255571259667" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=ib6t_WAaOhl0RCdbhSP_l-4ss-UaVYfq7imXV2re1oICPjTDqOm7aLcv_8IfLXEQfSpaMnZYVwqRrGaolTlp5KB4qBVTLrHrlIBeMGEX0nP05SMI-3EfOSRdY36Ks78tZgE9kjCQMAFbJkC7KX0x_-oJcarlmzWxXAwQAMMIu9M1&amp;t=7e14e7ac" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a1453655a-6b8d-49b1-94c2-f77a352f5241%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%3aen-US%3aac331549-681c-4402-9fb7-09ec3c579ee8%3a16e4e7cd%3af7645509%3a22a6274a%3aed16cbdc%3ab7778d6c%3a82923ac3%3a24ee1bba%3af46195d3%3a2003d0b8%3a88144a7a%3a1e771326%3aaa288e2d%3a2bef5fcc%3a11e117d7%3a7165f74" type="text/javascript"></script>
+<script src="/WebResource.axd?d=LAdd7OD7IKStzk5t_n5Hmb1tyqmYseJxQYicCDdHErTQREPfSA4-wCrE2UR-o0oa84xzfHMma4k5PtkzB7rv6Y5pDfk-TyVfauB2oyR8bkA1&amp;t=635589255571259667" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+</div>
+            <div id="contactform">
+                
+                <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'form1', ['tddlphonetype1Panel','','tddlphonetype2Panel','','tddlMunicipalityPanel','','tRadAjaxManager2SU','RadAjaxManager2SU'], ['txtPhone','','ddlphonetype1','ddlphonetype1','txtPhone0','','ddlphonetype2','ddlphonetype2'], [], 90, '');
+//]]>
+</script>
+
+                <!-- 2013.3.1015.40 --><div id="RadAjaxManager2SU">
+	<span id="RadAjaxManager2" style="display:none;"></span>
+</div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <table style="padding:10px;" id="decorated">
+                                    <tr>
+                                        <td>
+                                            <span id="Label1" style="font-weight: 700">First Name:</span>
+                                        </td>
+                                        <td>
+                                            <span id="TextBoxRequiredFieldValidator" style="color:Red;display:none;">*Required</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="Label2" style="font-weight: 700">Last Name:</span>
+                                        </td>
+                                        <td>
+                                            <span id="RequiredFieldValidator1" style="color:Red;display:none;">*Required</span>
+                                        </td>
+                                    </tr>
+                                    
+
+                                    <tr>
+                                        <td>
+                                            <span id="Label5" style="font-weight: 700">Email Address</span>
+                                        </td>
+                                        <td>
+                                            <span id="RequiredFieldValidator2" style="color:Red;display:none;">Email must be entered</span>
+                                            <span id="emailValidator" style="color:Red;display:none;">Please, enter valid e-mail address.</span>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr id="trPhone">
+	<td>
+                                            <span id="Label6">Phone Number</span>
+                                        </td>
+	<td>
+		<select name="ddlphonetype1" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlphonetype1\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlphonetype1" class="Inlinedisplay">
+			<option value="Cell">Cell</option>
+			<option selected="selected" value="Home">Home</option>
+			<option value="Work">Work</option>
+
+		</select>
+	</div>
+                                            <span id="rfPhone" style="color:Red;display:none;">*Required</span>
+                                                    
+                                                </td></tr></table>
+                                           
+                                        </td>
+</tr>
+
+
+                                    <tr id="trPhone2">
+	<td>
+                                            Secondary Phone</td>
+	<td><table style="padding:0px;margin:0px;"><tr><td>
+                                            <div class="RadAjaxPanel" id="ddlphonetype2Panel">
+		<select name="ddlphonetype2" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlphonetype2\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlphonetype2" class="Inlinedisplay">
+			<option selected="selected" value="Cell">Cell</option>
+			<option value="Work">Work</option>
+
+		</select>
+	</div>
+                                                
+                                            </td></tr></table>
+                                           
+                                        </td>
+</tr>
+
+
+                                    <tr id="trAddress1">
+	<td>
+                                            <span id="Label7" style="font-weight:bold;">Address1</span>
+                                        </td>
+	<td>
+                                            <span id="rfAddress1" style="color:Red;display:none;">*Required</span>
+                                        </td>
+</tr>
+
+
+                                    <tr id="trAddress2">
+	<td>
+                                            <span id="Label8">Address2</span>
+                                        </td>
+	<td>
+
+                                        </td>
+</tr>
+
+
+                                    <tr id="trCity">
+	<td>
+                                            <span id="Label9" style="font-weight:bold;">City</span>
+                                        </td>
+	<td>
+                                            <span id="rfcity" style="color:Red;display:none;">*Required</span>
+                                        </td>
+</tr>
+
+
+                                    <tr id="trState">
+	<td>
+                                            <span id="Label10">State</span>
+                                        </td>
+	<td>
+                                            <div id="ddlState" class="RadComboBox RadComboBox_Metro" style="font-size:Small;width:190px;">
+		<table summary="combobox" style="border-width:0;border-collapse:collapse;table-layout:fixed;width:100%">
+			<tr class="rcbReadOnly">
+			</tr>
+	</div>
+                                        </td>
+</tr>
+
+
+                                    <tr id="trZipcode">
+	<td>
+                                            <span id="Label11" style="font-weight:bold;">Zipcode</span>
+                                        </td>
+	<td>
+                                            <span id="rfZipcode" style="color:Red;display:none;">*Required</span>
+                                        </td>
+</tr>
+
+                                    
+                                </table>
+                            </td>
+                            <td>
+                                <strong>Select an Issue</strong><br />
+                                <div id="ddlIssue" class="RadComboBox RadComboBox_Metro" style="font-size:Small;width:190px;">
+	<table summary="combobox" style="border-width:0;border-collapse:collapse;table-layout:fixed;width:100%">
+		<tr class="rcbReadOnly">
+		</tr>
+</div>
+                                <br />
+                                
+                                
+                                <br />
+                                <span id="lLists">Signup for lists</span>
+                                <br />
+                                <div id="lbLists" class="RadListBox RadListBox_Metro" style="width:190px;">
+	<div tabindex="18" class="rlbGroup rlbGroupRight">
+		<ul class="rlbList">
+			<li id="lbLists_i0" class="rlbItem" style="font-weight:bold;"><label><input type="checkbox" class="rlbCheck" /><span class="rlbText">ENewsletter</span></label></li>
+		</ul>
+</div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="Label13" style="font-weight: 700">Questions and Comments</span>
+                                <span id="rfComments" style="color:Red;display:none;">*Required</span>
+                                <br />
+                                <br />
+                                <div id="RadCaptcha1" class="RadCaptcha RadCaptcha_Default">
+		<label for="RadCaptcha1_InvisibleTextBox" id="RadCaptcha1_HiddenLabel" style="display:none;">Do not fill this textbox.</label><input name="RadCaptcha1$InvisibleTextBox" type="text" id="RadCaptcha1_InvisibleTextBox" style="display:none;" />
+</div>
+                                <div id="RadCaptcha2" class="RadCaptcha RadCaptcha_Default">
+
+</div>
+                                <br />
+                                <span id="Label17" style="font-style: italic">If you sign up to receive electronic correspondence, your email address will not be disclosed to any person who is not employed by the Senate of Pennsylvania.  All updates sent from this Senate office will consist solely of legislative information.</span>
+                            &nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("TextBoxRequiredFieldValidator"), document.getElementById("RequiredFieldValidator1"), document.getElementById("RequiredFieldValidator2"), document.getElementById("emailValidator"), document.getElementById("rfPhone"), document.getElementById("rfAddress1"), document.getElementById("rfcity"), document.getElementById("rfZipcode"), document.getElementById("rfComments"), document.getElementById("RadCaptcha1_ctl00"), document.getElementById("RadCaptcha2_ctl00"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var TextBoxRequiredFieldValidator = document.all ? document.all["TextBoxRequiredFieldValidator"] : document.getElementById("TextBoxRequiredFieldValidator");
+TextBoxRequiredFieldValidator.controltovalidate = "txtFirstname";
+TextBoxRequiredFieldValidator.errormessage = "*Required";
+TextBoxRequiredFieldValidator.display = "Dynamic";
+TextBoxRequiredFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+TextBoxRequiredFieldValidator.initialvalue = "";
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+RequiredFieldValidator1.controltovalidate = "txtLastname";
+RequiredFieldValidator1.errormessage = "*Required";
+RequiredFieldValidator1.display = "Dynamic";
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator1.initialvalue = "";
+var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+RequiredFieldValidator2.controltovalidate = "txtEmail";
+RequiredFieldValidator2.errormessage = "Email must be entered";
+RequiredFieldValidator2.display = "Dynamic";
+RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator2.initialvalue = "";
+var emailValidator = document.all ? document.all["emailValidator"] : document.getElementById("emailValidator");
+emailValidator.controltovalidate = "txtEmail";
+emailValidator.errormessage = "Please, enter valid e-mail address.";
+emailValidator.display = "Dynamic";
+emailValidator.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+emailValidator.validationexpression = "^[\\w\\.\\-]+@[a-zA-Z0-9\\-]+(\\.[a-zA-Z0-9\\-]{1,})*(\\.[a-zA-Z]{2,3}){1,2}$";
+var rfPhone = document.all ? document.all["rfPhone"] : document.getElementById("rfPhone");
+rfPhone.controltovalidate = "txtPhone";
+rfPhone.errormessage = "*Required";
+rfPhone.display = "Dynamic";
+rfPhone.enabled = "False";
+rfPhone.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfPhone.initialvalue = "";
+var rfAddress1 = document.all ? document.all["rfAddress1"] : document.getElementById("rfAddress1");
+rfAddress1.controltovalidate = "txtAddress1";
+rfAddress1.errormessage = "*Required";
+rfAddress1.display = "Dynamic";
+rfAddress1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfAddress1.initialvalue = "";
+var rfcity = document.all ? document.all["rfcity"] : document.getElementById("rfcity");
+rfcity.controltovalidate = "txtCity";
+rfcity.errormessage = "*Required";
+rfcity.display = "Dynamic";
+rfcity.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfcity.initialvalue = "";
+var rfZipcode = document.all ? document.all["rfZipcode"] : document.getElementById("rfZipcode");
+rfZipcode.controltovalidate = "txtZip";
+rfZipcode.errormessage = "*Required";
+rfZipcode.display = "Dynamic";
+rfZipcode.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfZipcode.initialvalue = "";
+var rfComments = document.all ? document.all["rfComments"] : document.getElementById("rfComments");
+rfComments.controltovalidate = "txtComments";
+rfComments.errormessage = "*Required";
+rfComments.display = "Dynamic";
+rfComments.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfComments.initialvalue = "";
+var RadCaptcha1_ctl00 = document.all ? document.all["RadCaptcha1_ctl00"] : document.getElementById("RadCaptcha1_ctl00");
+RadCaptcha1_ctl00.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RadCaptcha2_ctl00 = document.all ? document.all["RadCaptcha2_ctl00"] : document.getElementById("RadCaptcha2_ctl00");
+RadCaptcha2_ctl00.errormessage = "This has been detected as spam because the form was filled out too quickly.  If this is not correct, wait 4 seconds and submit again.";
+RadCaptcha2_ctl00.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Telerik.Web.UI.RadListBox._preInitialize("lbLists","0");;(function() {
+                        function loadHandler() {
+                            var hf = $get('RadStyleSheetManager1_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2013.3.1015.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:ac331549-681c-4402-9fb7-09ec3c579ee8:aac1aeb7:1c2121e:4d471440:fe53831e;Telerik.Web.UI.Skins, Version=2013.3.1015.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:e000bc08-a319-4737-95ab-3101f6ff2eeb:a19c4d24:6f4423c2:c992ffc4:f7a27b73';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();WebForm_AutoFocus('bsubmit');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[{InitControlID : "txtPhone",UpdatedControls : [{ControlID:"ddlphonetype1",PanelID:""},{ControlID:"ddlphonetype2",PanelID:""}]},{InitControlID : "ddlphonetype1",UpdatedControls : [{ControlID:"ddlphonetype1",PanelID:""},{ControlID:"ddlphonetype2",PanelID:""}]},{InitControlID : "txtPhone0",UpdatedControls : [{ControlID:"ddlphonetype1",PanelID:""},{ControlID:"ddlphonetype2",PanelID:""}]},{InitControlID : "ddlphonetype2",UpdatedControls : [{ControlID:"ddlphonetype1",PanelID:""},{ControlID:"ddlphonetype2",PanelID:""}]},{InitControlID : "ddlCounty",UpdatedControls : [{ControlID:"ddlMunicipality",PanelID:""}]}],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"RadAjaxManager2","updatePanelsRenderMode":0}, null, null, $get("RadAjaxManager2"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtFirstname\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtFirstname_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtFirstname"));
+});
+
+document.getElementById('TextBoxRequiredFieldValidator').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('TextBoxRequiredFieldValidator'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtLastname\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtLastname_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtLastname"));
+});
+
+document.getElementById('RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtEmail\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtEmail_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtEmail"));
+});
+
+document.getElementById('RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator2'));
+}
+
+document.getElementById('emailValidator').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('emailValidator'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMaskedTextBox, {"_displayText":"","_focused":false,"_initialMasks":[new Telerik.Web.UI.RadLiteralMaskPart('('),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadLiteralMaskPart(') '),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadLiteralMaskPart('-'),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart()],"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtPhone\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","autoPostBack":true,"clientStateFieldID":"txtPhone_ClientState","displayPromptChar":" _","enabled":true,"styles":{HoveredStyle: ["width:125px;", "riTextBox riHover"],InvalidStyle: ["width:125px;", "riTextBox riError"],DisabledStyle: ["width:125px;", "riTextBox riDisabled"],FocusedStyle: ["width:125px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:125px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:125px;", "riTextBox riRead"],EnabledStyle: ["width:125px;", "riTextBox riEnabled"]}}, null, null, $get("txtPhone"));
+});
+
+document.getElementById('rfPhone').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfPhone'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMaskedTextBox, {"_displayText":"","_focused":false,"_initialMasks":[new Telerik.Web.UI.RadLiteralMaskPart('('),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadLiteralMaskPart(') '),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadLiteralMaskPart('-'),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart(),new Telerik.Web.UI.RadDigitMaskPart()],"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtPhone0\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","autoPostBack":true,"clientStateFieldID":"txtPhone0_ClientState","displayPromptChar":" _","enabled":true,"styles":{HoveredStyle: ["width:125px;", "riTextBox riHover"],InvalidStyle: ["width:125px;", "riTextBox riError"],DisabledStyle: ["width:125px;", "riTextBox riDisabled"],FocusedStyle: ["width:125px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:125px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:125px;", "riTextBox riRead"],EnabledStyle: ["width:125px;", "riTextBox riEnabled"]}}, null, null, $get("txtPhone0"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtAddress1\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtAddress1_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtAddress1"));
+});
+
+document.getElementById('rfAddress1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfAddress1'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtAddress2\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtAddress2_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtAddress2"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtCity\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtCity_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtCity"));
+});
+
+document.getElementById('rfcity').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfcity'));
+}
+
+WebForm_InitCallback();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":0,"_height":0,"_skin":"Metro","_text":"PA","_uniqueId":"ddlState","_value":"PA","clientStateFieldID":"ddlState_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"value":"AL"},{"value":"AK"},{"value":"AZ"},{"value":"AR"},{"value":"CA"},{"value":"CO"},{"value":"CT"},{"value":"DC"},{"value":"DE"},{"value":"FL"},{"value":"GA"},{"value":"HI"},{"value":"ID"},{"value":"IL"},{"value":"IN"},{"value":"IA"},{"value":"KS"},{"value":"KY"},{"value":"LA"},{"value":"ME"},{"value":"MD"},{"value":"MA"},{"value":"MI"},{"value":"MN"},{"value":"MS"},{"value":"MO"},{"value":"MT"},{"value":"NE"},{"value":"NV"},{"value":"NH"},{"value":"NJ"},{"value":"NM"},{"value":"NY"},{"value":"NC"},{"value":"ND"},{"value":"OH"},{"value":"OK"},{"value":"OR"},{"value":"PA","selected":true},{"value":"RI"},{"value":"SC"},{"value":"SD"},{"value":"TN"},{"value":"TX"},{"value":"UT"},{"value":"VT"},{"value":"VA"},{"value":"WA"},{"value":"WV"},{"value":"WI"},{"value":"WY"}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":38}, null, null, $get("ddlState"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtZip\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtZip_ClientState","enabled":true,"styles":{HoveredStyle: ["width:190px;", "riTextBox riHover"],InvalidStyle: ["width:190px;", "riTextBox riError"],DisabledStyle: ["width:190px;", "riTextBox riDisabled"],FocusedStyle: ["width:190px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:190px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:190px;", "riTextBox riRead"],EnabledStyle: ["width:190px;", "riTextBox riEnabled"]}}, null, null, $get("txtZip"));
+});
+
+document.getElementById('rfZipcode').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfZipcode'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadComboBox, {"_dropDownWidth":215,"_height":0,"_postBackReference":"__doPostBack(\u0027ddlIssue\u0027,\u0027arguments\u0027)","_skin":"Metro","_text":"General","_uniqueId":"ddlIssue","_value":"25","clientStateFieldID":"ddlIssue_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{},{"value":"25","selected":true}],"localization":"{\"AllItemsCheckedString\":\"All items checked\",\"ItemsCheckedString\":\"items checked\",\"CheckAllString\":\"Check All\"}","selectedIndex":1}, null, null, $get("ddlIssue"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListBox, {"_checkBoxes":true,"_uniqueId":"lbLists","checkedIndices":[],"clientStateFieldID":"lbLists_ClientState","itemData":[{"value":"7190"}],"selectedIndices":[],"selectionMode":1}, null, null, $get("lbLists"));
+});
+
+document.getElementById('rfComments').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('rfComments'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txtComments\\\u0027,\\\u0027\\\u0027)\", 0)","_skin":"Metro","_validationText":"","clientStateFieldID":"txtComments_ClientState","enabled":true,"styles":{HoveredStyle: ["width:100%;", "riTextBox riHover"],InvalidStyle: ["width:100%;", "riTextBox riError"],DisabledStyle: ["width:100%;", "riTextBox riDisabled"],FocusedStyle: ["width:100%;", "riTextBox riFocused"],EmptyMessageStyle: ["width:100%;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:100%;", "riTextBox riRead"],EnabledStyle: ["width:100%;", "riTextBox riEnabled"]}}, null, null, $get("txtComments"));
+});
+
+document.getElementById('RadCaptcha1_ctl00').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RadCaptcha1_ctl00'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadCaptcha, {"_audioUrl":"/Telerik.Web.UI.WebResource.axd?type=cah\u0026isc=true\u0026guid=519dec34-cdd2-4704-bd5e-64245db4effb","_enableAudio":false,"_persistCode":false,"clientStateFieldID":"RadCaptcha1_ClientState"}, null, null, $get("RadCaptcha1"));
+});
+
+document.getElementById('RadCaptcha2_ctl00').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RadCaptcha2_ctl00'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadCaptcha, {"_audioUrl":"/Telerik.Web.UI.WebResource.axd?type=cah\u0026isc=true\u0026guid=661abb38-7581-4fb8-ba92-2cbe672b1306","_enableAudio":false,"_persistCode":false,"clientStateFieldID":"RadCaptcha2_ClientState"}, null, null, $get("RadCaptcha2"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_postBackReference":"WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions('bSubmit', '', true, '', '', false, true))","clientStateFieldID":"bSubmit_ClientState","height":"40px","iconData":{},"imageData":{},"text":"Submit","toggleStatesData":[],"uniqueGroupName":"","uniqueID":"bSubmit","width":"120px"}, null, null, $get("bSubmit"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_causesValidation":false,"_postBackReference":"","clientStateFieldID":"bReset_ClientState","height":"40px","iconData":{},"imageData":{},"text":"Reset","toggleStatesData":[],"uniqueGroupName":"","uniqueID":"bReset","width":"120px"}, null, null, $get("bReset"));
+});
+//]]>
+</script>
+</form>

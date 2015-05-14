@@ -1,0 +1,204 @@
+      	      	<form name="frmCGAQuick" id="frmCGAQuick" action="http://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp">
+<fieldset>
+        <legend>&nbsp;Bill Search</legend>
+		<p class="centerthis">
+		  <img src="../images/menu/Search1.png" width="32px" height="32px" alt="Search">&nbsp;&nbsp;Document Type:
+		  <select name="selBillType" style="width:95px; height:22px" size="1">
+		    <option selected>Bill</option>
+		    <option>House Cal#</option>
+		    <option>Senate Cal#</option>
+		    <option>File Copy</option>
+		    <option>LCO#</option>
+		    <option>Public Act</option>
+		    <option>Special Act</option>
+	      </select>     
+  &nbsp; </p>
+		<p class="centerthis">Number:
+  <input name="bill_num" maxlength="6" style="width: 60px" title="See Quick Search Help for Resolutions">
+		  &nbsp; Year:
+		  <select id="which_year" name="which_year" style="width:70px">
+		    <OPTION selected value=2015>2015</OPTION>
+		    <OPTION value=2013>2014</OPTION>
+		    <OPTION value=2013>2013</OPTION>
+		    <OPTION value=2012>2012</OPTION>
+		    <OPTION value=2011>2011</OPTION>
+		    <OPTION value=2010>2010</OPTION>
+		    <OPTION value=2009>2009</OPTION>
+		    <OPTION value=2008>2008</OPTION>
+		    <OPTION value=2007>2007</OPTION>
+		    <OPTION value=2006>2006</OPTION>
+		    <OPTION value=2005>2005</OPTION>
+		    <OPTION value=2004>2004</OPTION>
+		    <OPTION value=2003>2003</OPTION>
+		    <OPTION value=2002>2002</OPTION>
+		    <OPTION value=2001>2001</OPTION>
+		    <OPTION value=2000>2000</OPTION>
+		    <OPTION value=1999>1999</OPTION>
+		    <OPTION value=1998>1998</OPTION>
+		    <OPTION value=1997>1997</OPTION>
+		    <OPTION value=1996>1996</OPTION>
+		    <OPTION value=1995>1995</OPTION>
+		    <OPTION value=1994>1994</OPTION>
+		    <OPTION value=1993>1993</OPTION>
+		    <OPTION value=1992>1992</OPTION>
+		    <OPTION value=1991>1991</OPTION>
+	      </select>	
+  </p>
+		<p class="centerthis">
+		  <input type="image" src="../images/menu/GO_circle_green.png" name="SUBMIT1" value="New" onclick="document.frmCGAQuick.target='_blank'" >
+		  &nbsp;&nbsp; <a href="http://www.cga.ct.gov/html/BillHelp.pdf" target="_blank"><img src="../images/menu/Q_circle_black.png" alt="Quick Search Help" ></a>
+        </p>
+        <p class="centerthis">Click GO to Search<br><br>
+<a href="http://search.cga.state.ct.us/adv/">Advanced Search</a></p>
+        </fieldset>
+</form>
+    <form class="form-search">
+    <input type="text" class="input-medium search-query">
+    <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
+<form class="form-horizontal" action="feedout.php" method="post" name="Contact" id="Contact">
+    <?php
+$ipi = getenv("REMOTE_ADDR"); 
+$httprefi = getenv ("HTTP_REFERER");
+$httpagenti = getenv ("HTTP_USER_AGENT");
+?>
+<h3>Contact Me</h3>
+<input class="input-block-level" name="nameis" id="nameis" type="text" placeholder=" Name">
+<input class="input-block-level" name="address" id="address" type="text" placeholder=" Street">
+<input class="col-sm-7 city-state-zip" name="city" id="city" type="text" placeholder=" City">
+        <select class="col-sm-2 statelist" id="state" name="state">
+        <option value="AK">CT</option>
+        <option value="AK">AK</option>
+        <option value="AL">AL</option>
+        <option value="AR">AR</option>
+        <option value="AZ">AZ</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DC">DC</option>
+        <option value="DE">DE</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="IA">IA</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="MA">MA</option>
+        <option value="MD">MD</option>
+        <option value="ME">ME</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MO">MO</option>
+        <option value="MS">MS</option>
+        <option value="MT">MT</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="NE">NE</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NV">NV</option>
+        <option value="NY">NY</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VA">VA</option>
+        <option value="VT">VT</option>
+        <option value="WA">WA</option>
+        <option value="WI">WI</option>
+        <option value="WV">WV</option>
+        <option value="WY">WY</option>
+        </select>
+        <input class="col-sm-3 city-state-zip" type="text" placeholder=" Zip">
+<input class="input-block-level" type="email" placeholder=" Email" required>
+<textarea class="input-block-level" rows="4" placeholder=" Message"></textarea>
+
+<p>
+<input name="EmailUpdates" id="EmailUpdates" type="checkbox" value="yes">
+Please send me email updates</p>
+<p><strong>
+<input type="submit" value="Submit">
+</strong></p>
+</form>
+ <form class="form-horizontal" action="emailup.php" method="post" name="EmailUp" id="EmailUp">
+    <?php
+$ipi = getenv("REMOTE_ADDR"); 
+$httprefi = getenv ("HTTP_REFERER");
+$httpagenti = getenv ("HTTP_USER_AGENT");
+?>
+      <fieldset>
+        <legend>&nbsp;Sign Up for Email Updates&nbsp;</legend>
+        <input type="text" name="firstname" id="firstname" value=""  class="input-block-level" placeholder=" First Name" />
+        <input type="text" name="lastname" id="lastname" value=""  class="input-block-level" placeholder=" Last Name" />
+        <input name="visitormail" type="text" required="required"  class="input-block-level" id="visitormail" placeholder=" Email" value="" />
+        <input name="zip" type="text" required="required"  class="input-block-level" id="zip" placeholder=" Zip Code" value="" />
+	<input type="submit" value="Sign Up" name="submit" id="submitButton" class="btn btn-info pull-right" />
+
+         
+      </fieldset>
+    </form><br>
+      	      	<form name="frmCGAQuick" id="frmCGAQuick" action="http://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp">
+<fieldset>
+        <legend>&nbsp;Bill Search</legend>
+		<p class="centerthis">
+		  <img src="../images/menu/Search1.png" width="32px" height="32px" alt="Search">&nbsp;&nbsp;Document Type:
+		  <select name="selBillType" style="width:95px; height:22px" size="1">
+		    <option selected>Bill</option>
+		    <option>House Cal#</option>
+		    <option>Senate Cal#</option>
+		    <option>File Copy</option>
+		    <option>LCO#</option>
+		    <option>Public Act</option>
+		    <option>Special Act</option>
+	      </select>     
+  &nbsp; </p>
+		<p class="centerthis">Number:
+  <input name="bill_num" maxlength="6" style="width: 60px" title="See Quick Search Help for Resolutions">
+		  &nbsp; Year:
+		  <select id="which_year" name="which_year" style="width:70px">
+		    <OPTION selected value=2015>2015</OPTION>
+		    <OPTION value=2013>2014</OPTION>
+		    <OPTION value=2013>2013</OPTION>
+		    <OPTION value=2012>2012</OPTION>
+		    <OPTION value=2011>2011</OPTION>
+		    <OPTION value=2010>2010</OPTION>
+		    <OPTION value=2009>2009</OPTION>
+		    <OPTION value=2008>2008</OPTION>
+		    <OPTION value=2007>2007</OPTION>
+		    <OPTION value=2006>2006</OPTION>
+		    <OPTION value=2005>2005</OPTION>
+		    <OPTION value=2004>2004</OPTION>
+		    <OPTION value=2003>2003</OPTION>
+		    <OPTION value=2002>2002</OPTION>
+		    <OPTION value=2001>2001</OPTION>
+		    <OPTION value=2000>2000</OPTION>
+		    <OPTION value=1999>1999</OPTION>
+		    <OPTION value=1998>1998</OPTION>
+		    <OPTION value=1997>1997</OPTION>
+		    <OPTION value=1996>1996</OPTION>
+		    <OPTION value=1995>1995</OPTION>
+		    <OPTION value=1994>1994</OPTION>
+		    <OPTION value=1993>1993</OPTION>
+		    <OPTION value=1992>1992</OPTION>
+		    <OPTION value=1991>1991</OPTION>
+	      </select>	
+  </p>
+		<p class="centerthis">
+		  <input type="image" src="../images/menu/GO_circle_green.png" name="SUBMIT1" value="New" onclick="document.frmCGAQuick.target='_blank'" >
+		  &nbsp;&nbsp; <a href="http://www.cga.ct.gov/html/BillHelp.pdf" target="_blank"><img src="../images/menu/Q_circle_black.png" alt="Quick Search Help" ></a>
+        </p>
+        <p class="centerthis">Click GO to Search<br><br>
+<a href="http://search.cga.state.ct.us/adv/">Advanced Search</a></p>
+        </fieldset>
+</form>

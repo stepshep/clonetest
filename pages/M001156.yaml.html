@@ -1,0 +1,33 @@
+						<form action="/subscribe.aspx" method="get">
+							<fieldset>
+								<h3>E-Newsletter Sign Up</h3>
+								<div class="holder">
+									<label for="sign">sign up</label>
+									<input type="text" name="email" placeholder="Email Address" id="sign" />
+									<input type="image" src="/images/sign-up-btn.gif" alt="btn" class="sign-btn"/>
+								</div>
+							</fieldset>
+						</form>
+<form method="get" action="/Forms/WriteYourRep/" class="zipform">
+    <fieldset style="width: 70%;" title="Zip Code Information">
+    <legend><strong>Zip Code Information:</strong></legend>
+    <table width="68%" height="26" cellspacing="8" cellpadding="1" border="0" align="center">
+        <tbody>
+            <tr>
+                <td>
+                <label><input type="text" name="zip5" size="6" maxlength="5" onclick="f(this)" onkeyup="f(this)" onblur="f(this)" onkeydown="f(this)" id="zipcode" /></label>
+                <label>+4 <input type="text" name="zip4" size="5" maxlength="4" onclick="f(this)" onkeyup="f(this)" onblur="f(this)" onkeydown="f(this)" id="plusfour" /></label>
+                <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </fieldset>
+</form>
+					<form action="/News/DocumentQuery.aspx" method="get">
+						<fieldset>
+							<label for="search">Search</label>
+							<span><input type="text" name="SearchPhrase" value="" id="search" /></span>
+							<input type="image" src="/images/go-btn.gif" alt="go" class="go-btn" />
+						</fieldset>
+					</form>

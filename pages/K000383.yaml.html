@@ -1,0 +1,481 @@
+			<form id="site-search" role="search" method="get" action="/search" class="form-search pull-right">
+				
+					
+					<input type="search" id="search-field" name="q" placeholder="SEARCH FOR&hellip;" value="SEARCH FOR&hellip;"  onclick="this.value='';" />
+					<button type="submit" class="btn"><i class="icon-search icon-white"></i></button>
+		
+			</form>
+			<form id="contactForm"  method="post"  action="/contact"  enctype="application/x-www-form-urlencoded" >
+					<fieldset>
+						<legend>Your Name</legend>
+						<div class="row">
+							<div class="span2">
+                            <label for="salutation">Prefix<abbr title="required">*</abbr></label>
+                            
+         
+		
+		
+		
+		
+		
+
+        <select name="salutation" id="salutation" class="span2 required">
+            <option label="" value="">--</option>
+             
+   				<option label="Mr." value="Mr.">Mr.</option>
+			
+   				<option label="Ms." value="Ms.">Ms.</option>
+			
+   				<option label="Mrs." value="Mrs.">Mrs.</option>
+			
+   				<option label="Miss" value="Miss">Miss</option>
+			
+   				<option label="Mr. and Mrs." value="Mr. and Mrs.">Mr. and Mrs.</option>
+			
+   				<option label="Dr." value="Dr.">Dr.</option>
+			
+   				<option label="Prof." value="Prof.">Prof.</option>
+			
+   				<option label="Senator" value="Senator">Senator</option>
+			
+   				<option label="Gov." value="Gov.">Gov.</option>
+			
+   				<option label="Congressman" value="Congressman">Congressman</option>
+			
+   				<option label="Hon." value="Hon.">Hon.</option>
+			
+   				<option label="Sister" value="Sister">Sister</option>
+			
+   				<option label="Rabbi" value="Rabbi">Rabbi</option>
+			
+   				<option label="Reverend" value="Reverend">Reverend</option>
+			
+        </select>
+	
+							</div>
+							<div class="span3">
+								<label for="fname">First Name <abbr title="required">*</abbr></label>
+								<input class="span3  required" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
+							</div>
+							<div class="span3">
+								<label for="lname">Last Name <abbr title="required">*</abbr></label>
+								<input class="span3  required" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
+							</div>
+						</div>
+						</fieldset>
+						<fieldset>
+						<legend>Your Contact Information</legend>
+						<label for="mailing_streetAddress1">Street Address <abbr title="Your street address is a required field">*</abbr></label>
+						<input class="span8 required" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
+						<label for="mailing_streetAddress2">Street Address (2)</label>
+						<input class="span8" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
+						<div class="row">
+							<div class="span4">
+								<label for="mailing_city">City <abbr title="Your city is a required field">*</abbr></label>
+								<input class="span4 required" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
+							</div>
+							<div class="span2">
+								<label for="state">State *</label>
+
+								
+
+		
+
+	
+
+	
+
+
+	
+
+
+
+
+
+		
+		
+
+
+	
+	
+	
+	<select name="state" id="state" class="span2 required">
+	
+	<option value="">--</option>
+	
+
+	
+		<option value="AL">AL</option>
+	
+		<option value="AK">AK</option>
+	
+		<option value="APO AA">APO AA</option>
+	
+		<option value="APO AE">APO AE</option>
+	
+		<option value="APO AP">APO AP</option>
+	
+		<option value="AR">AR</option>
+	
+		<option value="AZ">AZ</option>
+	
+		<option value="CA">CA</option>
+	
+		<option value="CO">CO</option>
+	
+		<option value="CT">CT</option>
+	
+		<option value="DC">DC</option>
+	
+		<option value="DE">DE</option>
+	
+		<option value="DPO AA">DPO AA</option>
+	
+		<option value="DPO AE">DPO AE</option>
+	
+		<option value="DPO AP">DPO AP</option>
+	
+		<option value="FL">FL</option>
+	
+		<option value="FPO AA">FPO AA</option>
+	
+		<option value="FPO AE">FPO AE</option>
+	
+		<option value="FPO AP">FPO AP</option>
+	
+		<option value="GA">GA</option>
+	
+		<option value="HI">HI</option>
+	
+		<option value="ID">ID</option>
+	
+		<option value="IL">IL</option>
+	
+		<option value="IN">IN</option>
+	
+		<option value="IA">IA</option>
+	
+		<option value="KS">KS</option>
+	
+		<option value="KY">KY</option>
+	
+		<option value="LA">LA</option>
+	
+		<option value="ME" selected="selected">ME</option>
+	
+		<option value="MD">MD</option>
+	
+		<option value="MA">MA</option>
+	
+		<option value="MI">MI</option>
+	
+		<option value="MN">MN</option>
+	
+		<option value="MS">MS</option>
+	
+		<option value="MO">MO</option>
+	
+		<option value="MT">MT</option>
+	
+		<option value="NE">NE</option>
+	
+		<option value="NV">NV</option>
+	
+		<option value="NH">NH</option>
+	
+		<option value="NJ">NJ</option>
+	
+		<option value="NM">NM</option>
+	
+		<option value="NY">NY</option>
+	
+		<option value="NC">NC</option>
+	
+		<option value="ND">ND</option>
+	
+		<option value="OH">OH</option>
+	
+		<option value="OK">OK</option>
+	
+		<option value="OR">OR</option>
+	
+		<option value="PA">PA</option>
+	
+		<option value="RI">RI</option>
+	
+		<option value="SC">SC</option>
+	
+		<option value="SD">SD</option>
+	
+		<option value="TN">TN</option>
+	
+		<option value="TX">TX</option>
+	
+		<option value="UT">UT</option>
+	
+		<option value="VT">VT</option>
+	
+		<option value="VA">VA</option>
+	
+		<option value="WA">WA</option>
+	
+		<option value="WV">WV</option>
+	
+		<option value="WI">WI</option>
+	
+		<option value="WY">WY</option>
+	
+	
+	</select>
+	
+
+							</div>
+							<div class="span2">
+								<label for="mailing_zipCode">Zip Code <abbr title="Your zip code is a required field">*</abbr></label>
+								<input class="span2 required" type="text" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
+							</div>
+						</div>
+						<br>
+						<label for="home_phone_number">Home Phone <abbr title="Your phone number is a required field">*</abbr></label>
+						<input type="tel" name="home_phone_number" id="home_phone_number" class="span8" aria-required="true" placeholder="Required" required>
+						<label for="work_phone_number">Work Phone</label>
+						<input type="tel" name="work_phone_number" id="work_phone_number" class="span8">
+						<label for="email_address">E-mail <abbr title="Your e-mail address is a required field">*</abbr></label>
+						<input type="email" name="email_address" aria-required="true" title="E-mail Address" id="email" class="span8 required email" placeholder="Required" required>
+						<label for="verify_email">Verify E-mail <abbr title="Please confirm your e-mail address">*</abbr></label>
+						<input type="email" name="verify_email" id="verify_email" aria-required="true" class="span8 required email" placeholder="Required" required>
+					</fieldset>
+					<fieldset>
+                    <label for="topic">Message Topic<abbr title="Please enter a message topic for your message">*</abbr></label>
+                    
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
+    
+    
+	
+	
+	
+	
+    
+    
+    
+	
+    
+    
+	
+	
+	
+		
+	
+    
+    
+	
+    
+     
+	
+	
+
+ 
+	
+    
+    
+    
+    
+
+		
+		
+		
+		
+		
+                    <select id="topic" class="span8 required" name="topic" class="validate['required','%topic']"">
+                        
+                            <option label="- - Select an Issue - -" value="" selected="selected">--Select an Issue--</option>
+                            
+                                
+                                    <option label="Agriculture" value="AGR">Agriculture</option>
+                                
+                            
+                                
+                                    <option label="Banking & Financial Services" value="BANKING">Banking & Financial Services</option>
+                                
+                            
+                                
+                                    <option label="Budget & Appropriations" value="BUD">Budget & Appropriations</option>
+                                
+                            
+                                
+                                    <option label="Civil Liberties" value="CIVIL LIB">Civil Liberties</option>
+                                
+                            
+                                
+                                    <option label="Civil Rights" value="CIVIL RIGHTS">Civil Rights</option>
+                                
+                            
+                                
+                                    <option label="Defense & Intelligence" value="DEF">Defense & Intelligence</option>
+                                
+                            
+                                
+                                    <option label="Education" value="EDU">Education</option>
+                                
+                            
+                                
+                                    <option label="Elections & Campaign Finance" value="ELECTIONS">Elections & Campaign Finance</option>
+                                
+                            
+                                
+                                    <option label="Energy" value="ENE">Energy</option>
+                                
+                            
+                                
+                                    <option label="Environment & Forestry" value="ENV">Environment & Forestry</option>
+                                
+                            
+                                
+                                    <option label="Family & Children's Issues" value="FAMILY">Family & Children's Issues</option>
+                                
+                            
+                                
+                                    <option label="Fisheries" value="FISH">Fisheries</option>
+                                
+                            
+                                
+                                    <option label="Foreign Policy & International Relations" value="FOREIGN AFFAIRS">Foreign Policy & International Relations</option>
+                                
+                            
+                                
+                                    <option label="Government Reform" value="GOV">Government Reform</option>
+                                
+                            
+                                
+                                    <option label="Grant Assistance" value="GRANT">Grant Assistance</option>
+                                
+                            
+                                
+                                    <option label="Gun Control" value="GUN CONTROL">Gun Control</option>
+                                
+                            
+                                
+                                    <option label="Healthcare & Health Insurance" value="HEA">Healthcare & Health Insurance</option>
+                                
+                            
+                                
+                                    <option label="Homeland Security & FEMA" value="HOM">Homeland Security & FEMA</option>
+                                
+                            
+                                
+                                    <option label="Housing and Urban Affairs" value="HOUSING">Housing and Urban Affairs</option>
+                                
+                            
+                                
+                                    <option label="Immigration" value="IMM">Immigration</option>
+                                
+                            
+                                
+                                    <option label="Indian Affairs" value="INDIANS">Indian Affairs</option>
+                                
+                            
+                                
+                                    <option label="Judiciary & Criminal Law Enforcement" value="JUD">Judiciary & Criminal Law Enforcement</option>
+                                
+                            
+                                
+                                    <option label="Labor" value="LABOR">Labor</option>
+                                
+                            
+                                
+                                    <option label="Medicare & Medicaid" value="MEDICARE">Medicare & Medicaid</option>
+                                
+                            
+                                
+                                    <option label="National Parks & Federal Lands" value="INTERIOR">National Parks & Federal Lands</option>
+                                
+                            
+                                
+                                    <option label="Nutrition/SNAP" value="NUTRI">Nutrition/SNAP</option>
+                                
+                            
+                                
+                                    <option label="Patents & Copyrights" value="IPROP">Patents & Copyrights</option>
+                                
+                            
+                                
+                                    <option label="Pensions & Other Senior Issues" value="PENSIONS">Pensions & Other Senior Issues</option>
+                                
+                            
+                                
+                                    <option label="Postal Service" value="USPS">Postal Service</option>
+                                
+                            
+                                
+                                    <option label="Reproductive Rights" value="ABORTION">Reproductive Rights</option>
+                                
+                            
+                                
+                                    <option label="Science, Technology, & Telecom" value="TEL">Science, Technology, & Telecom</option>
+                                
+                            
+                                
+                                    <option label="Small Business" value="SMALL BUSINESS">Small Business</option>
+                                
+                            
+                                
+                                    <option label="Social Security" value="SSEC">Social Security</option>
+                                
+                            
+                                
+                                    <option label="Taxes" value="TAX">Taxes</option>
+                                
+                            
+                                
+                                    <option label="Trade" value="TRADE">Trade</option>
+                                
+                            
+                                
+                                    <option label="Transportation" value="TRA">Transportation</option>
+                                
+                            
+                                
+                                    <option label="Veterans" value="VET">Veterans</option>
+                                
+                            
+                                
+                                    <option label="Website Feedback" value="WEBSITE">Website Feedback</option>
+                                
+                            
+                                
+                                    <option label="Welfare" value="WEL">Welfare</option>
+                                
+                            
+                        
+                    </select>
+                </fieldset>
+					<fieldset>
+						<legend>Your Message</legend>
+						<label for="subject">Please enter the subject of your message:<abbr title="Please enter a subject">*</abbr></label>
+                             <input class="span8 required" type="text" name="subject" id="subject" aria-required="true" placeholder="Required" required>
+						<label for="message">Comments<abbr title="Please enter your message">*</abbr></label>
+						<textarea id="message" class="span8 required" rows="10" name="message" aria-required="true"></textarea>
+						<label class="checkbox">
+							<input for="newsletter" name="newsletter" id="newsletter_y" value="Y" type="checkbox" >
+							<strong>Subscribe to my email newsletter</strong> </label>
+						
+					</fieldset>
+					<input class="btn" type="submit" id="side-search-btn" value="Send" />
+			</form>
+								<form class="form-inline"  id="newsletter-signup" method="post"  action="/newsletter/signup"  enctype="application/x-www-form-urlencoded" >
+									<input type="text" class="input-medium" placeholder="EMAIL ADDRESS" name="email_address" id="email_address" required>
+									<button type="submit" class="btn pull-right" >Sign Up for E-Newsletters</button>
+								</form>

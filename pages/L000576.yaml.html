@@ -1,0 +1,240 @@
+	<form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
+		<input name="sectionid" type="hidden" value="2" /><input name="sectiontree" type="hidden" value="" /><input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search Site" /><input class="searchButon button" type="submit" value="GO" /> </form>
+		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
+			<p><input type="text" name="searchkey" id="searchkey"  /></p>
+
+			<p id="searchEntire" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+				<label for="entire">Entire Site</label>
+			</p>
+			<p id="searchSection" style="display:none">
+				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+					/>
+				<label for="this_section">This Section</label>
+			</p>
+
+			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
+		</form>
+		<form action="http://long.house.gov//index.cfm?sectionid=47&amp;sectiontree=" method="post">
+			<p class="formQuestion">
+				Get updates on important issues sent to your email</p>
+			<input class="text" id="form_16_firstname" maxlength="255" name="firstname" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76); position: relative; top: 13px;" type="text" value="First Name" /><br />
+			<input class="text" id="form_16_lastname" maxlength="255" name="lastname" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76); position: relative; top: 27px;" type="text" value="Last Name" /><br />
+			<input class="text" id="form_16_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76); position: relative; top: 41px;" type="text" value="E-mail Address" /><br />
+			<input name="formid" type="hidden" value="16" /> <input class="form_submit_button" id="form_submit_button_4" name="submitform" style="top: 163px;" type="submit" value="GO" />&nbsp;</form>
+				<form action="http://thomas.loc.gov/cgi-bin/query" class="bykeyword" method="post" name="loc-word" target="_blank">
+					<input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this);" type="text" value="By Keyword" /> <input class="searchbuttons" id="searchPhrase" name="Submit" type="submit" value="Go" />&nbsp;</form>
+				<form action="http://thomas.loc.gov/cgi-bin/query" class="bynumber" method="post" name="loc-number" style="display: none;" target="_blank">
+					<input class="text" id="bill" maxlength="50" name="docidc112" onblur="iBlur(this)" onfocus="iFocus(this);" type="text" value="By bill #" /> <input class="searchbuttons" id="searchBill" name="Submit" type="submit" value="GO" /> <!-- This hidden field allows us to have two separate search buttons for THOMAS. Otherwise we would have to have just one search/clear for the two boxes --><input name="queryc112" type="hidden" />&nbsp;</form>
+			<form action="/email-billy/" id="custom_form6" name="custom_form" class="custom_form" method="post">
+				
+						<!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: Conversion tag
+URL of the webpage where the tag is expected to be placed: http://long.house.gov
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 09/14/2012
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="http://fls.doubleclick.net/activityi;src=3815316;type=conve325;cat=conve789;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="http://fls.doubleclick.net/activityi;src=3815316;type=conve325;cat=conve789;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
+
+				<style type="text/css" media="all" title="main css">
+
+	.custom_form input {*margin:-4px 0 0;}
+	.custom_form label {width:30%; float:left; text-align:right; margin:0 5px 0 0; padding:0;}
+	.custom_form label span {color:#c00;}
+	.custom_form p {margin:7px 0; clear:both}
+	.custom_form br {clear:left;}
+	.custom_form .align {margin:5px 0 0 30%; padding:0 0 0 5px; display:block; text-align:left; clear:left;}
+
+	.req {color:#C00;}
+	.text {width:170px;}
+	.text1 {width:100px;} 
+	.zip {width:50px;}
+	.custom_form .message {width:250px; height:200px;}
+	
+	.custom_form_errors {color:#c00; background:#FFC; border:1px solid #963; padding:13px 10px 13px 30px;}
+	#centerbox { margin:22px 0 40px 40px; width:600px; float:left;}
+	#errMsg {display:none; position:absolute; z-index:200; background:url(common/images/msg_arrow.gif) left center no-repeat; padding-left:7px}
+	#msgcontent {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px}
+</style>
+<p>
+
+Use this form to contact Rep. Long about pending legislation, current issues, or with requests for assistance.
+</p>
+
+    	<p class="req">* indicates required field.</p>
+    	<h2>Primary Contact</h2>
+		<p>
+        	 <label>Prefix:</label>
+			 <select name="prefix" size="1" id="req_prefix">
+          <option value="Mr. ">Mr.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="Miss">Miss</option>
+          <option value="Dr.">Dr.</option>
+          <option value="Hon.">Hon.</option>
+          <option value="Rev.">Rev.</option>
+
+          <option value="Rabbi">Rabbi</option>
+                  </select>
+              </p>
+		<p>
+        	<label>First Name:<span>*</span></label>
+            <input type="text" name="firstname" id="req_firstname" maxlength="90" class="text" />
+
+        </p>
+        <p>
+        	<label>Middle Initial:</label>
+             <input type="text" name="middle" class="text" style="width:15px;" maxlength="2" />
+        </p>
+        <p>
+        	<label>Last Name:<span>*</span></label>
+
+            <input type="text" name="lastname" id="req_lastname" class="text" maxlength="90" />
+        </p>
+        <p>
+        	 <label>Suffix:</label>
+             <input type="text" name="suffix" class="text1 text" width="50px" maxlength="5" />
+        </p>
+        <p>
+
+        	<label>Street Address:<span>*</span></label>
+            <input type="text" name="street" id="req_street" class="text" maxlength="190" />
+        </p>
+        <p>
+        	<label>Address 2:</label>
+            <input type="text" name="street2" class="text" maxlength="190" />
+
+        </p>
+        <p>
+        	<label>City:<span>*</span></label>
+            <input type="text" name="city" id="req_city" class="text" maxlength="100" />
+        </p>
+        <p>
+        	<label>State:<span>*</span></label>
+
+         
+              <select name="state" id="req_state">		
+             <option selected="" value="MO">MO</option>
+	</select>
+            
+        </p>
+        <p>
+        	<label>Zip Code:<span>*</span></label>
+            <input type="text" name="zipcode" id="req_zip" class="zip text" style="width:100px;" maxlength="5" />
+
+            <label style="float:none; width:auto;">+4</label> 
+            <input type="text" name="zipfour" id="zip2" class="zip text" style="width:100px;" maxlength="4" />
+            <small>(<a target="_blank" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" href="http://zip4.usps.com/zip4/welcome.jsp" onclick="return (exitMsg())" class="bookmarkImage" id="zip4">Determine your ZIP+4</a>)</small>
+        </p>
+        <p>
+
+        	<label>E-mail Address:<span>*</span></label>
+            <input type="text" name="emailaddress" id="req_email" maxlength="150" class="text" />
+        </p>
+        <p>
+        	<label>Telephone Number:</label>
+
+            <input type="text" name="phone" class="text" maxlength="14" />
+        </p>
+        <p>
+        	<label>Topic:<span>*</span></label>
+            <select size="1" name="subject" id="req_subject">
+				<option selected="" value="">(select one)</option>
+				<option value="WEBCST">Constituent Service</option>
+
+							
+								<option value="WEBGRT">Grant Requests</option>
+							
+								<option value="WEBAGR">Agriculture</option>
+							
+								<option value="WEBBUD">Budget</option>
+							
+								<option value="WEBDEF">Defense</option>
+
+							
+								<option value="WEBEDU">Education/Labor</option>
+							
+								<option value="WEBENE">Energy</option>
+
+							
+								<option value="WEBENV">Environment</option>
+							
+								<option value="WEBINT">International</option>
+							
+								<option value="WEBGOV">Government Reform</option>
+							
+								<option value="WEBHEA">Health Care</option>
+
+							
+								<option value="WEBHOM">Homeland Security</option>
+							
+								<option value="WEBIMM">Immigration</option>
+
+							
+								<option value="WEBJUD">Judiciary</option>
+							
+								<option value="WEBSOC">Social Issues</option>
+							
+								<option value="WEBSSEC">Social Security</option>
+							
+								<option value="WEBTEL">Telecommunications</option>
+
+							
+								<option value="WEBTAX">Taxes and Trade</option>
+							
+								<option value="WEBTRA">Transportation</option>
+
+							
+								<option value="WEBVET">Veterans</option>
+							
+								<option value="WEBWEL">Welfare</option>
+							
+								<option value="WEBOTH">Other</option>
+
+			</select>
+        </p>
+        <p>
+
+        	<label>Message:<span>*</span></label>
+            <textarea name="message" id="req_message" class="message"></textarea>
+        </p>
+        
+       
+        <p>
+        	<label>Would you like a Response:<span>*</span></label>
+
+            <select size="1" name="response" id="req_response">
+				<option selected="" value="">(select one)</option>
+				<option value="N">I do not need a response.</option>
+				<option value="Y">I would like a response.</option>
+			</select>
+        </p>
+
+        
+   		<div class="align"><input type="button" value="Submit" id="submitButton" class="form_submit_button" /></div>
+        
+        
+       <script type="text/javascript">
+	  
+	   
+			$("input[name=aff1]").click(function(){
+					$("#req_aff1").attr("value","fill");
+									 });
+	
+	   
+	   </script>
+
+			</form>

@@ -1,0 +1,185 @@
+<form action="/communityrelations/form/email" method="post">    <fieldset>
+        <legend>Sender Information</legend><br/>
+        <div class="editor">
+            <label for="RequestedByTitle">Title</label>
+            <input class="width50px" id="RequestedByTitle" name="RequestedByTitle" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="RequestedByTitle" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByFirstName">First Name</label>
+            <input class="width200px" data-val="true" data-val-length="Must Be Less Than 50 Characters" data-val-length-max="50" data-val-required="First Name Required" id="RequestedByFirstName" name="RequestedByFirstName" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByFirstName" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByMiddleName">Middle Name</label>
+            <input class="width200px" data-val="true" data-val-length="Must Be Less Than 50 Characters" data-val-length-max="50" id="RequestedByMiddleName" name="RequestedByMiddleName" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="RequestedByMiddleName" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByLastName">Last Name</label>
+            <input class="width200px" data-val="true" data-val-length="Must Be Less Than 50 Characters" data-val-length-max="50" data-val-required="Last Name Required" id="RequestedByLastName" name="RequestedByLastName" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByLastName" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedBySuffix">Suffix</label>
+            <input class="width50px" data-val="true" data-val-length="Must Be Less Than 10 Characters" data-val-length-max="10" id="RequestedBySuffix" name="RequestedBySuffix" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="RequestedBySuffix" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByStreetAddress">Street Address</label>
+            <input class="width300px" data-val="true" data-val-length="Must Be Less Than 250 Characters" data-val-length-max="250" data-val-required="Street Address Required" id="RequestedByStreetAddress" name="RequestedByStreetAddress" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByStreetAddress" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByCity">City</label>
+            <input class="width200px" data-val="true" data-val-length="Must Be Less Than 80 Characters" data-val-length-max="80" data-val-required="City Required" id="RequestedByCity" name="RequestedByCity" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByCity" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByState">State</label>
+            <select data-val="true" data-val-required="State Required" id="RequestedByState" name="RequestedByState"><option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+<option value="Colorado">Colorado</option>
+<option value="Connecticut">Connecticut</option>
+<option value="Delaware">Delaware</option>
+<option value="District of Columbia">District of Columbia</option>
+<option value="Florida">Florida</option>
+<option value="Georgia">Georgia</option>
+<option value="Guam">Guam</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Idaho">Idaho</option>
+<option value="Illinois">Illinois</option>
+<option value="Indiana">Indiana</option>
+<option value="Iowa">Iowa</option>
+<option value="Kansas">Kansas</option>
+<option value="Kentucky">Kentucky</option>
+<option value="Louisiana">Louisiana</option>
+<option value="Maine">Maine</option>
+<option value="Maryland">Maryland</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="Michigan">Michigan</option>
+<option value="Minnesota">Minnesota</option>
+<option value="Mississippi">Mississippi</option>
+<option value="Missouri">Missouri</option>
+<option value="Montana">Montana</option>
+<option value="Nebraska">Nebraska</option>
+<option value="Nevada">Nevada</option>
+<option value="New Hampshire">New Hampshire</option>
+<option value="New Jersey">New Jersey</option>
+<option value="New Mexico">New Mexico</option>
+<option value="New York">New York</option>
+<option value="North Carolina">North Carolina</option>
+<option value="North Dakota">North Dakota</option>
+<option value="Northern Marianas Islands">Northern Marianas Islands</option>
+<option value="Ohio">Ohio</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+<option value="Pennsylvania">Pennsylvania</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Rhode Island">Rhode Island</option>
+<option value="South Carolina">South Carolina</option>
+<option value="South Dakota">South Dakota</option>
+<option value="Tennessee">Tennessee</option>
+<option value="Texas">Texas</option>
+<option value="Utah">Utah</option>
+<option value="Vermont">Vermont</option>
+<option selected="selected" value="Virginia">Virginia</option>
+<option value="Virgin Islands">Virgin Islands</option>
+<option value="Washington">Washington</option>
+<option value="West Virginia">West Virginia</option>
+<option value="Wisconsin">Wisconsin</option>
+<option value="Wyoming">Wyoming</option>
+</select>&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByState" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByZipCode">Zip Code</label>
+            <input class="width75px" data-val="true" data-val-length="Must Be Less Than 20 Characters" data-val-length-max="20" data-val-required="Zip Code Required" id="RequestedByZipCode" name="RequestedByZipCode" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByZipCode" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByPhone">Phone</label>
+            <input class="width125px" data-val="true" data-val-length="Must Be Less Than 50 Characters" data-val-length-max="50" id="RequestedByPhone" name="RequestedByPhone" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="RequestedByPhone" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="RequestedByEmail">E-mail Address</label>
+            <input class="width300px" data-val="true" data-val-email="E-mail address is not valid" data-val-length="Must Be Less Than 100 Characters" data-val-length-max="100" data-val-required="E-mail Address Required" id="RequestedByEmail" name="RequestedByEmail" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="RequestedByEmail" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="Organization">Organization</label>
+            <input class="width400px" data-val="true" data-val-length="Must Be Less Than 1000 Characters" data-val-length-max="1000" id="Organization" name="Organization" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="Organization" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="Affiliation">Affiliation</label>
+            <select data-val="true" data-val-required="Affiliation Required" id="Affiliation" name="Affiliation"><option value="PrivateCitizen">Private Citizen</option>
+<option value="ArmedForcesMember">Armed Forces Member</option>
+<option value="VirginiaResident">Virginia Resident</option>
+<option value="ForeignCitizen">Foreign Citizen</option>
+<option value="PoliticalAdvocate">Political Advocate</option>
+<option value="Professional">Professional</option>
+<option value="SmallBusinessOwnerOrEmployee">Small Business Owner Or Employee</option>
+<option value="SeniorCitizen">Senior Citizen</option>
+<option value="StateGovernmentEmployee">State Government Employee</option>
+<option value="StudentCollegeOrUniversity">Student College Or University</option>
+<option value="Veteran">Veteran</option>
+<option value="VisitorToTheState">Visitor To The State</option>
+<option value="YoungPersonUnder18YearsOfAge">Young Person Under 18 Years Of Age</option>
+<option value="Other">Other</option>
+</select>&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="Affiliation" data-valmsg-replace="true"></span>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Message Information</legend><br/>
+          <div class="editor">
+              <label for="IssueCode">Topic</label>
+              <select id="IssueCode" name="IssueCode"><option selected="selected" value="">General Inquiry</option>
+<option value="CT">Commerce and Trade, Secretary of</option>
+<option value="EDU">Education, Secretary of</option>
+<option value="FIN">Finance, Secretary of</option>
+<option value="HHR">Health and Human Resources, Secretary of</option>
+<option value="NR">Natural Resources, Secretary of</option>
+<option value="PSHS">Public Safety and Homeland Security, Secretary of</option>
+<option value="AD">Secretary of Administration</option>
+<option value="AGR">Secretary of Agriculture</option>
+<option value="SOC">Secretary of Commonwealth</option>
+<option value="TECH">Technology, Secretary of</option>
+<option value="TRAN">Transportation, Secretary of</option>
+<option value="VDA">Veterans Defense Affairs, Secretary of</option>
+</select>&nbsp;
+              <span class="field-validation-valid" data-valmsg-for="IssueCode" data-valmsg-replace="true"></span>
+          </div>  
+        <div class="editor">
+            <label for="ResponseRequired">Response Required</label>&nbsp;
+            <input checked="checked" id="ResponseRequired" name="ResponseRequired" type="radio" value="No" />
+              No
+            <input id="ResponseRequired" name="ResponseRequired" type="radio" value="Yes" />
+              Yes&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="ResponseRequired" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor">
+            <label for="MessageSubject">Message Subject</label>
+            <input class="width400px" data-val="true" data-val-length="Must Be Less Than 200 Characters" data-val-length-max="200" data-val-required="Message Subject Required" id="MessageSubject" name="MessageSubject" type="text" value="" />&nbsp;<span class="required">*</span>
+            <span class="field-validation-valid" data-valmsg-for="MessageSubject" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor display-above">
+            <p>
+                <br /><label for="MessageBody">Message Body</label>&nbsp;<span class="required">*</span><br />
+                <textarea cols="62" data-val="true" data-val-required="Message Required" id="MessageBody" name="MessageBody" rows="10">
+</textarea>
+                <span class="field-validation-valid" data-valmsg-for="MessageBody" data-valmsg-replace="true"></span>
+            </p>
+        </div>
+        <p>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </p>
+    </fieldset>
+</form>
