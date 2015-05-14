@@ -1,0 +1,10 @@
+There was an error opening http://www.dehousedems.com/Contact
+System.Net.WebException: An exception occurred during a WebClient request. ---> System.ArgumentException: The specified value is not a valid Host header string.
+   at System.Net.HttpWebRequest.set_Host(String value)
+   at System.Net.WebClient.CopyHeadersTo(WebRequest request)
+   at System.Net.WebClient.GetWebRequest(Uri address)
+   at System.Net.WebClient.OpenRead(Uri address)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.OpenRead(Uri address)
+   at System.Net.WebClient.OpenRead(String address)
+   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 185
