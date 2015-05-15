@@ -1,64 +1,84 @@
-                <form action="/index.cfm?sectionid=1§iontree=" method="get" onsubmit="return checkformsearch(this)">
-                
-                  <p><strong>SEARCH:</strong> 
-                    <input type="text" name="searchkey" id="searchkey" size="30" maxlength="50" />
-                  </p><table width="75%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="47%" align="right">
-    		<p id="searchEntire">
-                    <input type="radio" class="radiobutton" style="border: 0px none ; width: 20px;" name="locale" value="-1" id="entire" checked="" />
-                    <label for="entire">Entire Site</label>
-                  </p>
-     </td>
-    <td width="53%" align="right">
-    			<p id="searchSection">
-                    <input type="radio" class="radiobutton" style="border: 0px none ; width: 20px;" name="locale" value="1" id="this_section" />
-                    <label for="this_section">This Section</label>
-                  </p>
-   	</td>
-  </tr>
+<form action="/index.cfm?sectionid=1§iontree=" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<strong>
+</strong>
+<input type="text" name="searchkey" id="searchkey" size="30" maxlength="50" />
+</p>
+<table width="75%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="47%" align="right">
+<p id="searchEntire">
+<label for="entire">
+</label>
+</p>
+</td>
+<td width="53%" align="right">
+<p id="searchSection">
+<label for="this_section">
+</label>
+</p>
+</td>
+</tr>
 </table>
-
-                  
-                  
-                  <p class="submitbutton" style="text-align: right;"><span>
-                    <input type="submit" value="Search" style="border: 1px solid #cc6600; padding: 1px; width: 75px; text-align: center; background-color: #e08737; background-image:url(images/btn_orange.gif); background-repeat: repeat-x; color: #ffffff; font-size: 11px; font-weight: bold; margin-left: 120px; margin-top: 8px;" />
-                    </span></p>
-                </form>
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+<p class="submitbutton" style="text-align: right;">
+<span>
+<input type="submit" value="Search" style="border: 1px solid #cc6600; padding: 1px; width: 75px; text-align: center; background-color: #e08737; background-image:url(images/btn_orange.gif); background-repeat: repeat-x; color: #ffffff; font-size: 11px; font-weight: bold; margin-left: 120px; margin-top: 8px;" />
+</span>
+</p>
+</form>
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="90" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="90" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-			<form action="/contact-form/" method="post" id="zipauthform">
-				<p id="zipauthpreamble"></p>
-				<h2>Zip Code Authentication Form</h2>
-				<p>
-				<label for="zipcode">Zip Code:</label>
-				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
-				<label for="zipfour" id="zipfourlabel">+4:</label>
-				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
-				</p>
-				<p>
-				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code and your four-digit zip+4.<br /></span>
-				<input type="submit" value="Go to Form" class="button"/>
-				</p>
-				<hr/>
-				<ul>
-					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
-					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
-					<li class="zipmsg">Both of the form fields are required.</li>
-				</ul>
-			</form>
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="/contact-form/" method="post" id="zipauthform">
+<p id="zipauthpreamble">
+</p>
+<h2>
+</h2>
+<p>
+<label for="zipcode">
+</label>
+<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+<label for="zipfour" id="zipfourlabel">
+</label>
+<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+</p>
+<p>
+<br />
+</span>
+<input type="submit" value="Go to Form" class="button"/>
+</p>
+<hr/>
+<ul>
+<li class="zipmsg">
+<a href="http://www.usps.com/zip4/" target="_blank">
+</a>
+</li>
+<li class="zipmsg">
+</li>
+<li class="zipmsg">
+</li>
+</ul>
+</form>

@@ -1,42 +1,126 @@
-			<form action="/index.cfm?sectionid=2&sectiontree=" method="get" onsubmit="return checkformsearch(this)"> 
-				<input type="text" style="color: rgb(153, 153, 153);" class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" value="Search Site"> 
-				<input type="submit" class="searchButon" value=">>"> 
-			</form> 
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+<form action="/index.cfm?sectionid=2&sectiontree=" method="get" onsubmit="return checkformsearch(this)">
+<input type="text" style="color: rgb(153, 153, 153);" class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" value="Search Site">
+<input type="submit" class="searchButon" value=">
+</form>
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="292" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="292" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-			<form action="/issue-subscribe/" method="post" id="zipauthform">
-				<p id="zipauthpreamble"></p>
-				<h2>Zip Code Authentication Form</h2>
-				<p>
-				<label for="zipcode">Zip Code:<span class="req">*</span></label>
-				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
-				<label for="zipfour" id="zipfourlabel">+4:</label>
-				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
-				</p>
-				<p>
-				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code.<br /></span>
-				<input type="submit" value="Go to Form" class="button"/>
-				</p>
-				<hr/>
-				<ul>
-					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
-					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
-					<li class="zipmsg">Fields marked with * are required.</li>
-				</ul>
-			</form>
-				<div id="webfooter"> <div id="footerBillSearch"><form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank"><input class="text" id="text1" maxlength="50" name="queryc111" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(68,68,68)" type="text" value="Search by keyword" /><input class="searchbuttons" id="searchbutton1" name="Submit" type="submit" value="&gt;>" />&nbsp;</form><form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-number" target="_blank"><input class="text" id="text2" maxlength="50" name="docidc111" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(68,68,68)" type="text" value="Search by bill number" /><input class="searchbuttons" id="searchbutton2" name="Submit" type="submit" value="&gt;>" /><!-- This hidden field allows us to have two separate search buttons for THOMAS. Otherwise we would have to have just one search/clear for the two boxes --><input name="queryc111" type="hidden" />&nbsp;</form></div><div class="addrs"><h3> D.C. and District Offices:</h3><p><strong>Washington D.C. Office</strong> &bull; 2446 Rayburn HOB &bull; Washington, D.C. 20515 &bull; Ph: (202) 225-6190 &bull; Fax: (202) 226-1528 &bull; <a href="http://goo.gl/maps/Fh9ZH" target="_blank">View Map</a><br /><strong>Santa Fe Office</strong> &bull; 1611 Calle Lorca, Suite A &bull; Santa Fe, NM 87505 &bull; Ph: (505) 984-8950 &bull; Fax: (505) 986-5047 &bull; <a href="https://goo.gl/maps/6sWMU" target="_blank">View Map</a><br /><strong>Rio Rancho Office</strong> &bull; 3200 Civic Center NE Suite 330 &bull; Rio Rancho, NM 87144 &bull; Ph: (505) 994-0499 &bull; Fax: (505) 994-0550 &bull; <a href="http://goo.gl/maps/Ahxm7" target="_blank">View Map</a><br /><strong>Farmington Office</strong> &bull; 800 Municipal Dr. &bull; Farmington, NM 87401 &bull; Ph: (505) 324-1005 &bull; Fax: (505) 324-1026 &bull; <a href="http://goo.gl/maps/emM6T" target="_blank">View Map</a><br /><strong>Gallup Office</strong> &bull; 110 West Aztec Avenue &bull; Gallup, NM 87301 &bull; Ph: (505) 863-0582 &bull; Fax: (505) 863-0678 &bull; <a href="http://goo.gl/maps/bWGjq" target="_blank">View Map</a><br /><strong>Las Vegas Office</strong> &bull; PO Box 1368 &bull; 903 University Ave. &bull; Las Vegas, NM 87701 &bull; Ph: (505) 454-3038 &bull; Fax: (505) 454-3265 &bull; <a href="http://goo.gl/maps/m2dHv" target="_blank">View Map</a><br /><strong>Tucumcari Office</strong> &bull; 404 W. Route 66 Blvd. &bull; Tucumcari, NM 88401 &bull; Ph: (575) 461-3029 &bull; Fax: (575) 461-3192 &bull; <a href="http://goo.gl/maps/2tO1R" target="_blank">View Map</a></p></div><div class="footerseal"><img height="60" src="../images/footerseal.png" width="961" /></div><div align="center"><a href="/site-map ">Site Map</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/contact/">Contact Me</a></div><script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-44691784-1', 'house.gov'); ga('send', 'pageview'); </script> </div>
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="/issue-subscribe/" method="post" id="zipauthform">
+<p id="zipauthpreamble">
+</p>
+<h2>
+</h2>
+<p>
+<label for="zipcode">
+<span class="req">
+</span>
+</label>
+<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+<label for="zipfour" id="zipfourlabel">
+</label>
+<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+</p>
+<p>
+<br />
+</span>
+<input type="submit" value="Go to Form" class="button"/>
+</p>
+<hr/>
+<ul>
+<li class="zipmsg">
+<a href="http://www.usps.com/zip4/" target="_blank">
+</a>
+</li>
+<li class="zipmsg">
+</li>
+<li class="zipmsg">
+</li>
+</ul>
+</form>
+<div id="webfooter">
+<div id="footerBillSearch">
+<form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank">
+<input class="text" id="text1" maxlength="50" name="queryc111" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(68,68,68)" type="text" value="Search by keyword" />
+<input class="searchbuttons" id="searchbutton1" name="Submit" type="submit" value="&gt;>
+</form>
+<form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-number" target="_blank">
+<input class="text" id="text2" maxlength="50" name="docidc111" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(68,68,68)" type="text" value="Search by bill number" />
+<input class="searchbuttons" id="searchbutton2" name="Submit" type="submit" value="&gt;>
+</form>
+</div>
+<div class="addrs">
+<h3>
+</h3>
+<p>
+<strong>
+</strong>
+<a href="http://goo.gl/maps/Fh9ZH" target="_blank">
+</a>
+<br />
+<strong>
+</strong>
+<a href="https://goo.gl/maps/6sWMU" target="_blank">
+</a>
+<br />
+<strong>
+</strong>
+<a href="http://goo.gl/maps/Ahxm7" target="_blank">
+</a>
+<br />
+<strong>
+</strong>
+<a href="http://goo.gl/maps/emM6T" target="_blank">
+</a>
+<br />
+<strong>
+</strong>
+<a href="http://goo.gl/maps/bWGjq" target="_blank">
+</a>
+<br />
+<strong>
+</strong>
+<a href="http://goo.gl/maps/m2dHv" target="_blank">
+</a>
+<br />
+<strong>
+</strong>
+<a href="http://goo.gl/maps/2tO1R" target="_blank">
+</a>
+</p>
+</div>
+<div class="footerseal">
+</div>
+<div align="center">
+<a href="/site-map ">
+</a>
+<a href="/privacy-policy">
+</a>
+<a href="/contact/">
+</a>
+</div>
+<script>
+</script>
+</div>

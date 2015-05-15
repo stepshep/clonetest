@@ -1,62 +1,459 @@
-    <form action="http://www.google.com/search" id="cse-search-box" name="csesearchbox" method="get" target="_blank" onSubmit="return CheckJS();">
-        <input type="submit" id="sbutton" value="Search" name="sa" title="search">
-        <input type="text" title="Search Box" onclick="this.value=''" value="" autocomplete="on" id="q" name="q">
-        <select name="cx" id="cx" tabindex="1" onchange="setSearch(this.value);" title="Select Agency">
-            <option value="GOV" id="agency" selected="selected" title="GOV">GOV</option>
-            <option value="default_frontend" id="global" title="IN.gov">IN.gov</option>
-        </select>
-    </form>
-<form action="/apps/afss/afss2" id="govcontact" method="post" name="govcontact"><input name="config_file" type="hidden" value="gov/gov.config" />
-<p></p>
-
-<select id="subject" name="subject"><option selected="selected"></option><option value="DOA">Administration, Department of</option><option value="ISDA">Agriculture, Indiana State Department of</option><option value="ATC">Alcohol &amp; Tobacco Commission</option><option value="Appeals, Court of">Appeals, Court of</option><option value="Attorney General">Attorney General</option><option value="Auditor of State">Auditor of State</option><option value="OMB">Budget Agency, State</option><option value="IEDC">Business Development, Indiana</option><option value="DCS">Child Services, Department of</option><option value="DCS-Child Support">Child Services, Department of (Child Support)</option><option value="Civil Rights Commission, Indiana">Civil Rights Commission, Indiana</option><option value="DOC">Correction, Department of</option><option value="Counter Terrorism and Security Council, Indiana">Counter Terrorism and Security Council, Indiana</option><option value="CJI">Criminal Justice Institute</option><option value="DFI">Development Finance Authority, Indiana</option><option value="EDUCATION">Education, Department of</option><option value="Election Division">Election Division</option><option value="DHS">Emergency Medical Services</option><option value="IDEM">Environmental Management, Department of</option><option value="Ethics Commission, Indiana State">Ethics Commission, Indiana State</option><option value="Excise Police, Indiana State">Excise Police, Indiana State</option><option value="ISFC">Fair, Indiana State</option><option value="OFBCI">Faith-based and Community Initiatives, Office of</option><option value="FSSA">Family and Social Services Administration</option><option value="IGC">Gaming Commission</option><option value="Governor, Office of the">Governor, Office of the</option><option value="Governor’s Planning Council for People with Disabilities, Indiana">Governor’s Planning Council for People with Disabilities, Indiana</option><option value="Grain Buyers and Warehouse Licensing Agency, Indiana">Grain Buyers and Warehouse Licensing Agency, Indiana</option><option value="ISDH">Health, Department of</option><option value="ICHE">Higher Education, Commission for</option><option value="Higher Education Telecommunication System, Indiana">Higher Education Telecommunication System, Indiana</option><option value="Hispanic/Latino Affairs, Indiana Commission on">Hispanic/Latino Affairs, Indiana Commission on</option><option value="Historical Bureau, Indiana">Historical Bureau, Indiana</option><option value="DHS">Homeland Security, Department of</option><option value="House of Representatives">House of Representatives</option><option value="IHCDA">Housing and Community Development Authority, Indiana</option><option value="Inspector General">Inspector General</option><option value="Integrated Public Safety Commission">Integrated Public Safety Commission</option><option value="DOL">Labor, Department of</option><option value="OMB">Local Government Finance, Department of</option><option value="Lottery">Lottery, Hoosier</option><option value="BMV">Motor Vehicles, Bureau of</option><option value="DNR">Natural Resources, Department of</option><option value="Protection and Advocacy Services">Protection and Advocacy Services</option><option value="OMB">Public Employees Retirement Fund</option><option value="Public Records, Indiana Commission">Public Records, Indiana Commission</option><option value="OMB">Revenue, Department of</option><option value="OCRA">Rural Affairs, Office of</option><option value="Rural Development Council, Indiana">Rural Development Council, Indiana</option><option value="Secretary of State">Secretary of State</option><option value="Senate">Senate</option><option value="Social Status of Black Males, Indiana Commission">Social Status of Black Males, Indiana Commission</option><option value="OMB">State Budget Agency; Revenue, Department of</option><option value="ISP">State Police</option><option value="OMB">Teacher Retirement Fund, Indiana State</option><option value="IOT">Technology, Office of</option><option value="ISDH-ITPC">Tobacco Prevention and Cessation, Indiana</option><option value="IOTD">Tourism, Indiana Department of</option><option value="Treasurer, Indiana State">Treasurer, Indiana State</option><option value="INDOT">Transportation, Department of</option><option value="OUCC">Utility Consumer Counselor, Office of</option><option value="IURC">Utility Regulatory Commission</option><option value="DVA">Veteran Affairs, Department of</option><option value="DWD - UNEMP - PROB">Workforce Development, Department of</option><option value="other">Other</option></select><br />
-&nbsp;</fieldset>
-
-<fieldset><legend>Name</legend><label for="prefix">Prefix:</label><br />
-<select id="prefix" name="prefix"><option selected="selected"></option><option value="Captain">Captain</option><option value="Chief">Chief</option><option value="Councilman">Councilman</option><option value="Councilwoman">Councilwoman</option><option value="Dame">Dame</option><option value="Doctor">Doctor</option><option value="Dr.">Dr.</option><option value="Dr. and Mr.">Dr. and Mr.</option><option value="Dr. and Mrs.">Dr. and Mrs.</option><option value="Father">Father</option><option value="Friend">Friend</option><option value="Friends">Friends</option><option value="Miss">Miss</option><option value="Monsignor">Monsignor</option><option value="Mr.">Mr.</option><option value="Mr. and Mrs.">Mr. and Mrs.</option><option value="Mrs.">Mrs.</option><option value="Ms.">Ms.</option><option value="Pastor">Pastor</option><option value="Rabbi">Rabbi</option><option value="Rev.">Rev.</option><option value="Reverend">Reverend</option><option value="Sir">Sir</option><option value="Sister">Sister</option><option value="The Honorable">The Honorable</option></select><br />
+<form action="http://www.google.com/search" id="cse-search-box" name="csesearchbox" method="get" target="_blank" onSubmit="return CheckJS();">
+<input type="submit" id="sbutton" value="Search" name="sa" title="search">
+<input type="text" title="Search Box" onclick="this.value=''" value="" autocomplete="on" id="q" name="q">
+<select name="cx" id="cx" tabindex="1" onchange="setSearch(this.value);" title="Select Agency">
+<option value="GOV" id="agency" selected="selected" title="GOV">
+</option>
+<option value="default_frontend" id="global" title="IN.gov">
+</option>
+</select>
+</form>
+<form action="/apps/afss/afss2" id="govcontact" method="post" name="govcontact">
+<p>
+</p>
+<fieldset>
+<legend>
+</legend>
+<label for="subject">
+</label>
 <br />
-<input autocomplete="OFF" id="first" maxlength="25" name="first" size="15" /><br />
+<select id="subject" name="subject">
+<option selected="selected">
+</option>
+<option value="DOA">
+</option>
+<option value="ISDA">
+</option>
+<option value="ATC">
+</option>
+<option value="Appeals, Court of">
+</option>
+<option value="Attorney General">
+</option>
+<option value="Auditor of State">
+</option>
+<option value="OMB">
+</option>
+<option value="IEDC">
+</option>
+<option value="DCS">
+</option>
+<option value="DCS-Child Support">
+</option>
+<option value="Civil Rights Commission, Indiana">
+</option>
+<option value="DOC">
+</option>
+<option value="Counter Terrorism and Security Council, Indiana">
+</option>
+<option value="CJI">
+</option>
+<option value="DFI">
+</option>
+<option value="EDUCATION">
+</option>
+<option value="Election Division">
+</option>
+<option value="DHS">
+</option>
+<option value="IDEM">
+</option>
+<option value="Ethics Commission, Indiana State">
+</option>
+<option value="Excise Police, Indiana State">
+</option>
+<option value="ISFC">
+</option>
+<option value="OFBCI">
+</option>
+<option value="FSSA">
+</option>
+<option value="IGC">
+</option>
+<option value="Governor, Office of the">
+</option>
+<option value="Governor’s Planning Council for People with Disabilities, Indiana">
+</option>
+<option value="Grain Buyers and Warehouse Licensing Agency, Indiana">
+</option>
+<option value="ISDH">
+</option>
+<option value="ICHE">
+</option>
+<option value="Higher Education Telecommunication System, Indiana">
+</option>
+<option value="Hispanic/Latino Affairs, Indiana Commission on">
+</option>
+<option value="Historical Bureau, Indiana">
+</option>
+<option value="DHS">
+</option>
+<option value="House of Representatives">
+</option>
+<option value="IHCDA">
+</option>
+<option value="Inspector General">
+</option>
+<option value="Integrated Public Safety Commission">
+</option>
+<option value="DOL">
+</option>
+<option value="OMB">
+</option>
+<option value="Lottery">
+</option>
+<option value="BMV">
+</option>
+<option value="DNR">
+</option>
+<option value="Protection and Advocacy Services">
+</option>
+<option value="OMB">
+</option>
+<option value="Public Records, Indiana Commission">
+</option>
+<option value="OMB">
+</option>
+<option value="OCRA">
+</option>
+<option value="Rural Development Council, Indiana">
+</option>
+<option value="Secretary of State">
+</option>
+<option value="Senate">
+</option>
+<option value="Social Status of Black Males, Indiana Commission">
+</option>
+<option value="OMB">
+</option>
+<option value="ISP">
+</option>
+<option value="OMB">
+</option>
+<option value="IOT">
+</option>
+<option value="ISDH-ITPC">
+</option>
+<option value="IOTD">
+</option>
+<option value="Treasurer, Indiana State">
+</option>
+<option value="INDOT">
+</option>
+<option value="OUCC">
+</option>
+<option value="IURC">
+</option>
+<option value="DVA">
+</option>
+<option value="DWD - UNEMP - PROB">
+</option>
+<option value="other">
+</option>
+</select>
 <br />
-<label for="mi">MI:</label><br />
-<input autocomplete="OFF" id="mi" maxlength="1" name="mi" size="1" /><br />
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<label for="prefix">
+</label>
 <br />
-<input autocomplete="OFF" id="last" maxlength="25" name="last" size="15" /><br />
+<select id="prefix" name="prefix">
+<option selected="selected">
+</option>
+<option value="Captain">
+</option>
+<option value="Chief">
+</option>
+<option value="Councilman">
+</option>
+<option value="Councilwoman">
+</option>
+<option value="Dame">
+</option>
+<option value="Doctor">
+</option>
+<option value="Dr.">
+</option>
+<option value="Dr. and Mr.">
+</option>
+<option value="Dr. and Mrs.">
+</option>
+<option value="Father">
+</option>
+<option value="Friend">
+</option>
+<option value="Friends">
+</option>
+<option value="Miss">
+</option>
+<option value="Monsignor">
+</option>
+<option value="Mr.">
+</option>
+<option value="Mr. and Mrs.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Pastor">
+</option>
+<option value="Rabbi">
+</option>
+<option value="Rev.">
+</option>
+<option value="Reverend">
+</option>
+<option value="Sir">
+</option>
+<option value="Sister">
+</option>
+<option value="The Honorable">
+</option>
+</select>
 <br />
-<label for="suffix">Suffix:</label><br />
-<select id="suffix" name="suffix"><option selected="selected" value=""></option><option value="II">II</option><option value="III">III</option><option value="D.V.M.">D.V.M.</option><option value="D.D.S.">D.D.S.</option><option value="Esq.">Esq.</option><option value="Family">Family</option><option value="Jr.">Jr.</option><option value="L.L.D.">L.L.D.</option><option value="M.B.A.">M.B.A.</option><option value="M.D.">M.D.</option><option value="Ph.D.">Ph.D.</option><option value="R.N.">R.N.</option><option value="Sr.">Sr.</option></select></fieldset>
-
-<p></p>
-
-<input autocomplete="OFF" id="street" maxlength="50" name="street" size="40" /><br />
 <br />
-<label for="suite">Suite/P.O. Box:</label><br />
-<input id="suite" maxlength="20" name="suite" /><br />
+<label for="first">
+</label>
 <br />
-<input autocomplete="OFF" id="city" maxlength="50" name="city" size="30" /><br />
+<input autocomplete="OFF" id="first" maxlength="25" name="first" size="15" />
 <br />
-<select name="state"><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DC">Dist. of Col.</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option selected="selected" value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MO">Missouri</option><option value="MS">Mississippi</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="AS">American Samoa</option><option value="FM">Fed. States Micronesia</option><option value="GU">Guam</option><option value="MH">Marshall Islands</option><option value="MP">North Mariana Is.</option><option value="PR">Puerto Rico</option><option value="VI">Virgin Islands</option><option value="Other">Other (Use Address Lines)</option></select><br />
 <br />
-<input autocomplete="OFF" id="zip" maxlength="5" name="zip" size="5" /><br />
-&nbsp;</fieldset>
-
-<p></p>
-
-<fieldset><legend>Phone Number:</legend><br />
-<input autocomplete="OFF" id="phone" name="phone" size="15" /><br />
-&nbsp;</fieldset>
-
-<p></p>
-
-<input autocomplete="OFF" id="email" name="email" onblur="if (this.value=='') document.getElementById('stoplayer').style.display = 'none'; else validatemail();" onfocus="document.getElementById('stoplayer').style.display = 'none';" size="40" />
-<div id="stoplayer" style="DISPLAY: none">
-<p style="MARGIN-BOTTOM: 5px"><strong>Please enter a valid email format</strong> (me@myemail.com).</p>
+<label for="mi">
+</label>
+<br />
+<input autocomplete="OFF" id="mi" maxlength="1" name="mi" size="1" />
+<br />
+<br />
+<label for="last">
+</label>
+<br />
+<input autocomplete="OFF" id="last" maxlength="25" name="last" size="15" />
+<br />
+<br />
+<label for="suffix">
+</label>
+<br />
+<select id="suffix" name="suffix">
+<option selected="selected" value="">
+</option>
+<option value="II">
+</option>
+<option value="III">
+</option>
+<option value="D.V.M.">
+</option>
+<option value="D.D.S.">
+</option>
+<option value="Esq.">
+</option>
+<option value="Family">
+</option>
+<option value="Jr.">
+</option>
+<option value="L.L.D.">
+</option>
+<option value="M.B.A.">
+</option>
+<option value="M.D.">
+</option>
+<option value="Ph.D.">
+</option>
+<option value="R.N.">
+</option>
+<option value="Sr.">
+</option>
+</select>
+</fieldset>
+<p>
+</p>
+<fieldset>
+<legend>
+</legend>
+<label for="street">
+</label>
+<br />
+<input autocomplete="OFF" id="street" maxlength="50" name="street" size="40" />
+<br />
+<br />
+<label for="suite">
+</label>
+<br />
+<input id="suite" maxlength="20" name="suite" />
+<br />
+<br />
+<label for="city">
+</label>
+<br />
+<input autocomplete="OFF" id="city" maxlength="50" name="city" size="30" />
+<br />
+<br />
+<label for="state">
+</label>
+<br />
+<select name="state">
+<option value="AL">
+</option>
+<option value="AK">
+</option>
+<option value="AZ">
+</option>
+<option value="AR">
+</option>
+<option value="CA">
+</option>
+<option value="CO">
+</option>
+<option value="CT">
+</option>
+<option value="DC">
+</option>
+<option value="DE">
+</option>
+<option value="FL">
+</option>
+<option value="GA">
+</option>
+<option value="HI">
+</option>
+<option value="ID">
+</option>
+<option value="IL">
+</option>
+<option selected="selected" value="IN">
+</option>
+<option value="IA">
+</option>
+<option value="KS">
+</option>
+<option value="KY">
+</option>
+<option value="LA">
+</option>
+<option value="ME">
+</option>
+<option value="MD">
+</option>
+<option value="MA">
+</option>
+<option value="MI">
+</option>
+<option value="MN">
+</option>
+<option value="MO">
+</option>
+<option value="MS">
+</option>
+<option value="MT">
+</option>
+<option value="NE">
+</option>
+<option value="NV">
+</option>
+<option value="NH">
+</option>
+<option value="NJ">
+</option>
+<option value="NM">
+</option>
+<option value="NY">
+</option>
+<option value="NC">
+</option>
+<option value="ND">
+</option>
+<option value="OH">
+</option>
+<option value="OK">
+</option>
+<option value="OR">
+</option>
+<option value="PA">
+</option>
+<option value="RI">
+</option>
+<option value="SC">
+</option>
+<option value="SD">
+</option>
+<option value="TN">
+</option>
+<option value="TX">
+</option>
+<option value="UT">
+</option>
+<option value="VT">
+</option>
+<option value="VA">
+</option>
+<option value="WA">
+</option>
+<option value="WV">
+</option>
+<option value="WI">
+</option>
+<option value="WY">
+</option>
+<option value="AS">
+</option>
+<option value="FM">
+</option>
+<option value="GU">
+</option>
+<option value="MH">
+</option>
+<option value="MP">
+</option>
+<option value="PR">
+</option>
+<option value="VI">
+</option>
+<option value="Other">
+</option>
+</select>
+<br />
+<br />
+<label for="zip">
+</label>
+<br />
+<input autocomplete="OFF" id="zip" maxlength="5" name="zip" size="5" />
+<br />
+</fieldset>
+<p>
+</p>
+<fieldset>
+<legend>
+</legend>
+<br />
+<input autocomplete="OFF" id="phone" name="phone" size="15" />
+<br />
+</fieldset>
+<p>
+</p>
+<fieldset>
+<legend>
+</legend>
+<br />
+<p style="MARGIN-BOTTOM: 5px">
+<strong>
+</strong>
+</p>
 </div>
 <br />
-&nbsp;</fieldset>
-
-<p></p>
-
-<textarea cols="40" id="message" name="message" rows="12"></textarea><br />
+</fieldset>
+<p>
+</p>
+<fieldset>
+<legend>
+</legend>
 <br />
-<input type="reset" value="Clear" />&nbsp;<input type="submit" value="Submit" /></fieldset>
+<textarea cols="40" id="message" name="message" rows="12">
+</textarea>
+<br />
+<br />
+<input type="reset" value="Clear" />
+<input type="submit" value="Submit" />
+</fieldset>
 </form>

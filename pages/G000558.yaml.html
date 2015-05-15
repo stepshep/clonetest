@@ -1,49 +1,56 @@
-        <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-          <p>
-            <label for="searchkey">Keyword:</label>
-            <span class="requiredfield" id="searchkeyrequired"></span>
-          </p>
-          <p>
-            <input type="text" name="searchkey" id="searchkey" />
-          </p>
-          <p id="searchEntire" style="display:none">
-            <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked"/>
-            <label for="entire">Entire Site</label>
-          </p>
-          <p id="searchSection" style="display:none">
-            <input type="radio" class="radiobutton" name="locale" value="4" id="this_section" />
-            <label for="this_section">This Section</label>
-          </p>
-          <p class="submitbutton">
-            <span><input type="submit" value="Search"/></span>
-          </p>
-        </form>
-                    <form action="/subscribe.aspx" method="get">
-                      <p class="formHeader"> Email Updates</p>
-                      <p class="formQuestion"> Receive regular email updates from Brett.</p>
-                      <input class="text" id="form_1_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76);" type="text" value="E-mail Address" />
-                      <input class="form_submit_button" id="form_submit_button_1" name="submitform" type="submit" value="Submit " />
-                    </form>
-<form method="get" action="/forms/writeyourrep/" class="zipform">
-    Zip: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
-    +4: <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
-    <input type="submit" value="Submit" />
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey" />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked"/>
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="4" id="this_section" />
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
 </form>
-            <form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank">
-              <input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(68, 68, 68);" type="text" value="Search by keyword" />
-              <input class="searchbuttons" id="searchPhrase" name="Submit" type="submit" value="Search" />
-            </form>
-            <form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-number" target="_blank">
-              <input class="text" id="bill" maxlength="50" name="docidc112" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(68, 68, 68);" type="text" value="Search by bill number" />
-              <input class="searchbuttons" id="searchBill" name="Submit" type="submit" value="Search" />
-            </form>
-          <form action="http://guthrie.house.gov/index.cfm?sectionid=3" method="get" onsubmit="return checkformsearch(this)">
-            <input class="text" id="searchkey" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76);" type="text" value="Search Site" />
-            <div style="display: none;">
-              <input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1" />
-              <label for="entire">Entire Site</label>
-              <input class="radiobutton" id="this_section" name="location" type="radio" value="1" />
-              <label for="this_section">This Section</label>
-            </div>
-            <input class="searchButon" type="submit" value="Search" />
-          </form>
+<form action="/subscribe.aspx" method="get">
+<p class="formHeader">
+</p>
+<p class="formQuestion">
+</p>
+<input class="text" id="form_1_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76);" type="text" value="E-mail Address" />
+<input class="form_submit_button" id="form_submit_button_1" name="submitform" type="submit" value="Submit " />
+</form>
+<form method="get" action="/forms/writeyourrep/" class="zipform">
+<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
+<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
+<input type="submit" value="Submit" />
+</form>
+<form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank">
+<input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(68, 68, 68);" type="text" value="Search by keyword" />
+<input class="searchbuttons" id="searchPhrase" name="Submit" type="submit" value="Search" />
+</form>
+<form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-number" target="_blank">
+<input class="text" id="bill" maxlength="50" name="docidc112" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(68, 68, 68);" type="text" value="Search by bill number" />
+<input class="searchbuttons" id="searchBill" name="Submit" type="submit" value="Search" />
+</form>
+<form action="http://guthrie.house.gov/index.cfm?sectionid=3" method="get" onsubmit="return checkformsearch(this)">
+<input class="text" id="searchkey" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76);" type="text" value="Search Site" />
+<input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1" />
+<label for="entire">
+</label>
+<input class="radiobutton" id="this_section" name="location" type="radio" value="1" />
+<label for="this_section">
+</label>
+</div>
+<input class="searchButon" type="submit" value="Search" />
+</form>

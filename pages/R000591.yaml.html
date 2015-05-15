@@ -1,37 +1,200 @@
-    <form action="/contact-me" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
-      <h2 class="element-invisible">Search form</h2>
-    <div class="form-item form-type-textfield form-item-search-block-form">
-  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
- <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+<form action="/contact-me" method="post" id="search-block-form" accept-charset="UTF-8">
+<div>
+<div class="container-inline">
+<h2 class="element-invisible">
+</h2>
+<div class="form-item form-type-textfield form-item-search-block-form">
+<label class="element-invisible" for="edit-search-block-form--2">
+</label>
+<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions">
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" />
 </div>
 </div>
-</div></form>  </div>
+</div>
+</form>
+</div>
 <form action="/htbin/formproc/email-me.txt&amp;display=/contact-me/email-me-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post" name="contactForm">
-	<fieldset><legend>Your Information</legend>
-		<div class="formboxL"><label for="prefix">Prefix</label> : <input id="prefix" maxlength="100" name="prefix" size="2" /></div>
-		<div class="formboxL"><label for="required-first">First Name:</label> <span class="required-field" title="required information">*</span> <input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" size="15" /></div>
-		<div class="formboxL"><label for="middle">MI:</label> <input id="middle" maxlength="100" name="middle" size="2" /></div>
-		<div class="formboxL"><label for="required-last">Last Name:</label> <span class="required-field" title="required information">*</span> <input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" size="31" /></div>
-		<div class="formboxL"><label for="suffix">Suffix:</label> <input id="suffix" maxlength="100" name="suffix" size="2" /></div>
-		<div class="formboxL"><label for="required-address">Street Address:</label> <span class="required-field" title="required information">*</span> <input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" size="90" /></div>
-		<div class="formboxL"><label for="address2">Street Address Continued:</label> <input id="address2" maxlength="100" name="address2" size="90" /></div>
-		<div class="formboxL"><label for="required-city">City:</label> <span class="required-field" title="required information">*</span> <input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" size="34" /></div>
-		<div class="formboxL"><label for="required-state">State:</label> <span class="required-field" title="required information">*</span> (XX) <input id="required-state" maxlength="2" name="required-state" size="4" /></div>
-		<div class="formboxL"><label for="required-zip5">Zip Code:</label> <span class="required-field" title="required information">*</span> <input class="validate[required] is-required" id="required-zip4" maxlength="5" name="required-zip5" size="10" type="text" /></div>
-		<div class="formboxL"><label for="zip4">Zip Code +4:</label> <input id="zip4" maxlength="4" name="zip4" size="8" /></div>
-		<div class="formboxL"><label for="required-valid-email">Email:</label> <span class="required-field" title="required information">*</span> <input class="validate[required,custom[email]] is-required" id="required-valid-email" maxlength="100" name="required-valid-email" size="90" /></div>
-	</fieldset>
-	<fieldset><legend>Telephone</legend>
-		<div class="formboxL"><label for="phone">Phone Number:</label> <input id="phone" maxlength="20" name="phone" size="32" /></div>
-	</fieldset>
-	<fieldset><legend>Your Message</legend>
-		<div class="formboxL"><label for="required-issue">Choose an issue category from the drop-down list which most resembles your issue of concern.</label> <span class="required-field" title="required information">*</span> <select class="validate[required] is-required" id="required-issue" name="required-issue" size="1"><option selected="selected" value=""></option><option value="AG">Agriculture</option><option value="AN">Animals</option><option value="ART">Arts and Humanities</option><option value="BANK">Banking and Finance</option><option value="BUD">Budget and Economy</option><option value="CONG">Congress and Elections</option><option value="DEF">Defense and Military</option><option value="ED">Education</option><option value="EN">Energy</option><option value="ENV">Environment</option><option value="FR">Foreign Relations</option><option value="GUN">Guns</option><option value="HE">Health</option><option value="HUD">Housing and Urban Development</option><option value="IM">Immigration</option><option value="JUD">Judiciary</option><option value="LAB">Labor</option><option value="POST">Post Office</option><option value="SCI">Science and Technology</option><option value="SENIORS">Senior Citizens</option><option value="SS">Social Security</option><option value="TAX">Taxes</option><option value="COMM">Telecommunications</option><option value="TRAN">Transportation</option><option value="TRD">Trade</option><option value="VET">Veterans</option><option value="OTHER">Other Issues</option></select></div>
-		<div class="formboxL"><label for="required-message">Text of Message:</label> <span class="required-field" title="required information">*</span><textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" rows="5"></textarea></div>
-		<div class="formboxL">&nbsp;</div>
-        <div class="formboxL"><input class="is-inline" id="subscribe"  name="subscribe" type="checkbox" value="EMAIL.OPTIN" /><label for="subscribe">Would you like to receive email updates from Representative Roby?</label></div>
-        <div class="formboxL">&nbsp;</div>
-		<div class="formboxL"><strong>Please confirm that all information has been entered correctly before submitting email.</strong></div>
-		<div class="formboxL">&nbsp;</div>
-		<div class="formboxL"><input class="submit" id="submit" name="submit" type="submit" value="Send Email" /></div>
-	</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="prefix">
+</label>
+<input id="prefix" maxlength="100" name="prefix" size="2" />
+</div>
+<div class="formboxL">
+<label for="required-first">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" size="15" />
+</div>
+<div class="formboxL">
+<label for="middle">
+</label>
+<input id="middle" maxlength="100" name="middle" size="2" />
+</div>
+<div class="formboxL">
+<label for="required-last">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" size="31" />
+</div>
+<div class="formboxL">
+<label for="suffix">
+</label>
+<input id="suffix" maxlength="100" name="suffix" size="2" />
+</div>
+<div class="formboxL">
+<label for="required-address">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" size="90" />
+</div>
+<div class="formboxL">
+<label for="address2">
+</label>
+<input id="address2" maxlength="100" name="address2" size="90" />
+</div>
+<div class="formboxL">
+<label for="required-city">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" size="34" />
+</div>
+<div class="formboxL">
+<label for="required-state">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input id="required-state" maxlength="2" name="required-state" size="4" />
+</div>
+<div class="formboxL">
+<label for="required-zip5">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-zip4" maxlength="5" name="required-zip5" size="10" type="text" />
+</div>
+<div class="formboxL">
+<label for="zip4">
+</label>
+<input id="zip4" maxlength="4" name="zip4" size="8" />
+</div>
+<div class="formboxL">
+<label for="required-valid-email">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required,custom[email]] is-required" id="required-valid-email" maxlength="100" name="required-valid-email" size="90" />
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="phone">
+</label>
+<input id="phone" maxlength="20" name="phone" size="32" />
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="required-issue">
+</label>
+<span class="required-field" title="required information">
+</span>
+<select class="validate[required] is-required" id="required-issue" name="required-issue" size="1">
+<option selected="selected" value="">
+</option>
+<option value="AG">
+</option>
+<option value="AN">
+</option>
+<option value="ART">
+</option>
+<option value="BANK">
+</option>
+<option value="BUD">
+</option>
+<option value="CONG">
+</option>
+<option value="DEF">
+</option>
+<option value="ED">
+</option>
+<option value="EN">
+</option>
+<option value="ENV">
+</option>
+<option value="FR">
+</option>
+<option value="GUN">
+</option>
+<option value="HE">
+</option>
+<option value="HUD">
+</option>
+<option value="IM">
+</option>
+<option value="JUD">
+</option>
+<option value="LAB">
+</option>
+<option value="POST">
+</option>
+<option value="SCI">
+</option>
+<option value="SENIORS">
+</option>
+<option value="SS">
+</option>
+<option value="TAX">
+</option>
+<option value="COMM">
+</option>
+<option value="TRAN">
+</option>
+<option value="TRD">
+</option>
+<option value="VET">
+</option>
+<option value="OTHER">
+</option>
+</select>
+</div>
+<div class="formboxL">
+<label for="required-message">
+</label>
+<span class="required-field" title="required information">
+</span>
+<textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" rows="5">
+</textarea>
+</div>
+<div class="formboxL">
+</div>
+<div class="formboxL">
+<input class="is-inline" id="subscribe"  name="subscribe" type="checkbox" value="EMAIL.OPTIN" />
+<label for="subscribe">
+</label>
+</div>
+<div class="formboxL">
+</div>
+<div class="formboxL">
+<strong>
+</strong>
+</div>
+<div class="formboxL">
+</div>
+<div class="formboxL">
+<input class="submit" id="submit" name="submit" type="submit" value="Send Email" />
+</div>
+</fieldset>
 </form>

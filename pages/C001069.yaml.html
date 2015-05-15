@@ -1,206 +1,421 @@
 <form onsubmit="return checkformsearch(this)" method="get" action="index.cfm?sectionid=2§iontree=">
 <input type="text" value="Search Site" onfocus="iFocus(this)" onblur="iBlur(this)" name="searchkey" class="searchkey text" style="color: rgb(119, 119, 119);"/>
 <input type="submit" value="" class="searchButon button"/>
-</form></div></div></div> </div></div>
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-			<form action="/email-joe1/" id="custom_form24" name="custom_form" class="custom_form" method="post">
-				
-				<p class="req">* indicates required information.</p>
-  <fieldset>
-    <legend>Your Information</legend>
-    <div class="formbx">
-      <label for="prefix">Prefix:</label>
-      <select name="prefix" id="prefix" class="short">
-          <option selected="" value="">Select</option>
-          <option value="Mr. ">Mr.</option>
-          <option value="Mrs.">Mrs.</option>
-          <option value="Ms.">Ms.</option>
-          <option value="Miss">Miss</option>
-          <option value="Dr.">Dr.</option>
-          <option value="Hon.">Hon.</option>
-          <option value="Rev.">Rev.</option>
-          <option value="Rabbi">Rabbi</option>
-        </select>
-    </div>
-    <div class="formbx">
-      <label for="req_firstname">First Name:<span title="required field">*</span></label>
-      <input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn" />
-    </div>
-    <div class="formbx">
-      <label for="middle">MI:</label>
-      <input id="middle" type="text" name="middle" class="text mi" maxlength="2" />
-    </div>
-    <div class="formbx">
-      <label for="req_lastname">Last Name:<span title="required information">*</span></label>
-      <input type="text" name="lastname" id="req_lastname" class="text ln" maxlength="100" />
-    </div>
-    <div class="formbx">
-      <label for="suffix">Suffix:</label>
-      <input id="suffix" type="text" name="suffix" class="text sfx" maxlength="5"/>
-    </div>
-    <div class="formbx">
-		<label for="req_street">Street Address:<span title="required information">*</span></label>
-		<input type="text" name="street" id="req_street" class="text str" maxlength="100"/>
-    </div>
-    <div class="formbx">
-      <label for="address2">Street Address Continued:</label>
-      <input id="address2" type="text" name="street2" class="text str" maxlength="100"/>
-    </div>
-    <div class="formbx">
-      <label for="req_city">City:<span title="required information">*</span></label>      
-      <input type="text" name="city" id="req_city" class="text ct" maxlength="100"/>
-    </div>
-    <div class="formbx">
-      <label for="req_state">State:<span title="required information">*</span></label>
-      <select name="state" class="short" id="req_state">
-        <option selected="" value="">Select</option>
-         <option value="AK">AK</option>
-        <option value="AL">AL</option>
-        <option value="AR">AR</option>
-        <option value="AZ">AZ</option>
-        <option value="CA">CA</option>
-        <option value="CO">CO</option>
-        <option value="CT">CT</option>
-        <option value="DC">DC</option>
-        <option value="DE">DE</option>
-        <option value="FL">FL</option>
-        <option value="GA">GA</option>
-        <option value="HI">HI</option>
-        <option value="IA">IA</option>
-        <option value="ID">ID</option>
-        <option value="IL">IL</option>
-        <option value="IN">IN</option>
-        <option value="KS">KS</option>
-        <option value="KY">KY</option>
-        <option value="LA">LA</option>
-        <option value="MA">MA</option>
-        <option value="MD">MD</option>
-        <option value="ME">ME</option>
-        <option value="MI">MI</option>
-        <option value="MN">MN</option>
-        <option value="MO">MO</option>
-        <option value="MS">MS</option>
-        <option value="MT">MT</option>
-        <option value="NC">NC</option>
-        <option value="ND">ND</option>
-        <option value="NE">NE</option>
-        <option value="NH">NH</option>
-        <option value="NJ">NJ</option>
-        <option value="NM">NM</option>
-        <option value="NV">NV</option>
-        <option value="NY">NY</option>
-        <option value="OH">OH</option>
-        <option value="OK">OK</option>
-        <option value="OR">OR</option>
-        <option value="PA">PA</option>
-        <option value="PR">PR</option>
-        <option value="RI">RI</option>
-        <option value="SC">SC</option>
-        <option value="SD">SD</option>
-        <option value="TN">TS</option>
-        <option value="TX">TX</option>
-        <option value="UT">UT</option>
-        <option value="VA">VA</option>
-        <option value="VT">VT</option>
-        <option value="WA">WA</option>
-        <option value="WI">WI</option>
-        <option value="WV">WV</option>
-        <option value="WY">WY</option>
-      </select>
-	</div>
-    <div class="formbx">
-      <label for="req_zip">Zip Code:<span title="required information">*</span></label>
-      <input type="text" name="zipcode" id="req_zip" class="zip z5" maxlength="5" />
-	</div>
-    <div class="formbx">
-      <label for="zip4">+4 Extension:</label>
-      </div>
-    <div class="formbx">
-      <label for="req_email">Email:<span title="required information">*</span></label>
-      <input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml" />
-    </div>
-    <div class="formbx">
-      <label for="phone">Phone Number:</label>
-      <input id="phone" type="text" name="phone" class="text phn" maxlength="20"/>
-    </div>
-  </fieldset>
-  <fieldset>
-    <legend>Your Message</legend>
-<div class="formbx">
-      <label for="issue">Choose an issue category from the drop-down list which most resembles your issue of concern.<span title="required information">*</span></label>
-      <select id="req_issue" name="issue">
-        <option selected="selected" value="">Select</option>
-        <option value="AGR">Agriculture</option>
-        <option value="DEF">Defense and Homeland Security</option>
-        <option value="EDU">Education Policy</option>
-        <option value="ENV">Energy and the Environment</option>
-        <option value="GOV">Government Oversight</option>
-        <option value="GUN">Gun Control Policy</option>
-        <option value="HEA">Healthcare and Retirement</option>
-        <option value="IMM">Immigration</option>
-        <option value="JUD">Judicial</option>
-        <option value="LABOR">Labor</option>
-        <option value="SCIENCE">Science, Technology, Telecommunications, and Space</option>
-        <option value="SOC">Social, Judicial, and Civil Rights Policy</option>
-        <option value="ECO">Economic and Tax Policy</option>
-        <option value="TRAN">Transportation and Infrastructure</option>
-        <option value="INTL">International Affairs and Trade</option>
-        <option value="VET">Veterans Affairs</option>
-        <option value="WEL">Welfare</option>
-        <option value="CASEWORK">Casework</option>
-        <option value="FLAG">Tour and Flag Requests</option>
-        
-        <option value="MISC">Other Issues</option>
-      </select>
-    </div>
-    <div class="formbx">
-      <label for="req_subject">Message Subject:<span title="required information">*</span></label>
-      <input class="text sbj" id="req_subject" maxlength="100" name="subject" />
-    </div>
-    <div class="formbx">
-      <label for="req_message">Text of Message:<span title="required information">*</span></label>
-      <textarea name="message" id="req_message" class="message"></textarea>
-    </div>
-    <div class="formbx">
-        <label>Would you like a Response:</label>
-        <select name="response" id="response">
-            <option selected="selected" value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </div>
-  </fieldset>
-
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="/email-joe1/" id="custom_form24" name="custom_form" class="custom_form" method="post">
+<p class="req">
+</p>
 <fieldset>
-    <legend>Newsletter Sign-up:</legend>
-    <div class="formbox">
-    <p style="font-weight:bold">
-  	<input type="checkbox" name="newsletter" id="newsletter" value="ENEWS.SUBSCRIBE" /> E-Newsletter</p>
-	<p style="font-weight:bold">
-  	<input type="checkbox" name="newsletter2" id="newsletter2" value="ENEWS.SENIORS" /> Senior Scoop</p>
-	<p style="font-weight:bold">
-  	<input type="checkbox" name="newsletter3" id="newsletter3" value="ENEWS.GRANTS" /> Grant Opportunities</p>
-    <p>For your convenience please sign up once per email account, shortly after signing up you will receive an email confirming your registration.</p>
-    </div>
-    
-  </fieldset>
-
- <input type="submit" value="Send Email" id="submitButton" class="form_submit_button" /> 
- 
-			</form>
-				<div id="webfooter"> <div class="moduletable importantlinks"><h3> Important Links</h3><ul class="menu" id="footerlinks"><li><a href="/help-with-federal-grants/" target="_blank"><span>Grants Links and Resources</span></a></li><li><a href="/visit-washington-dc/" target="_blank"><span>Request a Tour</span></a></li><li><a href="/help-with-a-federal-agency/" target="_blank"><span>Help with a Federal Agency</span></a></li><li><a href="/just-for-kids/" target="_blank"><span>Student Center</span></a></li></ul></div><div class="moduletable thomasbox"><h3> Thomas Bill Search</h3><img alt="Thomas Bills Search" height="112" src="http://courtney.house.gov/images/portrait-thomas.png" width="80" /><p> Search here for current<br /> legislation in the<br /> House or Senate</p><div id="billSearch"><div class="searchform"><form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank"><input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Bill Number" /><input class="searchbuttons button" name="Submit" type="submit" value="" />&nbsp;</form></div><div class="searchform"><form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post" target="_blank"><input class="text" id="word" name="queryc112" onblur="if(this.value=='')this.value='Word or Phrase'" onfocus="if(this.value=='Word or Phrase')this.value=''" type="text" value="Word or Phrase" /><input class="searchbuttons button" name="Submit" type="submit" value="" />&nbsp;</form></div></div></div><div class="moduletable last help-you"><h3> District Map</h3><ul class="menu"><li class="footerlink"><a href="/district-map/"><img border="0" height="158" src="../images/districtmap2.jpg" width="269" /></a></li></ul></div><div id="privacydiv"><a href="http://www.house.gov/house/privacy.shtml" target="_blank">Privacy Policy</a> &bull; <a href="/site-map">Site Map</a></div><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-1852004-41']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script> </div>
+<legend>
+</legend>
+<div class="formbx">
+<label for="prefix">
+</label>
+<select name="prefix" id="prefix" class="short">
+<option selected="" value="">
+</option>
+<option value="Mr. ">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Miss">
+</option>
+<option value="Dr.">
+</option>
+<option value="Hon.">
+</option>
+<option value="Rev.">
+</option>
+<option value="Rabbi">
+</option>
+</select>
+</div>
+<div class="formbx">
+<label for="req_firstname">
+<span title="required field">
+</span>
+</label>
+<input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn" />
+</div>
+<div class="formbx">
+<label for="middle">
+</label>
+<input id="middle" type="text" name="middle" class="text mi" maxlength="2" />
+</div>
+<div class="formbx">
+<label for="req_lastname">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="lastname" id="req_lastname" class="text ln" maxlength="100" />
+</div>
+<div class="formbx">
+<label for="suffix">
+</label>
+<input id="suffix" type="text" name="suffix" class="text sfx" maxlength="5"/>
+</div>
+<div class="formbx">
+<label for="req_street">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="street" id="req_street" class="text str" maxlength="100"/>
+</div>
+<div class="formbx">
+<label for="address2">
+</label>
+<input id="address2" type="text" name="street2" class="text str" maxlength="100"/>
+</div>
+<div class="formbx">
+<label for="req_city">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="city" id="req_city" class="text ct" maxlength="100"/>
+</div>
+<div class="formbx">
+<label for="req_state">
+<span title="required information">
+</span>
+</label>
+<select name="state" class="short" id="req_state">
+<option selected="" value="">
+</option>
+<option value="AK">
+</option>
+<option value="AL">
+</option>
+<option value="AR">
+</option>
+<option value="AZ">
+</option>
+<option value="CA">
+</option>
+<option value="CO">
+</option>
+<option value="CT">
+</option>
+<option value="DC">
+</option>
+<option value="DE">
+</option>
+<option value="FL">
+</option>
+<option value="GA">
+</option>
+<option value="HI">
+</option>
+<option value="IA">
+</option>
+<option value="ID">
+</option>
+<option value="IL">
+</option>
+<option value="IN">
+</option>
+<option value="KS">
+</option>
+<option value="KY">
+</option>
+<option value="LA">
+</option>
+<option value="MA">
+</option>
+<option value="MD">
+</option>
+<option value="ME">
+</option>
+<option value="MI">
+</option>
+<option value="MN">
+</option>
+<option value="MO">
+</option>
+<option value="MS">
+</option>
+<option value="MT">
+</option>
+<option value="NC">
+</option>
+<option value="ND">
+</option>
+<option value="NE">
+</option>
+<option value="NH">
+</option>
+<option value="NJ">
+</option>
+<option value="NM">
+</option>
+<option value="NV">
+</option>
+<option value="NY">
+</option>
+<option value="OH">
+</option>
+<option value="OK">
+</option>
+<option value="OR">
+</option>
+<option value="PA">
+</option>
+<option value="PR">
+</option>
+<option value="RI">
+</option>
+<option value="SC">
+</option>
+<option value="SD">
+</option>
+<option value="TN">
+</option>
+<option value="TX">
+</option>
+<option value="UT">
+</option>
+<option value="VA">
+</option>
+<option value="VT">
+</option>
+<option value="WA">
+</option>
+<option value="WI">
+</option>
+<option value="WV">
+</option>
+<option value="WY">
+</option>
+</select>
+</div>
+<div class="formbx">
+<label for="req_zip">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="zipcode" id="req_zip" class="zip z5" maxlength="5" />
+</div>
+<div class="formbx">
+<label for="zip4">
+</label>
+<input type="text" name="zipfour" id="zip4" class="zip z4" maxlength="4" />
+<small>
+<a target="_blank" rel="lightbox[iframe]" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" href="http://zip4.usps.com/zip4/welcome.jsp?iframe=true&amp;width=750&amp;height=100%">
+</a>
+</small>
+</div>
+<div class="formbx">
+<label for="req_email">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml" />
+</div>
+<div class="formbx">
+<label for="phone">
+</label>
+<input id="phone" type="text" name="phone" class="text phn" maxlength="20"/>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formbx">
+<label for="issue">
+<span title="required information">
+</span>
+</label>
+<select id="req_issue" name="issue">
+<option selected="selected" value="">
+</option>
+<option value="AGR">
+</option>
+<option value="DEF">
+</option>
+<option value="EDU">
+</option>
+<option value="ENV">
+</option>
+<option value="GOV">
+</option>
+<option value="GUN">
+</option>
+<option value="HEA">
+</option>
+<option value="IMM">
+</option>
+<option value="JUD">
+</option>
+<option value="LABOR">
+</option>
+<option value="SCIENCE">
+</option>
+<option value="SOC">
+</option>
+<option value="ECO">
+</option>
+<option value="TRAN">
+</option>
+<option value="INTL">
+</option>
+<option value="VET">
+</option>
+<option value="WEL">
+</option>
+<option value="CASEWORK">
+</option>
+<option value="FLAG">
+</option>
+<option value="MISC">
+</option>
+</select>
+</div>
+<div class="formbx">
+<label for="req_subject">
+<span title="required information">
+</span>
+</label>
+<input class="text sbj" id="req_subject" maxlength="100" name="subject" />
+</div>
+<div class="formbx">
+<label for="req_message">
+<span title="required information">
+</span>
+</label>
+<textarea name="message" id="req_message" class="message">
+</textarea>
+</div>
+<div class="formbx">
+<label>
+</label>
+<select name="response" id="response">
+<option selected="selected" value="Yes">
+</option>
+<option value="No">
+</option>
+</select>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formbox">
+<p style="font-weight:bold">
+<input type="checkbox" name="newsletter" id="newsletter" value="ENEWS.SUBSCRIBE" />
+</p>
+<p style="font-weight:bold">
+<input type="checkbox" name="newsletter2" id="newsletter2" value="ENEWS.SENIORS" />
+</p>
+<p style="font-weight:bold">
+<input type="checkbox" name="newsletter3" id="newsletter3" value="ENEWS.GRANTS" />
+</p>
+<p>
+</p>
+</div>
+</fieldset>
+<input type="submit" value="Send Email" id="submitButton" class="form_submit_button" />
+</form>
+<div id="webfooter">
+<div class="moduletable importantlinks">
+<h3>
+</h3>
+<ul class="menu" id="footerlinks">
+<li>
+<a href="/help-with-federal-grants/" target="_blank">
+<span>
+</span>
+</a>
+</li>
+<li>
+<a href="/visit-washington-dc/" target="_blank">
+<span>
+</span>
+</a>
+</li>
+<li>
+<a href="/help-with-a-federal-agency/" target="_blank">
+<span>
+</span>
+</a>
+</li>
+<li>
+<a href="/just-for-kids/" target="_blank">
+<span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="moduletable thomasbox">
+<h3>
+</h3>
+<p>
+<br />
+<br />
+</p>
+<div id="billSearch">
+<div class="searchform">
+<form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank">
+<input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Bill Number" />
+<input class="searchbuttons button" name="Submit" type="submit" value="" />
+</form>
+</div>
+<div class="searchform">
+<form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post" target="_blank">
+<input class="text" id="word" name="queryc112" onblur="if(this.value=='')this.value='Word or Phrase'" onfocus="if(this.value=='Word or Phrase')this.value=''" type="text" value="Word or Phrase" />
+<input class="searchbuttons button" name="Submit" type="submit" value="" />
+</form>
+</div>
+</div>
+</div>
+<div class="moduletable last help-you">
+<h3>
+</h3>
+<ul class="menu">
+<li class="footerlink">
+<a href="/district-map/">
+</a>
+</li>
+</ul>
+</div>
+<div id="privacydiv">
+<a href="http://www.house.gov/house/privacy.shtml" target="_blank">
+</a>
+<a href="/site-map">
+</a>
+</div>
+<script type="text/javascript">
+</script>
+</div>

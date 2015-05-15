@@ -1,515 +1,265 @@
-											<form action="index.php" method="post">
-	<div class="search">
-		<input name="searchword" id="mod_search_searchword" maxlength="30" alt="Search" class="inputbox" type="text" size="30" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" /><input type="submit" value="Search" class="button" onclick="this.form.searchword.focus();"/>	</div>
-</form>					</div>
-<form method="post" action="https://forms.house.gov/htbin/formproc/delauro/webforms/contact_form_email_file.txt&display=/webforms/contact_thanks.shtml">
-
-
-
-
-
-<SCRIPT language="JavaScript1.2">
-
-arrFormValidation[idx++] =
-
-          [
-
-          ];
-
-arrFormValidation[idx++] =
-
-          [
-
-          ];
-
-arrFormValidation[idx++] =
-
-          [
-
-          ];
-
-</SCRIPT>
-
-  <table border="0" width="50%">
-
-    <tr> 
-
-      <td colspan="2"><font size="-1" face="verdana">Prefix: *</font>&nbsp;&nbsp;&nbsp;<font size="-1" face="verdana">First 
-
-        Name: *</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <select name="required-prefix" style="width:55">
-
-          <option value="Mr.">Mr.</option>
-
-          <option value="Mrs.">Mrs.</option>
-
-          <option value="Miss">Miss</option>
-
-          <option value="Ms.">Ms.</option>
-
-          </select>
-
-		  	<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-	             ];
-
-			</SCRIPT>	
-
-        <input type="Text" name="required-firstname" style="width:438">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["maxlen=25","First Name should be 25 characters max"],
-
-					["required","Please Enter your First Name"]
-
-	             ];
-
-			</SCRIPT>		
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"><font size="-1" face="verdana">Middle Name:</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <input type="Text" name="middlename" style="width:500">		
-
-			 <SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td width="450"><font size="-1" face="verdana">Last Name: *</font></td>
-
-      <td width="57"><font size="-1" face="verdana">Suffix:</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td width="450"> 
-
-        <input type="Text" name="required-lastname" style="width:440">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["maxlen=25","Last Name should be 25 characters max"],
-
-					["required","Please Enter your Last Name"]
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-      <td width="57"> 
-
-        <input type="text" name="suffix" size="5" style="width:45">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td valign="top" colspan="2"><font size="-1" face="verdana">Address: *</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <textarea name="required-address" cols="53" rows="3" wrap="PHYSICAL" style="width:500"></textarea>
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["maxlen=75","Address should be 75 characters max"],
-
-					["req","Please enter your Address"]
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"><font size="-1" face="verdana">City*, State* and Zip*: 
-
-        </font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <input type="Text" name="required-hcity" style="width:320">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["maxlen=25","City should be 25 characters max"]				 
-
-	             ];
-
-			</SCRIPT>
-
-        <SELECT NAME="required-hstate"  style="width:100">
-
-          <OPTION VALUE="CT" SELECTED>Connecticut</OPTION>
-
-        </SELECT>
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["regexp=^[A-Za-z]{2,2}?$", "Please enter a valid State"]					
-
-	             ];
-
-			</SCRIPT>
-
-        <input type="text" name="required-hzip" size="5" maxlength="5">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["regexp=^\\d{5}(-\\d{4})?$", "Please enter a valid Zip Code"],
-
-					["req","Please enter a Zip Code"]
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"><font size="-1" face="verdana">Phone: *</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <input type="Text" name="phone_home" style="width:500">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["regexp=(?:[\\(][0-9]{3}[\\)]|[0-9]{3})[-. ]?[0-9]{3}[-. ]?[0-9]{4}$","Please enter a valid Phone Number."],
-
-					["req","Please enter a Phone Number."]
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"><font size="-1" face="verdana">E-mail: *</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <input type="Text" name="required-email" style="width:500">
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] = 
-
-					[
-
-						["req","Please enter your Email address"],
-
-						["email","Please enter a valid Email address"]
-
-					];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="3"> 
-
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] = 
-
-					[
-
-					];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td valign="top" colspan="2"><font size="-1" face="verdana">Subject: *</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <SELECT NAME="required-subject">
-
-          <OPTION VALUE="Not listed" SELECTED> ------------------------ Not listed 
-
-          ------------------------ </OPTION>
-
-          <OPTION VALUE="Agriculture">Agriculture</OPTION>
-
-
-
-          <OPTION VALUE="Animal Rights">Animal Rights</OPTION>
-
-          <OPTION VALUE="Budget">Budget</OPTION>
-
-          <OPTION VALUE="Civil Rights">Civil Rights</OPTION>
-
-          <OPTION VALUE="Commerce">Commerce</OPTION>
-
-          <OPTION VALUE="Crime">Crime</OPTION>
-
-          <OPTION VALUE="Defense">Defense</OPTION>
-
-          <OPTION VALUE="Disability">Disability</OPTION>
-
-          <OPTION VALUE="Economy">Economy</OPTION>
-
-          <OPTION VALUE="Education">Education</OPTION>
-
-          <OPTION VALUE="Employment">Employment</OPTION>
-
-          <OPTION VALUE="Energy">Energy</OPTION>
-
-          <OPTION VALUE="Environment">Environment</OPTION>
-
-          <OPTION VALUE="Federal Issues">Federal Issues</OPTION>
-
-          <OPTION VALUE="Foreign Affairs">Foreign Affairs</OPTION>
-
-          <OPTION VALUE="Government">Government</OPTION>
-		  
-		  <OPTION VALUE="Gun Violence Prevention">Gun Violence Prevention</OPTION>
-
-          <OPTION VALUE="Health Care">Health Care</OPTION>
-
-          <OPTION VALUE="Housing">Housing</OPTION>
-
-          <OPTION VALUE="Human Rights">Human Rights</OPTION>
-
-          <OPTION VALUE="Immigration">Immigration</OPTION>
-
-          <OPTION VALUE="Labor">Labor</OPTION>
-
-          <OPTION VALUE="Legislation">Legislation</OPTION>
-
-          <OPTION VALUE="Public Lands">Public Lands</OPTION>
-
-          <OPTION VALUE="Social Issues">Social Issues</OPTION>
-
-          <OPTION VALUE="Senior Citizens">Senior Citizens</OPTION>
-
-          <OPTION VALUE="Taxes">Taxes</OPTION>
-
-          <OPTION VALUE="Technology">Technology</OPTION>
-
-          <OPTION VALUE="Trade">Trade</OPTION>
-
-          <OPTION VALUE="Transportation">Transportation</OPTION>
-
-          <OPTION VALUE="Veterans">Veterans</OPTION>
-
-          <OPTION VALUE="Welfare">Welfare</OPTION>
-
-        </select>
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["dontselect=0","Please select a Subject"]
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-    <tr> 
-
-      <td valign="top" colspan="2"><font size="-1" face="verdana">Message: *</font></td>
-
-    </tr>
-
-    <tr> 
-
-      <td colspan="2"> 
-
-        <textarea name="required-comments" cols="53" rows="6" wrap="PHYSICAL" style="width:500"></textarea>
-
-
-			<SCRIPT language="JavaScript1.2">
-
-			arrFormValidation[idx++] =
-
-	             [
-
-					["req","Please enter your Message"]
-
-	             ];
-
-			</SCRIPT>
-
-      </td>
-
-    </tr>
-
-	
-
-	
-
-     
-
-      <tr> 
-
-        <td colspan="2"> 
-
-
-        </td>
-
-      </tr>
-
-     
-
-    <tr> 
-
-      <td colspan="2"><br>
-
-        <div align="center"><input type="submit" name="submit" value="Submit">
-
-          <br><br>
-
-          <font face="verdana" size="-2">* = Required</font></div>
-
-      </td>
-
-    </tr>
-
-  </table>
-
-
-
-
-
-
-
-
-
+<form action="index.php" method="post">
+<div class="search">
+<input name="searchword" id="mod_search_searchword" maxlength="30" alt="Search" class="inputbox" type="text" size="30" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />
+<input type="submit" value="Search" class="button" onclick="this.form.searchword.focus();"/>
+</div>
 </form>
-					<form method="post" action="http://email.capitolenews.com/q/P1q0692tEwZTn09Z6xgi9sM7f3KdKNq989">
-
+</div>
+<form method="post" action="https://forms.house.gov/htbin/formproc/delauro/webforms/contact_form_email_file.txt&display=/webforms/contact_thanks.shtml">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+<table border="0" width="50%">
+<tr>
+<td colspan="2">
+<font size="-1" face="verdana">
+</font>
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<select name="required-prefix" style="width:55">
+<option value="Mr.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Miss">
+</option>
+<option value="Ms.">
+</option>
+</select>
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+<input type="Text" name="required-firstname" style="width:438">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="Text" name="middlename" style="width:500">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td width="450">
+<font size="-1" face="verdana">
+</font>
+</td>
+<td width="57">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td width="450">
+<input type="Text" name="required-lastname" style="width:440">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+<td width="57">
+<input type="text" name="suffix" size="5" style="width:45">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<textarea name="required-address" cols="53" rows="3" wrap="PHYSICAL" style="width:500">
+</textarea>
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="Text" name="required-hcity" style="width:320">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+<SELECT NAME="required-hstate"  style="width:100">
+<OPTION VALUE="CT" SELECTED>
+</OPTION>
+</SELECT>
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+<input type="text" name="required-hzip" size="5" maxlength="5">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="Text" name="phone_home" style="width:500">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="Text" name="required-email" style="width:500">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<SELECT NAME="required-subject">
+<OPTION VALUE="Not listed" SELECTED>
+</OPTION>
+<OPTION VALUE="Agriculture">
+</OPTION>
+<OPTION VALUE="Animal Rights">
+</OPTION>
+<OPTION VALUE="Budget">
+</OPTION>
+<OPTION VALUE="Civil Rights">
+</OPTION>
+<OPTION VALUE="Commerce">
+</OPTION>
+<OPTION VALUE="Crime">
+</OPTION>
+<OPTION VALUE="Defense">
+</OPTION>
+<OPTION VALUE="Disability">
+</OPTION>
+<OPTION VALUE="Economy">
+</OPTION>
+<OPTION VALUE="Education">
+</OPTION>
+<OPTION VALUE="Employment">
+</OPTION>
+<OPTION VALUE="Energy">
+</OPTION>
+<OPTION VALUE="Environment">
+</OPTION>
+<OPTION VALUE="Federal Issues">
+</OPTION>
+<OPTION VALUE="Foreign Affairs">
+</OPTION>
+<OPTION VALUE="Government">
+</OPTION>
+<OPTION VALUE="Gun Violence Prevention">
+</OPTION>
+<OPTION VALUE="Health Care">
+</OPTION>
+<OPTION VALUE="Housing">
+</OPTION>
+<OPTION VALUE="Human Rights">
+</OPTION>
+<OPTION VALUE="Immigration">
+</OPTION>
+<OPTION VALUE="Labor">
+</OPTION>
+<OPTION VALUE="Legislation">
+</OPTION>
+<OPTION VALUE="Public Lands">
+</OPTION>
+<OPTION VALUE="Social Issues">
+</OPTION>
+<OPTION VALUE="Senior Citizens">
+</OPTION>
+<OPTION VALUE="Taxes">
+</OPTION>
+<OPTION VALUE="Technology">
+</OPTION>
+<OPTION VALUE="Trade">
+</OPTION>
+<OPTION VALUE="Transportation">
+</OPTION>
+<OPTION VALUE="Veterans">
+</OPTION>
+<OPTION VALUE="Welfare">
+</OPTION>
+</select>
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+<font size="-1" face="verdana">
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<textarea name="required-comments" cols="53" rows="6" wrap="PHYSICAL" style="width:500">
+</textarea>
+<SCRIPT language="JavaScript1.2">
+</SCRIPT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<br>
+<div align="center">
+<input type="submit" name="submit" value="Submit">
+<br>
+<br>
+<font face="verdana" size="-2">
+</font>
+</div>
+</td>
+</tr>
+</table>
+</form>
+<form method="post" action="http://email.capitolenews.com/q/P1q0692tEwZTn09Z6xgi9sM7f3KdKNq989">
 <div align="left">
-
-Sign-up for the latest news and information</div><br />
-
-<div align="left"><input alt="email" name="email" size="8" maxlength="50" value="E-mail" type="text" /> <input alt="zip" name="Profile.Zip" size="3" maxlength="5" value="Zip" type="text" /> <input name="submit" id="submit" value="Go" class="button" type="submit" /></div><br />
-
-</form>		</div>
+</div>
+<br />
+<div align="left">
+<input alt="email" name="email" size="8" maxlength="50" value="E-mail" type="text" />
+<input alt="zip" name="Profile.Zip" size="3" maxlength="5" value="Zip" type="text" />
+<input name="submit" id="submit" value="Go" class="button" type="submit" />
+</div>
+<br />
+</form>
+</div>

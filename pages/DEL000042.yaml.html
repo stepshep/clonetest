@@ -1,29 +1,109 @@
-          <h2 class="page-title">Contact</h2><form action="/Contact"  accept-charset="UTF-8" method="post" id="contact-mail-page">
-<div><div class="form-item" id="edit-name-wrapper">
- <label for="edit-name">Your name: <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" maxlength="255" name="name" id="edit-name" size="60" value="" class="form-text required" />
+<h2 class="page-title">
+</h2>
+<form action="/Contact"  accept-charset="UTF-8" method="post" id="contact-mail-page">
+<div>
+<div class="form-item" id="edit-name-wrapper">
+<label for="edit-name">
+<span class="form-required" title="This field is required.">
+</span>
+</label>
+<input type="text" maxlength="255" name="name" id="edit-name" size="60" value="" class="form-text required" />
 </div>
 <div class="form-item" id="edit-mail-wrapper">
- <label for="edit-mail">Your e-mail address: <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" maxlength="255" name="mail" id="edit-mail" size="60" value="" class="form-text required" />
+<label for="edit-mail">
+<span class="form-required" title="This field is required.">
+</span>
+</label>
+<input type="text" maxlength="255" name="mail" id="edit-mail" size="60" value="" class="form-text required" />
 </div>
 <div class="form-item" id="edit-subject-wrapper">
- <label for="edit-subject">Subject: <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" maxlength="255" name="subject" id="edit-subject" size="60" value="" class="form-text required" />
+<label for="edit-subject">
+<span class="form-required" title="This field is required.">
+</span>
+</label>
+<input type="text" maxlength="255" name="subject" id="edit-subject" size="60" value="" class="form-text required" />
 </div>
 <div class="form-item" id="edit-cid-wrapper">
- <label for="edit-cid">Category: <span class="form-required" title="This field is required.">*</span></label>
- <select name="cid" class="form-select required" id="edit-cid" ><option value="0">- Please choose -</option><option value="11">(01) Rep. Charles Potter, Jr.</option><option value="16">(02) Rep. Stephanie T. Bolden</option><option value="21">(03) Rep. Helene Keeley</option><option value="26">(04) Rep. Gerald Brady</option><option value="31">(05) Rep. Melanie Smith</option><option value="36">(06) Rep. Debra Heffernan</option><option value="41">(07) Rep. Bryon Short</option><option value="46">(08) Rep. Quinn Johnson</option><option value="61">(13) Rep. Larry Mitchell</option><option value="66">(14) House Speaker Pete Schwartzkopf</option><option value="71">(15) Majority Leader Valerie Longhurst</option><option value="76">(16) Rep. J.J. Johnson</option><option value="81">(17) Rep. Mike Mulrooney</option><option value="101">(18) Rep. Mike Barbieri</option><option value="86">(19) Rep. Kim Williams</option><option value="91">(23) Rep. Paul Baumbach</option><option value="96">(24) Rep. Ed Osienski</option><option value="106">(25) Rep. John Kowalko</option><option value="111">(26) Majority Whip John Viola</option><option value="116">(27) Rep. Earl Jaques</option><option value="121">(28) Rep. Bill Carson</option><option value="126">(29) Rep. Trey Paradee</option><option value="131">(31) Rep. Darryl Scott</option><option value="136">(32) Rep. Andria Bennett</option></select>
+<label for="edit-cid">
+<span class="form-required" title="This field is required.">
+</span>
+</label>
+<select name="cid" class="form-select required" id="edit-cid" >
+<option value="0">
+</option>
+<option value="11">
+</option>
+<option value="16">
+</option>
+<option value="21">
+</option>
+<option value="26">
+</option>
+<option value="31">
+</option>
+<option value="36">
+</option>
+<option value="41">
+</option>
+<option value="46">
+</option>
+<option value="61">
+</option>
+<option value="66">
+</option>
+<option value="71">
+</option>
+<option value="76">
+</option>
+<option value="81">
+</option>
+<option value="101">
+</option>
+<option value="86">
+</option>
+<option value="91">
+</option>
+<option value="96">
+</option>
+<option value="106">
+</option>
+<option value="111">
+</option>
+<option value="116">
+</option>
+<option value="121">
+</option>
+<option value="126">
+</option>
+<option value="131">
+</option>
+<option value="136">
+</option>
+</select>
 </div>
 <div class="form-item" id="edit-message-wrapper">
- <label for="edit-message">Message: <span class="form-required" title="This field is required.">*</span></label>
- <textarea cols="60" rows="5" name="message" id="edit-message"  class="form-textarea resizable required"></textarea>
+<label for="edit-message">
+<span class="form-required" title="This field is required.">
+</span>
+</label>
+<textarea cols="60" rows="5" name="message" id="edit-message"  class="form-textarea resizable required">
+</textarea>
 </div>
- <label for="edit-captcha-response">What code is in the image?: <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" maxlength="128" name="captcha_response" id="edit-captcha-response" size="15" value="" class="form-text required" />
- <div class="description">Enter the characters shown in the image.</div>
+<fieldset class="captcha">
+<legend>
+</legend>
+<div class="description">
+</div>
+<div class="form-item" id="edit-captcha-response-wrapper">
+<label for="edit-captcha-response">
+<span class="form-required" title="This field is required.">
+</span>
+</label>
+<input type="text" maxlength="128" name="captcha_response" id="edit-captcha-response" size="15" value="" class="form-text required" />
+<div class="description">
+</div>
 </div>
 </fieldset>
 <input type="submit" name="op" id="edit-submit" value="Send e-mail"  class="form-submit" />
-
-</div></form>
+</div>
+</form>

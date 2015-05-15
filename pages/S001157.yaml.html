@@ -1,143 +1,285 @@
-		<td class="ContentCell"><span id="ctl00_ctl09_ctl00_Text" class="middlecopy"><form name="contact" id="contactForm" class="zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/contact.aspx" method="post">
-    <table align="center" cellspacing="2" cellpadding="0">
-        <tbody>
-            <tr>
-                <td align="right"><strong>Name: </strong></td>
-                <td>
-                <table cellspacing="0" cellpadding="0">
-                    <tbody>
-                        <tr>
-                            <td><strong>Prefix *</strong> </td>
-                            <td><strong>First Name *</strong> </td>
-                            <td><strong>Last Name *</strong> </td>
-                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
-                        </tr>
-                        <tr>
-                            <td><select name="required-prefix">
-                            <option selected="selected"></option>
-                            <option value="Mr.">Mr.</option>
-                            <option value="Ms.">Ms.</option>
-                            <option value="Mrs.">Mrs.</option>
-                            <option value="Mr. &amp; Mrs.">Mr. &amp; Mrs.</option>
-                            <option value="Dr.">Dr.</option>
-                            </select> </td>
-                            <td><input name="required-first" type="text" size="12" maxlength="90" /></td>
-                            <td><input name="required-last" type="text" size="15" maxlength="90" /></td>
-                            <td><input name="suffix" type="text" size="10" maxlength="90" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* Address: </strong></td>
-                <td><input name="required-address" type="text" size="60" maxlength="190" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* City: </strong></td>
-                <td><input name="required-city" type="text" maxlength="45" /> <strong>State:</strong> <select name="required-state">
-                <option selected="selected">GA</option>
-                </select> <strong>Zip:</strong> <input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" />
-                </td>
-            </tr>
-            <tr>
-                <td align="right"><strong>Phone Number: </strong></td>
-                <td><input name="phone" type="text" size="60" maxlength="100" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* Email: </strong></td>
-                <td><input name="required-email" type="text" size="60" maxlength="100" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* Issue: </strong></td>
-                <td><select name="required-issue" size="1">
-                <option selected="selected">(select one)</option>
-                <option value="AB	">Abortion</option>
-                <option value="ADOPT">Adoption/Child Care and Support</option>
-                <option value="AG	">Agriculture</option>
-                <option value="ANIMALS">Animal Rights</option>
-                <option value="ART">Arts and Humanities</option>
-                <option value="BANKING">Banking/Finance</option>
-                <option value="BUD">Budget</option>
-                <option value="BUS">Business/Small Business</option>
-                <option value="CAMPAIGN">Campaigns/Elections</option>
-                <option value="CASE">Casework</option>
-                <option value="CIVIL">Civil Liberties/Privacy</option>
-                <option value="CMRC">Commerce</option>
-                <option value="COMM">Communications</option>
-                <option value="CONDOLENCE">Condolence</option>
-                <option value="CONGRATS">Congratulations</option>
-                <option value="CRIME">Crime</option>
-                <option value="DEF">Defense and Military</option>
-                <option value="DRUGS">Drug Policy</option>
-                <option value="ED">Education</option>
-                <option value="ELECT/VOTE">Elections and Voting</option>
-                <option value="EMP">Employment</option>
-                <option value="EN">Energy/Water Policy</option>
-                <option value="ENV">Environment</option>
-                <option value="ETH">Ethics - Governmental</option>
-                <option value="FOR.AFF">Foreign Affairs</option>
-                <option value="FOR.TDE">Foreign Trade</option>
-                <option value="FTMAC">Fort MacPherson Commisary Concerns</option>
-                <option value="GLB">Gay - Lesbian</option>
-                <option value="GOV">Governmental Affairs</option>
-                <option value="GUNS">Guns</option>
-                <option value="HEA">Health</option>
-                <option value="HILL">Congress/Legislature</option>
-                <option value="HOMESAFE">HomeSafe concerns</option>
-                <option value="HOMESEC">Homeland Security</option>
-                <option value="HUD">Housing and Urban Development</option>
-                <option value="IMM">Immigration</option>
-                <option value="JUD">Judicial Affairs</option>
-                <option value="LAB">Labor</option>
-                <option value="MED">Medicare</option>
-                <option value="MISC">Miscellaneous</option>
-                <option value="NEWSSUB">Newsletter-Subscribe</option>
-                <option value="NRN">No Response Necessary</option>
-                <option value="POS">Postal Service</option>
-                <option value="RELIGION">Faith/Religion</option>
-                <option value="SBA">Small Business Administration</option>
-                <option value="SCHEDULE">Scheduling Reqest</option>
-                <option value="SCI">Science and Technology</option>
-                <option value="SSA">Social Security Administration</option>
-                <option value="TAX">Taxes</option>
-                <option value="THANKS	">Thank You for Support</option>
-                <option value="TOUR">Tour Request</option>
-                <option value="TRAN">Transportation &amp; Infrastructure</option>
-                <option value="VET">Veterans Affairs</option>
-                <option value="WELF">Welfare</option>
-                <option value="YOUTH">Youth</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td align="right" valign="top"><strong>* Message: </strong></td>
-                <td><textarea name="required-message" rows="15" cols="60"></textarea></td>
-            </tr>
-            <tr>
-                <td align="right" valign="top"></td>
-                <td><input name="subscribe" type="checkbox" value="subscribe" /> Check this box to sign up for my E-Newsletter! </td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"><center> <input type="submit" value="Send Email" /> <input type="reset" value="Reset" /> </center></td>
-            </tr>
-        </tbody>
-    </table>
-</form></span>
-                <form action="http://thomas.loc.gov/cgi-bin/query" class="search-form" method="post">
-                  <fieldset>
-                    <label for="name">Search by Bill Number</label>
-                    <div class="row">
-                      <div><input id="name" type="text" name="docidc114"/></div>
-                    </div>
-                    <label for="phrase">Search by Word or Phrase</label>
-                    <div class="row">
-                      <div><input id="phrase" type="text" name="queryc114" type="text"/></div>
-                    </div>
-                    <div class="row">
-                    <input type="submit" value="Go &raquo;" class="bill-submit" />
-                    </div>
-                  </fieldset>
-                </form>
+<td class="ContentCell">
+<span id="ctl00_ctl09_ctl00_Text" class="middlecopy">
+<form name="contact" id="contactForm" class="zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/contact.aspx" method="post">
+<table align="center" cellspacing="2" cellpadding="0">
+<tbody>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<strong>
+</strong>
+</td>
+<td>
+<strong>
+</strong>
+</td>
+<td>
+<strong>
+</strong>
+</td>
+<td>
+<strong>
+</strong>
+<small>
+</small>
+</td>
+</tr>
+<tr>
+<td>
+<select name="required-prefix">
+<option selected="selected">
+</option>
+<option value="Mr.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Mr. &amp; Mrs.">
+</option>
+<option value="Dr.">
+</option>
+</select>
+</td>
+<td>
+<input name="required-first" type="text" size="12" maxlength="90" />
+</td>
+<td>
+<input name="required-last" type="text" size="15" maxlength="90" />
+</td>
+<td>
+<input name="suffix" type="text" size="10" maxlength="90" />
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="required-address" type="text" size="60" maxlength="190" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="required-city" type="text" maxlength="45" />
+<strong>
+</strong>
+<select name="required-state">
+<option selected="selected">
+</option>
+</select>
+<strong>
+</strong>
+<input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="phone" type="text" size="60" maxlength="100" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="required-email" type="text" size="60" maxlength="100" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<select name="required-issue" size="1">
+<option selected="selected">
+</option>
+<option value="AB	">
+</option>
+<option value="ADOPT">
+</option>
+<option value="AG	">
+</option>
+<option value="ANIMALS">
+</option>
+<option value="ART">
+</option>
+<option value="BANKING">
+</option>
+<option value="BUD">
+</option>
+<option value="BUS">
+</option>
+<option value="CAMPAIGN">
+</option>
+<option value="CASE">
+</option>
+<option value="CIVIL">
+</option>
+<option value="CMRC">
+</option>
+<option value="COMM">
+</option>
+<option value="CONDOLENCE">
+</option>
+<option value="CONGRATS">
+</option>
+<option value="CRIME">
+</option>
+<option value="DEF">
+</option>
+<option value="DRUGS">
+</option>
+<option value="ED">
+</option>
+<option value="ELECT/VOTE">
+</option>
+<option value="EMP">
+</option>
+<option value="EN">
+</option>
+<option value="ENV">
+</option>
+<option value="ETH">
+</option>
+<option value="FOR.AFF">
+</option>
+<option value="FOR.TDE">
+</option>
+<option value="FTMAC">
+</option>
+<option value="GLB">
+</option>
+<option value="GOV">
+</option>
+<option value="GUNS">
+</option>
+<option value="HEA">
+</option>
+<option value="HILL">
+</option>
+<option value="HOMESAFE">
+</option>
+<option value="HOMESEC">
+</option>
+<option value="HUD">
+</option>
+<option value="IMM">
+</option>
+<option value="JUD">
+</option>
+<option value="LAB">
+</option>
+<option value="MED">
+</option>
+<option value="MISC">
+</option>
+<option value="NEWSSUB">
+</option>
+<option value="NRN">
+</option>
+<option value="POS">
+</option>
+<option value="RELIGION">
+</option>
+<option value="SBA">
+</option>
+<option value="SCHEDULE">
+</option>
+<option value="SCI">
+</option>
+<option value="SSA">
+</option>
+<option value="TAX">
+</option>
+<option value="THANKS	">
+</option>
+<option value="TOUR">
+</option>
+<option value="TRAN">
+</option>
+<option value="VET">
+</option>
+<option value="WELF">
+</option>
+<option value="YOUTH">
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+<strong>
+</strong>
+</td>
+<td>
+<textarea name="required-message" rows="15" cols="60">
+</textarea>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+</td>
+<td>
+<input name="subscribe" type="checkbox" value="subscribe" />
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<center>
+<input type="submit" value="Send Email" />
+<input type="reset" value="Reset" />
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</span>
+<form action="http://thomas.loc.gov/cgi-bin/query" class="search-form" method="post">
+<fieldset>
+<label for="name">
+</label>
+<div class="row">
+<div>
+<input id="name" type="text" name="docidc114"/>
+</div>
+</div>
+<label for="phrase">
+</label>
+<div class="row">
+<div>
+<input id="phrase" type="text" name="queryc114" type="text"/>
+</div>
+</div>
+<div class="row">
+<input type="submit" value="Go &raquo;" class="bill-submit" />
+</div>
+</fieldset>
+</form>

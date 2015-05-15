@@ -1,574 +1,496 @@
 <form name="crm" action="ima_form_post.asp"	method="POST" onSubmit="return f_check_required()">
 <input type="Hidden" name="source" value="">
 <table align=center border=0>
-	
-
-
-		<tr>
-			<td valign=bottom align=right bgcolor=white>
-				<b><font size="-1">Name</font></b>
-			</td>
-			<td>
-				<table border=0 cellspacing=0 cellpadding=0 width=100% bgcolor=white><tr><td>		
-				<table border=0 cellspacing=0 cellpadding=0>
-					<tr bgcolor=white>
-						
-							<td>
-								<b><font size="-1">Prefix</font></b>
-							</td>
-						
-							<td>
-								<b><font size="-1"><i><font face=Arial color=red size=-1>*First</i></font></font></b>
-							</td>
-						
-							<td>
-								<b><font size="-1">Middle</font></b>
-							</td>
-						
-						<td>
-							<b><font size="-1"><i><font color=red>* Last</i></font></font></b>
-						</td>
-						
-							<td>
-								<b><font size="-1">Suffix<font size=-1>(Jr., Sr., etc.)</font></font></b>
-							</td>
-						
-					</tr>
-					<tr bgcolor=#006699>
-						
-							<td>
-								<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="prefix"
+<tr>
+<td valign=bottom align=right bgcolor=white>
+<b>
+<font size="-1">
+</font>
+</b>
+</td>
+<td>
+<table border=0 cellspacing=0 cellpadding=0 width=100% bgcolor=white>
+<tr>
+<td>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr bgcolor=white>
+<td>
+<b>
+<font size="-1">
+</font>
+</b>
+</td>
+<td>
+<b>
+<font size="-1">
+<i>
+<font face=Arial color=red size=-1>
+</i>
+</font>
+</font>
+</b>
+</td>
+<td>
+<b>
+<font size="-1">
+</font>
+</b>
+</td>
+<td>
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</i>
+</font>
+</font>
+</b>
+</td>
+<td>
+<b>
+<font size="-1">
+<font size=-1>
+</font>
+</font>
+</b>
+</td>
+</tr>
+<tr bgcolor=#006699>
+<td>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="prefix"
 								type="text" SIZE=10 maxlength=90 
 								value="">
-							</td>
-										
-							<td>
-								<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="first_name" type="text"
+</td>
+<td>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="first_name" type="text"
 								value="" SIZE=12 maxlength=90 >
-							</td>
-										
-							<td>
-								<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="middle_name" type="text"
+</td>
+<td>
+<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="middle_name" type="text"
 								value="" SIZE=8 maxlength=90>
-							</td>
-										
-							<td>
-								<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="last_name" type="text"
+</td>
+<td>
+<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="last_name" type="text"
 								value="" SIZE=15 maxlength=90>
-							</td>
-										
-							<td>
-								<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="suffix" type="text"
+</td>
+<td>
+<INPUT onBlur="f_sc(this);"  TYPE=TEXT NAME="suffix" type="text"
 								value="" SIZE=8 maxlength=90>
-							</td>
-						
-					</tr>
-				</table>
-				</td></tr></table>
-			</td>
-		</tr>
-	
-		<tr>
-			<td align=right bgcolor=white>	
-				&nbsp;&nbsp;<b><font size="-1">Title</font></b>
-			</td>
-			<td bgcolor=#006699>
-				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="title" type="text"
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=right bgcolor=white>
+<b>
+<font size="-1">
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="title" type="text"
 				value="" SIZE=60 maxlength=190>
-			</td>
-		</tr>
-	
-		<tr>
-			<td align=right bgcolor=white>	
-				&nbsp;&nbsp;<b><font size="-1">Organization</font></b>
-			</td>
-			<td bgcolor=#006699>
-				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="organization" type="text"
+</td>
+</tr>
+<tr>
+<td align=right bgcolor=white>
+<b>
+<font size="-1">
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="organization" type="text"
 				value="" SIZE=60 maxlength=190>
-			</td>
-		</tr>
-	
-		<tr>
-			<td align=right bgcolor=white>	
-				&nbsp;&nbsp;<b><font size="-1"><i><font color=red>* Address</i></font></font></b>
-			</td>
-			<td bgcolor=#006699>
-				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="street_address" type="text"
+</td>
+</tr>
+<tr>
+<td align=right bgcolor=white>
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</i>
+</font>
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="street_address" type="text"
 				value="" SIZE=60 maxlength=190>
-			</td>
-		</tr>
-	
-		
-		<tr>
-			<td align=right bgcolor=white>
-				<b><font size="-1"><i><font color=red>* City</i></font></font></b>
-			</td>
-			<td bgcolor=#006699>
-
-				
-					<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="city" type="text"
+</td>
+</tr>
+<tr>
+<td align=right bgcolor=white>
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</i>
+</font>
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="city" type="text"
 					value="" SIZE=22 maxlength=45>
-					
-					<b><font size="-1"><i><font color=red>* State</i></font></font></b>
-					<select onChange="f_sc_dd('state',this.options[this.selectedIndex].value);" NAME="state">
-					
-						<option
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</i>
+</font>
+</font>
+</b>
+<select onChange="f_sc_dd('state',this.options[this.selectedIndex].value);" NAME="state">
+<option
 						
 						value="Michigan=MI">
-						Michigan
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Alaska=AK">
-						Alaska
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Alabama=AL">
-						Alabama
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Arkansas=AR">
-						Arkansas
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="America Samoa=AS">
-						America Samoa
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Arizona=AZ">
-						Arizona
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="California=CA">
-						California
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Colorado=CO">
-						Colorado
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Connecticut=CT">
-						Connecticut
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="D.C.=DC">
-						D.C.
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Delaware=DE">
-						Delaware
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Foreign Correspondence=FC">
-						Foreign Correspondence
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Florida=FL">
-						Florida
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Georgia=GA">
-						Georgia
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Guam=GU">
-						Guam
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Hawaii=HI">
-						Hawaii
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Iowa=IA">
-						Iowa
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Idaho=ID">
-						Idaho
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Illinois=IL">
-						Illinois
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Indiana=IN">
-						Indiana
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Kansas=KS">
-						Kansas
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Kentucky=KY">
-						Kentucky
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Louisiana=LA">
-						Louisiana
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Massachusetts=MA">
-						Massachusetts
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Maryland=MD">
-						Maryland
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Maine=ME">
-						Maine
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Michigan=MI">
-						Michigan
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Minnesota=MN">
-						Minnesota
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Missouri=MO">
-						Missouri
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Mississippi=MS">
-						Mississippi
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Montana=MT">
-						Montana
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="North Carolina=NC">
-						North Carolina
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="North Dakota=ND">
-						North Dakota
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Nebraska=NE">
-						Nebraska
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="New Hampshire=NH">
-						New Hampshire
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="New Jersey=NJ">
-						New Jersey
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="New Mexico=NM">
-						New Mexico
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Nevada=NV">
-						Nevada
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="New York=NY">
-						New York
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Ohio=OH">
-						Ohio
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Oklahoma=OK">
-						Oklahoma
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Oregon=OR">
-						Oregon
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Pennsylvania=PA">
-						Pennsylvania
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Puerto Rico=PR">
-						Puerto Rico
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Rhode Island=RI">
-						Rhode Island
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="South Carolina=SC">
-						South Carolina
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="South Dakota=SD">
-						South Dakota
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Tennessee=TN">
-						Tennessee
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Trust Territory=TT">
-						Trust Territory
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Texas=TX">
-						Texas
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Utah=UT">
-						Utah
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Virginia=VA">
-						Virginia
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Virgin Islands=VI">
-						Virgin Islands
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Vermont=VT">
-						Vermont
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Washington=WA">
-						Washington
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Wisconsin=WI">
-						Wisconsin
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="West Virginia=WV">
-						West Virginia
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="Wyoming=WY">
-						Wyoming
-						</option>
-					
-						<option
+</option>
+<option
 						
 						value="D.C.=D.C.">
-						D.C.
-						</option>
-					
-					</select>
-				
-					<b><font size="-1"><i><font color=red>* Zip</i></font></font></b>
-					<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="zip_5" type="text"
+</option>
+</select>
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</i>
+</font>
+</font>
+</b>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="zip_5" type="text"
 					value="" SIZE=5 maxlength=5>
-				
-					<b><font size="-1">-</font></b>
-					<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="zip_4" type="text"
+<b>
+<font size="-1">
+</font>
+</b>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="zip_4" type="text"
 					value="" SIZE=4 maxlength=4>
-				
-			</td>
-		</tr>
-	
-		<tr>
-			<td bgcolor=white align=right>
-				<b><font size="-1"><i><font color=red>* Phone</i></font></font></b>
-			</td>
-			<td bgcolor=#006699>
-				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="phone" type="text"
+</td>
+</tr>
+<tr>
+<td bgcolor=white align=right>
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</i>
+</font>
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="phone" type="text"
 				value="" SIZE=60 maxlength=100>
-			</td>
-		</tr>
-		
-		<tr>
-			<td bgcolor=white align=right>	
-				<b><font size="-1"><i><font color=red>* Email</font></i></font></b>
-			</td>
-			<td bgcolor=#006699>
-				<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="email" type="text"
+</td>
+</tr>
+<tr>
+<td bgcolor=white align=right>
+<b>
+<font size="-1">
+<i>
+<font color=red>
+</font>
+</i>
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<INPUT onBlur="f_sc(this);" TYPE=TEXT NAME="email" type="text"
 				value=""
 				SIZE=60 maxlength=100>
-			</td>
-		</tr>	
-	
-			<tr>
-				<td bgcolor=white align=right>	
-					<b><font size="-1">Subject</font></b>
-				</td>
-				<td bgcolor=#006699>
-					
-						<select name="subject">
-						
-							<option value="Constituent Inquiry=CONSTITUENT INQUIRY">
-							Constituent Inquiry
-							</option>
-						
-							<option value="Legislative Inquiry=LEGISLATION">
-							Legislative Inquiry
-							</option>
-						
-							<option value="Scheduling Request=SCHEDULING">
-							Scheduling Request
-							</option>
-						
-							<option value="State Department Inquiry=STATE DEPT. INQUIRY">
-							State Department Inquiry
-							</option>
-						
-							<option value="Other Issue=OTHER">
-							Other Issue
-							</option>
-						
-							<option value="">
-							
-							</option>
-						
-						</select>
-					
-				</td>
-			</tr>
-		
-		<input type="Hidden" name="subject_style" value="DROPDOWN">
-		
-		<tr>
-			<td bgcolor=white align=right valign=top>	
-				<b><font size="-1"><b>Message</b></font></b>
-			</td>
-			<td bgcolor=#006699>
-				<textarea wrap NAME="message"  cols=70 rows=10  rows="1" cols="20" ></textarea>
-			</td>
-		</tr>	
-	
-
-	<tr>
-		<td colspan=3 align=center bgcolor=white >
-			<br>
-				<INPUT TYPE="submit" name="submit" VALUE="Submit Form">
-				
-				<INPUT TYPE="submit" name="submit" VALUE="Cancel" onClick="document.crm.button_action.value='CANCEL'">
-			<br>
-		</td>
-	</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor=white align=right>
+<b>
+<font size="-1">
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<select name="subject">
+<option value="Constituent Inquiry=CONSTITUENT INQUIRY">
+</option>
+<option value="Legislative Inquiry=LEGISLATION">
+</option>
+<option value="Scheduling Request=SCHEDULING">
+</option>
+<option value="State Department Inquiry=STATE DEPT. INQUIRY">
+</option>
+<option value="Other Issue=OTHER">
+</option>
+<option value="">
+</option>
+</select>
+</td>
+</tr>
+<input type="Hidden" name="subject_style" value="DROPDOWN">
+<tr>
+<td bgcolor=white align=right valign=top>
+<b>
+<font size="-1">
+<b>
+</b>
+</font>
+</b>
+</td>
+<td bgcolor=#006699>
+<textarea wrap NAME="message"  cols=70 rows=10  rows="1" cols="20" >
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan=3 align=center bgcolor=white >
+<br>
+<INPUT TYPE="submit" name="submit" VALUE="Submit Form">
+<INPUT TYPE="submit" name="submit" VALUE="Cancel" onClick="document.crm.button_action.value='CANCEL'">
+<br>
+</td>
+</tr>
 </table>
 </center>
 <input type="Hidden" name="button_action" value="SUBMIT">
 <input type="Hidden" name="form_name" value="comment36">
 <input type="Hidden" name="workflow_template" value="NONE">
 </FORM>
-<font face="Arial" size=2>End of form
+<font face="Arial" size=2>
 <script language="JavaScript">
-document.crm.prefix.focus()
 </script>
-
 <script language="JavaScript">
 <!--
 function f_check_required()

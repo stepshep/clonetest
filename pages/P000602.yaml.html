@@ -1,148 +1,288 @@
-		<td class="ContentCell"><span id="ctl00_ctl11_ctl01_Text" class="middlecopy"><form action="/submit-contact.aspx" method="post" class="zipform">
-    <table cellspacing="2" cellpadding="0" align="center">
-        <tbody>
-            <tr>
-                <td align="right">
-                <strong>Name: </strong>
-                </td>
-                <td>
-                <table cellspacing="0" cellpadding="0">
-                    <tbody>
-                        <tr>
-                            <td><strong><label for="required-prefix">Prefix</label> *</strong> </td>
-                            <td><strong><label for="required-first">First Name</label> *</strong> </td>
-                            <td><strong><label for="middle">MI</label></strong> </td>
-                            <td><strong><label for="required-last">Last Name</label> *</strong> </td>
-                            <td><strong><label for="suffix">Suffix</label></strong></td>
-                        </tr>
-                        <tr>
-                            <td><select name="required-prefix" id="required-prefix" required="required">
-                            <option></option>
-                            <option>Dr.</option>
-                            <option>Mr.</option>
-                            <option>Ms.</option>
-                            <option>Mrs.</option>
-                            <option>Miss</option>
-                            <option>Rev.</option>
-                            <option>Hon.</option>
-                            </select>
-                            </td>
-                            <td><input type="text" maxlength="90" size="12" name="required-first" id="required-first" required="required" /></td>
-                            <td><input type="text" maxlength="90" size="8" name="middle" id="middle" /></td>
-                            <td><input type="text" maxlength="90" size="15" name="required-last" title="Last Name" required="required" /></td>
-                            <td><select name="suffix" id="suffix">
-                            <option></option>
-                            <option>Sr.</option>
-                            <option>Jr.</option>
-                            <option>II</option>
-                            <option>III</option>
-                            <option>IV</option>
-                            </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* <label for="required-address">Address</label>: </strong> </td>
-                <td><input type="text" maxlength="190" size="60" name="required-address" id="required-address" required="required" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* <label for="required-city">City</label>: </strong> </td>
-                <td><input type="text" maxlength="45" name="required-city" id="required-city" required="required" />
-                <strong><label for="required-">State</label>:</strong>
-                <select name="required-state" id="required-state" required="required">
-                <option selected="selected">KS</option>
-                </select>
-                <strong>* <label for="zip5">Zip</label>:</strong>
-                <input type="text" onkeydown="f(this)" onkeyup="f(this)" maxlength="5" size="5" name="zip5" id="zip5" required="required" />
-                <input type="text" maxlength="4" size="4" name="zip4" onkeydown="f(this)" onkeyup="f(this)" /> </td>
-            </tr>
-            <tr>
-                <td align="right"><strong><label for="phone">* Phone Number</label>: </strong> </td>
-                <td><input type="text" maxlength="100" size="60" name="phone" id="phone" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong><label for="cell">Cell Phone</label>: </strong> </td>
-                <td><input type="text" maxlength="100" size="60" name="cell" id="cell" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* <label for="required-email">Email</label>: </strong> </td>
-                <td><input type="text" maxlength="100" size="60" name="required-email" id="required-email" required="required" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* <label for="required-email">Issue</label>: </strong> </td>
-                <td><select size="1" name="required-issue" id="required-issue" required="required">
-                <option></option>
-                <option value="WEBAGR">Agriculture</option>
-                <option value="WEBBUD">Budget</option>
-                <option value="WEBDEF">Defense</option>
-                <option value="WEBEDU">Education</option>
-                <option value="WEBENE">Energy</option>
-                <option value="WEBENV">Environmental</option>
-                <option value="WEBGOV">Government Issues</option>
-                <option value="WEBHEA">Health</option>
-                <option value="WEBHOM">Homeland Security</option>
-                <option value="WEBIMM">Immigration</option>
-                <option value="WEBINT">International Relations</option>
-                <option value="WEBJUD">Judicial</option>
-                <option value="WEBLAB">Labor</option>
-                <option value="WEBSOC">Social Issues</option>
-                <option value="WEBSSEC">Social Security</option>
-                <option value="WEBTAX">Taxes</option>
-                <option value="WEBTEL">Telecommunications</option>
-                <option value="WEBTRA">Transportation</option>
-                <option value="WEBTRADE">Trade</option>
-                <option value="WEBVET">Veterans</option>
-                <option value="WEBWEL">Welfare</option>
-                <option value="WEBOTH">Other Issues</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td valign="top" align="right"><strong>* <label for="required-message">Message</label>: </strong> </td>
-                <td><textarea name="required-message" id="required-message" required="required" rows="15" cols="60"></textarea></td>
-            </tr>
-            <tr>
-                <td valign="top" align="right"> </td>
-                <td><input type="checkbox" value="subscribe" name="subscribe" id="subscribe" /> <label for="subscribe">Check this box to sign up for my E-Newsletter!</label> </td>
-            </tr>
-            <tr>
-                <td> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                <div id="response">&nbsp;</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                <center>
-                <input type="text" name="district-contact" size="60" maxlength="100" value="InD" style="display: none;" id="district-contact" />
-                <input type="submit" value="Send Email" />
-                <input type="reset" value="Reset" />
-                </center>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</form></span>
-                        <form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-form" method="post">
-                          <fieldset>
-                            <legend class="accessibility">Search THOMAS for:</legend>
-                            <div class="text">
-                              <input style="width: 116px;" class="text" placeholder="Bill Number" title="Bill Number" type="text" name="docidc114" />
-                            </div>
-                            <input type="submit" value="Go" class="submit" title="submit" />
-                          </fieldset>
-                        </form>
-                          <form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-form" method="post">
-                            <fieldset>
-                              <legend class="accessibility"></legend>
-                              <div class="text">
-                                <input style="width: 116px;" class="text" placeholder="Keyword" title="Keyword or Phrase" type="text" name="queryc114" />
-                              </div>
-                              <input type="submit" value="Go" class="submit" title="submit" />
-                            </fieldset>
-                          </form>
+<td class="ContentCell">
+<span id="ctl00_ctl11_ctl01_Text" class="middlecopy">
+<form action="/submit-contact.aspx" method="post" class="zipform">
+<table cellspacing="2" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<strong>
+<label for="required-prefix">
+</label>
+</strong>
+</td>
+<td>
+<strong>
+<label for="required-first">
+</label>
+</strong>
+</td>
+<td>
+<strong>
+<label for="middle">
+</label>
+</strong>
+</td>
+<td>
+<strong>
+<label for="required-last">
+</label>
+</strong>
+</td>
+<td>
+<strong>
+<label for="suffix">
+</label>
+</strong>
+</td>
+</tr>
+<tr>
+<td>
+<select name="required-prefix" id="required-prefix" required="required">
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+</select>
+</td>
+<td>
+<input type="text" maxlength="90" size="12" name="required-first" id="required-first" required="required" />
+</td>
+<td>
+<input type="text" maxlength="90" size="8" name="middle" id="middle" />
+</td>
+<td>
+<input type="text" maxlength="90" size="15" name="required-last" title="Last Name" required="required" />
+</td>
+<td>
+<select name="suffix" id="suffix">
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<label for="required-address">
+</label>
+</strong>
+</td>
+<td>
+<input type="text" maxlength="190" size="60" name="required-address" id="required-address" required="required" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<label for="required-city">
+</label>
+</strong>
+</td>
+<td>
+<input type="text" maxlength="45" name="required-city" id="required-city" required="required" />
+<strong>
+<label for="required-">
+</label>
+</strong>
+<select name="required-state" id="required-state" required="required">
+<option selected="selected">
+</option>
+</select>
+<strong>
+<label for="zip5">
+</label>
+</strong>
+<input type="text" onkeydown="f(this)" onkeyup="f(this)" maxlength="5" size="5" name="zip5" id="zip5" required="required" />
+<input type="text" maxlength="4" size="4" name="zip4" onkeydown="f(this)" onkeyup="f(this)" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<label for="phone">
+</label>
+</strong>
+</td>
+<td>
+<input type="text" maxlength="100" size="60" name="phone" id="phone" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<label for="cell">
+</label>
+</strong>
+</td>
+<td>
+<input type="text" maxlength="100" size="60" name="cell" id="cell" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<label for="required-email">
+</label>
+</strong>
+</td>
+<td>
+<input type="text" maxlength="100" size="60" name="required-email" id="required-email" required="required" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<label for="required-email">
+</label>
+</strong>
+</td>
+<td>
+<select size="1" name="required-issue" id="required-issue" required="required">
+<option>
+</option>
+<option value="WEBAGR">
+</option>
+<option value="WEBBUD">
+</option>
+<option value="WEBDEF">
+</option>
+<option value="WEBEDU">
+</option>
+<option value="WEBENE">
+</option>
+<option value="WEBENV">
+</option>
+<option value="WEBGOV">
+</option>
+<option value="WEBHEA">
+</option>
+<option value="WEBHOM">
+</option>
+<option value="WEBIMM">
+</option>
+<option value="WEBINT">
+</option>
+<option value="WEBJUD">
+</option>
+<option value="WEBLAB">
+</option>
+<option value="WEBSOC">
+</option>
+<option value="WEBSSEC">
+</option>
+<option value="WEBTAX">
+</option>
+<option value="WEBTEL">
+</option>
+<option value="WEBTRA">
+</option>
+<option value="WEBTRADE">
+</option>
+<option value="WEBVET">
+</option>
+<option value="WEBWEL">
+</option>
+<option value="WEBOTH">
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<strong>
+<label for="required-message">
+</label>
+</strong>
+</td>
+<td>
+<textarea name="required-message" id="required-message" required="required" rows="15" cols="60">
+</textarea>
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+</td>
+<td>
+<input type="checkbox" value="subscribe" name="subscribe" id="subscribe" />
+<label for="subscribe">
+</label>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<div id="response">
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<center>
+<input type="submit" value="Send Email" />
+<input type="reset" value="Reset" />
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</span>
+<form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-form" method="post">
+<fieldset>
+<legend class="accessibility">
+</legend>
+<div class="text">
+<input style="width: 116px;" class="text" placeholder="Bill Number" title="Bill Number" type="text" name="docidc114" />
+</div>
+<input type="submit" value="Go" class="submit" title="submit" />
+</fieldset>
+</form>
+<form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-form" method="post">
+<fieldset>
+<legend class="accessibility">
+</legend>
+<div class="text">
+<input style="width: 116px;" class="text" placeholder="Keyword" title="Keyword or Phrase" type="text" name="queryc114" />
+</div>
+<input type="submit" value="Go" class="submit" title="submit" />
+</fieldset>
+</form>

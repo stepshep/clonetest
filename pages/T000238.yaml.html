@@ -1,649 +1,913 @@
-              <form action="/Search/Results.htm" class="search-form">
-                <fieldset>
-                  <input name="q" type="text" class="text" />
-                  <input type="submit" class="btn-submit" />
-                </fieldset>
-              </form>
-<form method="post" action="" id="aspnetForm">
-
-
-
-  <script type="text/javascript">
-    if (!document.getElementById('fb-root') || !document.getElementById('fb-root') == null) {
-      var fbRoot = document.createElement('div');
-      fbRoot.setAttribute('id', 'fb-root');
-      document.body.insertBefore(fbRoot, document.body.childNodes[0]);
-    }
-  </script>
-
-  <script type="text/javascript">
-    var bindEvent = function (elem, evt, cb) {
-      //see if the addEventListener function exists on the element
-      if (elem.addEventListener) {
-        elem.addEventListener(evt, cb, false);
-        //if addEventListener is not present, see if this is an IE browser
-      } else if (elem.attachEvent) {
-        //prefix the event type with "on"
-        elem.attachEvent('on' + evt, function () {
-          cb.call(event.srcElement, event);
-        });
-      }
-    };
-
-    // Load the SDK Asynchronously
-    (function (d) {
-      var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-      if (d.getElementById(id)) { return; }
-      js = d.createElement('script'); js.id = id; js.async = true;
-      js.src = "//connect.facebook.net/en_US/all.js";
-      ref.parentNode.insertBefore(js, ref);
-    } (document));
-
-    // Init the SDK upon load
-    window.fbAsyncInit = function () {
-      FB.init({
-        appId: '317354431733657', // App ID
-        channelUrl: '//' + window.location.hostname + '/channel', // Path to your Channel File
-        status: true, // check login status
-        cookie: true, // enable cookies to allow the server to access the session
-        xfbml: true  // parse XFBML
-      });
-
-      // listen for and handle auth.statusChange events
-      FB.Event.subscribe('auth.statusChange', function (response) {
-        if (response.authResponse) {
-          // user has auth'd your app and is logged into Facebook
-          FB.api('/me', function (me) {
-            if (me.name) {
-              //Facebook Profile Tile
-              document.getElementById('auth-displayname').innerHTML = me.name;
-              //Define Fields Here
-              if ('ctl00_ctl15_FirstName' != '') {
-                document.getElementById('ctl00_ctl15_FirstName').value = me.first_name;
-              }
-              if ('ctl00_ctl15_LastName' != '') {
-                document.getElementById('ctl00_ctl15_LastName').value = me.last_name;
-              }
-              if ('ctl00_ctl15_Email' != '') {
-                document.getElementById('ctl00_ctl15_Email').value = me.email;
-              }
-              document.getElementById('ctl00_ctl15_ctl03_FacebookIdControl').value = me.id;
-              document.getElementById('auth-profilepic').setAttribute('src', 'http://graph.facebook.com/' + me.id + '/picture');
-            }
-          })
-          document.getElementById('auth-loggedout').style.display = 'none';
-          document.getElementById('auth-loggedin').style.display = 'block';
-        } else {
-          // user has not auth'd your app, or is not logged into Facebook
-          document.getElementById('auth-loggedout').style.display = 'block';
-          document.getElementById('auth-loggedin').style.display = 'none';
-        }
-      });
-
-      // respond to clicks on the login and logout links
-      bindEvent(document.getElementById('auth-loginlink'), 'click', function () {
-        FB.login(function (response) { if (response.status == 'connected') { } }, { scope: 'email' });
-      });
-      bindEvent(document.getElementById('auth-logoutlink'), 'click', function () {
-        FB.logout();
-      });
-    }
-  </script>
-
-  <style type="text/css">
-    #facebook-form-login
-    {
-      font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif;
-      font-size:12px;
-      margin-bottom:.7em;
-    }
-    #facebook-form-login:after
-    {
-    	content:"";
-    	display:block;
-    	clear:both;
-    }
-    #facebook-form-login a
-    {
-      text-decoration: none;
-      color: #3B5998;
-    }
-    #facebook-form-login a:hover
-    {
-      text-decoration: underline;
-    }
-    #facebook-form-login #auth-loggedin
-    {
-      background: #EDEFF4;
-      border: 1px solid #D8DFEA;
-      float:left;
-      padding:4px 16px 4px 4px;
-      position:relative;
-    }
-    {
-      border: 1px solid #D8DFEA;
-      float:left;
-      margin-right:2px;
-    }
-    #facebook-form-login #auth-logoutlink
-    {
-    	font-weight:bold;
-    	position:absolute;
-    	right:4px;
-    	top:0px;
-    }
-    #facebook-form-login .auth-logged-in-display
-    {
-    	white-space:nowrap;
-    	float:left;
-    }
-    #facebook-form-login #auth-displayname
-    {
-    	font-size:14px;
-    }
-  </style>
-
-  <div id="facebook-form-login" class="override">
-    <div id="auth-status">
-      <div id="auth-loggedout">
-        <a href="javascript:void(0);" id="auth-loginlink">Complete this form using Facebook</a>
-      </div>
-      <div id="auth-loggedin" style="display: none;">
-        <a href="javascript:void(0);" id="auth-logoutlink" title="Log out of Facebook">x</a>
-        <div class="auth-logged-in-display">
-          <div class="auth-logged-in-text">You are logged in as</div>
-          <span id="auth-displayname"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-<div>
-  <div style="text-align: left" id="writeRepForm">
-    <div>
-      <span class="pageHeader">Write Your Representative</span></div>
-    <span style="">
-      
-    </span>
-    <fieldset>
-      <legend>Your Information</legend>
-      <table cellpadding="3" cellspacing="0" border="0">
-        <tr class="wyr-prefix">
-          <td width="90">
-            <label for="ctl00_ctl15_PrefixList">
-              <span class="header">Prefix *</span></label>
-          </td>
-          <td>
-            
-            <select name="ctl00$ctl15$PrefixList" id="ctl00_ctl15_PrefixList">
-	<option value="Mr.">Mr.</option>
-	<option value="Mrs.">Mrs.</option>
-	<option value="Miss">Miss</option>
-	<option value="Ms.">Ms.</option>
-	<option value="Mr. &amp; Mrs.">Mr. &amp; Mrs.</option>
-	<option value="Dr.">Dr.</option>
-	<option value="The Reverend">The Reverend</option>
-	<option value="Dr. &amp; Mrs.">Dr. &amp; Mrs.</option>
-	<option value="Mr. &amp; Dr.">Mr. &amp; Dr.</option>
-	<option value="The Honorable">The Honorable</option>
-	<option value="1LT">1LT</option>
-	<option value="1LT and Mrs.">1LT and Mrs.</option>
-	<option value="1SG">1SG</option>
-	<option value="1SG and Mrs.">1SG and Mrs.</option>
-	<option value="1st Lt">1st Lt</option>
-	<option value="1st Lt and Mrs.">1st Lt and Mrs.</option>
-	<option value="1stSgt">1stSgt</option>
-	<option value="1stSgt and Mrs.">1stSgt and Mrs.</option>
-	<option value="2d Lt">2d Lt</option>
-	<option value="2d Lt and Mrs.">2d Lt and Mrs.</option>
-	<option value="2LT">2LT</option>
-	<option value="2LT and Mrs.">2LT and Mrs.</option>
-	<option value="2nd Lt">2nd Lt</option>
-	<option value="2nd Lt and Mrs.">2nd Lt and Mrs.</option>
-	<option value="A1C">A1C</option>
-	<option value="A1C and Mrs.">A1C and Mrs.</option>
-	<option value="AB">AB</option>
-	<option value="AB and Mrs.">AB and Mrs.</option>
-	<option value="ADM">ADM</option>
-	<option value="ADM and Mrs.">ADM and Mrs.</option>
-	<option value="Amn">Amn</option>
-	<option value="Amn and Mrs.">Amn and Mrs.</option>
-	<option value="BG">BG</option>
-	<option value="BG and Mrs.">BG and Mrs.</option>
-	<option value="BGen">BGen</option>
-	<option value="BGen and Mrs.">BGen and Mrs.</option>
-	<option value="Brig Gen">Brig Gen</option>
-	<option value="Brig Gen and Mrs.">Brig Gen and Mrs.</option>
-	<option value="Brother">Brother</option>
-	<option value="CAPT">CAPT</option>
-	<option value="Capt">Capt</option>
-	<option value="CAPT and Mrs.">CAPT and Mrs.</option>
-	<option value="Capt and Mrs.">Capt and Mrs.</option>
-	<option value="CDR">CDR</option>
-	<option value="CDR and Mrs.">CDR and Mrs.</option>
-	<option value="Chaplain">Chaplain</option>
-	<option value="Chief">Chief</option>
-	<option value="CMSAF">CMSAF</option>
-	<option value="CMSAF and Mrs.">CMSAF and Mrs.</option>
-	<option value="CMSgt">CMSgt</option>
-	<option value="CMSgt and Mrs.">CMSgt and Mrs.</option>
-	<option value="Col">Col</option>
-	<option value="COL">COL</option>
-	<option value="Col and Mrs.">Col and Mrs.</option>
-	<option value="COL and Mrs.">COL and Mrs.</option>
-	<option value="CPL">CPL</option>
-	<option value="Cpl">Cpl</option>
-	<option value="CPL and Mrs.">CPL and Mrs.</option>
-	<option value="Cpl and Mrs.">Cpl and Mrs.</option>
-	<option value="CPO">CPO</option>
-	<option value="CPO and Mrs.">CPO and Mrs.</option>
-	<option value="CPT">CPT</option>
-	<option value="CPT and Mrs.">CPT and Mrs.</option>
-	<option value="CSM">CSM</option>
-	<option value="CSM and Mrs.">CSM and Mrs.</option>
-	<option value="CW2">CW2</option>
-	<option value="CW2 and Mrs.">CW2 and Mrs.</option>
-	<option value="CW3">CW3</option>
-	<option value="CW3 and Mrs.">CW3 and Mrs.</option>
-	<option value="CW4">CW4</option>
-	<option value="CW4 and Mrs.">CW4 and Mrs.</option>
-	<option value="CW5">CW5</option>
-	<option value="CW5 and Mrs.">CW5 and Mrs.</option>
-	<option value="CWO-1">CWO-1</option>
-	<option value="CWO-1 and Mrs.">CWO-1 and Mrs.</option>
-	<option value="CWO2">CWO2</option>
-	<option value="CWO-2">CWO-2</option>
-	<option value="CWO2 and Mrs.">CWO2 and Mrs.</option>
-	<option value="CWO-2 and Mrs.">CWO-2 and Mrs.</option>
-	<option value="CWO3">CWO3</option>
-	<option value="CWO-3">CWO-3</option>
-	<option value="CWO3 and Mrs.">CWO3 and Mrs.</option>
-	<option value="CWO-3 and Mrs.">CWO-3 and Mrs.</option>
-	<option value="CWO4">CWO4</option>
-	<option value="CWO-4">CWO-4</option>
-	<option value="CWO4 and Mrs.">CWO4 and Mrs.</option>
-	<option value="CWO-4 and Mrs.">CWO-4 and Mrs.</option>
-	<option value="CWO-5">CWO-5</option>
-	<option value="CWO-5 and Mrs.">CWO-5 and Mrs.</option>
-	<option value="Dean">Dean</option>
-	<option value="Dean and Mrs.">Dean and Mrs.</option>
-	<option value="Drs.">Drs.</option>
-	<option value="Elder">Elder</option>
-	<option value="ENS">ENS</option>
-	<option value="ENS and Mrs.">ENS and Mrs.</option>
-	<option value="Father">Father</option>
-	<option value="Gen">Gen</option>
-	<option value="GEN">GEN</option>
-	<option value="Gen and Mrs.">Gen and Mrs.</option>
-	<option value="GEN and Mrs.">GEN and Mrs.</option>
-	<option value="GySgt">GySgt</option>
-	<option value="GySgt and Mrs.">GySgt and Mrs.</option>
-	<option value="LCDR">LCDR</option>
-	<option value="LCDR and Mrs.">LCDR and Mrs.</option>
-	<option value="LCpl">LCpl</option>
-	<option value="LCpl and Mrs.">LCpl and Mrs.</option>
-	<option value="LT">LT</option>
-	<option value="LT and Mrs.">LT and Mrs.</option>
-	<option value="Lt Col">Lt Col</option>
-	<option value="Lt Col and Mrs.">Lt Col and Mrs.</option>
-	<option value="LTC">LTC</option>
-	<option value="LTC and Mrs.">LTC and Mrs.</option>
-	<option value="LtCol">LtCol</option>
-	<option value="LtCol and Mrs.">LtCol and Mrs.</option>
-	<option value="LTG">LTG</option>
-	<option value="LTG and Mrs.">LTG and Mrs.</option>
-	<option value="LtGen">LtGen</option>
-	<option value="LtGen and Mrs.">LtGen and Mrs.</option>
-	<option value="LTJG">LTJG</option>
-	<option value="LTJG and Mrs.">LTJG and Mrs.</option>
-	<option value="Maj">Maj</option>
-	<option value="MAJ">MAJ</option>
-	<option value="Maj and Mrs.">Maj and Mrs.</option>
-	<option value="MAJ and Mrs.">MAJ and Mrs.</option>
-	<option value="Maj Gen">Maj Gen</option>
-	<option value="Maj Gen and Mrs.">Maj Gen and Mrs.</option>
-	<option value="MajGen">MajGen</option>
-	<option value="MajGen and Mrs.">MajGen and Mrs.</option>
-	<option value="MCPO">MCPO</option>
-	<option value="MCPO and Mrs.">MCPO and Mrs.</option>
-	<option value="MCPON">MCPON</option>
-	<option value="MCPON and Mrs.">MCPON and Mrs.</option>
-	<option value="Messrs.">Messrs.</option>
-	<option value="MG">MG</option>
-	<option value="MG and Mrs.">MG and Mrs.</option>
-	<option value="MGySgt">MGySgt</option>
-	<option value="MGySgt and Mrs.">MGySgt and Mrs.</option>
-	<option value="Mmes.">Mmes.</option>
-	<option value="MSG">MSG</option>
-	<option value="MSG and Mrs.">MSG and Mrs.</option>
-	<option value="MSgt">MSgt</option>
-	<option value="MSgt and Mrs.">MSgt and Mrs.</option>
-	<option value="Pastor">Pastor</option>
-	<option value="Pastor and Mrs.">Pastor and Mrs.</option>
-	<option value="PFC">PFC</option>
-	<option value="PFC">PFC</option>
-	<option value="PFC and Mrs.">PFC and Mrs.</option>
-	<option value="PO1">PO1</option>
-	<option value="PO1 and Mrs.">PO1 and Mrs.</option>
-	<option value="PO2">PO2</option>
-	<option value="PO2 and Mrs.">PO2 and Mrs.</option>
-	<option value="PO3">PO3</option>
-	<option value="PO3 and Mrs.">PO3 and Mrs.</option>
-	<option value="President">President</option>
-	<option value="President and Mrs.">President and Mrs.</option>
-	<option value="Professor">Professor</option>
-	<option value="Professor and Mrs.">Professor and Mrs.</option>
-	<option value="PV2">PV2</option>
-	<option value="PV2 and Mrs.">PV2 and Mrs.</option>
-	<option value="PVT">PVT</option>
-	<option value="Pvt">Pvt</option>
-	<option value="PVT and Mrs.">PVT and Mrs.</option>
-	<option value="Pvt and Mrs.">Pvt and Mrs.</option>
-	<option value="Rabbi">Rabbi</option>
-	<option value="Rabbi and Mrs.">Rabbi and Mrs.</option>
-	<option value="RADM">RADM</option>
-	<option value="RADM and Mrs.">RADM and Mrs.</option>
-	<option value="Rank">Rank</option>
-	<option value="SA">SA</option>
-	<option value="SA and Mrs.">SA and Mrs.</option>
-	<option value="SCPO">SCPO</option>
-	<option value="SCPO and Mrs.">SCPO and Mrs.</option>
-	<option value="Senator">Senator</option>
-	<option value="Senator and Mrs.">Senator and Mrs.</option>
-	<option value="SFC">SFC</option>
-	<option value="SFC and Mrs.">SFC and Mrs.</option>
-	<option value="SGM">SGM</option>
-	<option value="SGM and Mrs.">SGM and Mrs.</option>
-	<option value="SGT">SGT</option>
-	<option value="Sgt">Sgt</option>
-	<option value="SGT and Mrs.">SGT and Mrs.</option>
-	<option value="Sgt and Mrs.">Sgt and Mrs.</option>
-	<option value="Sgt Maj">Sgt Maj</option>
-	<option value="Sgt Maj and Mrs.">Sgt Maj and Mrs.</option>
-	<option value="SgtMajMC">SgtMajMC</option>
-	<option value="SgtMajMC and Mrs.">SgtMajMC and Mrs.</option>
-	<option value="Sister">Sister</option>
-	<option value="SMA">SMA</option>
-	<option value="SMA and Mrs.">SMA and Mrs.</option>
-	<option value="SMSgt">SMSgt</option>
-	<option value="SMSgt and Mrs.">SMSgt and Mrs.</option>
-	<option value="SN">SN</option>
-	<option value="SN and Mrs.">SN and Mrs.</option>
-	<option value="SPC">SPC</option>
-	<option value="SPC and Mrs.">SPC and Mrs.</option>
-	<option value="SR">SR</option>
-	<option value="SR and Mrs.">SR and Mrs.</option>
-	<option value="SrA">SrA</option>
-	<option value="SrA and Mrs.">SrA and Mrs.</option>
-	<option value="SSG">SSG</option>
-	<option value="SSG and Mrs.">SSG and Mrs.</option>
-	<option value="SSgt">SSgt</option>
-	<option value="SSgt and Mrs.">SSgt and Mrs.</option>
-	<option value="The Honorable and Mrs.">The Honorable and Mrs.</option>
-	<option value="The Reverend and Mrs.">The Reverend and Mrs.</option>
-	<option value="The Reverend Dr.">The Reverend Dr.</option>
-	<option value="The Reverend Dr. and Mrs.">The Reverend Dr. and Mrs.</option>
-	<option value="TSgt">TSgt</option>
-	<option value="TSgt and Mrs.">TSgt and Mrs.</option>
-	<option value="VADM">VADM</option>
-	<option value="VADM and Mrs.">VADM and Mrs.</option>
-	<option value="WO1">WO1</option>
-	<option value="WO1 and Mrs.">WO1 and Mrs.</option>
-
-</select>
-          </td>
-        </tr>
-        <tr class="wyr-firstname">
-          <td>
-            <label for="ctl00_ctl15_FirstName">
-              <span class="header">First Name *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl15$FirstName" type="text" id="ctl00_ctl15_FirstName" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-lastname">
-          <td>
-            <label for="ctl00_ctl15_LastName">
-              <span class="header">Last Name *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl15$LastName" type="text" id="ctl00_ctl15_LastName" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-street">
-          <td>
-            <label for="ctl00_ctl15_Street">
-              <span class="header">Street *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl15$Street" type="text" id="ctl00_ctl15_Street" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-city">
-          <td>
-            <label for="ctl00_ctl15_City">
-              <span class="header">City *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl15$City" type="text" id="ctl00_ctl15_City" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-state">
-          <td>
-            <label for="ctl00_ctl15_State">
-              <span class="header">State *</span></label>
-          </td>
-          <td>
-            
-            <select name="ctl00$ctl15$State" id="ctl00_ctl15_State">
-	<option value="AL">AL</option>
-	<option value="AK">AK</option>
-	<option value="AZ">AZ</option>
-	<option value="AR">AR</option>
-	<option value="CA">CA</option>
-	<option value="CO">CO</option>
-	<option value="CT">CT</option>
-	<option value="DE">DE</option>
-	<option value="DC">DC</option>
-	<option value="FL">FL</option>
-	<option value="GA">GA</option>
-	<option value="HI">HI</option>
-	<option value="ID">ID</option>
-	<option value="IL">IL</option>
-	<option value="IN">IN</option>
-	<option value="IA">IA</option>
-	<option value="KS">KS</option>
-	<option value="KY">KY</option>
-	<option value="LA">LA</option>
-	<option value="ME">ME</option>
-	<option value="MD">MD</option>
-	<option value="MA">MA</option>
-	<option value="MI">MI</option>
-	<option value="MN">MN</option>
-	<option value="MS">MS</option>
-	<option value="MO">MO</option>
-	<option value="MT">MT</option>
-	<option value="NE">NE</option>
-	<option value="NV">NV</option>
-	<option value="NH">NH</option>
-	<option value="NJ">NJ</option>
-	<option value="NM">NM</option>
-	<option value="NY">NY</option>
-	<option value="NC">NC</option>
-	<option value="ND">ND</option>
-	<option value="OH">OH</option>
-	<option value="OK">OK</option>
-	<option value="OR">OR</option>
-	<option value="PA">PA</option>
-	<option value="RI">RI</option>
-	<option value="SC">SC</option>
-	<option value="SD">SD</option>
-	<option value="TN">TN</option>
-	<option selected="selected" value="TX">TX</option>
-	<option value="UT">UT</option>
-	<option value="VT">VT</option>
-	<option value="VA">VA</option>
-	<option value="WA">WA</option>
-	<option value="WV">WV</option>
-	<option value="WI">WI</option>
-	<option value="WY">WY</option>
-	<option value="AA">AA</option>
-	<option value="AE">AE</option>
-	<option value="AP">AP</option>
-	<option value="FM">FM</option>
-	<option value="GU">GU</option>
-	<option value="MH">MH</option>
-	<option value="MP">MP</option>
-	<option value="PR">PR</option>
-	<option value="VI">VI</option>
-
-</select>
-          </td>
-        </tr>
-        <tr class="wyr-zip">
-          <td>
-            <label for="ctl00_ctl15_Zip">
-              <span class="header">Zip *</span></label>
-          </td>
-          <td>
-            
-            
-            <input name="ctl00$ctl15$Zip" type="text" id="ctl00_ctl15_Zip" class="textBox" /><br />
-            
-          </td>
-        </tr>
-        <tr class="wyr-phone">
-          <td>
-            <label for="ctl00_ctl15_Phone">
-              <span class="header">Phone</span></label>
-          </td>
-          <td>
-            
-            
-            <input name="ctl00$ctl15$Phone" type="text" id="ctl00_ctl15_Phone" class="textBox" />
-          </td>
-        </tr>
-      </table>
-    </fieldset>
-    <fieldset>
-      <legend>Email and Twitter</legend>
-      <table cellpadding="3" cellspacing="0" border="0">
-        <tr class="wyr-email">
-          <td width="90">
-            <label for="ctl00_ctl15_Email">
-              <span class="header">Email *</span></label>
-          </td>
-          <td>
-            
-            
-            <input name="ctl00$ctl15$Email" type="text" id="ctl00_ctl15_Email" class="textBox" />
-          </td>
-        </tr>
-        <tr id="ctl00_ctl15_TwitterRow" class="wyr-twitter">
-	<td>
-            <label for="ctl00_ctl15_Twitter">
-              <span class="header">Twitter</span></label>
-          </td>
-	<td>
-            
-            <input name="ctl00$ctl15$Twitter" type="text" value="@" id="ctl00_ctl15_Twitter" placeholder="@" />
-          </td>
-</tr>
-
-      </table>
-    </fieldset>
-    <fieldset>
-      <legend>Email Updates</legend>
-      <div class="fieldContainer">
-        <input id="ctl00_ctl15_SubscribeChoice" type="checkbox" name="ctl00$ctl15$SubscribeChoice" /><span class="ContactForm_Subscribe">Yes,
-        I would like to subscribe to your email newsletter.</span>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Select the issue your email relates to:</legend>
-      
-      <select name="ctl00$ctl15$IssuesList" id="ctl00_ctl15_IssuesList">
-	<option value="">None</option>
-	<option value="8405">Agriculture</option>
-	<option value="8401">Economy</option>
-	<option value="58078">Education</option>
-	<option value="9845">Energy</option>
-	<option value="58079">Environment</option>
-	<option value="44611">Federal Budget</option>
-	<option value="59241">FLAG - Flag Requests</option>
-	<option value="58097">Government Issues</option>
-	<option value="58081">Gun Control</option>
-	<option value="58099">Health</option>
-	<option value="58096">Help with a Federal Agency</option>
-	<option value="59240">Housing</option>
-	<option value="9905">Immigration</option>
-	<option value="58082">International Relations</option>
-	<option value="58084">Labor</option>
-	<option value="43449">Medicare</option>
-	<option value="8402">National Security</option>
-	<option value="58085">Natural Resources</option>
-	<option value="58095">Other</option>
-	<option value="58086">Postal Service</option>
-	<option value="58087">Religious Issues</option>
-	<option value="58088">Science &amp; Technology</option>
-	<option value="8407">Social Security</option>
-	<option value="58098">Taxes</option>
-	<option value="58090">Tour Requests</option>
-	<option value="58091">Trade</option>
-	<option value="58093">Transportation</option>
-	<option value="58094">Veterans</option>
-
-</select>
-    </fieldset>
-    <fieldset>
-      <legend>Your Message</legend>
-      <div class="fieldContainer">
-         
-        <span id="ctl00_ctl15_ReplyChoice"><input id="ctl00_ctl15_ReplyChoice_0" type="radio" name="ctl00$ctl15$ReplyChoice" value="Respond" checked="checked" /><label for="ctl00_ctl15_ReplyChoice_0">Yes, I would like a response.</label><br /><input id="ctl00_ctl15_ReplyChoice_1" type="radio" name="ctl00$ctl15$ReplyChoice" value="Comment" /><label for="ctl00_ctl15_ReplyChoice_1">No, I just want you to know my thoughts.</label></span>
-      </div>
-      <div class="fieldContainer">
-        <label for="ctl00_ctl15_Subject">
-          <span class="header">Subject</span></label><br />
-        
-        
-        <input name="ctl00$ctl15$Subject" type="text" id="ctl00_ctl15_Subject" />
-      </div>
-      <div class="fieldContainer">
-        <label for="ctl00_ctl15_Body">
-          <span class="header">Comment</span></label><br />
-        
-        <textarea name="ctl00$ctl15$Body" rows="15" cols="20" id="ctl00_ctl15_Body">
-</textarea>
-      </div>
-    </fieldset>
-    <input type="submit" name="ctl00$ctl15$SubmitButton" value="Submit" onclick="if(blockClicks) {return false;}; submitWasClicked=true; ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl15$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl15_SubmitButton" class="ContactForm_Submit" />
-  </div>
-</div>
+<form action="/Search/Results.htm" class="search-form">
+<fieldset>
+<input name="q" type="text" class="text" />
+<input type="submit" class="btn-submit" />
+</fieldset>
 </form>
-                <form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="sidebar-form" method="post">
-                  <fieldset>
-                        <input class="text" type="text" value="BY TOPIC" name="queryc114" />
-                        <input class="btn-submit" type="submit" value="go" />
-                  </fieldset>
-                </form>
-                <form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="sidebar-form" method="post">
-                  <fieldset>
-                        <input class="text" type="text" value="BY BILL NUMBER" name="docidc114" />
-                        <input class="btn-submit" type="submit" value="go" />
-                  </fieldset>
-                </form>
-                <form target="_blank" action="/sidesubscribe.aspx" class="sidebar-form">
-                  <fieldset>
-                    <input class="text" type="text" value="FIRST NAME" name="firstname" style="border-width:1px;margin-bottom:5px;width: 162px;" />
-                    <input class="text" type="text" value="LAST NAME" name="lastname" style="border-width:1px;margin-bottom:5px;width: 162px;" />
-                    <input class="text" type="text" value="EMAIL ADDRESS" name="email" />
-                    <input class="btn-submit" type="submit" value="go" />
-                  </fieldset>
-                </form>
+<form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+</div>
+<script type="text/javascript">
+</script>
+<script src="/WebResource.axd?d=DSgd55fA7ZxYn1JUE1VSzbaSdv7NTSOSYx2152ISFLjgfn1SSNnI267pNqczXQTdp5HSeJEtRQPudVcU6uY0tfxHM5QcBKSEOiBMMpslNT01&amp;t=635647470483748403" type="text/javascript">
+</script>
+<script src="/WebResource.axd?d=MGL5gjCPrRzC7nmN65UBYEdb9nSoyJIWnX2QN8bDc2fDlcT65OTaMl_kRHPSLYNcP7J0hw7f6Tgmy7FDuk-wQsWWxrqKe1m3fttc-if1QEU1&amp;t=635647470483748403" type="text/javascript">
+</script>
+<script type="text/javascript">
+</script>
+<div class="aspNetHidden">
+</div>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+</script>
+<style type="text/css">
+</style>
+<div id="facebook-form-login" class="override">
+<div id="auth-status">
+<div id="auth-loggedout">
+<a href="javascript:void(0);" id="auth-loginlink">
+</a>
+</div>
+<a href="javascript:void(0);" id="auth-logoutlink" title="Log out of Facebook">
+</a>
+<div class="auth-logged-in-display">
+<div class="auth-logged-in-text">
+</div>
+<span id="auth-displayname">
+</span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div style="text-align: left" id="writeRepForm">
+<div>
+<span class="pageHeader">
+</span>
+</div>
+<span style="">
+</div>
+</span>
+<fieldset>
+<legend>
+</legend>
+<table cellpadding="3" cellspacing="0" border="0">
+<tr class="wyr-prefix">
+<td width="90">
+<label for="ctl00_ctl15_PrefixList">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<select name="ctl00$ctl15$PrefixList" id="ctl00_ctl15_PrefixList">
+<option value="Mr.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Miss">
+</option>
+<option value="Ms.">
+</option>
+<option value="Mr. &amp; Mrs.">
+</option>
+<option value="Dr.">
+</option>
+<option value="The Reverend">
+</option>
+<option value="Dr. &amp; Mrs.">
+</option>
+<option value="Mr. &amp; Dr.">
+</option>
+<option value="The Honorable">
+</option>
+<option value="1LT">
+</option>
+<option value="1LT and Mrs.">
+</option>
+<option value="1SG">
+</option>
+<option value="1SG and Mrs.">
+</option>
+<option value="1st Lt">
+</option>
+<option value="1st Lt and Mrs.">
+</option>
+<option value="1stSgt">
+</option>
+<option value="1stSgt and Mrs.">
+</option>
+<option value="2d Lt">
+</option>
+<option value="2d Lt and Mrs.">
+</option>
+<option value="2LT">
+</option>
+<option value="2LT and Mrs.">
+</option>
+<option value="2nd Lt">
+</option>
+<option value="2nd Lt and Mrs.">
+</option>
+<option value="A1C">
+</option>
+<option value="A1C and Mrs.">
+</option>
+<option value="AB">
+</option>
+<option value="AB and Mrs.">
+</option>
+<option value="ADM">
+</option>
+<option value="ADM and Mrs.">
+</option>
+<option value="Amn">
+</option>
+<option value="Amn and Mrs.">
+</option>
+<option value="BG">
+</option>
+<option value="BG and Mrs.">
+</option>
+<option value="BGen">
+</option>
+<option value="BGen and Mrs.">
+</option>
+<option value="Brig Gen">
+</option>
+<option value="Brig Gen and Mrs.">
+</option>
+<option value="Brother">
+</option>
+<option value="CAPT">
+</option>
+<option value="Capt">
+</option>
+<option value="CAPT and Mrs.">
+</option>
+<option value="Capt and Mrs.">
+</option>
+<option value="CDR">
+</option>
+<option value="CDR and Mrs.">
+</option>
+<option value="Chaplain">
+</option>
+<option value="Chief">
+</option>
+<option value="CMSAF">
+</option>
+<option value="CMSAF and Mrs.">
+</option>
+<option value="CMSgt">
+</option>
+<option value="CMSgt and Mrs.">
+</option>
+<option value="Col">
+</option>
+<option value="COL">
+</option>
+<option value="Col and Mrs.">
+</option>
+<option value="COL and Mrs.">
+</option>
+<option value="CPL">
+</option>
+<option value="Cpl">
+</option>
+<option value="CPL and Mrs.">
+</option>
+<option value="Cpl and Mrs.">
+</option>
+<option value="CPO">
+</option>
+<option value="CPO and Mrs.">
+</option>
+<option value="CPT">
+</option>
+<option value="CPT and Mrs.">
+</option>
+<option value="CSM">
+</option>
+<option value="CSM and Mrs.">
+</option>
+<option value="CW2">
+</option>
+<option value="CW2 and Mrs.">
+</option>
+<option value="CW3">
+</option>
+<option value="CW3 and Mrs.">
+</option>
+<option value="CW4">
+</option>
+<option value="CW4 and Mrs.">
+</option>
+<option value="CW5">
+</option>
+<option value="CW5 and Mrs.">
+</option>
+<option value="CWO-1">
+</option>
+<option value="CWO-1 and Mrs.">
+</option>
+<option value="CWO2">
+</option>
+<option value="CWO-2">
+</option>
+<option value="CWO2 and Mrs.">
+</option>
+<option value="CWO-2 and Mrs.">
+</option>
+<option value="CWO3">
+</option>
+<option value="CWO-3">
+</option>
+<option value="CWO3 and Mrs.">
+</option>
+<option value="CWO-3 and Mrs.">
+</option>
+<option value="CWO4">
+</option>
+<option value="CWO-4">
+</option>
+<option value="CWO4 and Mrs.">
+</option>
+<option value="CWO-4 and Mrs.">
+</option>
+<option value="CWO-5">
+</option>
+<option value="CWO-5 and Mrs.">
+</option>
+<option value="Dean">
+</option>
+<option value="Dean and Mrs.">
+</option>
+<option value="Drs.">
+</option>
+<option value="Elder">
+</option>
+<option value="ENS">
+</option>
+<option value="ENS and Mrs.">
+</option>
+<option value="Father">
+</option>
+<option value="Gen">
+</option>
+<option value="GEN">
+</option>
+<option value="Gen and Mrs.">
+</option>
+<option value="GEN and Mrs.">
+</option>
+<option value="GySgt">
+</option>
+<option value="GySgt and Mrs.">
+</option>
+<option value="LCDR">
+</option>
+<option value="LCDR and Mrs.">
+</option>
+<option value="LCpl">
+</option>
+<option value="LCpl and Mrs.">
+</option>
+<option value="LT">
+</option>
+<option value="LT and Mrs.">
+</option>
+<option value="Lt Col">
+</option>
+<option value="Lt Col and Mrs.">
+</option>
+<option value="LTC">
+</option>
+<option value="LTC and Mrs.">
+</option>
+<option value="LtCol">
+</option>
+<option value="LtCol and Mrs.">
+</option>
+<option value="LTG">
+</option>
+<option value="LTG and Mrs.">
+</option>
+<option value="LtGen">
+</option>
+<option value="LtGen and Mrs.">
+</option>
+<option value="LTJG">
+</option>
+<option value="LTJG and Mrs.">
+</option>
+<option value="Maj">
+</option>
+<option value="MAJ">
+</option>
+<option value="Maj and Mrs.">
+</option>
+<option value="MAJ and Mrs.">
+</option>
+<option value="Maj Gen">
+</option>
+<option value="Maj Gen and Mrs.">
+</option>
+<option value="MajGen">
+</option>
+<option value="MajGen and Mrs.">
+</option>
+<option value="MCPO">
+</option>
+<option value="MCPO and Mrs.">
+</option>
+<option value="MCPON">
+</option>
+<option value="MCPON and Mrs.">
+</option>
+<option value="Messrs.">
+</option>
+<option value="MG">
+</option>
+<option value="MG and Mrs.">
+</option>
+<option value="MGySgt">
+</option>
+<option value="MGySgt and Mrs.">
+</option>
+<option value="Mmes.">
+</option>
+<option value="MSG">
+</option>
+<option value="MSG and Mrs.">
+</option>
+<option value="MSgt">
+</option>
+<option value="MSgt and Mrs.">
+</option>
+<option value="Pastor">
+</option>
+<option value="Pastor and Mrs.">
+</option>
+<option value="PFC">
+</option>
+<option value="PFC">
+</option>
+<option value="PFC and Mrs.">
+</option>
+<option value="PO1">
+</option>
+<option value="PO1 and Mrs.">
+</option>
+<option value="PO2">
+</option>
+<option value="PO2 and Mrs.">
+</option>
+<option value="PO3">
+</option>
+<option value="PO3 and Mrs.">
+</option>
+<option value="President">
+</option>
+<option value="President and Mrs.">
+</option>
+<option value="Professor">
+</option>
+<option value="Professor and Mrs.">
+</option>
+<option value="PV2">
+</option>
+<option value="PV2 and Mrs.">
+</option>
+<option value="PVT">
+</option>
+<option value="Pvt">
+</option>
+<option value="PVT and Mrs.">
+</option>
+<option value="Pvt and Mrs.">
+</option>
+<option value="Rabbi">
+</option>
+<option value="Rabbi and Mrs.">
+</option>
+<option value="RADM">
+</option>
+<option value="RADM and Mrs.">
+</option>
+<option value="Rank">
+</option>
+<option value="SA">
+</option>
+<option value="SA and Mrs.">
+</option>
+<option value="SCPO">
+</option>
+<option value="SCPO and Mrs.">
+</option>
+<option value="Senator">
+</option>
+<option value="Senator and Mrs.">
+</option>
+<option value="SFC">
+</option>
+<option value="SFC and Mrs.">
+</option>
+<option value="SGM">
+</option>
+<option value="SGM and Mrs.">
+</option>
+<option value="SGT">
+</option>
+<option value="Sgt">
+</option>
+<option value="SGT and Mrs.">
+</option>
+<option value="Sgt and Mrs.">
+</option>
+<option value="Sgt Maj">
+</option>
+<option value="Sgt Maj and Mrs.">
+</option>
+<option value="SgtMajMC">
+</option>
+<option value="SgtMajMC and Mrs.">
+</option>
+<option value="Sister">
+</option>
+<option value="SMA">
+</option>
+<option value="SMA and Mrs.">
+</option>
+<option value="SMSgt">
+</option>
+<option value="SMSgt and Mrs.">
+</option>
+<option value="SN">
+</option>
+<option value="SN and Mrs.">
+</option>
+<option value="SPC">
+</option>
+<option value="SPC and Mrs.">
+</option>
+<option value="SR">
+</option>
+<option value="SR and Mrs.">
+</option>
+<option value="SrA">
+</option>
+<option value="SrA and Mrs.">
+</option>
+<option value="SSG">
+</option>
+<option value="SSG and Mrs.">
+</option>
+<option value="SSgt">
+</option>
+<option value="SSgt and Mrs.">
+</option>
+<option value="The Honorable and Mrs.">
+</option>
+<option value="The Reverend and Mrs.">
+</option>
+<option value="The Reverend Dr.">
+</option>
+<option value="The Reverend Dr. and Mrs.">
+</option>
+<option value="TSgt">
+</option>
+<option value="TSgt and Mrs.">
+</option>
+<option value="VADM">
+</option>
+<option value="VADM and Mrs.">
+</option>
+<option value="WO1">
+</option>
+<option value="WO1 and Mrs.">
+</option>
+</select>
+</td>
+</tr>
+<tr class="wyr-firstname">
+<td>
+<label for="ctl00_ctl15_FirstName">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<input name="ctl00$ctl15$FirstName" type="text" id="ctl00_ctl15_FirstName" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-lastname">
+<td>
+<label for="ctl00_ctl15_LastName">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<input name="ctl00$ctl15$LastName" type="text" id="ctl00_ctl15_LastName" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-street">
+<td>
+<label for="ctl00_ctl15_Street">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<input name="ctl00$ctl15$Street" type="text" id="ctl00_ctl15_Street" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-city">
+<td>
+<label for="ctl00_ctl15_City">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<input name="ctl00$ctl15$City" type="text" id="ctl00_ctl15_City" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-state">
+<td>
+<label for="ctl00_ctl15_State">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<select name="ctl00$ctl15$State" id="ctl00_ctl15_State">
+<option value="AL">
+</option>
+<option value="AK">
+</option>
+<option value="AZ">
+</option>
+<option value="AR">
+</option>
+<option value="CA">
+</option>
+<option value="CO">
+</option>
+<option value="CT">
+</option>
+<option value="DE">
+</option>
+<option value="DC">
+</option>
+<option value="FL">
+</option>
+<option value="GA">
+</option>
+<option value="HI">
+</option>
+<option value="ID">
+</option>
+<option value="IL">
+</option>
+<option value="IN">
+</option>
+<option value="IA">
+</option>
+<option value="KS">
+</option>
+<option value="KY">
+</option>
+<option value="LA">
+</option>
+<option value="ME">
+</option>
+<option value="MD">
+</option>
+<option value="MA">
+</option>
+<option value="MI">
+</option>
+<option value="MN">
+</option>
+<option value="MS">
+</option>
+<option value="MO">
+</option>
+<option value="MT">
+</option>
+<option value="NE">
+</option>
+<option value="NV">
+</option>
+<option value="NH">
+</option>
+<option value="NJ">
+</option>
+<option value="NM">
+</option>
+<option value="NY">
+</option>
+<option value="NC">
+</option>
+<option value="ND">
+</option>
+<option value="OH">
+</option>
+<option value="OK">
+</option>
+<option value="OR">
+</option>
+<option value="PA">
+</option>
+<option value="RI">
+</option>
+<option value="SC">
+</option>
+<option value="SD">
+</option>
+<option value="TN">
+</option>
+<option selected="selected" value="TX">
+</option>
+<option value="UT">
+</option>
+<option value="VT">
+</option>
+<option value="VA">
+</option>
+<option value="WA">
+</option>
+<option value="WV">
+</option>
+<option value="WI">
+</option>
+<option value="WY">
+</option>
+<option value="AA">
+</option>
+<option value="AE">
+</option>
+<option value="AP">
+</option>
+<option value="FM">
+</option>
+<option value="GU">
+</option>
+<option value="MH">
+</option>
+<option value="MP">
+</option>
+<option value="PR">
+</option>
+<option value="VI">
+</option>
+</select>
+</td>
+</tr>
+<tr class="wyr-zip">
+<td>
+<label for="ctl00_ctl15_Zip">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<br />
+</span>
+<input name="ctl00$ctl15$Zip" type="text" id="ctl00_ctl15_Zip" class="textBox" />
+<br />
+</span>
+</td>
+</tr>
+<tr class="wyr-phone">
+<td>
+<label for="ctl00_ctl15_Phone">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<input name="ctl00$ctl15$Phone" type="text" id="ctl00_ctl15_Phone" class="textBox" />
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<table cellpadding="3" cellspacing="0" border="0">
+<tr class="wyr-email">
+<td width="90">
+<label for="ctl00_ctl15_Email">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br />
+</span>
+<br />
+</span>
+<input name="ctl00$ctl15$Email" type="text" id="ctl00_ctl15_Email" class="textBox" />
+</td>
+</tr>
+<tr id="ctl00_ctl15_TwitterRow" class="wyr-twitter">
+<td>
+<label for="ctl00_ctl15_Twitter">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<br/>
+</span>
+<input name="ctl00$ctl15$Twitter" type="text" value="@" id="ctl00_ctl15_Twitter" placeholder="@" />
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="fieldContainer">
+<input id="ctl00_ctl15_SubscribeChoice" type="checkbox" name="ctl00$ctl15$SubscribeChoice" />
+<span class="ContactForm_Subscribe">
+</span>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<select name="ctl00$ctl15$IssuesList" id="ctl00_ctl15_IssuesList">
+<option value="">
+</option>
+<option value="8405">
+</option>
+<option value="8401">
+</option>
+<option value="58078">
+</option>
+<option value="9845">
+</option>
+<option value="58079">
+</option>
+<option value="44611">
+</option>
+<option value="59241">
+</option>
+<option value="58097">
+</option>
+<option value="58081">
+</option>
+<option value="58099">
+</option>
+<option value="58096">
+</option>
+<option value="59240">
+</option>
+<option value="9905">
+</option>
+<option value="58082">
+</option>
+<option value="58084">
+</option>
+<option value="43449">
+</option>
+<option value="8402">
+</option>
+<option value="58085">
+</option>
+<option value="58095">
+</option>
+<option value="58086">
+</option>
+<option value="58087">
+</option>
+<option value="58088">
+</option>
+<option value="8407">
+</option>
+<option value="58098">
+</option>
+<option value="58090">
+</option>
+<option value="58091">
+</option>
+<option value="58093">
+</option>
+<option value="58094">
+</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="fieldContainer">
+<br/>
+</span>
+<table id="ctl00_ctl15_ReplyChoice">
+<tr>
+<td>
+<input id="ctl00_ctl15_ReplyChoice_0" type="radio" name="ctl00$ctl15$ReplyChoice" value="Respond" checked="checked" />
+<label for="ctl00_ctl15_ReplyChoice_0">
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<input id="ctl00_ctl15_ReplyChoice_1" type="radio" name="ctl00$ctl15$ReplyChoice" value="Comment" />
+<label for="ctl00_ctl15_ReplyChoice_1">
+</label>
+</td>
+</tr>
+</table>
+</div>
+<div class="fieldContainer">
+<label for="ctl00_ctl15_Subject">
+<span class="header">
+</span>
+</label>
+<br />
+<br />
+</span>
+<br />
+</span>
+<input name="ctl00$ctl15$Subject" type="text" id="ctl00_ctl15_Subject" style="width:30em;" />
+</div>
+<div class="fieldContainer">
+<label for="ctl00_ctl15_Body">
+<span class="header">
+</span>
+</label>
+<br />
+<br />
+</span>
+<textarea name="ctl00$ctl15$Body" rows="15" cols="20" id="ctl00_ctl15_Body" style="width:30em;">
+</textarea>
+</div>
+</fieldset>
+<input type="submit" name="ctl00$ctl15$SubmitButton" value="Submit" onclick="if(blockClicks) {return false;}; submitWasClicked=true; ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl15$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl15_SubmitButton" class="ContactForm_Submit" />
+</div>
+</div>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br/>
+<br/>
+<br />
+<br />
+<br />
+</script>
+<script type="text/javascript">
+</script>
+</form>
+<form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="sidebar-form" method="post">
+<fieldset>
+<input class="text" type="text" value="BY TOPIC" name="queryc114" />
+<input class="btn-submit" type="submit" value="go" />
+</fieldset>
+</form>
+<form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="sidebar-form" method="post">
+<fieldset>
+<input class="text" type="text" value="BY BILL NUMBER" name="docidc114" />
+<input class="btn-submit" type="submit" value="go" />
+</fieldset>
+</form>
+<form target="_blank" action="/sidesubscribe.aspx" class="sidebar-form">
+<fieldset>
+<input class="text" type="text" value="FIRST NAME" name="firstname" style="border-width:1px;margin-bottom:5px;width: 162px;" />
+<input class="text" type="text" value="LAST NAME" name="lastname" style="border-width:1px;margin-bottom:5px;width: 162px;" />
+<input class="text" type="text" value="EMAIL ADDRESS" name="email" />
+<input class="btn-submit" type="submit" value="go" />
+</fieldset>
+</form>

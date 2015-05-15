@@ -1,295 +1,412 @@
-						<form action="/searchresults/" class="search-form">
-						<fieldset>
-							<div class="bg-inp">
-								<input class="text" type="text" title="search" name="q" />
-								<input type="submit" class="btn-search" value="search"/>
-							</div>
-						</fieldset>
-					</form>
+<form action="/searchresults/" class="search-form">
+<fieldset>
+<div class="bg-inp">
+<input class="text" type="text" title="search" name="q" />
+<input type="submit" class="btn-search" value="search"/>
+</div>
+</fieldset>
+</form>
 <form method="post" action="" id="aspnetForm">
-
-
-
-
 <div>
-  <div style="text-align: left" id="writeRepForm">
-    <div>
-      <span class="pageHeader">Write Your Representative</span></div>
-    <span style="">
-      
-    </span>
-    <fieldset>
-      <legend>Your Information</legend>
-      <table cellpadding="3" cellspacing="0" border="0">
-        <tr class="wyr-prefix">
-          <td width="90">
-            <label for="ctl00_ctl09_PrefixList">
-              <span class="header">Prefix *</span></label>
-          </td>
-          <td>
-            
-            <select name="ctl00$ctl09$PrefixList" id="ctl00_ctl09_PrefixList">
-	<option value="Mr.">Mr.</option>
-	<option value="Mrs.">Mrs.</option>
-	<option value="Mr. and Mrs.">Mr. and Mrs.</option>
-	<option value="Dr.">Dr.</option>
-	<option value="Ms.">Ms.</option>
-
+<div style="text-align: left" id="writeRepForm">
+<div>
+<span class="pageHeader">
+</span>
+</div>
+<span style="">
+</span>
+<fieldset>
+<legend>
+</legend>
+<table cellpadding="3" cellspacing="0" border="0">
+<tr class="wyr-prefix">
+<td width="90">
+<label for="ctl00_ctl09_PrefixList">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<select name="ctl00$ctl09$PrefixList" id="ctl00_ctl09_PrefixList">
+<option value="Mr.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Mr. and Mrs.">
+</option>
+<option value="Dr.">
+</option>
+<option value="Ms.">
+</option>
 </select>
-          </td>
-        </tr>
-        <tr class="wyr-firstname">
-          <td>
-            <label for="ctl00_ctl09_FirstName">
-              <span class="header">First Name *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl09$FirstName" type="text" id="ctl00_ctl09_FirstName" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-lastname">
-          <td>
-            <label for="ctl00_ctl09_LastName">
-              <span class="header">Last Name *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl09$LastName" type="text" id="ctl00_ctl09_LastName" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-street">
-          <td>
-            <label for="ctl00_ctl09_Street">
-              <span class="header">Street *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl09$Street" type="text" id="ctl00_ctl09_Street" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-city">
-          <td>
-            <label for="ctl00_ctl09_City">
-              <span class="header">City *</span></label>
-          </td>
-          <td>
-            
-            <input name="ctl00$ctl09$City" type="text" id="ctl00_ctl09_City" class="textBox" />
-          </td>
-        </tr>
-        <tr class="wyr-state">
-          <td>
-            <label for="ctl00_ctl09_State">
-              <span class="header">State *</span></label>
-          </td>
-          <td>
-            
-            <select name="ctl00$ctl09$State" id="ctl00_ctl09_State">
-	<option value="AL">AL</option>
-	<option value="AK">AK</option>
-	<option value="AZ">AZ</option>
-	<option value="AR">AR</option>
-	<option value="CA">CA</option>
-	<option value="CO">CO</option>
-	<option value="CT">CT</option>
-	<option value="DE">DE</option>
-	<option value="DC">DC</option>
-	<option value="FL">FL</option>
-	<option value="GA">GA</option>
-	<option value="HI">HI</option>
-	<option value="ID">ID</option>
-	<option value="IL">IL</option>
-	<option value="IN">IN</option>
-	<option value="IA">IA</option>
-	<option value="KS">KS</option>
-	<option value="KY">KY</option>
-	<option value="LA">LA</option>
-	<option value="ME">ME</option>
-	<option value="MD">MD</option>
-	<option value="MA">MA</option>
-	<option value="MI">MI</option>
-	<option value="MN">MN</option>
-	<option value="MS">MS</option>
-	<option selected="selected" value="MO">MO</option>
-	<option value="MT">MT</option>
-	<option value="NE">NE</option>
-	<option value="NV">NV</option>
-	<option value="NH">NH</option>
-	<option value="NJ">NJ</option>
-	<option value="NM">NM</option>
-	<option value="NY">NY</option>
-	<option value="NC">NC</option>
-	<option value="ND">ND</option>
-	<option value="OH">OH</option>
-	<option value="OK">OK</option>
-	<option value="OR">OR</option>
-	<option value="PA">PA</option>
-	<option value="RI">RI</option>
-	<option value="SC">SC</option>
-	<option value="SD">SD</option>
-	<option value="TN">TN</option>
-	<option value="TX">TX</option>
-	<option value="UT">UT</option>
-	<option value="VT">VT</option>
-	<option value="VA">VA</option>
-	<option value="WA">WA</option>
-	<option value="WV">WV</option>
-	<option value="WI">WI</option>
-	<option value="WY">WY</option>
-	<option value="AA">AA</option>
-	<option value="AE">AE</option>
-	<option value="AP">AP</option>
-	<option value="FM">FM</option>
-	<option value="GU">GU</option>
-	<option value="MH">MH</option>
-	<option value="MP">MP</option>
-	<option value="PR">PR</option>
-	<option value="VI">VI</option>
-
+</td>
+</tr>
+<tr class="wyr-firstname">
+<td>
+<label for="ctl00_ctl09_FirstName">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$FirstName" type="text" id="ctl00_ctl09_FirstName" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-lastname">
+<td>
+<label for="ctl00_ctl09_LastName">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$LastName" type="text" id="ctl00_ctl09_LastName" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-street">
+<td>
+<label for="ctl00_ctl09_Street">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$Street" type="text" id="ctl00_ctl09_Street" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-city">
+<td>
+<label for="ctl00_ctl09_City">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$City" type="text" id="ctl00_ctl09_City" class="textBox" />
+</td>
+</tr>
+<tr class="wyr-state">
+<td>
+<label for="ctl00_ctl09_State">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<select name="ctl00$ctl09$State" id="ctl00_ctl09_State">
+<option value="AL">
+</option>
+<option value="AK">
+</option>
+<option value="AZ">
+</option>
+<option value="AR">
+</option>
+<option value="CA">
+</option>
+<option value="CO">
+</option>
+<option value="CT">
+</option>
+<option value="DE">
+</option>
+<option value="DC">
+</option>
+<option value="FL">
+</option>
+<option value="GA">
+</option>
+<option value="HI">
+</option>
+<option value="ID">
+</option>
+<option value="IL">
+</option>
+<option value="IN">
+</option>
+<option value="IA">
+</option>
+<option value="KS">
+</option>
+<option value="KY">
+</option>
+<option value="LA">
+</option>
+<option value="ME">
+</option>
+<option value="MD">
+</option>
+<option value="MA">
+</option>
+<option value="MI">
+</option>
+<option value="MN">
+</option>
+<option value="MS">
+</option>
+<option selected="selected" value="MO">
+</option>
+<option value="MT">
+</option>
+<option value="NE">
+</option>
+<option value="NV">
+</option>
+<option value="NH">
+</option>
+<option value="NJ">
+</option>
+<option value="NM">
+</option>
+<option value="NY">
+</option>
+<option value="NC">
+</option>
+<option value="ND">
+</option>
+<option value="OH">
+</option>
+<option value="OK">
+</option>
+<option value="OR">
+</option>
+<option value="PA">
+</option>
+<option value="RI">
+</option>
+<option value="SC">
+</option>
+<option value="SD">
+</option>
+<option value="TN">
+</option>
+<option value="TX">
+</option>
+<option value="UT">
+</option>
+<option value="VT">
+</option>
+<option value="VA">
+</option>
+<option value="WA">
+</option>
+<option value="WV">
+</option>
+<option value="WI">
+</option>
+<option value="WY">
+</option>
+<option value="AA">
+</option>
+<option value="AE">
+</option>
+<option value="AP">
+</option>
+<option value="FM">
+</option>
+<option value="GU">
+</option>
+<option value="MH">
+</option>
+<option value="MP">
+</option>
+<option value="PR">
+</option>
+<option value="VI">
+</option>
 </select>
-          </td>
-        </tr>
-        <tr class="wyr-zip">
-          <td>
-            <label for="ctl00_ctl09_Zip">
-              <span class="header">Zip *</span></label>
-          </td>
-          <td>
-            
-            
-            <input name="ctl00$ctl09$Zip" type="text" id="ctl00_ctl09_Zip" class="textBox" /><br />
-            
-          </td>
-        </tr>
-        <tr class="wyr-phone">
-          <td>
-            <label for="ctl00_ctl09_Phone">
-              <span class="header">Phone *</span></label>
-          </td>
-          <td>
-            
-            
-            <input name="ctl00$ctl09$Phone" type="text" id="ctl00_ctl09_Phone" class="textBox" />
-          </td>
-        </tr>
-      </table>
-    </fieldset>
-    <fieldset>
-      <legend>Email Address</legend>
-      <table cellpadding="3" cellspacing="0" border="0">
-        <tr class="wyr-email">
-          <td width="90">
-            <label for="ctl00_ctl09_Email">
-              <span class="header">Email *</span></label>
-          </td>
-          <td>
-            
-            
-            <input name="ctl00$ctl09$Email" type="text" id="ctl00_ctl09_Email" class="textBox" />
-          </td>
-        </tr>
-        
-      </table>
-    </fieldset>
-    <fieldset>
-      <legend>Email Updates</legend>
-      <div class="fieldContainer">
-        <input id="ctl00_ctl09_SubscribeChoice" type="checkbox" name="ctl00$ctl09$SubscribeChoice" /><span class="ContactForm_Subscribe">Yes,
-        I would like to subscribe to your email newsletter.</span>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Select the issue your email relates to:</legend>
-      
-      <select name="ctl00$ctl09$IssuesList" id="ctl00_ctl09_IssuesList">
-	<option value="">None</option>
-	<option value="48446">Agriculture</option>
-	<option value="48443">Agriculture </option>
-	<option value="49045">Budget</option>
-	<option value="52883">Casework</option>
-	<option value="48314">Crime and Law Enforcement</option>
-	<option value="49046">Defense</option>
-	<option value="52884">Economy</option>
-	<option value="48246">Energy</option>
-	<option value="47883">Environment</option>
-	<option value="52885">Faith</option>
-	<option value="48214">Families</option>
-	<option value="52886">Financial Services</option>
-	<option value="47882">Foreign Policy</option>
-	<option value="48451">Government Reform</option>
-	<option value="48444">Health-Care</option>
-	<option value="48063">Immigration</option>
-	<option value="48053">International Relations</option>
-	<option value="48445">Jobs and Economy </option>
-	<option value="48449">Judiciary</option>
-	<option value="48033">Labor and Employment</option>
-	<option value="48098">Medicaid</option>
-	<option value="48093">Medicare</option>
-	<option value="52879">Military</option>
-	<option value="48145">Postal service</option>
-	<option value="52882">Science and Technology</option>
-	<option value="52887">Second Amendment Rights</option>
-	<option value="47880">Seniors </option>
-	<option value="48331">Small business</option>
-	<option value="47941">Social Security</option>
-	<option value="47931">Taxes</option>
-	<option value="47956">Telecommunications</option>
-	<option value="52888">Trade</option>
-	<option value="47879">Veterans</option>
-	<option value="47896">Water Resources Development</option>
-
+</td>
+</tr>
+<tr class="wyr-zip">
+<td>
+<label for="ctl00_ctl09_Zip">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$Zip" type="text" id="ctl00_ctl09_Zip" class="textBox" />
+<br />
+</td>
+</tr>
+<tr class="wyr-phone">
+<td>
+<label for="ctl00_ctl09_Phone">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$Phone" type="text" id="ctl00_ctl09_Phone" class="textBox" />
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<table cellpadding="3" cellspacing="0" border="0">
+<tr class="wyr-email">
+<td width="90">
+<label for="ctl00_ctl09_Email">
+<span class="header">
+</span>
+</label>
+</td>
+<td>
+<input name="ctl00$ctl09$Email" type="text" id="ctl00_ctl09_Email" class="textBox" />
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="fieldContainer">
+<input id="ctl00_ctl09_SubscribeChoice" type="checkbox" name="ctl00$ctl09$SubscribeChoice" />
+<span class="ContactForm_Subscribe">
+</span>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<select name="ctl00$ctl09$IssuesList" id="ctl00_ctl09_IssuesList">
+<option value="">
+</option>
+<option value="48446">
+</option>
+<option value="48443">
+</option>
+<option value="49045">
+</option>
+<option value="52883">
+</option>
+<option value="48314">
+</option>
+<option value="49046">
+</option>
+<option value="52884">
+</option>
+<option value="48246">
+</option>
+<option value="47883">
+</option>
+<option value="52885">
+</option>
+<option value="48214">
+</option>
+<option value="52886">
+</option>
+<option value="47882">
+</option>
+<option value="48451">
+</option>
+<option value="48444">
+</option>
+<option value="48063">
+</option>
+<option value="48053">
+</option>
+<option value="48445">
+</option>
+<option value="48449">
+</option>
+<option value="48033">
+</option>
+<option value="48098">
+</option>
+<option value="48093">
+</option>
+<option value="52879">
+</option>
+<option value="48145">
+</option>
+<option value="52882">
+</option>
+<option value="52887">
+</option>
+<option value="47880">
+</option>
+<option value="48331">
+</option>
+<option value="47941">
+</option>
+<option value="47931">
+</option>
+<option value="47956">
+</option>
+<option value="52888">
+</option>
+<option value="47879">
+</option>
+<option value="47896">
+</option>
 </select>
-    </fieldset>
-    <fieldset>
-      <legend>Your Message</legend>
-      <div class="fieldContainer">
-         
-        <span id="ctl00_ctl09_ReplyChoice"><input id="ctl00_ctl09_ReplyChoice_0" type="radio" name="ctl00$ctl09$ReplyChoice" value="Respond" checked="checked" /><label for="ctl00_ctl09_ReplyChoice_0">Yes, I would like a response.</label><br /><input id="ctl00_ctl09_ReplyChoice_1" type="radio" name="ctl00$ctl09$ReplyChoice" value="Comment" /><label for="ctl00_ctl09_ReplyChoice_1">No, I just want you to know my thoughts.</label></span>
-      </div>
-      <div class="fieldContainer">
-        <label for="ctl00_ctl09_Subject">
-          <span class="header">Subject</span></label><br />
-        
-        
-        <input name="ctl00$ctl09$Subject" type="text" id="ctl00_ctl09_Subject" />
-      </div>
-      <div class="fieldContainer">
-        <label for="ctl00_ctl09_Body">
-          <span class="header">Comment</span></label><br />
-        
-        <textarea name="ctl00$ctl09$Body" rows="15" cols="20" id="ctl00_ctl09_Body">
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="fieldContainer">
+<span id="ctl00_ctl09_ReplyChoice">
+<input id="ctl00_ctl09_ReplyChoice_0" type="radio" name="ctl00$ctl09$ReplyChoice" value="Respond" checked="checked" />
+<label for="ctl00_ctl09_ReplyChoice_0">
+</label>
+<br />
+<input id="ctl00_ctl09_ReplyChoice_1" type="radio" name="ctl00$ctl09$ReplyChoice" value="Comment" />
+<label for="ctl00_ctl09_ReplyChoice_1">
+</label>
+</span>
+</div>
+<div class="fieldContainer">
+<label for="ctl00_ctl09_Subject">
+<span class="header">
+</span>
+</label>
+<br />
+<input name="ctl00$ctl09$Subject" type="text" id="ctl00_ctl09_Subject" />
+</div>
+<div class="fieldContainer">
+<label for="ctl00_ctl09_Body">
+<span class="header">
+</span>
+</label>
+<br />
+<textarea name="ctl00$ctl09$Body" rows="15" cols="20" id="ctl00_ctl09_Body">
 </textarea>
-      </div>
-    </fieldset>
-    <input type="submit" name="ctl00$ctl09$SubmitButton" value="Submit" onclick="if(blockClicks) {return false;}; submitWasClicked=true; ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl09$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl09_SubmitButton" class="ContactForm_Submit" />
-  </div>
+</div>
+</fieldset>
+<input type="submit" name="ctl00$ctl09$SubmitButton" value="Submit" onclick="if(blockClicks) {return false;}; submitWasClicked=true; ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl09$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl09_SubmitButton" class="ContactForm_Submit" />
+</div>
 </div>
 </form>
-									<form class="mail-form" action="/subscribe.aspx">
-										<fieldset>
-											<h3>E-News Sign-Up</h3>
-											<div class="row">
-												<label for="email">EMAIL Address</label>
-												<input type="text" class="text" value="" id="email" name="email" title="Email Address" />
-											</div>
-											<input type="submit" class="btn-go" value="go"/>
-										</fieldset>
-									</form>
-								 <form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-search-form" method="post">
-					  <fieldset>
-						  <h5>Bill Search</h5>
-					<div class="row">
-							  <input class="text" placeholder="Bill Number" title="Bill Number" type="text" name="docidc114" />
-						    <input  type="submit" class="btn-go" value="go"/>
-					</div>
-					  </fieldset>
-				  </form>
-					  <form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-search-form" method="post">
-						  <fieldset>
-							  <div class="row">
-								  <input class="text" placeholder="Keyword" title="Keyword or Phrase" type="text" name="queryc114" />
-							    <input  type="submit" class="btn-go" value="go"/>
-							  </div>
-						  </fieldset>
-					  </form>
+<form class="mail-form" action="/subscribe.aspx">
+<fieldset>
+<h3>
+</h3>
+<div class="row">
+<label for="email">
+</label>
+<input type="text" class="text" value="" id="email" name="email" title="Email Address" />
+</div>
+<input type="submit" class="btn-go" value="go"/>
+</fieldset>
+</form>
+<form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-search-form" method="post">
+<fieldset>
+<h5>
+</h5>
+<div class="row">
+<input class="text" placeholder="Bill Number" title="Bill Number" type="text" name="docidc114" />
+<input  type="submit" class="btn-go" value="go"/>
+</div>
+</fieldset>
+</form>
+<form target="_blank" action="http://thomas.loc.gov/cgi-bin/query" class="bill-search-form" method="post">
+<fieldset>
+<div class="row">
+<input class="text" placeholder="Keyword" title="Keyword or Phrase" type="text" name="queryc114" />
+<input  type="submit" class="btn-go" value="go"/>
+</div>
+</fieldset>
+</form>

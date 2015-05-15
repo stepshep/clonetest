@@ -1,598 +1,623 @@
-					<form id="sitesearch" role="search" method="get" action="/search" class="pull-right form-inline">
-						<input type="search" id="search-field" name="q" placeholder="Search">
-						<button type="submit"><span class="glyphicon glyphicon-search"></span></button>
-					</form>
-				<form method="post" action="/contact/newsletter" enctype="application/x-www-form-urlencoded" class="form-inline">
-				<input type="email" id="header_email_address" placeholder="Sign up for the email newsletter" name="header_email_address" required="">
-				<input type="submit" class="btn btn-sm" id="newslettersubmit" value="SIGN UP">
-				</form>
-			<form id="contactForm"  method="post"  action="/contact/email"  enctype="application/x-www-form-urlencoded" >
-
-
-				
-				<fieldset>
-					  <div class="form-group">
-					<label class="control-label" for="actions">Message Topic<abbr title="Please select an option">*</abbr></label>
-					
-		
-		
-
-					<select id="actions" class="form-control" name="actions"  onChange="javascript:getHelp(this.value);">
-							<option label="- - Select an option - -" value="select" selected="selected">--Select an Option--</option>
-							
-									<option label="Abortion" value="ABORTION">Abortion</option>
-							
-									<option label="Affordable Care Act Stories" value="ACASTORIES">Affordable Care Act Stories</option>
-							
-									<option label="Agriculture" value="AG00">Agriculture</option>
-							
-									<option label="Animal Rights" value="AN00">Animal Rights</option>
-							
-									<option label="Banking/Credit" value="BK00">Banking/Credit</option>
-							
-									<option label="Budget, Federal" value="BUDGET">Budget, Federal</option>
-							
-									<option label="Business/Commerce" value="AA005">Business/Commerce</option>
-							
-									<option label="Campaign Finance/Elections" value="CR00">Campaign Finance/Elections</option>
-							
-									<option label="Children Issues" value="CF00">Children Issues</option>
-							
-									<option label="Civil Rights and Liberties" value="JC00">Civil Rights and Liberties</option>
-							
-									<option label="Crime/Drugs" value="JC00">Crime/Drugs</option>
-							
-									<option label="Defense/Military" value="DE00">Defense/Military</option>
-							
-									<option label="Dietary Supplements" value="DIETSUP">Dietary Supplements</option>
-							
-									<option label="Economy" value="EC00">Economy</option>
-							
-									<option label="Education" value="ED00">Education</option>
-							
-									<option label="Energy" value="EN00">Energy</option>
-							
-									<option label="Environment" value="EV00">Environment</option>
-							
-									<option label="Foreign Policy" value="FP00">Foreign Policy</option>
-							
-									<option label="Guns" value="GU00">Guns</option>
-							
-									<option label="Health" value="HE00">Health</option>
-							
-									<option label="Homeland Security" value="HM00">Homeland Security</option>
-							
-									<option label="Housing" value="HS00">Housing</option>
-							
-									<option label="Immigration" value="IM00">Immigration</option>
-							
-									<option label="Iraq" value="FP00">Iraq</option>
-							
-									<option label="Judicial Nominations" value="JC00">Judicial Nominations</option>
-							
-									<option label="Labor/Employment" value="LA00">Labor/Employment</option>
-							
-									<option label="Media/Telecommunications" value="TE00">Media/Telecommunications</option>
-							
-									<option label="Medicare" value="HE00">Medicare</option>
-							
-									<option label="Middle East" value="FP00">Middle East</option>
-							
-									<option label="Postal Service" value="GA00">Postal Service</option>
-							
-									<option label="Social Security/Seniors" value="SS00">Social Security/Seniors</option>
-							
-									<option label="Taxes" value="TX00">Taxes</option>
-							
-									<option label="Trade" value="TR00">Trade</option>
-							
-									<option label="Transportation" value="TN00">Transportation</option>
-							
-									<option label="Veterans" value="VA00">Veterans</option>
-							
-									<option label="War" value="FP00">War</option>
-							
-									<option label="Welfare" value="WE00">Welfare</option>
-							
-									<option label="Women's Issues" value="WM00">Women's Issues</option>
-							
-									<option label="Other" value="OT00">Other</option>
-							
-					</select>
-					</div>
-				</fieldset>
-
-				<div id="more-help-container" style="display:none">
-					<div id="more-help"></div>
-				</div>
-
-				
-
-
-				
-				<div  id="continue-form" style="display:none">
-
-
-					<fieldset>
-						<legend>Your Name</legend>
-						<div class="form-group">
-							<label class="control-label" for="salutation">Prefix<abbr title="required">*</abbr></label>
-
-							
-		
-		
-
-
-							<select id="salutation" class="form-control" name="salutation" required>
-								
-										<option label="Mr." value="Mr.">Mr.</option>
-								
-										<option label="Ms." value="Ms.">Ms.</option>
-								
-										<option label="Mrs." value="Mrs.">Mrs.</option>
-								
-										<option label="Professor" value="Professor">Professor</option>
-								
-										<option label="Dr." value="Dr.">Dr.</option>
-								
-										<option label="Father" value="Father">Father</option>
-								
-										<option label="Sister" value="Sister">Sister</option>
-								
-										<option label="Rabbi" value="Rabbi">Rabbi</option>
-								
-										<option label="Reverend" value="Reverend">Reverend</option>
-								
-										<option label="Air Force - General" value="General">Air Force - General</option>
-								
-										<option label="Air Force - Lieutenant General" value="Lieutenant General">Air Force - Lieutenant General</option>
-								
-										<option label="Air Force - Major General" value="Major General">Air Force - Major General</option>
-								
-										<option label="Air Force - Brigadier General" value="Brigadier General">Air Force - Brigadier General</option>
-								
-										<option label="Air Force - Colonel" value="Colonel">Air Force - Colonel</option>
-								
-										<option label="Air Force - Lieutenant Colonel" value="Lieutenant Colonel">Air Force - Lieutenant Colonel</option>
-								
-										<option label="Air Force - Major" value="Major">Air Force - Major</option>
-								
-										<option label="Air Force - Captain" value="Captain">Air Force - Captain</option>
-								
-										<option label="Air Force - First Lieutenant" value="First Lieutenant">Air Force - First Lieutenant</option>
-								
-										<option label="Air Force - Second Lieutenant" value="Second Lieutenant">Air Force - Second Lieutenant</option>
-								
-										<option label="Air Force - Chief Master Sergeant of the Air Force" value="Chief Master Sergeant of the Air Force">Air Force - Chief Master Sergeant of the Air Force</option>
-								
-										<option label="Air Force - Command Chief Master Sergeant" value="Command Chief Master Sergeant">Air Force - Command Chief Master Sergeant</option>
-								
-										<option label="Air Force - First Sergeant (E-9)" value="First Sergeant (E-9)">Air Force - First Sergeant (E-9)</option>
-								
-										<option label="Air Force - Chief Master Sergeant" value="Chief Master Sergeant">Air Force - Chief Master Sergeant</option>
-								
-										<option label="Air Force - First Sergeant (E-8)" value="First Sergeant (E-8)">Air Force - First Sergeant (E-8)</option>
-								
-										<option label="Air Force - Senior Master Sergeant" value="Senior Master Sergeant">Air Force - Senior Master Sergeant</option>
-								
-										<option label="Air Force - First Sergeant (E-7)" value="First Sergeant (E-7)">Air Force - First Sergeant (E-7)</option>
-								
-										<option label="Air Force - Master Sergeant" value="Master Sergeant">Air Force - Master Sergeant</option>
-								
-										<option label="Air Force - Technical Sergeant" value="Technical Sergeant">Air Force - Technical Sergeant</option>
-								
-										<option label="Air Force - Staff Sergeant" value="Staff Sergeant">Air Force - Staff Sergeant</option>
-								
-										<option label="Air Force - Senior Airman" value="Senior Airman">Air Force - Senior Airman</option>
-								
-										<option label="Air Force - Airman First Class" value="Airman First Class">Air Force - Airman First Class</option>
-								
-										<option label="Air Force - Airman" value="Airman">Air Force - Airman</option>
-								
-										<option label="Air Force - Airman Basic" value="Airman Basic">Air Force - Airman Basic</option>
-								
-										<option label="Army - General" value="General">Army - General</option>
-								
-										<option label="Army - Lieutenant General" value="Lieutenant General">Army - Lieutenant General</option>
-								
-										<option label="Army - Major General" value="Major General">Army - Major General</option>
-								
-										<option label="Army - Brigadier General" value="Brigadier General">Army - Brigadier General</option>
-								
-										<option label="Army - Colonel" value="Colonel">Army - Colonel</option>
-								
-										<option label="Army - Lieutenant Colonel" value="Lieutenant Colonel">Army - Lieutenant Colonel</option>
-								
-										<option label="Army - Major" value="Major">Army - Major</option>
-								
-										<option label="Army - Captain" value="Captain">Army - Captain</option>
-								
-										<option label="Army - First Lieutenant" value="First Lieutenant">Army - First Lieutenant</option>
-								
-										<option label="Army - Second Lieutenant" value="Second Lieutenant">Army - Second Lieutenant</option>
-								
-										<option label="Army - Chief Warrant Officer - 5" value="Chief Warrant Officer - 5">Army - Chief Warrant Officer - 5</option>
-								
-										<option label="Army - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">Army - Chief Warrant Officer - 4</option>
-								
-										<option label="Army - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">Army - Chief Warrant Officer - 3</option>
-								
-										<option label="Army - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">Army - Chief Warrant Officer - 2</option>
-								
-										<option label="Army - Warrant Officer" value="Warrant Officer">Army - Warrant Officer</option>
-								
-										<option label="Army - Sergeant Major of the Army" value="Sergeant Major of the Army">Army - Sergeant Major of the Army</option>
-								
-										<option label="Army - Command Sergeant Major" value="Command Sergeant Major">Army - Command Sergeant Major</option>
-								
-										<option label="Army - Sergeant Major" value="Sergeant Major">Army - Sergeant Major</option>
-								
-										<option label="Army - First Sergeant" value="First Sergeant">Army - First Sergeant</option>
-								
-										<option label="Army - Master Sergeant" value="Master Sergeant">Army - Master Sergeant</option>
-								
-										<option label="Army - Sergeant First Class" value="Sergeant First Class">Army - Sergeant First Class</option>
-								
-										<option label="Army - Staff Sergeant" value="Staff Sergeant">Army - Staff Sergeant</option>
-								
-										<option label="Army - Sergeant" value="Sergeant">Army - Sergeant</option>
-								
-										<option label="Army - Corporal" value="Corporal">Army - Corporal</option>
-								
-										<option label="Army - Specialist" value="Specialist">Army - Specialist</option>
-								
-										<option label="Army - Private First Class" value="Private First Class">Army - Private First Class</option>
-								
-										<option label="Army - Private (E-2)" value="Private (E-2)">Army - Private (E-2)</option>
-								
-										<option label="Army - Private" value="Private">Army - Private</option>
-								
-										<option label="Coast Guard - Admiral" value="Admiral">Coast Guard - Admiral</option>
-								
-										<option label="Coast Guard - Vice Admiral" value="Vice Admiral">Coast Guard - Vice Admiral</option>
-								
-										<option label="Coast Guard - Rear Admiral, Upper Half" value="Rear Admiral, Upper Half">Coast Guard - Rear Admiral, Upper Half</option>
-								
-										<option label="Coast Guard - Rear Admiral, Lower Half" value="Rear Admiral, Lower Half">Coast Guard - Rear Admiral, Lower Half</option>
-								
-										<option label="Coast Guard - Captain" value="Captain">Coast Guard - Captain</option>
-								
-										<option label="Coast Guard - Commander" value="Commander">Coast Guard - Commander</option>
-								
-										<option label="Coast Guard - Lieutenant Commander" value="Lieutenant Commander">Coast Guard - Lieutenant Commander</option>
-								
-										<option label="Coast Guard - Lieutenant" value="Lieutenant">Coast Guard - Lieutenant</option>
-								
-										<option label="Coast Guard - Lieutenant Junior Grade" value="Lieutenant Junior Grade">Coast Guard - Lieutenant Junior Grade</option>
-								
-										<option label="Coast Guard - Ensign" value="Ensign">Coast Guard - Ensign</option>
-								
-										<option label="Coast Guard - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">Coast Guard - Chief Warrant Officer - 4</option>
-								
-										<option label="Coast Guard - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">Coast Guard - Chief Warrant Officer - 3</option>
-								
-										<option label="Coast Guard - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">Coast Guard - Chief Warrant Officer - 2</option>
-								
-										<option label="Coast Guard - Master Chief Petty Officer of the Coast Guard" value="Master Chief Petty Officer of the Coast Guard">Coast Guard - Master Chief Petty Officer of the Coast Guard</option>
-								
-										<option label="Coast Guard - Master Chief Petty Officer" value="Master Chief Petty Officer">Coast Guard - Master Chief Petty Officer</option>
-								
-										<option label="Coast Guard - Senior Chief Petty Officer" value="Senior Chief Petty Officer">Coast Guard - Senior Chief Petty Officer</option>
-								
-										<option label="Coast Guard - Chief Petty Officer" value="Chief Petty Officer">Coast Guard - Chief Petty Officer</option>
-								
-										<option label="Coast Guard - Petty Officer First Class" value="Petty Officer First Class">Coast Guard - Petty Officer First Class</option>
-								
-										<option label="Coast Guard - Petty Officer Second Class" value="Petty Officer Second Class">Coast Guard - Petty Officer Second Class</option>
-								
-										<option label="Coast Guard - Petty Officer Third Class" value="Petty Officer Third Class">Coast Guard - Petty Officer Third Class</option>
-								
-										<option label="Coast Guard - Seaman" value="Seaman">Coast Guard - Seaman</option>
-								
-										<option label="Coast Guard - Seaman Apprentice" value="Seaman Apprentice">Coast Guard - Seaman Apprentice</option>
-								
-										<option label="Coast Guard - Seaman Recruit" value="Seaman Recruit">Coast Guard - Seaman Recruit</option>
-								
-										<option label="Marine Corps - General" value="General">Marine Corps - General</option>
-								
-										<option label="Marine Corps - Lieutenant General" value="Lieutenant General">Marine Corps - Lieutenant General</option>
-								
-										<option label="Marine Corps - Major General" value="Major General">Marine Corps - Major General</option>
-								
-										<option label="Marine Corps - Brigadier General" value="Brigadier General">Marine Corps - Brigadier General</option>
-								
-										<option label="Marine Corps - Colonel" value="Colonel">Marine Corps - Colonel</option>
-								
-										<option label="Marine Corps - Lieutenant Colonel" value="Lieutenant Colonel">Marine Corps - Lieutenant Colonel</option>
-								
-										<option label="Marine Corps - Major" value="Major">Marine Corps - Major</option>
-								
-										<option label="Marine Corps - Captain" value="Captain">Marine Corps - Captain</option>
-								
-										<option label="Marine Corps - First Lieutenant" value="First Lieutenant">Marine Corps - First Lieutenant</option>
-								
-										<option label="Marine Corps - Second Lieutenant" value="Second Lieutenant">Marine Corps - Second Lieutenant</option>
-								
-										<option label="Marine Corps - Chief Warrant Officer - 5" value="Chief Warrant Officer - 5">Marine Corps - Chief Warrant Officer - 5</option>
-								
-										<option label="Marine Corps - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">Marine Corps - Chief Warrant Officer - 4</option>
-								
-										<option label="Marine Corps - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">Marine Corps - Chief Warrant Officer - 3</option>
-								
-										<option label="Marine Corps - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">Marine Corps - Chief Warrant Officer - 2</option>
-								
-										<option label="Marine Corps - Warrant Officer" value="Warrant Officer">Marine Corps - Warrant Officer</option>
-								
-										<option label="Marine Corps - Sergeant Major of the Marine Corps" value="Sergeant Major of the Marine Corps">Marine Corps - Sergeant Major of the Marine Corps</option>
-								
-										<option label="Marine Corps - Sergeant Major" value="Sergeant Major">Marine Corps - Sergeant Major</option>
-								
-										<option label="Marine Corps - Master Gunnery Sergeant" value="Master Gunnery Sergeant">Marine Corps - Master Gunnery Sergeant</option>
-								
-										<option label="Marine Corps - First Sergeant" value="First Sergeant">Marine Corps - First Sergeant</option>
-								
-										<option label="Marine Corps - Master Sergeant" value="Master Sergeant">Marine Corps - Master Sergeant</option>
-								
-										<option label="Marine Corps - Gunnery Sergeant" value="Gunnery Sergeant">Marine Corps - Gunnery Sergeant</option>
-								
-										<option label="Marine Corps - Staff Sergeant" value="Staff Sergeant">Marine Corps - Staff Sergeant</option>
-								
-										<option label="Marine Corps - Sergeant" value="Sergeant">Marine Corps - Sergeant</option>
-								
-										<option label="Marine Corps - Corporal" value="Corporal">Marine Corps - Corporal</option>
-								
-										<option label="Marine Corps - Lance Corporal" value="Lance Corporal">Marine Corps - Lance Corporal</option>
-								
-										<option label="Marine Corps - Private First Class" value="Private First Class">Marine Corps - Private First Class</option>
-								
-										<option label="Marine Corps - Private" value="Private">Marine Corps - Private</option>
-								
-										<option label="Navy - Admiral" value="Admiral">Navy - Admiral</option>
-								
-										<option label="Navy - Vice Admiral" value="Vice Admiral">Navy - Vice Admiral</option>
-								
-										<option label="Navy - Rear Admiral, Upper Half" value="Rear Admiral, Upper Half">Navy - Rear Admiral, Upper Half</option>
-								
-										<option label="Navy - Rear Admiral, Lower Half" value="Rear Admiral, Lower Half">Navy - Rear Admiral, Lower Half</option>
-								
-										<option label="Navy - Captain" value="Captain">Navy - Captain</option>
-								
-										<option label="Navy - Commander" value="Commander">Navy - Commander</option>
-								
-										<option label="Navy - Lieutenant Commander" value="Lieutenant Commander">Navy - Lieutenant Commander</option>
-								
-										<option label="Navy - Lieutenant" value="Lieutenant">Navy - Lieutenant</option>
-								
-										<option label="Navy - Lieutenant Junior Grade" value="Lieutenant Junior Grade">Navy - Lieutenant Junior Grade</option>
-								
-										<option label="Navy - Ensign" value="Ensign">Navy - Ensign</option>
-								
-										<option label="Navy - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">Navy - Chief Warrant Officer - 4</option>
-								
-										<option label="Navy - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">Navy - Chief Warrant Officer - 3</option>
-								
-										<option label="Navy - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">Navy - Chief Warrant Officer - 2</option>
-								
-										<option label="Navy - Master Chief Petty Officer of the Navy" value="Master Chief Petty Officer of the Navy">Navy - Master Chief Petty Officer of the Navy</option>
-								
-										<option label="Navy - Master Chief Petty Officer" value="Master Chief Petty Officer">Navy - Master Chief Petty Officer</option>
-								
-										<option label="Navy - Senior Chief Petty Officer" value="Senior Chief Petty Officer">Navy - Senior Chief Petty Officer</option>
-								
-										<option label="Navy - Chief Petty Officer" value="Chief Petty Officer">Navy - Chief Petty Officer</option>
-								
-										<option label="Navy - Petty Officer First Class" value="Petty Officer First Class">Navy - Petty Officer First Class</option>
-								
-										<option label="Navy - Petty Officer Second Class" value="Petty Officer Second Class">Navy - Petty Officer Second Class</option>
-								
-										<option label="Navy - Petty Officer Third Class" value="Petty Officer Third Class">Navy - Petty Officer Third Class</option>
-								
-										<option label="Navy - Seaman Apprentice" value="Seaman Apprentice">Navy - Seaman Apprentice</option>
-								
-										<option label="Navy - Seaman" value="Seaman">Navy - Seaman</option>
-								
-										<option label="Navy - Seaman Recruit" value="Seaman Recruit">Navy - Seaman Recruit</option>
-								
-
-							</select>
-						</div>
-						<div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-
-
-   								<label for="fname">First Name <abbr title="required">*</abbr></label>
-                               <input class="form-control" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
-							    </div>
-                            </div>
-                            <div class="col-md-6">
-                            	 <div class="form-group">
-                                <label for="lname">Last Name <abbr title="required">*</abbr></label>
-                                <input class="form-control" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
-								 </div>
-                            </div>
-						</div>
-					</fieldset>
-
-					<fieldset>
-						<legend>Your Contact Information</legend>
-
-                        <div class="form-group">
-						<label class="" for="mailing_streetAddress1">Street Address <abbr title="Your street address is a required field">*</abbr></label>
-						<input class="form-control" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
-						</div>
-                        <div class="form-group">
-						<label class="" for="mailing_streetAddress2">Street Address (2)</label>
-						<input class="form-control" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
-						</div>
-						<div class="row">
-							<div class="col-md-7">
-								 <div class="form-group">
-								<label for="mailing_city">City <abbr title="Your city is a required field">*</abbr></label>
-								<input class="form-control" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
-								</div>
-							</div>
-							<div class="col-md-2">
-								 <div class="form-group">
-								<label for="state">State <abbr title="Your State is a required field">*</abbr></label>
-								
-
-		
-
-	
-
-	
-
-
-	
-
-
-
-
-
-		
-			
-			
-			
-
-
-	
-	
-	
-	<select name="state" id="state" class="form-control">
-	
-	<option value="null">--</option>
-	<option value="AK">AK</option>
-	<option value="AL">AL</option>
-	<option value="AR">AR</option>
-	<option value="AZ">AZ</option>
-	<option value="CA">CA</option>
-	<option value="CO">CO</option>
-	<option value="CT">CT</option>
-	<option value="DC">DC</option>
-	<option value="DE">DE</option>
-	<option value="FL">FL</option>
-	<option value="GA">GA</option>
-	<option value="HI">HI</option>
-	<option value="IA">IA</option>
-	<option value="ID">ID</option>
-	<option value="IL" selected="selected">IL</option>
-	<option value="IN">IN</option>
-	<option value="KS">KS</option>
-	<option value="KY">KY</option>
-	<option value="LA">LA</option>
-	<option value="MA">MA</option>
-	<option value="MD">MD</option>
-	<option value="ME">ME</option>
-	<option value="MI">MI</option>
-	<option value="MN">MN</option>
-	<option value="MO">MO</option>
-	<option value="MS">MS</option>
-	<option value="MT">MT</option>
-	<option value="NC">NC</option>
-	<option value="ND">ND</option>
-	<option value="NE">NE</option>
-	<option value="NH">NH</option>
-	<option value="NJ">NJ</option>
-	<option value="NM">NM</option>
-	<option value="NV">NV</option>
-	<option value="NY">NY</option>
-	<option value="OH">OH</option>
-	<option value="OK">OK</option>
-	<option value="OR">OR</option>
-	<option value="PA">PA</option>
-	<option value="RI">RI</option>
-	<option value="SC">SC</option>
-	<option value="SD">SD</option>
-	<option value="TN">TN</option>
-	<option value="TX">TX</option>
-	<option value="UT">UT</option>
-	<option value="VA">VA</option>
-	<option value="VT">VT</option>
-	<option value="WA">WA</option>
-	<option value="WI">WI</option>
-	<option value="WV">WV</option>
-	<option value="WY">WY</option>
-	</select>
-	
-	
-								</div>
-							</div>
-							<div class="col-md-3">
-								 <div class="form-group">
-								<label for="mailing_zipCode">Zip Code <abbr title="Your zip code is a required field">*</abbr></label>
-								<input class="form-control" type="text" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-                        	<label for="home_phone_number">Home Phone <abbr title="Your Phone number is a required field">*</abbr></label>
-                        	<input type="text" name="home_phone_number" id="home_phone_number" class="form-control" aria-required="true" placeholder="Required" required>
-						</div>
-						<div class="row">
-                            <div class="col-md-6">
-								<div class="form-group">
-                                <label for="email_address">E-mail <abbr title="Your e-mail address is a required field">*</abbr></label>
-                                <input type="text" name="email_address" aria-required="true" id="email" class="form-control" placeholder="Required" required>
-								</div>
-                            </div>
-                            <div class="col-md-6">
-								<div class="form-group">
-                                <label for="verify_email">Verify E-mail <abbr title="Please confirm your e-mail address">*</abbr></label>
-                                <input type="text" name="verify_email" id="verify_email" aria-required="true" class="form-control" placeholder="Required" required>
-								</div>
-                            </div>
-						</div>
-					</fieldset>
-
-					
-					<fieldset>
-
-						<legend>Your Message</legend>
-
-						
-						<div class="form-group">
-
-							<label class="control-label" for="subject">Message Topic</label>
-
-							<div id="issueLabel"></div>
-
-
-							
-
-
-						</div>
-
-						<div class="form-group">
-                        	<label for="subjecttext">Subject </label>
-                        	<input type="text" name="subjecttext" id="subjecttext" class="form-control">
-						</div>
-
-						<div class="form-group">
-							<label for="message">Comments<abbr title="Please enter your message">*</abbr></label>
-							<textarea id="message" class="form-control" rows="10" name="message" aria-required="true" Placeholder="Required" required></textarea>
-						</div>
-
-					   <div class="form-group checkbox">
-						    <label for="newsletter" class="checkbox">
-							<input name="newsletter" id="newsletter" value="Y" type="checkbox" >
-							<strong>Subscribe to my email newsletter</strong> </label>
-					   </div>
-
-
-					   <div class="form-group checkbox">
-							<label for="response" class="checkbox">
-							<input name="response" id="response" value="Y" type="checkbox" >
-							<strong>I would like a response from the Senator</strong> </label>
-					   </div>
-
-
-					</fieldset>
-
-					
-					<input class="btn" type="submit" id="side-search-btn" value="Send" />
-
-				</div>
-
-
-			</form>
+<form id="sitesearch" role="search" method="get" action="/search" class="pull-right form-inline">
+<input type="search" id="search-field" name="q" placeholder="Search">
+<button type="submit">
+<span class="glyphicon glyphicon-search">
+</span>
+</button>
+</form>
+<form method="post" action="/contact/newsletter" enctype="application/x-www-form-urlencoded" class="form-inline">
+<input type="email" id="header_email_address" placeholder="Sign up for the email newsletter" name="header_email_address" required="">
+<input type="submit" class="btn btn-sm" id="newslettersubmit" value="SIGN UP">
+</form>
+<form id="contactForm"  method="post"  action="/contact/email"  enctype="application/x-www-form-urlencoded" >
+<fieldset>
+<div class="form-group">
+<label class="control-label" for="actions">
+<abbr title="Please select an option">
+</abbr>
+</label>
+<select id="actions" class="form-control" name="actions"  onChange="javascript:getHelp(this.value);">
+<option label="- - Select an option - -" value="select" selected="selected">
+</option>
+<option label="Abortion" value="ABORTION">
+</option>
+<option label="Affordable Care Act Stories" value="ACASTORIES">
+</option>
+<option label="Agriculture" value="AG00">
+</option>
+<option label="Animal Rights" value="AN00">
+</option>
+<option label="Banking/Credit" value="BK00">
+</option>
+<option label="Budget, Federal" value="BUDGET">
+</option>
+<option label="Business/Commerce" value="AA005">
+</option>
+<option label="Campaign Finance/Elections" value="CR00">
+</option>
+<option label="Children Issues" value="CF00">
+</option>
+<option label="Civil Rights and Liberties" value="JC00">
+</option>
+<option label="Crime/Drugs" value="JC00">
+</option>
+<option label="Defense/Military" value="DE00">
+</option>
+<option label="Dietary Supplements" value="DIETSUP">
+</option>
+<option label="Economy" value="EC00">
+</option>
+<option label="Education" value="ED00">
+</option>
+<option label="Energy" value="EN00">
+</option>
+<option label="Environment" value="EV00">
+</option>
+<option label="Foreign Policy" value="FP00">
+</option>
+<option label="Guns" value="GU00">
+</option>
+<option label="Health" value="HE00">
+</option>
+<option label="Homeland Security" value="HM00">
+</option>
+<option label="Housing" value="HS00">
+</option>
+<option label="Immigration" value="IM00">
+</option>
+<option label="Iraq" value="FP00">
+</option>
+<option label="Judicial Nominations" value="JC00">
+</option>
+<option label="Labor/Employment" value="LA00">
+</option>
+<option label="Media/Telecommunications" value="TE00">
+</option>
+<option label="Medicare" value="HE00">
+</option>
+<option label="Middle East" value="FP00">
+</option>
+<option label="Postal Service" value="GA00">
+</option>
+<option label="Social Security/Seniors" value="SS00">
+</option>
+<option label="Taxes" value="TX00">
+</option>
+<option label="Trade" value="TR00">
+</option>
+<option label="Transportation" value="TN00">
+</option>
+<option label="Veterans" value="VA00">
+</option>
+<option label="War" value="FP00">
+</option>
+<option label="Welfare" value="WE00">
+</option>
+<option label="Women's Issues" value="WM00">
+</option>
+<option label="Other" value="OT00">
+</option>
+</select>
+</div>
+</fieldset>
+<div id="more-help">
+</div>
+</div>
+</div>
+<fieldset>
+<legend>
+</legend>
+<div class="form-group">
+<label class="control-label" for="salutation">
+<abbr title="required">
+</abbr>
+</label>
+<select id="salutation" class="form-control" name="salutation" required>
+<option label="Mr." value="Mr.">
+</option>
+<option label="Ms." value="Ms.">
+</option>
+<option label="Mrs." value="Mrs.">
+</option>
+<option label="Professor" value="Professor">
+</option>
+<option label="Dr." value="Dr.">
+</option>
+<option label="Father" value="Father">
+</option>
+<option label="Sister" value="Sister">
+</option>
+<option label="Rabbi" value="Rabbi">
+</option>
+<option label="Reverend" value="Reverend">
+</option>
+<option label="Air Force - General" value="General">
+</option>
+<option label="Air Force - Lieutenant General" value="Lieutenant General">
+</option>
+<option label="Air Force - Major General" value="Major General">
+</option>
+<option label="Air Force - Brigadier General" value="Brigadier General">
+</option>
+<option label="Air Force - Colonel" value="Colonel">
+</option>
+<option label="Air Force - Lieutenant Colonel" value="Lieutenant Colonel">
+</option>
+<option label="Air Force - Major" value="Major">
+</option>
+<option label="Air Force - Captain" value="Captain">
+</option>
+<option label="Air Force - First Lieutenant" value="First Lieutenant">
+</option>
+<option label="Air Force - Second Lieutenant" value="Second Lieutenant">
+</option>
+<option label="Air Force - Chief Master Sergeant of the Air Force" value="Chief Master Sergeant of the Air Force">
+</option>
+<option label="Air Force - Command Chief Master Sergeant" value="Command Chief Master Sergeant">
+</option>
+<option label="Air Force - First Sergeant (E-9)" value="First Sergeant (E-9)">
+</option>
+<option label="Air Force - Chief Master Sergeant" value="Chief Master Sergeant">
+</option>
+<option label="Air Force - First Sergeant (E-8)" value="First Sergeant (E-8)">
+</option>
+<option label="Air Force - Senior Master Sergeant" value="Senior Master Sergeant">
+</option>
+<option label="Air Force - First Sergeant (E-7)" value="First Sergeant (E-7)">
+</option>
+<option label="Air Force - Master Sergeant" value="Master Sergeant">
+</option>
+<option label="Air Force - Technical Sergeant" value="Technical Sergeant">
+</option>
+<option label="Air Force - Staff Sergeant" value="Staff Sergeant">
+</option>
+<option label="Air Force - Senior Airman" value="Senior Airman">
+</option>
+<option label="Air Force - Airman First Class" value="Airman First Class">
+</option>
+<option label="Air Force - Airman" value="Airman">
+</option>
+<option label="Air Force - Airman Basic" value="Airman Basic">
+</option>
+<option label="Army - General" value="General">
+</option>
+<option label="Army - Lieutenant General" value="Lieutenant General">
+</option>
+<option label="Army - Major General" value="Major General">
+</option>
+<option label="Army - Brigadier General" value="Brigadier General">
+</option>
+<option label="Army - Colonel" value="Colonel">
+</option>
+<option label="Army - Lieutenant Colonel" value="Lieutenant Colonel">
+</option>
+<option label="Army - Major" value="Major">
+</option>
+<option label="Army - Captain" value="Captain">
+</option>
+<option label="Army - First Lieutenant" value="First Lieutenant">
+</option>
+<option label="Army - Second Lieutenant" value="Second Lieutenant">
+</option>
+<option label="Army - Chief Warrant Officer - 5" value="Chief Warrant Officer - 5">
+</option>
+<option label="Army - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">
+</option>
+<option label="Army - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">
+</option>
+<option label="Army - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">
+</option>
+<option label="Army - Warrant Officer" value="Warrant Officer">
+</option>
+<option label="Army - Sergeant Major of the Army" value="Sergeant Major of the Army">
+</option>
+<option label="Army - Command Sergeant Major" value="Command Sergeant Major">
+</option>
+<option label="Army - Sergeant Major" value="Sergeant Major">
+</option>
+<option label="Army - First Sergeant" value="First Sergeant">
+</option>
+<option label="Army - Master Sergeant" value="Master Sergeant">
+</option>
+<option label="Army - Sergeant First Class" value="Sergeant First Class">
+</option>
+<option label="Army - Staff Sergeant" value="Staff Sergeant">
+</option>
+<option label="Army - Sergeant" value="Sergeant">
+</option>
+<option label="Army - Corporal" value="Corporal">
+</option>
+<option label="Army - Specialist" value="Specialist">
+</option>
+<option label="Army - Private First Class" value="Private First Class">
+</option>
+<option label="Army - Private (E-2)" value="Private (E-2)">
+</option>
+<option label="Army - Private" value="Private">
+</option>
+<option label="Coast Guard - Admiral" value="Admiral">
+</option>
+<option label="Coast Guard - Vice Admiral" value="Vice Admiral">
+</option>
+<option label="Coast Guard - Rear Admiral, Upper Half" value="Rear Admiral, Upper Half">
+</option>
+<option label="Coast Guard - Rear Admiral, Lower Half" value="Rear Admiral, Lower Half">
+</option>
+<option label="Coast Guard - Captain" value="Captain">
+</option>
+<option label="Coast Guard - Commander" value="Commander">
+</option>
+<option label="Coast Guard - Lieutenant Commander" value="Lieutenant Commander">
+</option>
+<option label="Coast Guard - Lieutenant" value="Lieutenant">
+</option>
+<option label="Coast Guard - Lieutenant Junior Grade" value="Lieutenant Junior Grade">
+</option>
+<option label="Coast Guard - Ensign" value="Ensign">
+</option>
+<option label="Coast Guard - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">
+</option>
+<option label="Coast Guard - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">
+</option>
+<option label="Coast Guard - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">
+</option>
+<option label="Coast Guard - Master Chief Petty Officer of the Coast Guard" value="Master Chief Petty Officer of the Coast Guard">
+</option>
+<option label="Coast Guard - Master Chief Petty Officer" value="Master Chief Petty Officer">
+</option>
+<option label="Coast Guard - Senior Chief Petty Officer" value="Senior Chief Petty Officer">
+</option>
+<option label="Coast Guard - Chief Petty Officer" value="Chief Petty Officer">
+</option>
+<option label="Coast Guard - Petty Officer First Class" value="Petty Officer First Class">
+</option>
+<option label="Coast Guard - Petty Officer Second Class" value="Petty Officer Second Class">
+</option>
+<option label="Coast Guard - Petty Officer Third Class" value="Petty Officer Third Class">
+</option>
+<option label="Coast Guard - Seaman" value="Seaman">
+</option>
+<option label="Coast Guard - Seaman Apprentice" value="Seaman Apprentice">
+</option>
+<option label="Coast Guard - Seaman Recruit" value="Seaman Recruit">
+</option>
+<option label="Marine Corps - General" value="General">
+</option>
+<option label="Marine Corps - Lieutenant General" value="Lieutenant General">
+</option>
+<option label="Marine Corps - Major General" value="Major General">
+</option>
+<option label="Marine Corps - Brigadier General" value="Brigadier General">
+</option>
+<option label="Marine Corps - Colonel" value="Colonel">
+</option>
+<option label="Marine Corps - Lieutenant Colonel" value="Lieutenant Colonel">
+</option>
+<option label="Marine Corps - Major" value="Major">
+</option>
+<option label="Marine Corps - Captain" value="Captain">
+</option>
+<option label="Marine Corps - First Lieutenant" value="First Lieutenant">
+</option>
+<option label="Marine Corps - Second Lieutenant" value="Second Lieutenant">
+</option>
+<option label="Marine Corps - Chief Warrant Officer - 5" value="Chief Warrant Officer - 5">
+</option>
+<option label="Marine Corps - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">
+</option>
+<option label="Marine Corps - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">
+</option>
+<option label="Marine Corps - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">
+</option>
+<option label="Marine Corps - Warrant Officer" value="Warrant Officer">
+</option>
+<option label="Marine Corps - Sergeant Major of the Marine Corps" value="Sergeant Major of the Marine Corps">
+</option>
+<option label="Marine Corps - Sergeant Major" value="Sergeant Major">
+</option>
+<option label="Marine Corps - Master Gunnery Sergeant" value="Master Gunnery Sergeant">
+</option>
+<option label="Marine Corps - First Sergeant" value="First Sergeant">
+</option>
+<option label="Marine Corps - Master Sergeant" value="Master Sergeant">
+</option>
+<option label="Marine Corps - Gunnery Sergeant" value="Gunnery Sergeant">
+</option>
+<option label="Marine Corps - Staff Sergeant" value="Staff Sergeant">
+</option>
+<option label="Marine Corps - Sergeant" value="Sergeant">
+</option>
+<option label="Marine Corps - Corporal" value="Corporal">
+</option>
+<option label="Marine Corps - Lance Corporal" value="Lance Corporal">
+</option>
+<option label="Marine Corps - Private First Class" value="Private First Class">
+</option>
+<option label="Marine Corps - Private" value="Private">
+</option>
+<option label="Navy - Admiral" value="Admiral">
+</option>
+<option label="Navy - Vice Admiral" value="Vice Admiral">
+</option>
+<option label="Navy - Rear Admiral, Upper Half" value="Rear Admiral, Upper Half">
+</option>
+<option label="Navy - Rear Admiral, Lower Half" value="Rear Admiral, Lower Half">
+</option>
+<option label="Navy - Captain" value="Captain">
+</option>
+<option label="Navy - Commander" value="Commander">
+</option>
+<option label="Navy - Lieutenant Commander" value="Lieutenant Commander">
+</option>
+<option label="Navy - Lieutenant" value="Lieutenant">
+</option>
+<option label="Navy - Lieutenant Junior Grade" value="Lieutenant Junior Grade">
+</option>
+<option label="Navy - Ensign" value="Ensign">
+</option>
+<option label="Navy - Chief Warrant Officer - 4" value="Chief Warrant Officer - 4">
+</option>
+<option label="Navy - Chief Warrant Officer - 3" value="Chief Warrant Officer - 3">
+</option>
+<option label="Navy - Chief Warrant Officer - 2" value="Chief Warrant Officer - 2">
+</option>
+<option label="Navy - Master Chief Petty Officer of the Navy" value="Master Chief Petty Officer of the Navy">
+</option>
+<option label="Navy - Master Chief Petty Officer" value="Master Chief Petty Officer">
+</option>
+<option label="Navy - Senior Chief Petty Officer" value="Senior Chief Petty Officer">
+</option>
+<option label="Navy - Chief Petty Officer" value="Chief Petty Officer">
+</option>
+<option label="Navy - Petty Officer First Class" value="Petty Officer First Class">
+</option>
+<option label="Navy - Petty Officer Second Class" value="Petty Officer Second Class">
+</option>
+<option label="Navy - Petty Officer Third Class" value="Petty Officer Third Class">
+</option>
+<option label="Navy - Seaman Apprentice" value="Seaman Apprentice">
+</option>
+<option label="Navy - Seaman" value="Seaman">
+</option>
+<option label="Navy - Seaman Recruit" value="Seaman Recruit">
+</option>
+</select>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<label for="fname">
+<abbr title="required">
+</abbr>
+</label>
+<input class="form-control" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label for="lname">
+<abbr title="required">
+</abbr>
+</label>
+<input class="form-control" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="form-group">
+<label class="" for="mailing_streetAddress1">
+<abbr title="Your street address is a required field">
+</abbr>
+</label>
+<input class="form-control" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
+</div>
+<div class="form-group">
+<label class="" for="mailing_streetAddress2">
+</label>
+<input class="form-control" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
+</div>
+<div class="row">
+<div class="col-md-7">
+<div class="form-group">
+<label for="mailing_city">
+<abbr title="Your city is a required field">
+</abbr>
+</label>
+<input class="form-control" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
+</div>
+</div>
+<div class="col-md-2">
+<div class="form-group">
+<label for="state">
+<abbr title="Your State is a required field">
+</abbr>
+</label>
+<select name="state" id="state" class="form-control">
+<option value="null">
+</option>
+<option value="AK">
+</option>
+<option value="AL">
+</option>
+<option value="AR">
+</option>
+<option value="AZ">
+</option>
+<option value="CA">
+</option>
+<option value="CO">
+</option>
+<option value="CT">
+</option>
+<option value="DC">
+</option>
+<option value="DE">
+</option>
+<option value="FL">
+</option>
+<option value="GA">
+</option>
+<option value="HI">
+</option>
+<option value="IA">
+</option>
+<option value="ID">
+</option>
+<option value="IL" selected="selected">
+</option>
+<option value="IN">
+</option>
+<option value="KS">
+</option>
+<option value="KY">
+</option>
+<option value="LA">
+</option>
+<option value="MA">
+</option>
+<option value="MD">
+</option>
+<option value="ME">
+</option>
+<option value="MI">
+</option>
+<option value="MN">
+</option>
+<option value="MO">
+</option>
+<option value="MS">
+</option>
+<option value="MT">
+</option>
+<option value="NC">
+</option>
+<option value="ND">
+</option>
+<option value="NE">
+</option>
+<option value="NH">
+</option>
+<option value="NJ">
+</option>
+<option value="NM">
+</option>
+<option value="NV">
+</option>
+<option value="NY">
+</option>
+<option value="OH">
+</option>
+<option value="OK">
+</option>
+<option value="OR">
+</option>
+<option value="PA">
+</option>
+<option value="RI">
+</option>
+<option value="SC">
+</option>
+<option value="SD">
+</option>
+<option value="TN">
+</option>
+<option value="TX">
+</option>
+<option value="UT">
+</option>
+<option value="VA">
+</option>
+<option value="VT">
+</option>
+<option value="WA">
+</option>
+<option value="WI">
+</option>
+<option value="WV">
+</option>
+<option value="WY">
+</option>
+</select>
+</div>
+</div>
+<div class="col-md-3">
+<div class="form-group">
+<label for="mailing_zipCode">
+<abbr title="Your zip code is a required field">
+</abbr>
+</label>
+<input class="form-control" type="text" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label for="home_phone_number">
+<abbr title="Your Phone number is a required field">
+</abbr>
+</label>
+<input type="text" name="home_phone_number" id="home_phone_number" class="form-control" aria-required="true" placeholder="Required" required>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<label for="email_address">
+<abbr title="Your e-mail address is a required field">
+</abbr>
+</label>
+<input type="text" name="email_address" aria-required="true" id="email" class="form-control" placeholder="Required" required>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label for="verify_email">
+<abbr title="Please confirm your e-mail address">
+</abbr>
+</label>
+<input type="text" name="verify_email" id="verify_email" aria-required="true" class="form-control" placeholder="Required" required>
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="form-group">
+<label class="control-label" for="subject">
+</label>
+<div id="issueLabel">
+</div>
+</div>
+<div class="form-group">
+<label for="subjecttext">
+</label>
+<input type="text" name="subjecttext" id="subjecttext" class="form-control">
+</div>
+<div class="form-group">
+<label for="message">
+<abbr title="Please enter your message">
+</abbr>
+</label>
+<textarea id="message" class="form-control" rows="10" name="message" aria-required="true" Placeholder="Required" required>
+</textarea>
+</div>
+<div class="form-group checkbox">
+<label for="newsletter" class="checkbox">
+<input name="newsletter" id="newsletter" value="Y" type="checkbox" >
+<strong>
+</strong>
+</label>
+</div>
+<div class="form-group checkbox">
+<label for="response" class="checkbox">
+<input name="response" id="response" value="Y" type="checkbox" >
+<strong>
+</strong>
+</label>
+</div>
+</fieldset>
+<input class="btn" type="submit" id="side-search-btn" value="Send" />
+</div>
+</form>

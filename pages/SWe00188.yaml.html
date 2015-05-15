@@ -1,5 +1,290 @@
-There was an error opening http://www4.egov.nh.gov/nhgovernor/comments.asp
-System.Net.WebException: The remote server returned an error: (404) Not Found.
-   at System.Net.WebClient.OpenRead(Uri address)
-   at System.Net.WebClient.OpenRead(String address)
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 197
+<form method="POST" action="comments.asp" ID="Form1">
+<table width="100%" id="formtable" border="0" bordercolor=green cellpadding="3" cellspacing="0">
+<tr>
+<td valign="top">
+<label for="firstname">
+</label>
+<sup>
+</sup>
+</td>
+<td valign="top">
+<input type="text" name="firstname" id="firstname" size="30" maxlength="50" tabindex="1" value="">
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="lastname">
+<sup>
+</sup>
+</label>
+</td>
+<td valign="top">
+<input type="text" name="lastname" id="lastname" size="30" maxlength="50"  tabindex="2" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="address">
+<sup>
+</sup>
+</label>
+<br>
+<td valign="top">
+<input type="text" name="address" id="address" size="50" maxlength="75" tabindex="3" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="address2">
+</label>
+</td>
+<td valign="top">
+<input type="text" name="address2" id="address2" size="50" maxlength="75" tabindex="4" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="city">
+<sup>
+</sup>
+</label>
+<label for="state">
+<sup>
+</sup>
+</label>
+<label for="zip">
+<sup>
+</sup>
+</label>
+</td>
+<td valign="top">
+<input type="text" name="city" id="city" size="25" maxlength="50" tabindex="5" value="" >
+<select name="state" size="1" id="state" tabindex="6">
+<option value="AB" >
+</option>
+<option value="AK" >
+</option>
+<option value="AL" >
+</option>
+<option value="AR" >
+</option>
+<option value="AS" >
+</option>
+<option value="AZ" >
+</option>
+<option value="BC" >
+</option>
+<option value="CA" >
+</option>
+<option value="CO" >
+</option>
+<option value="CT" >
+</option>
+<option value="DC" >
+</option>
+<option value="DE" >
+</option>
+<option value="FL" >
+</option>
+<option value="FM" >
+</option>
+<option value="GA" >
+</option>
+<option value="GU" >
+</option>
+<option value="HI" >
+</option>
+<option value="IA" >
+</option>
+<option value="ID" >
+</option>
+<option value="IL" >
+</option>
+<option value="IN" >
+</option>
+<option value="KS" >
+</option>
+<option value="KY" >
+</option>
+<option value="LA" >
+</option>
+<option value="MA" >
+</option>
+<option value="MB" >
+</option>
+<option value="MD" >
+</option>
+<option value="ME" >
+</option>
+<option value="MH" >
+</option>
+<option value="MI" >
+</option>
+<option value="MN" >
+</option>
+<option value="MO" >
+</option>
+<option value="MP" >
+</option>
+<option value="MS" >
+</option>
+<option value="MT" >
+</option>
+<option value="NB" >
+</option>
+<option value="NC" >
+</option>
+<option value="ND" >
+</option>
+<option value="NE" >
+</option>
+<option value="NH"  selected >
+</option>
+<option value="NJ" >
+</option>
+<option value="NL" >
+</option>
+<option value="NM" >
+</option>
+<option value="NS" >
+</option>
+<option value="NT" >
+</option>
+<option value="NU" >
+</option>
+<option value="NV" >
+</option>
+<option value="NY" >
+</option>
+<option value="OH" >
+</option>
+<option value="OK" >
+</option>
+<option value="ON" >
+</option>
+<option value="OR" >
+</option>
+<option value="PA" >
+</option>
+<option value="PE" >
+</option>
+<option value="PR" >
+</option>
+<option value="PW" >
+</option>
+<option value="QC" >
+</option>
+<option value="RI" >
+</option>
+<option value="SC" >
+</option>
+<option value="SD" >
+</option>
+<option value="SK" >
+</option>
+<option value="TN" >
+</option>
+<option value="TX" >
+</option>
+<option value="UT" >
+</option>
+<option value="VA" >
+</option>
+<option value="VI" >
+</option>
+<option value="VT" >
+</option>
+<option value="WA" >
+</option>
+<option value="WI" >
+</option>
+<option value="WV" >
+</option>
+<option value="WY" >
+</option>
+<option value="YT" >
+</option>
+</select>
+<input type="text" name="zip" id="zip" size="10" maxlength="10" tabindex="7" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="phone">
+<sup>
+</sup>
+</label>
+</td>
+<td valign="top">
+<input type="text" name="phone" id="phone" maxlength="25" size="25" tabindex="8" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="phone">
+</label>
+</td>
+<td valign="top">
+<input type="text" name="alternatePhone" id="Text1" maxlength="25" size="25" tabindex="9" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="fax">
+</label>
+</td>
+<td valign="top">
+<input type="text" name="fax" id="fax" maxlength="25" size="25" tabindex="10" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top" >
+<label for="email">
+<sup>
+</sup>
+</label>
+</td>
+<td valign="top">
+<input type="text" name="email" id="email" maxlength="80" size="50" tabindex="11" value="" >
+</td>
+</tr>
+<tr>
+<td valign="top" >
+<label for="org">
+</label>
+</td>
+<td valign="top">
+<input type="text" name="org" id="org" maxlength="100" size="50" tabindex="12"  value="">
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label for="comments">
+<sup>
+</sup>
+</label>
+</td>
+<td valign="top">
+<noscript>
+</noscript>
+<textarea name="comments" id="comments" cols="50" rows="5" tabindex="13" onkeyup="limitlength(this,800);" wrap=virtual maxLength="800">
+</textarea>
+<br />
+<span id="comments_counter" class="fineprintgray">
+</span>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="3">
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" colspan="3">
+<div align="center">
+<input type="submit" value="Send Comments" tabindex="14" name="sendcomments" ID="Submit1">
+<input type="submit" value="Reset" tabindex="14" name="reset" ID="Submit2">
+</div>
+</td>
+</tr>
+</table>
+</form>

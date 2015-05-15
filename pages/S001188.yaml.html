@@ -1,51 +1,150 @@
-              <form action='/contacts/subscribe' method='post'>
-                <input class='email' id='contact_email' name='contact[email]' type='text' />
-                <input class='submit' type='submit' value='Submit' />
-              </form>
-                      <form action="/contacts" class="formtastic contact" id="new_contact" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="yX48BmWk1CIPnWSwZbAcgCF2sMAZSUx/SEygxHetH78=" /></div>
-                        <fieldset>
-                          <legend>Email</legend>
-                  <fieldset class="inputs"><ol><li>
-                    <label for="contact_salutation">Salutation</label>
-                    <select id="contact_salutation" name="contact[salutation]"><option value="Mr.">Mr.</option>
-                    <option value="Mrs.">Mrs.</option>
-                    <option value="Ms.">Ms.</option>
-                    <option value="Dr.">Dr.</option>
-                    <option value="Rev.">Rev.</option>
-                    <option value="Other">Other</option></select>
-                  </li>
-                  <li class="string required" id="contact_first_name_input"><label for="contact_first_name">First name<abbr title="required">*</abbr></label><input id="contact_first_name" maxlength="255" name="contact[first_name]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_last_name_input"><label for="contact_last_name">Last name<abbr title="required">*</abbr></label><input id="contact_last_name" maxlength="255" name="contact[last_name]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_address_input"><label for="contact_address">Address<abbr title="required">*</abbr></label><input id="contact_address" maxlength="255" name="contact[address]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_city_input"><label for="contact_city">City<abbr title="required">*</abbr></label><input id="contact_city" maxlength="255" name="contact[city]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_postal_code_input"><label for="contact_postal_code">Postal code<abbr title="required">*</abbr></label><input id="contact_postal_code" maxlength="255" name="contact[postal_code]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_primary_phone_input"><label for="contact_primary_phone">Primary phone<abbr title="required">*</abbr></label><input id="contact_primary_phone" maxlength="255" name="contact[primary_phone]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_email_input"><label for="contact_email">Email<abbr title="required">*</abbr></label><input id="contact_email" maxlength="255" name="contact[email]" size="50" type="text" /></li>
-                  <li class="string required" id="contact_subject_input"><label for="contact_subject">Subject<abbr title="required">*</abbr></label><input id="contact_subject" maxlength="255" name="contact[subject]" size="50" type="text" /></li>
-                  <li class="select required" id="contact_topic_input"><label for="contact_topic">Topic<abbr title="required">*</abbr></label><select id="contact_topic" name="contact[topic]"><option value="">-- Select a Topic --</option>
-                  <option value="Hoosier Solutions">Hoosier Solutions</option>
-                  <option value="Legislation">Legislation</option>
-                  <option value="Help with Federal Agency">Help with Federal Agency</option></select></li>
-                  <li class="text required" id="contact_message_input"><label for="contact_message">Message<abbr title="required">*</abbr></label><textarea cols="40" id="contact_message" name="contact[message]" rows="8"></textarea></li>
-                  </ol></fieldset><fieldset class="buttons"><ol><li class="commit"><input class="create" id="contact_submit" name="commit" type="submit" value="Send Message" /></li>
-                  </ol></fieldset>      </fieldset>
-                      </form>
-                    <form action="/poll_results" class="new_poll_result" id="new_poll_result" method="post" onsubmit="jQuery.ajax({data:jQuery.param(jQuery(this).serializeArray()), dataType:'script', type:'post', url:'/poll_results', success: function (results) {$('#poll-wrapper').html(results)}}); return false;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="yX48BmWk1CIPnWSwZbAcgCF2sMAZSUx/SEygxHetH78=" /></div>
-                    
-                      <p>
-                        <input id="poll_result_poll_answer_id_42" name="poll_result[poll_answer_id]" type="radio" value="42" />
-                        <label for="poll_result_poll_answer_id_42">No</label>
-                      </p>
-                      <p>
-                        <input id="poll_result_poll_answer_id_43" name="poll_result[poll_answer_id]" type="radio" value="43" />
-                        <label for="poll_result_poll_answer_id_43">Yes</label>
-                      </p>
-                      <p>
-                        <input id="poll_result_poll_answer_id_44" name="poll_result[poll_answer_id]" type="radio" value="44" />
-                        <label for="poll_result_poll_answer_id_44">Undecided</label>
-                      </p>
-                      <p>
-                        <input id="poll_result_email" name="poll_result[email]" onblur="if (this.value == '') {this.value = 'Enter email address';}" onfocus="if (this.value == 'Enter email address') {this.value = '';}" size="30" type="text" value="Enter email address" />
-                        <input id="poll_result_submit" name="commit" src="/images/stutzman/submit.jpg" type="image" value="Submit" />
-                      </p>
-                    </form>
+<form action='/contacts/subscribe' method='post'>
+<input class='email' id='contact_email' name='contact[email]' type='text' />
+<input class='submit' type='submit' value='Submit' />
+</form>
+<form action="/contacts" class="formtastic contact" id="new_contact" method="post">
+<div style="margin:0;padding:0;display:inline">
+</div>
+<fieldset>
+<legend>
+</legend>
+<fieldset class="inputs">
+<ol>
+<li>
+<label for="contact_salutation">
+</label>
+<select id="contact_salutation" name="contact[salutation]">
+<option value="Mr.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Dr.">
+</option>
+<option value="Rev.">
+</option>
+<option value="Other">
+</option>
+</select>
+</li>
+<li class="string required" id="contact_first_name_input">
+<label for="contact_first_name">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_first_name" maxlength="255" name="contact[first_name]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_last_name_input">
+<label for="contact_last_name">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_last_name" maxlength="255" name="contact[last_name]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_address_input">
+<label for="contact_address">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_address" maxlength="255" name="contact[address]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_city_input">
+<label for="contact_city">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_city" maxlength="255" name="contact[city]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_postal_code_input">
+<label for="contact_postal_code">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_postal_code" maxlength="255" name="contact[postal_code]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_primary_phone_input">
+<label for="contact_primary_phone">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_primary_phone" maxlength="255" name="contact[primary_phone]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_email_input">
+<label for="contact_email">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_email" maxlength="255" name="contact[email]" size="50" type="text" />
+</li>
+<li class="string required" id="contact_subject_input">
+<label for="contact_subject">
+<abbr title="required">
+</abbr>
+</label>
+<input id="contact_subject" maxlength="255" name="contact[subject]" size="50" type="text" />
+</li>
+<li class="select required" id="contact_topic_input">
+<label for="contact_topic">
+<abbr title="required">
+</abbr>
+</label>
+<select id="contact_topic" name="contact[topic]">
+<option value="">
+</option>
+<option value="Hoosier Solutions">
+</option>
+<option value="Legislation">
+</option>
+<option value="Help with Federal Agency">
+</option>
+</select>
+</li>
+<li class="text required" id="contact_message_input">
+<label for="contact_message">
+<abbr title="required">
+</abbr>
+</label>
+<textarea cols="40" id="contact_message" name="contact[message]" rows="8">
+</textarea>
+</li>
+</li>
+<li class="boolean optional" id="contact_subscribe_input">
+<label for="contact_subscribe">
+<input id="contact_subscribe" name="contact[subscribe]" style="padding-left: 0%" type="checkbox" value="1" />
+</label>
+</li>
+</ol>
+</fieldset>
+<fieldset class="buttons">
+<ol>
+<li class="commit">
+<input class="create" id="contact_submit" name="commit" type="submit" value="Send Message" />
+</li>
+</ol>
+</fieldset>
+</fieldset>
+</form>
+<form action="/poll_results" class="new_poll_result" id="new_poll_result" method="post" onsubmit="jQuery.ajax({data:jQuery.param(jQuery(this).serializeArray()), dataType:'script', type:'post', url:'/poll_results', success: function (results) {$('#poll-wrapper').html(results)}}); return false;">
+<div style="margin:0;padding:0;display:inline">
+</div>
+<p>
+<input id="poll_result_poll_answer_id_42" name="poll_result[poll_answer_id]" type="radio" value="42" />
+<label for="poll_result_poll_answer_id_42">
+</label>
+</p>
+<p>
+<input id="poll_result_poll_answer_id_43" name="poll_result[poll_answer_id]" type="radio" value="43" />
+<label for="poll_result_poll_answer_id_43">
+</label>
+</p>
+<p>
+<input id="poll_result_poll_answer_id_44" name="poll_result[poll_answer_id]" type="radio" value="44" />
+<label for="poll_result_poll_answer_id_44">
+</label>
+</p>
+<p>
+<input id="poll_result_email" name="poll_result[email]" onblur="if (this.value == '') {this.value = 'Enter email address';}" onfocus="if (this.value == 'Enter email address') {this.value = '';}" size="30" type="text" value="Enter email address" />
+<input id="poll_result_submit" name="commit" src="/images/stutzman/submit.jpg" type="image" value="Submit" />
+</p>
+</form>

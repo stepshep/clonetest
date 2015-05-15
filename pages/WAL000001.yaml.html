@@ -1,291 +1,395 @@
-<form action="/PBC/MemberEmail/6/0" id="mainForm" method="post"><input data-val="true" data-val-required="The Notification field is required." id="Notification" name="Notification" type="hidden" value="MemberEmail" />    <div id="pageContent" role="main" class="ui-content mainContent ">
-        <div id="CommentHeader">
-            <div class="row-fluid">
-                <div class="span12">
-                    
-                    <span class="headerText">You have selected to e-mail Sen. Michael Baumgartner</span>
-                </div>
-            </div>
-        </div>
-        
-        <br />
-        <div id="subHeader">
-            <div id="billCommentInstructionSubHeader" class="row-fluid">
-                <div class="span12">
-                    <div class="helpSubHeaderText">Fill out the form below to send an email message to your legislator</div>
-                    <div><span class="validationred">Required items marked with *</span></div>
-                </div>
-            </div>
-        </div>
-        <br />
-        <div id="AddressSection">
-
-
+<form action="/PBC/MemberEmail/6/0" id="mainForm" method="post">
+<div id="pageContent" role="main" class="ui-content mainContent ">
+<div id="CommentHeader">
+<div class="row-fluid">
+<div class="span12">
+<span class="headerText">
+</span>
+</div>
+</div>
+</div>
+<br />
+<div id="subHeader">
+<div id="billCommentInstructionSubHeader" class="row-fluid">
+<div class="span12">
+<div class="helpSubHeaderText">
+</div>
+<div>
+<span class="validationred">
+</span>
+</div>
+</div>
+</div>
+</div>
+<br />
+<div id="AddressSection">
 <div id="AddressSectionContainer">
-    <div class=" row-fluid">
-        <div id="AddressSectionHeader" class="span12">
-            <div class="helpSubHeaderText">Verify your legislative district</div>
-            <span>Please enter your home address below:</span>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div id="LocationSectionBody" class="span12 row-fluid">
-            <div id="AddressFields" class="span12 row-fluid">
-                <span class="span1 labelStreet"><label class="labelForOverride" for="Address_Street">Street Address:</label><span class="validationred">*</span></span>
-                <span class="txtBox span4">
-                    <input class="AddressField" data-mini="true" data-val="true" data-val-required="Street is required." id="Address_Street" name="Address.Street" type="text" value="" />
-                    <span id="streetValidationMessage" class="row-fluid validationred">
-                        <span class="field-validation-valid" data-valmsg-for="Address.Street" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-                <span class="label span1"><label class="labelForOverride" for="Address_City">City:</label><span class="validationred">*</span></span>
-                <span class="txtBoxCity span2">
-                    <input class="AddressField" data-mini="true" data-val="true" data-val-required="City is required." id="Address_City" name="Address.City" type="text" value="" />
-                    <span id="cityValidationMessage" class="row-fluid validationred">
-                        <span class="field-validation-valid" data-valmsg-for="Address.City" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-                <span class="span1 labelState"><label class="labelForOverride" for="Address_State">State:</label><span class="validationred">*</span></span>
-                <span class="span1 stateTextBox">
-                    <input class="AddressField" data-mini="true" data-val="true" data-val-required="State is required." id="Address_State" name="Address.State" type="text" value="WA" />
-                    <span id="stateValidationMessage" class="row-fluid validationred">
-                        <span class="field-validation-valid" data-valmsg-for="Address.State" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-                <span class="label span1"><label class="labelForOverride" for="Address_Zip">Zip:</label><span class="validationred">*</span></span>
-                <span class="span1 zipTextBox">
-                    <input class="AddressField" data-mini="true" data-val="true" data-val-regex="Invalid Zip" data-val-regex-pattern="^\d{5}(-\d{4})?$" data-val-required="Zip is required." id="Address_Zip" name="Address.Zip" type="text" value="" />
-                    <span id="zipValidationMessage" class="row-fluid validationred">
-                        <span class="field-validation-valid" data-valmsg-for="Address.Zip" data-valmsg-replace="true"></span>
-                    </span>
-
-                </span>
-            </div>
-            <div class="row-fluid">
-                
-                <div class="span12 validateAddressButtonSpan">
-                    <input type="button" value="Verify District" id="ValidateAddressButton" data-role="button" data-mini="true" />
-                </div>
-            </div>
-            <div id="validationResults" class="row-fluid">
-                <div class="span12 addressValidationMessage">
-                    
-                    <span class="validationred">
-                        <span class="field-validation-valid" data-valmsg-for="Address.IsValidated" data-valmsg-replace="true"></span>
-                    </span>
-                    <div id="DistrictTextContainer">
-                        <span id="DistrictLabel">
-                        </span>
-                        <span id="mayContinueMessageContainer">
-                            <span class="addressValidationMessage">
-                                <span id="mayContinueMessage"></span>
-                            </span>
-                        </span>
-                        <span id="DistrictLegislators"></span>
-                    </div>
-
-                </div>
-            </div> 
-        </div>
-    </div>
+<div class=" row-fluid">
+<div id="AddressSectionHeader" class="span12">
+<div class="helpSubHeaderText">
 </div>
-
-        </div>
-        
-        
-
-        <div id="ContactInfoSection">
-
+<span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div id="LocationSectionBody" class="span12 row-fluid">
+<div id="AddressFields" class="span12 row-fluid">
+<span class="span1 labelStreet">
+<label class="labelForOverride" for="Address_Street">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="txtBox span4">
+<input class="AddressField" data-mini="true" data-val="true" data-val-required="Street is required." id="Address_Street" name="Address.Street" type="text" value="" />
+<span id="streetValidationMessage" class="row-fluid validationred">
+<span class="field-validation-valid" data-valmsg-for="Address.Street" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+<span class="label span1">
+<label class="labelForOverride" for="Address_City">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="txtBoxCity span2">
+<input class="AddressField" data-mini="true" data-val="true" data-val-required="City is required." id="Address_City" name="Address.City" type="text" value="" />
+<span id="cityValidationMessage" class="row-fluid validationred">
+<span class="field-validation-valid" data-valmsg-for="Address.City" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+<span class="span1 labelState">
+<label class="labelForOverride" for="Address_State">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="span1 stateTextBox">
+<input class="AddressField" data-mini="true" data-val="true" data-val-required="State is required." id="Address_State" name="Address.State" type="text" value="WA" />
+<span id="stateValidationMessage" class="row-fluid validationred">
+<span class="field-validation-valid" data-valmsg-for="Address.State" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+<span class="label span1">
+<label class="labelForOverride" for="Address_Zip">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="span1 zipTextBox">
+<input class="AddressField" data-mini="true" data-val="true" data-val-regex="Invalid Zip" data-val-regex-pattern="^\d{5}(-\d{4})?$" data-val-required="Zip is required." id="Address_Zip" name="Address.Zip" type="text" value="" />
+<span id="zipValidationMessage" class="row-fluid validationred">
+<span class="field-validation-valid" data-valmsg-for="Address.Zip" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+</div>
+<div class="row-fluid">
+<div class="span12 validateAddressButtonSpan">
+<input type="button" value="Verify District" id="ValidateAddressButton" data-role="button" data-mini="true" />
+</div>
+</div>
+<div id="validationResults" class="row-fluid">
+<div class="span12 addressValidationMessage">
+<span class="validationred">
+<span class="field-validation-valid" data-valmsg-for="Address.IsValidated" data-valmsg-replace="true">
+</span>
+</span>
+<div id="DistrictTextContainer">
+<span id="DistrictLabel">
+</span>
+<span id="mayContinueMessageContainer">
+<span class="addressValidationMessage">
+<span id="mayContinueMessage">
+</span>
+</span>
+</span>
+<span id="DistrictLegislators">
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ContactInfoSection">
 <div id="ContactInfoContainer" class="row-fluid">
-    <div id="ContactInfoParentSection">
-        <div id="ContactInfoHeader" class="row-fluid">
-            <span class="span12 helpSubHeaderText">Enter your contact information</span>
-        </div>
-        <div id="ContactInfo">
-            <div id="NameSection" class="row-fluid">
-                
-                
-                <span class="span2 labelContact"><label class="labelForOverride" for="FirstName">First Name:</label><span class="validationred">*</span></span>
-                <span class="span4">
-                    <input data-mini="true" data-val="true" data-val-required="First Name is required." id="FirstName" name="FirstName" type="text" value="" />
-                    <span id="firstNameValidationMessage" class="validationred">
-                        <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-                <span class="span2 labelContact"><label class="labelForOverride" for="LastName">Last Name:</label><span class="validationred">*</span></span>
-                <span class="span4">
-                    <input data-mini="true" data-val="true" data-val-required="Last Name is required." id="LastName" name="LastName" type="text" value="" />
-                    <span id="lastNameValidationMessage" class="validationred">
-                        <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-            </div>
-            <div id="PhoneAndEmailSection" class="row-fluid">
-                <span class="span2 labelContact"><label class="labelForOverride" for="Email">Email:</label><span class="validationred">*</span></span>
-                <span class="span4">
-                    <input data-mini="true" data-val="true" data-val-email="Email address must be properly formatted." data-val-required="Email address is required." id="Email" name="Email" type="text" value="" />
-                    <span id="emailValidationMessage" class="validationred">
-                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-                <span class="span2 labelContact"><label class="labelForOverride" for="ConfirmEmail">Confirm Email:</label><span class="validationred">*</span></span>
-                <span class="span4">
-                    <input data-mini="true" data-val="true" data-val-equalto="Email and confirm email do not match." data-val-equalto-other="*.Email" id="ConfirmEmail" name="ConfirmEmail" type="text" value="" />
-                    <span id="confirmEmailValidationMessage" class="validationred">
-                        <span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-            </div>
-            <div id="PhoneSection" class="row-fluid">
-                <span class="span2 labelContact"><label class="labelForOverride" for="PhoneNumber">Phone Number:</label></span>
-                <span class="span4">
-                    <input data-mini="true" data-val="true" data-val-regex="Entered phone format is not valid." data-val-regex-pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" id="PhoneNumber" name="PhoneNumber" type="text" value="" />
-                    <span id="phoneValidationMessage" class="validationred">
-                       <span class="field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
-                    </span>
-                </span>
-                <span class="span6 phoneExample">ex. 3605551234 or (360) 555-1234</span>
-        </div>
-
-    </div>
+<div id="ContactInfoParentSection">
+<div id="ContactInfoHeader" class="row-fluid">
+<span class="span12 helpSubHeaderText">
+</span>
+</div>
+<div id="ContactInfo">
+<div id="NameSection" class="row-fluid">
+<span class="span2 labelContact">
+<label class="labelForOverride" for="FirstName">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="span4">
+<input data-mini="true" data-val="true" data-val-required="First Name is required." id="FirstName" name="FirstName" type="text" value="" />
+<span id="firstNameValidationMessage" class="validationred">
+<span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+<span class="span2 labelContact">
+<label class="labelForOverride" for="LastName">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="span4">
+<input data-mini="true" data-val="true" data-val-required="Last Name is required." id="LastName" name="LastName" type="text" value="" />
+<span id="lastNameValidationMessage" class="validationred">
+<span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+</div>
+<div id="PhoneAndEmailSection" class="row-fluid">
+<span class="span2 labelContact">
+<label class="labelForOverride" for="Email">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="span4">
+<input data-mini="true" data-val="true" data-val-email="Email address must be properly formatted." data-val-required="Email address is required." id="Email" name="Email" type="text" value="" />
+<span id="emailValidationMessage" class="validationred">
+<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+<span class="span2 labelContact">
+<label class="labelForOverride" for="ConfirmEmail">
+</label>
+<span class="validationred">
+</span>
+</span>
+<span class="span4">
+<input data-mini="true" data-val="true" data-val-equalto="Email and confirm email do not match." data-val-equalto-other="*.Email" id="ConfirmEmail" name="ConfirmEmail" type="text" value="" />
+<span id="confirmEmailValidationMessage" class="validationred">
+<span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+</div>
+<div id="PhoneSection" class="row-fluid">
+<span class="span2 labelContact">
+<label class="labelForOverride" for="PhoneNumber">
+</label>
+</span>
+<span class="span4">
+<input data-mini="true" data-val="true" data-val-regex="Entered phone format is not valid." data-val-regex-pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" id="PhoneNumber" name="PhoneNumber" type="text" value="" />
+<span id="phoneValidationMessage" class="validationred">
+<span class="field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="true">
+</span>
+</span>
+</span>
+<span class="span6 phoneExample">
+</span>
 </div>
 </div>
-        </div>
-        <br />
-        <div id="sectionLabel" class="helpSubHeaderText">
-            Enter your message to Sen. Michael Baumgartner
-        </div>
-        <div id="billCommentDisclaimer">
-            Would you like to leave a bill comment as well? <em>Note: If you fill in the bill comment fields, the contents of your message will be visible to legislators in all districts.</em>
-        </div>
-        <div id="BillSection">
-
+</div>
+</div>
+</div>
+<br />
+<div id="sectionLabel" class="helpSubHeaderText">
+</div>
+<div id="billCommentDisclaimer">
+<em>
+</em>
+</div>
+<div id="BillSection">
 <div id="BillContainer">
-    <div class="row-fluid">
-        <div class="span4">
-                <table>
-                    <tr>
-                        <td><label class="labelForOverride" for="BillNumber">Bill Number:</label></td>
-                        <td class="smallExample">(Optional, example: 1234)</td>
-                    </tr>
-                    <tr>
-                        <td><span id="billTextBox"><input data-mini="true" data-val="true" data-val-regex="Invalid Bill Number" data-val-regex-pattern="^\d{3,4}$" id="BillNumber" name="BillNumber" type="text" value="" /></span></td>
-                        <td>
-                            <input type="button" id="EditBillButton" value="Find Bill" data-role="button" data-mini="true"/>
-                        </td>
-                    </tr>
-                </table>
-        </div>
-        <div class="span8 billDescriptionContainer">
-            <div class="descriptionLabel">Bill Description:</div>
-            <div id="BriefDescriptionContent">
-                <div id="BriefDescription"></div>
-            </div>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <span class="validationred">
-            <span class="field-validation-valid" data-valmsg-for="BillNumber" data-valmsg-replace="true"></span>
-        </span>
-    </div>
+<div class="row-fluid">
+<div class="span4">
+<table>
+<tr>
+<td>
+<label class="labelForOverride" for="BillNumber">
+</label>
+</td>
+<td class="smallExample">
+</td>
+</tr>
+<tr>
+<td>
+<span id="billTextBox">
+<input data-mini="true" data-val="true" data-val-regex="Invalid Bill Number" data-val-regex-pattern="^\d{3,4}$" id="BillNumber" name="BillNumber" type="text" value="" />
+</span>
+</td>
+<td>
+<input type="button" id="EditBillButton" value="Find Bill" data-role="button" data-mini="true"/>
+</td>
+</tr>
+</table>
 </div>
-
-        </div>
-
-        <div id="CommentSection" class="row-fluid">
-
+<div class="span8 billDescriptionContainer">
+<div class="descriptionLabel">
+</div>
+<div id="BriefDescriptionContent">
+<div id="BriefDescription">
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<span class="validationred">
+<span class="field-validation-valid" data-valmsg-for="BillNumber" data-valmsg-replace="true">
+</span>
+</span>
+</div>
+</div>
+</div>
+<div id="CommentSection" class="row-fluid">
 <div id="CommentSectionBody">
-    <div class="row-fluid">
-        <div class="span12 ">
-            <label for="RadioPositions">Position:</label><span id="dynamicPosition" class="smallExample">(Optional)</span>            <div>
-                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-<input data-model="Support" data-val="true" data-val-number="The field SelectedPositionId must be a number." data-val-requiredif="Position is required to comment on a bill." data-val-requiredif-comparisonvalue="" data-val-requiredif-condition="2" data-val-requiredif-metconditiononserver="0" data-val-requiredif-propertyname="BillNumber" id="Support" name="SelectedPositionId" type="radio" value="1" /><label for="Support">Support</label><input data-model="Oppose" id="Oppose" name="SelectedPositionId" type="radio" value="2" /><label for="Oppose">Oppose</label><input data-model="Neutral" id="Neutral" name="SelectedPositionId" type="radio" value="3" /><label for="Neutral">Neutral</label>
-                </fieldset>
-            </div>
-            </div>
-            <div class="row-fluid">
-                <span class="validationred"><span class="field-validation-valid" data-valmsg-for="SelectedPositionId" data-valmsg-replace="true"></span></span>
-            </div>
-        <br />
-            
-                <div class="row-fluid">
-                    <div class="span12">
-                        <span><label class="labelForOverride" for="CommentSubject">Subject:</label><span class="validationred">*</span>
-                            <span class="smallExample">(100-character limit)</span>
-                        </span>
-                        <span><input data-val="true" data-val-requiredif="Subject is required." data-val-requiredif-comparisonvalue="" data-val-requiredif-condition="2" data-val-requiredif-metconditiononserver="1" data-val-requiredif-propertyname="PrimaryResponseMember" id="CommentSubject" maxlength="100" name="CommentSubject" type="text" value="" /></span>
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <span class="validationred">
-                        <span class="field-validation-valid" data-valmsg-for="CommentSubject" data-valmsg-replace="true"></span>
-                    </span>
-                </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <span>
-<label class="labelForOverride" for="Comment">Message:</label>                        <span class="validationred">*</span>
-                        <span class="smallExample">(<span id="charactersRemaining"></span> characters remaining)</span>
-                    </span>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <div id="textareaContainer"><textarea cols="20" data-val="true" data-val-required="Message is required." id="Comment" maxLength="1000" name="Comment" rows="2">
-</textarea></div>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <span class="validationred"><span class="field-validation-valid" data-valmsg-for="Comment" data-valmsg-replace="true"></span></span>
-                </div>
-            </div>
-        </div>
+<div class="row-fluid">
+<div class="span12 ">
+<label for="RadioPositions">
+</label>
+<span id="dynamicPosition" class="smallExample">
+</span>
+<div>
+<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+<input data-model="Support" data-val="true" data-val-number="The field SelectedPositionId must be a number." data-val-requiredif="Position is required to comment on a bill." data-val-requiredif-comparisonvalue="" data-val-requiredif-condition="2" data-val-requiredif-metconditiononserver="0" data-val-requiredif-propertyname="BillNumber" id="Support" name="SelectedPositionId" type="radio" value="1" />
+<label for="Support">
+</label>
+<input data-model="Oppose" id="Oppose" name="SelectedPositionId" type="radio" value="2" />
+<label for="Oppose">
+</label>
+<input data-model="Neutral" id="Neutral" name="SelectedPositionId" type="radio" value="3" />
+<label for="Neutral">
+</label>
+</fieldset>
 </div>
-        </div>
-
-        <div id="MemberReponseSection">
+</div>
+<div class="row-fluid">
+<span class="validationred">
+<span class="field-validation-valid" data-valmsg-for="SelectedPositionId" data-valmsg-replace="true">
+</span>
+</span>
+</div>
+<br />
+<div class="row-fluid">
+<div class="span12">
+<span>
+<label class="labelForOverride" for="CommentSubject">
+</label>
+<span class="validationred">
+</span>
+<span class="smallExample">
+</span>
+</span>
+<span>
+<input data-val="true" data-val-requiredif="Subject is required." data-val-requiredif-comparisonvalue="" data-val-requiredif-condition="2" data-val-requiredif-metconditiononserver="1" data-val-requiredif-propertyname="PrimaryResponseMember" id="CommentSubject" maxlength="100" name="CommentSubject" type="text" value="" />
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<span class="validationred">
+<span class="field-validation-valid" data-valmsg-for="CommentSubject" data-valmsg-replace="true">
+</span>
+</span>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<span>
+<label class="labelForOverride" for="Comment">
+</label>
+<span class="validationred">
+</span>
+<span class="smallExample">
+<span id="charactersRemaining">
+</span>
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div id="textareaContainer">
+<textarea cols="20" data-val="true" data-val-required="Message is required." id="Comment" maxLength="1000" name="Comment" rows="2">
+</textarea>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<span class="validationred">
+<span class="field-validation-valid" data-valmsg-for="Comment" data-valmsg-replace="true">
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="MemberReponseSection">
 <div id="ResponseRequested_EmailForm">
-    <div class="row-fluid">
-        <div class="span6 labelResponseRequested">
-            <span>Would you like a response from Sen. Michael Baumgartner?</span><span class="validationred">*</span>
-        </div>
-        <div class="span6">
-            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" id="RRControlGroupEmailForm">
-                <input data-val="true" data-val-requiredif="Response selection is required." data-val-requiredif-comparisonvalue="MemberEmail" data-val-requiredif-condition="3" data-val-requiredif-metconditiononserver="0" data-val-requiredif-propertyname="Notification" id="ResponseRequested_True" name="ResponseRequested" type="radio" value="True" />
-                <label for="ResponseRequested_True">Yes</label>
-                <input id="ResponseRequested_False" name="ResponseRequested" type="radio" value="False" />
-                <label for="ResponseRequested_False">No</label>
-            </fieldset>
-        </div>
-        <div class="row-fluid">
-            <span class="validationred"><span class="field-validation-valid" data-valmsg-for="ResponseRequested" data-valmsg-replace="true"></span></span>
-        </div>
-    </div>
-    
-    <div id="MemberResponse_EmailForm" class="row-fluid">
-            <div class="span10 labelResponseRequested">
-                <span>Would you like to send a copy of your email message to the other legislators in
-                    District 6, </span>
-                                <span> and </span>
-            </div>
-            <div class="span2">
-                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-                    <input data-val="true" data-val-required="The SecondaryResponseRequested field is required." id="SecondaryResponseRequested_True" name="SecondaryResponseRequested" type="radio" value="True" />
-                    <label for="SecondaryResponseRequested_True">Yes</label>
-                    <input checked="checked" id="SecondaryResponseRequested_False" name="SecondaryResponseRequested" type="radio" value="False" />
-                    <label for="SecondaryResponseRequested_False">No</label>
-                </fieldset>
-            </div>
-    </div>    
+<div class="row-fluid">
+<div class="span6 labelResponseRequested">
+<span>
+</span>
+<span class="validationred">
+</span>
 </div>
-        </div>
-
-        <div id="SubmitSection" class="row-fluid">
-            <span class="span3">
-                <input type="submit" value="Submit Form" id="FormSubmitButton" />
-            </span>
-            <span class="span9"></span>
-        </div>
-    </div>
+<div class="span6">
+<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" id="RRControlGroupEmailForm">
+<input data-val="true" data-val-requiredif="Response selection is required." data-val-requiredif-comparisonvalue="MemberEmail" data-val-requiredif-condition="3" data-val-requiredif-metconditiononserver="0" data-val-requiredif-propertyname="Notification" id="ResponseRequested_True" name="ResponseRequested" type="radio" value="True" />
+<label for="ResponseRequested_True">
+</label>
+<input id="ResponseRequested_False" name="ResponseRequested" type="radio" value="False" />
+<label for="ResponseRequested_False">
+</label>
+</fieldset>
+</div>
+<div class="row-fluid">
+<span class="validationred">
+<span class="field-validation-valid" data-valmsg-for="ResponseRequested" data-valmsg-replace="true">
+</span>
+</span>
+</div>
+</div>
+<div id="MemberResponse_EmailForm" class="row-fluid">
+<div class="span10 labelResponseRequested">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+<span>
+<span>
+</span>
+</span>
+</div>
+<div class="span2">
+<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+<input data-val="true" data-val-required="The SecondaryResponseRequested field is required." id="SecondaryResponseRequested_True" name="SecondaryResponseRequested" type="radio" value="True" />
+<label for="SecondaryResponseRequested_True">
+</label>
+<input checked="checked" id="SecondaryResponseRequested_False" name="SecondaryResponseRequested" type="radio" value="False" />
+<label for="SecondaryResponseRequested_False">
+</label>
+</fieldset>
+</div>
+</div>
+</div>
+</div>
+<div id="SubmitSection" class="row-fluid">
+<span class="span3">
+<input type="submit" value="Submit Form" id="FormSubmitButton" />
+</span>
+<span class="span9">
+</span>
+</div>
+</div>
 </form>

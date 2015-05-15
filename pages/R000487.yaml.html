@@ -1,114 +1,235 @@
-      <form action="/Search/results.htm" id="cse-search-box">
-      <fieldset>
-        <a target="_blank" href="http://facebook.com/EdRoyce">
-        <a target="_blank" href="http://twitter.com/RepEdRoyce">
-          <a target="_blank" href="http://youtube.com/RepEdRoyce">
-        <label>
-          SEARCH</label>
-        <span>
-        
-        <input type="text" onfocus="this.value=''" value="search" name="q" />
-        </span>
-        <input type="submit" name="sa" class="submit" value="" />
-      </fieldset>
-      </form>
-<form action="http://thomas.loc.gov/cgi-bin/query" method="post">
-    <fieldset><label>Search by Bill Number</label> <span><input name="docid112" type="text" /></span> <input class="submit" type="submit" value=" " /> <label>Search by Word or Phrase</label> <span><input name="queryc112" type="text" /></span> <input class="submit" type="submit" value=" " /> </fieldset>
+<form action="/Search/results.htm" id="cse-search-box">
+<fieldset>
+<a target="_blank" href="http://facebook.com/EdRoyce">
+</a>
+<a target="_blank" href="http://twitter.com/RepEdRoyce">
+</a>
+<a target="_blank" href="http://youtube.com/RepEdRoyce">
+</a>
+<label>
+</label>
+<span>
+<input type="text" onfocus="this.value=''" value="search" name="q" />
+</span>
+<input type="submit" name="sa" class="submit" value="" />
+</fieldset>
 </form>
-		<td class="ContentCell"><span id="ctl00_ctl12_ctl00_Text" class="middlecopy"><form name="contact" id="contactForm" class="zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
-    <table align="center" cellspacing="2" cellpadding="0">
-        <tbody>
-            <tr>
-                <td align="right"><strong>Name: </strong></td>
-                <td>
-                <table cellspacing="0" cellpadding="0">
-                    <tbody>
-                        <tr>
-                            <td><strong>Prefix *</strong> </td>
-                            <td><strong>First Name *</strong> </td>
-                            <td><strong>Last Name *</strong> </td>
-                            <td><strong>Suffix</strong> <small>(Jr., Sr.)</small> </td>
-                        </tr>
-                        <tr>
-                            <td><select name="required-prefix">
-                            <option selected="selected" value="Mr.">Mr.</option>
-                            <option value="Ms.">Ms.</option>
-                            <option value="Mrs.">Mrs.</option>
-                            <option value="Mr. &amp; Mrs.">Mr. &amp; Mrs.</option>
-                            <option value="Dr.">Dr.</option>
-                            </select> </td>
-                            <td><input name="required-first" type="text" size="12" maxlength="90" /></td>
-                            <td><input name="required-last" type="text" size="15" maxlength="90" /></td>
-                            <td><input name="suffix" type="text" size="10" maxlength="90" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* Address: </strong></td>
-                <td><input name="required-address" type="text" size="60" maxlength="190" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* City: </strong></td>
-                <td><input name="required-city" type="text" maxlength="45" /> <strong>State:</strong> <select name="required-state">
-                <option selected="selected">CA</option>
-                </select> <strong>Zip:</strong> <input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" /> <input name="zip4" onkeydown="f(this)" onkeyup="f(this)" type="text" size="4" maxlength="4" /> </td>
-            </tr>
-            <tr>
-                <td align="right"><strong>Phone Number: </strong></td>
-                <td><input name="phone" type="text" size="60" maxlength="100" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* Email: </strong></td>
-                <td><input name="required-email" type="text" size="60" maxlength="100" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong>* Issue: </strong></td>
-                <td><select name="required-issue" size="1">
-                <option selected="selected" value="">(select one)</option>
-                <option value="WEB ANI">Animal</option>
-<option value="WEB AG">Agriculture</option>
-<option value="WEB BH">Banking/Housing</option>
-<option value="WEB BDG">Budget</option>
-<option value="WEB DEF">Defense</option>
-<option value="WEB BUS">Economy and Jobs</option>
-<option value="WEB ED">Education/Labor</option>
-<option value="WEB EGY">Energy</option>
-<option value="WEB ENV">Environment</option>
-<option value="WEB FA">Foreign Affairs</option>
-<option value="WEB GR">Government Reform</option>
-<option value="WEB HE">Healthcare</option>
-<option value="WEB HOM">Homeland Security</option>
-<option value="WEB IM">Immigration</option>
-<option value="WEB JUD">Judiciary</option>
-<option value="WEB SAT">Science and Technology</option>
-<option value="WEB SSM">Social Security/Medicare</option>
-<option value="WEB TX">Taxes</option>
-<option value="WEB TRD">Trade</option>
-<option value="WEB TNS">Transportation</option>
-<option value="WEB VA">Veterans</option>
-<option value="WEB OTHER">Other</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td align="right" valign="top"><strong>* Message: </strong></td>
-                <td><textarea name="required-message" rows="15" cols="60"></textarea></td>
-            </tr>
-            <tr>
-                <td align="right" valign="top"></td>
-                <td><input name="subscribe" type="checkbox" value="subscribe" /> Check this box to sign up for my E-Newsletter! </td>
-            </tr>
-            <tr>
-                <td align="right" valign="top"></td>
-                <td><input name="rsp" type="checkbox" value="no" /> I would not like a response to my email.</td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"><center> <input type="submit" value="Send Email" /> <input type="reset" value="Reset" /> </center></td>
-            </tr>
-        </tbody>
-    </table>
+<form action="http://thomas.loc.gov/cgi-bin/query" method="post">
+<fieldset>
+<label>
+</label>
+<span>
+<input name="docid112" type="text" />
+</span>
+<input class="submit" type="submit" value=" " />
+<label>
+</label>
+<span>
+<input name="queryc112" type="text" />
+</span>
+<input class="submit" type="submit" value=" " />
+</fieldset>
+</form>
+<td class="ContentCell">
+<span id="ctl00_ctl12_ctl00_Text" class="middlecopy">
+<form name="contact" id="contactForm" class="zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
+<table align="center" cellspacing="2" cellpadding="0">
+<tbody>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<strong>
+</strong>
+</td>
+<td>
+<strong>
+</strong>
+</td>
+<td>
+<strong>
+</strong>
+</td>
+<td>
+<strong>
+</strong>
+<small>
+</small>
+</td>
+</tr>
+<tr>
+<td>
+<select name="required-prefix">
+<option selected="selected" value="Mr.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Mr. &amp; Mrs.">
+</option>
+<option value="Dr.">
+</option>
+</select>
+</td>
+<td>
+<input name="required-first" type="text" size="12" maxlength="90" />
+</td>
+<td>
+<input name="required-last" type="text" size="15" maxlength="90" />
+</td>
+<td>
+<input name="suffix" type="text" size="10" maxlength="90" />
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="required-address" type="text" size="60" maxlength="190" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="required-city" type="text" maxlength="45" />
+<strong>
+</strong>
+<select name="required-state">
+<option selected="selected">
+</option>
+</select>
+<strong>
+</strong>
+<input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" />
+<input name="zip4" onkeydown="f(this)" onkeyup="f(this)" type="text" size="4" maxlength="4" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="phone" type="text" size="60" maxlength="100" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<input name="required-email" type="text" size="60" maxlength="100" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+</strong>
+</td>
+<td>
+<select name="required-issue" size="1">
+<option selected="selected" value="">
+</option>
+<option value="WEB ANI">
+</option>
+<option value="WEB AG">
+</option>
+<option value="WEB BH">
+</option>
+<option value="WEB BDG">
+</option>
+<option value="WEB DEF">
+</option>
+<option value="WEB BUS">
+</option>
+<option value="WEB ED">
+</option>
+<option value="WEB EGY">
+</option>
+<option value="WEB ENV">
+</option>
+<option value="WEB FA">
+</option>
+<option value="WEB GR">
+</option>
+<option value="WEB HE">
+</option>
+<option value="WEB HOM">
+</option>
+<option value="WEB IM">
+</option>
+<option value="WEB JUD">
+</option>
+<option value="WEB SAT">
+</option>
+<option value="WEB SSM">
+</option>
+<option value="WEB TX">
+</option>
+<option value="WEB TRD">
+</option>
+<option value="WEB TNS">
+</option>
+<option value="WEB VA">
+</option>
+<option value="WEB OTHER">
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+<strong>
+</strong>
+</td>
+<td>
+<textarea name="required-message" rows="15" cols="60">
+</textarea>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+</td>
+<td>
+<input name="subscribe" type="checkbox" value="subscribe" />
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+</td>
+<td>
+<input name="rsp" type="checkbox" value="no" />
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<center>
+<input type="submit" value="Send Email" />
+<input type="reset" value="Reset" />
+</center>
+</td>
+</tr>
+</tbody>
+</table>
 </form>

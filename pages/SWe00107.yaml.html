@@ -1,112 +1,200 @@
-  <form id="searchform" name="searchform" method="get" action="index.cfm">	  
-  <tr>
-    <td align="right" valign="middle">
-	  <input name="keyword" type="text"  value="Site Search" onClick="if (this.value == 'Site Search') this.value='';" size="21" /></td>
-    <td align="left" valign="middle"><input type="image" src="images/btnSearch.gif" alt="Go" name="btnSearch" width="22" height="18" border="0" id="btnSearch" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnSearch','','images/btnSearcho.gif',1)" /></td>
-  </tr>
-  </form>
+<form id="searchform" name="searchform" method="get" action="index.cfm">
+<tr>
+<td align="right" valign="middle">
+<input name="keyword" type="text"  value="Site Search" onClick="if (this.value == 'Site Search') this.value='';" size="21" />
+</td>
+<td align="left" valign="middle">
+<input type="image" src="images/btnSearch.gif" alt="Go" name="btnSearch" width="22" height="18" border="0" id="btnSearch" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnSearch','','images/btnSearcho.gif',1)" />
+</td>
+</tr>
+</form>
 <form name="frmEmailGovernor" action="action.cfm?md=form&task=emailGovernor" method="post" onSubmit="return submitForm(this)">
 <table border="0" width="100%" cellpadding="5" cellspacing="0">
-  <tr align="top">
-    <td colspan="2">
-   	Fill out the information below to submit your message to the Governor
-	<hr size="1">
-    <b>YOUR CONTACT INFORMATION</b>
-    </td>
-  </tr>
-  <tr valign="top">  
-    <td align="right"><b>Prefix: </b></td>
-	<td>
-      <select name="prefix" size="1" >
-        <option value=""></option>
-        <option value="Mr.">Mr.</option>
-        <option value="Mrs.">Mrs.</option>
-        <option value="Miss">Miss</option>
-        <option value="Ms.">Ms.</option>
-      </select>
-    </td>			  
-  </tr>
-  <tr valign="top">
-    <td width="30%" align="right"><b>First Name: </b></td>
-    <td width="70%"><input type="text" name="firstName" size="20" maxlength="35" value=""></td>			  
-  </tr>
-  <tr valign="top">  
-    <td align="right"><b>Last Name: </b></td>
-	<td><input type="text" name="lastName" size="20" maxlength="50" value=""></td>			  
-  </tr>
-  <tr valign="top">  
-    <td align="right"><b>Email Address: </b></td>
-    <td><input type="text" name="emailAddress" size="20" maxlength="100" value=""></td>			  
-  </tr>
-  <tr valign="top">  
-    <td align="right"><b>Topic: </b></td>
-    <td>		
-	  <select name="topic" size="1" >
-        <option value=""></option>
-        <option value="Student_Inquiry">Student Inquiry</option>
-        <option value="Administration">Administration</option>
-        <option value="Corrections">Corrections</option>
-        <option value="Economic_Development">Economic Development</option>
-        <option value="Education">Education</option>
-        <option value="Environmental_Quality">Environmental Quality</option>
-        <option value="Ethics_Reform">Ethics Reform</option>
-        <option value="Health_and_Hospitals">Health &amp; Hospitals</option>
-        <option value="Medicaid">- Medicaid</option>
-        <option value="Homeland_Security_Emergency_Preparedness">Homeland Security Emergency Preparedness</option>
-        <option value="Labor">Labor</option>
-        <option value="LRA_Road_Home">LRA - Road Home</option>
-        <option value="Natural_Resources">Natural Resources</option>
-        <option value="Public_Safety">Public Safety</option>
-        <option value="Revenue_and_Taxes">Revenue &amp; Taxes</option>
-        <option value="Social_Services">Social Services</option>
-        <option value="Transportation">Transportation</option>
-        <option value="Veterans_Affairs">Veterans Affairs</option>
-        <option value="Wildlife_and_Fisheries">Wildlife &amp; Fisheries</option>
-        <option value="Other">Other</option>
-        </select>
-      </td>					
-    </tr>
-    <tr valign="top">  
-	  <td align="right"><b>Street Address: </b></td>
-	  <td><input type="text" name="address" size="20" maxlength="100" value=""></td>
-    </tr>
-    <tr valign="top">  
-	  <td align="right">Apartment, suite, etc:</td>
-	  <td><input type="text" name="address2" size="20" maxlength="100" value=""></td>
-    </tr>
-    <tr valign="top">
-      <td align="right"><b>City: </b></td>
-	  <td><input type="text" name="city" size="20" maxlength="50" value=""></td>			  
-    </tr>
-    <tr valign="top">  
-	  <td align="right"><b>State: </b></td>
-	  <td><input type="text" name="state" size="20" maxlength="100" value="Louisiana"></td>			  
-    </tr>
-    <tr valign="top">  
-      <td align="right"><b>ZIP Code: </b></td>
-      <td><input type="text" name="zip" size="6" maxlength="10" value=""></td>			  
-    </tr>
-    <tr valign="top">  
-      <td align="right"><b>Telephone: </b></td>
-      <td><input type="text" name="phone" size="20" maxlength="20" value=""><br><small>xxx-xxx-xxxx</small></td>			  
-    </tr>
-     
-  <tr valign="top">
-    <td colspan="2"><hr size=1><b>YOUR QUESTION OR COMMENT</b></td>	
-  </tr>
-  <tr valign="top">  
-    <td align="right">&nbsp;</td>
-    <td>
-      <textarea name="comment" cols="60" rows="8"></textarea><br>
-      <small>Please include appropriate background information.</small>
-    </td> 
-  </tr>
-  <tr valign="top">
-    <td align="right">&nbsp;</td>  
-	<td>
-      <input type="submit" value="Submit">
-	  
-    </td>
-  </tr>
-</table> 
-</form>   			
+<tr align="top">
+<td colspan="2">
+<hr size="1">
+<b>
+</b>
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<select name="prefix" size="1" >
+<option value="">
+</option>
+<option value="Mr.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Miss">
+</option>
+<option value="Ms.">
+</option>
+</select>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%" align="right">
+<b>
+</b>
+</td>
+<td width="70%">
+<input type="text" name="firstName" size="20" maxlength="35" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="lastName" size="20" maxlength="50" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="emailAddress" size="20" maxlength="100" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<select name="topic" size="1" >
+<option value="">
+</option>
+<option value="Student_Inquiry">
+</option>
+<option value="Administration">
+</option>
+<option value="Corrections">
+</option>
+<option value="Economic_Development">
+</option>
+<option value="Education">
+</option>
+<option value="Environmental_Quality">
+</option>
+<option value="Ethics_Reform">
+</option>
+<option value="Health_and_Hospitals">
+</option>
+<option value="Medicaid">
+</option>
+<option value="Homeland_Security_Emergency_Preparedness">
+</option>
+<option value="Labor">
+</option>
+<option value="LRA_Road_Home">
+</option>
+<option value="Natural_Resources">
+</option>
+<option value="Public_Safety">
+</option>
+<option value="Revenue_and_Taxes">
+</option>
+<option value="Social_Services">
+</option>
+<option value="Transportation">
+</option>
+<option value="Veterans_Affairs">
+</option>
+<option value="Wildlife_and_Fisheries">
+</option>
+<option value="Other">
+</option>
+</select>
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="address" size="20" maxlength="100" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+</td>
+<td>
+<input type="text" name="address2" size="20" maxlength="100" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="city" size="20" maxlength="50" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="state" size="20" maxlength="100" value="Louisiana">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="zip" size="6" maxlength="10" value="">
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+<b>
+</b>
+</td>
+<td>
+<input type="text" name="phone" size="20" maxlength="20" value="">
+<br>
+<small>
+</small>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="2">
+<hr size=1>
+<b>
+</b>
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+</td>
+<td>
+<textarea name="comment" cols="60" rows="8">
+</textarea>
+<br>
+<small>
+</small>
+</td>
+</tr>
+<tr valign="top">
+<td align="right">
+</td>
+<td>
+<input type="submit" value="Submit">
+</td>
+</tr>
+</table>
+</form>

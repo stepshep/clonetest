@@ -1,47 +1,71 @@
-          <form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
-            <input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search Site" />
-            <input class="searchButon" type="submit" value="" />
-          </form>
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+<form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
+<input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search Site" />
+<input class="searchButon" type="submit" value="" />
+</form>
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="214" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="214" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-				<form action="http://thomas.loc.gov/cgi-bin/query" class="bykeyword" method="post" name="loc-word" target="_blank">
-					<input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this);" type="text" value="By Keyword" /> <input class="searchbuttons" id="searchPhrase" name="Submit" type="submit" value="Go" />&nbsp;</form>
-				<form action="http://thomas.loc.gov/cgi-bin/query" class="bynumber" method="post" name="loc-number" style="display: none;" target="_blank">
-					<input class="text" id="bill" maxlength="50" name="docidc111" onblur="iBlur(this)" onfocus="iFocus(this);" type="text" value="By bill #" /> <input class="searchbuttons" id="searchBill" name="Submit" type="submit" value="GO" /> <!-- This hidden field allows us to have two separate search buttons for THOMAS. Otherwise we would have to have just one search/clear for the two boxes --><input name="queryc111" type="hidden" />&nbsp;</form>
-	  <form action="http://fudge.congressnewsletter.net/mail/util.cfm?mailaction=profile" method="post" target="_blank">
-			<input class="text" id="form_3_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76);" type="text" value="" /> <input name="formid" type="hidden" value="3" /> <input align="middle" class="button" id="form_submit_button_3" name="submitform" type="submit" value="Sign Up" />&nbsp;</form>
-			<form action="/email-me/" method="post" id="zipauthform">
-				<p id="zipauthpreamble"></p>
-				<h2>Zip Code Authentication Form</h2>
-				<p>
-				<label for="zipcode">Zip Code:</label>
-				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
-				<label for="zipfour" id="zipfourlabel">+4:</label>
-				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
-				</p>
-				<p>
-				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code and your four-digit zip+4.<br /></span>
-				<input type="submit" value="Go to Form" class="button"/>
-				</p>
-				<hr/>
-				<ul>
-					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
-					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
-					<li class="zipmsg">Both of the form fields are required.</li>
-				</ul>
-			</form>
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="http://thomas.loc.gov/cgi-bin/query" class="bykeyword" method="post" name="loc-word" target="_blank">
+<input class="text" id="phrase" maxlength="50" name="queryc112" onblur="iBlur(this)" onfocus="iFocus(this);" type="text" value="By Keyword" />
+<input class="searchbuttons" id="searchPhrase" name="Submit" type="submit" value="Go" />
+</form>
+<input class="text" id="bill" maxlength="50" name="docidc111" onblur="iBlur(this)" onfocus="iFocus(this);" type="text" value="By bill #" />
+<input class="searchbuttons" id="searchBill" name="Submit" type="submit" value="GO" />
+</form>
+<form action="http://fudge.congressnewsletter.net/mail/util.cfm?mailaction=profile" method="post" target="_blank">
+<input class="text" id="form_3_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(102, 95, 76);" type="text" value="" />
+<input align="middle" class="button" id="form_submit_button_3" name="submitform" type="submit" value="Sign Up" />
+</form>
+<form action="/email-me/" method="post" id="zipauthform">
+<p id="zipauthpreamble">
+</p>
+<h2>
+</h2>
+<p>
+<label for="zipcode">
+</label>
+<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+<label for="zipfour" id="zipfourlabel">
+</label>
+<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+</p>
+<p>
+<br />
+</span>
+<input type="submit" value="Go to Form" class="button"/>
+</p>
+<hr/>
+<ul>
+<li class="zipmsg">
+<a href="http://www.usps.com/zip4/" target="_blank">
+</a>
+</li>
+<li class="zipmsg">
+</li>
+<li class="zipmsg">
+</li>
+</ul>
+</form>

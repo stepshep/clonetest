@@ -1,116 +1,368 @@
 <form method="post" action="/htbin/formproc_za/formdonnaedwards/issue_subscribe_parm.txt&amp;form=/formdonnaedwards/issue_subscribe_verify.htm">
-
-
-
-  <center>
-    <table width="412" border="0" cellspacing="3" cellpadding="3">
-      <tr>
-        <td width="112"><div align="right"><b><font size="-1">Prefix</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b></div></td>
-        <td width="279"><b><font size="-1"><span style="color: rgb(204, 0, 0);">
-          <input name="required-prefix" value="" size="10" maxlength="90" type="text" />
-        </span></font></b></td>
-      </tr>
-      <tr>
-        <td><div align="right"><b><font size="-1">First Name</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b></div></td>
-        <td><b><font size="-1"><span style="color: rgb(204, 0, 0);">
-          <input name="required-first" value="" size="12" maxlength="90" type="text" />
-</span>MI<span style="color: rgb(204, 0, 0);"> 
+<center>
+<table width="412" border="0" cellspacing="3" cellpadding="3">
+<tr>
+<td width="112">
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+</div>
+</td>
+<td width="279">
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+<input name="required-prefix" value="" size="10" maxlength="90" type="text" />
+</span>
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+</div>
+</td>
+<td>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+<input name="required-first" value="" size="12" maxlength="90" type="text" />
+</span>
+<span style="color: rgb(204, 0, 0);">
 <input name="middle" value="" size="6" maxlength="90" type="text" />
-</span></font></b></td>
-      </tr>
-      <tr>
-        <td><div align="right"><b><font size="-1">Last Name</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b></div></td>
-        <td><input name="required-last" value="" size="15" maxlength="90" type="text" />
-        <b><font size="-1">Suffix</font></b><font size="-1"> <small>(Jr., Sr.)
-        <input name="suffix" value="" size="4" maxlength="90" type="text" />
-        </small></font></td>
-      </tr>
-      <tr>
-        <td><div align="right"><b><font size="-1">Address</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b><b><font size="-1">:</font></b></div></td>
-        <td><input name="required-address" value="" size="40" maxlength="190" type="text" /></td>
-      </tr>
-      <tr>
-        <td><div align="right"><b><font size="-1">City</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b><b><font size="-1">:</font></b></div></td>
-        <td><input name="required-city" value="" size="20" maxlength="45" type="text" /></td>
-      </tr>
-      <tr>
-        <td><div align="right"><b><font size="-1">State:</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b></div></td>
-        <td><select name="required-state">
-          <option selected="selected">MD</option>
-        </select>
-          <b><font size="-1">Zip:</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*
-          <input name="zip5" value="" size="5" maxlength="5" type="text" />
-          <input name="zip4" value="" size="4" maxlength="4" type="text" />
-          </span></font></b></td>
-      </tr>
-      <tr>
-        <td valign="top"><div align="right"><b><font size="-1">Phone</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b><b><font size="-1">:</font></b></div></td>
-        <td valign="top"><input name="required-phone" value="" size="40" maxlength="100" type="text" />
-        <br />
-        Example: (212)  555-1212</td>
-      </tr>	  
-      <tr>
-        <td><div align="right"><b><font size="-1">Email</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b><b><font size="-1">:</font></b></div></td>
-        <td><input name="required-email" value="" size="40" maxlength="100" type="text" /></td>
-      </tr>
-      <tr>
-        <td><div align="right"><b><font size="-1">Message Subject</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b><b><font size="-1">:</font></b></div></td>
-        <td><small>
-        <select name="required-issue" size=1 id="subject">
-          <option value="" selected>Please select one:</option>
-          <option value="WEBAGR">Agriculture</option>
-          <option value="WEBDEF">Defense</option>
-          <option value="WEBECON">Economy</option>
-          <option value="WEBEDU">Education</option>
-          <option value="WEBLAB">Labor</option>
-          <option value="WEBENE">Energy</option>
-          <option value="WEBENV">Environmental</option>
-          <option value="WEBGOV">Government Reform</option>
-          <option value="WEBHEA">Health</option>
-          <option value="WEBHOM">Homeland Security</option>
-          <option value="WEBIMM">Immigration</option>
-          <option value="WEBINT">International Relations</option>
-          <option value="WEBJUD">Judicial</option>
-          <option value="WEBSOC">Social Issues</option>
-          <option value="WEBSSEC">Social Security</option>
-          <option value="WEBTAX">Taxes and Budget</option>
-          <option value="WEBTRD">Trade</option>
-          <option value="WEBTEL">Telecommunications</option>
-          <option value="WEBTRA">Transportation</option>
-          <option value="WEBVET">Veterans</option>
-          <option value="WEBWEL">Welfare</option>
-          <option value="WEBOTH">Other</option>
-        </select>
-          <font size="-1"><br />
-        Select the issue to which your letter most relates</font> </small></td>
-      </tr>
-      <tr>
-        <td valign="top"><div align="right"><b><font size="-1">Message</font></b><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span></font></b><b><font size="-1">:</font></b></div></td>
-        <td><textarea name="required-message" rows="15" cols="30" style="height: 100px; "></textarea></td>
-      </tr>
-      <tr>
-        <td colspan="2"><div align="center">
-            <input value="Send Email" type="submit" />
-            <input value="Reset" type="reset" />
-        </div></td>
-      </tr>
-      <tr>
-        <td colspan="2"><ul>
-          <li><small>Fields marked with a </small><b><font size="-1"><span style="color: rgb(204, 0, 0);">*</span><u><span style="color: rgb(204, 0, 0);"></span></u></font></b><small> indicates required fields.</small> </li>
-          <li><small>Regrettably, I am unable to reply to any email from constituents outside of my district.</small> </li>
-        </ul></td>
-      </tr>
-
-    </table>
-    <p>.</p>
-  </center>
+</span>
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+</div>
+</td>
+<td>
+<input name="required-last" value="" size="15" maxlength="90" type="text" />
+<b>
+<font size="-1">
+</font>
+</b>
+<font size="-1">
+<small>
+<input name="suffix" value="" size="4" maxlength="90" type="text" />
+</small>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+<b>
+<font size="-1">
+</font>
+</b>
+</div>
+</td>
+<td>
+<input name="required-address" value="" size="40" maxlength="190" type="text" />
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+<b>
+<font size="-1">
+</font>
+</b>
+</div>
+</td>
+<td>
+<input name="required-city" value="" size="20" maxlength="45" type="text" />
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+</div>
+</td>
+<td>
+<select name="required-state">
+<option selected="selected">
+</option>
+</select>
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+<input name="zip5" value="" size="5" maxlength="5" type="text" />
+<input name="zip4" value="" size="4" maxlength="4" type="text" />
+</span>
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+<b>
+<font size="-1">
+</font>
+</b>
+</div>
+</td>
+<td valign="top">
+<input name="required-phone" value="" size="40" maxlength="100" type="text" />
+<br />
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+<b>
+<font size="-1">
+</font>
+</b>
+</div>
+</td>
+<td>
+<input name="required-email" value="" size="40" maxlength="100" type="text" />
+</td>
+</tr>
+<tr>
+<td>
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+<b>
+<font size="-1">
+</font>
+</b>
+</div>
+</td>
+<td>
+<small>
+<select name="required-issue" size=1 id="subject">
+<option value="" selected>
+</option>
+<option value="WEBAGR">
+</option>
+<option value="WEBDEF">
+</option>
+<option value="WEBECON">
+</option>
+<option value="WEBEDU">
+</option>
+<option value="WEBLAB">
+</option>
+<option value="WEBENE">
+</option>
+<option value="WEBENV">
+</option>
+<option value="WEBGOV">
+</option>
+<option value="WEBHEA">
+</option>
+<option value="WEBHOM">
+</option>
+<option value="WEBIMM">
+</option>
+<option value="WEBINT">
+</option>
+<option value="WEBJUD">
+</option>
+<option value="WEBSOC">
+</option>
+<option value="WEBSSEC">
+</option>
+<option value="WEBTAX">
+</option>
+<option value="WEBTRD">
+</option>
+<option value="WEBTEL">
+</option>
+<option value="WEBTRA">
+</option>
+<option value="WEBVET">
+</option>
+<option value="WEBWEL">
+</option>
+<option value="WEBOTH">
+</option>
+</select>
+<font size="-1">
+<br />
+</font>
+</small>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<div align="right">
+<b>
+<font size="-1">
+</font>
+</b>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+</font>
+</b>
+<b>
+<font size="-1">
+</font>
+</b>
+</div>
+</td>
+<td>
+<textarea name="required-message" rows="15" cols="30" style="height: 100px; ">
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div align="center">
+<input value="Send Email" type="submit" />
+<input value="Reset" type="reset" />
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<ul>
+<li>
+<small>
+</small>
+<b>
+<font size="-1">
+<span style="color: rgb(204, 0, 0);">
+</span>
+<u>
+<span style="color: rgb(204, 0, 0);">
+</span>
+</u>
+</font>
+</b>
+<small>
+</small>
+</li>
+<li>
+<small>
+</small>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<p>
+</p>
+</center>
 </form>
-	<form method="post" action="http://donnaedwards.house.gov/index.php?option=com_content&view=article&id=416&Itemid=149#" type="hidden"><input name="CheckBox.Issues of Interest.Opt-Ins" value="on" type="hidden">
 <div align="left">
-Sign-up for the latest news and information</div><br>
-<div align="left"><input alt="email" name="email" size="8" maxlength="50" value="E-mail" type="text"> <input alt="zip" name="Profile.Zip" size="3" maxlength="5" value="Zip" type="text"> <input name="submit" id="submit" value="Go" class="button" type="submit"></div><br>
-</form></div>
-	<form id="billsearch" action="http://thomas.loc.gov/cgi-bin/query" method="post"><input name="docidc112" type="text" class="text" id="bill" value="Word/Phrase" size="30" height="20"> 
-	<input src="images/btn_thomas_box.png" id="go" alt="Submit" title="Submit" width="36" height="20" type="image"> <input name="queryc112" type="hidden"></form>
-	<form id="billsearch" action="http://thomas.loc.gov/cgi-bin/query" method="post"><input name="queryc112" type="text" class="text" id="word" value="Bill Number" size="30"> 
-	<input src="images/btn_thomas_box.png" id="go" alt="Submit" title="Submit" width="36" height="20" type="image"></form>
+</div>
+<br>
+<div align="left">
+<input alt="email" name="email" size="8" maxlength="50" value="E-mail" type="text">
+<input alt="zip" name="Profile.Zip" size="3" maxlength="5" value="Zip" type="text">
+<input name="submit" id="submit" value="Go" class="button" type="submit">
+</div>
+<br>
+</form>
+</div>
+<form id="billsearch" action="http://thomas.loc.gov/cgi-bin/query" method="post">
+<input name="docidc112" type="text" class="text" id="bill" value="Word/Phrase" size="30" height="20">
+<input src="images/btn_thomas_box.png" id="go" alt="Submit" title="Submit" width="36" height="20" type="image">
+</form>
+<form id="billsearch" action="http://thomas.loc.gov/cgi-bin/query" method="post">
+<input name="queryc112" type="text" class="text" id="word" value="Bill Number" size="30">
+<input src="images/btn_thomas_box.png" id="go" alt="Submit" title="Submit" width="36" height="20" type="image">
+</form>

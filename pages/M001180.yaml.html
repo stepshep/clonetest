@@ -1,209 +1,283 @@
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-    <form method="post" action="http://mckinley.house.gov//index.cfm?sectionid=47&amp;sectiontree=">
-      <input class="text" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color:#665f4c" type="text" value="E-mail Address" />
-      <input class="form_submit_button" id="form_submit_button_4" name="submitform" type="submit" value="Subscribe" />
-      &nbsp;
-    </form>
-			<form action="/email-me/" id="custom_form6" name="custom_form" class="custom_form" method="post">
-				
-						
-				<style type="text/css" media="all" title="main css">
-
-	.custom_form input {*margin:-4px 0 0;}
-	.custom_form label {width:30%; float:left; text-align:right; margin:0 5px 0 0; padding:0;}
-	.custom_form label span {color:#c00;}
-	.custom_form p {margin:7px 0; clear:both}
-	.custom_form br {clear:left;}
-	.custom_form .align {margin:5px 0 0 30%; padding:0 0 0 5px; display:block; text-align:left; clear:left;}
-
-	.req {color:#C00;}
-	.text {width:170px;}
-	.text1 {width:100px;} 
-	.zip {width:50px;}
-	.custom_form .message {width:250px; height:200px;}
-	
-	.custom_form_errors {color:#c00; background:#FFC; border:1px solid #963; padding:13px 10px 13px 30px;}
-	#centerbox { margin:22px 0 40px 40px; width:600px; float:left;}
-	#errMsg {display:none; position:absolute; z-index:200; background:url(common/images/msg_arrow.gif) left center no-repeat; padding-left:7px}
-	#msgcontent {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px}
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form method="post" action="http://mckinley.house.gov//index.cfm?sectionid=47&amp;sectiontree=">
+<input class="text" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color:#665f4c" type="text" value="E-mail Address" />
+<input class="form_submit_button" id="form_submit_button_4" name="submitform" type="submit" value="Subscribe" />
+</form>
+<form action="/email-me/" id="custom_form6" name="custom_form" class="custom_form" method="post">
+<style type="text/css" media="all" title="main css">
 </style>
 <p>
-
-Use this form to contact Rep. Mckinley about pending legislation, current issues, or with requests for assistance.
 </p>
-
-    	<p class="req">* indicates required field.</p>
-    	<h2>Primary Contact</h2>
-		<p>
-        	 <label>Prefix:</label>
-			 <select name="prefix" size="1" id="req_prefix">
-          <option value="Mr. ">Mr.</option>
-
-          <option value="Mrs.">Mrs.</option>
-          <option value="Ms.">Ms.</option>
-          <option value="Miss">Miss</option>
-          <option value="Dr.">Dr.</option>
-          <option value="Hon.">Hon.</option>
-          <option value="Rev.">Rev.</option>
-          <option value="Rabbi">Rabbi</option>
-          <option value="Sister">Sister</option>
-                  </select>
-              </p>
-		<p>
-        	<label>First Name:<span>*</span></label>
-            <input type="text" name="firstname" id="req_firstname" maxlength="90" class="text" />
-
-        </p>
-        <p>
-        	<label>Middle Initial:</label>
-             <input type="text" name="middle" class="text" style="width:15px;" maxlength="2" />
-        </p>
-        <p>
-        	<label>Last Name:<span>*</span></label>
-
-            <input type="text" name="lastname" id="req_lastname" class="text" maxlength="90" />
-        </p>
-        <p>
-        	 <label>Suffix:</label>
-             <input type="text" name="suffix" class="text1" maxlength="5" />
-        </p>
-        <p>
-
-        	<label>Street Address:<span>*</span></label>
-            <input type="text" name="street" id="req_street" class="text" maxlength="190" />
-        </p>
-        <p>
-        	<label>Address 2:</label>
-            <input type="text" name="street2" class="text" maxlength="190" />
-
-        </p>
-        <p>
-        	<label>City:<span>*</span></label>
-            <input type="text" name="city" id="req_city" class="text" maxlength="100" />
-        </p>
-        <p>
-        	<label>State:<span>*</span></label>
-
-         
-              <select name="state" id="req_state">		
-             <option selected="" value="WV">WV</option>
-	</select>
-            
-        </p>
-        <p>
-        	<label>Zip Code:<span>*</span></label>
-            <input type="text" name="zipcode" id="req_zip" class="zip" maxlength="5" />
-
-            <label style="float:none; width:auto;">+4</label> 
-            <input type="text" name="zipfour" id="zip2" class="zip" maxlength="4" />
-            <small>(<a target="_blank" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" href="http://zip4.usps.com/zip4/welcome.jsp" onclick="return (exitMsg())" class="bookmarkImage" id="zip4">Determine your ZIP+4</a>)</small>
-        </p>
-        <p>
-
-        	<label>E-mail Address:<span>*</span></label>
-            <input type="text" name="emailaddress" id="req_email" maxlength="150" class="text" />
-        </p>
-        <p>
-        	<label>Telephone Number:</label>
-
-            <input type="text" name="phone" class="text" maxlength="14" />
-        </p>
-        <p>
-        	<label>Topic:<span>*</span></label>
-            <select size="1" name="subject" id="req_subject">
-				<option selected="" value="">(select one)</option>
-				<option value="WEBCST">Constituent Service</option>
-
-							
-								<option value="WEBGRT">Grant Requests</option>
-							
-								<option value="WEBAGR">Agriculture</option>
-							
-								<option value="WEBBUD">Budget</option>
-							
-								<option value="WEBDEF">Defense</option>
-
-							
-								<option value="WEBEDU">Education/Labor</option>
-							
-								<option value="WEBENE">Energy</option>
-
-							
-								<option value="WEBENV">Environment</option>
-							
-								<option value="WEBINT">International</option>
-							
-								<option value="WEBGOV">Government Reform</option>
-							
-								<option value="WEBHEA">Health Care</option>
-
-							
-								<option value="WEBHOM">Homeland Security</option>
-							
-								<option value="WEBIMM">Immigration</option>
-
-							
-								<option value="WEBJUD">Judiciary</option>
-							
-								<option value="WEBSOC">Social Issues</option>
-							
-								<option value="WEBSSEC">Social Security</option>
-							
-								<option value="WEBTEL">Telecommunications</option>
-
-							
-								<option value="WEBTAX">Taxes and Trade</option>
-							
-								<option value="WEBTRA">Transportation</option>
-
-							
-								<option value="WEBVET">Veterans</option>
-							
-								<option value="WEBWEL">Welfare</option>
-							
-								<option value="WEBOTH">Other</option>
-
-			</select>
-        </p>
-        <p>
-
-        	<label>Message:<span>*</span></label>
-            <textarea name="message" id="req_message" class="message"></textarea>
-        </p>
-        
-       
-        <p>
-        	<label>Would you like a Response:<span>*</span></label>
-
-            <select size="1" name="response" id="req_response">
-	
-				<option selected="" >-- answer below --</option>
-                                <option value="N">No</option>
-                                <option value="Y">Yes</option>
-				
-			</select>
-        </p>
-
-        
-   		<div class="align"><input type="button" value="Submit" id="submitButton" class="form_submit_button" /></div>
-        
-        
-       
-			</form>
-				<div id="webfooter"> <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="addresses"><ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><li class="ui-state-default ui-corner-top"><a href="#tabs-1">Washington DC</a></li><li class="ui-state-default ui-corner-top"><a href="#tabs-2">Morgantown</a></li><li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-3">Wheeling</a></li><li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-4">Parkersburg </a></li></ul><div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-1" style=""><p> 412 Cannon HOB<br /> Washington, DC 20515<br /> Phone: (202) 225-4172<br /> Fax: (202) 225-7564<br /> Hours: Monday-Friday 8:00AM-5:00PM Eastern time</p></div><div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-2" style=""><p> 709 Beechurst Ave., Suite 29<br /> Morgantown, WV 26505<br /> Phone: 304.284.8506<br /> Hours: M-F: 9:00 a.m. to 5:00 p.m</p></div><div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-3" style=""><p> Horne Building 1100 Main Street, Suite 101<br /> Wheeling, WV 26003<br /> Phone: (304) 232-3801<br /> Fax: 304-232-3813<br /> Hours: Monday-Friday 9:00AM-5:00PM</p></div><div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-4" style=""><p> Federal Building<br /> 425 Juliana Street Suite 1004<br /> Parkersburg, WV 26101<br /> Phone: (304) 422-5972</p></div></div><div class="searchsite"><form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)"><input name="sectionid" type="hidden" value="2" /><input name="sectiontree" type="hidden" value="" /><input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(119, 119, 119);" type="text" value="Search Site" /><input class="searchButon" type="submit" value="GO" />&nbsp;</form></div><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-23992547-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-23991870-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script> </div>
+<p class="req">
+</p>
+<h2>
+</h2>
+<p>
+<label>
+</label>
+<select name="prefix" size="1" id="req_prefix">
+<option value="Mr. ">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Miss">
+</option>
+<option value="Dr.">
+</option>
+<option value="Hon.">
+</option>
+<option value="Rev.">
+</option>
+<option value="Rabbi">
+</option>
+<option value="Sister">
+</option>
+</select>
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<input type="text" name="firstname" id="req_firstname" maxlength="90" class="text" />
+</p>
+<p>
+<label>
+</label>
+<input type="text" name="middle" class="text" style="width:15px;" maxlength="2" />
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<input type="text" name="lastname" id="req_lastname" class="text" maxlength="90" />
+</p>
+<p>
+<label>
+</label>
+<input type="text" name="suffix" class="text1" maxlength="5" />
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<input type="text" name="street" id="req_street" class="text" maxlength="190" />
+</p>
+<p>
+<label>
+</label>
+<input type="text" name="street2" class="text" maxlength="190" />
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<input type="text" name="city" id="req_city" class="text" maxlength="100" />
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<select name="state" id="req_state">
+<option selected="" value="WV">
+</option>
+</select>
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<input type="text" name="zipcode" id="req_zip" class="zip" maxlength="5" />
+</label>
+<input type="text" name="zipfour" id="zip2" class="zip" maxlength="4" />
+<small>
+<a target="_blank" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" href="http://zip4.usps.com/zip4/welcome.jsp" onclick="return (exitMsg())" class="bookmarkImage" id="zip4">
+</a>
+</small>
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<input type="text" name="emailaddress" id="req_email" maxlength="150" class="text" />
+</p>
+<p>
+<label>
+</label>
+<input type="text" name="phone" class="text" maxlength="14" />
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<select size="1" name="subject" id="req_subject">
+<option selected="" value="">
+</option>
+<option value="WEBCST">
+</option>
+<option value="WEBGRT">
+</option>
+<option value="WEBAGR">
+</option>
+<option value="WEBBUD">
+</option>
+<option value="WEBDEF">
+</option>
+<option value="WEBEDU">
+</option>
+<option value="WEBENE">
+</option>
+<option value="WEBENV">
+</option>
+<option value="WEBINT">
+</option>
+<option value="WEBGOV">
+</option>
+<option value="WEBHEA">
+</option>
+<option value="WEBHOM">
+</option>
+<option value="WEBIMM">
+</option>
+<option value="WEBJUD">
+</option>
+<option value="WEBSOC">
+</option>
+<option value="WEBSSEC">
+</option>
+<option value="WEBTEL">
+</option>
+<option value="WEBTAX">
+</option>
+<option value="WEBTRA">
+</option>
+<option value="WEBVET">
+</option>
+<option value="WEBWEL">
+</option>
+<option value="WEBOTH">
+</option>
+</select>
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<textarea name="message" id="req_message" class="message">
+</textarea>
+</p>
+<p>
+<label>
+<span>
+</span>
+</label>
+<select size="1" name="response" id="req_response">
+<option selected="" >
+</option>
+<option value="N">
+</option>
+<option value="Y">
+</option>
+</select>
+</p>
+<div class="align">
+<input type="button" value="Submit" id="submitButton" class="form_submit_button" />
+</div>
+</form>
+<div id="webfooter">
+<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="addresses">
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+<li class="ui-state-default ui-corner-top">
+<a href="#tabs-1">
+</a>
+</li>
+<li class="ui-state-default ui-corner-top">
+<a href="#tabs-2">
+</a>
+</li>
+<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active">
+<a href="#tabs-3">
+</a>
+</li>
+<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active">
+<a href="#tabs-4">
+</a>
+</li>
+</ul>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-1" style="">
+<p>
+<br />
+<br />
+<br />
+<br />
+</p>
+</div>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-2" style="">
+<p>
+<br />
+<br />
+<br />
+</p>
+</div>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-3" style="">
+<p>
+<br />
+<br />
+<br />
+<br />
+</p>
+</div>
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-4" style="">
+<p>
+<br />
+<br />
+<br />
+</p>
+</div>
+</div>
+<div class="searchsite">
+<form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
+<input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(119, 119, 119);" type="text" value="Search Site" />
+<input class="searchButon" type="submit" value="GO" />
+</form>
+</div>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+</script>
+</div>

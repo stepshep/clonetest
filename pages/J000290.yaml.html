@@ -1,144 +1,219 @@
-          <form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
-            <input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search Site" />
-            <input class="searchButon" type="submit" value="" />
-             
-          </form>
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+<form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
+<input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search Site" />
+<input class="searchButon" type="submit" value="" />
+</form>
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="209" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="209" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-                    <form action="/index.cfm?sectionid=28&amp;sectiontree=" method="post">
-                      <input class="text" id="form_2_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color:#665f4c" type="text" value="E-mail Address" />
-                      <input class="form_submit_button" id="form_submit_button_2" name="submitform" type="submit" value="Subscribe" />
-                      &nbsp;
-                    </form>
-			<form action="/contact-me/" id="custom_form45" name="custom_form" class="custom_form" method="post">
-				
-				<p class="req">* indicates required information.</p>
-  <fieldset>
-    <legend>Your Information</legend>
-    <div class="formbx">
-      <label for="prefix">Prefix:<span title="required field">*</span></label>
-      <select name="prefix" id="req_prefix" class="short">
-          <option selected="" value="">Select</option>
-          <option value="Mr. ">Mr.</option>
-          <option value="Mrs.">Mrs.</option>
-          <option value="Ms.">Ms.</option>
-          <option value="Miss">Miss</option>
-          <option value="Dr.">Dr.</option>
-          <option value="Hon.">Hon.</option>
-          <option value="Rev.">Rev.</option>
-          <option value="Rabbi">Rabbi</option>
-          <option value="Other">Other</option>
-        </select>
-    </div>
-
-    <div class="formbx">
-      <label for="req_firstname">First Name:<span title="required field">*</span></label>
-      <input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn" />
-    </div>
-    <div class="formbx">
-      <label for="middle">MI:</label>
-      <input id="middle" type="text" name="middle" class="text mi" maxlength="2" />
-    </div>
-    <div class="formbx">
-      <label for="req_lastname">Last Name:<span title="required information">*</span></label>
-      <input type="text" name="lastname" id="req_lastname" class="text ln" maxlength="100" />
-    </div>
-    <div class="formbx">
-      <label for="suffix">Suffix:</label>
-      <input id="suffix" type="text" name="suffix" class="text sfx" maxlength="5"/>
-    </div>
-    <div class="formbx">
-		<label for="req_street">Street Address:<span title="required information">*</span></label>
-		<input type="text" name="street" id="req_street" class="text str" maxlength="100"/>
-    </div>
-    <div class="formbx">
-      <label for="address2">Street Address Continued:</label>
-      <input id="address2" type="text" name="street2" class="text str" maxlength="100"/>
-    </div>
-    <div class="formbx">
-      <label for="req_city">City:<span title="required information">*</span></label>      
-      <input type="text" name="city" id="req_city" class="text ct" maxlength="100"/>
-    </div>
-    <div class="formbx">
-      <label for="req_state">State:<span title="required information">*</span></label>
-      <select name="state" class="short" id="req_state">
-        <option selected="" value="">Select</option>
-        <option value="KS">KS</option>
-      </select>
-	</div>
-    <div class="formbx">
-      <label for="req_zip">Zip Code:<span title="required information">*</span></label>
-      <input type="text" name="zipcode" id="req_zip" class="zip z5" maxlength="5" />
-	</div>
-   
-    <div class="formbx">
-      <label for="req_email">Email:<span title="required information">*</span></label>
-      <input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml" />
-    </div>
-    <div class="formbx">
-      <label for="phone">Phone Number:</label>
-      <input id="phone" type="text" name="phone" class="text phn" maxlength="20"/>
-    </div>
-  </fieldset>
-  <fieldset>
-    <legend>Your Message</legend>
-    <div class="formbx">
-      <label for="issue">Choose an issue category from the drop-down list which most resembles your issue of concern.<span title="required information">*</span></label>
-      <select id="req_issue" name="issue">
-        <option selected="selected" value="">Select</option>
-                          <option value="WEBAGR">Agriculture</option>
-                          <option value="WEBBUD">Budget</option>
-                          <option value="WEBDEF">Defense</option>
-                          <option value="WEBECON">Economy</option>
-                          <option value="WEBEDU">Education and Labor</option>
-                          <option value="WEBENE">Energy</option>
-                          <option value="WEBENV">Environmental</option>
-                          <option value="WEBGOV">Government Reform</option>
-                          <option value="WEBHEA">Health</option>
-                          <option value="WEBHOM">Homeland Security</option>
-                          <option value="WEBIMM">Immigration</option>
-                          <option value="WEBINT">International Relations</option>
-                          <option value="WEBJUD">Judicial</option>
-                          <option value="WEBSOC">Social Issues</option>
-                          <option value="WEBSSEC">Social Security</option>
-                          <option value="WEBTAX">Taxes and Trade</option>
-                          <option value="WEBTEL">Telecommunications</option>
-                          <option value="WEBTRA">Transportation</option>
-                          <option value="WEBVET">Veterans</option>
-                          <option value="WEBWEL">Welfare</option>
-                          <option value="WEBOTH">Other</option>
-      </select>
-    </div>
-    <div class="formbx">
-      <label for="req_message">Text of Message:<span title="required information">*</span></label>
-      <textarea name="message" id="req_message" class="message"></textarea>
-    </div>
-    <div class="formbx">
-        <label>Would you like a Response:</label>
-        <select name="response" id="response">
-            <option selected="selected" value="Y">Yes</option>
-            <option value="N">No</option>
-        </select>
-    </div>
-  </fieldset>
-
-
-
- <input type="submit" value="Send Email" id="submitButton" class="form_submit_button" /> 
- 
-			</form>
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="/index.cfm?sectionid=28&amp;sectiontree=" method="post">
+<input class="text" id="form_2_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color:#665f4c" type="text" value="E-mail Address" />
+<input class="form_submit_button" id="form_submit_button_2" name="submitform" type="submit" value="Subscribe" />
+</form>
+<form action="/contact-me/" id="custom_form45" name="custom_form" class="custom_form" method="post">
+<p class="req">
+</p>
+<fieldset>
+<legend>
+</legend>
+<div class="formbx">
+<label for="prefix">
+<span title="required field">
+</span>
+</label>
+<select name="prefix" id="req_prefix" class="short">
+<option selected="" value="">
+</option>
+<option value="Mr. ">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Miss">
+</option>
+<option value="Dr.">
+</option>
+<option value="Hon.">
+</option>
+<option value="Rev.">
+</option>
+<option value="Rabbi">
+</option>
+<option value="Other">
+</option>
+</select>
+</div>
+<div class="formbx">
+<label for="req_firstname">
+<span title="required field">
+</span>
+</label>
+<input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn" />
+</div>
+<div class="formbx">
+<label for="middle">
+</label>
+<input id="middle" type="text" name="middle" class="text mi" maxlength="2" />
+</div>
+<div class="formbx">
+<label for="req_lastname">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="lastname" id="req_lastname" class="text ln" maxlength="100" />
+</div>
+<div class="formbx">
+<label for="suffix">
+</label>
+<input id="suffix" type="text" name="suffix" class="text sfx" maxlength="5"/>
+</div>
+<div class="formbx">
+<label for="req_street">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="street" id="req_street" class="text str" maxlength="100"/>
+</div>
+<div class="formbx">
+<label for="address2">
+</label>
+<input id="address2" type="text" name="street2" class="text str" maxlength="100"/>
+</div>
+<div class="formbx">
+<label for="req_city">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="city" id="req_city" class="text ct" maxlength="100"/>
+</div>
+<div class="formbx">
+<label for="req_state">
+<span title="required information">
+</span>
+</label>
+<select name="state" class="short" id="req_state">
+<option selected="" value="">
+</option>
+<option value="KS">
+</option>
+</select>
+</div>
+<div class="formbx">
+<label for="req_zip">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="zipcode" id="req_zip" class="zip z5" maxlength="5" />
+</div>
+<div class="formbx">
+<label for="req_email">
+<span title="required information">
+</span>
+</label>
+<input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml" />
+</div>
+<div class="formbx">
+<label for="phone">
+</label>
+<input id="phone" type="text" name="phone" class="text phn" maxlength="20"/>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formbx">
+<label for="issue">
+<span title="required information">
+</span>
+</label>
+<select id="req_issue" name="issue">
+<option selected="selected" value="">
+</option>
+<option value="WEBAGR">
+</option>
+<option value="WEBBUD">
+</option>
+<option value="WEBDEF">
+</option>
+<option value="WEBECON">
+</option>
+<option value="WEBEDU">
+</option>
+<option value="WEBENE">
+</option>
+<option value="WEBENV">
+</option>
+<option value="WEBGOV">
+</option>
+<option value="WEBHEA">
+</option>
+<option value="WEBHOM">
+</option>
+<option value="WEBIMM">
+</option>
+<option value="WEBINT">
+</option>
+<option value="WEBJUD">
+</option>
+<option value="WEBSOC">
+</option>
+<option value="WEBSSEC">
+</option>
+<option value="WEBTAX">
+</option>
+<option value="WEBTEL">
+</option>
+<option value="WEBTRA">
+</option>
+<option value="WEBVET">
+</option>
+<option value="WEBWEL">
+</option>
+<option value="WEBOTH">
+</option>
+</select>
+</div>
+<div class="formbx">
+<label for="req_message">
+<span title="required information">
+</span>
+</label>
+<textarea name="message" id="req_message" class="message">
+</textarea>
+</div>
+<div class="formbx">
+<label>
+</label>
+<select name="response" id="response">
+<option selected="selected" value="Y">
+</option>
+<option value="N">
+</option>
+</select>
+</div>
+</fieldset>
+<input type="submit" value="Send Email" id="submitButton" class="form_submit_button" />
+</form>

@@ -1,157 +1,313 @@
-		<form action="/News/DocumentQuery.aspx" method="get" class="search-form">
-			<fieldset>
-				<div class="text-box">
-					<input type="text" name="SearchPhrase" />
-				</div>
-				<input type="submit" class="search-btn" value="submit" />
-			</fieldset>
-		</form>
-		<td class="ContentCell"><span id="ctl00_ctl09_ctl00_Text" class="middlecopy"><form action="/submit-contact.aspx" method="post">
-    <table cellpadding="0" cellspacing="0" align="center">
-        <tbody>
-            <tr>
-                <td align="right" valign="bottom" style="width: 23%;"><strong><span style="text-decoration: underline;">First:</span></strong></td>
-                <td style="width: 77%;"><input maxlength="90" name="required-first" required="required" /></td>
-                <td style="width: 0%;"><br />
-                </td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong><span style="text-decoration: underline;">Last:</span></strong> </td>
-                <td>
-                <p><input maxlength="90" name="required-last" required="required" /> </p>
-                </td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong>Address:</strong> </td>
-                <td><input maxlength="190" name="required-address" required="required" /> </td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong><span style="text-decoration: underline;">City:</span></strong> </td>
-                <td>
-                <p><input maxlength="45" name="required-city" required="required" /> </p>
-                </td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong><span style="text-decoration: underline;">Zip:</span></strong></td>
-                <td><input maxlength="5" size="5" name="zip5" required="required" /> <input maxlength="4" size="4" name="zip4" /></td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong><span style="text-decoration: underline;">State:</span></strong></td>
-                <td>
-                <p><select name="required-state" required="required">
-                <option>AK</option>
-                <option>AL</option>
-                <option>AR</option>
-                <option>AS</option>
-                <option>AZ</option>
-                <option>CA</option>
-                <option>CO</option>
-                <option>CT</option>
-                <option>DC</option>
-                <option>DE</option>
-                <option>FL</option>
-                <option>GA</option>
-                <option>GU</option>
-                <option>HI</option>
-                <option>IA</option>
-                <option>ID</option>
-                <option>IL</option>
-                <option>IN</option>
-                <option>KS</option>
-                <option>KY</option>
-                <option>LA</option>
-                <option>MA</option>
-                <option>MD</option>
-                <option>ME</option>
-                <option>MI</option>
-                <option>MN</option>
-                <option>MO</option>
-                <option>MS</option>
-                <option>MT</option>
-                <option>NC</option>
-                <option>ND</option>
-                <option>NE</option>
-                <option>NH</option>
-                <option>NJ</option>
-                <option>NM</option>
-                <option>NV</option>
-                <option>NY</option>
-                <option>OH</option>
-                <option>OK</option>
-                <option>OR</option>
-                <option>PA</option>
-                <option>PR</option>
-                <option>RI</option>
-                <option>SC</option>
-                <option>SD</option>
-                <option>TN</option>
-                <option>TX</option>
-                <option selected="selected">UT</option>
-                <option>VA</option>
-                <option>VI</option>
-                <option>VT</option>
-                <option>WA</option>
-                <option>WI</option>
-                <option>WV</option>
-                <option>WY</option>
-                </select> </p>
-                </td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong><span style="text-decoration: underline;">Email:</span></strong> </td>
-                <td><input maxlength="100" size="25" name="required-email" required="required" /></td>
-            </tr>
-            <tr>
-                <td align="right" style="width: 23%;"><strong>Phone:</strong></td>
-                <td><input maxlength="25" size="25" name="phone" /></td>
-            </tr>
-            <tr>
-                <td align="right"><strong><span style="text-decoration: underline;">Issue:</span></strong> </td>
-                <td>Select the issue to which your letter most relates:
-                <select size="1" name="required-issue" required="required">
-                <option value="webAg" selected="selected">Agriculture</option>
-                <option value="webBud">Budget</option>
-                <option value="webCMRC">Commerce</option>
-                <option value="webCrime">Crime</option>
-                <option value="webDef">Defense</option>
-                <option value="webEd">Education</option>
-                <option value="webEN">Energy</option>
-                <option value="webEnv">Environment</option>
-                <option value="webHea">Health</option>
-                <option value="webHud">Housing and Urban Development</option>
-                <option value="webIMM">Immigration</option>
-                <option value="webIntl">International Issues</option>
-                <option value="webIraq">Iraq</option>
-                <option value="webJud">Judicial</option>
-                <option value="webLab">Labor</option>
-                <option value="webMisc">Miscellaneous</option>
-                <option value="webSci">Science</option>
-                <option value="webSSA">Social Security Administration</option>
-                <option value="webTax">Tax</option>
-                <option value="webTran">Transportation</option>
-                <option value="webTrd">Trade</option>
-                <option value="webVet">Veterans Affairs</option>
-                <option value="webWelf">Welfare</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="left" valign="top"><strong><span style="text-decoration: underline;">Message:</span></strong><br />
-                <textarea name="required-message" rows="8" cols="30" style="width: 95%;" required="required"></textarea></td>
-            </tr>
-            <tr>
-                <td valign="top" colspan="2">
-                <input type="radio" name="rsp" value="yes" /> I would like a response to my email <br />
-                <input type="radio" name="rsp" value="no" /> I do not need a response to my email
-                </td>
-            </tr>
-            <tr>
-                <td valign="top" colspan="2"><input type="checkbox" name="subscribe" value="subscribe" /> Check this box to sign up for my E-Newsletter! </td>
-            </tr>
-            <tr>
-                <td colspan="2"><br />
-                <center><input value="Send Email" type="submit" /> <input value="Reset" type="reset" /></center><br />
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</form></span>
+<form action="/News/DocumentQuery.aspx" method="get" class="search-form">
+<fieldset>
+<div class="text-box">
+<input type="text" name="SearchPhrase" />
+</div>
+<input type="submit" class="search-btn" value="submit" />
+</fieldset>
+</form>
+<td class="ContentCell">
+<span id="ctl00_ctl09_ctl00_Text" class="middlecopy">
+<form action="/submit-contact.aspx" method="post">
+<table cellpadding="0" cellspacing="0" align="center">
+<tbody>
+<tr>
+<td align="right" valign="bottom" style="width: 23%;">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td style="width: 77%;">
+<input maxlength="90" name="required-first" required="required" />
+</td>
+<td style="width: 0%;">
+<br />
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td>
+<p>
+<input maxlength="90" name="required-last" required="required" />
+</p>
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+</strong>
+</td>
+<td>
+<input maxlength="190" name="required-address" required="required" />
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td>
+<p>
+<input maxlength="45" name="required-city" required="required" />
+</p>
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td>
+<input maxlength="5" size="5" name="zip5" required="required" />
+<input maxlength="4" size="4" name="zip4" />
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td>
+<p>
+<select name="required-state" required="required">
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option selected="selected">
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+<option>
+</option>
+</select>
+</p>
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td>
+<input maxlength="100" size="25" name="required-email" required="required" />
+</td>
+</tr>
+<tr>
+<td align="right" style="width: 23%;">
+<strong>
+</strong>
+</td>
+<td>
+<input maxlength="25" size="25" name="phone" />
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+</td>
+<td>
+<select size="1" name="required-issue" required="required">
+<option value="webAg" selected="selected">
+</option>
+<option value="webBud">
+</option>
+<option value="webCMRC">
+</option>
+<option value="webCrime">
+</option>
+<option value="webDef">
+</option>
+<option value="webEd">
+</option>
+<option value="webEN">
+</option>
+<option value="webEnv">
+</option>
+<option value="webHea">
+</option>
+<option value="webHud">
+</option>
+<option value="webIMM">
+</option>
+<option value="webIntl">
+</option>
+<option value="webIraq">
+</option>
+<option value="webJud">
+</option>
+<option value="webLab">
+</option>
+<option value="webMisc">
+</option>
+<option value="webSci">
+</option>
+<option value="webSSA">
+</option>
+<option value="webTax">
+</option>
+<option value="webTran">
+</option>
+<option value="webTrd">
+</option>
+<option value="webVet">
+</option>
+<option value="webWelf">
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="left" valign="top">
+<strong>
+<span style="text-decoration: underline;">
+</span>
+</strong>
+<br />
+<textarea name="required-message" rows="8" cols="30" style="width: 95%;" required="required">
+</textarea>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+<input type="radio" name="rsp" value="yes" />
+<br />
+<input type="radio" name="rsp" value="no" />
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+<input type="checkbox" name="subscribe" value="subscribe" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<br />
+<center>
+<input value="Send Email" type="submit" />
+<input value="Reset" type="reset" />
+</center>
+<br />
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</span>

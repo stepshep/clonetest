@@ -1,77 +1,105 @@
-		<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
-			<p><label for="searchkey">Keyword:</label><span class="requiredfield" id="searchkeyrequired"></span></p>
-			<p><input type="text" name="searchkey" id="searchkey"  /></p>
-
-			<p id="searchEntire" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
 					checked="checked"/>
-				<label for="entire">Entire Site</label>
-			</p>
-			<p id="searchSection" style="display:none">
-				<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
 					/>
-				<label for="this_section">This Section</label>
-			</p>
-
-			<p class="submitbutton"><span><input type="submit" value="Search"/></span></p>
-		</form>
-		<form action="https://amodei.house.gov/index.cfm?sectionid=47" method="post">
-			<table border="0" cellpadding="0" cellspacing="0" style="margin-left: 24px; margin-top: 5px;" width="208">
-				<tbody>
-					<tr>
-						<td align="center" colspan="2">
-							<div id="enewstext" style="color: rgb(119, 119, 119); margin-left: 0px;">
-								Enter your Email and click submit to receive email alerts on issues affecting you</div>
-						</td>
-					</tr>
-					<tr>
-						<td align="right" width="148">
-						<td align="left" width="79">
-							<input class="form_submit_button" id="form_submit_button_4" name="submitform" style="margin-left: 0px; border: 1px solid rgb(255, 255, 255);" type="submit" value="Submit" /></td>
-					</tr>
-				</tbody>
-			</table>
-		</form>
-						<div class="sectionintro"> <form action="index.cfm?sectionid=2" method="get" onsubmit="return checkformsearch(this)" style="margin: 0px;">
-                  <table border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" width="208">
-                    <tbody>
-                      <tr>
-                        <td width="155" align="right" valign="top"><p style="display: none;">
-                            <label for="searchkey">Keyword:</label>
-                          </p>
-                          <p>
-                            <input class="text" id="searchkey" name="searchkey" style="height: 14px; border: 1px solid rgb(255, 255, 255);" type="text" />
-                          </p></td>
-                        <td width="72" align="left" valign="bottom"><p id="searchEntire" style="display: none;">
-                            <input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1" />
-                          </p>
-                          <p id="searchSection" style="display: none;">
-                            <input class="radiobutton" id="this_section" name="location" type="radio" value="1" />
-                          </p>
-                          <p class="submitbutton"> <span>
-                            <input class="form_submit_button" style="margin-left: 0px; margin-top: 2px; border:1px solid #fff;" type="submit" value="Search" />
-                            </span></p></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </form></div>
-			<form action="/contact-us/" method="post" id="zipauthform">
-				<p id="zipauthpreamble"></p>
-				<h2>Zip Code Authentication Form</h2>
-				<p>
-				<label for="zipcode">Zip Code:</label>
-				<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
-				<label for="zipfour" id="zipfourlabel">+4:</label>
-				<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
-				</p>
-				<p>
-				<span id="ziperror" style="display:none;" class="req">Please enter your five-digit zip code and your four-digit zip+4.<br /></span>
-				<input type="submit" value="Go to Form" class="button"/>
-				</p>
-				<hr/>
-				<ul>
-					<li class="zipmsg">If you do not know your four digit extension for your zip code, please check the <a href="http://www.usps.com/zip4/" target="_blank">U.S. Postal Service</a> web site for more information.</li>
-					<li class="zipmsg">Regrettably, I am unable to reply to any email from individuals residing outside of my congressional district.</li>
-					<li class="zipmsg">Both of the form fields are required.</li>
-				</ul>
-			</form>
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="https://amodei.house.gov/index.cfm?sectionid=47" method="post">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-left: 24px; margin-top: 5px;" width="208">
+<tbody>
+<tr>
+<td align="center" colspan="2">
+<div id="enewstext" style="color: rgb(119, 119, 119); margin-left: 0px;">
+</div>
+</td>
+</tr>
+<tr>
+<td align="right" width="148">
+<input class="text" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(119, 119, 119); height: 14px; margin-top: 2px; border: 1px solid rgb(255, 255, 255);" type="text" value="E-mail Address" />
+</td>
+<td align="left" width="79">
+<input class="form_submit_button" id="form_submit_button_4" name="submitform" style="margin-left: 0px; border: 1px solid rgb(255, 255, 255);" type="submit" value="Submit" />
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+<div class="sectionintro">
+<form action="index.cfm?sectionid=2" method="get" onsubmit="return checkformsearch(this)" style="margin: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" width="208">
+<tbody>
+<tr>
+<td width="155" align="right" valign="top">
+<label for="searchkey">
+</label>
+</p>
+<p>
+<input class="text" id="searchkey" name="searchkey" style="height: 14px; border: 1px solid rgb(255, 255, 255);" type="text" />
+</p>
+</td>
+<td width="72" align="left" valign="bottom">
+<input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1" />
+</p>
+<input class="radiobutton" id="this_section" name="location" type="radio" value="1" />
+</p>
+<p class="submitbutton">
+<span>
+<input class="form_submit_button" style="margin-left: 0px; margin-top: 2px; border:1px solid #fff;" type="submit" value="Search" />
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+<form action="/contact-us/" method="post" id="zipauthform">
+<p id="zipauthpreamble">
+</p>
+<h2>
+</h2>
+<p>
+<label for="zipcode">
+</label>
+<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+<label for="zipfour" id="zipfourlabel">
+</label>
+<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+</p>
+<p>
+<br />
+</span>
+<input type="submit" value="Go to Form" class="button"/>
+</p>
+<hr/>
+<ul>
+<li class="zipmsg">
+<a href="http://www.usps.com/zip4/" target="_blank">
+</a>
+</li>
+<li class="zipmsg">
+</li>
+<li class="zipmsg">
+</li>
+</ul>
+</form>

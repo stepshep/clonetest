@@ -1,193 +1,328 @@
 <form name="ContactForm" method="post" action="ContactPopupSubmit.php"
-	id="ContactForm" OnSubmit="return submitFunction();" method="post"><input
-	value="SD28"></input> 
-
+	id="ContactForm" OnSubmit="return submitFunction();" method="post">
+</input>
 <table border="0" align="left" width="100%">
-		<tr>
-		<td colspan="2" align="center">
-		<div
+<tr>
+<td colspan="2" align="center">
+<div
 			style="WIDTH: 550px; Padding-bottom: 3px; BORDER-BOTTOM: black thin solid;">
-		</td>
-	</tr>
-		<tr>
-		<td colspan="2">
-		<div id="messageHolder"
+<br />
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div id="messageHolder"
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: red;">
-			 * Indicates required fields</div>
-		</td>
-	</tr>
-	<tr width="100%">
-		<td
+</div>
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right; width: 20%;">
-		<span
+<span
 			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
-			id="spanFirstName"><span id="labelFirstName">*</span></span>&nbsp; <label
-			for="txtFirstName">First Name:</label></td>
-		<td
+			id="spanFirstName">
+<span id="labelFirstName">
+</span>
+</span>
+<label
+			for="txtFirstName">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left; width: 80%;"
-			>&nbsp;&nbsp;<input name="txtFirstName" type="text"
+			>
+<input name="txtFirstName" type="text"
 			maxlength="25" id="txtFirstName" tabindex="1" size="25"
-			style="width: 150px;" /></td>
-	</tr>
-	
-	<TR width="100%">
-		<TD
+			style="width: 150px;" />
+</td>
+</tr>
+<TR width="100%">
+<TD
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;">
-		<span
+<span
 			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
-			id="spanLastName"><span id="labelLastName">*</span></span>&nbsp; <label
-			for="txtLastName">Last Name:</label></TD>
-		<TD
+			id="spanLastName">
+<span id="labelLastName">
+</span>
+</span>
+<label
+			for="txtLastName">
+</label>
+</TD>
+<TD
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			>&nbsp; <input name="txtLastName" type="text"
+			>
+<input name="txtLastName" type="text"
 			maxlength="25" id="txtLastName" tabindex="2" size="25"
-			style="width: 200px;" /></TD>
-	</TR>
-	<tr width="100%">
-		<td
+			style="width: 200px;" />
+</TD>
+</TR>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normald; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;">
-		<span
+<span
 			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
-			id="spanAddress"><span id="labelAddress">*</span></span>&nbsp; <label
-			for="txtAddress">Address:</label></td>
-		<td
+			id="spanAddress">
+<span id="labelAddress">
+</span>
+</span>
+<label
+			for="txtAddress">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			>&nbsp; <input name="txtAddress" type="text"
+			>
+<input name="txtAddress" type="text"
 			maxlength="50" id="txtAddress" tabindex="3" size="50"
-			style="width: 343px;" /></td>
-	</tr>
-	
-	<tr width="100%">
-		<td
+			style="width: 343px;" />
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;"
-			width="30%"><span
+			width="30%">
+<span
 			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
-			id="spanCity"><span id="labelCity">*</span></span>&nbsp; <label
-			for="txtCity">City:</label></td>
-		<td
+			id="spanCity">
+<span id="labelCity">
+</span>
+</span>
+<label
+			for="txtCity">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			width="70%" >&nbsp; <input name="txtCity" type="text"
+			width="70%" >
+<input name="txtCity" type="text"
 			maxlength="30" id="txtCity" tabindex="4" size="40"
-			style="width: 252px;" /> 
-			</td>
-	</tr>
-	<tr width="100%">
-		<td
+			style="width: 252px;" />
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right;">
-		<span
+<span
 			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: red; VISIBILITY: visible;"
-			id="spanZip"><span id="labelZip">*</span></span>&nbsp; <label
-			for="txtZip">Zip Code:</label></td>
-		<td
+			id="spanZip">
+<span id="labelZip">
+</span>
+</span>
+<label
+			for="txtZip">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			>&nbsp; <input name="txtZip" type="text" maxlength="5"
-			id="txtZip" tabindex="6" style="width: 79px;" />&nbsp;</td>
-	</tr>
-	<tr width="100%">
-		<td
+			>
+<input name="txtZip" type="text" maxlength="5"
+			id="txtZip" tabindex="6" style="width: 79px;" />
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right">
-		<span id="labelPhone" style="color: Red;"></span><span
-			id="spanPhone">*</span> <label for="txtAreaCode">Phone:</label>&nbsp;
-		</td>
-		<td
+<span id="labelPhone" style="color: Red;">
+</span>
+</span>
+<label for="txtAreaCode">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			>&nbsp; ( <input name="txtAreaCode" type="text"
+			>
+<input name="txtAreaCode" type="text"
 			maxlength="3" id="txtAreaCode" tabindex="7" size="3"
 			onKeyUp="moveToNextField( this, 3, txtPhone1 );" style="width: 30px;" />
-		) <input name="txtPhone1" type="text" maxlength="3" id="txtPhone1"
+<input name="txtPhone1" type="text" maxlength="3" id="txtPhone1"
 			tabindex="8" size="3"
 			onKeyUp="moveToNextField( this, 3, txtPhone2 );" style="width: 30px;" />
-		- <input name="txtPhone2" type="text" maxlength="4" id="txtPhone2"
+<input name="txtPhone2" type="text" maxlength="4" id="txtPhone2"
 			tabindex="9" size="4" onKeyUp="moveToNextField( this, 4, txtExt );"
-			style="width: 40px;" /> &nbsp;&nbsp;<label for="txtExt">ext:</label>&nbsp;
-		<input name="txtExt" type="text" maxlength="4" id="txtExt"
-			tabindex="10" size="4" style="width: 40px;" /> &nbsp;&nbsp;<label
-			for="phoneTypeListbox">type:</label>&nbsp; <select
+			style="width: 40px;" />
+<label for="txtExt">
+</label>
+<input name="txtExt" type="text" maxlength="4" id="txtExt"
+			tabindex="10" size="4" style="width: 40px;" />
+<label
+			for="phoneTypeListbox">
+</label>
+<select
 			name="phoneTypeListbox" size="1" id="phoneTypeListbox" tabindex="11"
 			style="width: 65px;">
-			<option value="home">home</option>
-			<option value="work">work</option>
-			<option value="cell">cell</option>
-		</select></td>
-	</tr>
-	<tr width="100%">
-		<td
+<option value="home">
+</option>
+<option value="work">
+</option>
+<option value="cell">
+</option>
+</select>
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right">
-		<span
+<span
 			style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; VISIBILITY: visible; COLOR: red"
-			id="spanEmail"><span id="labelEmail">*</span></span>&nbsp; <label
-			for="txtEmail">E-mail:</label></td>
-		<td
+			id="spanEmail">
+<span id="labelEmail">
+</span>
+</span>
+<label
+			for="txtEmail">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			>&nbsp; <input name="txtEmail" type="text" maxlength="45"
-			id="txtEmail" tabindex="12" size="50" style="width: 343px;" /></td>
-	</tr>
-	<tr width="100%">
-		<td
+			>
+<input name="txtEmail" type="text" maxlength="45"
+			id="txtEmail" tabindex="12" size="50" style="width: 343px;" />
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right">
-		&nbsp; <label for="IssueListBox">Select an Issue:</label></td>
-		<td
+<label for="IssueListBox">
+</label>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left"
-			>&nbsp; <select name="IssueListBox" size="1"
+			>
+<select name="IssueListBox" size="1"
 			id="IssueListBox" tabindex="13" onChange="issueListChange();"
 			style="width: 425px;">
-			<option value=" ">-- select issue --</option><option value="30329">2015 Immigration - Oppose</option><option value="30328">2015 Immigration - Support</option><option value="30649">2015 Legislative Ideas</option><option value="30330">2015 UC Tuition Hikes</option><option value="30331">2015 Water Issues</option><option value="30268">CEQA Reform - Oppose</option><option value="30269">CEQA Reform - Support</option><option value="30332">Common Core - Oppose</option><option value="30333">Common Core - Suport</option><option value="30251">Education Funding - Oppose</option><option value="30252">Education Funding - Support</option><option value="30270">Fire Tax - Oppose</option><option value="30271">Fire Tax - Support</option><option value="30272">Fracking - Oppose</option><option value="30273">Fracking - Support</option><option value="30274">Gun Control - Oppose</option><option value="30275">Gun Control - Support</option><option value="30276">Healthcare Funding - Oppose</option><option value="30277">Healthcare Funding - Support</option><option value="30250">Help me with a state agency/casework</option><option value="31128">Plastic Bag Ban - Oppose</option><option value="31129">Plastic Bag Ban - Support</option><option value="30648">SB 128 2016 End of life.</option><option value="30708">SB 143 2016 Diamond Valley Reservoir: recreational use.</option><option value="30709">SB 149 2016 Investigational drugs, biological products, or d</option><option value="31268">SB 277 2016 Public health: vaccinations.</option>		</select></td>
-	</tr>
-	<tr align="center" width="100%">
-		<!--<td style="HEIGHT: 36px" width="25%">-->
-		<td
+<option value=" ">
+</option>
+<option value="30329">
+</option>
+<option value="30328">
+</option>
+<option value="30649">
+</option>
+<option value="30330">
+</option>
+<option value="30331">
+</option>
+<option value="30268">
+</option>
+<option value="30269">
+</option>
+<option value="30332">
+</option>
+<option value="30333">
+</option>
+<option value="30251">
+</option>
+<option value="30252">
+</option>
+<option value="30270">
+</option>
+<option value="30271">
+</option>
+<option value="30272">
+</option>
+<option value="30273">
+</option>
+<option value="30274">
+</option>
+<option value="30275">
+</option>
+<option value="30276">
+</option>
+<option value="30277">
+</option>
+<option value="30250">
+</option>
+<option value="31128">
+</option>
+<option value="31129">
+</option>
+<option value="30648">
+</option>
+<option value="30708">
+</option>
+<option value="30709">
+</option>
+<option value="31268">
+</option>
+</select>
+</td>
+</tr>
+<tr align="center" width="100%">
+<!--<td style="HEIGHT: 36px" width="25%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; HEIGHT: 15px; text-align: left;"
-			colspan="2"><!--colspan="2"  width="25%"   width=75%"--> <span
-			id="spanOr"> Please make an Issue Selection OR fill in a Comment </span>
-		<span
-			style="FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: sans-serif; vertical-align: top;"><span
-			id="labelOr"></span></span> 
-		<span id="labelStance" style="color: Red;"></span><span
-			id="spanStance">*</span> <input id="Y" type="radio"
-			name="stanceRadioButtonList" value="Y" tabindex="14" /><label for="Y">Support</label>
-		<input id="N" type="radio" name="stanceRadioButtonList" value="N"
-			tabindex="14" /><label for="N">Oppose</label></td>
-	</tr>
-
-	<tr width="100%">
-		<td
+			colspan="2">
+<!--colspan="2"  width="25%"   width=75%"-->
+</span>
+<span
+			style="FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: sans-serif; vertical-align: top;">
+<span
+			id="labelOr">
+</span>
+</span>
+<span id="labelStance" style="color: Red;">
+</span>
+</span>
+<input id="Y" type="radio"
+			name="stanceRadioButtonList" value="Y" tabindex="14" />
+<label for="Y">
+</label>
+<input id="N" type="radio" name="stanceRadioButtonList" value="N"
+			tabindex="14" />
+<label for="N">
+</label>
+</td>
+</tr>
+<tr width="100%">
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: right; vertical-align: top;">
-
-		<label for="txtComments">Comments:</label><br>
-		<span
-			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: red; FONT-FAMILY: sans-serif;"><span
-			id="labelComments"></span></span><span
-			id="spanComments">*Max Length Exceeded</span></td>
-		<td
+<label for="txtComments">
+</label>
+<br>
+<span
+			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: red; FONT-FAMILY: sans-serif;">
+<span
+			id="labelComments">
+</span>
+</span>
+</span>
+</td>
+<td
 			style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; TEXT-ALIGN: left; vertical-align: top;"
-			 nowrap><input size=1 value=2000 name=text_num
-			style="color: #FF0000;"> Characters Left <br>
-		<textarea onKeyDown=check_length(this.form);
+			 nowrap>
+<input size=1 value=2000 name=text_num
+			style="color: #FF0000;">
+<br>
+<textarea onKeyDown=check_length(this.form);
 			onKeyUp=check_length(this.form); name=jv_text rows=4 cols=50
-			style="font-family: Arial; height: 75px; width: 418px;"></textarea></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center" style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; 
+			style="font-family: Arial; height: 75px; width: 418px;">
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; 
 		TEXT-ALIGN: center; vertical-align: top;">
-		Your privacy is very important to us. By clicking submit, you are agreeing to the practices described
-		 in the Privacy and Conditions of Use. 
-		</td>
-	</tr>
-	<tr align="left" width="100%">
-		<td align=center colspan="2"><br>
-		<input type="submit" name="submitButton" value="Submit"
-			id="submitButton" tabindex="16" />&nbsp;&nbsp;&nbsp;&nbsp; <input
+</td>
+</tr>
+<tr align="left" width="100%">
+<td align=center colspan="2">
+<br>
+<input type="submit" name="submitButton" value="Submit"
+			id="submitButton" tabindex="16" />
+<input
 			type="reset" TabIndex="17" value="Reset" name="resetButton"
-			OnClick="additionalReset();" style="VISIBILITY: visible;">&nbsp;&nbsp;&nbsp;&nbsp;
-		</td>
-	</tr>
-	
-	<tr>
-		<td colspan="2" align="center" style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: center; vertical-align: top;">
-			<a href="PrivacyPolicy.html" target="_blank" title="This link will open in a new browser window">Privacy and Conditions of Use</a>
-		</td>
-	</tr>
-	
-	
+			OnClick="additionalReset();" style="VISIBILITY: visible;">
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" style="FONT-WEIGHT: normal; FONT-SIZE: 10pt; FONT-FAMILY: Arial; COLOR: #2a415d; TEXT-ALIGN: center; vertical-align: top;">
+<a href="PrivacyPolicy.html" target="_blank" title="This link will open in a new browser window">
+</a>
+</td>
+</tr>
 </table>
 </form>

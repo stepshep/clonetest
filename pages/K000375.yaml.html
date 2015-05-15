@@ -1,166 +1,215 @@
-											<!--<form action="http://keating.house.gov/index.php" method="post">
-	<div class="search">
-		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="Search" class="inputbox" type="text" size="20" value="search..." onblur="if(this.value==&#39;&#39;) this.value=&#39;search...&#39;;" onfocus="if(this.value==&#39;search...&#39;) this.value=&#39;&#39;;"><input type="submit" value="Search" class="button" onclick="this.form.searchword.focus();">	</div>
-</form>		-->			</div>
-  <!--<form action="/htbin/formproc/email-me.txt&amp;display=/contact-me/email-me-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post" name="contactForm" id="contactForm">-->
-  <form method="post" action="/htbin/formproc/keating/webforms/email-me.txt&amp;display=/webforms/thank_you.shtml">
-    <fieldset>
-      <legend>Your Information</legend>
-      <div class="formboxL">
-        <label for="prefix">Prefix</label>
-        :
-        <input id="prefix" maxlength="100" name="prefix" size="2" />
-      </div>
-      <div class="formboxL">
-        <label for="required-first">First Name:</label>
-        <span class="required-field style1">*</span>
-        <input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" size="26" />
-      </div>
-      <div class="formboxL">
-        <label for="middle">MI:</label>
-        <input id="middle" maxlength="100" name="middle" size="2" />
-      </div>
-      <div class="formboxL">
-        <label for="required-last">Last Name:</label>
-        <span class="required-field style1">*</span>
-        <input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" size="31" />
-      </div>
-      <div class="formboxL">
-        <label for="suffix">Suffix:</label>
-        <input id="suffix" maxlength="100" name="suffix" size="2" />
-      </div>
-      <div class="formboxL">
-        <label for="required-address">Street Address:</label>
-        <span class="required-field style1">*</span>
-        <input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" size="90" />
-      </div>
-      <div class="formboxL">
-        <label for="required-address">Street Address Continued:</label>
-        <input id="address2" maxlength="100" name="address2" size="90" />
-      </div>
-      <div class="formboxL">
-        <label for="required-city">City:</label>
-        <span class="required-field style1">*</span>
-        <input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" size="47" />
-      </div>
-      <div class="formboxL">
-        <label for="required-state">State:</label>
-        <span class="required-field style1">*</span>Massachusetts
-      </div>
-      <div class="formboxL">
-        <label for="required-zip5">Zip Code:</label>
-        <span class="required-field style1">*</span>
-        <input class="validate[required] is-required" gtbfieldid="16" id="required-zip5" maxlength="5" name="required-zip5" />
-      </div>
-      <div class="formboxL">
-        <label for="zip4">+4 Extension:</label>
-        <input gtbfieldid="17" id="zip4" maxlength="4" name="zip4" size="18" />
-      </div>
-      <div class="formboxL">
-        <label for="required-valid-email">Email:</label>
-        <span class="required-field style1">*</span>
-        <input class="validate[required,custom[email]] is-required" id="required-valid-email" maxlength="100" name="required-valid-email" size="90" />
-      </div>
-      </fieldset>
-    <fieldset>
-      <legend>Telephone</legend>
-      <div class="formboxL">
-        <label for="phone">Phone Number:</label>
-        <input id="phone" maxlength="20" name="phone" size="32" />
-      </div>
-      <div class="phone-type">
-        <div class="formboxL">
-          <input checked="checked" class="is-inline" id="speech_0" name="speech" type="radio" value="Voice" />
-          <label for="speech_0">Voice</label>
-        </div>
-        <div class="formboxL">
-          <input class="is-inline" id="speech_1" name="speech" type="radio" value="VP" />
-          <label for="speech_1"> VP </label>
-        </div>
-        <div class="formboxL">
-          <input class="is-inline" id="speech_2" name="speech" type="radio" value="TTD" />
-          <label for="speech_2"> TTD </label>
-        </div>
-      </div>
-      </fieldset>
-    <fieldset>
-      <legend>Your Message</legend>
-      <div class="formboxL">
-        <label for="required-issue">Choose an issue category from the drop-down list which most resembles your issue of concern.</label>
-        <span class="required-field style1">*</span>
-        <select class="validate[required] is-required" id="required-issue" name="required-issue" size="1">
-          <option selected="selected" value=""></option>
-          <option value="WEBAGR">Agriculture</option>
-          <option value="WEBBUD">Budget</option>
-          <option value="WEBDEF">Defense</option>
-          <option value="WEBEDU">Education</option>
-          <option value="WEBENE">Energy</option>
-          <option value="WEBENV">Environmental</option>
-          <option value="WEBGOV">Government Issues</option>
-          <option value="WEBHEA">Health</option>
-          <option value="WEBHOM">Homeland Security</option>
-          <option value="WEBIMM">Immigration</option>
-          <option value="WEBINT">International Relations</option>
-          <option value="WEBJUD">Judicial</option>
-          <option value="WEBLAB">Labor</option>
-          <option value="WEBSOC">Social Issues</option>
-          <option value="WEBSSEC">Social Security</option>
-          <option value="WEBTAX">Taxes</option>
-          <option value="WEBTEL">Telecommunications</option>
-          <option value="WEBTRA">Transportation</option>
-          <option value="WEBTRADE">Trade</option>
-          <option value="WEBVET">Veterans</option>
-          <option value="WEBWEL">Welfare</option>
-          <option value="WEBOTH">Other Issues</option>
-        </select>
-      </div>
-      <div class="formboxL">
-        <label for="required-subject">Message Subject:</label>
-        <span class="required-field style1" title="required information">*</span><br />
-        <input class="validate[required] is-required" id="required-subject" maxlength="100" name="required-subject" size="70" />
-      </div>
-      <div class="formboxL">
-        <label for="required-message">Text of Message:</label>
-        <span class="required-field style1" title="required information">*</span>
-        <p>
-          <textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" rows="5"></textarea>
-        </p>
-		
-		
-		<div class="formbx">
-
-    <label>Would you like a Response:</label>
-
-	
-	<input type="radio" class="radio" value="Y" name="response" />
-
-    Yes
-
-    <input name="response" type="radio" class="radio" value="N" checked="checked" />
-
-    No
-  </div>
-		
-		<div class="formbx inlineinputs">
-
-    <label>I would like to subscribe to your eNewsletter</label>
-
-    <input type="checkbox" value="EMAIL.OPTIN" name="aff1" checked />
-
-    Subscribe
-
-    </div>
-	
-	
-		
-        <p>
-          <input class="submit" id="submit2" name="submit" type="submit" value="Send Email" />
-        </p>
-      </div>
-      </fieldset>
-  </form>
-					<form method="post" action="http://email.capitolhillnewsonline.com/q/3WhFreoJ0tERjOYfYNgm3ER_n3T2KgzV9G">
+<!--<form action="http://keating.house.gov/index.php" method="post">
+<div class="search">
+<input name="searchword" id="mod_search_searchword" maxlength="20" alt="Search" class="inputbox" type="text" size="20" value="search..." onblur="if(this.value==&#39;&#39;) this.value=&#39;search...&#39;;" onfocus="if(this.value==&#39;search...&#39;) this.value=&#39;&#39;;">
+<input type="submit" value="Search" class="button" onclick="this.form.searchword.focus();">
+</div>
+</form>
+</div>
+<!--<form action="/htbin/formproc/email-me.txt&amp;display=/contact-me/email-me-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post" name="contactForm" id="contactForm">
+<form method="post" action="/htbin/formproc/keating/webforms/email-me.txt&amp;display=/webforms/thank_you.shtml">
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="prefix">
+</label>
+<input id="prefix" maxlength="100" name="prefix" size="2" />
+</div>
+<div class="formboxL">
+<label for="required-first">
+</label>
+<span class="required-field style1">
+</span>
+<input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" size="26" />
+</div>
+<div class="formboxL">
+<label for="middle">
+</label>
+<input id="middle" maxlength="100" name="middle" size="2" />
+</div>
+<div class="formboxL">
+<label for="required-last">
+</label>
+<span class="required-field style1">
+</span>
+<input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" size="31" />
+</div>
+<div class="formboxL">
+<label for="suffix">
+</label>
+<input id="suffix" maxlength="100" name="suffix" size="2" />
+</div>
+<div class="formboxL">
+<label for="required-address">
+</label>
+<span class="required-field style1">
+</span>
+<input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" size="90" />
+</div>
+<div class="formboxL">
+<label for="required-address">
+</label>
+<input id="address2" maxlength="100" name="address2" size="90" />
+</div>
+<div class="formboxL">
+<label for="required-city">
+</label>
+<span class="required-field style1">
+</span>
+<input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" size="47" />
+</div>
+<div class="formboxL">
+<label for="required-state">
+</label>
+<span class="required-field style1">
+</span>
+</div>
+<div class="formboxL">
+<label for="required-zip5">
+</label>
+<span class="required-field style1">
+</span>
+<input class="validate[required] is-required" gtbfieldid="16" id="required-zip5" maxlength="5" name="required-zip5" />
+</div>
+<div class="formboxL">
+<label for="zip4">
+</label>
+<input gtbfieldid="17" id="zip4" maxlength="4" name="zip4" size="18" />
+</div>
+<div class="formboxL">
+<label for="required-valid-email">
+</label>
+<span class="required-field style1">
+</span>
+<input class="validate[required,custom[email]] is-required" id="required-valid-email" maxlength="100" name="required-valid-email" size="90" />
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="phone">
+</label>
+<input id="phone" maxlength="20" name="phone" size="32" />
+</div>
+<div class="phone-type">
+<div class="formboxL">
+<input checked="checked" class="is-inline" id="speech_0" name="speech" type="radio" value="Voice" />
+<label for="speech_0">
+</label>
+</div>
+<div class="formboxL">
+<input class="is-inline" id="speech_1" name="speech" type="radio" value="VP" />
+<label for="speech_1">
+</label>
+</div>
+<div class="formboxL">
+<input class="is-inline" id="speech_2" name="speech" type="radio" value="TTD" />
+<label for="speech_2">
+</label>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="required-issue">
+</label>
+<span class="required-field style1">
+</span>
+<select class="validate[required] is-required" id="required-issue" name="required-issue" size="1">
+<option selected="selected" value="">
+</option>
+<option value="WEBAGR">
+</option>
+<option value="WEBBUD">
+</option>
+<option value="WEBDEF">
+</option>
+<option value="WEBEDU">
+</option>
+<option value="WEBENE">
+</option>
+<option value="WEBENV">
+</option>
+<option value="WEBGOV">
+</option>
+<option value="WEBHEA">
+</option>
+<option value="WEBHOM">
+</option>
+<option value="WEBIMM">
+</option>
+<option value="WEBINT">
+</option>
+<option value="WEBJUD">
+</option>
+<option value="WEBLAB">
+</option>
+<option value="WEBSOC">
+</option>
+<option value="WEBSSEC">
+</option>
+<option value="WEBTAX">
+</option>
+<option value="WEBTEL">
+</option>
+<option value="WEBTRA">
+</option>
+<option value="WEBTRADE">
+</option>
+<option value="WEBVET">
+</option>
+<option value="WEBWEL">
+</option>
+<option value="WEBOTH">
+</option>
+</select>
+</div>
+<div class="formboxL">
+<label for="required-subject">
+</label>
+<span class="required-field style1" title="required information">
+</span>
+<br />
+<input class="validate[required] is-required" id="required-subject" maxlength="100" name="required-subject" size="70" />
+</div>
+<div class="formboxL">
+<label for="required-message">
+</label>
+<span class="required-field style1" title="required information">
+</span>
+<p>
+<textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" rows="5">
+</textarea>
+</p>
+<div class="formbx">
+<label>
+</label>
+<input type="radio" class="radio" value="Y" name="response" />
+<input name="response" type="radio" class="radio" value="N" checked="checked" />
+</div>
+<div class="formbx inlineinputs">
+<label>
+</label>
+<input type="checkbox" value="EMAIL.OPTIN" name="aff1" checked />
+</div>
+<p>
+<input class="submit" id="submit2" name="submit" type="submit" value="Send Email" />
+</p>
+</div>
+</fieldset>
+</form>
+<form method="post" action="http://email.capitolhillnewsonline.com/q/3WhFreoJ0tERjOYfYNgm3ER_n3T2KgzV9G">
+<br>
 <div align="left">
-Sign-up for the latest news and information</div><br>
-<div align="left"><input alt="email" name="email" size="6" maxlength="50" value="E-mail" onfocus="if(this.value==&#39;E-mail&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;)this.value=&#39;E-mail&#39;" type="text"> <input name="Profile.Zip" alt="zip" size="2" maxlength="5" value="Zip" onfocus="if(this.value==&#39;Zip&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Zip&#39;" type="text"> <input id="submit" value="Go" type="submit"></div><br>
+</div>
+<br>
+<div align="left">
+<input alt="email" name="email" size="6" maxlength="50" value="E-mail" onfocus="if(this.value==&#39;E-mail&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;)this.value=&#39;E-mail&#39;" type="text">
+<input name="Profile.Zip" alt="zip" size="2" maxlength="5" value="Zip" onfocus="if(this.value==&#39;Zip&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Zip&#39;" type="text">
+<input id="submit" value="Go" type="submit">
+</div>
+<br>
 </form>

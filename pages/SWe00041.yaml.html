@@ -1,423 +1,321 @@
-    <form name="aspnetForm" method="post" action="ShareOpinion.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" style="width:750px; background-color: ">
+<form name="aspnetForm" method="post" action="ShareOpinion.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" style="width:750px; background-color: ">
 <div>
 </div>
-
 <script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['aspnetForm'];
-if (!theForm) {
-    theForm = document.aspnetForm;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
 </script>
-
-
-<script src="/governormalloy/Forms/WebResource.axd?d=YOTH8Iui9MtInkPAovNoZnHKbXjXtVNBagHCbZummnyccl6jcFCz4kmKGga4I1BkVtm_4ysMqd18zt-BwEQiACcA8041&amp;t=635583003887432854" type="text/javascript"></script>
-
-
-<script src="/governormalloy/Forms/WebResource.axd?d=eVTTTwkMYvvvBBVPRvxf9hNcgsv8oJ-OdUh71phh1PYeUnM9i0idxb5RbJvlXdvss_mgu0jNrZbrd-uXXaFnUcItvJ01&amp;t=635583003887432854" type="text/javascript"></script>
+<script src="/governormalloy/Forms/WebResource.axd?d=YOTH8Iui9MtInkPAovNoZnHKbXjXtVNBagHCbZummnyccl6jcFCz4kmKGga4I1BkVtm_4ysMqd18zt-BwEQiACcA8041&amp;t=635583003887432854" type="text/javascript">
+</script>
+<script src="/governormalloy/Forms/WebResource.axd?d=eVTTTwkMYvvvBBVPRvxf9hNcgsv8oJ-OdUh71phh1PYeUnM9i0idxb5RbJvlXdvss_mgu0jNrZbrd-uXXaFnUcItvJ01&amp;t=635583003887432854" type="text/javascript">
+</script>
 <script type="text/javascript">
-//<![CDATA[
-function WebForm_OnSubmit() {
-if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
-return true;
-}
-//]]>
 </script>
-
 <div>
-
 </div>
-    
-    <div style="width:750px">
-        <br />
-        
-            <div id="ctl00_ValidationSummaryContentPlaceHolder_FormValSummary" title="Form Validation Errors" style="color:Red;display:none;">
-
+<div style="width:750px">
+<br />
 </div>
-        
-    </div>
-    <div style="width:750px;" align="center">
-        <font face="Verdana,Arial,Geneva" size="2"><font size="4"><strong>
-            <span id="ctl00_lbFormTitle">Share Your Opinion</span>
-        </strong></font></font>
-    </div>
-    <div style="width:750px">
-        <br />
-        
-    <div style="width: 750px">
-        <div id="ctl00_DataContentPlaceHolder_SubmissionPanel" style="width:750px;">
-	
-            <table id='Submissiontbl' style="text-align: left; width: 750px">
-                <tr>
-                    <td>
-                        <div style="width: 750px">
-                            &nbsp;
-                        </div>
-                        <div style="width: 750px; height: 76px;">
-                            Governor Malloy and his staff would like to hear from you. If you have an opinion
-                            about any number of topics - from pending legislation to a policy issue or a suggestion
-                            for the Governor's staff - we'd like to hear from you.
-                            <br />
-                            If you have a specific question or concern about something that Governor 
-                            Malloy&#39;s Constituent Services staff can help you with, please use the Constituent Services
-                            form instead.
-                        </div>
-                        <div style="width: 750px">
-                            &nbsp;
-                        </div>
-                        <div style="width: 750px">
-                            <table border="0" style="width: 750px;">
-                                <tbody>
-                                    <tr>
-                                        <td style="color: #FF0000">
-                                            Fields marked with an asterisk (*) are required fields
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <b>Name Prefix:</b>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select name="ctl00$DataContentPlaceHolder$ddNameTitle" id="ctl00_DataContentPlaceHolder_ddNameTitle" title="Select the Name Title">
-		<option value=""></option>
-		<option value="Mr.">Mr.</option>
-		<option value="Mrs.">Mrs.</option>
-		<option value="Mr. and Mrs.">Mr. and Mrs.</option>
-		<option value="Ms.">Ms.</option>
-		<option value="Miss">Miss</option>
-		<option value="Dr.">Dr.</option>
-		<option value="The Honorable">The Honorable</option>
-		<option value="Congressman">Congressman</option>
-		<option value="Congresswoman">Congresswoman</option>
-		<option value="Representative">Representative</option>
-		<option value="The Reverend">The Reverend</option>
-		<option value="Father">Father</option>
-		<option value="Rabbi">Rabbi</option>
-		<option value="Chaplin">Chaplin</option>
-
-	</select>
-                                            &nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <b><font color="Red">*</font>First Name: </b>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$txtRequestorFirstName" type="text" maxlength="40" size="42" id="ctl00_DataContentPlaceHolder_txtRequestorFirstName" title="Please enter your first name" /><span id="ctl00_DataContentPlaceHolder_valSubmitterNameReq" title="Name is required" style="color:Red;display:none;">*</span><span id="ctl00_DataContentPlaceHolder_valReqName" style="color:Red;display:none;">Cannot exceed 40 charaters</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='text-align: "left"'>
-                                            <b><font color="Red">*</font>Last Name: </b>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$txtRequestorLastName" type="text" maxlength="40" size="42" id="ctl00_DataContentPlaceHolder_txtRequestorLastName" title="Please enter your Last name" /><span id="ctl00_DataContentPlaceHolder_ValLastNamereq" title="Name is required" style="color:Red;display:none;">*</span><span id="ctl00_DataContentPlaceHolder_valLastnameReg" style="color:Red;display:none;">Cannot exceed 40 charaters</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$txtNameSuffix" type="text" maxlength="4" size="6" id="ctl00_DataContentPlaceHolder_txtNameSuffix" title="Please enter name Suffix" />
-                                            <span class="style1">(Jr.,Sr.,etc.)</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bolder;">
-                                            Address Information:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">
-                                            <b>Street</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$txtStreetAddr" type="text" maxlength="60" size="61" id="ctl00_DataContentPlaceHolder_txtStreetAddr" title="Please enter your Street Address" /><span id="ctl00_DataContentPlaceHolder_valStreetReg" title="60 character maximum" style="color:Red;display:none;">Cannot exceed 60 charaters</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left">
-                                            <b>City</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$txtCity" type="text" maxlength="40" size="42" id="ctl00_DataContentPlaceHolder_txtCity" title="Please enter your city" /><span id="ctl00_DataContentPlaceHolder_valCityReg" title="Cannot exceed 40 characters" style="color:Red;display:none;">Cannot Exceed 40 characters</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left">
-                                            <b>State</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$txtState" type="text" value="CT" maxlength="2" size="3" id="ctl00_DataContentPlaceHolder_txtState" title="Please enter your state" style="height:22px;width:26px;" /><span id="ctl00_DataContentPlaceHolder_valStateReg" title="State cannot exceed 2 characters" style="color:Red;display:none;">Cannot exceed 2 characters</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">
-                                            <font color="Red">*</font><b>Zip Code</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$ZipCode" type="text" maxlength="10" size="10" id="ctl00_DataContentPlaceHolder_ZipCode" title="Please enter your zip code" /><span id="ctl00_DataContentPlaceHolder_valAddrZipReq" title="Zip Code Entry is required" style="color:Red;display:none;">*</span><span id="ctl00_DataContentPlaceHolder_valZipCiodeReg" title="Zip or Zip Plus 4 " style="color:Red;display:none;">Zip code has an invalid format</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left">
-                                            <b>Phone Number</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$PhoneNumber" type="text" maxlength="14" size="15" id="ctl00_DataContentPlaceHolder_PhoneNumber" title="Please enter your Phone Number" /><span id="ctl00_DataContentPlaceHolder_valPhoneNumReg" title="Phone Number Invalid - must include area code" style="color:Red;display:none;">Invalid format 860-111-1111 </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left">
-                                            <b><font color="Red">*</font>Email Address</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input name="ctl00$DataContentPlaceHolder$EmailAddress" type="text" maxlength="50" size="51" id="ctl00_DataContentPlaceHolder_EmailAddress" title="Please enter your Email Address" /> <span id="ctl00_DataContentPlaceHolder_valEmailReq" title="Email Address is required" style="color:Red;display:none;">*</span><span id="ctl00_DataContentPlaceHolder_valEmailReg" title="Must be properly formatted email address" style="color:Red;display:none;">Invalid format</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <b><font color="Red">*</font>Interest Area</b>:
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select name="ctl00$DataContentPlaceHolder$ddInterestArea" id="ctl00_DataContentPlaceHolder_ddInterestArea" title="Select Interest Area">
-		<option selected="selected" value="-- Select --">-- Select --</option>
-		<option value="HEALTHAHA">Affordable Healthcare Act</option>
-		<option value="BANKINGGEN">Banking</option>
-		<option value="BUDGETGEN">Budget</option>
-		<option value="CONSUMGEN">Consumer Protection</option>
-		<option value="CORRECTGEN">Corrections</option>
-		<option value="DDSGEN">Developmental Services</option>
-		<option value="JUDICIALGEN">Judicial / Legal</option>
-		<option value="ECONDEVGEN">Economic Development</option>
-		<option value="EDUCGEN">Education</option>
-		<option value="ENERGYGEN">Energy</option>
-		<option value="ENVIROGEN">Environment</option>
-		<option value="COMMENTSGEN">General Comments</option>
-		<option value="COMPLAINTSGEN">General Complaints</option>
-		<option value="HEALTHGEN">Healthcare Issues</option>
-		<option value="HIGHERED">Higher Education</option>
-		<option value="INSURANCEGEN">Insurance</option>
-		<option value="LEGISLATIVEISSUE">Legislative</option>
-		<option value="HOUSINGMORTGEN">Mortgage Issues</option>
-		<option value="PUBSAFEGEN">Public Safety</option>
-		<option value="REVSVCGENERAL">Revenue Services</option>
-		<option value="DOTGEN">Transportation</option>
-		<option value="VETGENERAL">Veterans</option>
-
-	</select>
-                                            &nbsp;<span id="ctl00_DataContentPlaceHolder_valIntAreaReq" title="Please select an Interest Area" style="color:Red;display:none;">*</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bold">
-                                            <font color="Red">*</font>Comments: <font style="font-size: smaller">(limit 4000 characters)</font>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-left: 10px">
-                                            <textarea name="ctl00$DataContentPlaceHolder$txtComments" rows="5" cols="50" id="ctl00_DataContentPlaceHolder_txtComments" title="Please enter you comments up to 4000 characters" style="border-width:2px;border-style:Solid;height:149px;width:612px;"></textarea>
-                                            <span id="ctl00_DataContentPlaceHolder_valCommentsReq" style="color:Red;display:none;">*</span>
-                                            <span id="ctl00_DataContentPlaceHolder_valCommentRegValidator" title="Comments has an invalid format or contains illegal characters" style="color:Red;display:none;">Invalid Comments</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        
 </div>
-        
-    </div>
-
-    </div>
-    <div style="width:750px">
-        <br />
-        
-            <div id="ctl00_SubmitContentPlaceHolder_PublicRecordNotePnl" style="width:750px;">
-	
-                <div style='text-align: left; font-size: smaller'>
-                    Please note: Electronic mail submitted through this web-site may be considered "Public
-                    records or files" as those terms are defined in the Connecticut Freedom of Information
-                    Act, (the "Act"). By operation of the Act, public records and files may be the subject
-                    to disclosure to persons other than the addressee. The marking of an electronic
-                    mail message submitted through this web site as "personal" or "confidential" may
-                    not prevent disclosure of certain public records governed by the Act -.
-                </div>
-            
+<div style="width:750px;" align="center">
+<font face="Verdana,Arial,Geneva" size="2">
+<font size="4">
+<strong>
+<span id="ctl00_lbFormTitle">
+</span>
+</strong>
+</font>
+</font>
 </div>
-         <div style='text-align: left; width:750px'>
-             <br />
-             <br />
-             <input type="submit" name="ctl00$SubmitContentPlaceHolder$btnSub" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SubmitContentPlaceHolder$btnSub&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_SubmitContentPlaceHolder_btnSub" title="Validate and Submit the Form" style="height:40px;width:131px;" />
-         </div>
-        
-    </div>
-    <div style="width:750px">
-        <br />
-        
-            
-        
-    </div>
-    
+<div style="width:750px">
+<br />
+<div style="width: 750px">
+<div id="ctl00_DataContentPlaceHolder_SubmissionPanel" style="width:750px;">
+<table id='Submissiontbl' style="text-align: left; width: 750px">
+<tr>
+<td>
+<div style="width: 750px">
+</div>
+<div style="width: 750px; height: 76px;">
+<br />
+</div>
+<div style="width: 750px">
+</div>
+<div style="width: 750px">
+<table border="0" style="width: 750px;">
+<tbody>
+<tr>
+<td style="color: #FF0000">
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<select name="ctl00$DataContentPlaceHolder$ddNameTitle" id="ctl00_DataContentPlaceHolder_ddNameTitle" title="Select the Name Title">
+<option value="">
+</option>
+<option value="Mr.">
+</option>
+<option value="Mrs.">
+</option>
+<option value="Mr. and Mrs.">
+</option>
+<option value="Ms.">
+</option>
+<option value="Miss">
+</option>
+<option value="Dr.">
+</option>
+<option value="The Honorable">
+</option>
+<option value="Congressman">
+</option>
+<option value="Congresswoman">
+</option>
+<option value="Representative">
+</option>
+<option value="The Reverend">
+</option>
+<option value="Father">
+</option>
+<option value="Rabbi">
+</option>
+<option value="Chaplin">
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<b>
+<font color="Red">
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$txtRequestorFirstName" type="text" maxlength="40" size="42" id="ctl00_DataContentPlaceHolder_txtRequestorFirstName" title="Please enter your first name" />
+</span>
+</span>
+</td>
+</tr>
+<tr>
+<td style='text-align: "left"'>
+<b>
+<font color="Red">
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$txtRequestorLastName" type="text" maxlength="40" size="42" id="ctl00_DataContentPlaceHolder_txtRequestorLastName" title="Please enter your Last name" />
+</span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$txtNameSuffix" type="text" maxlength="4" size="6" id="ctl00_DataContentPlaceHolder_txtNameSuffix" title="Please enter name Suffix" />
+<span class="style1">
+</span>
+</td>
+</tr>
+<tr>
+<td style="font-weight: bolder;">
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$txtStreetAddr" type="text" maxlength="60" size="61" id="ctl00_DataContentPlaceHolder_txtStreetAddr" title="Please enter your Street Address" />
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: left">
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$txtCity" type="text" maxlength="40" size="42" id="ctl00_DataContentPlaceHolder_txtCity" title="Please enter your city" />
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: left">
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$txtState" type="text" value="CT" maxlength="2" size="3" id="ctl00_DataContentPlaceHolder_txtState" title="Please enter your state" style="height:22px;width:26px;" />
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">
+<font color="Red">
+</font>
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$ZipCode" type="text" maxlength="10" size="10" id="ctl00_DataContentPlaceHolder_ZipCode" title="Please enter your zip code" />
+</span>
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: left">
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$PhoneNumber" type="text" maxlength="14" size="15" id="ctl00_DataContentPlaceHolder_PhoneNumber" title="Please enter your Phone Number" />
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align: left">
+<b>
+<font color="Red">
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<input name="ctl00$DataContentPlaceHolder$EmailAddress" type="text" maxlength="50" size="51" id="ctl00_DataContentPlaceHolder_EmailAddress" title="Please enter your Email Address" />
+</span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<b>
+<font color="Red">
+</font>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+<select name="ctl00$DataContentPlaceHolder$ddInterestArea" id="ctl00_DataContentPlaceHolder_ddInterestArea" title="Select Interest Area">
+<option selected="selected" value="-- Select --">
+</option>
+<option value="HEALTHAHA">
+</option>
+<option value="BANKINGGEN">
+</option>
+<option value="BUDGETGEN">
+</option>
+<option value="CONSUMGEN">
+</option>
+<option value="CORRECTGEN">
+</option>
+<option value="DDSGEN">
+</option>
+<option value="JUDICIALGEN">
+</option>
+<option value="ECONDEVGEN">
+</option>
+<option value="EDUCGEN">
+</option>
+<option value="ENERGYGEN">
+</option>
+<option value="ENVIROGEN">
+</option>
+<option value="COMMENTSGEN">
+</option>
+<option value="COMPLAINTSGEN">
+</option>
+<option value="HEALTHGEN">
+</option>
+<option value="HIGHERED">
+</option>
+<option value="INSURANCEGEN">
+</option>
+<option value="LEGISLATIVEISSUE">
+</option>
+<option value="HOUSINGMORTGEN">
+</option>
+<option value="PUBSAFEGEN">
+</option>
+<option value="REVSVCGENERAL">
+</option>
+<option value="DOTGEN">
+</option>
+<option value="VETGENERAL">
+</option>
+</select>
+</span>
+</td>
+</tr>
+<tr>
+<td style="font-weight: bold">
+<font color="Red">
+</font>
+<font style="font-size: smaller">
+</font>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 10px">
+<textarea name="ctl00$DataContentPlaceHolder$txtComments" rows="5" cols="50" id="ctl00_DataContentPlaceHolder_txtComments" title="Please enter you comments up to 4000 characters" style="border-width:2px;border-style:Solid;height:149px;width:612px;">
+</textarea>
+</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div style="width:750px">
+<br />
+<div id="ctl00_SubmitContentPlaceHolder_PublicRecordNotePnl" style="width:750px;">
+<div style='text-align: left; font-size: smaller'>
+</div>
+</div>
+<div style='text-align: left; width:750px'>
+<br />
+<br />
+<input type="submit" name="ctl00$SubmitContentPlaceHolder$btnSub" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SubmitContentPlaceHolder$btnSub&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_SubmitContentPlaceHolder_btnSub" title="Validate and Submit the Form" style="height:40px;width:131px;" />
+</div>
+</div>
+<div style="width:750px">
+<br />
+</div>
 <script type="text/javascript">
-//<![CDATA[
-var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_ValidationSummaryContentPlaceHolder_FormValSummary"));
-var Page_Validators =  new Array(document.getElementById("ctl00_DataContentPlaceHolder_valSubmitterNameReq"), document.getElementById("ctl00_DataContentPlaceHolder_valReqName"), document.getElementById("ctl00_DataContentPlaceHolder_ValLastNamereq"), document.getElementById("ctl00_DataContentPlaceHolder_valLastnameReg"), document.getElementById("ctl00_DataContentPlaceHolder_valStreetReg"), document.getElementById("ctl00_DataContentPlaceHolder_valCityReg"), document.getElementById("ctl00_DataContentPlaceHolder_valStateReg"), document.getElementById("ctl00_DataContentPlaceHolder_valAddrZipReq"), document.getElementById("ctl00_DataContentPlaceHolder_valZipCiodeReg"), document.getElementById("ctl00_DataContentPlaceHolder_valPhoneNumReg"), document.getElementById("ctl00_DataContentPlaceHolder_valEmailReq"), document.getElementById("ctl00_DataContentPlaceHolder_valEmailReg"), document.getElementById("ctl00_DataContentPlaceHolder_valIntAreaReq"), document.getElementById("ctl00_DataContentPlaceHolder_valCommentsReq"), document.getElementById("ctl00_DataContentPlaceHolder_valCommentRegValidator"));
-//]]>
 </script>
-
 <script type="text/javascript">
-//<![CDATA[
-var ctl00_DataContentPlaceHolder_valSubmitterNameReq = document.all ? document.all["ctl00_DataContentPlaceHolder_valSubmitterNameReq"] : document.getElementById("ctl00_DataContentPlaceHolder_valSubmitterNameReq");
-ctl00_DataContentPlaceHolder_valSubmitterNameReq.controltovalidate = "ctl00_DataContentPlaceHolder_txtRequestorFirstName";
-ctl00_DataContentPlaceHolder_valSubmitterNameReq.errormessage = "First Name is required";
-ctl00_DataContentPlaceHolder_valSubmitterNameReq.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valSubmitterNameReq.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valSubmitterNameReq.initialvalue = "";
-var ctl00_DataContentPlaceHolder_valReqName = document.all ? document.all["ctl00_DataContentPlaceHolder_valReqName"] : document.getElementById("ctl00_DataContentPlaceHolder_valReqName");
-ctl00_DataContentPlaceHolder_valReqName.controltovalidate = "ctl00_DataContentPlaceHolder_txtRequestorFirstName";
-ctl00_DataContentPlaceHolder_valReqName.errormessage = "Requestor Name has an invalid format";
-ctl00_DataContentPlaceHolder_valReqName.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valReqName.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valReqName.validationexpression = "^.{0,40}$";
-var ctl00_DataContentPlaceHolder_ValLastNamereq = document.all ? document.all["ctl00_DataContentPlaceHolder_ValLastNamereq"] : document.getElementById("ctl00_DataContentPlaceHolder_ValLastNamereq");
-ctl00_DataContentPlaceHolder_ValLastNamereq.controltovalidate = "ctl00_DataContentPlaceHolder_txtRequestorLastName";
-ctl00_DataContentPlaceHolder_ValLastNamereq.errormessage = "Last Name is required";
-ctl00_DataContentPlaceHolder_ValLastNamereq.display = "Dynamic";
-ctl00_DataContentPlaceHolder_ValLastNamereq.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_ValLastNamereq.initialvalue = "";
-var ctl00_DataContentPlaceHolder_valLastnameReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valLastnameReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valLastnameReg");
-ctl00_DataContentPlaceHolder_valLastnameReg.controltovalidate = "ctl00_DataContentPlaceHolder_txtRequestorLastName";
-ctl00_DataContentPlaceHolder_valLastnameReg.errormessage = "Requestor Last Name has an invalid format";
-ctl00_DataContentPlaceHolder_valLastnameReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valLastnameReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valLastnameReg.validationexpression = "^.{0,40}$";
-var ctl00_DataContentPlaceHolder_valStreetReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valStreetReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valStreetReg");
-ctl00_DataContentPlaceHolder_valStreetReg.controltovalidate = "ctl00_DataContentPlaceHolder_txtStreetAddr";
-ctl00_DataContentPlaceHolder_valStreetReg.errormessage = "Address Street name has an invalid format";
-ctl00_DataContentPlaceHolder_valStreetReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valStreetReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valStreetReg.validationexpression = "^.{0,60}$";
-var ctl00_DataContentPlaceHolder_valCityReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valCityReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valCityReg");
-ctl00_DataContentPlaceHolder_valCityReg.controltovalidate = "ctl00_DataContentPlaceHolder_txtCity";
-ctl00_DataContentPlaceHolder_valCityReg.errormessage = "City has an invalid format";
-ctl00_DataContentPlaceHolder_valCityReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valCityReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valCityReg.validationexpression = "^.{0,40}$";
-var ctl00_DataContentPlaceHolder_valStateReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valStateReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valStateReg");
-ctl00_DataContentPlaceHolder_valStateReg.controltovalidate = "ctl00_DataContentPlaceHolder_txtState";
-ctl00_DataContentPlaceHolder_valStateReg.errormessage = "State must not exceed 2 characters";
-ctl00_DataContentPlaceHolder_valStateReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valStateReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valStateReg.validationexpression = "^.{1,2}$";
-var ctl00_DataContentPlaceHolder_valAddrZipReq = document.all ? document.all["ctl00_DataContentPlaceHolder_valAddrZipReq"] : document.getElementById("ctl00_DataContentPlaceHolder_valAddrZipReq");
-ctl00_DataContentPlaceHolder_valAddrZipReq.controltovalidate = "ctl00_DataContentPlaceHolder_ZipCode";
-ctl00_DataContentPlaceHolder_valAddrZipReq.errormessage = "Zip Code Entry is required";
-ctl00_DataContentPlaceHolder_valAddrZipReq.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valAddrZipReq.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valAddrZipReq.initialvalue = "";
-var ctl00_DataContentPlaceHolder_valZipCiodeReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valZipCiodeReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valZipCiodeReg");
-ctl00_DataContentPlaceHolder_valZipCiodeReg.controltovalidate = "ctl00_DataContentPlaceHolder_ZipCode";
-ctl00_DataContentPlaceHolder_valZipCiodeReg.errormessage = "Zip Code has an invalid format";
-ctl00_DataContentPlaceHolder_valZipCiodeReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valZipCiodeReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valZipCiodeReg.validationexpression = "\\d{5}(-\\d{4})?";
-var ctl00_DataContentPlaceHolder_valPhoneNumReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valPhoneNumReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valPhoneNumReg");
-ctl00_DataContentPlaceHolder_valPhoneNumReg.controltovalidate = "ctl00_DataContentPlaceHolder_PhoneNumber";
-ctl00_DataContentPlaceHolder_valPhoneNumReg.errormessage = "Phone Number has an invalid format";
-ctl00_DataContentPlaceHolder_valPhoneNumReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valPhoneNumReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valPhoneNumReg.validationexpression = "^[0-9]{3}-[0-9]{3}-[0-9]{4}$";
-var ctl00_DataContentPlaceHolder_valEmailReq = document.all ? document.all["ctl00_DataContentPlaceHolder_valEmailReq"] : document.getElementById("ctl00_DataContentPlaceHolder_valEmailReq");
-ctl00_DataContentPlaceHolder_valEmailReq.controltovalidate = "ctl00_DataContentPlaceHolder_EmailAddress";
-ctl00_DataContentPlaceHolder_valEmailReq.errormessage = "Email Address is required";
-ctl00_DataContentPlaceHolder_valEmailReq.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valEmailReq.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valEmailReq.initialvalue = "";
-var ctl00_DataContentPlaceHolder_valEmailReg = document.all ? document.all["ctl00_DataContentPlaceHolder_valEmailReg"] : document.getElementById("ctl00_DataContentPlaceHolder_valEmailReg");
-ctl00_DataContentPlaceHolder_valEmailReg.controltovalidate = "ctl00_DataContentPlaceHolder_EmailAddress";
-ctl00_DataContentPlaceHolder_valEmailReg.errormessage = "Email Address has an invalid format";
-ctl00_DataContentPlaceHolder_valEmailReg.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valEmailReg.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valEmailReg.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-var ctl00_DataContentPlaceHolder_valIntAreaReq = document.all ? document.all["ctl00_DataContentPlaceHolder_valIntAreaReq"] : document.getElementById("ctl00_DataContentPlaceHolder_valIntAreaReq");
-ctl00_DataContentPlaceHolder_valIntAreaReq.controltovalidate = "ctl00_DataContentPlaceHolder_ddInterestArea";
-ctl00_DataContentPlaceHolder_valIntAreaReq.errormessage = "Interest Area selection is required";
-ctl00_DataContentPlaceHolder_valIntAreaReq.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valIntAreaReq.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valIntAreaReq.initialvalue = "-- Select --";
-var ctl00_DataContentPlaceHolder_valCommentsReq = document.all ? document.all["ctl00_DataContentPlaceHolder_valCommentsReq"] : document.getElementById("ctl00_DataContentPlaceHolder_valCommentsReq");
-ctl00_DataContentPlaceHolder_valCommentsReq.controltovalidate = "ctl00_DataContentPlaceHolder_txtComments";
-ctl00_DataContentPlaceHolder_valCommentsReq.errormessage = "Entry in Comment area is required";
-ctl00_DataContentPlaceHolder_valCommentsReq.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valCommentsReq.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valCommentsReq.initialvalue = "";
-var ctl00_DataContentPlaceHolder_valCommentRegValidator = document.all ? document.all["ctl00_DataContentPlaceHolder_valCommentRegValidator"] : document.getElementById("ctl00_DataContentPlaceHolder_valCommentRegValidator");
-ctl00_DataContentPlaceHolder_valCommentRegValidator.controltovalidate = "ctl00_DataContentPlaceHolder_txtComments";
-ctl00_DataContentPlaceHolder_valCommentRegValidator.errormessage = "Comments cannot exceeed 4000 characters or contain illegal characters";
-ctl00_DataContentPlaceHolder_valCommentRegValidator.display = "Dynamic";
-ctl00_DataContentPlaceHolder_valCommentRegValidator.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ctl00_DataContentPlaceHolder_valCommentRegValidator.validationexpression = "^[\\s\\S]{2,4000}$$";
-//]]>
 </script>
-
-
 <script type="text/javascript">
-//<![CDATA[
-
-var Page_ValidationActive = false;
-if (typeof(ValidatorOnLoad) == "function") {
-    ValidatorOnLoad();
-}
-
-function ValidatorOnSubmit() {
-    if (Page_ValidationActive) {
-        return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
-}
-        
-theForm.oldSubmit = theForm.submit;
-theForm.submit = WebForm_SaveScrollPositionSubmit;
-
-theForm.oldOnSubmit = theForm.onsubmit;
-theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
-//]]>
 </script>
 </form>

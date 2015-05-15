@@ -1,142 +1,256 @@
 <form action="http://larson.house.gov/index.php/index.php" method="post">
-
-	<div class="search">
-
-		<input name="searchword" id="mod_search_searchword" maxlength="23" alt="Search" class="inputbox" type="text" size="23" value="search..." onblur="if(this.value==&#39;&#39;) this.value=&#39;search...&#39;;" onfocus="if(this.value==&#39;search...&#39;) this.value=&#39;&#39;;"><input type="submit" value="Search" class="button" onclick="this.form.searchword.focus();">
-	</div>
-
-
-
-
+<div class="search">
+<input name="searchword" id="mod_search_searchword" maxlength="23" alt="Search" class="inputbox" type="text" size="23" value="search..." onblur="if(this.value==&#39;&#39;) this.value=&#39;search...&#39;;" onfocus="if(this.value==&#39;search...&#39;) this.value=&#39;&#39;;">
+<input type="submit" value="Search" class="button" onclick="this.form.searchword.focus();">
+</div>
 </form>
-					<form method="get" action="http://www.larson.house.gov/index.php" style="margin: 4px 0 0 7px">
-
-
+<form method="get" action="http://www.larson.house.gov/index.php" style="margin: 4px 0 0 7px">
 <table width="330px" align="center" height="50px" style="padding-top:80px">
 <tbody>
 <tr>
-<td align="center" valign="top"><input id="mod_search_searchword" class="inputbox" onfocus="if(this.value == &#39;Your E-mail Address&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;) this.value=&#39;Your E-mail Address&#39;" value="Your E-mail Address" size="15" alt="»" maxlength="50" name="email" type="text">
-      <input name="submit1" class="button" id="submit1" onclick="this.form.searchword.focus();" value="Get Updates" type="submit"></td>
+<td align="center" valign="top">
+<input id="mod_search_searchword" class="inputbox" onfocus="if(this.value == &#39;Your E-mail Address&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;) this.value=&#39;Your E-mail Address&#39;" value="Your E-mail Address" size="15" alt="»" maxlength="50" name="email" type="text">
+<input name="submit1" class="button" id="submit1" onclick="this.form.searchword.focus();" value="Get Updates" type="submit">
+</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </form>
 <!--<form method="post" action="http://email.capitolhillnewsonline.com/q/g9sySe0-4aYqgyzRkHmQ9tQp5IbiKhZONn">
 <table width="330px" align="center" background="images/design/signup_bg.png" height="50px" style="padding-top:80px">
 <tbody>
 <tr>
-<td align="center" valign="top"><input name="email" size="17" maxlength="20" value="Email address" onFocus="if(this.value=='Email address')this.value=''" onBlur="if(this.value=='')this.value='Email address'" type="text" />
-
-  <input name="Optional Information.Zip" maxlength="50" size="8" value="Zip" onFocus="if(this.value=='Zip')this.value=''" onBlur="if(this.value=='')this.value='Zip'" type="text" />
-  <input name="submit" type="submit" id="submit" value="Sign Up" /></td>
+<td align="center" valign="top">
+<input name="email" size="17" maxlength="20" value="Email address" onFocus="if(this.value=='Email address')this.value=''" onBlur="if(this.value=='')this.value='Email address'" type="text" />
+<input name="Optional Information.Zip" maxlength="50" size="8" value="Zip" onFocus="if(this.value=='Zip')this.value=''" onBlur="if(this.value=='')this.value='Zip'" type="text" />
+<input name="submit" type="submit" id="submit" value="Sign Up" />
+</td>
 </tr>
-</tbody></table>
-</form>-->
+</tbody>
+</table>
+</form>
 <form method="post" id="contactForm" name="contactForm" action="https://forms.house.gov/htbin/formproc/larson/contact_form_file.txt&amp;display=/larson/contact_thankyou.html">
-
-
 <table border="0" cellpadding="2" cellspacing="0" summary="layout" width="100%">
- <th bgcolor="#344756"><strong><span style="color:#FFFFFF">Name:</span></strong> </th>
-
-<tr><td valign="top"><label  for="required-prefix"><em>Prefix</em></label>: <input  name="required-prefix" id="required-prefix" type="text" value="" size="2" maxlength="90" />
-<label  for="required-first"><em>First Name</em></label>: <input  name="required-first" id="required-first" type="text" value="" size="10" maxlength="90" />
-<label for="middle">MI</label> <input name="middle" id="middle" type="text" value="" size="1" maxlength="90" />
-
-<label  for="required-last"><em>Last Name</em></label>: <input name="required-last" id="required-last" type="text" value="" size="10" maxlength="90" />
- </td></tr>
+<th bgcolor="#344756">
+<strong>
+<span style="color:#FFFFFF">
+</span>
+</strong>
+</th>
+<tr>
+<td valign="top">
+<label  for="required-prefix">
+<em>
+</em>
+</label>
+<input  name="required-prefix" id="required-prefix" type="text" value="" size="2" maxlength="90" />
+<label  for="required-first">
+<em>
+</em>
+</label>
+<input  name="required-first" id="required-first" type="text" value="" size="10" maxlength="90" />
+<label for="middle">
+</label>
+<input name="middle" id="middle" type="text" value="" size="1" maxlength="90" />
+<label  for="required-last">
+<em>
+</em>
+</label>
+<input name="required-last" id="required-last" type="text" value="" size="10" maxlength="90" />
+</td>
+</tr>
 </table>
-
-
 <table border="0" cellpadding="2" cellspacing="0" summary="layout" width="100%">
-<th bgcolor="#344756"><strong><span style="color:#FFFFFF">Address:</span></strong></th>
- 
-<tr><td valign="top">
-<label  for="required-address"><em>Street:</em></label><input name="required-address" id="required-address" type="text" value="" maxlength="190" size="60" /><br />
-
-<tr><td valign="top">
-<label  for="required-city"><em>City</em></label>: <input name="required-city" id="required-city" type="text" value="" size="10" maxlength="45" />, 
-  <label  for="required-state"><em>State</em></label>:  <input name="required-state" id="required-state" value="CT" readonly="readonly" size="2">
-
- <label  for="zip5"><em>ZIP</em></label>: <input name="required-zip5" id="zip5" type="text" value="" size="5" maxlength="5" />
- <label  for="zip4">(+4)</label> <input name="zip4" id="zip4" type="text" value="" size="4" maxlength="4" /> 
- <small>(<a id="zip4"  href="http://zip4.usps.com/zip4/welcome.jsp" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" target="_blank">Determine your ZIP+4</a>)</small>
-
-</td></tr>
+<th bgcolor="#344756">
+<strong>
+<span style="color:#FFFFFF">
+</span>
+</strong>
+</th>
+<tr>
+<td valign="top">
+<label  for="required-address">
+<em>
+</em>
+</label>
+<input name="required-address" id="required-address" type="text" value="" maxlength="190" size="60" />
+<br />
+<em>
+</span>
+</em>
+<input type="text" name="address2" id="address2" value="" maxlength="190" size="60" />
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label  for="required-city">
+<em>
+</em>
+</label>
+<input name="required-city" id="required-city" type="text" value="" size="10" maxlength="45" />
+<label  for="required-state">
+<em>
+</em>
+</label>
+<input name="required-state" id="required-state" value="CT" readonly="readonly" size="2">
+<label  for="zip5">
+<em>
+</em>
+</label>
+<input name="required-zip5" id="zip5" type="text" value="" size="5" maxlength="5" />
+<label  for="zip4">
+</label>
+<input name="zip4" id="zip4" type="text" value="" size="4" maxlength="4" />
+<small>
+<a id="zip4"  href="http://zip4.usps.com/zip4/welcome.jsp" title="United States Postal Service National Customer Support Center ZIP 4 Lookup" target="_blank">
+</a>
+</small>
+</td>
+</tr>
 </table>
-
- 
-
 <table border="0" cellpadding="2" cellspacing="0" summary="layout" width="100%">
- <th bgcolor="#344756"><strong><span style="color:#FFFFFF">Contact Information:</span></strong></th>
-<tr><td valign="top"><label  for="required-email"><em>Email</em></label>:</p> <input type="text" name="required-email" id="required-email" value="" size="40" maxlength="100" /><br /></td></tr>
-<tr><td valign="top"><label  for="phone">Phone</label> <input name="phone" id="phone" type="text" value="" size="20" maxlength="20" /></td></tr>  
-<tr><td valign="top"><label  for="required-affl"><em>Please send me e-mail updates from Congressman  Larson:</em></label><br />
-
-<input name="affl" type="radio" value="EMAIL.OPTIN" />Subscribe&nbsp;&nbsp;&nbsp;&nbsp;
-<input name="affl" type="radio" value="EMAIL.OPTOUT" />Unsubscribe&nbsp;&nbsp;&nbsp;&nbsp;
-
-</td></tr>
-<tr><td colspan="2"> <input name="required-response" type="radio" value="Y" /><em><strong>I would like a response from Congressman Larson</strong></em></td></tr>
-<tr><td colspan="2"> <input name="required-response" type="radio" value="N" /><em><strong>I would like to leave a comment but do not require a response</strong></em></td></tr>
- 
- 
-       </td></tr>
-
+<th bgcolor="#344756">
+<strong>
+<span style="color:#FFFFFF">
+</span>
+</strong>
+</th>
+<tr>
+<td valign="top">
+<label  for="required-email">
+<em>
+</em>
+</label>
+</p>
+<input type="text" name="required-email" id="required-email" value="" size="40" maxlength="100" />
+<br />
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label  for="phone">
+</label>
+<input name="phone" id="phone" type="text" value="" size="20" maxlength="20" />
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label  for="required-affl">
+<em>
+</em>
+</label>
+<br />
+<input name="affl" type="radio" value="EMAIL.OPTIN" />
+<input name="affl" type="radio" value="EMAIL.OPTOUT" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input name="required-response" type="radio" value="Y" />
+<em>
+<strong>
+</strong>
+</em>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input name="required-response" type="radio" value="N" />
+<em>
+<strong>
+</strong>
+</em>
+</td>
+</tr>
+</td>
+</tr>
 </table>
-
-  
-<table border="0" cellpadding="2" cellspacing="0" summary="layout" width="100%"> 
- <th bgcolor="#344756"><strong><span style="color:#FFFFFF">Your Message:</span></strong></th>
- 
-<tr><td valign="top">
- <label  for="subject"><em>Message Subject</em></label>:
-
-  <!--<input type="text" name="required-issue" id="subject" value="" size="70" maxlength="50" />-->
-  
-  <select id="required-issue" name="required-issue" size="1">
-      <option selected="selected" value=""></option>
-      <option value="Help With Agency">Help With Agency</option>
-      <option value="Comment on Policy">Comment on Policy</option>
-    </select>
-  
-  
-  <br /><br /> 
-   
-
+<table border="0" cellpadding="2" cellspacing="0" summary="layout" width="100%">
+<th bgcolor="#344756">
+<strong>
+<span style="color:#FFFFFF">
+</span>
+</strong>
+</th>
+<tr>
+<td valign="top">
+<label  for="subject">
+<em>
+</em>
+</label>
+<!--<input type="text" name="required-issue" id="subject" value="" size="70" maxlength="50" />
+<select id="required-issue" name="required-issue" size="1">
+<option selected="selected" value="">
+</option>
+<option value="Help With Agency">
+</option>
+<option value="Comment on Policy">
+</option>
+</select>
+<br />
+<br />
 <!--<select name="required-issue" size=1 id="required-issue">
-<option value="" selected>Please select one:</option>
-<OPTION VALUE="Agriculture">Agriculture</option> 
-<OPTION VALUE="Budget">Budget</option> 
-<OPTION VALUE="Casework">Casework</option> 
-<OPTION VALUE="Defense">Defense</option> 
-<OPTION VALUE="Economy">Economy</option>
-<OPTION VALUE="Education and Labor">Education and Labor</option> 
-<OPTION VALUE="Energy">Energy</option> 
-<OPTION VALUE="Environmental">Environmental</option> 
-<OPTION VALUE="Government Reform">Government Reform</option> 
-<OPTION VALUE="Health">Health</option> 
-<OPTION VALUE="Homeland Security">Homeland Security</option>
-<OPTION VALUE="Immigration">Immigration</option>
-<OPTION VALUE="International Relations">International Relations</option>
-<OPTION VALUE="Judicial">Judicial</option>
-<OPTION VALUE="Social Issues">Social Issues</option> 
-<OPTION VALUE="Social Security">Social Security</option> 
-<OPTION VALUE="Taxes and Trade">Taxes and Trade</option>
-<OPTION VALUE="Telecommunications">Telecommunications</option>
-<OPTION VALUE="Telecommunications">Telecommunications</option> 
-<OPTION VALUE="Veterans">Veterans</option> 
-<OPTION VALUE="Welfare">Welfare</option> 
-<OPTION VALUE="Other">Other</option>
-</select>-->
- 
-</td></tr>
-<tr><td valign="top"> <label  for="required-message"><em>Text of Message</em></label>:<br />
-
-      <textarea name="required-message" id="required-message" rows="11" cols="65"></textarea> </td></tr>
-      
-      
+<option value="" selected>
+</option>
+<OPTION VALUE="Agriculture">
+</option>
+<OPTION VALUE="Budget">
+</option>
+<OPTION VALUE="Casework">
+</option>
+<OPTION VALUE="Defense">
+</option>
+<OPTION VALUE="Economy">
+</option>
+<OPTION VALUE="Education and Labor">
+</option>
+<OPTION VALUE="Energy">
+</option>
+<OPTION VALUE="Environmental">
+</option>
+<OPTION VALUE="Government Reform">
+</option>
+<OPTION VALUE="Health">
+</option>
+<OPTION VALUE="Homeland Security">
+</option>
+<OPTION VALUE="Immigration">
+</option>
+<OPTION VALUE="International Relations">
+</option>
+<OPTION VALUE="Judicial">
+</option>
+<OPTION VALUE="Social Issues">
+</option>
+<OPTION VALUE="Social Security">
+</option>
+<OPTION VALUE="Taxes and Trade">
+</option>
+<OPTION VALUE="Telecommunications">
+</option>
+<OPTION VALUE="Telecommunications">
+</option>
+<OPTION VALUE="Veterans">
+</option>
+<OPTION VALUE="Welfare">
+</option>
+<OPTION VALUE="Other">
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<label  for="required-message">
+<em>
+</em>
+</label>
+<br />
+<textarea name="required-message" id="required-message" rows="11" cols="65">
+</textarea>
+</td>
+</tr>
 </table>
-
- 
-<input name="submit2" type="submit" value="Send Email" /> <input name="reset" type="reset" value="Reset" />
- 
+<input name="submit2" type="submit" value="Send Email" />
+<input name="reset" type="reset" value="Reset" />
 </form>
