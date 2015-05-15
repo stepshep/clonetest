@@ -4,3 +4,147 @@
 <input type="submit" value=" " class="searchButon">
 </form>
 </div>
+<form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
+<p>
+<label for="searchkey">
+</label>
+<span class="requiredfield" id="searchkeyrequired">
+</span>
+</p>
+<p>
+<input type="text" name="searchkey" id="searchkey"  />
+</p>
+<input type="radio" class="radiobutton" name="locale" value="-1" id="entire"
+					checked="checked"/>
+<label for="entire">
+</label>
+</p>
+<input type="radio" class="radiobutton" name="locale" value="58" id="this_section"
+					/>
+<label for="this_section">
+</label>
+</p>
+<p class="submitbutton">
+<span>
+<input type="submit" value="Search"/>
+</span>
+</p>
+</form>
+<form action="/email-me/" method="post" id="zipauthform">
+<p id="zipauthpreamble">
+</p>
+<h2>
+</h2>
+<p>
+<label for="zipcode">
+<span class="req">
+</span>
+</label>
+<input type="text" name="zipcode" id="zipcode" maxlength="5"/>
+<label for="zipfour" id="zipfourlabel">
+</label>
+<input type="text" name="zipfour" id="zipfour" maxlength="4"/>
+</p>
+<p>
+<br />
+</span>
+<input type="submit" value="Go to Form" class="button"/>
+</p>
+<hr/>
+<ul>
+<li class="zipmsg">
+<a href="http://www.usps.com/zip4/" target="_blank">
+</a>
+</li>
+<li class="zipmsg">
+</li>
+<li class="zipmsg">
+</li>
+</ul>
+</form>
+<div id="webfooter">
+<p>
+</p>
+<p>
+<footer role="contentinfo">
+<div class="moduletable">
+<h3>
+</h3>
+<div class="custom">
+</div>
+</div>
+<link href="http://westmoreland.house.gov/images/westmoreland%20official%20photo%20small.jpg" rel="image_src" />
+<link href="http://westmoreland.house.gov/images/website%20banner.jpg" rel="image_src" />
+<div class="moduletable">
+<div class="custom">
+<dl class="office">
+<dt>
+</dt>
+<dd>
+</dd>
+<dd>
+</dd>
+<dd>
+</dd>
+<dd>
+</dd>
+</dl>
+<dl class="office last">
+<dt>
+</dt>
+<dd>
+</dd>
+<dd>
+</dd>
+<dd>
+</dd>
+<dd>
+</dd>
+</dl>
+</div>
+</div>
+<div class="moduletable gtthomas">
+<div class="custom gtthomas">
+<form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post">
+<input class="text" id="word" name="queryc113" onblur="if(this.value=='')this.value='Bill Name'" onfocus="if(this.value=='Bill Name')this.value=''" type="text" value="Bill Name" />
+<input class="button" name="Enter" type="submit" />
+<input class="text" id="bill" name="docidc113" onblur="if(this.value=='')this.value='Bill Number'" onfocus="if(this.value=='Bill Number')this.value=''" type="text" value="Bill Number" />
+<input class="button" name="Enter" type="submit" />
+</form>
+</div>
+</div>
+<div class="moduletable footer-wrap">
+<ul class="menu" id="footer-menu">
+<li class="item-269">
+<a href="http://house.gov/content/site_tools/privacy_policy.php" target="_blank">
+</a>
+</li>
+<li class="item-270">
+<a href="http://westmoreland.house.gov/site-map">
+</a>
+</li>
+<li class="item-271">
+<a href="http://westmoreland.house.gov/email-me1/">
+</a>
+</li>
+</ul>
+</div>
+<div class="moduletable">
+<h3>
+</h3>
+<div class="custom">
+<p>
+<a href="http://www.republicanstudycommittee.com" target="_blank">
+</a>
+</p>
+</div>
+</div>
+</footer>
+<script type="text/javascript">
+</script>
+</p>
+<p>
+</p>
+<p>
+</p>
+</div>
