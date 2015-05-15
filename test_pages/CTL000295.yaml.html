@@ -1,17 +1,21 @@
 				<form method="post" action="Bartolomeo-mailform.php">
 				
 				<fieldset>
+				<select name="subject" style="visibility: hidden; height: 1px;">
 				<option value="General">General</option>				</select>
 				</fieldset>
 
 				<fieldset>
 				<label for="first_name">First &nbsp;</label>
+				<input id="first_name" class="required" name="first_name" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 				
 				<fieldset>
 				<label for="last_name">Last &nbsp;</label>
+				<input id="last_name" class="required" name="last_name" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 
 				<fieldset>
 				<label for="address">Address &nbsp;</label>
+				<input id="address" class="required" name="address" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 
 
 				<fieldset>
@@ -28,36 +32,47 @@
 <option value="Rockfall">Rockfall</option>
 <option value="Rocky Hill">Rocky Hill</option><option value="Roxbury">Roxbury</option><option value="Salem">Salem</option><option value="Salisbury">Salisbury</option><option value="Scotland ">Scotland </option><option value="Seymour">Seymour</option><option value="Sharon">Sharon</option><option value="Shelton">Shelton</option><option value="Sherman">Sherman</option><option value="Simsbury">Simsbury</option><option value="Somers">Somers</option><option value="South Windsor">South Windsor</option><option value="Southbury">Southbury</option><option value="Southington">Southington</option><option value="Sprague">Sprague</option><option value="Stafford">Stafford</option><option value="Stamford">Stamford</option><option value="Sterling">Sterling</option><option value="Stonington">Stonington</option><option value="Stratford">Stratford</option><option value="Suffield">Suffield</option><option value="Thomaston">Thomaston</option><option value="Thompson">Thompson</option><option value="Tolland">Tolland</option><option value="Torrington">Torrington</option><option value="Trumbull">Trumbull</option><option value="Union">Union</option><option value="Vernon">Vernon</option><option value="Voluntown">Voluntown</option><option value="Wallingford">Wallingford</option><option value="Warren">Warren</option><option value="Washington">Washington</option><option value="Waterbury">Waterbury</option><option value="Waterford">Waterford</option><option value="Watertown">Watertown</option><option value="West Hartford">West Hartford</option><option value="West Haven">West Haven</option><option value="Westbrook">Westbrook</option><option value="Weston">Weston</option><option value="Westport">Westport</option><option value="Wethersfield">Wethersfield</option><option value="Willington">Willington</option><option value="Wilton">Wilton</option><option value="Winchester">Winchester</option><option value="Windham">Windham</option><option value="Windsor">Windsor</option><option value="Windsor Locks">Windsor Locks</option><option value="Wolcott">Wolcott</option><option value="Woodbridge">Woodbridge</option><option value="Woodbury">Woodbury</option><option value="Woodstock">Woodstock</option><option value="Outside CT">Outside Connecticut</option>
 <option value="Not Listed">*Not Listed*</option>
+</select><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 
 				<fieldset>
 				<label for="State">State &nbsp;</label>
+				<input id="state" class="required" name="state" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 				
 				<fieldset>
 				<label for="zip">Zip + 4 &nbsp;</label>
+				<input id="zip" class="required" name="zip" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 
 				<fieldset>
 				<label for="sender_phone">Phone &nbsp;</label>
+				<input id="sender_phone" class="norequiredimg" name="sender_phone" value="" type="text" size="45" />
 				</fieldset>
 
 				<fieldset>
 				<label for="sender_email">E-mail &nbsp;</label>
+				<input id="sender_email" class="required" name="sender_email" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 
 				<fieldset>
 				<label for="subject_1">Subject &nbsp;</label>
+				<input id="subject_1" class="required" name="subject_1" value="" type="text" size="45" /><span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span></fieldset>
 
 				<fieldset>
 				<label for="message_text" style="vertical-align: top;">Message &nbsp;</label>
+				<textarea id="message_text" name="message_text" style="width: 300px; height: 100px;"></textarea><span><img src="Forms/required2.png" alt="Required" width="55" height="18" style="vertical-align: top; margin-top: 5px;" /></span></fieldset>
 				
 				<fieldset>
 				<label for="Reply" class="radio">Your Reply Options:&nbsp;</label>
+				<input type="radio" value="Yes" id="Reply" name="Reply" class="required radio" /> Please reply &emsp;<input type="radio" value="No Reply" id="Reply" name="Reply" class="required radio" /> No reply necessary<span><img src="Forms/required2.png" alt="Required" width="55" height="18" /></span>
 				</fieldset>
 				<p><i><span class="blue">If you need to send an enclosure or attachment, indicate your interest in doing so in the body of your message.</span></i></p>
 				
 				<p><b>Captcha: </b>Please enter the following code into the box exactly as it appears in the image.</p>
 				
 				<fieldset>
+				<label><img id="security_image" src="Forms/CaptchaSecurityImages.php" alt="Captcha" /> &nbsp;</label>
+				<input id="security_code" size="6" class="norequiredimg" name="security_code" type="text" style="width: 100px;" />
 				</fieldset><br />
 		
 				<fieldset>
+				<input type="submit" id="submit" class="norequiredimg" name="submit" value="Send" style="width: 110px;" />
 				</fieldset>
 				</form>
