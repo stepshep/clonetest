@@ -1,4 +1,4 @@
-There was an error getting a response from https://governor.state.tx.us/contact/contact.aspx
+There was an error opening https://governor.state.tx.us/contact/contact.aspx
 System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
    at System.Net.Security.SslState.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, Exception exception)
    at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
@@ -29,5 +29,6 @@ System.Net.WebException: The underlying connection was closed: Could not establi
    at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
    at System.Net.ConnectStream.WriteHeaders(Boolean async)
    --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 188
+   at System.Net.WebClient.OpenRead(Uri address)
+   at System.Net.WebClient.OpenRead(String address)
+   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 194
