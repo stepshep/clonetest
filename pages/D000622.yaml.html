@@ -1,5 +1,168 @@
-There was an error opening https://duckworth.house.gov/contact/email-me
-System.Net.WebException: The remote server returned an error: (503) Server Unavailable.
-   at System.Net.WebClient.OpenRead(Uri address)
-   at System.Net.WebClient.OpenRead(String address)
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 194
+<!--<form action="http://duckworth.house.gov/htbin/formproc/email-me.txt%26display%3D/contact/email-me/email-me-thank-you%26nobase%26fpGetVer%3D2" class="validate wsbform" id="contactForm" method="post" name="contactForm">
+<form method="post" action="https://forms.house.gov/htbin/formproc_za/duckworth/webforms/issue_subscribe_parm.txt&form=/duckworth/webforms/issue_subscribe_verify.html">
+<!--<form method="post" action="https://forms.house.gov/htbin/formproc_za/grayson/webforms/issue_subscribe_parm.txt&form=/grayson/webforms/issue_subscribe_verify.html">
+<fieldset>
+<legend>
+<strong>
+</strong>
+</legend>
+<div class="form-11">
+<label for="prefix">
+</label>
+<input id="prefix" maxlength="100" name="prefix" placeholder="Prefix" type="text">
+</div>
+<div class="form-33">
+<label for="required-first">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" placeholder="First Name" type="text">
+</div>
+<div class="form-11">
+<label for="middle">
+</label>
+<input id="middle" maxlength="100" name="middle" placeholder="Middle Initial" type="text">
+</div>
+<div class="form-33">
+<label for="required-last">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" placeholder="Last Name" type="text">
+</div>
+<div class="form-11">
+<label for="suffix">
+</label>
+<input id="suffix" maxlength="100" name="suffix" placeholder="Suffix" type="text">
+</div>
+<div class="form-100">
+<label for="required-address">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" placeholder="Street Address" type="text">
+</div>
+<div class="form-100">
+<label for="address2">
+</label>
+<input id="address2" maxlength="100" name="address2" placeholder="Street Address Continued" type="text">
+</div>
+<div class="form-100">
+<label for="required-city">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" placeholder="City" type="text">
+</div>
+<div class="form-33">
+<label for="required-state">
+</label>
+<span style="color:#FF0000">
+</span>
+<input id="required-state" maxlength="2" name="required-state" value="">
+</div>
+<div class="form-33">
+<label for="required-zip5">
+</label>
+<span style="color:#FF0000">
+</span>
+<input value="" id="required-zip5" maxlength="5" name="required-zip5">
+</div>
+<div class="form-33">
+<label for="zip4">
+</label>
+<span style="color:#FF0000">
+</span>
+<input value="" id="zip4" maxlength="5" name="zip4">
+<strong>
+</strong>
+</a>
+</div>
+<div class="form-100">
+<label for="required-valid-email">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required,custom[email]] is-required" id="required-valid-email" maxlength="100" name="required-valid-email" placeholder="Email" type="text">
+</div>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="form-50">
+<label for="required-phone">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required] is-required" id="required-phone" maxlength="80" name="required-phone" placeholder="Telephone Number" type="text">
+</div>
+<div class="form-50-phone">
+<input checked="checked" id="speech_0" name="speech" type="radio" value="Voice">
+<label class="is-inline" for="speech_0">
+</label>
+<input id="speech_1" name="speech" type="radio" value="VP">
+<label class="is-inline" for="speech_1">
+</label>
+<input id="speech_2" name="speech" type="radio" value="TTD">
+<label class="is-inline" for="speech_2">
+</label>
+</div>
+<div class="clearfix">
+</div>
+<br />
+<br />
+<p>
+<strong>
+</strong>
+<br>
+</p>
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<div class="form-100">
+<label for="required-subject">
+</label>
+<span style="color:#FF0000">
+</span>
+<input class="validate[required] is-required" id="required-subject" maxlength="100" name="required-subject" placeholder="Message Subject" type="text">
+</div>
+<div class="form-100">
+<label for="required-message">
+</label>
+<span style="color:#FF0000">
+</span>
+<p>
+<textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" placeholder="Text of Message" rows="9">
+</textarea>
+</p>
+</div>
+<div class="form-100">
+<input checked="checked" id="subscribe" name="subscribe" type="checkbox" value="Email.Optin">
+<label class="is-inline" for="subscribe">
+</label>
+</div>
+<div class="form-100">
+<label class="is-inline" for="required-response">
+</label>
+<span style="color:#FF0000">
+</span>
+<select class="validate[required] is-required" id="required-response" name="required-response" size="1">
+<option selected="selected" value="">
+</option>
+<option value="Y">
+</option>
+<option value="N">
+</option>
+</select>
+</div>
+<div class="form-100">
+<input id="future_contact" name="future_contact" type="checkbox" value="Yes Keep me updated">
+<label class="is-inline" for="future_contact">
+</label>
+</div>
+<div class="form-100">
+<input class="submit" id="submit" name="submit" role="button" type="submit" value="Send Email">
+</div>
+</fieldset>
+</form>

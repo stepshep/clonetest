@@ -1,34 +1,38 @@
-There was an error opening https://governor.state.tx.us/contact/contact.aspx
-System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
-   at System.Net.Security.SslState.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, Exception exception)
-   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
-   at System.Net.TlsStream.CallProcessAuthentication(Object state)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Net.TlsStream.ProcessAuthentication(LazyAsyncResult result)
-   at System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.ConnectStream.WriteHeaders(Boolean async)
-   --- End of inner exception stack trace ---
-   at System.Net.WebClient.OpenRead(Uri address)
-   at System.Net.WebClient.OpenRead(String address)
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 194
+<form method="post" action="contact.aspx" id="Form1">
+<div class="aspNetHidden">
+</div>
+<div class="aspNetHidden">
+</div>
+<P style="font-weight: bold; font-size: 130%;" >
+<br>
+</P>
+<P style="MARGIN: 0px 0px 0px 40px">
+</P>
+<table id="rblPath" class="noborder" style="color:Black;font-family:Helvetica;font-size:12px;width:550px;">
+<tr>
+<td>
+<input id="rblPath_0" type="radio" name="rblPath" value="1" />
+<label for="rblPath_0">
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<input id="rblPath_1" type="radio" name="rblPath" value="2" />
+<label for="rblPath_1">
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<input id="rblPath_2" type="radio" name="rblPath" value="3" />
+<label for="rblPath_2">
+</label>
+</td>
+</tr>
+</table>
+<P style="MARGIN: 0px 0px 0px 25px">
+<input type="submit" name="Button1" value="Select" id="Button1" style="font-family:Verdana;font-size:Small;height:25px;width:90px;" />
+<br>
+</P>
+</form>

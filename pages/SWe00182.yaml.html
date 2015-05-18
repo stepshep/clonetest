@@ -1,5 +1,345 @@
-There was an error opening http://www.governor.nebraska.gov/contact/contact.php
-System.Net.WebException: The remote server returned an error: (404) Not Found.
-   at System.Net.WebClient.OpenRead(Uri address)
-   at System.Net.WebClient.OpenRead(String address)
-   at DOMscraper.Program.GetForm(String url, String file) in c:\Users\SShepherd\Documents\Visual Studio 2013\Projects\DOMscraper\DOMscraper\Program.cs:line 194
+<form action="https://www.nebraska.gov/simpleMail/advanced.cgi" method="POST" id="form1">
+<div id="negov-message">
+</div>
+<div class="row">
+<div class="col-sm-3">
+<div class="form-group">
+<label class="control-label" for="01_fname">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<input type="textbox" value="" name="01 First Name *fn*" id="01_fname" class="form-control required" />
+</div>
+</div>
+<div class="col-sm-3">
+<div class="form-group">
+<label class="control-label" for="02_lname">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<input type="textbox" value="" name="02 Last Name *ln*" id="02_lname" class="form-control required" />
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="control-label" for="03_email">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<input type="textbox" value="" name="03 Email *rt*" id="03_email" class="form-control required" />
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-8">
+<div class="form-group">
+<label class="control-label" for="04_address">
+</label>
+<br />
+<input type="textbox" value="" name="04 Address" id="04_address" class="form-control" />
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="control-label" for="05_city">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<input type="textbox" value="" name="05 City" id="05_city" class="form-control required" />
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2">
+<div class="form-group">
+<label class="control-label" for="06_state">
+<small class="text-danger">
+</small>
+</label>
+<select name="06 State" id="06_state" class="form-control required">
+<option value="ALABAMA">
+</option>
+<br />
+<option value="ALASKA">
+</option>
+<br />
+<option value="ARIZONA">
+</option>
+<br />
+<option value="ARKANSAS">
+</option>
+<br />
+<option value="CALIFORNIA">
+</option>
+<br />
+<option value="COLORADO">
+</option>
+<br />
+<option value="CONNECTICUT">
+</option>
+<br />
+<option value="DELAWARE">
+</option>
+<br />
+<option value="DISTRICT_OF_COLUMBIA">
+</option>
+<br />
+<option value="FLORIDA">
+</option>
+<br />
+<option value="GEORGIA">
+</option>
+<br />
+<option value="HAWAII">
+</option>
+<br />
+<option value="IDAHO">
+</option>
+<br />
+<option value="ILLINOIS">
+</option>
+<br />
+<option value="INDIANA">
+</option>
+<br />
+<option value="IOWA">
+</option>
+<br />
+<option value="KANSAS">
+</option>
+<br />
+<option value="KENTUCKY">
+</option>
+<br />
+<option value="LOUISIANA">
+</option>
+<br />
+<option value="MAINE">
+</option>
+<br />
+<option value="MARYLAND">
+</option>
+<br />
+<option value="MASSACHUSETTS">
+</option>
+<br />
+<option value="MICHIGAN">
+</option>
+<br />
+<option value="MINNESOTA">
+</option>
+<br />
+<option value="MISSISSIPPI">
+</option>
+<br />
+<option value="MISSOURI">
+</option>
+<br />
+<option value="MONTANA">
+</option>
+<br />
+<option selected="selected" value="NEBRASKA">
+</option>
+<br />
+<option value="NEVADA">
+</option>
+<br />
+<option value="NEW_HAMPSHIRE">
+</option>
+<br />
+<option value="NEW_JERSEY">
+</option>
+<br />
+<option value="NEW_MEXICO">
+</option>
+<br />
+<option value="NEW_YORK">
+</option>
+<br />
+<option value="NORTH_CAROLINA">
+</option>
+<br />
+<option value="NORTH_DAKOTA">
+</option>
+<br />
+<option value="OHIO">
+</option>
+<br />
+<option value="OKLAHOMA">
+</option>
+<br />
+<option value="OREGON">
+</option>
+<br />
+<option value="PENNSYLVANIA">
+</option>
+<br />
+<option value="RHODE_ISLAND">
+</option>
+<br />
+<option value="SOUTH_CAROLINA">
+</option>
+<br />
+<option value="SOUTH_DAKOTA">
+</option>
+<br />
+<option value="TENNESSEE">
+</option>
+<br />
+<option value="TEXAS">
+</option>
+<br />
+<option value="UTAH">
+</option>
+<br />
+<option value="VERMONT">
+</option>
+<br />
+<option value="VIRGINIA">
+</option>
+<br />
+<option value="WASHINGTON">
+</option>
+<br />
+<option value="WEST_VIRGINIA">
+</option>
+<br />
+<option value="WISCONSIN">
+</option>
+<br />
+<option value="WYOMING">
+</option>
+<br />
+<option value="AMERICAN_SAMOA">
+</option>
+<br />
+<option value="FEDERATED_STATES_OF_MICRONESIA">
+</option>
+<br />
+<option value="GUAM">
+</option>
+<br />
+<option value="MARSHALL_ISLANDS">
+</option>
+<br />
+<option value="NORTHERN_MARIANA_ISLANDS">
+</option>
+<br />
+<option value="PALAU">
+</option>
+<br />
+<option value="PUERTO_RICO">
+</option>
+<br />
+<option value="US_MINOR_OUTLYING_ISLANDS">
+</option>
+<br />
+<option value="VIRGIN_ISLANDS">
+</option>
+<br />
+<option value="ARMED_FORCES_AMERICAS">
+</option>
+<br />
+<option value="ARMED_FORCES_EUROPE">
+</option>
+<br />
+<option value="ARMED_FORCES_PACIFIC">
+</option>
+<br />
+<option value="ALBERTA">
+</option>
+<br />
+<option value="BRITISH_COLUMBIA">
+</option>
+<br />
+<option value="MANITOBA">
+</option>
+<br />
+<option value="NEW_BRUNSWICK">
+</option>
+<br />
+<option value="NEWFOUNDLAND_AND_LABRADOR">
+</option>
+<br />
+<option value="NORTHWEST_TERRITORIES">
+</option>
+<br />
+<option value="NOVA_SCOTIA">
+</option>
+<br />
+<option value="NUNAVUT">
+</option>
+<br />
+<option value="ONTARIO">
+</option>
+<br />
+<option value="PRINCE_EDWARD_ISLAND">
+</option>
+<br />
+<option value="QUEBEC">
+</option>
+<br />
+<option value="SASKATCHEWAN">
+</option>
+<br />
+<option value="YUKON">
+</option>
+<br />
+</select>
+</div>
+</div>
+<div class="col-sm-5">
+<div class="form-group">
+<label class="control-label" for="07_zipcode">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<input type="textbox" value="" name="07 Zipcode" id="07_zipcode" class="form-control required" />
+</div>
+</div>
+<div class="col-sm-5">
+<div class="form-group">
+<label class="control-label" for="08_phone">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<input type="textbox" size="12" value="" name="08 Phone Number" id="08_phone" class="form-control required" />
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group">
+<label class="control-label" for="10_comments">
+<small class="text-danger">
+</small>
+</label>
+<br />
+<textarea name="10 Comments or Suggestions" cols="40" rows="5" id="10_comments" class="form-control required">
+</textarea>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group">
+</script>
+<div class="g-recaptcha" data-sitekey="6LcmsP4SAAAAAJeHxpx9VA7CeZq_9gf74M8tJVra" data-theme="light">
+</div>
+</div>
+</div>
+</div>
+<div class="form-actions">
+<div class="row">
+<div class="col-md-6 pull-right text-right">
+<input class="btn btn-primary" type="submit" id="mySubmitButton" value="Send" />
+</div>
+</div>
+</div>
+</form>
