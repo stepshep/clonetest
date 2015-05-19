@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: https://arkansasgov.wufoo.com/embed/z10gjhti00fynaz/def/embedKey=z10gjhti00fynaz760205&entsource=&referrer=http%3Awuslashwuslashgovernor.arkansas.govwuslash&header=hide#public
   steps:
-    - visit: "http://governor.arkansas.gov/contact-info"
+    - visit: "https://arkansasgov.wufoo.com/forms/z10gjhti00fynaz/"
     - iframe:
       - name: parent1
         selector: "iframe[class='wufoo-form-container']"
