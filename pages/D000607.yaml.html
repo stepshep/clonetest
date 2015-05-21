@@ -1,17 +1,17 @@
 <form id="site-search" role="search" method="get" action="/search" class="form-search pull-right">
-<input type="search" id="search-field" name="q" placeholder="Type here to search&hellip;" value="Type here to search&hellip;"  onclick="this.value='';" />
+<input type="search" id="search-field" name="q" placeholder="Type here to search…" value="Type here to search…" onclick="this.value='';">
 <button type="submit" class="btn">
 <i class="icon-search icon-white">
 </i>
 </button>
 </form>
-<form id="contactForm"  method="post"  action="/contact/email-joe"  enctype="application/x-www-form-urlencoded" >
+<form id="contactForm" method="post" action="/contact/email-joe" enctype="application/x-www-form-urlencoded" novalidate="novalidate">
 <fieldset>
 <label for="subject">
 <abbr title="Please enter a message topic for your message">
 </abbr>
 </label>
-<select id="subject" class="span8" name="subject" class="required" onchange="getHelp(this.value);">
+<select id="subject" class="span8 valid" name="subject" onchange="getHelp(this.value);">
 <option label="- - Select an Issue - -" value="" selected="selected">
 </option>
 <option label="Academy Nominations" value="Academy">
@@ -130,7 +130,7 @@
 </option>
 </select>
 </fieldset>
-<div  id="more-help">
+<div id="more-help">
 </div>
 </div>
 </div>
@@ -287,19 +287,19 @@
 <abbr title="required">
 </abbr>
 </label>
-<input class="span8 required" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
+<input class="span8 required" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required="">
 <label for="lname">
 <abbr title="required">
 </abbr>
 </label>
-<input class="span8 required" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
+<input class="span8 required" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required="">
 <legend>
 </legend>
 <label for="mailing_streetAddress1">
 <abbr title="Your street address is a required field">
 </abbr>
 </label>
-<input class="span8 required" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
+<input class="span8 required" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required="">
 <label for="mailing_streetAddress2">
 </label>
 <input class="span8" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
@@ -309,7 +309,7 @@
 <abbr title="Your city is a required field">
 </abbr>
 </label>
-<input class="span4 required" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
+<input class="span4 required" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required="">
 </div>
 <div class="span2">
 <label for="state">
@@ -330,7 +330,7 @@
 <abbr title="Your zip code is a required field">
 </abbr>
 </label>
-<input class="span2 required" type="number" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
+<input class="span2 required" type="number" name="mailing_zipCode" id="mailing_zipCode" aria-required="true" placeholder="Required" required="">
 </div>
 </div>
 <p>
@@ -346,12 +346,12 @@
 <abbr title="Your e-mail address is a required field">
 </abbr>
 </label>
-<input type="email" name="email_address" aria-required="true" id="email" class="span8 required email" placeholder="Required" required>
+<input type="email" name="email_address" aria-required="true" id="email" class="span8 required email" placeholder="Required" required="">
 <label for="verify_email">
 <abbr title="Please confirm your e-mail address">
 </abbr>
 </label>
-<input type="email" name="verify_email" id="verify_email" aria-required="true" class="span8" placeholder="Required" required>
+<input type="email" name="verify_email" id="verify_email" aria-required="true" class="span8" placeholder="Required" required="">
 </fieldset>
 <fieldset>
 <legend>
@@ -360,7 +360,7 @@
 <abbr title="required">
 </abbr>
 </label>
-<input class="span8 required" type="text" name="messagesubject" id="messagesubject" aria-required="true" placeholder="Required" required>
+<input class="span8 required" type="text" name="messagesubject" id="messagesubject" aria-required="true" placeholder="Required" required="">
 <label for="message">
 <abbr title="Please enter your message">
 </abbr>
@@ -368,11 +368,11 @@
 <textarea id="message" class="span8 required" rows="10" name="message" aria-required="true">
 </textarea>
 <label for="response_y" class="checkbox">
-<input name="response" id="response_y" value="Y" type="checkbox" checked>
+<input name="response" id="response_y" value="Y" type="checkbox" checked="">
 <span>
 </span>
 </label>
-<input class="btn right" type="submit"  value="Submit" />
+<input class="btn right" type="submit" value="Submit">
 </fieldset>
 </div>
 </form>

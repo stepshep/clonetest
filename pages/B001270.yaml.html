@@ -1,4 +1,4 @@
-<form action="/contact-me/email-me" method="post" id="search-block-form" accept-charset="UTF-8">
+<form action="/contact-me/email-me-zip-authenticated?fromFormProc" method="post" id="search-block-form" accept-charset="UTF-8">
 <div>
 <div class="container-inline">
 <h2 class="element-invisible">
@@ -6,52 +6,242 @@
 <div class="form-item form-type-textfield form-item-search-block-form">
 <label class="element-invisible" for="edit-search-block-form--2">
 </label>
-<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
 </div>
 <div class="form-actions form-wrapper" id="edit-actions">
-<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" />
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
 </div>
 </div>
 </div>
 </form>
 </div>
-<!-- ZIP AUTHENTICATION FORM -->
-<form action="/htbin/formproc_za/zip-auth.txt&amp;form=/contact-me/email-me-zip-authenticated&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post">
+<!-- EMAIL ME FORM -->
+<form action="/htbin/formproc/email-me-iq.txt&amp;display=/contact-me/email-me-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post" name="contactForm" id="contactForm">
 <fieldset>
 <legend>
 </legend>
-<p>
-</p>
 <div class="formboxL">
-<label for="required-zip5">
+<label for="prefix">
+</label>
+<input id="prefix" maxlength="100" name="prefix" size="2">
+</div>
+<div class="formboxL">
+<label for="required-first">
+</label>
 <span class="required-field" title="required information">
 </span>
+<input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" size="26">
+</div>
+<div class="formboxL">
+<label for="middle">
 </label>
-<input class="validate[required] is-required" gtbfieldid="16" id="required-zip5" maxlength="5" name="required-zip5" />
+<input id="middle" maxlength="100" name="middle" size="2">
+</div>
+<div class="formboxL">
+<label for="required-last">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" size="31">
+</div>
+<div class="formboxL">
+<label for="suffix">
+</label>
+<input id="suffix" maxlength="100" name="suffix" size="2">
+</div>
+<div class="formboxL">
+<label for="required-address">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" size="90">
+</div>
+<div class="formboxL">
+<label for="required-address">
+</label>
+<input id="address2" maxlength="100" name="address2" size="90">
+</div>
+<div class="formboxL">
+<label for="required-city">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" size="47">
+</div>
+<div class="formboxL">
+<label for="required-state">
+</label>
+<span class="required-field" title="required information">
+</span>
+</div>
+<div class="formboxL">
+<label for="required-zip5">
+</label>
+<span class="required-field" title="required information">
+</span>
 </div>
 <div class="formboxL">
 <label for="zip4">
 </label>
-<input gtbfieldid="17" id="zip4" maxlength="4" name="zip4" size="18" />
-</div>
-<div class="clear">
 </div>
 <div class="formboxL">
-<input class="submit" id="submit" name="submit" type="submit" value="Go To Next Step" />
+<label for="required-valid-email">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required,custom[email]] is-required" id="required-valid-email" maxlength="100" name="required-valid-email" size="90">
 </div>
 <p>
 </p>
 </fieldset>
-<br />
+<br>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="required-phone">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input id="required-&quot;phone&quot;" maxlength="20" name="required-phone" size="32">
+</div>
+<div class="phone-type">
+<div class="formboxL">
+<input checked="checked" class="is-inline" id="speech_0" name="speech" type="radio" value="Voice">
+<label for="speech_0">
+</label>
+</div>
+<div class="formboxL">
+<input class="is-inline" id="speech_1" name="speech" type="radio" value="VP">
+<label for="speech_1">
+</label>
+</div>
+<div class="formboxL">
+<input class="is-inline" id="speech_2" name="speech" type="radio" value="TTD">
+<label for="speech_2">
+</label>
+</div>
+</div>
+<p>
+</p>
+</fieldset>
+<br>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="required-issue">
+</label>
+<span class="required-field" title="required information">
+</span>
+<br>
+<select class="validate[required] is-required" id="required-issue" name="required-issue" size="1">
+<option selected="selected" value="">
+</option>
+<option value="CASEWORK">
+</option>
+<option value="AGRICULTURE">
+</option>
+<option value="ANIMALS">
+</option>
+<option value="BANKING">
+</option>
+<option value="TAXES">
+</option>
+<option value="JUDICIARY">
+</option>
+<option value="CONSUMER_PROTECTIONS">
+</option>
+<option value="CRIME_AND_LAW_ENFORCEMENT">
+</option>
+<option value="DEFENSE_AND_MILITARY">
+</option>
+<option value="EDUCATION">
+</option>
+<option value="ENERGY">
+</option>
+<option value="ENVIRONMENT">
+</option>
+<option value="FOREIGN_AFFAIRS">
+</option>
+<option value="GOVERNMENT_REFORM_AND_ELECTIONS">
+</option>
+<option value="HEALTH">
+</option>
+<option value="HOMELAND_SECURITY">
+</option>
+<option value="HOUSING">
+</option>
+<option value="HUMAN_SERVICES">
+</option>
+<option value="IMMIGRATION">
+</option>
+<option value="JOBS_AND_ECONOMY">
+</option>
+<option value="LESBIAN_AND_GAY_ISSUES">
+</option>
+<option value="SCIENCE_AND_TECHNOLOGY">
+</option>
+<option value="SENIORS">
+</option>
+<option value="SMALL_BUSINESS">
+</option>
+<option value="TELECOMMUNICATIONS">
+</option>
+<option value="TRANSPORTATION">
+</option>
+<option value="TRADE">
+</option>
+<option value="VETERANS">
+</option>
+<option value="WOMENS_ISSUES">
+</option>
+</select>
+</div>
+<div class="formboxL">
+<label for="required-subject">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="required-subject" maxlength="100" name="required-subject" size="90">
+</div>
+<div class="formboxL">
+<label for="required-message">
+</label>
+<span class="required-field" title="required information">
+</span>
+<textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" rows="5">
+</textarea>
+</div>
+<div class="formboxL">
+<label for="required-response">
+</label>
+<br>
+<select class="validate[required] is-required" id="required-response" name="required-response" size="1">
+<option selected="selected" value="">
+</option>
+<option value="Y">
+</option>
+<option value="N">
+</option>
+</select>
+</div>
+<div class="formboxL">
+<input class="submit" id="submit" name="submit" type="submit" value="Send Email">
+</div>
+<p>
+</p>
+</fieldset>
+<br>
 </form>
 <form action="/htbin/formproc/newsletter-subscribe.txt&amp;display=/contact-me/newsletter-subscribe-thankyou&amp;nobase&amp;fpGetVer=2" name="newsletter_signup_form">
-<input class="form-text search-field" gtbfieldid="16" id="first" maxlength="120" name="required-first" onblur="if(this.value=='') this.value='*Enter First Name';" onfocus="if(this.value=='*Enter First Name') this.value='';" size="16" title="Enter your first name." type="text" value="*Enter First Name" />
-<input class="form-text search-field" gtbfieldid="16" id="required-last" maxlength="120" name="required-last" onblur="if(this.value=='') this.value='*Enter Last Name';" onfocus="if(this.value=='*Enter Last Name') this.value='';" size="16" title="*Enter Last Name" type="text" value="*Enter Last Name" />
-<br />
-<input class="form-text search-field" id="edit-signup-theme-form-1" maxlength="128" name="required-valid-email" onblur="if(this.value=='') this.value='*Enter email address';" onfocus="if(this.value=='*Enter email address') this.value='';" size="20" title="*Enter email address" type="text" value="*Enter email address" />
-<input class="form-text search-field" gtbfieldid="16" id="zip" maxlength="20" name="zip" onblur="if(this.value=='') this.value='*Enter Zip';" onfocus="if(this.value=='*Enter Zip') this.value='';" size="15" title="*Enter Zip" type="text" value="*Enter Zip" />
+<input class="form-text search-field" gtbfieldid="16" id="first" maxlength="120" name="required-first" onblur="if(this.value=='') this.value='*Enter First Name';" onfocus="if(this.value=='*Enter First Name') this.value='';" size="16" title="Enter your first name." type="text" value="*Enter First Name">
+<input class="form-text search-field" gtbfieldid="16" id="required-last" maxlength="120" name="required-last" onblur="if(this.value=='') this.value='*Enter Last Name';" onfocus="if(this.value=='*Enter Last Name') this.value='';" size="16" title="*Enter Last Name" type="text" value="*Enter Last Name">
+<br>
+<input class="form-text search-field" id="edit-signup-theme-form-1" maxlength="128" name="required-valid-email" onblur="if(this.value=='') this.value='*Enter email address';" onfocus="if(this.value=='*Enter email address') this.value='';" size="20" title="*Enter email address" type="text" value="*Enter email address">
+<input class="form-text search-field" gtbfieldid="16" id="zip" maxlength="20" name="zip" onblur="if(this.value=='') this.value='*Enter Zip';" onfocus="if(this.value=='*Enter Zip') this.value='';" size="15" title="*Enter Zip" type="text" value="*Enter Zip">
 <br>
 <div class="formboxL">
-<input class="form-submit" id="edit-submit" type="submit" value="submit" />
+<input class="form-submit" id="edit-submit" type="submit" value="submit">
 </div>
 </form>

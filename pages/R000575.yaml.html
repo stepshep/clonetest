@@ -1,34 +1,200 @@
-<form action="/htbin/formproc_za/zip-auth.txt&amp;form=/contact-mike/email-me-zip-authenticated&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post">
+<form action="/htbin/formproc/contact.txt&amp;display=/contact-mike/email-me-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post">
 <fieldset>
 <legend>
 </legend>
-<div class="formboxL maxwidth">
-<p>
-</a>
-</p>
-</div>
 <div class="formboxL">
-<label for="zip5">
+<label for="prefix">
 </label>
 <span class="required-field" title="required information">
 </span>
-<input class="validate[required,custom[zip5]] is-required" id="zip5" maxlength="5" name="zip5" size="19" />
+<input class="validate[required] is-required" id="prefix" maxlength="10" name="required-prefix" size="2" title="Name prefix, ex. Mr. or Mrs." type="text">
 </div>
 <div class="formboxL">
-<label for="zip4">
+<label for="first name">
 </label>
-<input id="zip4" maxlength="4" name="zip4" size="18" />
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="first name" maxlength="100" name="required-first" size="32" type="text">
 </div>
 <div class="formboxL">
-<input class="submit" id="submit" name="submit" type="submit" value="Go To Next Step" />
-<input class="reset" type="reset" value="Clear Form" />
+<label for="last name">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="last name" maxlength="100" name="required-last" size="32" type="text">
+</div>
+<div class="formboxL">
+<label for="street address">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="street address" maxlength="100" name="required-addr1" size="90" type="text">
+</div>
+<div class="formboxL">
+<label for="second address line">
+</label>
+<input id="second address line" maxlength="100" name="addr2" size="90" type="text">
+</div>
+<div class="formboxL">
+<label for="city">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required] is-required" id="city" maxlength="100" name="required-city" size="42" type="text">
+</div>
+<div class="formboxL">
+<label for="state">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input id="state" name="required-state" readonly="readonly" size="2" type="text" value="AL">
+</div>
+<div class="formboxL">
+<label for="zip code">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required,custom[zip5]] is-required" id="zip code" maxlength="5" name="required-zip5" size="10" type="text">
+</div>
+<div class="formboxL">
+<label for="zip code plus four">
+</label>
+<input value="5476" id="zip code plus four" maxlength="4" name="zip4" size="4" type="text">
+</div>
+<div class="formboxL">
+<label for="phone">
+</label>
+<input id="phone" maxlength="25" name="phone" size="25" type="text">
+</div>
+<div class="formboxL">
+<label for="email">
+</label>
+<span class="required-field" title="required information">
+</span>
+<input class="validate[required,custom[email]] is-required" id="email" maxlength="100" name="required-valid-email" size="90" type="text">
 </div>
 <p>
 </p>
 </fieldset>
-<br />
+<br>
+<fieldset>
+<legend>
+</legend>
+<div class="formboxL">
+<label for="issue">
+</label>
+<span class="required-field" title="required information">
+</span>
+<br>
+<select class="validate[required] is-required" id="issue" name="required-issue">
+<option value="">
+</option>
+<option value="AG">
+</option>
+<option value="AN">
+</option>
+<option value="ART">
+</option>
+<option value="BANK">
+</option>
+<option value="BUD">
+</option>
+<option value="CASE">
+</option>
+<option value="COMMUNITY">
+</option>
+<option value="CONG">
+</option>
+<option value="CMRC">
+</option>
+<option value="CRIME">
+</option>
+<option value="HE.DISEASE">
+</option>
+<option value="ECON">
+</option>
+<option value="ED">
+</option>
+<option value="ENER">
+</option>
+<option value="ENV">
+</option>
+<option value="ETH">
+</option>
+<option value="FOOD">
+</option>
+<option value="GEN">
+</option>
+<option value="JUD.GUNS">
+</option>
+<option value="HE">
+</option>
+<option value="HOME">
+</option>
+<option value="HUD">
+</option>
+<option value="JUD.IM">
+</option>
+<option value="IR">
+</option>
+<option value="JUD">
+</option>
+<option value="LAB">
+</option>
+<option value="HE">
+</option>
+<option value="MED">
+</option>
+<option value="DEF">
+</option>
+<option value="POST">
+</option>
+<option value="JUD.AB">
+</option>
+<option value="SCHE">
+</option>
+<option value="SCI">
+</option>
+<option value="SMBU">
+</option>
+<option value="SS">
+</option>
+<option value="TAX">
+</option>
+<option value="COMM">
+</option>
+<option value="TRADE">
+</option>
+<option value="TRAN">
+</option>
+<option value="DEF.MIL.BEN">
+</option>
+<option value="VET">
+</option>
+<option value="WELF">
+</option>
+<option value="WOMEN">
+</option>
+</select>
+</div>
+<div class="formboxL">
+<label for="message">
+<em>
+</em>
+</label>
+<textarea cols="68" id="message" name="msg" rows="5">
+</textarea>
+</div>
+<div class="formboxL maxwidth">
+<input class="submit" name="submit" type="submit" value="Submit Information">
+<input class="reset" name="reset" type="reset" value="Clear Form">
+</div>
+<p>
+</p>
+</fieldset>
+<br>
 </form>
-<form action="/contact-mike/email-me" method="post" id="search-block-form" accept-charset="UTF-8">
+<form action="/contact-mike/email-me-zip-authenticated?fromFormProc" method="post" id="search-block-form" accept-charset="UTF-8">
 <div>
 <div class="container-inline">
 <h2 class="element-invisible">
@@ -36,10 +202,10 @@
 <div class="form-item form-type-textfield form-item-search-block-form">
 <label class="element-invisible" for="edit-search-block-form--2">
 </label>
-<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
 </div>
 <div class="form-actions form-wrapper" id="edit-actions">
-<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" />
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
 </div>
 </div>
 </div>

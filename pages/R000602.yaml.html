@@ -1,14 +1,19 @@
 <form action="/search/results.htm">
-<input type="text" name="q" />
-<input type="submit" class="btn-search" value="search"/>
+<input type="text" name="q">
+<input type="submit" class="btn-search" value="search">
 </form>
 <form method="get" action="/contact/contactform.htm" class="zipform">
-<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
-<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
-<input type="submit" value="Submit" />
+<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5">
+<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4">
+<input type="submit" value="Submit">
 </form>
 <form action="#">
-<select id="QLDrop">
+<div class="select-area" style="width: 193px; ">
+<span class="left">
+</span>
+<span class="center">
+</span>
+</a>
 <option value="/contact/">
 </option>
 <option value="/forms/casework">
@@ -16,8 +21,9 @@
 <option value="/forms/tourrequest">
 </option>
 </select>
+</div>
 </form>
 <form action="/subscribe.aspx" method="post">
-<input type="email" id="Email" value="Enter your Email Address" name="email" />
-<input type="submit" value="Mail" class="btn-mail" />
+<input type="email" id="Email" value="Enter your Email Address" name="email">
+<input type="submit" value="Mail" class="btn-mail">
 </form>

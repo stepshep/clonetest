@@ -1,42 +1,306 @@
 <form action="/SearchResults/default.aspx" class="search-form">
 <fieldset>
 <div class="search">
-<input type="text" class="text" name="q" />
-<input type="submit" class="submit" value="" tabindex="7" title="submit" />
+<input type="text" class="text" name="q">
+<input type="submit" class="submit" value="" tabindex="7" title="submit">
 </div>
 </fieldset>
 </form>
 <form action="/Forms/EmailSignup/">
-<input name="email" class="field" />
-<input type="submit" class="go" value="Go" />
+<input name="email" class="field">
+<input type="submit" class="go" value="Go">
 </form>
-<form method="get" action="/contact/contactform.htm" class="zipform">
-<label>
-<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" id="zip5" />
-</label>
-<label>
-<input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" id="zip4" />
-</label>
-<input type="submit" value="Submit" />
+<form onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-state','State','R','required-email','Email','RisEmail','zip5','Zip Code','R','required-issue','Issue','R');return document.MM_returnValue" method="post" action="/submit-contact.aspx">
+<table style="background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="2">
+<hr>
+</td>
+</tr>
+<tr>
+<td valign="bottom" align="right">
+<strong>
+<span style="font-size: 16px;">
+</span>
+</strong>
+</td>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+</td>
+<td>
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+</td>
+<td>
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+</td>
+<td>
+<strong>
+<span style="font-size: 16px;">
+</span>
+</strong>
+<span style="font-size: 16px;">
+<small>
+</small>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<input maxlength="90" size="12" type="text" name="required-prefix">
+</td>
+<td>
+<input maxlength="90" size="12" type="text" name="required-first">
+</td>
+<td>
+<input maxlength="90" size="12" type="text" name="required-last">
+</td>
+<td>
+<input maxlength="90" size="5" type="text" name="suffix">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+</td>
+<td>
+<input maxlength="190" size="60" type="text" name="required-address">
+</td>
+</tr>
+<tr>
+<td align="right">
+</td>
+<td>
+<input maxlength="190" size="60" type="text" name="address2">
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+</td>
+<td>
+<input style="width: 159px; height: 22px;" maxlength="45" size="19" type="text" name="required-city">
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+<select name="required-state">
+<option selected="true" value="TX">
+</option>
+</select>
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+<span style="text-decoration: underline;">
+</span>
+</span>
+</strong>
+<input maxlength="5" size="5" type="text" name="zip5" readonly="readonly">
+<input maxlength="4" size="4" type="text" name="zip4" readonly="readonly">
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<span style="font-size: 16px;">
+</span>
+</strong>
+</td>
+<td>
+<input maxlength="100" size="60" type="text" name="required-phone">
+</td>
+</tr>
+<tr>
+<td align="right">
+<strong>
+<span style="font-size: 16px;">
+<span style="color: #ff0000;">
+</span>
+</span>
+</strong>
+</td>
+<td>
+<input maxlength="100" size="60" type="text" name="required-email">
+</td>
+</tr>
+<tr>
+<td valign="top" align="right">
+<strong>
+<span style="font-size: 16px;">
+</span>
+</strong>
+</td>
+<td>
+<textarea rows="12" cols="50" name="required-message">
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="checkbox" value="Subscribe" name="Subscribe">
+</td>
+</tr>
+<tr valign="top" align="center">
+<td valign="top">
+</td>
+<td valign="top" align="left">
+<table>
+<tbody>
+<tr>
+<td colspan="2">
+</td>
+</tr>
+<tr>
+<td>
+<input type="checkbox" name="Abortion" value="web.abortion">
+<br>
+<input type="checkbox" name="Agriculture" value="web.agriculture">
+<br>
+<input type="checkbox" name="AnimalWelfare" value="web.animal">
+<br>
+<input type="checkbox" name="ArmedServices" value="web.armedservices">
+<br>
+<input type="checkbox" name="ArtsandHumanities" value="web.arts">
+<br>
+<input type="checkbox" name="Budget" value="web.budget">
+<br>
+<input type="checkbox" name="CivilRights" value="web.civilrights">
+<br>
+<input type="checkbox" name="ConsumerAffairs" value="web.consumer">
+<br>
+<input type="checkbox" name="Crime" value="web.crime">
+<br>
+<input type="checkbox" name="EconomyandJobs" value="web.economy">
+<br>
+<input type="checkbox" name="Education" value="web.education">
+<br>
+<input type="checkbox" name="Elections" value="web.election">
+<br>
+<input type="checkbox" name="Energy" value="web.energy">
+<br>
+<input type="checkbox" name="Environment" value="web.environment">
+<br>
+<input type="checkbox" name="Ethics" value="web.ethics">
+<br>
+<input type="checkbox" name="FamilyIssues" value="web.family">
+<br>
+<input type="checkbox" name="FinancialServices" value="web.financial">
+<br>
+<input type="checkbox" name="ForeignAffairs" value="web.foreign">
+<br>
+</td>
+<td valign="top">
+<input type="checkbox" name="GovernmentReform" value="web.governmentreform">
+<br>
+<input type="checkbox" name="GunRights" value="web.gun">
+<br>
+<input type="checkbox" name="Health" value="web.health">
+<br>
+<input type="checkbox" name="HomelandSecurity" value="web.homeland">
+<br>
+<input type="checkbox" name="HousingandUrbanDevelopment" value="web.housing">
+<br>
+<input type="checkbox" name="HumanServices" value="web.humanservices">
+<br>
+<input type="checkbox" name="Immigration" value="web.immigration">
+<br>
+<input type="checkbox" name="Intelligence" value="web.intelligence">
+<br>
+<input type="checkbox" name="Judiciary" value="web.judiciary">
+<br>
+<input type="checkbox" name="Labor" value="web.labor">
+<br>
+<input type="checkbox" name="Medicaid" value="web.medicare">
+<br>
+<input type="checkbox" name="Medicare" value="web.medicaid">
+<br>
+<input type="checkbox" name="SmallBusiness" value="web.smallbusiness">
+<br>
+<input type="checkbox" name="SocialSecurity" value="web.socialsecurity">
+<br>
+<input type="checkbox" name="Taxes" value="web.taxes">
+<br>
+<input type="checkbox" name="Trade" value="web.trade">
+<br>
+<input type="checkbox" name="Transportation" value="web.transportation">
+<br>
+<input type="checkbox" name="Veterans" value="web.veterans">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<br>
+<center>
+<input value="Send Email" type="submit">
+<input value="Reset" type="reset">
+</center>
+<br>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+<br>
+</td>
+</tr>
+</tbody>
+</table>
 </form>
+</span>
 <form action="http://thomas.loc.gov/cgi-bin/query" method="post">
 <fieldset>
-<input type="text" name="docidc114" class="text"
-           value="Bill Number" onfocus="this.value=''" onblur="this.value='Bill Number'" />
-<input type="submit" class="submit" value="" />
+<input type="text" name="docidc114" class="text" value="Bill Number" onfocus="this.value=''" onblur="this.value='Bill Number'">
+<input type="submit" class="submit" value="">
 </fieldset>
 </form>
 <form action="http://thomas.loc.gov/cgi-bin/query" method="post">
 <fieldset>
-<input type="text" name="queryc114" class="text"
-           value="Topic" onfocus="this.value=''" onblur="this.value='Topic'" />
-<input type="submit" class="submit" value="" />
+<input type="text" name="queryc114" class="text" value="Topic" onfocus="this.value=''" onblur="this.value='Topic'">
+<input type="submit" class="submit" value="">
 </fieldset>
 </form>
 <form action="#" name="rcv">
 <fieldset>
-<input type="text" name="url" class="text"
-             value="Roll Call Vote" onfocus="this.value=''" onblur="this.value='Roll Call Vote'" />
-<input type="submit" class="submit" value="" />
+<input type="text" name="url" class="text" value="Roll Call Vote" onfocus="this.value=''" onblur="this.value='Roll Call Vote'">
+<input type="submit" class="submit" value="">
 </fieldset>
 </form>
