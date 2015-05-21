@@ -1,8 +1,131 @@
+<form id="contactForm" action="./" method="post" enctype="application/x-www-form-urlencoded" class="col66" onsubmit="return _CF_checkCFForm_1(this)">
+<h1>
+</h1>
+<div id="sam-main" class="amend-textarea">
+<p>
+</p>
+<p>
+<span>
+</span>
+</p>
+</div>
+<fieldset>
+<ul class="form-item-list">
+<li>
+<input type="radio" id="assistance" name="contact-type" value="assistance" onclick="document.location.href='index.cfm?type=assistance'" />
+</li>
+<li>
+<input type="radio" id="comment" name="contact-type" value="comment" onclick="document.location.href='index.cfm'" checked="checked"/>
+</li>
+</ul>
+</fieldset>
+<fieldset>
+<label for="topic">
+</label>
+<select name="subject" id="subject" >
+<option label="-- Select a Topic --" value="" selected="selected">
+</option>
+<option label="Sequestration" value="mailtopseq">
+</option>
+<option label="Agriculture" value="mailtopicag">
+</option>
+<option label="Animal Rights" value="mailtopican">
+</option>
+<option label="Banking and Finance" value="mailtopbank">
+</option>
+<option label="Budget and Economy" value="mailtopicbud">
+</option>
+<option label="Business" value="mailtopicbs">
+</option>
+<option label="Civil Rights" value="mailtopiccr">
+</option>
+<option label="Defense and Military" value="mailtopicdef">
+</option>
+<option label="Education" value="mailtopiced">
+</option>
+<option label="Energy" value="mailtopicen">
+</option>
+<option label="Environmental Issues" value="mailtopicenviro">
+</option>
+<option label="Foreign Affairs" value="mailtopicforeign">
+</option>
+<option label="Gun Control" value="mailtopicgun">
+</option>
+<option label="Health Care" value="mailtopichealth">
+</option>
+<option label="Housing" value="mailtopichouse">
+</option>
+<option label="Judiciary Issues" value="mailtopicjudge">
+</option>
+<option label="Pensions and Retirement" value="mailtopicpension">
+</option>
+<option label="Science and Technology" value="mailtopicsci">
+</option>
+<option label="Telecommunications" value="mailtotelecom">
+</option>
+<option label="Transportation" value="mailtopictran">
+</option>
+<option label="Veterans Issues" value="mailtopicvet">
+</option>
+<option label="Welfare" value="mailtopicwelfare">
+</option>
+<option label="Other" value="mailtopicother">
+</option>
+</select>
+<legend>
+</legend>
+<label for="salutation">
+</label>
+<input name="salutation" type="text" id="salutation"  />
+<label for="fname">
+</label>
+<input name="fname" type="text" id="fname"  />
+<label for="lname">
+</label>
+<input name="lname" type="text" id="lname"  />
+<label for="email_address">
+</label>
+<input name="email_address" type="text" id="email_address"  />
+<label for="verify_email">
+</label>
+<input name="verify_email" type="text" id="verify_email"  />
+<label for="phone_number">
+</label>
+<input name="phone_number" type="text" id="phone_number"  />
+</fieldset>
+<fieldset>
+<legend>
+</legend>
+<label for="mailing_streetaddress1">
+</label>
+<input name="mailing_streetaddress1" type="text" id="mailing_streetaddress1"  />
+<label for="mailing_streetaddress2">
+</label>
+<input name="mailing_streetaddress2" type="text" id="mailing_streetaddress2"  />
+<div class="col50" style="width:75%;">
+<label for="mailing_city">
+</label>
+<input name="mailing_city" type="text" id="mailing_city"  />
+</div>
+<div class="col15">
+<label for="mailing_zipCode">
+</label>
+<input name="mailing_zipcode" type="text" id="mailing_zipcode"  />
+</div>
+</fieldset>
+<fieldset>
+<label for="comments">
+</label>
+<textarea id="comments" name="comments">
+</textarea>
+</fieldset>
+<input style="width:65px;height:40px;float:right" class="button" type="submit" id="side-search-btn" value="Send" onclick="return ceFormCheck()" />
+</form>
 <form id="site-search" method="get" action="http://www.cardin.senate.gov/search/">
 <fieldset>
 <legend>
 </legend>
-<input type="text" class="rounded" name="q" id="search-field" value="Search Ben’s Site" onclick="this.value=''">
+<input type="text" class="rounded" name="q" id="search-field" value="Search Ben&rsquo;s Site" onclick="this.value=''" />
 <button id="search-button" name="search-button" type="submit" title="Search" class="button">
 </button>
 </fieldset>
