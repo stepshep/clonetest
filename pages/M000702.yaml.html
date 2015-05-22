@@ -1,39 +1,21 @@
 <form class="pull-right form-inline hide" id="searchform" role="search" method="get" action="/search" >
 <div class="form-group">
 <input type="search" class="form-control" id="search-field" name="q" placeholder="Search" value="Search"  onclick="this.value='';">
-</div>
 <button type="submit" class="btn btn-default">
-</button>
-</form>
 <form id="contactForm"  method="post"  action="/contact"  enctype="application/x-www-form-urlencoded" >
 <fieldset>
 <div class="form-group">
 <label class="control-label contact" id="contactdropdownlabel"for="actions">
 <abbr title="Please select an option">
-</abbr>
-</label>
 <select id="actions" class="test form-control" name="actions" >
 <option label="-- Select an option --" value="select" selected="selected" required>
-</option>
 <option label="Request help with a federal agency" value="federal_agency">
-</option>
 <option label="Request a meeting with Senator Mikulski or staff" value="meeting">
-</option>
 <option label="Request a tour of the Capitol, White House, or other DC landmark" value="tour">
-</option>
 <option label="Request a flag to be flown over the Capitol" value="flag">
-</option>
 <option label="Request a greeting or commemorative message" value="message">
-</option>
 <option label="Share your opinion or comments on bills or other issues" value="opinion">
-</option>
-</select>
-</div>
-</fieldset>
 <div  id="more-help">
-</div>
-</div>
-</div>
 <fieldset>
 <div class="form-group">
 <ol>
@@ -43,619 +25,312 @@
 <div class="form-group">
 <label for="salutation">
 <abbr title="required" >
-</abbr>
-</label>
 <select id="salutation" name="salutation" class="form-control" aria-required="true" placeholder="Required" required>
 <option label="-- Please select a title or make a selection below --" value="">
-</option>
 <option label="Mr." value="Mr.">
-</option>
 <option label="Mrs." value="Mrs.">
-</option>
 <option label="Ms." value="Ms.">
-</option>
 <option label="Miss" value="Miss">
-</option>
 <option label="Mr. and Mrs." value="Mr. and Mrs.">
-</option>
 <option label="Professor" value="Professor">
-</option>
 <option label="Dean" value="Dean">
-</option>
 <option label="The Honorable" value="The Honorable">
-</option>
 <option label="Dr." value="Dr.">
-</option>
 <option label="Dr. and Mrs." value="Dr. and Mrs.">
-</option>
 <option label="Dr. and Mr." value="Dr. and Mr.">
-</option>
-</select>
-</div>
-</li>
-</ul>
-</li>
 <li class="required">
 <p>
-</p>
 <label for="military_toggle" class="checkbox">
 <input type="checkbox" name="military_toggle" id="military_toggle" value="military">
-</label>
 <label for="ecclesiastical_toggle" class="checkbox">
 <input type="checkbox" name="ecclesiastical_toggle" id="ecclesiastical_toggle" value="ecclesiastical">
-</label>
 <ul>
 <li class="required">
 <label for="military_branch">
 <abbr title="required">
-</abbr>
-</label>
 <select id="military_branch" class="form-control" name="military_branch">
 <option label="-- Select a Branch of Service --" value="" selected="selected">
-</option>
 <option label="Air Force" value="Air Force">
-</option>
 <option label="Army" value="Army">
-</option>
 <option label="Coast Guard" value="Coast Guard">
-</option>
 <option label="Marines" value="Marines">
-</option>
 <option label="Navy" value="Navy">
-</option>
-</select>
-</li>
 <li class="required">
 <label for="military_rank">
 <abbr title="required">
-</abbr>
-</label>
 <select id="military_rank" class="form-control" name="military_rank">
 <option label="-- Select a Rank --" value="" selected="selected">
-</option>
 <option label="Admiral" value="Admiral">
-</option>
 <option label="Airman" value="Airman">
-</option>
 <option label="Airman Basic" value="Airman Basic">
-</option>
 <option label="Airman First Class" value="Airman First Class">
-</option>
 <option label="Brigadier General" value="Brigadier General">
-</option>
 <option label="Captain" value="Captain">
-</option>
 <option label="Chaplain" value="Chaplain">
-</option>
 <option label="Chief Master Sergeant of the Air Force" value="Chief Master Sergeant of the Air Force">
-</option>
 <option label="Chief Petty Officer" value="Chief Petty Officer">
-</option>
 <option label="Chief Warrant Officer Two" value="Chief Warrant Officer Two">
-</option>
 <option label="Chief Warrant Officer Three" value="Chief Warrant Officer Three">
-</option>
 <option label="Chief Warrant Officer Four" value="Chief Warrant Officer Four">
-</option>
 <option label="Chief Warrant Officer Five" value="Chief Warrant Officer Five">
-</option>
 <option label="Colonel" value="Colonel">
-</option>
 <option label="Command Chief Master Sergeant" value="Command Chief Master Sergeant">
-</option>
 <option label="Command Master Chief" value="Command Master Chief">
-</option>
 <option label="Command Sergeant Major" value="Command Sergeant Major">
-</option>
 <option label="Commander" value="Commander">
-</option>
 <option label="Constructionman" value="Constructionman">
-</option>
 <option label="Corporal" value="Corporal">
-</option>
 <option label="Dentalman" value="Dentalman">
-</option>
 <option label="Ensign" value="Ensign">
-</option>
 <option label="Fireman" value="Fireman">
-</option>
 <option label="First Lieutenant" value="First Lieutenant">
-</option>
 <option label="First Sergeant" value="First Sergeant">
-</option>
 <option label="Fleet Command Master Chief Petty Officer" value="Fleet Command Master Chief Petty Officer">
-</option>
 <option label="Force Command Master Chief Petty Officer" value="Force Command Master Chief Petty Officer">
-</option>
 <option label="General" value="General">
-</option>
 <option label="Hospitalman" value="Hospitalman">
-</option>
 <option label="Gunnery Sergeant" value="Gunnery Sergeant">
-</option>
 <option label="Lance Corporal" value="Lance Corporal">
-</option>
 <option label="Lieutenant" value="Lieutenant">
-</option>
 <option label="Lieutenant Colonel" value="Lieutenant Colonel">
-</option>
 <option label="Lieutenant Commander" value="Lieutenant Commander">
-</option>
 <option label="Lieutenant General" value="Lieutenant General">
-</option>
 <option label="Lieutenant Junior Grade" value="Lieutenant Junior Grade">
-</option>
 <option label="Major" value="Major">
-</option>
 <option label="Major General" value="Major General">
-</option>
 <option label="Master Chief Petty Officer" value="Master Chief Petty Officer">
-</option>
 <option label="Master Chief Petty Officer of the Coast Guard" value="Master Chief Petty Officer of the Coast Guard">
-</option>
 <option label="Master Chief Petty Officer of the Command" value="Master Chief Petty Officer of the Command">
-</option>
 <option label="Master Chief Petty Officer of the Fleet" value="Master Chief Petty Officer of the Fleet">
-</option>
 <option label="Master Chief Petty Officer of the Navy" value="Master Chief Petty Officer of the Navy">
-</option>
 <option label="Master Gunnery Sergeant" value="Master Gunnery Sergeant">
-</option>
 <option label="Master Sergeant" value="Master Sergeant">
-</option>
 <option label="Petty Officer First Class" value="Petty Officer First Class">
-</option>
 <option label="Petty Officer Second Class" value="Petty Officer Second Class">
-</option>
 <option label="Petty Officer Third Class" value="Petty Officer Third Class">
-</option>
 <option label="Platoon Sergeant" value="Platoon Sergeant">
-</option>
 <option label="Private" value="Private">
-</option>
 <option label="Private E-2" value="Private E-2">
-</option>
 <option label="Private First Class" value="Private First Class">
-</option>
 <option label="Rear Admiral (Lower Half)" value="Rear Admiral (Lower Half)">
-</option>
 <option label="Rear Admiral (Upper Half)" value="Rear Admiral (Upper Half)">
-</option>
 <option label="Seaman" value="Seaman">
-</option>
 <option label="Second Lieutenant" value="Second Lieutenant">
-</option>
 <option label="Senior Airman" value="Senior Airman">
-</option>
 <option label="Senior Chief Petty Officer" value="Senior Chief Petty Officer">
-</option>
 <option label="Senior Master Sergeant" value="Senior Master Sergeant">
-</option>
 <option label="Sergeant" value="Sergeant">
-</option>
 <option label="Sergeant First Class" value="Sergeant First Class">
-</option>
 <option label="Sergeant Major" value="Sergeant Major">
-</option>
 <option label="Sergeant Major of the Army" value="Sergeant Major of the Army">
-</option>
 <option label="Sergeant Major of the Marine Corps" value="Sergeant Major of the Marine Corps">
-</option>
 <option label="Specialist" value="Specialist">
-</option>
 <option label="Staff Sergeant" value="Staff Sergeant">
-</option>
 <option label="Technical Sergeant" value="Technical Sergeant">
-</option>
 <option label="Vice Admiral" value="Vice Admiral">
-</option>
 <option label="Chief Warrant Officer Four" value="Chief Warrant Officer Four">
-</option>
-</select>
-</li>
 <li class="required">
 <label for="military_retired">
 <abbr title="required">
-</abbr>
-</label>
 <select id="military_retired" class="form-control" name="military_retired">
 <option value="">
-</option>
 <option value="No">
-</option>
 <option value="Yes">
-</option>
-</select>
-</li>
-</ul>
-</li>
 <ul>
 <li class="required">
 <label for="ecclesiastical_title">
 <abbr title="required">
-</abbr>
-</label>
 <select id="ecclesiastical_title" class="form-control" name="ecclesiastical_title">
 <option label="-- Select a Title --" value="" selected="selected">
-</option>
 <option label="Abbot" value="Abbot">
-</option>
 <option label="Abbess" value="Abbess">
-</option>
 <option label="Archbishop" value="Archbishop">
-</option>
 <option label="Archdeacon" value="Archdeacon">
-</option>
 <option label="Archpriest" value="Archpriest">
-</option>
 <option label="Bishop" value="Bishop">
-</option>
 <option label="Brother" value="Brother">
-</option>
 <option label="Canon" value="Canon">
-</option>
 <option label="Cantor" value="Cantor">
-</option>
 <option label="Chaplain" value="Chaplain">
-</option>
 <option label="Deacon" value="Deacon">
-</option>
 <option label="Deaconess" value="Deaconess">
-</option>
 <option label="Dean" value="Dean">
-</option>
 <option label="Dr." value="Dr.">
-</option>
 <option label="Elder" value="Elder">
-</option>
 <option label="Father" value="Father">
-</option>
 <option label="Metropolitan" value="Metropolitan">
-</option>
 <option label="Monsignor" value="Monsignor">
-</option>
 <option label="Rabbi" value="Rabbi">
-</option>
 <option label="Reverend" value="Reverend">
-</option>
 <option label="Reverend Mother" value="Reverend Mother">
-</option>
 <option label="Sister" value="Sister">
-</option>
-</select>
-</li>
-</ul>
-</li>
-</ol>
-</div>
 <div class="row">
 <div class="col-md-6">
 <div class="form-group">
 <label for="fname">
 <abbr title="required">
-</abbr>
-</label>
 <input class="form-control" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
-</div>
-</div>
 <div class="col-md-6">
 <div class="form-group">
 <label for="lname">
 <abbr title="required">
-</abbr>
-</label>
 <input class="form-control" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
-</div>
-</div>
-</div>
 <legend>
-</legend>
 <div class="form-group">
 <label class="" for="mailing_streetAddress1">
 <abbr title="Your street address is a required field">
-</abbr>
-</label>
 <input class="form-control" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
-</div>
 <div class="form-group">
 <label class="" for="mailing_streetAddress2">
-</label>
 <input class="form-control" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
-</div>
 <div class="row">
 <div class="col-md-7">
 <div class="form-group">
 <label for="mailing_city">
 <abbr title="Your city is a required field">
-</abbr>
-</label>
 <input class="form-control" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
-</div>
-</div>
 <div class="col-md-2">
 <div class="form-group">
 <label for="state">
-</label>
 <select name="state" id="state" class="form-control">
 <option value="null">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD" selected="selected">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="RI">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</div>
-</div>
 <div class="col-md-3">
 <div class="form-group">
 <label for="mailing_zipCode">
 <abbr title="Your zip code is a required field">
-</abbr>
-</label>
 <input class="form-control" type="text" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
-</div>
-</div>
-</div>
-<br>
 <div class="row">
 <div class="col-md-6">
 <div class="form-group">
 <label for="home_phone_number">
-</label>
 <input type="text" name="home_phone_number" id="home_phone_number" class="form-control">
-</div>
-</div>
 <div class="col-md-6">
 <div class="form-group">
 <label for="work_phone_number">
-</label>
 <input type="text" name="work_phone_number" id="work_phone_number" class="form-control">
-</div>
-</div>
-</div>
 <div class="row">
 <div class="col-md-6">
 <div class="form-group">
 <label for="email_address">
 <abbr title="Your e-mail address is a required field">
-</abbr>
-</label>
 <input type="text" name="email_address" aria-required="true" id="email" class="form-control" placeholder="Required" required>
-</div>
-</div>
 <div class="col-md-6">
 <div class="form-group">
 <label for="verify_email">
 <abbr title="Please confirm your e-mail address">
-</abbr>
-</label>
 <input type="text" name="verify_email" id="verify_email" aria-required="true" class="form-control" placeholder="Required" required>
-</div>
-</div>
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="form-group">
 <label class="control-label" for="subject">
 <abbr title="Please enter a message topic for your message">
-</abbr>
-</label>
 <select id="subject" class="form-control" name="subject" required>
 <option label="-- Select an Issue --" value="" selected="selected">
-</option>
 <option label="Academy Nominations" value="Academy Nominations">
-</option>
 <option label="Abortion" value="Abortion">
-</option>
 <option label="Afghanistan" value="Afghanistan">
-</option>
 <option label="Agriculture" value="Agriculture">
-</option>
 <option label="Animal Welfare" value="Animal Welfare">
-</option>
 <option label="Appropriations" value="Appropriations">
-</option>
 <option label="Budget" value="Budget">
-</option>
 <option label="Business" value="Business">
-</option>
 <option label="Campaign Finance Reform" value="Campaign Finance Reform">
-</option>
 <option label="Children" value="Children">
-</option>
 <option label="Civil Rights" value="Civil Rights">
-</option>
 <option label="Crime" value="Crime">
-</option>
 <option label="Death Penalty" value="Death Penalty">
-</option>
 <option label="Defense" value="Defense">
-</option>
 <option label="Education" value="Education">
-</option>
 <option label="Election Reform" value="Election Reform">
-</option>
 <option label="Energy" value="Energy">
-</option>
 <option label="Environment" value="Environment">
-</option>
 <option label="FEMA" value="FEMA">
-</option>
 <option label="Federal Employees" value="Federal Employees">
-</option>
 <option label="Foreign Affairs" value="Foreign Affairs">
-</option>
 <option label="Gas and Oil Prices" value="Gas and Oil Prices">
-</option>
 <option label="Guns" value="Guns">
-</option>
 <option label="Hate Crimes" value="Hate Crimes">
-</option>
 <option label="Health" value="Health">
-</option>
 <option label="Homeland Security" value="Homeland Security">
-</option>
 <option label="Housing" value="Housing">
-</option>
 <option label="Human Rights" value="Human Rights">
-</option>
 <option label="Immigration" value="Immigration">
-</option>
 <option label="Internships" value="Internships">
-</option>
 <option label="Iraq" value="Iraq">
-</option>
 <option label="Judiciary" value="Judiciary">
-</option>
 <option label="Medicaid" value="Medicaid">
-</option>
 <option label="Other" value="Other">
-</option>
 <option label="Pensions" value="Pensions">
-</option>
 <option label="Seniors" value="Seniors">
-</option>
 <option label="Labor" value="Labor">
-</option>
 <option label="Social Security" value="Social Security">
-</option>
 <option label="Space" value="Space">
-</option>
 <option label="Taxes" value="Taxes">
-</option>
 <option label="Telecommunications" value="Telecommunications">
-</option>
 <option label="Trade" value="Trade">
-</option>
 <option label="Transportation" value="Transportation">
-</option>
 <option label="Veterans" value="Veterans">
-</option>
-</select>
-</div>
 <div class="form-group">
 <label for="message">
 <abbr title="Please enter your message">
-</abbr>
-</label>
 <textarea id="message" class="form-control" rows="10" name="message" aria-required="true" Placeholder="Required" required>
-</textarea>
-</div>
 <div class="form-group">
 <label class="checkbox">
 <input for="newsletter" name="newsletter" id="newsletter_y" value="Y" type="checkbox" >
 <strong>
-</strong>
-</label>
-</div>
 <div class="form-group">
 <label for="respons_y" class="checkbox">
 <input name="response" id="response_y" value="Y" type="checkbox"  checked="checked">
 <strong>
-</strong>
-</label>
-</div>
-</fieldset>
 <input class="btn" type="submit" id="side-search-btn" value="Send" />
-</div>
-</form>

@@ -1,208 +1,114 @@
 <form id="contactForm" class="validate wsbform" onsubmit="MM_validateForm('required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-valid-email','Email','RisEmail','required-subject','Subject','R','required-message','Message','R');return document.MM_returnValue" method="post" name="contactForm" action="/submit-contact.aspx">
 <fieldset>
 <legend>
-</legend>
 <div class="formboxL">
 <label for="prefix">
-</label>
 <input type="text" id="prefix" maxlength="100" size="2" name="prefix">
-</div>
 <div class="formboxL">
 <label for="required-first">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-first" class="validate[required] is-required" maxlength="100" size="26" name="required-first">
-</div>
 <div class="formboxL">
 <label for="middle">
-</label>
 <input type="text" id="middle" maxlength="100" size="2" name="middle">
-</div>
 <div class="formboxL">
 <label for="required-last">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-last" class="validate[required] is-required" maxlength="100" size="31" name="required-last">
-</div>
 <div class="formboxL">
 <label for="suffix">
-</label>
 <input type="text" id="suffix" maxlength="100" size="2" name="suffix">
-</div>
 <div class="formboxL">
 <label for="required-address">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-address" class="validate[required] is-required" maxlength="100" size="90" name="required-address">
-</div>
 <div class="formboxL">
 <label for="required-address">
-</label>
 <input type="text" id="address2" maxlength="100" size="90" name="address2">
-</div>
 <div class="formboxL">
 <label for="required-city">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-city" class="validate[required] is-required" maxlength="100" size="47" name="required-city">
-</div>
 <div class="formboxL">
 <label for="required-state">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" disabled="true" value="Ohio" size="7">
-</div>
 <div class="formboxL">
 <label for="required-zip5">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-zip5" maxlength="5" size="6" name="required-zip5">
-</div>
 <div class="formboxL">
 <label for="zip4">
-</label>
 <input type="text" id="zip4" maxlength="4" size="5" name="zip4">
-</div>
 <div class="formboxL">
 <label for="required-valid-email">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-valid-email" class="validate[required,custom[email]] is-required" maxlength="100" size="90" name="required-valid-email">
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formboxL">
 <label for="phone">
-</label>
 <input type="text" id="phone" maxlength="20" size="32" name="phone">
-</div>
 <div class="phone-type">
 <div class="formboxL">
 <input type="radio" id="speech_0" class="is-inline" value="Voice" checked="true" name="speech">
 <label for="speech_0">
-</label>
-</div>
 <div class="formboxL">
 <input type="radio" id="speech_1" class="is-inline" value="VP" name="speech">
 <label for="speech_1">
-</label>
-</div>
 <div class="formboxL">
 <input type="radio" id="speech_2" class="is-inline" value="TTD" name="speech">
 <label for="speech_2">
-</label>
-</div>
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formboxL">
 <label for="required-issue">
 <span class="required-field" title="required information">
-</span>
-</a>
-</label>
 <select id="required-issue" class="validate[required] is-required" size="1" name="required-issue" required="required">
 <option selected="true">
-</option>
 <option value="AG">
-</option>
 <option value="ART">
-</option>
 <option value="BANK">
-</option>
 <option value="BUD">
-</option>
 <option value="CONG">
-</option>
 <option value="DEF">
-</option>
 <option value="ED">
-</option>
 <option value="EN">
-</option>
 <option value="ENV">
-</option>
 <option value="FED">
-</option>
 <option value="FA">
-</option>
 <option value="HEA">
-</option>
 <option value="IM">
-</option>
 <option value="JUD">
-</option>
 <option value="LAB">
-</option>
 <option value="SCI">
-</option>
 <option value="SS">
-</option>
 <option value="TAX">
-</option>
 <option value="TEL">
-</option>
 <option value="TRANS">
-</option>
 <option value="TRADE">
-</option>
 <option value="VET">
-</option>
 <option value="WOMEN">
-</option>
 <option value="CASEWORK">
-</option>
 <option value="OTHER">
-</option>
-</select>
-</div>
 <div class="formboxL">
 <label for="required-subject">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input type="text" id="required-subject" class="validate[required] is-required" maxlength="100" size="90" name="required-subject">
-</div>
 <div class="formboxL">
 <label for="required-message">
-</label>
 <span class="required-field" title="required information">
-</span>
 <textarea id="required-message" class="validate[required] is-required" rows="5" cols="68" name="required-message">
-</textarea>
-</div>
 <div class="formboxL">
 <input type="checkbox" style="display: inline;" id="noresponse" value="Response Not Required" name="noresponse">
 <label for="noresponse">
 <u>
-</u>
-</label>
-</div>
 <div class="formboxL">
 <input type="checkbox" style="display: inline;" id="subscribe" value="subscribe" name="subscribe">
 <label for="subscribe">
-</label>
-</div>
 <div class="formboxL">
 <input type="submit" id="submit" class="submit" value="Send Email" name="submit">
-</div>
-</fieldset>
-</form>
-</span>
 <form action="/News/DocumentQuery.aspx" class="form-search">
 <fieldset>
 <input type="text" placeholder="search site" class="text" title="search site" name="SearchPhrase">
 <input type="submit" class="submit" title="submit">
-</fieldset>
-</form>

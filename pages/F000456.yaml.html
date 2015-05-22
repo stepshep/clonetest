@@ -3,344 +3,145 @@
 <form name="contact" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
 <table cellspacing="2" cellpadding="0" align="center">
 <tbody>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <table cellspacing="0" cellpadding="0">
 <tbody>
-<tr>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
 <small>
-</small>
-</td>
-</tr>
-<tr>
-<td>
 <input type="text" maxlength="90" size="10" name="required-prefix" />
-</td>
-<td>
 <input type="text" maxlength="90" size="12" name="required-first" />
-</td>
-<td>
 <input type="text" maxlength="90" size="8" name="middle" />
-</td>
-<td>
 <input type="text" maxlength="90" size="15" name="required-last" />
-</td>
-<td>
 <input type="text" maxlength="90" size="10" name="suffix" />
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" maxlength="190" size="60" name="required-address" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" maxlength="45" name="required-city" />
 <strong>
-</strong>
 <select name="required-state">
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option selected="selected" value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="RI">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
 <strong>
-</strong>
 <input type="text" onkeydown="f(this)" onkeyup="f(this)" maxlength="5" size="5" name="zip5" />
 <input type="text" maxlength="4" size="4" name="zip4" onkeydown="f(this)" onkeyup="f(this)" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" maxlength="100" size="60" name="phone" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" maxlength="100" size="60" name="cell" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" maxlength="100" size="60" name="required-email" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <select size="1" name="required-issue">
 <option>
-</option>
 <option value="AGR">
-</option>
 <option value="DEF">
-</option>
 <option value="ECON">
-</option>
 <option value="EDU">
-</option>
 <option value="ENE">
-</option>
 <option value="FDS">
-</option>
 <option value="FAFF">
-</option>
 <option value="GUNS">
-</option>
 <option value="HEALTHCARE">
-</option>
 <option value="HOMELAND SECURITY">
-</option>
 <option value="HOUS">
-</option>
 <option value="IMM">
-</option>
 <option value="JUD">
-</option>
 <option value="LBR">
-</option>
 <option value="LIF">
-</option>
 <option value="MEDI">
-</option>
 <option value="NATRES">
-</option>
 <option>
-</option>
 <option value="SCI">
-</option>
 <option value="SMB">
-</option>
 <option value="SOCIALISSUES">
-</option>
 <option value="SS">
-</option>
 <option value="TAXES">
-</option>
 <option value="TELE">
-</option>
 <option value="TRADE">
-</option>
 <option value="TRADE">
-</option>
 <option value="VET">
-</option>
-</select>
-</td>
-</tr>
-<tr>
 <td valign="top" align="right">
 <strong>
-</strong>
-</td>
-<td>
 <textarea name="required-message" rows="15" cols="60">
-</textarea>
-</td>
-</tr>
-<tr>
 <td valign="top" align="right">
-</td>
-<td>
 <label>
 <input type="radio" value="Y" name="response" checked="checked" />
-</label>
-<br />
 <label>
 <input type="radio" value="N" name="response" />
-</label>
-<br />
-</td>
-</tr>
-<tr>
 <td valign="top" align="right">
-</td>
-<td>
 <label>
 <input type="checkbox" value="subscribe" name="subscribe" />
-</label>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr>
 <td colspan="2">
 <center>
 <input type="submit" value="Send Email" />
 <input type="reset" value="Reset" />
-</center>
-</td>
-</tr>
-</tbody>
-</table>
-</form>
-</span>
 <form action="/Forms/EmailSignup/">
 <fieldset>
 <div class="decorated-area">
 <input type="text" placeholder="email address" name="email" title="email address" />
 <input type="image" class="btn-go" src="/images/btn-go.gif" alt="go" />
-</div>
-</fieldset>
-</form>
 <form action="/Search/Results.htm">
 <fieldset>
 <div class="decorated-field">
 <input type="text" placeholder="search site" name="q" title="search site" />
 <input class="btn-go" type="image" src="/images/btn-go.gif" alt="go" />
-</div>
-</fieldset>
-</form>

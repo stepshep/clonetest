@@ -3,215 +3,86 @@
 <form name="contact" class="contactForm zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-message','Message','R');return document.MM_returnValue" action="/submit-contact.aspx" method="post">
 <table align="center" cellspacing="2" cellpadding="0">
 <tbody>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <table cellspacing="0" cellpadding="0">
 <tbody>
-<tr>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
 <small>
-</small>
-</td>
-</tr>
-<tr>
-<td>
 <select name="required-prefix">
 <option selected="selected">
-</option>
 <option value="Mr.">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Miss.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Mr. and Mrs.">
-</option>
 <option value="Dr.">
-</option>
 <option value="Rev.">
-</option>
-</select>
-</td>
-<td>
 <input name="required-first" type="text" size="12" maxlength="90" />
-</td>
-<td>
 <input name="middle" type="text" size="1" maxlength="90" />
-</td>
-<td>
 <input name="required-last" type="text" size="15" maxlength="90" />
-</td>
-<td>
 <input name="suffix" type="text" size="4" maxlength="90" />
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="required-address" type="text" size="33" maxlength="190" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="required-city" type="text" maxlength="33" />
 <strong>
-</strong>
 <select name="required-state">
 <option selected="selected">
-</option>
-</select>
 <strong>
-</strong>
 <input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="phone" type="text" size="33" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="required-email" type="text" size="33" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <select name="required-issue" size="1">
 <option selected="selected">
-</option>
 <option value="ECON">
-</option>
 <option value="ED">
-</option>
 <option value="HE">
-</option>
 <option value="CRIME.DRUG">
-</option>
 <option value="SS">
-</option>
 <option value="TAX">
-</option>
 <option value="TRAN">
-</option>
 <option value="DHS">
-</option>
 <option value="BUD">
-</option>
 <option value="OTHER">
-</option>
-</select>
-</td>
-</tr>
-<tr>
 <td align="right" valign="top">
 <strong>
-</strong>
-</td>
-<td>
 <textarea name="required-message" rows="15" cols="60">
-</textarea>
-</td>
-</tr>
-<tr>
 <td align="right" valign="top">
-</td>
-<td>
 <input name="subscribe" type="checkbox" value="subscribe" />
-</td>
-</tr>
-<tr>
-<td>
-</td>
-</tr>
-<tr>
 <td colspan="2">
 <center>
 <input type="submit" value="Send Email" />
 <input type="reset" value="Reset" />
-</center>
-</td>
-</tr>
-</tbody>
-</table>
-</form>
-</span>
 <form action="/subscribe.aspx" class="form-email">
 <fieldset>
 <div class="row">
 <input type="text" name="email" value="Enter Email Address" />
-</div>
 <input class="btn-go" type="submit" value="go" />
-</fieldset>
-</form>
 <form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="BigBox" class="form-search">
 <fieldset>
 <div class="area">
 <div class="row">
 <input type="text" class="i-text" name="docidc114" placeholder="search" id="SearchBox" />
-</div>
 <input class="btn-go-search" type="submit" value="go" />
-</div>
 <input class="radio" name="check" id="number" type="radio" checked="checked" />
 <label for="number">
-</label>
 <input class="radio" name="check" id="topic" type="radio" />
 <label for="topic">
-</label>
-</fieldset>
-</form>
 <form action="/search/results.htm" method="get" class="form-site">
 <fieldset>
 <div class="row">
 <input type="text" name="q" />
 <input class="bnt-site" type="submit" value="go" />
-</div>
-</fieldset>
-</form>

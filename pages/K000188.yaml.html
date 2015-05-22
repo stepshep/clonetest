@@ -1,282 +1,147 @@
 <form action="index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
 <input class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search Site">
 <input class="searchButon" type="submit" value="">
-</form>
 <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
 <p>
 <label for="searchkey">
-</label>
 <span class="requiredfield" id="searchkeyrequired">
-</span>
-</p>
 <p>
 <input type="text" name="searchkey" id="searchkey">
-</p>
 <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked">
 <label for="entire">
-</label>
-</p>
 <input type="radio" class="radiobutton" name="locale" value="146" id="this_section">
 <label for="this_section">
-</label>
-</p>
 <p class="submitbutton">
 <span>
 <input type="submit" value="Search">
-</span>
-</p>
-</form>
 <form action="http://kind.house.gov/index.cfm?sectionid=37&amp;sectiontree=" method="post">
 <input class="text" id="form_1_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: #665f4c" value="E-mail Address">
 <input class="form_submit_button" id="form_submit_button_1" name="submitform" type="submit" value="Subscribe">
-</form>
 <form action="/email-ron/" id="custom_form17" name="custom_form" class="custom_form" method="post">
 <div style="text-align: right;">
-</a>
-</div>
 <style type="text/css" media="all" title="main css">
-</style>
 <p>
-</p>
 <p>
 <b>
-</a>
-</b>
-</p>
 <p>
 <b>
-</a>
-</b>
-</p>
 <p>
-</p>
 <p class="req">
-</p>
 <h2>
-</h2>
 <p>
 <label>
-</label>
 <select name="prefix" size="1" id="req_prefix">
 <option value="Mr. ">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Miss">
-</option>
 <option value="Dr.">
-</option>
 <option value="Hon.">
-</option>
 <option value="Rev.">
-</option>
 <option value="Rabbi">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="firstname" id="req_firstname" maxlength="90" class="text">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="middle" class="text" style="width:15px;" maxlength="2">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="lastname" id="req_lastname" class="text" maxlength="90">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="suffix" class="text1" maxlength="5">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="street" id="req_street" class="text" maxlength="190">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="street2" class="text" maxlength="190">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="city" id="req_city" class="text" maxlength="100">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select name="state" id="req_state">
 <option selected="" value="WI">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input value="54601" class="zip" id="req_zip" maxlength="5" name="zipcode" type="text">
-</label>
 <input VALUE="4059" class="zip" id="zip2" maxlength="4" name="zipfour" type="text"/>
 <small>
-</a>
-</small>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="emailaddress" id="req_email" maxlength="150" class="text">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="phone" class="text phonemask" maxlength="14">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select size="1" name="subject" id="req_subject">
 <option selected="" value="">
-</option>
 <option value="CASE">
-</option>
 <option value="AGRI">
-</option>
 <option value="BUD">
-</option>
 <!-- <OPTION VALUE="CAM">
-</option>
 <option value="DEF">
-</option>
 <option value="ECON">
-</option>
 <option value="EDU">
-</option>
 <option value="ENR">
-</option>
 <option value="ENV">
-</option>
 <option value="FAFF">
-</option>
 <option value="HLTH">
-</option>
 <option value="IMM">
-</option>
 <option value="LAB">
-</option>
 <option value="SCH">
-</option>
 <option value="SOC">
-</option>
 <option value="TAX">
-</option>
 <option value="TELE">
-</option>
 <option value="TRANS">
-</option>
 <option value="VET">
-</option>
 <option value="OTHER">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select size="1" name="occupation" id="occupation">
 <option selected="" value="">
-</option>
 <option value="OTHER">
-</option>
 <option value="AUTO">
-</option>
 <option value="CONSTRUCT">
-</option>
 <option value="MEDIC">
-</option>
 <option value="ENVIRON">
-</option>
 <option value="FARMER">
-</option>
 <option value="FINANCE">
-</option>
 <option value="GOV">
-</option>
 <option value="INDUSTRY">
-</option>
 <option value="PLUMB_HEAT">
-</option>
 <option value="P_F_EMT">
-</option>
 <option value="RETAIL">
-</option>
 <option value="SALES">
-</option>
 <option value="SERVICE">
-</option>
 <option value="SBO">
-</option>
 <option value="SOC">
-</option>
 <option value="STUDENT">
-</option>
 <option value="TEACHER">
-</option>
 <option value="IT">
-</option>
 <option value="VETERINARIAN">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <textarea name="message" id="req_message" class="message">
-</textarea>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select size="1" name="response" id="req_response">
 <option selected="" value="">
-</option>
 <option value="N">
-</option>
 <option value="Y">
-</option>
-</select>
-</p>
 <div class="align">
 <input type="button" size="20" value="Submit" id="submitButton" class="form_submit_button">
-</div>
-</script>
-</form>

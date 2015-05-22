@@ -1,7 +1,6 @@
 <form method="get" action="http://www.google.com/search">
 <input type="text" name="q" size="25" maxlength="255" value="Site Search"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; background-color:#C0C6DD" />
 <input name="btnG" type="submit" class="gobutton" value="GO" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; background-color:#C0C6DD; height: 1.8em;" />
-</form>
 <form action="feedout.php" method="post" name="Contact" id="Contact">
 <?php
 $ipi = getenv("REMOTE_ADDR"); 
@@ -9,89 +8,35 @@ $httprefi = getenv ("HTTP_REFERER");
 $httpagenti = getenv ("HTTP_USER_AGENT");
 ?>
 <span class="hdoheader">
-</span>
-<br>
-<br>
 <table>
-<tr>
-<td>
-<br>
 <label for="firstname">
-</label>
 <input name="firstname" type="text" required="required" id="firstname" size="40">
-</td>
-<td>
-</td>
-<td>
-<br>
 <label for="lastname">
-</label>
 <input name="lastname" type="text" required="required" id="lastname" size="40">
-</td>
-</tr>
-</table>
 <p>
-<br>
 <label for="visitormail">
-</label>
 <input name="visitormail" type="email" required="required" id="visitormail" size="40">
-</p>
 <p>
-<br>
 <label for="address">
-</label>
 <input name="address" type="text" required="required" id="address" size="40">
-</p>
 <table border="0">
-<tr>
-<td>
 <p>
-<br>
 <label for="city">
-</label>
 <input name="city" type="text" required="required" id="city" size="40">
-</p>
-</td>
-<td>
-</td>
-<td>
 <p>
-<br>
 <label for="state">
-</label>
 <input name="state" type="text" required="required" id="state" size="6">
-</p>
-</td>
-<td>
-</td>
-<td>
 <p>
-<br>
 <label for="zip">
-</label>
 <input name="zip" type="text" required="required" id="zip" size="10">
-</span>
-</p>
-</td>
-</tr>
-</table>
 <p>
-<br>
 <label for="comments">
-</label>
 <textarea name="comments" cols="80" rows="10" id="comments">
-</textarea>
-</p>
 <p>
 <input name="EmailUpdates"  id="EmailUpdates" type="checkbox" value="yes">
-</p>
 <p>
 <strong>
 <input type="submit" value="Submit">
-</strong>
-</p>
-</form>
-</div>
 <form action="emailup.php" method="post" name="EmailUp" id="EmailUp">
 <?php
 $ipi = getenv("REMOTE_ADDR"); 
@@ -100,30 +45,14 @@ $httpagenti = getenv ("HTTP_USER_AGENT");
 ?>
 <fieldset>
 <legend>
-</legend>
 <p>
-<br>
 <label for="firstname">
-</label>
 <input name="firstname" type="text" id="firstname" size="28">
-<br>
-<br>
 <label for="lastname">
-</label>
 <input name="lastname" type="text" id="lastname" size="28">
-<br>
-<br>
 <label for="visitormail">
-</label>
 <input name="visitormail" type="email" required="required" id="visitormail" size="28">
-<br>
-<br>
 <label for="zip">
-</label>
 <input name="zip" type="text" required="required" id="zip" size="10">
 <strong>
 <input type="submit" value="Submit" />
-</strong>
-</p>
-</fieldset>
-</form>

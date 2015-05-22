@@ -1,299 +1,123 @@
 <form action="/subscribe.aspx" class="mail-form">
 <fieldset>
 <legend>
-</legend>
 <label for="text1">
-</label>
 <div class="row">
 <input id="text1" type="text" class="text" value="first name" name="firstname" />
-</div>
 <div class="row">
 <input type="text" class="text" value="last name" title="last name" name="lastname" />
-</div>
 <div class="phrow">
 <input type="text" class="phtext" value="phone" name="areacode" maxlength="3" size="3" />
 <input type="text" class="phtext" value="" name="exchange" maxlength="3" size="3" />
 <input type="text" class="phtext" value="" name="extension" maxlength="4" size="4" />
-</div>
 <div class="row">
 <input type="text" class="text" value="email address" title="email address" name="email" />
 <input type="submit" class="submit" value="go" name="submit" />
-</div>
-</fieldset>
-</form>
 <td class="ContentCell">
 <span id="ctl00_ctl09_ctl01_Text" class="middlecopy">
 <form method="post" action="/submit-contact.aspx" id="contact" name="contact" class="zipform">
 <table cellspacing="2" cellpadding="0" align="center">
 <tbody>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <table cellspacing="0" cellpadding="0">
 <tbody>
-<tr>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
 <small>
-</small>
-</td>
-</tr>
-<tr>
-<td>
 <select required="required" title="Prefix" name="required-prefix">
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
-</select>
-</td>
-<td>
 <input type="text" required="required" title="First Name" name="required-first" size="12" maxlength="90" />
-</td>
-<td>
 <input type="text" name="middle" size="8" maxlength="90" />
-</td>
-<td>
 <input type="text" required="required" title="Last Name" name="required-last" size="15" maxlength="90" />
-</td>
-<td>
 <select name="suffix">
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
 <option>
-</option>
-</select>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" required="required" title="Address" name="required-address" size="60" maxlength="190" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" required="required" title="City" name="required-city" maxlength="45" />
 <strong>
-</strong>
 <select required="required" title="State" name="required-state">
 <option value="VA">
-</option>
-</select>
 <strong>
-</strong>
 <input type="text" required="required" title="Zip" name="zip5" size="5" maxlength="5" onkeyup="f(this)" onkeydown="f(this)" />
 <input type="text" onkeyup="f(this)" onkeydown="f(this)" name="zip4" size="4" maxlength="4" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" title="Phone" required="required" name="phone" size="60" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" name="cell" size="60" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" required="required" title="Email" name="required-email" size="60" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <select required="required" title="Issue" name="required-issue" size="1">
 <option>
-</option>
 <option value="AG">
-</option>
 <option value="BAN">
-</option>
 <option value="BUD">
-</option>
 <option value="DEF">
-</option>
 <option value="ECON">
-</option>
 <option value="ED">
-</option>
 <option value="EN">
-</option>
 <option value="ENV">
-</option>
 <option value="FMV">
-</option>
 <option value="GOV">
-</option>
 <option value="HE">
-</option>
 <option value="DHS">
-</option>
 <option value="HUD">
-</option>
 <option value="INTREL">
-</option>
 <option value="JUD">
-</option>
 <option value="LABOR">
-</option>
 <option value="SCI">
-</option>
 <option value="SMB">
-</option>
 <option value="SS">
-</option>
 <option value="TAX">
-</option>
 <option value="TRADE">
-</option>
 <option value="TEL">
-</option>
 <option value="TRAN">
-</option>
 <option value="VET">
-</option>
 <option value="WEL">
-</option>
 <option value="GEN">
-</option>
-</select>
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" name="subject" size="60" maxlength="200" />
-</td>
-</tr>
-<tr>
 <td valign="top" align="right">
 <strong>
-</strong>
-</td>
-<td>
 <textarea cols="60" rows="15" required="required" title="Message" name="required-message">
-</textarea>
-</td>
-</tr>
-<tr>
 <td valign="top" align="right">
-</td>
-<td>
 <input type="checkbox" name="subscribe" value="subscribe" />
-</td>
-</tr>
-<tr>
 <td valign="top" align="right">
-</td>
-<td>
 <input type="checkbox" name="response" value="No" />
-</td>
-</tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input type="text" name="website" size="60" maxlength="200" />
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
 <div id="response">
-</div>
-</td>
-</tr>
-<tr>
 <td colspan="2">
 <center>
 <input type="submit" value="Send Email" />
 <input type="reset" value="Reset" />
-</center>
-</td>
-</tr>
-</tbody>
-</table>
-</form>
-</span>
 <form action="/sitemap/searchresults.htm" class="search-form">
 <fieldset>
 <legend>
-</legend>
 <input type="text" placeholder="SEARCH SITE" class="text" tabindex="6" title="search site" name="q" />
 <input type="submit" class="submit" value="go" tabindex="7" title="submit" />
-</fieldset>
-</form>

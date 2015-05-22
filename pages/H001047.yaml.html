@@ -1,197 +1,107 @@
 <form action="/htbin/formproc/email-me.txt&amp;display=/contact-me/email-me-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post" name="contactForm" id="contactForm">
 <fieldset>
 <legend>
-</legend>
 <div class="formboxL">
 <label for="required-prefix">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required] is-required" id="required-prefix" maxlength="10" name="required-prefix" size="2" title="Name prefix, ex. Mr. or Mrs." type="text">
-</div>
 <div class="formboxL">
 <label for="required-first">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required] is-required" id="required-first" maxlength="100" name="required-first" size="22" type="text">
-</div>
 <div class="formboxL">
 <label for="middle">
-</label>
 <input id="middle" maxlength="100" name="middle" size="2" type="text">
-</div>
 <div class="formboxL">
 <label for="required-last">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required] is-required" id="required-last" maxlength="100" name="required-last" size="23" type="text">
-</div>
 <div class="formboxL">
 <label for="suffix">
-</label>
 <input id="suffix" maxlength="10" name="suffix" size="2" type="text">
-</div>
 <div class="formboxL">
 <label for="required-address">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required] is-required" id="required-address" maxlength="100" name="required-address" size="90" type="text">
-</div>
 <div class="formboxL">
 <label for="required-address">
-</label>
 <input id="address2" maxlength="100" name="address2" size="90" type="text">
-</div>
 <div class="formboxL">
 <label for="required-city">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required] is-required" id="required-city" maxlength="100" name="required-city" size="42" type="text">
-</div>
 <div class="formboxL">
 <label for="required-state">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required] is-required" id="required-state" maxlength="2" name="required-state" size="2" type="text" value="CT">
-</div>
 <div class="formboxL">
 <label for="required-zip5">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input value="06901" class="validate[required,custom[zip5]] is-required" id="required-zip5" maxlength="5" name="required-zip5" size="10" type="text">
-</div>
 <div class="formboxL">
 <label for="zip4">
-</label>
 <input value="2902" id="zip4" maxlength="4" name="zip4" size="4" type="text">
-</div>
 <div class="formboxL">
 <label for="phone">
-</label>
 <input id="phone" maxlength="25" name="phone" size="25" type="text">
-</div>
 <div class="formboxL">
 <label for="email">
-</label>
 <span class="required-field" title="required information">
-</span>
 <input class="validate[required,custom[email]] is-required" id="email" maxlength="100" name="required-valid-email" size="90" type="text">
-</div>
 <p>
-</p>
-</fieldset>
-<br>
 <fieldset>
 <legend>
-</legend>
 <div class="formboxL">
 <label for="issue">
-</label>
 <span class="required-field" title="required information">
-</span>
-<br>
 <select class="validate[required] is-required" id="required-issue" name="required-issue" size="1">
 <option value="">
-</option>
 <option value="AGR">
-</option>
 <option value="BUD">
-</option>
 <option value="DEF">
-</option>
 <option value="ECON">
-</option>
 <option value="EDU">
-</option>
 <option value="ENE">
-</option>
 <option value="ENV">
-</option>
 <option value="GOV">
-</option>
 <option value="JUD.GUNS.OPP">
-</option>
 <option value="HEA">
-</option>
 <option value="HOM">
-</option>
 <option value="IMM">
-</option>
 <option value="INT">
-</option>
 <option value="JUD">
-</option>
 <option value="LABOR">
-</option>
 <option value="SOC">
-</option>
 <option value="SSEC">
-</option>
 <option value="TAX">
-</option>
 <option value="TEL">
-</option>
 <option value="TRAN">
-</option>
 <option value="TRADE">
-</option>
 <option value="VET">
-</option>
 <option value="WELFARE">
-</option>
 <option value="OTHER ISSUES">
-</option>
-</select>
-</div>
 <div class="formboxL">
 <label for="required-message">
 <span class="small-text">
-</span>
-</label>
 <span class="required-field" title="required information">
-</span>
 <textarea class="validate[required] is-required" cols="68" id="required-message" name="required-message" rows="5">
-</textarea>
-</div>
 <div class="formboxL">
 <input class="is-inline" id="newsletter-subscribe" name="newsletter-subscribe" type="checkbox" value="EMAIL.OPTIN">
 <label for="newsletter-subscribe">
 <b>
-</b>
-</label>
-</div>
 <div class="formboxL max">
 <input class="submit" id="submit" name="submit" type="submit" value="Submit Message">
-</div>
 <p>
-</p>
-</fieldset>
-<br>
-</form>
 <form action="/contact-me/email-me-zip-authenticated?fromFormProc" method="post" id="search-block-form" accept-charset="UTF-8">
 <div>
 <div class="container-inline">
 <div class="form-item form-type-textfield form-item-search-block-form">
 <label class="element-invisible" for="edit-search-block-form--2">
-</label>
 <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
-</div>
 <div class="form-actions form-wrapper" id="edit-actions">
 <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
-</div>
-</div>
-</div>
-</form>
-</div>
 <div class="section-content clearfix" id="sign-up">
 <h3>
-</h3>
 <div class="entry">
 <div class="clearfix" id="signup-form">
 <form action="/htbin/formproc/newsletter-subscribe.txt&amp;display=/contact-me/newsletter-subscribe-thankyou&amp;nobase&amp;fpGetVer=2" class="validate wsbform" method="post" name="newsletter_signup_form">
@@ -199,9 +109,4 @@
 <input class="name-field validate[required]" id="required-last" maxlength="100" name="required-last" onfocus="this.value=''" size="10" title="Enter your last name." type="text" value="Last Name">
 <input class="form-text validate[required,custom[email]]" id="required-valid-email" maxlength="100" name="required-valid-email" onfocus="this.value=''" size="15" title="Enter your email address." type="text" value="E-mail Address">
 <input class="form-submit" id="edit-submit" type="submit" value="submit">
-</form>
-</div>
-</div>
 <!--/entry-->
-</div>
-</div>

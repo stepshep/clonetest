@@ -1,428 +1,222 @@
 <form id="search-issues-form" action="http://www.whitehouse.senate.gov/issues/" method="get">
 <fieldset>
 <label id="issue-lookup-label" for="search_issues">
-</label>
 <input type="text" name="search_issues" id="search_issues" value="" onclick="this.value=''" autocomplete="off">
-</a>
-</fieldset>
-</form>
 <form id="site-search" role="search" method="get" action="http://www.whitehouse.senate.gov/search/">
 <fieldset>
 <legend>
-</legend>
 <input id="search-field" name="q" placeholder="Search this Site" value="Search this Site"  onclick="this.value='';" title="search" />
-</fieldset>
-</form>
 <form id="contactForm"  method="post"  action="/contact"  enctype="application/x-www-form-urlencoded" >
 <fieldset>
 <legend>
-</legend>
 <ol>
 <li>
 <ul class="col three">
 <li class="required">
 <label for="salutation">
 <abbr title="required">
-</abbr>
-</label>
 <select name="salutation" id="salutation" class="validate['required']">
 <option label="" value="">
-</option>
 <option label="Mr." value="Mr.">
-</option>
 <option label="Ms." value="Ms.">
-</option>
 <option label="Mrs." value="Mrs.">
-</option>
 <option label="Miss" value="Miss">
-</option>
 <option label="Mr. and Mrs." value="Mr. and Mrs.">
-</option>
 <option label="Dr." value="Dr.">
-</option>
 <option label="Prof." value="Prof.">
-</option>
 <option label="Senator" value="Senator">
-</option>
 <option label="Gov." value="Gov.">
-</option>
 <option label="Congressman" value="Congressman">
-</option>
 <option label="Hon." value="Hon.">
-</option>
 <option label="Fr." value="Fr.">
-</option>
 <option label="Sister" value="Sister">
-</option>
 <option label="Rabbi" value="Rabbi">
-</option>
 <option label="Reverend" value="Reverend">
-</option>
 <option label="Fleet Admiral" value="Fleet Admiral">
-</option>
 <option label="Admiral" value="Admiral">
-</option>
 <option label="Vice Admiral" value="Vice Admiral">
-</option>
 <option label="Rear Admiral (upper half)" value="Rear Admiral (upper half)">
-</option>
 <option label="Rear Admiral (lower half)" value="Rear Admiral (lower half)">
-</option>
 <option label="Captain" value="Captain">
-</option>
 <option label="Commander" value="Commander">
-</option>
 <option label="Lieutenant Commander" value="Lieutenant Commander">
-</option>
 <option label="Lieutenant" value="Lieutenant">
-</option>
 <option label="Lieutenant, Junior Grade" value="Lieutenant, Junior Grade">
-</option>
 <option label="Ensign" value="Ensign">
-</option>
 <option label="Master Chief Petty Officer of the Navy" value="Master Chief Petty Officer of the Navy">
-</option>
 <option label="Master Chief Petty Officer" value="Master Chief Petty Officer">
-</option>
 <option label="Senior Chief Petty Officer" value="Senior Chief Petty Officer">
-</option>
 <option label="Chief Petty Officer" value="Chief Petty Officer">
-</option>
 <option label="Petty Officer First Class" value="Petty Officer First Class">
-</option>
 <option label="Petty Officer Second Class" value="Petty Officer Second Class">
-</option>
 <option label="Petty Officer Third Class" value="Petty Officer Third Class">
-</option>
 <option label="Seaman" value="Seaman">
-</option>
 <option label="Seaman Apprentice" value="Seaman Apprentice">
-</option>
 <option label="Seaman Recruit" value="Seaman Recruit">
-</option>
 <option label="Chief Warrant Officer" value="Chief Warrant Officer">
-</option>
 <option label="Warrant Officer" value="Warrant Officer">
-</option>
 <option label="Sgt Major Of The Corps" value="Sgt Major Of The Corps">
-</option>
 <option label="Sergeant Major" value="Sergeant Major">
-</option>
 <option label="Master Gunnery Sgt" value="Master Gunnery Sgt">
-</option>
 <option label="First Sergeant" value="First Sergeant">
-</option>
 <option label="Master Sergeant" value="Master Sergeant">
-</option>
 <option label="Gunnery Sergeant" value="Gunnery Sergeant">
-</option>
 <option label="Staff Sergeant" value="Staff Sergeant">
-</option>
 <option label="Sergeant" value="Sergeant">
-</option>
 <option label="Corporal" value="Corporal">
-</option>
 <option label="Lance Corporal" value="Lance Corporal">
-</option>
 <option label="Private First Class" value="Private First Class">
-</option>
 <option label="Private" value="Private">
-</option>
 <option label="General of the Air Force" value="General of the Air Force">
-</option>
 <option label="General" value="General">
-</option>
 <option label="Lieutenant General" value="Lieutenant General">
-</option>
 <option label="Major General" value="Major General">
-</option>
 <option label="Brigadier General" value="Brigadier General">
-</option>
 <option label="Colonel" value="Colonel">
-</option>
 <option label="Lieutenant Colonel" value="Lieutenant Colonel">
-</option>
 <option label="Major" value="Major">
-</option>
 <option label="Captain" value="Captain">
-</option>
 <option label="First Lieutenant" value="First Lieutenant">
-</option>
 <option label="Second Lieutenant" value="Second Lieutenant">
-</option>
 <option label="Chief Master Sergeant of the Air Force" value="Chief Master Sergeant of the Air Force">
-</option>
 <option label="Command  Chief Master Sergeant" value="Command  Chief Master Sergeant">
-</option>
 <option label="Chief Master Sergeant" value="Chief Master Sergeant">
-</option>
 <option label="Senior Master Sergeant" value="Senior Master Sergeant">
-</option>
 <option label="Technical Sergeant" value="Technical Sergeant">
-</option>
 <option label="Senior Airman" value="Senior Airman">
-</option>
 <option label="Airman First Class" value="Airman First Class">
-</option>
 <option label="Airman" value="Airman">
-</option>
 <option label="Brother" value="Brother">
-</option>
-</select>
-</li>
 <li class="required">
 <label for="contactfname">
 <abbr title="Your first name is a required field">
-</abbr>
-</label>
 <input type="text" name="fname" id="contactfname"  class="validate['required','%firstName']" />
-</li>
 <li class="required">
 <label for="contactlname">
 <abbr title="Your last name is a required field">
-</abbr>
-</label>
 <input type="text" name="lname" id="contactlname"  class="validate['required','%lastName']" />
-</li>
-</ul>
-</li>
 <div style="clear:both;">
-</div>
 <li>
 <label for="company">
-</label>
 <input type="text" name="company" id="company"/>
-</li>
-</ol>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <ol>
 <li class="required">
 <label for="mailing_streetAddress1">
 <abbr title="Your street address is a required field">
-</abbr>
-</label>
 <input type="text" name="mailing_streetAddress1"  id="mailing_streetAddress1" class="validate['required'] "/>
-</li>
 <li>
 <label for="mailing_streetAddress2">
-</label>
 <input type="text" name="mailing_streetAddress2" id="mailing_streetAddress2" />
-</li>
 <li>
 <ul class="col three">
 <li class="required">
 <label for="mailing_city">
 <abbr title="Your city is a required field">
-</abbr>
-</label>
 <input type="text" name="mailing_city" id="mailing_city"  class="validate['required','%city']" />
-</li>
 <li class="required">
 <label for="state">
 <abbr title="Your state is a required field">
-</abbr>
-</label>
 <select name="state" id="state">
 <option value="null">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="RI" selected=" selected">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</li>
 <li class="required">
 <label for="mailing_zipCode">
 <abbr title="Your zip code is a required field">
-</abbr>
-</label>
 <input name="mailing_zipCode" type="text" id="mailing_zipCode"  class="validate['required','%zipCode']" />
-</li>
-</ul>
-</li>
 <li class="required">
-</li>
 <li>
 <ul class="col two">
 <li class="required">
 <label for="email_address">
 <abbr title="Your e-mail address is a required field">
-</abbr>
-</label>
 <input type="text" name="email" id="email_address" title="E-mail Address" class="validate['required'] validate['email']" />
-</li>
 <li class="required">
 <label for="verify_email">
 <abbr>
-</abbr>
-</label>
 <input type="text" name="verify_email" id="verify_email"   class="validate['confirm:email_address']" />
-</li>
-</ul>
-</li>
 <li class="required">
 <label for="phone_number">
 <abbr title="Please enter a valid Phone Number">
-</abbr>
-</label>
 <input type="text" name="phone_number" id="phone_number"  class="validate['required'] validate['phone']" />
-</li>
-</ol>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <ol>
 <li class="required">
 <label for="subject">
 <abbr title="Please enter a message topic for your message">
-</abbr>
-</label>
 <input type="text" name="subject" id="subject"  class="validate['required']"/>
-</li>
 <li class="required">
 <label for="comments">
 <abbr title="Please enter your message">
-</abbr>
-</label>
 <textarea id="comments" name="comments" aria-required="true" class="validate['required','%message']">
-</textarea>
-</li>
-</ol>
-</fieldset>
 <input class="button" type="submit" id="side-search-btn" value="Send" />
-</form>
 <form action="http://www.whitehouse.senate.gov/contact/" method="post" id="contact-form" onsubmit="return formCheck();">
 <h3>
-</h3>
 <fieldset>
 <legend>
-</legend>
 <ol class="col two">
 <li class="required">
 <label for="contact_fname">
 <abbr title="Your first name is a required field">
-</abbr>
-</label>
 <input type="text" name="fname" id="contact_fname" required="true" placeholder="First Name" value="First Name" onclick="this.value=''" />
-</li>
 <li class="required">
 <label for="contact_lname">
 <abbr title="Your last name is a required field">
-</abbr>
-</label>
 <input type="text" name="lname" id="contact_lname"required="true"  placeholder="Last Name" value="Last Name" onclick="this.value=''"/>
-</li>
-</ol>
 <ol class="col one">
 <li class="required">
 <label for="message">
-</label>
 <textarea name="message" id="message">
-</textarea>
-</li>
-</ol>
 <input class="button" type="submit" id="submit" value="Continue">
-</fieldset>
-</form>

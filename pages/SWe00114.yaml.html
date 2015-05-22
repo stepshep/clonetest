@@ -1,224 +1,107 @@
 <form class="translate" id="ms-translate" method="get" action="/portal/translatedisclaimer.html" onSubmit="return checkForm(this);">
 <label for="to-language" class="accessibility">
-</label>
 <select name="to" id="to-language">
 <option value="en" selected="" disabled="">
-</option>
 <option value="ar">
-</option>
 <option value="bg">
-</option>
 <option value="ca">
-</option>
 <option value="zh-chs">
-</option>
 <option value="zh-cht">
-</option>
 <option value="cs">
-</option>
 <option value="da">
-</option>
 <option value="nl">
-</option>
 <option value="et">
-</option>
 <option value="fi">
-</option>
 <option value="fr">
-</option>
 <option value="de">
-</option>
 <option value="el">
-</option>
 <option value="ht">
-</option>
 <option value="he">
-</option>
 <option value="hi">
-</option>
 <option value="mww">
-</option>
 <option value="hu">
-</option>
 <option value="id">
-</option>
 <option value="it">
-</option>
 <option value="ja">
-</option>
 <option value="ko">
-</option>
 <option value="lv">
-</option>
 <option value="lt">
-</option>
 <option value="ms">
-</option>
 <option value="no">
-</option>
 <option value="fa">
-</option>
 <option value="pl">
-</option>
 <option value="pt">
-</option>
 <option value="ro">
-</option>
 <option value="ru">
-</option>
 <option value="sk">
-</option>
 <option value="sl">
-</option>
 <option value="es">
-</option>
 <option value="sv">
-</option>
 <option value="th">
-</option>
 <option value="tr">
-</option>
 <option value="uk">
-</option>
 <option value="ur">
-</option>
 <option value="vi">
-</option>
-</select>
 <button type="submit" id="translate-go" form="ms-translate" formaction="/portal/translatedisclaimer.html" formmethod="get" title="Translate this page" >
-</button>
-</form>
 <form class="search has-option" method="get" action="/governor/searchresults.html" role="search">
 <label class="accessibility" for="searchinput">
-</label>
 <input type="text" title="Search..." id="searchinput" name="q" class="hint" />
 <label for="search_scope" class="accessibility">
-</label>
 <select name="site" id="search_scope">
 <option selected="selected" value="GOVDPx" data-frontend="mg_governor">
-</option>
 <option value="default_collection" data-frontend="massgov">
-</option>
-</select>
 <input id="submit" type="image" src="/resources/images/template/search-button.png" alt="Search" />
-</form>
 <p>
 <strong>
-</strong>
-</a>
 <strong>
-</strong>
-</p>
 <form action="/cgi-bin/massgovmail.cgi" enctype="application/x-www-form-urlencoded" method="post">
 <fieldset>
 <legend>
-</legend>
 <table border="0" width="100%">
 <tbody>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="fname">
-</label>
-</td>
 <td colspan="1" rowspan="1" width="0">
 <input id="fname" maxlength="50" name="fname" size="40" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="lname">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="lname" maxlength="50" name="lname" size="40" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="address">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="address" maxlength="50" name="address" size="50" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="address2">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input alt="address line 2" id="address2" maxlength="50" name="address2" size="50" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="city">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="city" maxlength="50" name="city" size="40" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="state">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="state" maxlength="10" name="state" size="10" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="zip">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="zip" maxlength="10" name="zip" size="10" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="phone">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="phone" maxlength="25" name="phone" size="50" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="customeremail.email">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="customeremail.email" maxlength="50" name="customeremail.email" size="50" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="subject">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <input id="subject" maxlength="75" name="subject" size="50" type="text" />
-</td>
-</tr>
-<tr>
 <td align="right" colspan="1" rowspan="1">
 <label for="comments">
-</label>
-</td>
 <td colspan="1" rowspan="1">
 <textarea cols="40" id="comments" name="comments" rows="10">
-</textarea>
-</td>
-</tr>
-</tbody>
-</table>
 <input type="submit" value="Submit" />
-</fieldset>
-</form>
-</div>
 <!-- #pagedescription -->

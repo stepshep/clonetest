@@ -1,349 +1,172 @@
 <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
 <p>
 <label for="searchkey">
-</label>
 <span class="requiredfield" id="searchkeyrequired">
-</span>
-</p>
 <p>
 <input type="text" name="searchkey" id="searchkey">
-</p>
 <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked">
 <label for="entire">
-</label>
-</p>
 <input type="radio" class="radiobutton" name="locale" value="124" id="this_section">
 <label for="this_section">
-</label>
-</p>
 <p class="submitbutton">
 <span>
 <input type="submit" value="Search">
-</span>
-</p>
-</form>
 <div class="sectionintro">
 <form action="/sign-up-for-e-newsletter" method="post">
 <p class="formIntro" style="font-size: 12px;">
-<br>
-</p>
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="253">
 <tbody>
-<tr>
 <td align="center" height="32" width="112">
 <input class="text" id="form_10_firstname" maxlength="255" name="firstname" onblur="iBlur(this)" onfocus="iFocus(this);" style="width: 100px; height:14px" type="text" value="First Name">
-</td>
 <td align="center" width="141">
 <input class="text" id="form_10_lastname" maxlength="255" name="lastname" onblur="iBlur(this)" onfocus="iFocus(this);" style="width: 100px; height:14px" type="text" value="Last Name">
-</td>
-</tr>
-<tr>
 <td align="left" colspan="2" height="32" style="padding-left: 3px;">
 <input class="text" id="form_10_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="width: 226px; height:14px" type="text" value="E-mail Address*">
-</td>
-</tr>
-<tr>
 <td align="center" colspan="2">
 <input class="form_submit_button" id="form_submit_button_10" name="submitform" type="submit" value="Submit">
-</td>
-</tr>
-</tbody>
-</table>
-</form>
 <form action="/contact-john2/" id="custom_form80" name="custom_form" class="custom_form" method="post">
 <p class="req">
-</p>
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="prefix">
 <span title="required field">
-</span>
-</label>
 <select name="prefix" id="prefix" class="short">
 <option selected="" value="">
-</option>
 <option value="Mr. ">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Miss">
-</option>
 <option value="Dr.">
-</option>
 <option value="Hon.">
-</option>
 <option value="Rev.">
-</option>
 <option value="Rabbi">
-</option>
 <option value="Other">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_firstname">
 <span title="required field">
-</span>
-</label>
 <input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn">
-</div>
 <div class="formbx">
 <label for="middle">
-</label>
 <input id="middle" type="text" name="middle" class="text mi" maxlength="2">
-</div>
 <div class="formbx">
 <label for="req_lastname">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="lastname" id="req_lastname" class="text ln" maxlength="100">
-</div>
 <div class="formbx">
 <label for="suffix">
-</label>
 <input id="suffix" type="text" name="suffix" class="text sfx" maxlength="5">
-</div>
 <div class="formbx">
 <label for="req_street">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="street" id="req_street" class="text str" maxlength="100">
-</div>
 <div class="formbx">
 <label for="address2">
-</label>
 <input id="address2" type="text" name="street2" class="text str" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_city">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="city" id="req_city" class="text ct" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_state">
 <span title="required information">
-</span>
-</label>
 <select name="state" class="short" id="req_state">
 <option selected="" value="">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="PR">
-</option>
 <option value="RI">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_zip">
 <span title="required information">
-</span>
-</label>
 <input value="40258" class="zip z5" id="req_zip" maxlength="5" name="zipcode" type="text">
-</div>
 <div class="formbx">
 <label for="zip4">
-</label>
 <input value="3756" class="zip z4" id="zip4" maxlength="4" name="zipfour" type="text">
 <small>
-</a>
-</small>
-</div>
 <div class="formbx">
 <label for="req_email">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml">
-</div>
 <div class="formbx">
 <label for="phone">
-</label>
 <input id="phone" type="text" name="phone" class="text phn phonemask" maxlength="20">
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
-<br>
 <input name="issue" type="radio" value="casework">
 <input name="issue" type="radio" value="No">
-</div>
 <div class="formbx">
 <label for="req_message">
 <span title="required information">
-</span>
-</label>
 <textarea name="message" id="req_message" class="message">
-</textarea>
-</div>
 <div class="formbx">
 <label>
-</label>
 <select name="response" id="response">
 <option selected="selected" value="Yes">
-</option>
 <option value="No">
-</option>
-</select>
-</div>
-</fieldset>
 <input type="button" size="20" value="Send Email" id="submitButton" class="form_submit_button">
-</form>
 <div id="webfooter">
 <div class="addthis">
-</script>
-</a>
-</script>
-</div>
 <div class="search">
 <form action="/index.cfm?sectionid=2&amp;sectiontree=" method="get" onsubmit="return checkformsearch(this)">
 <div align="left">
-</div>
-<br>
 <input class="text" id="searchkey" name="searchkey" type="text">
 <input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1">
 <label for="entire">
-</label>
 <input class="radiobutton" id="this_section" name="location" type="radio" value="1">
 <label for="this_section">
-</label>
-</span>
-<br>
 <input class="button searchButton" type="submit" value="Search">
-</form>
-</div>
 <div class="addresses">
 <div style="width: 260px;">
-<br>
-<br>
-<br>
-</div>
 <div>
-<br>
-<br>
-<br>
-</div>
 <div>
-<br>
-<br>
-<br>
-</div>
-</div>
 <div align="center" class="bottomlinks">
-</a>
-</a>
-</a>
-</div>
-</script>
-</script>
-</script>
-</div>

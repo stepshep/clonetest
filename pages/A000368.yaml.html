@@ -1,388 +1,200 @@
 <form id="search_form" name="googlesearch" method="get" action="/">
 <input id="s" title="search" type="text" name="q" size="25" value="Search" class="input-field swap_value" />
 <input id="go" type="image" src="/images/clear.gif" width="1" height="1" alt="" title="Search" />
-</form>
 <p>
 <span class='req'>
-</span>
-</p>
 <form id='standard_form' onSubmit='return validateStandardForm(this)' method='post' action='/?p=submit'>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='prefix' name='prefix' value='' class='input-text required'  maxlength='30' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='firstname' name='firstname' value='' class='input-text required'  maxlength='30' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='lastname' name='lastname' value='' class='input-text required'  maxlength='30' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='suffix' name='suffix' value='' class='input-text'  maxlength='30' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='address1' name='address1' value='' class='input-text required'  maxlength='50' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='address2' name='address2' value='' class='input-text'  maxlength='50' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='city' name='city' value='' class='input-text required'  maxlength='35' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <select id='state' name='state' class='input-select required'>
 <option value='AL'>
-</option>
 <option value='AK'>
-</option>
 <option value='AS'>
-</option>
 <option value='AZ'>
-</option>
 <option value='AR'>
-</option>
 <option value='AA'>
-</option>
 <option value='AE'>
-</option>
 <option value='AP'>
-</option>
 <option value='CA'>
-</option>
 <option value='CO'>
-</option>
 <option value='CT'>
-</option>
 <option value='DE'>
-</option>
 <option value='DC'>
-</option>
 <option value='FL'>
-</option>
 <option value='GA'>
-</option>
 <option value='GU'>
-</option>
 <option value='HI'>
-</option>
 <option value='ID'>
-</option>
 <option value='IL'>
-</option>
 <option value='IN'>
-</option>
 <option value='IA'>
-</option>
 <option value='KS'>
-</option>
 <option value='KY'>
-</option>
 <option value='LA'>
-</option>
 <option value='ME'>
-</option>
 <option value='MD'>
-</option>
 <option value='MA'>
-</option>
 <option value='MI'>
-</option>
 <option value='MN'>
-</option>
 <option value='MS'>
-</option>
 <option value='MO'>
-</option>
 <option value='MT'>
-</option>
 <option value='NE'>
-</option>
 <option value='NV'>
-</option>
 <option selected='selected' value='NH'>
-</option>
 <option value='NJ'>
-</option>
 <option value='NM'>
-</option>
 <option value='NY'>
-</option>
 <option value='NC'>
-</option>
 <option value='ND'>
-</option>
 <option value='OH'>
-</option>
 <option value='OK'>
-</option>
 <option value='OR'>
-</option>
 <option value='PA'>
-</option>
 <option value='PR'>
-</option>
 <option value='RI'>
-</option>
 <option value='SC'>
-</option>
 <option value='SD'>
-</option>
 <option value='TN'>
-</option>
 <option value='TX'>
-</option>
 <option value='UT'>
-</option>
 <option value='VT'>
-</option>
 <option value='VI'>
-</option>
 <option value='VA'>
-</option>
 <option value='WA'>
-</option>
 <option value='WV'>
-</option>
 <option value='WI'>
-</option>
 <option value='WY'>
-</option>
-</select>
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='zip' name='zip' value='' class='input-text required'  maxlength='10' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='homephone' name='homephone' value='' class='input-text'  maxlength='20' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='workphone' name='workphone' value='' class='input-text'  maxlength='20' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input  type='text' id='email' name='email' value='' class='input-text required email'  maxlength='50' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <em>
-<br />
-</em>
-<br />
 <select id='topic' name='topic' class='input-select required'>
 <option value=' '>
-</option>
 <option value='Abortion / Family Planning'>
-</option>
 <option value='Agriculture'>
-</option>
 <option value='Animal Welfare'>
-</option>
 <option value='Banking / Finance'>
-</option>
 <option value='Business'>
-</option>
 <option value='Defense'>
-</option>
 <option value='Education'>
-</option>
 <option value='Energy'>
-</option>
 <option value='Environment'>
-</option>
 <option value='Federal Budget'>
-</option>
 <option value='Fish / Wildlife'>
-</option>
 <option value='Foreign Relations'>
-</option>
 <option value='Government Affairs'>
-</option>
 <option value='Health Care'>
-</option>
 <option value='Housing'>
-</option>
 <option value='Immigration / Border Issues'>
-</option>
 <option value='Jobs'>
-</option>
 <option value='Judiciary'>
-</option>
 <option value='Justice'>
-</option>
 <option value='Labor'>
-</option>
 <option value='Medicare / Medicaid'>
-</option>
 <option value='Native Americans'>
-</option>
 <option value='Other - Not Listed'>
-</option>
 <option value='Pensions / Retirement'>
-</option>
 <option value='Postal Service'>
-</option>
 <option value='Science / Space'>
-</option>
 <option value='Second Amendment'>
-</option>
 <option value='Social Security'>
-</option>
 <option value='Taxes / IRS'>
-</option>
 <option value='Telecommunications'>
-</option>
 <option value='Terrorism'>
-</option>
 <option value='Trade'>
-</option>
 <option value='Transportation'>
-</option>
 <option value='Veterans Affairs'>
-</option>
 <option value='Welfare'>
-</option>
 <option value='Womens Issues'>
-</option>
-</select>
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <em>
-</em>
-<br />
 <input  type='text' id='subject' name='subject' value='' class='input-text required' />
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
-</label>
-</div>
 <div class='grid_7 omega'>
 <em>
-</em>
-<br />
 <textarea id='messagebody' name='messagebody' class='input-textarea' rows='5' cols='40' wrap='VIRTUAL'>
-</textarea>
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
 <label>
 <span class='req'>
-</span>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input title='' class='input-radio siblings-newsletteraction siblings-2 required' name='newsletteraction' id='newsletteraction'  checked='true'  type='radio' value='subscribe'>
 <input title='' class='input-radio siblings-newsletteraction siblings-2 required' name='newsletteraction' id='newsletteraction'  type='radio' value='unsubscribe'>
-</div>
 <div class='clear'>
-</div>
 <div class='grid_3 alpha'>
-</label>
-</div>
 <div class='grid_7 omega'>
 <input class='input-button' type='submit' name='submit' value='Submit Information' />
-</div>
 <div class='clear'>
-</div>
-</form>

@@ -1,8 +1,6 @@
 <form method="get" action="http://www.google.com/search">
 <input type="text" name="q" size="25" maxlength="255" value="Site Search"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; background-color:#C0C6DD" />
 <input name="btnG" type="submit" class="gobutton" value="GO" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; background-color:#C0C6DD; height: 1.8em;" />
-</form>
-</div>
 <form action="emailup.php" method="post" name="EmailUp" id="EmailUp">
 <?php
 $ipi = getenv("REMOTE_ADDR"); 
@@ -11,30 +9,14 @@ $httpagenti = getenv ("HTTP_USER_AGENT");
 ?>
 <fieldset>
 <legend>
-</legend>
 <p>
-<br>
 <label for="firstname">
-</label>
 <input name="firstname" type="text" id="firstname" size="28">
-<br>
-<br>
 <label for="lastname">
-</label>
 <input name="lastname" type="text" id="lastname" size="28">
-<br>
-<br>
 <label for="visitormail">
-</label>
 <input name="visitormail" type="email" required="required" id="visitormail" size="28">
-<br>
-<br>
 <label for="zip">
-</label>
 <input name="zip" type="text" required="required" id="zip" size="10">
 <strong>
 <input type="submit" value="Submit" />
-</strong>
-</p>
-</fieldset>
-</form>

@@ -2,426 +2,223 @@
 <form onsubmit="return checkformsearch(this)" method="get" action="/index.cfm?sectionid=2§iontree=">
 <input type="text" value="Search Site" onfocus="iFocus(this)" onblur="iBlur(this)" name="searchkey" class="searchkey text" style="color: rgb(153, 153, 153);">
 <input type="submit" value=" " class="searchButon">
-</form>
-</div>
 <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
 <p>
 <label for="searchkey">
-</label>
 <span class="requiredfield" id="searchkeyrequired">
-</span>
-</p>
 <p>
 <input type="text" name="searchkey" id="searchkey">
-</p>
 <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked">
 <label for="entire">
-</label>
-</p>
 <input type="radio" class="radiobutton" name="locale" value="58" id="this_section">
 <label for="this_section">
-</label>
-</p>
 <p class="submitbutton">
 <span>
 <input type="submit" value="Search">
-</span>
-</p>
-</form>
 <form action="/email-me/" id="custom_form24" name="custom_form" class="custom_form" method="post">
 <p>
-</p>
 <p>
-</a>
-</p>
 <p>
-</a>
-<br>
-</a>
-</p>
 <p class="req">
-</p>
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="req_prefix">
 <span>
-</span>
-</label>
 <select name="prefix" id="req_prefix" class="short filled">
 <option selected="" value="">
-</option>
 <option value="Mr.">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Miss">
-</option>
 <option value="Mr. and Mrs.">
-</option>
 <option value="Dr.">
-</option>
 <option value="Dr. and Mr.">
-</option>
 <option value="Dr. and Mrs.">
-</option>
 <option value="Reverend">
-</option>
 <option value="Sister">
-</option>
 <option value="Pastor">
-</option>
 <option value="Rabbi">
-</option>
 <option value="Fr.">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_firstname">
 <span>
-</span>
-</label>
 <input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn filled">
-</div>
 <div class="formbx">
 <label for="middle">
-</label>
 <input id="middle" type="text" name="middle" class="text mi" maxlength="2">
-</div>
 <div class="formbx">
 <label for="req_lastname">
 <span>
-</span>
-</label>
 <input type="text" name="lastname" id="req_lastname" class="text ln filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="suffix">
-</label>
 <input id="suffix" type="text" name="suffix" class="text sfx" maxlength="5">
-</div>
 <div class="formbx">
 <label for="req_street">
 <span>
-</span>
-</label>
 <input type="text" name="street" id="req_street" class="text str filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="address2">
-</label>
 <input id="address2" type="text" name="street2" class="text str" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_city">
 <span>
-</span>
-</label>
 <input type="text" name="city" id="req_city" class="text ct filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_state">
 <span>
-</span>
-</label>
 <select name="state" class="short filled" id="req_state">
 <option value="">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA" selected="selected">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="PR">
-</option>
 <option value="RI">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_zip">
 <span>
-</span>
-</label>
 <input value="30265" class="zip z5 filled" id="req_zip" maxlength="5" name="zipcode" type="text">
-</div>
 <div class="formbx">
 <label for="zip4">
-</label>
 <input value="1325" class="zip z4 filled" id="zip4" maxlength="4" name="zipfour" type="text">
 <small>
-</a>
-</small>
-</div>
 <div class="formbx">
 <label for="req_email">
 <span>
-</span>
-</label>
 <input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml filled">
-</div>
 <div class="formbx">
 <label for="req_phone">
 <span>
-</span>
-</label>
 <input id="req_phone" type="text" name="phone" class="text phn phonemask filled" maxlength="20">
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="issue">
 <span>
-</span>
-</label>
 <select id="req_issue" name="issue">
 <option selected="selected" value="">
-</option>
 <option value="ABORT">
-</option>
 <option value="AG">
-</option>
 <option value="ANIM">
-</option>
 <option value="FIN">
-</option>
 <option value="BUD">
-</option>
 <option value="DEF">
-</option>
 <option value="DEBT">
-</option>
 <option value="DRUG">
-</option>
 <option value="ECON">
-</option>
 <option value="ED">
-</option>
 <option value="EN">
-</option>
 <option value="ENV">
-</option>
 <option value="FORAFFIRS">
-</option>
 <option value="GOV">
-</option>
 <option value="GUN">
-</option>
 <option value="HEA">
-</option>
 <option value="MEDI">
-</option>
 <option value="HOU">
-</option>
 <option value="IMM">
-</option>
 <option value="JUD">
-</option>
 <option value="LAB">
-</option>
 <option value="PEN">
-</option>
 <option value="POST">
-</option>
 <option value="REL">
-</option>
 <option value="SCI">
-</option>
 <option value="SS">
-</option>
 <option value="TAX">
-</option>
 <option value="THANKS">
-</option>
 <option value="TRADE">
-</option>
 <option value="TRAN">
-</option>
 <option value="VET">
-</option>
 <option value="WMNCHIL">
-</option>
 <option value="OTHER">
-</option>
-</select>
-</div>
 <p class="clear">
-</p>
 <div class="formbx">
 <label for="req_message">
 <span>
-</span>
-</label>
 <textarea name="message" id="req_message" class="message filled">
-</textarea>
-</div>
 <div class="formbox">
 <p style="font-weight:bold">
 <input type="checkbox" name="student" id="student" value="STUD" class="filled">
-</p>
-</div>
 <div class="formbox">
 <p style="font-weight:bold">
 <input type="checkbox" name="response" id="response" value="NRN" class="filled">
-</p>
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formbox">
 <p style="font-weight:bold">
 <input type="checkbox" name="newsletter" id="newsletter" value="EMAIL.OPTIN" class="filled">
-</p>
 <p>
-</p>
-</div>
-</fieldset>
 <input type="button" size="20" value="Send Email" id="submitButton" class="form_submit_button filled">
-</form>
 <div id="webfooter">
 <p>
-</p>
 <p>
-</p>
 <footer role="contentinfo">
 <div class="moduletable">
 <h3>
-</h3>
 <div class="custom">
-</div>
-</div>
 <link href="http://westmoreland.house.gov/images/westmoreland%20official%20photo%20small.jpg" rel="image_src">
 <link href="http://westmoreland.house.gov/images/website%20banner.jpg" rel="image_src">
 <div class="moduletable">
 <div class="custom">
 <dl class="office">
 <dt>
-</dt>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
-</dl>
 <dl class="office last">
 <dt>
-</dt>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
-</dl>
-</div>
-</div>
 <div class="moduletable gtthomas">
 <div class="custom gtthomas">
 <form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post">
@@ -429,37 +226,15 @@
 <input class="button" name="Enter" type="submit">
 <input class="text" id="bill" name="docidc113" onblur="if(this.value=='')this.value='Bill Number'" onfocus="if(this.value=='Bill Number')this.value=''" type="text" value="Bill Number">
 <input class="button" name="Enter" type="submit">
-</form>
-</div>
-</div>
 <div class="moduletable footer-wrap">
 <ul class="menu" id="footer-menu">
 <li class="item-269">
-</a>
-</li>
 <li class="item-270">
-</a>
-</li>
 <li class="item-271">
-</a>
-</li>
-</ul>
-</div>
 <div class="moduletable">
 <h3>
-</h3>
 <div class="custom">
 <p>
-</a>
-</p>
-</div>
-</div>
-</footer>
-</script>
 <p>
-</p>
 <p>
-</p>
 <p>
-</p>
-</div>

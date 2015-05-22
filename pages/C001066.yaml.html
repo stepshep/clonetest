@@ -3,258 +3,107 @@
 <form name="contact" id="contactForm" class="zipform" onsubmit="MM_validateForm('required-prefix','Prefix','R','required-first','First Name','R','required-last','Last Name','R','required-address','Street Address','R','required-city','City','R','required-email','Email','RisEmail','required-issue','Issue','R','required-message','Message','R');return document.MM_returnValue" action="/contact.aspx" method="post">
 <table align="center" cellspacing="2" cellpadding="0">
 <tbody>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <table cellspacing="0" cellpadding="0">
 <tbody>
-<tr>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
-</td>
-<td>
 <strong>
-</strong>
 <small>
-</small>
-</td>
-</tr>
-<tr>
-<td>
 <select name="required-prefix">
 <option selected="selected" value="Mr.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Mr. &amp; Mrs.">
-</option>
 <option value="Dr.">
-</option>
-</select>
-</td>
-<td>
 <input name="required-first" type="text" size="12" maxlength="90" />
-</td>
-<td>
 <input name="required-last" type="text" size="15" maxlength="90" />
-</td>
-<td>
 <input name="suffix" type="text" size="10" maxlength="90" />
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="required-address" type="text" size="60" maxlength="190" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="required-city" type="text" maxlength="45" />
 <strong>
-</strong>
 <select name="required-state">
 <option selected="selected">
-</option>
-</select>
 <strong>
-</strong>
 <input name="zip5" onkeydown="f(this)" onkeyup="f(this)" type="text" size="5" maxlength="5" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="phone" type="text" size="60" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <input name="required-email" type="text" size="60" maxlength="100" />
-</td>
-</tr>
-<tr>
 <td align="right">
 <strong>
-</strong>
-</td>
-<td>
 <select name="required-issue" size="1">
 <option selected="selected">
-</option>
 <option value="ADOPTION">
-</option>
 <option value="AG">
-</option>
 <option value="AN">
-</option>
 <option value="APPR">
-</option>
 <option value="ART">
-</option>
 <option value="BANK">
-</option>
 <option value="BUD">
-</option>
 <option value="CAMP">
-</option>
 <option value="CIVRIG">
-</option>
 <option value="CRM">
-</option>
 <option value="DEF">
-</option>
 <option value="ECON">
-</option>
 <option value="ED">
-</option>
 <option value="EN">
-</option>
 <option value="ENV">
-</option>
 <option value="ETH">
-</option>
 <option value="FEMA">
-</option>
 <option value="GEN">
-</option>
 <option value="GOV">
-</option>
 <option value="HE">
-</option>
 <option value="HOM">
-</option>
 <option value="HUD">
-</option>
 <option value="IM">
-</option>
 <option value="INSR">
-</option>
 <option value="INT">
-</option>
 <option value="INT.PR">
-</option>
 <option value="JUD">
-</option>
 <option value="JUD-GUN CONTROL">
-</option>
 <option value="LAB">
-</option>
 <option value="LGBT">
-</option>
 <option value="MCAID">
-</option>
 <option value="MEDICARE">
-</option>
 <option value="RR">
-</option>
 <option value="SB">
-</option>
 <option value="SCI">
-</option>
 <option value="SPACE">
-</option>
 <option value="SS">
-</option>
 <option value="TAX">
-</option>
 <option value="TEL">
-</option>
 <option value="TRA">
-</option>
 <option value="TRAVEL">
-</option>
 <option value="TRDE">
-</option>
 <option value="VET">
-</option>
 <option value="WEL">
-</option>
 <option value="WOMENS ISSUES">
-</option>
-</select>
-</td>
-</tr>
-<tr>
 <td align="right" valign="top">
 <strong>
-</strong>
-</td>
-<td>
 <textarea name="required-message" rows="15" cols="60">
-</textarea>
-</td>
-</tr>
-<tr>
 <td align="right" valign="top">
-</td>
-<td>
 <input name="subscribe" type="checkbox" value="subscribe" />
-</td>
-</tr>
-<tr>
-<td>
-</td>
-</tr>
-<tr>
 <td colspan="2">
 <center>
 <input type="submit" value="Send Email" />
 <input type="reset" value="Reset" />
-</center>
-</td>
-</tr>
-</tbody>
-</table>
-</form>
-</span>
 <form action="/forms/emailsignup/" method="get">
 <fieldset>
 <p>
-</p>
 <span>
 <input class="clearbox" type="text" placeholder="enter your email address" name="email" />
-</span>
 <input type="image" src="/images/sign-up.gif" class="button-submit" name="submit" value="true" />
-</fieldset>
-</form>
 <form action="/news/documentquery.aspx">
 <fieldset>
 <span>
 <input class="clearbox" type="text" placeholder="Enter search here" name="SearchPhrase" />
-</span>
 <input type="image" src="/images/search-submit.gif" class="button-submit" />
-</fieldset>
-</form>

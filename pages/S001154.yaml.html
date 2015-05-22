@@ -1,280 +1,145 @@
 <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
 <p>
 <label for="searchkey">
-</label>
 <span class="requiredfield" id="searchkeyrequired">
-</span>
-</p>
 <p>
 <input type="text" name="searchkey" id="searchkey">
-</p>
 <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked">
 <label for="entire">
-</label>
-</p>
 <input type="radio" class="radiobutton" name="locale" value="58" id="this_section">
 <label for="this_section">
-</label>
-</p>
 <p class="submitbutton">
 <span>
 <input type="submit" value="Search">
-</span>
-</p>
-</form>
 <div class="sectionintro">
 <form action="/index.cfm?sectionid=47&amp;sectiontree=" method="post">
 <p style="color: rgb(255, 255, 255); margin-left: 0px;">
-<br>
-</p>
 <table border="0" cellpadding="0" cellspacing="0" style="margin-left: 24px; margin-top: 5px;" width="208">
 <tbody>
-<tr>
 <td align="right" width="148">
 <input class="text" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" style="color: rgb(68, 68, 68); height: 14px; margin-top: 2px; border: 1px solid rgb(255, 255, 255);" type="text" value="E-mail Address">
-</td>
 <td align="left" width="79">
 <input class="form_submit_button" id="form_submit_button_4" name="submitform" style="margin-left: 0px; border:1px solid #fff;" type="submit" value="Submit">
-</td>
-</tr>
-</tbody>
-</table>
-</form>
 <div class="sectionintro">
 <form action="index.cfm?sectionid=2" method="get" onsubmit="return checkformsearch(this)" style="margin: 0px;">
 <table border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" width="208">
 <tbody>
-<tr>
 <td width="155" align="right" valign="top">
 <label for="searchkey">
-</label>
-</p>
 <p>
 <input class="text" id="searchkey" name="searchkey" style="height: 14px; border: 1px solid rgb(255, 255, 255);" type="text">
-</p>
-</td>
 <td width="72" align="left" valign="bottom">
 <input checked="checked" class="radiobutton" id="entire" name="location" type="radio" value="-1">
-</p>
 <input class="radiobutton" id="this_section" name="location" type="radio" value="1">
-</p>
 <p class="submitbutton">
 <span>
 <input class="form_submit_button" style="margin-left: 0px; margin-top: 2px; border:1px solid #fff;" type="submit" value="Search">
-</span>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
-</form>
-</div>
 <form action="/contact-form/" id="custom_form6" name="custom_form" class="custom_form" method="post">
 <style type="text/css" media="all" title="main css">
-</style>
 <p>
-</p>
 <p class="req">
-</p>
 <h2>
-</h2>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select name="prefix" size="1" id="req_prefix">
 <option selected="selected" value="">
-</option>
 <option value="Mr. ">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Miss">
-</option>
 <option value="Dr.">
-</option>
 <option value="Hon.">
-</option>
 <option value="Rev.">
-</option>
 <option value="Rabbi">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="firstname" id="req_firstname" maxlength="90" class="text">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="middle" class="text" style="width:15px;" maxlength="2">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="lastname" id="req_lastname" class="text" maxlength="90">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="suffix" class="text1" maxlength="5">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="street" id="req_street" class="text" maxlength="190">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="street2" class="text" maxlength="190">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="city" id="req_city" class="text" maxlength="100">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select name="state" id="req_state">
 <option selected="" value="PA">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="zip" id="req_zip" class="zip" maxlength="5">
-</label>
 <input value="3545" class="zip" id="zip2" maxlength="4" name="zipfour" type="text">
 <small>
-</a>
-</small>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <input type="text" name="emailaddress" id="req_email" maxlength="150" class="text">
-</p>
 <p>
 <label>
-</label>
 <input type="text" name="phone" class="text phonemask" maxlength="14">
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select size="1" name="subject" id="req_subject">
 <option selected="" value="">
-</option>
 <option value="ABR">
-</option>
 <option value="AGR">
-</option>
 <option value="ANM">
-</option>
 <option value="BGT">
-</option>
 <option value="DEF">
-</option>
 <option value="ECM">
-</option>
 <option value="EDU">
-</option>
 <option value="ENG">
-</option>
 <option value="ENV">
-</option>
 <option value="FRN">
-</option>
 <option value="GUN">
-</option>
 <option value="GVR">
-</option>
 <option value="HLT">
-</option>
 <option value="HML">
-</option>
 <option value="HSG">
-</option>
 <option value="IMG">
-</option>
 <option value="JUD">
-</option>
 <option value="LAB">
-</option>
 <option value="MED">
-</option>
 <option value="PST">
-</option>
 <option value="SEN">
-</option>
 <option value="SSA">
-</option>
 <option value="TAX">
-</option>
 <option value="TEL">
-</option>
 <option value="TRD">
-</option>
 <option value="TRN">
-</option>
 <option value="VET">
-</option>
 <option value="WLF">
-</option>
 <option value="TRQ">
-</option>
 <option value="FRQ">
-</option>
-</select>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <textarea name="message" id="req_message" class="message">
-</textarea>
-</p>
 <p>
 <label>
 <span>
-</span>
-</label>
 <select size="1" name="response" id="req_response">
 <option selected="" value="">
-</option>
 <option value="N">
-</option>
 <option value="Y">
-</option>
-</select>
-</p>
 <div class="align">
 <input type="button" size="20" value="Submit" id="submitButton" class="form_submit_button">
-</div>
-</script>
-</form>

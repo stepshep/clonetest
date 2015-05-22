@@ -1,370 +1,185 @@
 <form action="/index.cfm?sectionid=2&amp;sectiontree=" method="get" onsubmit="return checkformsearch(this)">
 <input type="text" style="color: rgb(153, 153, 153);" class="searchkey text" name="searchkey" onblur="iBlur(this)" onfocus="iFocus(this)" value="Search Site">
 <input type="submit" class="searchButon" value="&gt;&gt;">
-</form>
 <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
 <p>
 <label for="searchkey">
-</label>
 <span class="requiredfield" id="searchkeyrequired">
-</span>
-</p>
 <p>
 <input type="text" name="searchkey" id="searchkey">
-</p>
 <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked">
 <label for="entire">
-</label>
-</p>
 <input type="radio" class="radiobutton" name="locale" value="292" id="this_section">
 <label for="this_section">
-</label>
-</p>
 <p class="submitbutton">
 <span>
 <input type="submit" value="Search">
-</span>
-</p>
-</form>
 <form action="/issue-subscribe/" id="custom_form63" name="custom_form" class="custom_form" method="post">
 <p class="req">
-</p>
-<br class="clear">
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="prefix">
-</label>
 <select name="prefix" id="prefix" class="short">
 <option selected="" value="">
-</option>
 <option value="Mr. ">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Miss">
-</option>
 <option value="Dr.">
-</option>
 <option value="Hon.">
-</option>
 <option value="Rev.">
-</option>
 <option value="Rabbi">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_firstname">
 <span title="required field">
-</span>
-</label>
 <input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn filled">
-</div>
 <div class="formbx">
 <label for="middle">
-</label>
 <input id="middle" type="text" name="middle" class="text mi" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_lastname">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="lastname" id="req_lastname" class="text ln filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="suffix">
-</label>
 <input id="suffix" type="text" name="suffix" class="text sfx" maxlength="100">
-</div>
-<br class="clear">
 <div class="formbx">
 <label for="req_street">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="street" id="req_street" class="text str filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="address2">
-</label>
 <input id="address2" type="text" name="street2" class="text str" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_city">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="city" id="req_city" class="text ct filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_state">
 <span title="required information">
-</span>
-</label>
 <select name="state" class="short filled" id="req_state">
 <option selected="" value="">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option selected="" value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="PR">
-</option>
 <option value="RI">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_zip">
 <span title="required information">
-</span>
-</label>
 <input value="87505" class="zip z5 filled" id="req_zip" maxlength="5" name="zipcode" type="text">
-</div>
 <div class="formbx">
 <label for="zip4">
-</label>
 <input value="7640" class="zip z4 filled" id="zip4" maxlength="4" name="zipfour" type="text">
 <small>
-</a>
-</small>
-</div>
-<br class="clear">
 <div class="formbx">
 <label for="req_email">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml filled">
-</div>
 <div class="formbx">
 <label for="phone">
 <span title="required information">
-</span>
-</label>
 <input id="phone" type="text" name="phone" class="text ph phonemask filled" maxlength="20">
-</div>
-</fieldset>
-<br class="clear">
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="issue">
-</label>
 <select name="issue" class="long" id="issue">
 <option selected="" value="">
-</option>
 <option value="WEBAGR">
-</option>
 <option value="WEBBUD">
-</option>
 <option value="WEBDEF">
-</option>
 <option value="WEBECON">
-</option>
 <option value="WEBEDU">
-</option>
 <option value="WEBENE">
-</option>
 <option value="WEBENV">
-</option>
 <option value="WEBGOV">
-</option>
 <option value="WEBHEA">
-</option>
 <option value="WEBHOM">
-</option>
 <option value="WEBIMM">
-</option>
 <option value="WEBINT">
-</option>
 <option value="WEBJUD">
-</option>
 <option value="WEBSOC">
-</option>
 <option value="WEBSSEC">
-</option>
 <option value="WEBTAX">
-</option>
 <option value="WEBTEL">
-</option>
 <option value="WEBTRA">
-</option>
 <option value="WEBVET">
-</option>
 <option value="WEBWEL">
-</option>
 <option value="WEBOTH">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="message">
-</label>
 <textarea name="message" id="message" class="message filled" cols="68" rows="5">
-</textarea>
-</div>
-</fieldset>
 <p class="formSubscribeMsg">
 <input type="checkbox" id="form_subscribe" name="form_subscribe" value="1" class="filled">
-</p>
 <div class="formbx">
 <input type="button" size="20" value="Send Request" id="submitButton" class="button filled">
-</div>
-</form>
 <div id="webfooter">
 <div id="footerBillSearch">
 <form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank">
 <input class="text" id="text1" maxlength="50" name="queryc113" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(68,68,68)" type="text" value="Search by keyword">
 <input class="searchbuttons" id="searchbutton1" name="Submit" type="submit" value="&gt;&gt;">
-</form>
 <form action="http://thomas.loc.gov/cgi-bin/query" method="post" name="loc-number" target="_blank">
 <input class="text" id="text2" maxlength="50" name="docidc113" onblur="iBlur(this)" onfocus="iFocus(this)" style="color: rgb(68,68,68)" type="text" value="Search by bill number">
 <input class="searchbuttons" id="searchbutton2" name="Submit" type="submit" value="&gt;&gt;">
-</form>
-</div>
 <div class="addrs">
 <h3>
-</h3>
 <p>
 <strong>
-</strong>
-</a>
-<br>
 <strong>
-</strong>
-</a>
-<br>
 <strong>
-</strong>
-</a>
-<br>
 <strong>
-</strong>
-</a>
-<br>
 <strong>
-</strong>
-</a>
-<br>
 <strong>
-</strong>
-</a>
-<br>
 <strong>
-</strong>
-</a>
-</p>
-</div>
 <div class="footerseal">
-</div>
 <div align="center">
-</a>
-</a>
-</a>
-</div>
 <script>
-</script>
-</div>

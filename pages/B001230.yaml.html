@@ -2,339 +2,174 @@
 <input type="search" id="search-field" name="q" placeholder="Search&hellip;" value="Search&hellip;"  onclick="this.value='';" />
 <button type="submit" class="btn">
 <i class="icon-search icon-white">
-</i>
-</button>
-</form>
 <form class="form-inline pull-right"  id="newsletter-signup" method="post"  enctype="application/x-www-form-urlencoded" action="/newsletter">
 <input type="text" class="input-medium" placeholder="Email Address" name="email" id="email_address" value="Email Address"  onclick="this.value='';" required>
 <button type="submit" class="btn pull-right">
-</button>
-</form>
 <form id="contactForm"  method="post"  action="/contact"  enctype="application/x-www-form-urlencoded" >
 <fieldset>
 <label for="action">
 <abbr title="Please select an option">
-</abbr>
-</label>
 <select id="topic" class="span8" name="topic" onChange="javascript:getHelp(this.value);">
 <option label="- - Select an Option - -" value="" selected="selected">
-</option>
 <option label="Help with a federal agency" value="federal_agency">
-</option>
 <option label="Share your comments or opinion on legislation" value="opinion">
-</option>
 <option label="Schedule a meeting or invite to an event" value="meeting">
-</option>
 <option label="Request a tour in Washington, D.C." value="tours">
-</option>
 <option label="Apply for an internship or academy nomination" value="students">
-</option>
 <option label="Request a flag to be flown over the Capitol" value="flags">
-</option>
-</select>
-</fieldset>
 <div  id="more-help">
-</div>
-</div>
-</div>
 <fieldset>
 <legend>
-</legend>
 <label class="control-label" for="salutation">
 <abbr title="required">
-</abbr>
-</label>
 <select name="salutation" id="salutation" class="span7">
 <option label="" value="">
-</option>
 <option label="Mr." value="Mr.">
-</option>
 <option label="Mrs." value="Mrs.">
-</option>
 <option label="Ms." value="Ms.">
-</option>
 <option label="Miss" value="Miss">
-</option>
 <option label="Mr. and Mrs." value="Mr. and Mrs.">
-</option>
 <option label="Dr." value="Dr.">
-</option>
 <option label="Dr. and Mrs." value="Dr. and Mrs.">
-</option>
 <option label="Dr. and Mr." value="Dr. and Mr.">
-</option>
 <option label="Mr. and Mr." value="Mr. and Mr.">
-</option>
 <option label="Mrs. and Mrs." value="Mrs. and Mrs.">
-</option>
 <option label="Ms. and Ms." value="Ms. and Ms.">
-</option>
 <option label="Rev." value="Rev.">
-</option>
 <option label="Sr." value="Sr.">
-</option>
-</select>
 <label for="fname">
 <abbr title="required">
-</abbr>
-</label>
 <input class="span7 required" type="text" name="fname" id="fname" aria-required="true" placeholder="Required" required>
 <label for="lname">
 <abbr title="required">
-</abbr>
-</label>
 <input class="span7 required" type="text" name="lname" id="lname" aria-required="true" placeholder="Required" required>
 <legend>
-</legend>
 <label for="mailing_streetAddress1">
 <abbr title="Your street address is a required field">
-</abbr>
-</label>
 <input class="span7 required" type="text" name="mailing_streetAddress1" id="mailing_streetAddress1" aria-required="true" placeholder="Required" required>
 <label for="mailing_streetAddress2">
-</label>
 <input class="span7" type="text" name="mailing_streetAddress2" id="mailing_streetAddress2">
 <div class="row">
 <div class="span4">
 <label for="mailing_city">
 <abbr title="Your city is a required field">
-</abbr>
-</label>
 <input class="span4 required" type="text" name="mailing_city" id="mailing_city" aria-required="true" placeholder="Required" required>
-</div>
 <div class="span1">
 <label for="state">
-</label>
 <select name="state" id="state" class="span1 required">
 <option value="null">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="RI">
-</option>
 <option value="SC">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI" selected="selected">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</div>
 <div class="span2">
 <label for="mailing_zipCode">
 <abbr title="Your zip code is a required field">
-</abbr>
-</label>
 <input class="span2 required" type="number" name="mailing_zipCode"  id="mailing_zipCode" aria-required="true" placeholder="Required" required>
-</div>
-</div>
-<br>
 <label for="home_phone_number">
-</label>
 <input type="tel" name="home_phone_number" id="home_phone_number" class="span7">
 <label for="work_phone_number">
-</label>
 <input type="tel" name="work_phone_number" id="work_phone_number" class="span7">
 <label for="email">
 <abbr title="Your e-mail address is a required field">
-</abbr>
-</label>
 <input type="email" name="email_address" aria-required="true" id="email" class="span7 required email" placeholder="Required" required>
 <label for="verify_email">
 <abbr title="Please confirm your e-mail address">
-</abbr>
-</label>
 <input type="email" name="verify_email" id="verify_email" aria-required="true" class="span7" placeholder="Required" required>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <label for="subject">
 <abbr title="Please enter a message topic for your message">
-</abbr>
-</label>
 <select id="subject" class="span8" name="subject" class="validate['required','%subject']">
 <option label="- - Select an Issue - -" value="" selected="selected">
-</option>
 <option label="Aging and Retirement" value="Aging and Retirement">
-</option>
 <option label="Agriculture" value="Agriculture">
-</option>
 <option label="Armed Services and Defense" value="Armed Services and Defense">
-</option>
 <option label="Arts & Humanities" value="Arts & Humanities">
-</option>
 <option label="Banking" value="Banking">
-</option>
 <option label="Budget" value="Budget">
-</option>
 <option label="Congress and Elections" value="Congress and Elections">
-</option>
 <option label="Economy and Jobs" value="Economy and Jobs">
-</option>
 <option label="Education" value="Education">
-</option>
 <option label="Energy" value="Energy">
-</option>
 <option label="Environment" value="Environment">
-</option>
 <option label="Federal Employees" value="Federal Employees">
-</option>
 <option label="Foreign Relations" value="Foreign Relations">
-</option>
 <option label="Government Contracting and Federal Grants" value="Government Contracting and Federal Grants">
-</option>
 <option label="Gun Safety" value="Gun Safety">
-</option>
 <option label="Healthcare" value="Healthcare">
-</option>
 <option label="Homeland Security" value="Homeland Security">
-</option>
 <option label="Housing" value="Housing">
-</option>
 <option label="Immigration" value="Immigration">
-</option>
 <option label="Judiciary" value="Judiciary">
-</option>
 <option label="Labor" value="Labor">
-</option>
 <option label="LGBT Issues" value="LGBT Issues">
-</option>
 <option label="Native Americans" value="Native Americans">
-</option>
 <option label="Natural Resources" value="Natural Resources">
-</option>
 <option label="Patents/Intellectual Property" value="Patents/Intellectual Property">
-</option>
 <option label="Pensions" value="Pensions">
-</option>
 <option label="Postal Service" value="Postal Service">
-</option>
 <option label="Science and Technology" value="Science and Technology">
-</option>
 <option label="Small Business" value="Small Business">
-</option>
 <option label="Social Security" value="Social Security">
-</option>
 <option label="Sports" value="Sports">
-</option>
 <option label="Taxes" value="Taxes">
-</option>
 <option label="Telecommunication" value="Telecommunication">
-</option>
 <option label="Trade" value="Trade">
-</option>
 <option label="Transportation" value="Transportation">
-</option>
 <option label="Veterans" value="Veterans">
-</option>
 <option label="Womens Issues " value="Womens Issues ">
-</option>
-</select>
 <label for="message">
 <abbr title="Please enter your message">
-</abbr>
-</label>
 <textarea id="message" class="span7 required" rows="10" name="message" aria-required="true" placeholder="Required" required>
-</textarea>
 <label for="respons_y" class="checkbox">
 <input name="response" id="response_y" value="Y" checked type="checkbox" >
 <strong>
-</strong>
-</label>
 <input class="btn pull-right" type="submit" id="side-search-btn" value="Send" />
-</fieldset>
-</div>
-</form>

@@ -1,25 +1,19 @@
-<form action="//adams.house.gov/about" method="post" id="search-block-form" accept-charset="UTF-8">
-<div class="container-inline">
+<form action="http://adams.house.gov/contact/offices" method="post" id="search-block-form" accept-charset="UTF-8">
+<div>
+<div class="container-inline form-inline">
 <h2 class="element-invisible">
-</h2>
 <div class="form-item form-type-textfield form-item-search-block-form">
 <label class="element-invisible" for="edit-search-block-form--2">
-</label>
-<input title="Search" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
-</div>
+<input title="Search" placeholder="Search" class="form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
 <div class="form-actions form-wrapper" id="edit-actions">
-<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" />
-</div>
-</div>
-</form>
+<button class="btn fa-input form-submit" type="submit" id="edit-submit" name="op">
+<i style="color:black;" class="fa fa-search">
 <form method="get" action="/forms/writeyourrep/" class="zipform">
 <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="5" size="6" name="zip5" />
 <input type="text" onclick="f(this)" onblur="f(this)" onkeyup="f(this)" onkeydown="f(this)" maxlength="4" size="5" name="zip4" />
 <input type="submit" value="Submit" />
-</form>
-<form action="/subscribe.aspx" class="validate wsbform" id="newsletter_signup_form" name="newsletter_signup_form">
-<label for="signup-email">
-</label>
-<input class="form-text" id="signup-email" maxlength="100" name="email" placeholder="your@email.com" title="Enter your email address." type="email" />
-<input class="form-submit" id="submit" role="button" type="submit" value="submit" />
-</form>
+<div id='boxes-box-congress_newsletter_signup' class='boxes-box'>
+<div class="boxes-box-content">
+<form method="get" action="https://adamsforms.house.gov/subscribe.aspx">
+<input type="email" name="email" placeholder="your@email.com" />
+<input type="submit" value="Subscribe" />

@@ -1,481 +1,246 @@
 <form action="http://mulvaney.congressnewsletter.net/mail/util.cfm?mailaction=profile" method="post">
 <input class="inputbox" name="EMAIL" onblur="if(this.value=='') this.value='Enter Email Address';" onfocus="if(this.value=='Enter Email Address') this.value='';" type="text" value="Enter Email Address">
 <button class="button gtenews" name="submitprofile" type="submit">
-</button>
-</form>
 <form action="/index.cfm?sectionid=2§iontree=" method="get" onsubmit="return checkformsearch(this)">
 <div class="search gtsearch">
 <label for="mod-search-searchword">
-</label>
 <input class="inputbox gtsearch" id="mod-search-searchword" maxlength="20" name="searchkey" onblur="if (this.value=='') this.value='Search Website';" onfocus="if (this.value=='Search Website') this.value='';" size="20" type="text" value="Search Website">
 <input class="button gtsearch" type="submit" value="Search">
-</div>
-</form>
 <form action="/index.cfm" method="get" onsubmit="return checkformsearch(this)">
 <p>
 <label for="searchkey">
-</label>
 <span class="requiredfield" id="searchkeyrequired">
-</span>
-</p>
 <p>
 <input type="text" name="searchkey" id="searchkey">
-</p>
 <input type="radio" class="radiobutton" name="locale" value="-1" id="entire" checked="checked">
 <label for="entire">
-</label>
-</p>
 <input type="radio" class="radiobutton" name="locale" value="58" id="this_section">
 <label for="this_section">
-</label>
-</p>
 <p class="submitbutton">
 <span>
 <input type="submit" value="Search">
-</span>
-</p>
-</form>
 <form action="/email-mick/" id="custom_form24" name="custom_form" class="custom_form" method="post">
 <p class="req">
-</p>
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="req_prefix">
 <span title="required field">
-</span>
-</label>
 <select name="prefix" id="req_prefix" class="short filled">
 <option selected="" value="">
-</option>
 <option value="Mr.">
-</option>
 <option value="Mrs.">
-</option>
 <option value="Ms.">
-</option>
 <option value="Dr.">
-</option>
 <option value="Rev.">
-</option>
 <option value="Prof.">
-</option>
 <option value="Maj.">
-</option>
 <option value="Col.">
-</option>
 <option value="Fr.">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_firstname">
 <span title="required field">
-</span>
-</label>
 <input type="text" name="firstname" id="req_firstname" maxlength="100" class="text fn filled">
-</div>
 <div class="formbx">
 <label for="req_lastname">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="lastname" id="req_lastname" class="text ln filled" maxlength="100">
-</div>
-<br class="clear">
 <div class="formbx">
 <label for="req_street">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="street" id="req_street" class="text str filled" maxlength="100">
-</div>
-<br class="clear">
 <div class="formbx">
 <label for="req_city">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="city" id="req_city" class="text ct filled" maxlength="100">
-</div>
 <div class="formbx">
 <label for="req_state">
 <span title="required information">
-</span>
-</label>
 <select name="state" class="short filled" id="req_state">
 <option value="">
-</option>
 <option value="AK">
-</option>
 <option value="AL">
-</option>
 <option value="AR">
-</option>
 <option value="AZ">
-</option>
 <option value="CA">
-</option>
 <option value="CO">
-</option>
 <option value="CT">
-</option>
 <option value="DC">
-</option>
 <option value="DE">
-</option>
 <option value="FL">
-</option>
 <option value="GA">
-</option>
 <option value="HI">
-</option>
 <option value="IA">
-</option>
 <option value="ID">
-</option>
 <option value="IL">
-</option>
 <option value="IN">
-</option>
 <option value="KS">
-</option>
 <option value="KY">
-</option>
 <option value="LA">
-</option>
 <option value="MA">
-</option>
 <option value="MD">
-</option>
 <option value="ME">
-</option>
 <option value="MI">
-</option>
 <option value="MN">
-</option>
 <option value="MO">
-</option>
 <option value="MS">
-</option>
 <option value="MT">
-</option>
 <option value="NC">
-</option>
 <option value="ND">
-</option>
 <option value="NE">
-</option>
 <option value="NH">
-</option>
 <option value="NJ">
-</option>
 <option value="NM">
-</option>
 <option value="NV">
-</option>
 <option value="NY">
-</option>
 <option value="OH">
-</option>
 <option value="OK">
-</option>
 <option value="OR">
-</option>
 <option value="PA">
-</option>
 <option value="PR">
-</option>
 <option value="RI">
-</option>
 <option value="SC" selected="selected">
-</option>
 <option value="SD">
-</option>
 <option value="TN">
-</option>
 <option value="TX">
-</option>
 <option value="UT">
-</option>
 <option value="VA">
-</option>
 <option value="VT">
-</option>
 <option value="WA">
-</option>
 <option value="WI">
-</option>
 <option value="WV">
-</option>
 <option value="WY">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="req_zip">
 <span title="required information">
-</span>
-</label>
 <input value="29732" class="zip z5 filled" id="req_zip" maxlength="5" name="zipcode" type="text">
-</div>
 <div class="formbx">
 <label for="zip4">
-</label>
 <input value="2339" class="zip z4 filled" id="zip4" maxlength="4" name="zipfour" type="text">
 <small>
-</a>
-</small>
-</div>
-<br class="clear">
 <div class="formbx">
 <label for="req_email">
 <span title="required information">
-</span>
-</label>
 <input type="text" name="emailaddress" id="req_email" maxlength="100" class="text eml filled">
-</div>
 <div class="formbx">
 <label for="req_phone">
 <span title="required information">
-</span>
-</label>
 <input id="req_phone" type="text" name="phone" class="text phn phonemask filled" maxlength="20">
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formbx">
 <label for="issue">
 <span title="required information">
-</span>
-</label>
 <select id="req_issue" name="issue">
 <option selected="selected" value="">
-</option>
 <option value="18822">
-</option>
 <option value="18817">
-</option>
 <option value="18787">
-</option>
 <option value="18760">
-</option>
 <option value="18744">
-</option>
 <option value="18726">
-</option>
 <option value="18704">
-</option>
 <option value="18690">
-</option>
 <option value="24095">
-</option>
 <option value="18821">
-</option>
 <option value="18631">
-</option>
 <option value="18622">
-</option>
 <option value="27223">
-</option>
 <option value="18259">
-</option>
 <option value="18605">
-</option>
 <option value="18590">
-</option>
 <option value="18580">
-</option>
 <option value="24094">
-</option>
 <option value="18563">
-</option>
 <option value="18549">
-</option>
 <option value="18820">
-</option>
 <option value="18256">
-</option>
 <option value="18453">
-</option>
 <option value="18439">
-</option>
 <option value="18429">
-</option>
 <option value="18664">
-</option>
 <option value="18409">
-</option>
 <option value="18393">
-</option>
 <option value="18258">
-</option>
 <option value="18375">
-</option>
 <option value="24099">
-</option>
 <option value="18261">
-</option>
 <option value="18368">
-</option>
 <option value="18260">
-</option>
 <option value="24097">
-</option>
 <option value="18353">
-</option>
 <option value="18329">
-</option>
 <option value="18321">
-</option>
 <option value="18315">
-</option>
 <option value="18257">
-</option>
 <option value="18307">
-</option>
 <option value="24093">
-</option>
 <option value="18819">
-</option>
 <option value="18255">
-</option>
 <option value="24098">
-</option>
 <option value="18272">
-</option>
-</select>
-</div>
 <div class="formbx">
 <label for="subject">
-</label>
 <input class="text sbj filled" id="subject" maxlength="100" name="subject" type="text">
-</div>
 <div class="formbx">
 <label for="req_message">
 <span title="required information">
-</span>
-</label>
 <textarea name="message" id="req_message" class="message filled">
-</textarea>
-</div>
-<br class="clear">
 <div class="formbx">
 <label>
-</label>
 <select name="response" id="response">
 <option selected="selected" value="">
-</option>
 <option value="Yes">
-</option>
 <option value="No">
-</option>
-</select>
-</div>
-</fieldset>
 <fieldset>
 <legend>
-</legend>
 <div class="formbox">
 <p style="font-weight:bold">
 <input type="checkbox" name="newsletter" id="newsletter" value="Yes" class="filled">
-</p>
 <p>
-</p>
-</div>
-</fieldset>
 <input type="button" size="20" value="Send Email" id="submitButton" class="form_submit_button filled">
-</form>
 <div id="webfooter">
 <div id="bottom">
 <div class="bottomwrap">
 <div class="moduletable gtmap">
 <h3>
-</h3>
 <div class="custom gtmap">
-</a>
-</div>
-</div>
 <div class="moduletable gtthomas">
 <h3>
-</h3>
 <div class="custom gtthomas">
 <form action="http://thomas.loc.gov/cgi-bin/query" id="billsearch" method="post">
 <input class="text" id="bill" name="docidc113" onblur="if(this.value=='')this.value='Search by bill number'" onfocus="if(this.value=='Search by bill number')this.value=''" type="text" value="Search by bill number">
 <input class="button" name="Enter" type="submit">
 <input class="text" id="word" name="queryc113" onblur="if(this.value=='')this.value='Search by word or phrase'" onfocus="if(this.value=='Search by word or phrase')this.value=''" type="text" value="Search by word or phrase">
 <input class="button" name="Enter" type="submit">
-</form>
-</div>
-</div>
 <div>
 <h3>
-</h3>
 <p>
 <span style="text-align:center;">
-</iframe>
-</span>
-</p>
-</div>
-</div>
-</div>
 <!-- /bottom -->
 <div class="moduletable">
 <div class="custom">
 <dl class="office">
 <dt>
-</dt>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
-</dl>
 <dl class="office">
 <dt>
-</dt>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
-</dl>
 <dl class="office">
 <dt>
-</dt>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
-</dl>
 <dl class="office last">
 <dt>
-</dt>
 <dd>
-</dd>
 <dd>
-</dd>
 <dd>
-</dd>
-</dl>
-</div>
-</div>
 <ul class="menu" id="footer-menu">
 <li class="item-269">
-</a>
-</li>
 <li class="item-270">
-</a>
-</li>
 <li class="item-271">
-</a>
-</li>
-</ul>
-</div>
