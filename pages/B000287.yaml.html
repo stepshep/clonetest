@@ -32,7 +32,15 @@
 <input class="text c5" id="form_4_email" maxlength="255" name="email" onblur="iBlur(this)" onfocus="iFocus(this);" value="E-mail Address" />
 <input class="form_submit_button" id="form_submit_button_4" name="submitform" type="submit" value="GO" />
 </form>
-<form method="post" action="" id="aspnetForm">
+<form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+</div>
+</script>
+</script>
+</script>
+</script>
+<div class="aspNetHidden">
+</div>
 <div>
 <div style="text-align: left" id="writeRepForm">
 <div>
@@ -40,6 +48,7 @@
 </span>
 </div>
 <span style="">
+</div>
 </span>
 <fieldset>
 <legend>
@@ -53,6 +62,8 @@
 </label>
 </td>
 <td>
+<br />
+</span>
 <select name="ctl00$ctl17$PrefixList" id="ctl00_ctl17_PrefixList">
 <option value=" ">
 </option>
@@ -81,6 +92,8 @@
 </label>
 </td>
 <td>
+<br />
+</span>
 <input name="ctl00$ctl17$FirstName" type="text" id="ctl00_ctl17_FirstName" class="textBox" />
 </td>
 </tr>
@@ -92,6 +105,8 @@
 </label>
 </td>
 <td>
+<br />
+</span>
 <input name="ctl00$ctl17$LastName" type="text" id="ctl00_ctl17_LastName" class="textBox" />
 </td>
 </tr>
@@ -103,6 +118,8 @@
 </label>
 </td>
 <td>
+<br />
+</span>
 <input name="ctl00$ctl17$Street" type="text" id="ctl00_ctl17_Street" class="textBox" />
 </td>
 </tr>
@@ -114,6 +131,8 @@
 </label>
 </td>
 <td>
+<br />
+</span>
 <input name="ctl00$ctl17$City" type="text" id="ctl00_ctl17_City" class="textBox" />
 </td>
 </tr>
@@ -125,6 +144,8 @@
 </label>
 </td>
 <td>
+<br />
+</span>
 <select name="ctl00$ctl17$State" id="ctl00_ctl17_State">
 <option value="AL">
 </option>
@@ -257,8 +278,13 @@
 </label>
 </td>
 <td>
+<br />
+</span>
+<br />
+</span>
 <input name="ctl00$ctl17$Zip" type="text" id="ctl00_ctl17_Zip" class="textBox" />
 <br />
+</span>
 </td>
 </tr>
 <tr class="wyr-phone">
@@ -269,6 +295,10 @@
 </label>
 </td>
 <td>
+<br />
+</span>
+<br />
+</span>
 <input name="ctl00$ctl17$Phone" type="text" id="ctl00_ctl17_Phone" class="textBox" />
 </td>
 </tr>
@@ -286,6 +316,10 @@
 </label>
 </td>
 <td>
+<br />
+</span>
+<br />
+</span>
 <input name="ctl00$ctl17$Email" type="text" id="ctl00_ctl17_Email" class="textBox" />
 </td>
 </tr>
@@ -366,15 +400,24 @@
 <legend>
 </legend>
 <div class="fieldContainer">
-<span id="ctl00_ctl17_ReplyChoice">
+<br/>
+</span>
+<table id="ctl00_ctl17_ReplyChoice">
+<tr>
+<td>
 <input id="ctl00_ctl17_ReplyChoice_0" type="radio" name="ctl00$ctl17$ReplyChoice" value="Respond" checked="checked" />
 <label for="ctl00_ctl17_ReplyChoice_0">
 </label>
-<br />
+</td>
+</tr>
+<tr>
+<td>
 <input id="ctl00_ctl17_ReplyChoice_1" type="radio" name="ctl00$ctl17$ReplyChoice" value="Comment" />
 <label for="ctl00_ctl17_ReplyChoice_1">
 </label>
-</span>
+</td>
+</tr>
+</table>
 </div>
 <div class="fieldContainer">
 <label for="ctl00_ctl17_Subject">
@@ -382,7 +425,11 @@
 </span>
 </label>
 <br />
-<input name="ctl00$ctl17$Subject" type="text" id="ctl00_ctl17_Subject" />
+<br />
+</span>
+<br />
+</span>
+<input name="ctl00$ctl17$Subject" type="text" id="ctl00_ctl17_Subject" style="width:30em;" />
 </div>
 <div class="fieldContainer">
 <label for="ctl00_ctl17_Body">
@@ -390,13 +437,34 @@
 </span>
 </label>
 <br />
-<textarea name="ctl00$ctl17$Body" rows="15" cols="20" id="ctl00_ctl17_Body">
+<br />
+</span>
+<textarea name="ctl00$ctl17$Body" rows="15" cols="20" id="ctl00_ctl17_Body" style="width:30em;">
 </textarea>
 </div>
 </fieldset>
 <input type="submit" name="ctl00$ctl17$SubmitButton" value="Submit" onclick="if(blockClicks) {return false;}; submitWasClicked=true; ;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl17$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl17_SubmitButton" class="ContactForm_Submit" />
 </div>
 </div>
+</script>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br/>
+<br />
+<br />
+<br />
+</script>
+</script>
 </form>
 <form action="https://thomas.loc.gov/cgi-bin/query" method="post" name="loc-word" target="_blank">
 <input class="text c12" id="text1" maxlength="50" name="queryc111" onblur="iBlur(this)" onfocus="iFocus(this)" type="text" value="Search by keyword" />
