@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: http://www.daines.senate.gov/connect/email-steve
   steps:
-    - visit: "http://www.daines.senate.gov/connect/email-steve"
+    - visit: "http://www.daines.senate.gov/connect/email-stevey"
     - select:
         - name: share opinion
           selector: "#actiontog"
